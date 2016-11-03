@@ -1,0 +1,726 @@
+setwd("~/Desktop/Felisa/Tesis/Tesis - Base de datos/Mirror Experimento 2/Data/Datos_Exp2")
+rm(list=ls())
+dir()
+
+#####################################
+#####################################
+#####################################
+#Mirror Effect  
+#####################################
+#####################################
+#####################################
+
+
+##HITS Y FALSAS ALARMAS
+
+rm(list=ls())
+#pdf_name<-'MirrorEff_Tendencies in Y-N responses.pdf'
+pdf(file="~/Desktop/Felisa/Tesis/Tesis - Base de datos/Mirror Experimento 2/Data/PDFS_Exp2/MirrorEff_Tendencies in Y-N responses.pdf", width=8, height=8)
+layout(matrix(1:2,ncol=1))
+for(archive in dir()){
+  jaime <- read.csv(archive)
+  fa_AN <- NULL
+  hits_AN <- NULL
+  fa_AS <- NULL
+  fa_AS <- NULL
+  hits_AN <- NULL
+  hits_AS <- NULL
+  hits_BS <- NULL
+  hits_BN <- NULL
+  { fa_AN <- sum(jaime$Falsas.alarmas[jaime$Estimulo>=161&jaime$Estimulo<=320]=='True')
+  fa_AS <- sum(jaime$Falsas.alarmas[jaime$Estimulo>=1&jaime$Estimulo<=160]=='True')
+  hits_AS <- sum(jaime$Hits[jaime$Estimulo>=1&jaime$Estimulo<=160]=='True')
+  hits_AN <- sum(jaime$Hits[jaime$Estimulo>=161&jaime$Estimulo<=320]=='True')
+  fa_BN <- sum(jaime$Falsas.alarmas[jaime$Estimulo>=481&jaime$Estimulo<=640]=='True')
+  fa_BS <- sum(jaime$Falsas.alarmas[jaime$Estimulo>=321&jaime$Estimulo<=480]=='True')
+  hits_BS <- sum(jaime$Hits[jaime$Estimulo>=321&jaime$Estimulo<=480]=='True')
+  hits_BN <- sum(jaime$Hits[jaime$Estimulo>=481&jaime$Estimulo<=640]=='True')
+  FAr_an <- fa_AN/160 
+  Hr_as <- hits_AS/160
+  FAr_bn <- fa_BN/160
+  Hr_bs <- hits_BS/160
+  print(c(fa_AN[length(fa_AN)], 
+          FAr_an[length(FAr_an)], 
+          fa_BN[length(fa_BN)], 
+          FAr_bn[length(FAr_bn)], 
+          hits_BS[length(hits_BS)], 
+          Hr_bs[length(Hr_bs)], 
+          hits_AS[length(hits_AS)], 
+          Hr_as[length(Hr_as)]))
+  k_A <- qnorm(1-FAr_an,0,1)
+  d_A <- qnorm(Hr_as,0,1)-qnorm(FAr_an,0,1)
+  c_A <- k_A-(d_A/2)                    
+  beta_A <- dnorm(k_A,d_A,1)/dnorm(k_A,0,1)
+  k_B <- qnorm(1-FAr_bn,0,1)
+  d_B <-qnorm(Hr_bs,0,1)-qnorm(FAr_bn,0,1)
+  c_B <-k_B-(d_B/2)                    
+  beta_B <-dnorm(k_B,d_B,1)/dnorm(k_B,0,1)
+  
+  }
+  
+  ####### Outcome
+  
+  plot(beta_B,type='o',pch=16,col='white',ylim=c(0,10), yaxt='n', xaxt='n', ann=F)
+  axis(1,at=c(0.7,0.9,1.1,1.3),labels=c("AN","BN","BS","AS"))
+  axis(2,at=c(2.5,7.5),labels=c("Rate","No."),las=0)
+  abline(5,c(0.1,0.1), col="black",lwd=1)
+  abline(v=.8,h=c(-10,15),col='black')
+  abline(v=1,h=c(-10,15),col='black')
+  abline(v=1.2,h=c(-10,15),col='black')
+  text(.7,2.5,paste(FAr_an),cex=1,col='royalblue4')
+  text(.9,2.5,paste(FAr_bn),cex=1,col='royalblue4')
+  text(1.1,2.5,paste(Hr_bs),cex=1,col='royalblue4')
+  text(1.3,2.5,paste(Hr_as),cex=1,col='royalblue4')
+  text(.7,7.5,paste(fa_AN),cex=1,col='lightblue4')
+  text(.9,7.5,paste(fa_BN),cex=1,col='lightblue4')
+  text(1.1,7.5,paste(hits_BS),cex=1,col='lightblue4')
+  text(1.3,7.5,paste(hits_AS),cex=1,col='lightblue4')
+  mtext(archive,3,cex=.8)
+  #text(1.5,.8,paste('Hits & F.A. rate'),cex=1,col='blue',f=2)
+  #mtext(archive,3,cex=.8)
+  title("Yes/No Task", outer = TRUE, line = -2)
+  #points(hits,type='o',pch=16,col='black')
+  
+  fa <- NULL
+  hits <- NULL
+  conf <- NULL
+  for(nce in sort(unique(jaime$tipo))){
+    fa <- append(fa, sum(jaime$Falsas.alarmas[jaime$tipo==nce]=='True'))
+    hits <- append(hits, sum(jaime$Hits[jaime$tipo==nce]=='True'))
+    rate <- (fa+hits)/160
+    print(c(nce,
+            fa[length(fa)],
+            hits[length(hits)],
+            rate[length(rate)]))
+    
+  }
+  
+  plot(rate,type='o',pch=16,col='royalblue',ylim=c(0,1),axes=F , ann=F)
+  axis(1,at=1:4,labels=sort(unique(jaime$tipo)))
+  axis(2,at=c(0, 0.15, 0.30, 0.45, 0.60, 0.75, 0.90, 1),labels=c("0",".15",".30",".45",".60", ".75", ".90", "1"),las=1)
+  text(1.1,rate[1]+.1,paste(rate[1]),cex=1,col='blue',f=2)
+  text(1.9,rate[2]+.1,paste(rate[2]),cex=1,col='blue',f=2)
+  text(3.1,rate[3]-.1,paste(rate[3]),cex=1,col='blue',f=2)
+  text(3.9,rate[4]-.1,paste(rate[4]),cex=1,col='blue',f=2)
+  text(1.5,.8,paste('Hits & F.A. rate'),cex=1,col='blue',f=2)
+}  
+
+dev.off()
+  #points(hits,type='o',pch=16,col='red')
+
+######Confidence Rating
+  
+rm(list=ls())
+#pdf_name<-'MirrorEff_Tendencies in ConfidenceR Means.pdf'
+pdf(file="~/Desktop/Felisa/Tesis/Tesis - Base de datos/Mirror Experimento 2/Data/PDFS_Exp2/MirrorEff_Tendencies in ConfidenceR Means.pdf", width=8, height=8)
+layout(matrix(1:2,ncol=1))
+for(archive in dir()){
+  jaime <- read.csv(archive)
+  
+  C_AS <- NULL
+  C_AN <- NULL
+  C_BS <- NULL
+  C_BN <- NULL
+  
+  for(nce in sort(jaime$Estimulo)){
+    C_AS <- sum(jaime$Confidence[jaime$tipo=='4 AS'])/160
+    C_AN <- sum(jaime$Confidence[jaime$tipo=='1 AN'])/160
+    C_BS <- sum(jaime$Confidence[jaime$tipo=='3 BS'])/160
+    C_BN <- sum(jaime$Confidence[jaime$tipo=='2 BN'])/160
+    Confidence <- c(C_AN, C_BN, C_BS, C_AS)
+  }
+  
+  plot(Confidence,type='o',pch=16,col='white',ylim=c(0,6), yaxt='n', xaxt='n', ann=F)
+  #axis(1,at=c(0,6),labels=c("AN","BN","BS","AS"), col='white')
+  #axis(2,at=c(2.5,7.5),labels=c("Rate","No."),las=0)
+  abline(3,c(0.1,0.1), col="black",lwd=1)
+  abline(v=1.75,h=c(-10,15),col='black')
+  abline(v=2.5,h=c(-10,15),col='black')
+  abline(v=3.4,h=c(-10,15),col='black')
+  text(1.3,1.5,paste(C_AN),cex=1,col='royalblue4')
+  text(2.2,1.5,paste(C_BN),cex=1,col='royalblue4')
+  text(2.9,1.5,paste(C_BS),cex=1,col='royalblue4')
+  text(3.75,1.5,paste(C_AS),cex=1,col='royalblue4')
+  text(1.3,4.5,paste('R(AN)'),cex=1,col='royalblue4')
+  text(2.2,4.5,paste('R(BN)'),cex=1,col='royalblue4')
+  text(2.9,4.5,paste('R(BS)'),cex=1,col='royalblue4')
+  text(3.75,4.5,paste('R(AS)'),cex=1,col='royalblue4')
+  mtext(archive,3,cex=.8)
+  #text(1.5,.8,paste('Hits & F.A. rate'),cex=1,col='blue',f=2)
+  #mtext(archive,3,cex=.8)
+  title("Confidence Rating", outer = TRUE, line = -2)
+  #points(hits,type='o',pch=16,col='black')
+  
+  plot(Confidence,type='o',pch=16,col='maroon2',ylim=c(0,6),axes=F , ann=F)
+  axis(1,at=1:4,labels=sort(unique(jaime$tipo)))
+  axis(2,at=c(0, 1, 2, 3, 4, 5, 6),labels=c("0","1", "2","3","4","5","6"),las=1)
+  text(1.1,C_AN+.5,paste(C_AN),cex=1,col='violetred',f=2)
+  text(1.9,C_BN+.5,paste(C_BN),cex=1,col='violetred',f=2)
+  text(3.1,C_BS-.5,paste(C_BS),cex=1,col='violetred',f=2)
+  text(3.9,C_BS-.5,paste(C_AS),cex=1,col='violetred',f=2)
+  text(1.5,5.5,paste('Confidence Rate'),cex=1,col='violetred4',f=2)
+  
+  
+}
+dev.off()
+
+
+####################################################
+####################################################
+##################### Aciertos y errores x Ensayo
+rm(list=ls())
+#pdf_name<-'PerTrial_CumulativeSuccesses.pdf'
+pdf(file="~/Desktop/Felisa/Tesis/Tesis - Base de datos/Mirror Experimento 2/Data/PDFS_Exp2/PerTrial_CumulativeSuccesses.pdf", width=8, height=8)
+layout(matrix(1:4,ncol=2))
+for(archive in dir()){
+  
+  jaime <- read.csv(archive)
+  jaime$Ensayo <- as.character(jaime$Ensayo)
+  cafe <- strsplit(as.character(jaime$Ensayo),split='-')
+  
+  plot(jaime$Aciertos,type='o',pch=16, col='green', lwd=.5, ylim=c(0,640),axes=F , ann = F )
+  axis(1,at=1:640,labels=c(1:640))
+  #axis(2,at=0:10,labels=c("0", "1","2","3","4","5","6","7","8","9","10"))
+  points(jaime$Errores,type='o', lty=1, lwd=.5, pch=16, col='red')
+  mtext(archive,3,cex=.8)
+  text(70,500,paste('Aciertos'),cex=1,col='chartreuse4',f=2)
+  text(70,400,paste('Errores'),cex=1,col='red',f=2)
+  title("Aciertos y errores por ensayo", outer = TRUE, line = -2)
+  
+  
+  plot(jaime$Exito[1:215],type='o',pch=16, col='darkgreen',ylim=c(0,1),axes=F , ann = F )
+  axis(1,at=1:215,labels=c(1:215))
+  axis(2,at=c(0,1), labels=c('Fail', 'Success'))
+  mtext('1-215',3,cex=.8)
+  
+  plot(jaime$Exito[216:430],type='o',pch=16, col='darkgreen',ylim=c(0,1),axes=F , ann = F )
+  axis(1,at=1:215,labels=c(216:430))
+  axis(2,at=c(0,1), labels=c('Fail', 'Success'))
+  mtext('216-430',3,cex=.8)
+  
+  plot(jaime$Exito[431:640],type='o',pch=16, col='darkgreen',ylim=c(0,1),axes=F , ann = F )
+  axis(1,at=1:210,labels=c(431:640))
+  axis(2,at=c(0,1), labels=c('Fail', 'Success'))
+  mtext('431-640',3,cex=.8)
+}
+dev.off()
+
+#############################################
+#############################################
+######### Contadores x Ensayo
+
+rm(list=ls())
+#pdf_name<-'PerTrial_Counters_H-FA-M-R.pdf'
+pdf(file="~/Desktop/Felisa/Tesis/Tesis - Base de datos/Mirror Experimento 2/Data/PDFS_Exp2/PerTrial_Counters_H-FA-M-R.pdf", width=8, height=8)
+layout(matrix(1:4,ncol=2))
+for(archive in dir()){
+  jaime <- read.csv(archive)
+  jaime$Ensayo <- as.character(jaime$Ensayo)
+  cafe <- strsplit(as.character(jaime$Ensayo),split='-')
+
+  plot(jaime$ContadorH,type='o',pch=16, col='blue',ylim=c(0,320),axes=F , ann = F )
+  axis(1,at=1:640,labels=sort(unique(jaime$Ensayo)))
+  #axis(2,at=0:10,labels=c("0", "1","2","3","4","5","6","7","8","9","10"))
+  points(jaime$ContadorF,type='o', lty=3, pch=16, col='red')
+  points(jaime$ContadorM,type='o', lty=3, pch=16, col='purple')
+  points(jaime$ContadorR,type='o', lty=3, pch=16, col='green')
+  text(646,jaime$ContadorF[639]+20,paste("FA"),cex=1,col='red',f=2)
+  text(646,jaime$ContadorM[630]+20,paste("M"),cex=1,col='purple',f=2)
+  text(646,jaime$ContadorR[639]+20,paste("R"),cex=1,col='green',f=2)
+  text(646,jaime$ContadorH[639]+20,paste("H"),cex=1,col='blue',f=2)
+  mtext(archive,3,cex=.8)
+  title("Contadores por ensayo", outer = TRUE, line = -2)
+  
+  plot(jaime$outcome[1:215],type='o',pch=16, col='deepskyblue4',ylim=c(1,4),axes=F , ann = F )
+  axis(1,at=1:215,labels=c(1:215))
+  axis(2,at=c(1,2,3,4), labels=c('F.Alarma', 'Miss', 'Rejection', 'Hit'))
+  mtext('1-215',3,cex=.8)
+  
+  plot(jaime$outcome[216:430],type='o',pch=16, col='deepskyblue4',ylim=c(1,4),axes=F , ann = F )
+  axis(1,at=1:215,labels=c(216:430))
+  axis(2,at=c(1,2,3,4), labels=c('F.Alarma', 'Miss', 'Rejection', 'Hit'))
+  mtext('216-430',3,cex=.8)
+  
+  plot(jaime$outcome[431:640],type='o',pch=16, col='deepskyblue4',ylim=c(1,4),axes=F , ann = F )
+  axis(1,at=1:210,labels=c(431:640))
+  axis(2,at=c(1,2,3,4), labels=c('F.Alarma','Miss','Rejection','Hit'))
+  mtext('431-640',3,cex=.8)
+  
+}
+
+dev.off()
+
+#######################
+######################
+######################
+#Response Time (1 y 2) across trials
+
+
+rm(list=ls())
+#pdf_name<-'PerTrial_RT 1 & 2.pdf'
+pdf(file="~/Desktop/Felisa/Tesis/Tesis - Base de datos/Mirror Experimento 2/Data/PDFS_Exp2/PerTrial_RT 1 & 2.pdf", width=8, height=8)
+layout(matrix(1:4,ncol=2))
+for(archive in dir()){
+  
+  jaime <- read.csv(archive)
+  jaime$Ensayo <- as.character(jaime$Ensayo)
+  cafe <- strsplit(as.character(jaime$Ensayo),split='-')
+  
+  plot(jaime$RTime1,type='o',pch=16, col='purple',ylim=c(0,16),axes=F , ann = F )
+  axis(1,at=1:640,labels=sort(unique(jaime$Ensayo)))
+  axis(2,at=c(0,2,4,6,8,10,12,14,16),labels=c("0","2","4","6","8","10","12","14","16"))
+  points(jaime$RTime2,type='o', lty=3, pch=16, col='brown')
+  text(100,14,paste('Estimulo'),cex=1,col='purple',f=2)
+  text(100,10,paste('Escala'),cex=1,col='brown',f=2)
+  mtext(archive,3,cex=.8)
+  title("ResponseTime per Trial", outer = TRUE, line = -2)
+}
+
+dev.off()
+################################
+################################
+#RT en Intervalos de 150 ensayos.
+
+rm(list=ls())
+#pdf_name<-'PerTrial_RT 1 &  RT 2.pdf'
+pdf(file="~/Desktop/Felisa/Tesis/Tesis - Base de datos/Mirror Experimento 2/Data/PDFS_Exp2/PerTrial_RT 1 &  RT 2.pdf", width=8, height=8)
+layout(matrix(1:4,ncol=2))
+for(archive in dir()){
+  jaime <- read.csv(archive)
+  jaime$Ensayo <- as.character(jaime$Ensayo)
+  cafe <- strsplit(as.character(jaime$Ensayo),split='-')
+  
+  {plot(jaime$RTime1[1:160],type='o',pch=16, col='darkorange',ylim=c(1,10),axes=F , ann = F )
+  axis(1,at=1:160,labels=c(1:160))
+  axis(2,at=0:20,labels=c(0:20))
+  text(145,9.5,paste("1-160"),cex=1,col='darkorange',f=2)
+  mtext(archive,3,cex=.8)
+  
+  
+  plot(jaime$RTime1[161:320],type='o',pch=16, col='darkorange1',ylim=c(1,10),axes=F , ann = F )
+  axis(1,at=1:160,labels=c(161:320))
+  axis(2,at=0:20,labels=c(0:20))
+  text(145,9,paste("161-320"),cex=1,col='darkorange1',f=2)
+  
+  
+  plot(jaime$RTime1[321:480],type='o',pch=16, col='darkorange2',ylim=c(1,10),axes=F , ann = F )
+  axis(1,at=1:160,labels=c(321:480))
+  axis(2,at=0:20,labels=c(0:20))
+  text(145,8.5,paste("321-480"),cex=1,col='darkorange2',f=2)
+  
+  
+  plot(jaime$RTime1[481:640],type='o',pch=16, col='darkorange3',ylim=c(1,10),axes=F , ann = F )
+  axis(1,at=1:160,labels=c(481:640))
+  axis(2,at=0:20,labels=c(0:20))
+  text(145,8,paste("481-640"),cex=1,col='darkorange3',f=2)
+  # text(170,7.5,paste("5"),cex=1,col='violet',f=2)
+  title("Response Time to the Stimulus", outer = TRUE, line = -2)
+  
+  }  
+  {plot(jaime$RTime2[1:160],type='o',pch=16, col='violetred1',ylim=c(0,10),axes=F , ann = F )
+  axis(1,at=1:160,labels=c(1:160))
+  axis(2,at=0:20,labels=c(0:20))
+  text(145,9.5,paste("1-160"),cex=1,col='violetred1',f=2)
+  mtext(archive,3,cex=.8)
+  
+  
+  plot(jaime$RTime2[161:320],type='o',pch=16, col='violetred2',ylim=c(0,10),axes=F , ann = F )
+  axis(1,at=1:160,labels=c(161:320))
+  axis(2,at=0:20,labels=c(0:20))
+  text(145,9,paste("161-320"),cex=1,col='violetred2',f=2)
+  
+  
+  plot(jaime$RTime2[321:480],type='o',pch=16, col='violetred3',ylim=c(0,10),axes=F , ann = F )
+  axis(1,at=1:160,labels=c(321:480))
+  axis(2,at=0:20,labels=c(0:20))
+  text(145,8.5,paste("321-480"),cex=1,col='violetred3',f=2)
+  
+  
+  plot(jaime$RTime2[481:640],type='o',pch=16, col='violetred4',ylim=c(0,10),axes=F , ann = F )
+  axis(1,at=1:160,labels=c(481:640))
+  axis(2,at=0:20,labels=c(0:20))
+  text(145,8,paste("481-640"),cex=1,col='violetred4',f=2)
+  # text(170,7.5,paste("5"),cex=1,col='violet',f=2)
+  title( "Response Time to the scale", outer = TRUE, line = -2)
+  
+}}
+dev.off()
+############################
+############################
+######### Confidence por ENSAYO
+
+rm(list=ls())
+#pdf_name<-'PerTrial_ConfidenceRate.pdf'
+pdf(file="~/Desktop/Felisa/Tesis/Tesis - Base de datos/Mirror Experimento 2/Data/PDFS_Exp2/PerTrial_ConfidenceRate.pdf", width=8, height=8)
+layout(matrix(1:4,ncol=2))
+for(archive in dir()){
+  
+  jaime <- read.csv(archive)
+  jaime$Ensayo <- as.character(jaime$Ensayo)
+  cafe <- strsplit(as.character(jaime$Ensayo),split='-')
+  
+  plot(jaime$Confidence[1:160],type='o',pch=16, col='darkorchid',ylim=c(1,10),axes=F , ylab='Confidence Value', xlab='Trial' )
+  axis(1,at=1:160,labels=c(1:160))
+  axis(2,at=1:6,labels=c("1","2","3","4","5","6"))
+  text(140,9.5,paste("1-160"),cex=1,col='darkorchid',f=2)
+  mtext(archive,3,cex=.8)
+  
+  plot(jaime$Confidence[161:320],type='o',pch=16, col='darkorchid3',ylim=c(1,10),axes=F , ann = F )
+  axis(1,at=1:160,labels=c(161:320))
+  axis(2,at=1:6,labels=c("1","2","3","4","5","6"))
+  text(140,9,paste("161-320"),cex=1,col='darkorchid3',f=2)
+  
+  
+  plot(jaime$Confidence[321:480],type='o',pch=16, col='darkorchid2',ylim=c(1,10),axes=F , ann = F )
+  axis(1,at=1:160,labels=c(321:480))
+  axis(2,at=1:6,labels=c("1","2","3","4","5","6"))
+  text(140,8.5,paste("321-480"),cex=1,col='darkorchid2',f=2)
+  
+  
+  plot(jaime$Confidence[481:640],type='o',pch=16, col='darkorchid1',ylim=c(1,10),axes=F , ann = F )
+  axis(1,at=1:160,labels=c(481:640))
+  axis(2,at=1:6,labels=c("1","2","3","4","5","6"))
+  text(140,8,paste("481-640"),cex=1,col='darkorchid1',f=2)
+  title( "ConfidenceRate per Trial", outer = TRUE, line = -2)
+ 
+}
+dev.off()
+
+############################
+######### Choice por ENSAYO
+
+rm(list=ls())
+#pdf_name<-'PerTrial_Choices.pdf'
+pdf(file="~/Desktop/Felisa/Tesis/Tesis - Base de datos/Mirror Experimento 2/Data/PDFS_Exp2/PerTrial_Choices.pdf", width=8, height=8)
+layout(matrix(1:8,ncol=2))
+for(archive in dir()){
+  
+  jaime <- read.csv(archive)
+  jaime$Ensayo <- as.character(jaime$Ensayo)
+  cafe <- strsplit(as.character(jaime$Ensayo),split='-')
+  
+  colp <- c('deepskyblue3','darkorchid3', 'green', 'red', 'orange')
+  
+  #Choice sola
+  
+  plot(jaime$choice[1:160],type='o',pch=16, col='black',ylim=c(0,1),axes=F , ylab='Respuesta', xlab='Trial' )
+  axis(1,at=1:160,labels=c(1:160))
+  axis(2,at=0:1,labels=c("No","S?"))
+  text(140,9.5,paste("1-160"),cex=1,col='darkorchid',f=2)
+  mtext(archive,3,cex=.8)
+  
+  plot(jaime$choice[161:320],type='o',pch=16, col='black',ylim=c(0,1),axes=F , ann = F )
+  axis(1,at=1:160,labels=c(161:320))
+  axis(2,at=0:1,labels=c("No","S?"))
+  text(140,9,paste("161-320"),cex=1,col='darkorchid3',f=2)
+  
+  
+  plot(jaime$choice[321:480],type='o',pch=16, col='black',ylim=c(0,1),axes=F , ann = F )
+  axis(1,at=1:160,labels=c(321:480))
+  axis(2,at=0:1,labels=c("No","S?"))
+  text(140,8.5,paste("321-480"),cex=1,col='darkorchid2',f=2)
+  
+  plot(jaime$choice[481:640],type='o',pch=16, col='black',ylim=c(0,1),axes=F , ann = F )
+  axis(1,at=1:160,labels=c(481:640))
+  axis(2,at=0:1,labels=c("No","S?"))
+  text(140,8,paste("481-640"),cex=1,col='darkorchid1',f=2)
+  title( "Choice per trial", outer = TRUE, line = -2)
+  
+  ### Choice por FACIL DIFICIL
+  
+  
+  plot(jaime$choice[1:160],type='o',pch=16, col='black',ylim=c(0,1),axes=F , ylab='Respuesta', xlab='Trial' )
+  axis(1,at=1:160,labels=c(1:160))
+  axis(2,at=0:1,labels=c("No","S?"))
+  for (a in 1:160){
+    if (jaime$facilidad[a] == 'pocos'){
+      points(a,jaime$choice[a],pch=16,col=colp[1])}
+    if (jaime$facilidad[a] == 'muchos'){
+      points(a,jaime$choice[a],pch=16,col=colp[2])}}
+  text(140,9.5,paste("1-160"),cex=1,col='darkorchid',f=2)
+  mtext("A-B",3,cex=.8)
+  
+  plot(jaime$choice[161:320],type='o',pch=16, col='black',ylim=c(0,1),axes=F , ann = F )
+  axis(1,at=1:160,labels=c(161:320))
+  axis(2,at=0:1,labels=c("No","S?"))
+  for (a in 1:160){
+    if (jaime$facilidad[a] == 'pocos'){
+      points(a,jaime$choice[a+160],pch=16,col=colp[1])}
+    if (jaime$facilidad[a] == 'muchos'){
+      points(a,jaime$choice[a+160],pch=16,col=colp[2])}}
+  text(140,9,paste("161-320"),cex=1,col='darkorchid3',f=2)
+  
+  
+  plot(jaime$choice[321:480],type='o',pch=16, col='black',ylim=c(0,1),axes=F , ann = F )
+  axis(1,at=1:160,labels=c(321:480))
+  axis(2,at=0:1,labels=c("No","S?"))
+  for (a in 1:160){
+    if (jaime$facilidad[a] == 'pocos'){
+      points(a,jaime$choice[a+320],pch=16,col=colp[1])}
+    if (jaime$facilidad[a] == 'muchos'){
+      points(a,jaime$choice[a+320],pch=16,col=colp[2])}}
+  text(140,8.5,paste("321-480"),cex=1,col='darkorchid2',f=2)
+  
+  plot(jaime$choice[481:640],type='o',pch=16, col='black',ylim=c(0,1),axes=F , ann = F )
+  axis(1,at=1:160,labels=c(481:640))
+  axis(2,at=0:1,labels=c("No","S?"))
+  for (a in 1:160){
+    if (jaime$facilidad[a] == 'pocos'){
+      points(a,jaime$choice[a+480],pch=16,col=colp[1])}
+    if (jaime$facilidad[a] == 'muchos'){
+      points(a,jaime$choice[a+480],pch=16,col=colp[2])}}
+  text(140,8,paste("481-640"),cex=1,col='darkorchid1',f=2)
+  #title( "Choice per Trial ", outer = TRUE, line = -2)
+  
+  ##### Choice por SENAL
+  
+  plot(jaime$choice[1:160],type='o',pch=16, col='black',ylim=c(0,1),axes=F , ylab='Respuesta', xlab='Trial' )
+  axis(1,at=1:160,labels=c(1:160))
+  axis(2,at=0:1,labels=c("No","S?"))
+  for (a in 1:160){
+    if (jaime$senal[a] == 'senal'){
+      points(a,jaime$choice[a],pch=16,col=colp[3])}
+    if (jaime$senal[a] == 'ruido'){
+      points(a,jaime$choice[a],pch=16,col=colp[4])}}
+  text(140,9.5,paste("1-160"),cex=1,col='darkorchid',f=2)
+  mtext("Signal - Noise",3,cex=.8)
+  
+  plot(jaime$choice[161:320],type='o',pch=16, col='black',ylim=c(0,1),axes=F , ann = F )
+  axis(1,at=1:160,labels=c(161:320))
+  axis(2,at=0:1,labels=c("No","S?"))
+  for (a in 1:160){
+    if (jaime$senal[a] == 'senal'){
+      points(a,jaime$choice[a+160],pch=16,col=colp[3])}
+    if (jaime$senal[a] == 'ruido'){
+      points(a,jaime$choice[a+160],pch=16,col=colp[4])}}
+  text(140,9,paste("161-320"),cex=1,col='darkorchid3',f=2)
+  
+  
+  plot(jaime$choice[321:480],type='o',pch=16, col='black',ylim=c(0,1),axes=F , ann = F )
+  axis(1,at=1:160,labels=c(321:480))
+  axis(2,at=0:1,labels=c("No","S?"))
+  for (a in 1:160){
+    if (jaime$senal[a] == 'senal'){
+      points(a,jaime$choice[a+320],pch=16,col=colp[3])}
+    if (jaime$senal[a] == 'ruido'){
+      points(a,jaime$choice[a+320],pch=16,col=colp[4])}}
+  text(140,8.5,paste("321-480"),cex=1,col='darkorchid2',f=2)
+  
+  plot(jaime$choice[481:640],type='o',pch=16, col='black',ylim=c(0,1),axes=F , ann = F )
+  axis(1,at=1:160,labels=c(481:640))
+  axis(2,at=0:1,labels=c("No","S?"))
+  for (a in 1:160){
+    if (jaime$senal[a] == 'senal'){
+      points(a,jaime$choice[a+480],pch=16,col=colp[3])}
+    if (jaime$senal[a] == 'ruido'){
+      points(a,jaime$choice[a+480],pch=16,col=colp[4])}}
+  text(140,8,paste("481-640"),cex=1,col='darkorchid1',f=2)
+  #title( "Choice por Ensayo (Signal - Noise )", outer = TRUE, line = -2)
+  
+  
+  ##### Choice por COLOR
+  
+  plot(jaime$choice[1:160],type='o',pch=16, col='black',ylim=c(0,1),axes=F , ylab='Respuesta', xlab='Trial' )
+  axis(1,at=1:160,labels=c(1:160))
+  axis(2,at=0:1,labels=c("No","S?"))
+  for (a in 1:160){
+    if (jaime$color[a] == 'purpura'){
+      points(a,jaime$choice[a],pch=16,col=colp[2])}
+    if (jaime$color[a] == 'naranja'){
+      points(a,jaime$choice[a],pch=16,col=colp[5])}
+    if (jaime$color[a] == 'azul'){
+      points(a,jaime$choice[a],pch=16,col=colp[1])}
+    if (jaime$color[a] == 'verde'){
+      points(a,jaime$choice[a],pch=16,col=colp[3])}}
+  text(140,9.5,paste("1-160"),cex=1,col='darkorchid',f=2)
+  mtext("COLOR",3,cex=.8)
+  
+  plot(jaime$choice[161:320],type='o',pch=16, col='black',ylim=c(0,1),axes=F , ann = F )
+  axis(1,at=1:160,labels=c(161:320))
+  axis(2,at=0:1,labels=c("No","S?"))
+  for (a in 1:160){
+    if (jaime$color[a] == 'purpura'){
+      points(a,jaime$choice[a+160],pch=16,col=colp[2])}
+    if (jaime$color[a] == 'naranja'){
+      points(a,jaime$choice[a+160],pch=16,col=colp[5])}
+    if (jaime$color[a] == 'azul'){
+      points(a,jaime$choice[a+160],pch=16,col=colp[1])}
+    if (jaime$color[a] == 'verde'){
+      points(a,jaime$choice[a+160],pch=16,col=colp[3])}}
+  text(140,9,paste("161-320"),cex=1,col='darkorchid3',f=2)
+  
+  
+  plot(jaime$choice[321:480],type='o',pch=16, col='black',ylim=c(0,1),axes=F , ann = F )
+  axis(1,at=1:160,labels=c(321:480))
+  axis(2,at=0:1,labels=c("No","S?"))
+  for (a in 1:160){
+    if (jaime$color[a] == 'purpura'){
+      points(a,jaime$choice[a+320],pch=16,col=colp[2])}
+    if (jaime$color[a] == 'naranja'){
+      points(a,jaime$choice[a+320],pch=16,col=colp[5])}
+    if (jaime$color[a] == 'azul'){
+      points(a,jaime$choice[a+320],pch=16,col=colp[1])}
+    if (jaime$color[a] == 'verde'){
+      points(a,jaime$choice[a+320],pch=16,col=colp[3])}}
+  text(140,8.5,paste("321-480"),cex=1,col='darkorchid2',f=2)
+  
+  plot(jaime$choice[481:640],type='o',pch=16, col='black',ylim=c(0,1),axes=F , ann = F )
+  axis(1,at=1:160,labels=c(481:640))
+  axis(2,at=0:1,labels=c("No","S?"))
+  for (a in 1:160){
+    if (jaime$color[a] == 'purpura'){
+      points(a,jaime$choice[a+480],pch=16,col=colp[2])}
+    if (jaime$color[a] == 'naranja'){
+      points(a,jaime$choice[a+480],pch=16,col=colp[5])}
+    if (jaime$color[a] == 'guinda'){
+      points(a,jaime$choice[a+480],pch=16,col=colp[4])}
+    if (jaime$color[a] == 'azul'){
+      points(a,jaime$choice[a+480],pch=16,col=colp[1])}
+    if (jaime$color[a] == 'verde'){
+      points(a,jaime$choice[a+480],pch=16,col=colp[3])}}
+  text(140,8,paste("481-640"),cex=1,col='darkorchid1',f=2)
+  #title( "Choice por Ensayo (Color)", outer = TRUE, line = -2)
+}
+dev.off()
+
+############################
+############################
+# Hits y Falsas alarmas x  No. Circulos externos
+
+rm(list=ls())
+pdf_name<-'Correlation_H-FA_External.pdf'
+pdf(file="~/Desktop/Felisa/Tesis/Tesis - Base de datos/Mirror Experimento 2/Data/PDFS_Exp2/Correlation_H-FA_External.pdf", width=8, height=8)
+layout(matrix(1:4,ncol=2))
+for(archive in dir()){
+  jaime <- read.csv(archive)
+  jaime$num_circulos_externos <- as.character(jaime$num_circulos_externos)
+  cafe <- strsplit(as.character(jaime$num_circulos_externos),split='-')
+  #index <- which(jaime$facilidad=='muchos')
+  
+  
+  #for(i in index){
+  #  jaime$num_circulos_externos[i] <- paste(as.numeric(cafe[[i]])+5,collapse = '-')
+  #
+  
+  fa <- NULL
+  hits <- NULL
+  for(nce in sort(unique(jaime$num_circulos_externos))){
+    fa <- append(fa, sum(jaime$Falsas.alarmas[jaime$num_circulos_externos==nce]=='True'))
+    hits <- append(hits,sum(jaime$Hits[jaime$num_circulos_externos==nce]=='True'))
+    print(c(nce,
+            fa[length(fa)],
+            hits[length(hits)]))
+    
+  }
+  
+  plot(hits,type='o',pch=16,col='blue',ylim=c(50,100),axes=F , ann = F )
+  axis(1,at=1:4,labels=sort(unique(jaime$num_circulos_externos)))
+  axis(2,at=c(50, 60, 70, 80, 90, 100),labels=c("50","60","70","80","90","100"),las=1)
+  points(fa,type='o',pch=16,col='red')
+  mtext(archive,3,cex=.8)
+  text(3.5,90,paste('Hits'),cex=1,col='blue',f=2)
+  title("Hits y F. Alarmas por No. Circulos Externos", outer = TRUE, line = -2)
+  
+  plot(fa,type='o',pch=16,col='red',ylim=c(0,50),axes=F , ann = F )
+  axis(1,at=1:4,labels=sort(unique(jaime$num_circulos_externos)))
+  axis(2,at=c(0, 10, 20, 30, 40, 50),labels=c("0", "10","20","30","40","50"),las=1)
+  points(fa,type='o',pch=16,col='red')
+  text(1.5,40,paste('F.A'),cex=1,col='red',f=2)
+  mtext(archive,3,cex=.8)
+  
+}
+dev.off()
+  
+############################3
+#Hits y Falsas Alarmas x Color
+
+rm(list=ls())
+#pdf_name<-'Correlation_H-FA_Color.pdf'
+pdf(file="~/Desktop/Felisa/Tesis/Tesis - Base de datos/Mirror Experimento 2/Data/PDFS_Exp2/Correlation_H-FA_Color.pdf", width=8, height=8)
+layout(matrix(1:4,ncol=2))
+for(archive in dir()){
+  
+  jaime <- read.csv(archive)
+  jaime$color <- as.character(jaime$color)
+  cafe <- strsplit(as.character(jaime$color),split='-')
+  #index <- which(jaime$facilidad=='muchos')
+  
+  
+  #for(i in index){
+  #  jaime$num_circulos_externos[i] <- paste(as.numeric(cafe[[i]])+5,collapse = '-')
+  #}
+  
+  
+  fa <- NULL
+  hits <- NULL
+  for(nce in sort(unique(jaime$color))){
+    fa <- append(fa, sum(jaime$Falsas.alarmas[jaime$color==nce]=='True'))
+    hits <- append(hits,sum(jaime$Hits[jaime$color==nce]=='True'))
+    print(c(nce,
+            fa[length(fa)],
+            hits[length(hits)]))
+    
+  }
+  
+  plot(hits,type='o',pch=16,col='blue',ylim=c(40,80),axes=F , ann = F )
+  axis(2,at=c(40, 50, 60, 70, 80),labels=c("40", "50","60","70","80"),las=1)
+  axis(1,at=1:5,labels=sort(unique(jaime$color)))
+  #points(fa,type='o',pch=16,col='red')
+  text(2,70,paste('Hits'),cex=1,col='blue',f=2)
+  mtext(archive,3,cex=.8)
+  title("Hits y F.A. por Color", outer = TRUE, line = -2)
+  
+ 
+  plot(fa,type='o',pch=16,col='red',ylim=c(0,40),axes=F , ann = F )
+  axis(1,at=1:5,labels=sort(unique(jaime$color)))
+  axis(2,at=c(0, 10, 20, 30, 40),labels=c("0", "10","20","30","40"),las=1)
+  #points(fa,type='o',pch=16,col='red')
+  text(2,30,paste('F.A.'),cex=1,col='red',f=2)
+  mtext(archive,3,cex=.8) 
+ }
+dev.off()
+
+
+
+############
+############################
+###########################
+###########################
+#Hits y Falsas Alarmas  x Tama?o Circulo Central
+
+
+rm(list=ls())
+#pdf_name<-'Correlation_H-Fa_Center.pdf'
+pdf(file="~/Desktop/Felisa/Tesis/Tesis - Base de datos/Mirror Experimento 2/Data/PDFS_Exp2/Correlation_H-Fa_Center.pdf", width=8, height=8)
+layout(matrix(1:4,ncol=2))
+for(archive in dir()){
+  jaime <- read.csv(archive)
+  fa <- NULL
+  hits <- NULL
+  for(nce in sort(unique(jaime$tamano_central))){
+    fa <- append(fa, sum(jaime$Falsas.alarmas[jaime$tamano_central==nce]=='True'))
+    hits <- append(hits,sum(jaime$Hits[jaime$tamano_central==nce]=='True'))
+    print(c(nce,
+            fa[length(fa)],
+            hits[length(hits)]))
+    
+  }
+  
+  plot(fa,type='o',pch=16,col='red',ylim=c(0,50),axes=F , ann=F)
+  axis(1,at=1:8,labels=sort(unique(jaime$tamano_central)))
+  axis(2,at=c(0, 10, 20, 30, 40, 50),labels=c("0", "10","20","30","40","50"),las=1)
+  #points(hits,type='o',pch=16,col='red')
+  text(6,40,paste('F.A.'),cex=1,col='red',f=2)
+  mtext(archive,3,cex=.8)
+  
+  plot(hits,type='o',pch=16,col='blue',ylim=c(50,100),axes=F , ann=F)
+  axis(1,at=1:8,labels=sort(unique(jaime$tamano_central)))
+  axis(2,at=c(50, 60, 70, 80, 90, 100),labels=c("50", "60","70","80","90","100"),las=1)
+  text(2,90 ,paste('Hits'),cex=1,col='blue',f=2)
+  mtext(archive,3,cex=.8)
+  title("Hits y F.A. por Circulo Interno", outer = TRUE, line = -2)
+  
+###########################
+}
+dev.off()
+

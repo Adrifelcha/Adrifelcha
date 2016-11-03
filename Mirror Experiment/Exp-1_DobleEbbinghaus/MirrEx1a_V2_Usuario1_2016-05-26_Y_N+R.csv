@@ -1,0 +1,3 @@
+Ensayo, Estimulo, Respuesta, Correcto, Aciertos, Errores, Hits, ContadorH, Rechazos, ContadorR, Falsas alarmas, ContadorF, Omisiones, ContadorM, Confidence, RTime1, RTime1b, RTime2, Color, 
+0,321,s,True,1,0,True,1,False,0,False,0,False,0,5,2.33830714226,1.33716607094,1.50416588783,Naranja
+1,396,s,True,2,0,True,2,False,0,False,0,False,0,5,1.53558897972,0.534821033478,0.200968027115,Purpura

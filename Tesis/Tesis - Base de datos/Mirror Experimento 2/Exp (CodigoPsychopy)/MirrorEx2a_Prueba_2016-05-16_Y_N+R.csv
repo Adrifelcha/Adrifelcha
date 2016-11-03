@@ -1,0 +1,6 @@
+Ensayo, Estimulo, Respuesta, Correcto, Aciertos, Errores, Hits, ContadorH, Rechazos, ContadorR, Falsas alarmas, ContadorF, Omisiones, ContadorM, Confidence, RTime1, RTime1b, RTime2, 
+0,303,n,True,1,0,False,0,True,1,False,0,False,0,2,2.55200004578,1.05200004578,0.700999975204
+1,576,s,False,1,1,False,0,False,1,True,1,False,0,4,2.17700004578,0.676000118256,0.200999975204
+2,394,n,False,1,2,False,0,False,1,False,1,True,1,2,3.44099998474,1.94099998474,0.924999952316
+3,483,n,True,2,2,False,0,True,2,False,1,False,1,3,2.34400010109,0.844000101089,0.611000061035
+4,321,s,True,3,2,True,1,False,2,False,1,False,1,5,1.65799999237,0.157999992371,1.90300011635

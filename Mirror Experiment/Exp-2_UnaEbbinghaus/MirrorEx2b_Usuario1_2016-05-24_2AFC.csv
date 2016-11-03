@@ -1,0 +1,9 @@
+Ensayo, Estimulo, Comparacion, SignallPosition, Respuesta, Eleccion, OpcionPredicha, RTime1, RTime2, Hits, ContadorH, Rechazos, ContadorR, Falsas alarmas, ContadorF, Omisiones, ContadorM, 
+0,171,6 AN-BN,None,right,BN,1,1.54852414131,0.547376871109,NA,0,NA,0,NA,0,NA,0
+1,80,2 AS-BN,Right,left,BN,0,1.15155792236,0.151319026947,0,0,0,0,1,1,1,1
+2,176,6 AN-BN,None,right,AN,0,1.13642406464,0.135251998901,NA,0,NA,0,NA,1,NA,1
+3,137,5 AS-BS,Both,left,AS,1,1.13412904739,0.132925987244,NA,0,NA,0,NA,1,NA,1
+4,107,4 BS-AN,Left,right,AN,0,1.13456320763,0.133413076401,0,0,0,0,1,2,1,2
+5,95,2 AS-BN,Left,left,AS,1,1.14973187447,0.148996829987,1,1,1,1,0,2,0,2
+6,46,3 BS-BN,Right,right,BS,1,1.14801001549,0.146823883057,1,2,1,2,0,2,0,2
+7,53,3 BS-BN,Left,left,BS,1,1.14955496788,0.148777961731,1,3,1,3,0,2,0,2
