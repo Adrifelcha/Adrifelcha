@@ -54,10 +54,13 @@ myinits <- list(
 # parameters to be monitodeepskyblue3:	
 parameters <- c("d_A", "c_A", "thetah_A", "thetaf_A", "d_B", "c_B", "thetah_B", "thetaf_B","delta")
 
+
+niter <- 10000
+burnin <- 1000
 # Corremos JAGS
 samples <- jags(data, inits=myinits, parameters,
                 model.file ="C:/Users/Alejandro/Desktop/Felisa/Tesis/Modelamiento/DiferenciasDprima/DiffD_Modelo2_DeltaOVERmeanD.txt",
-                n.chains=1, n.iter=10000, n.burnin=1, n.thin=1)
+                n.chains=1, n.iter=niter, n.burnin=burnin, n.thin=1)
 # Now the values for the monitodeepskyblue3 parameters are in the "samples" object, ready for inspection.
 
 
