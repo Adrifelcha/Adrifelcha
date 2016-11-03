@@ -11,7 +11,7 @@ library(R2jags)
 
 
 ######################################################
-experimento <- 2
+experimento <- 1
 #####################################################
 
 
@@ -173,52 +173,50 @@ layout(matrix(c(1,2,3,0),2,2,byrow=T), width=c(2/3, 1/3), heights=c(2/3,1/3))
 if (experimento == 1)
 {
 par(mar=c(2,2,1,0))
-plot(tetaFA_a[keep],tetaH_a[keep], xlab="", ylab="", axes=F,xlim=c(0,0.5), ylim=c(0.5,1))
-points(tetaFA_b[keep],tetaH_b[keep], col="grey")
+plot(tetaFA_a[keep],tetaH_a[keep], col="deepskyblue3", xlab="", ylab="", axes=F,xlim=c(0,0.5), ylim=c(0.5,1))
+points(tetaFA_b[keep],tetaH_b[keep], col="darkorchid3")
+lines(c(0.36, 0.41),c(0.60,0.60), lwd=2, lty=1, col="deepskyblue3")
+lines(c(0.36, 0.41),c(0.55,0.55), lwd=2, lty=1, col="darkorchid3")
+text(0.43, 0.60, labels="A Condition", offset=0, cex = 0.8, pos=4)
+text(0.43, 0.55, labels="B Condition", offset=0, cex = 0.8, pos=4)
 box(lty=1)
 
 par(mar=c(2,1,1,4))
-plot(d.H_a$y, d.H_a$x, xlim=rev(c(0,16)),type='l', axes=F, xlab="", ylab="",ylim=c(0.5,1))
-lines(d.H_b$y, d.H_b$x, col="blue")
+plot(d.H_a$y, d.H_a$x, xlim=rev(c(0,16)),type='l', col="deepskyblue3", axes=F, xlab="", ylab="",ylim=c(0.5,1))
+lines(d.H_b$y, d.H_b$x, col="darkorchid3")
 axis(4)
 mtext(expression(paste(mu, "Hits")), side=4,line=2.3, cex=0.9)
 box(lty=1)
 
 par(mar=c(6,2,0,0))
-plot(density(tetaFA_a),zero.line=F ,main="", ylab="", xlab="", cex.lab=1.3, axes=F, xlim=c(0,0.5),ylim=c(0,26))
-lines(density(tetaFA_b), col="grey")
+plot(density(tetaFA_a),zero.line=F ,main="", col="deepskyblue3", ylab="", xlab="", cex.lab=1.3, axes=F, xlim=c(0,0.5),ylim=c(0,26))
+lines(density(tetaFA_b), col="darkorchid3")
 axis(1, at=c(0, 0.1, 0.2, 0.3, 0.4, 0.5))
 mtext(expression(paste(mu, "False Alarms")), side=1.2,line=2, cex=0.9)
 box(lty=1)
-
-lines(c(0, 0.05),c(0.85,0.85), lwd=2, lty=1, col="deepskyblue3")
-lines(c(0, 0.05),c(0.9,0.9), lwd=2, lty=1, col="darkorchid3")
-text(0.08, 0.85, labels="A Condition", offset=0, cex = 0.8, pos=4)
-text(0.08, 0.9, labels="B Condition", offset=0, cex = 0.8, pos=4)
-
 }
 
 if (experimento == 2){
   
   par(mar=c(2,2,1,0))
-  plot(tetaFA_a[keep],tetaH_a[keep], xlab="", ylab="", axes=F,xlim=c(0,0.5), ylim=c(0.5,1))
-  points(tetaFA_b[keep],tetaH_b[keep], col="grey")
-  lines(c(0, 0.05),c(0.85,0.85), lwd=2, lty=1, col="deepskyblue3")
-  lines(c(0, 0.05),c(0.9,0.9), lwd=2, lty=1, col="darkorchid3")
-  text(0.08, 0.85, labels="A Condition", offset=0, cex = 0.8, pos=4)
-  text(0.08, 0.9, labels="B Condition", offset=0, cex = 0.8, pos=4)
+  plot(tetaFA_a[keep],tetaH_a[keep], xlab="", ylab="", col="deepskyblue3",axes=F,xlim=c(0,0.5), ylim=c(0.5,1))
+  points(tetaFA_b[keep],tetaH_b[keep], col="darkorchid3")
+  lines(c(0, 0.05),c(0.9,0.9), lwd=2, lty=1, col="deepskyblue3")
+  lines(c(0, 0.05),c(0.85,0.85), lwd=2, lty=1, col="darkorchid3")
+  text(0.08, 0.9, labels="A Condition", offset=0, cex = 0.8, pos=4)
+  text(0.08, 0.85, labels="B Condition", offset=0, cex = 0.8, pos=4)
   box(lty=1)
   
   par(mar=c(2,1,1,4))
-  plot(d.H_a$y, d.H_a$x, xlim=rev(c(0,13)),type='l', axes=F, xlab="", ylab="",ylim=c(0.5,1))
-  lines(d.H_b$y, d.H_b$x, col="blue")
+  plot(d.H_a$y, d.H_a$x, xlim=rev(c(0,13)), col= 'deepskyblue3', type='l', axes=F, xlab="", ylab="",ylim=c(0.5,1))
+  lines(d.H_b$y, d.H_b$x, col="darkorchid3")
   axis(4)
   mtext(expression(paste(mu, "Hits")), side=4,line=2.3, cex=0.9)
   box(lty=1)
   
   par(mar=c(6,2,0,0))
-  plot(density(tetaFA_a),zero.line=F ,main="", ylab="", xlab="", cex.lab=1.3, axes=F, xlim=c(0,0.5),ylim=c(0,12))
-  lines(density(tetaFA_b), col="grey")
+  plot(density(tetaFA_a),zero.line=F , col="deepskyblue3", main="", ylab="", xlab="", cex.lab=1.3, axes=F, xlim=c(0,0.5),ylim=c(0,12))
+  lines(density(tetaFA_b), col="darkorchid3")
   axis(1, at=c(0, 0.1, 0.2, 0.3, 0.4, 0.5))
   mtext(expression(paste(mu, "False Alarms")), side=1.2,line=2, cex=0.9)
   box(lty=1)
