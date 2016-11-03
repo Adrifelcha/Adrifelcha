@@ -11,7 +11,7 @@ library(R2jags)
 
 
 ######################################################
-experimento <- 1
+experimento <- 2
 #####################################################
 
 
@@ -62,19 +62,19 @@ samples <- jags(data, inits=myinits, parameters,
 # Now the values for the monitodeepskyblue3 parameters are in the "samples" object, ready for inspection.
 
 for (a in 1:k){
-  d_a <- samples$BUGSoutput$sims.list$d_A
+  d_a <- samples$BUGSoutput$sims.list$d_A[,a]
   }
 
 for (b in 1:k){
-  d_b <- samples$BUGSoutput$sims.list$d_B
+  d_b <- samples$BUGSoutput$sims.list$d_B[,b]
 }
 
 for (c in 1:k){
-  c_a <- samples$BUGSoutput$sims.list$c_A
+  c_a <- samples$BUGSoutput$sims.list$c_A[,c]
 }
 
 for (d in 1:k){
-  c_b <- samples$BUGSoutput$sims.list$c_B
+  c_b <- samples$BUGSoutput$sims.list$c_B[,d]
 }
 
 for (e in 1:k){
@@ -166,6 +166,10 @@ d.FA_a <- density(tetaFA_a)
 d.FA_b <- density(tetaFA_b)
 d.H_a <- density(tetaH_a)
 d.H_b <- density(tetaH_b)
+d.D_a <- density(d_a)
+d.D_b <- density(d_b)
+d.C_a <- density(c_a)
+d.C_b <- density(c_b)
 
 layout(matrix(c(1,2,3,0),2,2,byrow=T), width=c(2/3, 1/3), heights=c(2/3,1/3))
 #layout.show()
@@ -194,6 +198,34 @@ lines(density(tetaFA_b), col="darkorchid3")
 axis(1, at=c(0, 0.1, 0.2, 0.3, 0.4, 0.5))
 mtext(expression(paste(mu, "False Alarms")), side=1.2,line=2, cex=0.9)
 box(lty=1)
+
+# D' y C
+
+par(mar=c(2,2,1,0))
+plot(d_a[keep],c_a[keep], col="deepskyblue3", xlab="", ylab="", axes=F,xlim=c(0,5), ylim=c(-2,2))
+points(d_b[keep],c_b[keep], col="darkorchid3")
+lines(c(0.2, 0.6),c(1.7,1.7), lwd=2, lty=1, col="deepskyblue3")
+lines(c(0.2, 0.6),c(1.4,1.4), lwd=2, lty=1, col="darkorchid3")
+text(0.65, 1.7, labels="A Condition", offset=0, cex = 0.8, pos=4)
+text(0.65, 1.4, labels="B Condition", offset=0, cex = 0.8, pos=4)
+box(lty=1)
+
+par(mar=c(2,1,1,4))
+plot(d.C_a$y, d.C_a$x, xlim=rev(c(0,5)),type='l', col="deepskyblue3", axes=F, xlab="", ylab="",ylim=c(-2,2))
+lines(d.C_b$y, d.C_b$x, col="darkorchid3")
+axis(4)
+mtext(expression(paste(mu, "C")), side=4,line=2.3, cex=0.9)
+box(lty=1)
+
+par(mar=c(6,2,0,0))
+plot(density(d_a),zero.line=F ,main="", col="deepskyblue3", ylab="", xlab="", cex.lab=1.3, axes=F, xlim=c(0,5),ylim=c(0,3))
+lines(density(d_b), col="darkorchid3")
+axis(1, at=c(0.0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4, 4.5, 5))
+mtext(expression(paste(mu, "D")), side=1.2,line=2, cex=0.9)
+box(lty=1)
+
+
+
 }
 
 if (experimento == 2){
@@ -220,5 +252,32 @@ if (experimento == 2){
   axis(1, at=c(0, 0.1, 0.2, 0.3, 0.4, 0.5))
   mtext(expression(paste(mu, "False Alarms")), side=1.2,line=2, cex=0.9)
   box(lty=1)
+  
+  # D' y C
+  
+  par(mar=c(2,2,1,0))
+  plot(d_a[keep],c_a[keep], col="deepskyblue3", xlab="", ylab="", axes=F,xlim=c(0,3), ylim=c(-1,1))
+  points(d_b[keep],c_b[keep], col="darkorchid3")
+  lines(c(0.2, 0.6),c(0.9,0.9), lwd=2, lty=1, col="deepskyblue3")
+  lines(c(0.2, 0.6),c(0.7,0.7), lwd=2, lty=1, col="darkorchid3")
+  text(0.65, 0.9, labels="A Condition", offset=0, cex = 0.8, pos=4)
+  text(0.65, 0.7, labels="B Condition", offset=0, cex = 0.8, pos=4)
+  box(lty=1)
+  
+  par(mar=c(2,1,1,4))
+  plot(d.C_a$y, d.C_a$x, xlim=rev(c(0,6)),type='l', col="deepskyblue3", axes=F, xlab="", ylab="",ylim=c(-1,1))
+  lines(d.C_b$y, d.C_b$x, col="darkorchid3")
+  axis(4)
+  mtext(expression(paste(mu, "C")), side=4,line=2.3, cex=0.9)
+  box(lty=1)
+  
+  par(mar=c(6,2,0,0))
+  plot(density(d_a),zero.line=F ,main="", col="deepskyblue3", ylab="", xlab="", cex.lab=1.3, axes=F, xlim=c(0,3),ylim=c(0,3))
+  lines(density(d_b), col="darkorchid3")
+  axis(1, at=c(0.0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0))
+  mtext(expression(paste(mu, "D prima")), side=1.2,line=2, cex=0.9)
+  box(lty=1)
+  
+
 }
 
