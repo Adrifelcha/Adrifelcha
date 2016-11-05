@@ -13,7 +13,7 @@ library(R2jags)
 
 
 ######################################################
-experimento <- 2
+experimento <- 1
 #####################################################
 
 
@@ -96,20 +96,20 @@ if (experimento ==1)
   
   # Discriminability panel:    
   plot(density(d_a), lwd=2, col="deepskyblue3", main="", ylab="", xlab="", 
-       xlim=c(-1,3), axes=F)
+       xlim=c(0,5), axes=F)
   lines(density(d_b), lwd=2, col="darkorchid3", lty=1)
   axis(1)
   axis(2, labels=F, at=c(0,24))
-  mtext("Probability Density", side=2, line = 2, cex=1.5, las=0)
-  mtext("D-primes", side=1, line = 2.5, cex=1.5)
+  mtext("Probability Density", side=2, line = 2, cex=1, las=0)
+  mtext("D-primes", side=1, line = 2.5, cex=1, font=2)
   # Bias panel:    
   plot(density(c_a), lwd=2, col="deepskyblue3", main="", ylab="", xlab="", 
        xlim=c(-1,1), axes=F)
   axis(1)
   axis(2, labels=F, at=c(0,24))
   lines(density(c_b), lwd=2, col="darkorchid3", lty=1)
-  mtext("Probability Density", side=2, line = 2, cex=1.5, las=0)
-  mtext("C", side=1, line = 2.5, cex=1.5)
+  mtext("Probability Density", side=2, line = 2, cex=1, las=0)
+  mtext("C (Bias)", side=1, line = 2.5, cex=1, font=2)
   # Hit Rate panel:    
   plot(density(tetaH_a), lwd=2, col="deepskyblue3", main="", ylab="", xlab="", 
        xlim=c(0,1), axes=F)
@@ -120,16 +120,16 @@ if (experimento ==1)
   lines(c(0, 0.1),c(10,10), lwd=2, lty=1, col="darkorchid3")
   text(0.15, 12, labels="A Condition", offset=0, cex = 0.8, pos=4)
   text(0.15, 10, labels="B Condition", offset=0, cex = 0.8, pos=4)
-  mtext("Probability Density", side=2, line = 2, cex=1.5, las=0)
-  mtext("Hit Rate", side=1, line = 2.5, cex=1.5)
+  mtext("Probability Density", side=2, line = 2, cex=1, las=0)
+  mtext("Hit Rate", side=1, line = 2.5, cex=1, font=2)
   # False-Alarm Rate panel:    
   plot(density(tetaFA_a), lwd=2, col="deepskyblue3", main="", ylab="", xlab="", 
        xlim=c(0,1), axes=F)
   lines(density(tetaFA_b), lwd=2, col="darkorchid3", lty=1)
   axis(1)
   axis(2, labels=F, at=c(0,24))
-  mtext("Probability Density", side=2, line = 2, cex=1.5, las=0)
-  mtext("False-Alarm Rate", side=1, line = 2.5, cex=1.5)
+  mtext("Probability Density", side=2, line = 2, cex=1, las=0)
+  mtext("False-Alarm Rate", side=1, line = 2.5, cex=1, font=2)
 }
 
 
@@ -144,16 +144,16 @@ plot(density(d_a), lwd=2, col="deepskyblue3", main="", ylab="", xlab="",
 lines(density(d_b), lwd=2, col="darkorchid3", lty=1)
 axis(1)
 axis(2, labels=F, at=c(0,24))
-mtext("Probability Density", side=2, line = 2, cex=1.5, las=0)
-mtext("D-primes", side=1, line = 2.5, cex=1.5)
+mtext("Probability Density", side=2, line = 2, cex=1, las=0)
+mtext("D-primes", side=1, line = 2.5, cex=1, font=2)
 # Bias panel:    
 plot(density(c_a), lwd=2, col="deepskyblue3", main="", ylab="", xlab="", 
      xlim=c(-1,1), axes=F)
 axis(1)
 axis(2, labels=F, at=c(0,24))
 lines(density(c_b), lwd=2, col="darkorchid3", lty=1)
-mtext("Probability Density", side=2, line = 2, cex=1.5, las=0)
-mtext("C", side=1, line = 2.5, cex=1.5)
+mtext("Probability Density", side=2, line = 2, cex=1, las=0)
+mtext("C (Bias)", side=1, line = 2.5, cex=1, font=2)
 # Hit Rate panel:    
 plot(density(tetaH_a), lwd=2, col="deepskyblue3", main="", ylab="", xlab="", 
      xlim=c(0,1), axes=F)
@@ -164,16 +164,16 @@ lines(c(0, 0.1),c(12,12), lwd=2, lty=1, col="deepskyblue3")
 lines(c(0, 0.1),c(10,10), lwd=2, lty=1, col="darkorchid3")
 text(0.15, 12, labels="A Condition", offset=0, cex = 0.8, pos=4)
 text(0.15, 10, labels="B Condition", offset=0, cex = 0.8, pos=4)
-mtext("Probability Density", side=2, line = 2, cex=1.5, las=0)
-mtext("Hit Rate", side=1, line = 2.5, cex=1.5)
+mtext("Probability Density", side=2, line = 2, cex=1, las=0)
+mtext("Hit Rate", side=1, line = 2.5, cex=1, font=2)
 # False-Alarm Rate panel:    
 plot(density(tetaFA_a), lwd=2, col="deepskyblue3", main="", ylab="", xlab="", 
      xlim=c(0,1), axes=F)
 lines(density(tetaFA_b), lwd=2, col="darkorchid3", lty=1)
 axis(1)
 axis(2, labels=F, at=c(0,24))
-mtext("Probability Density", side=2, line = 2, cex=1.5, las=0)
-mtext("False-Alarm Rate", side=1, line = 2.5, cex=1.5)
+mtext("Probability Density", side=2, line = 2, cex=1, las=0)
+mtext("False-Alarm Rate", side=1, line = 2.5, cex=1, font=2)
 }
 
 
@@ -201,15 +201,15 @@ if (experimento ==1)
   points(tetaFA_b[keep],tetaH_b[keep], col="darkorchid3")
   lines(c(0.36, 0.41),c(0.60,0.60), lwd=2, lty=1, col="deepskyblue3")
   lines(c(0.36, 0.41),c(0.55,0.55), lwd=2, lty=1, col="darkorchid3")
-  text(0.43, 0.60, labels="A Condition", offset=0, cex = 0.8, pos=4)
-  text(0.43, 0.55, labels="B Condition", offset=0, cex = 0.8, pos=4)
+  text(0.42, 0.60, labels="A Condition", offset=0, cex = 0.8, pos=4)
+  text(0.42, 0.55, labels="B Condition", offset=0, cex = 0.8, pos=4)
   box(lty=1)
   
   par(mar=c(2,1,1,4))
   plot(d.H_a$y, d.H_a$x, xlim=rev(c(0,16)),type='l', col="deepskyblue3", axes=F, xlab="", ylab="",ylim=c(0.5,1))
   lines(d.H_b$y, d.H_b$x, col="darkorchid3")
   axis(4)
-  mtext(expression(paste(mu, "Hits")), side=4,line=2.3, cex=0.9)
+  mtext(expression(paste(mu, "Hits")), side=4,line=2.3, cex=0.9, las=0)
   box(lty=1)
   
   par(mar=c(6,2,0,0))
@@ -234,14 +234,14 @@ if (experimento ==1)
   plot(d.C_a$y, d.C_a$x, xlim=rev(c(0,5)),type='l', col="deepskyblue3", axes=F, xlab="", ylab="",ylim=c(-2,2))
   lines(d.C_b$y, d.C_b$x, col="darkorchid3")
   axis(4)
-  mtext(expression(paste(mu, "C")), side=4,line=2.3, cex=0.9)
+  mtext(expression(paste(mu, "C")), side=4,line=2.3, cex=0.9, font=2, las=0)
   box(lty=1)
   
   par(mar=c(6,2,0,0))
   plot(density(d_a),zero.line=F ,main="", col="deepskyblue3", ylab="", xlab="", cex.lab=1.3, axes=F, xlim=c(0,5),ylim=c(0,3))
   lines(density(d_b), col="darkorchid3")
   axis(1, at=c(0.0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4, 4.5, 5))
-  mtext(expression(paste(mu, "D")), side=1.2,line=2, cex=0.9)
+  mtext(expression(paste(mu, "D")), side=1.2,line=2, cex=0.9, font=2)
   box(lty=1)
 }
 
@@ -253,15 +253,15 @@ if (experimento ==2)
   points(tetaFA_b[keep],tetaH_b[keep], col="darkorchid3")
   lines(c(0.02, 0.07),c(0.90,0.90), lwd=2, lty=1, col="deepskyblue3")
   lines(c(0.02, 0.07),c(0.85,0.85), lwd=2, lty=1, col="darkorchid3")
-  text(0.1, 0.90, labels="A Condition", offset=0, cex = 0.8, pos=4)
-  text(0.1, 0.85, labels="B Condition", offset=0, cex = 0.8, pos=4)
+  text(0.08, 0.90, labels="A Condition", offset=0, cex = 0.8, pos=4)
+  text(0.08, 0.85, labels="B Condition", offset=0, cex = 0.8, pos=4)
   box(lty=1)
   
   par(mar=c(2,1,1,4))
   plot(d.H_a$y, d.H_a$x, xlim=rev(c(0,17)),type='l', col="deepskyblue3", axes=F, xlab="", ylab="",ylim=c(0.45,1))
   lines(d.H_b$y, d.H_b$x, col="darkorchid3")
   axis(4)
-  mtext(expression(paste(mu, "Hits")), side=4,line=2.3, cex=0.9)
+  mtext(expression(paste(mu, "Hits")), side=4,line=2.3, cex=0.9, las=0)
   box(lty=1)
   
   par(mar=c(6,2,0,0))
@@ -276,24 +276,69 @@ if (experimento ==2)
   par(mar=c(2,2,1,0))
   plot(d_a[keep],c_a[keep], col="deepskyblue3", xlab="", ylab="", axes=F,xlim=c(0,3), ylim=c(-1,1))
   points(d_b[keep],c_b[keep], col="darkorchid3")
-  lines(c(0.2, 0.6),c(1.7,1.7), lwd=2, lty=1, col="deepskyblue3")
-  lines(c(0.2, 0.6),c(1.4,1.4), lwd=2, lty=1, col="darkorchid3")
-  text(0.65, 1.7, labels="A Condition", offset=0, cex = 0.8, pos=4)
-  text(0.65, 1.4, labels="B Condition", offset=0, cex = 0.8, pos=4)
+  lines(c(0.2, 0.6),c(0.90,0.90), lwd=2, lty=1, col="deepskyblue3")
+  lines(c(0.2, 0.6),c(0.80,0.80), lwd=2, lty=1, col="darkorchid3")
+  text(0.7, 0.90, labels="A Condition", offset=0, cex = 0.8, pos=4)
+  text(0.7, 0.80, labels="B Condition", offset=0, cex = 0.8, pos=4)
   box(lty=1)
   
   par(mar=c(2,1,1,4))
   plot(d.C_a$y, d.C_a$x, xlim=rev(c(0,6)),type='l', col="deepskyblue3", axes=F, xlab="", ylab="",ylim=c(-1,1))
   lines(d.C_b$y, d.C_b$x, col="darkorchid3")
   axis(4)
-  mtext(expression(paste(mu, "C")), side=4,line=2.3, cex=0.9)
+  mtext(expression(paste(mu, "C")), side=4,line=2.3, cex=0.9, font=2, las=0)
   box(lty=1)
   
   par(mar=c(6,2,0,0))
   plot(density(d_a),zero.line=F ,main="", col="deepskyblue3", ylab="", xlab="", cex.lab=1.3, axes=F, xlim=c(0,3),ylim=c(0,3))
   lines(density(d_b), col="darkorchid3")
   axis(1, at=c(0.0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0))
-  mtext(expression(paste(mu, "D")), side=1.2,line=2, cex=0.9)
+  mtext(expression(paste(mu, "D")), font=2, side=1.2,line=2, cex=0.9)
   box(lty=1)
 }
 
+
+layout(matrix(1:1,ncol=1))
+if (experimento ==1)
+{
+  par(cex.main = 1.5, mar = c(5, 6, 4, 5) + 0.1, mgp = c(3.5, 1, 0), cex.lab = 1.5,
+      font.lab = 2, cex.axis = 1.3, bty = "n", las=1)
+  
+  plot(density(Delta), col='red', main="Testing differences on D' over conditions", lwd=2, ylab="", xlab="", axes=F, xlim=c(-0.5,2))
+  text(1.5, 1.2, labels="Delta", offset=0, cex = 1, col='red', pos=4)
+  axis(1)
+  axis(2, labels=F, at=c(0,24))
+  mtext("Density", side=2, line=2, cex=1.5, las=0)
+  mtext("Delta", side=1, line=2.5, cex=1.5, font=2)
+    
+  
+      
+  plot(density(Delta), lwd=2, col="red", main="Are D-primes different?", ylab="", xlab="", 
+       xlim=c(-3,3), axes=F)
+   axis(1)
+  axis(2, labels=F, at=c(0,24))
+  mtext("Probability Density", side=2, line = 2, cex=1, las=0)
+  mtext("Delta", side=1, line = 2.5, cex=1, font=2)
+  
+}
+
+if (experimento ==2)
+{
+  par(cex.main = 1.5, mar = c(5, 6, 4, 5) + 0.1, mgp = c(3.5, 1, 0), cex.lab = 1.5,
+      font.lab = 2, cex.axis = 1.3, bty = "n", las=1)
+  
+  plot(density(Delta), col='red', main="Testing differences on D' over conditions", lwd=2, ylab="", xlab="", axes=F, xlim=c(-0.5,2))
+  text(1.5, 1.2, labels="Delta", offset=0, cex = 1, col='red', pos=4)
+  axis(1)
+  axis(2, labels=F, at=c(0,24))
+  mtext("Density", side=2, line=2, cex=1.5, las=0)
+  mtext("Delta", side=1, line=2.5, cex=1.5, font=2)
+  
+    #     
+  plot(density(Delta), lwd=2, col="red", main="Are D-primes different?", ylab="", xlab="", 
+       xlim=c(-3,3), axes=F)
+  axis(1)
+  axis(2, labels=F, at=c(0,24))
+  mtext("Probability Density", side=2, line = 2, cex=1, las=0)
+  mtext("Delta", side=1, line = 2.5, cex=1, font=2)
+}
