@@ -17,7 +17,7 @@ model{
     c_A[i] ~ dnorm(muc_A,lambdac_A)
     d_B[i] ~ dnorm(mud_B,lambdad_B)
     c_B[i] ~ dnorm(muc_B,lambdac_B)
-  }
+  } 
   #Priors
   muc_A ~ dnorm(0,.001)
   mud_A ~ dnorm(0,.001)
@@ -32,4 +32,4 @@ model{
   sigmac_B <- 1/sqrt(lambdac_B)
   sigmad_B <- 1/sqrt(lambdad_B)
 }
-delta <- muc_A-muc_B
+delta <- mud_A-mud_B
