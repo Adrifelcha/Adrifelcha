@@ -31,61 +31,73 @@
 %%%%%%%%%%
 
 
-\rput(7.5,10.2){\GM@node[nodeSize=15mm,
+\rput(7.5,10.5){\GM@node[nodeSize=15mm,
 					%observed=true,
 					observedColor=lightgray,
 					%query=true
 					]{Delta}}
-					\rput(7.5,10.2){\GM@node[nodeSize=12mm]{Q_small}}
+					\rput(7.5,10.5){\GM@node[nodeSize=12mm]{Q_small}}
            \GM@label[offset=-2.5mm]{Delta}{\huge$\delta_{i}$}
 
 
 
 
 
-\rput(1.4,8){\GM@node[nodeSize=14mm,
+\rput(1.4,8.5){\GM@node[nodeSize=14mm,
 					%observed=true,
 					observedColor=lightgray,
 					%query=true
 					]{muca}}
            \GM@label[offset=-4mm]{muca}{\huge$\mu^C_{Ai}$}
 
-\rput(2.6,8){\GM@node[nodeSize=14mm,
+\rput(2.6,8.5){\GM@node[nodeSize=14mm,
 					%observed=true,
 					observedColor=lightgray,
 					%query=true
 					]{lamca}}
            \GM@label[offset=-4.5mm]{lamca}{\huge$\lambda^C_{Ai}$}
 
-\rput(4.2,8){\GM@node[nodeSize=14mm,
+\rput(4.1,8.5){\GM@node[nodeSize=14mm,
 					%observed=true,
 					observedColor=lightgray,
 					%query=true
 					]{muda}}
            \GM@label[offset=-4mm]{muda}{\huge$\mu^D_{Ai}$}
 
-\rput(5.3,8){\GM@node[nodeSize=14mm,
+\rput(5.3,8.5){\GM@node[nodeSize=14mm,
 					%observed=true,
 					observedColor=lightgray,
 					%query=true
 					]{lamda}}
            \GM@label[offset=-4.5mm]{lamda}{\huge$\lambda^D_{Ai}$}
 
-\rput(7.1,8){\GM@node[nodeSize=14mm,
+\rput(6.8,8.5){\GM@node[nodeSize=14mm,
 					%observed=true,
 					observedColor=lightgray,
 					%query=true
 					]{mucb}}
            \GM@label[offset=-4mm]{mucb}{\huge$\mu^C_{Bi}$}
 
-\rput(8.3,8){\GM@node[nodeSize=14mm,
+\rput(8,8.5){\GM@node[nodeSize=14mm,
 					%observed=true,
 					observedColor=lightgray,
 					%query=true
 					]{lamcb}}
            \GM@label[offset=-4.5mm]{lamcb}{\huge$\lambda^C_{Bi}$}
 
+\rput(9.3,8.5){\GM@node[nodeSize=14mm,
+					%observed=true,
+					observedColor=lightgray,
+					%query=true
+					]{mudb}}
+           \GM@label[offset=-4mm]{mudb}{\huge$\mu^D_{Bi}$}
 
+\rput(10.5,8.5){\GM@node[nodeSize=14mm,
+					%observed=true,
+					observedColor=lightgray,
+					%query=true
+					]{lamdb}}
+           \GM@label[offset=-4.5mm]{lamdb}{\huge$\lambda^D_{Bi}$}
 
 
 
@@ -210,9 +222,20 @@
 % 3. Arrows
 %%%%%%%%%%%
 
-\ncline[arrows=->]{Delta}{dA}
-\ncline[arrows=->]{Delta}{dB}
+\ncline[arrows=->]{Delta}{muda}
+\ncline[arrows=->]{Delta}{mudb}
 
+
+\ncline[arrows=->]{muca}{cA}
+\ncline[arrows=->]{lamca}{cA}
+\ncline[arrows=->]{muda}{dA}
+\ncline[arrows=->]{lamda}{dA}
+
+
+\ncline[arrows=->]{mucb}{cB}
+\ncline[arrows=->]{lamcb}{cB}
+\ncline[arrows=->]{mudb}{dB}
+\ncline[arrows=->]{lamdb}{dB}
 
 
 \ncline[arrows=->]{cA}{TetaHA}
@@ -243,7 +266,7 @@
 % 4. Plates
 %%%%%%%%%%%
 
-\rput(0.70, 0.9){\GM@plate[plateLabelPos=br]{10.5}{9.75}{\Large$i$ Sujeto}}
+\rput(0.70, 0.9){\GM@plate[plateLabelPos=br]{10.5}{10.3}{\Large$i$ Sujeto}}
 
 % 5. Model specification
 %%%%%%%%%%%%%%%%%%%%%%%%
@@ -254,27 +277,35 @@
 
 %\rput(11.5,10.5){\pnode{equation}}\GM@label{equation}{\huge$\vartheta_{i}\sim \mathrm{Lognorm}\bigl(0,1\bigr)$}
 
-\rput(11.5,11){\pnode{equation}}\GM@label{equation}{\huge$H^A_{i}\sim \mathrm{Binomial}\bigl(\theta h^A_{i}, s)$}
+\rput(11.5,11.5){\pnode{equation}}\GM@label{equation}{\huge$H^A_{i}\sim \mathrm{Binomial}\bigl(\theta h^A_{i}, s)$}
 
-\rput(11.5,10){\pnode{equation}}\GM@label{equation}{\huge$Fa^A_{i}\sim \mathrm{Binomial}\bigl(\theta f^A_{i}, s)$}
+\rput(11.5,10.7){\pnode{equation}}\GM@label{equation}{\huge$Fa^A_{i}\sim \mathrm{Binomial}\bigl(\theta f^A_{i}, s)$}
 
-\rput(11.5,9){\pnode{equation}}\GM@label{equation}{\huge$H^B_{i}\sim \mathrm{Binomial}\bigl(\theta h^B_{i}, s)$}
+\rput(11.5,9.9){\pnode{equation}}\GM@label{equation}{\huge$H^B_{i}\sim \mathrm{Binomial}\bigl(\theta h^B_{i}, s)$}
 
-\rput(11.5,8){\pnode{equation}}\GM@label{equation}{\huge$Fa^A_{i}\sim \mathrm{Binomial}\bigl(\theta f^B_{i}, s)$}
+\rput(11.5,9.1){\pnode{equation}}\GM@label{equation}{\huge$Fa^A_{i}\sim \mathrm{Binomial}\bigl(\theta f^B_{i}, s)$}
 
-\rput(11.5,6.5){\pnode{equation}}\GM@label{equation}{\huge$\theta h^A_{i}\gets \phi (\frac{1}{2}D^A_{i}-C^A_{i})$}
+\rput(11.5,7.9){\pnode{equation}}\GM@label{equation}{\huge$\theta h^A_{i}\gets \phi (\frac{1}{2}D^A_{i}-C^A_{i})$}
 
-\rput(11.5,5.5){\pnode{equation}}\GM@label{equation}{\huge$\theta f^A_{i}\gets \phi (-\frac{1}{2}D^A_{i}-C^A_{i})$}
+\rput(11.5,7.1){\pnode{equation}}\GM@label{equation}{\huge$\theta f^A_{i}\gets \phi (-\frac{1}{2}D^A_{i}-C^A_{i})$}
 
-\rput(11.5,4.5){\pnode{equation}}\GM@label{equation}{\huge$\theta h^B_{i}\gets \phi (\frac{1}{2}D^B_{i}-C^B_{i})$}
+\rput(11.5,6.3){\pnode{equation}}\GM@label{equation}{\huge$\theta h^B_{i}\gets \phi (\frac{1}{2}D^B_{i}-C^B_{i})$}
 
-\rput(11.5,3.5){\pnode{equation}}\GM@label{equation}{\huge$\theta f^B_{i}\gets \phi (-\frac{1}{2}D^B_{i}-C^B_{i})$}
+\rput(11.5,5.5){\pnode{equation}}\GM@label{equation}{\huge$\theta f^B_{i}\gets \phi (-\frac{1}{2}D^B_{i}-C^B_{i})$}
 
-\rput(11.5,2){\pnode{equation}}\GM@label{equation}{\huge$D^A_{i}, D^B_{i}\sim \mathrm{Gaussian}\bigl(0,0.5)$}
+\rput(11.5,4.3){\pnode{equation}}\GM@label{equation}{\huge$D^A_{i}, D^B_{i}\sim \mathrm{Gaussian}\bigl(0,0.5)$}
 
-\rput(11.5,1){\pnode{equation}}\GM@label{equation}{\huge$C^A_{i}, C^B_{i}\sim \mathrm{Gaussian}\bigl(0,2)$}
+\rput(11.5,3.5){\pnode{equation}}\GM@label{equation}{\huge$C^A_{i}, C^B_{i}\sim \mathrm{Gaussian}\bigl(0,2)$}
 
-\rput(11.5,-0.5){\pnode{equation}}\GM@label{equation}{\huge$\delta_{i}\gets D^A_{i}-D^B_{i}$}
+\rput(11.5,2.7){\pnode{equation}}\GM@label{equation}{\huge$D^A_{i}, D^B_{i}\sim \mathrm{Gaussian}\bigl(0,0.5)$}
+
+\rput(11.5,1.9){\pnode{equation}}\GM@label{equation}{\huge$C^A_{i}, C^B_{i}\sim \mathrm{Gaussian}\bigl(0,2)$}
+
+\rput(11.5,0.7){\pnode{equation}}\GM@label{equation}{\huge$D^A_{i}, D^B_{i}\sim \mathrm{Gaussian}\bigl(0,0.5)$}
+
+\rput(11.5,-0.1){\pnode{equation}}\GM@label{equation}{\huge$C^A_{i}, C^B_{i}\sim \mathrm{Gaussian}\bigl(0,2)$}
+
+\rput(11.5,-1.3){\pnode{equation}}\GM@label{equation}{\huge$\delta_{i}\gets D^A_{i}-D^B_{i}$}
 
 
 % 6. End document
