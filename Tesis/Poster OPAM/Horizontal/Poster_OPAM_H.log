@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.11.5)  6 NOV 2016 01:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.11.5)  7 NOV 2016 01:03
 entering extended mode
 **./Poster_OPAM_H.tex
 (Poster_OPAM_H.tex
@@ -1568,13 +1568,13 @@ File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 * modes: includehead includefoot 
 * h-part:(L,W,R)=(28.45274pt, 3323.85117pt, 28.45274pt)
 * v-part:(T,H,B)=(0.0pt, 2388.89357pt, 0.0pt)
-* \paperwidth=3468.95999pt
-* \paperheight=2601.71999pt
+* \paperwidth=5637.06pt
+* \paperheight=3107.60999pt
 * \textwidth=3323.85117pt
 * \textheight=2360.44084pt
 * \oddsidemargin=-43.81725pt
 * \evensidemargin=-43.81725pt
-* \topmargin=-86.72377pt
+* \topmargin=0.0pt
 * \headheight=14.22636pt
 * \headsep=0.0pt
 * \topskip=11.0pt
@@ -1700,63 +1700,104 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <12.50194> on input line 75.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8.93> on input line 75.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 357.
+
+<Figures/UNAMiwi.jpg, id=12, 266.49562pt x 310.15875pt>
+File: Figures/UNAMiwi.jpg Graphic file (type jpg)
+
+<use Figures/UNAMiwi.jpg>
+Package pdftex.def Info: Figures/UNAMiwi.jpg used on input line 446.
+(pdftex.def)             Requested size: 284.52756pt x 331.17561pt.
+
+<Figures/Psicologia.png, id=13, 79.04532pt x 80.55093pt>
+File: Figures/Psicologia.png Graphic file (type png)
+
+<use Figures/Psicologia.png>
+Package pdftex.def Info: Figures/Psicologia.png used on input line 446.
+(pdftex.def)             Requested size: 284.52756pt x 289.99788pt.
+
+<Figures/Lab25.png, id=14, 532.23843pt x 434.37282pt>
+File: Figures/Lab25.png Graphic file (type png)
+ <use Figures/Lab25.png>
+Package pdftex.def Info: Figures/Lab25.png used on input line 446.
+(pdftex.def)             Requested size: 341.43306pt x 278.66045pt.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 446.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Calculating math sizes for size <37.03> on input line 357.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <37.03> on input line 357.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <25.92088> on input line 357.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <18.515> on input line 357.
+<Figures/MirrorEffect.png, id=15, 531.48563pt x 252.945pt>
+File: Figures/MirrorEffect.png Graphic file (type png)
 
-<placeholder.jpg, id=14, 361.35pt x 256.70906pt>
-File: placeholder.jpg Graphic file (type jpg)
- <use placeholder.jpg>
-Package pdftex.def Info: placeholder.jpg used on input line 357.
-(pdftex.def)             Requested size: 763.17543pt x 542.2268pt.
-LaTeX Font Info:    Try loading font information for TS1+lmss on input line 357
+<use Figures/MirrorEffect.png>
+Package pdftex.def Info: Figures/MirrorEffect.png used on input line 446.
+(pdftex.def)             Requested size: 718.49588pt x 341.97435pt.
+LaTeX Font Info:    Calculating math sizes for size <37.03> on input line 446.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <37.03> on input line 446.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <25.92088> on input line 446.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <18.515> on input line 446.
+LaTeX Font Info:    Try loading font information for TS1+lmss on input line 446
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ts1lmss.fd"
 File: ts1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
+<Figures/MainTask.png, id=18, 767.11594pt x 525.46312pt>
+File: Figures/MainTask.png Graphic file (type png)
+
+<use Figures/MainTask.png>
+Package pdftex.def Info: Figures/MainTask.png used on input line 446.
+(pdftex.def)             Requested size: 682.09183pt x 467.2518pt.
+
+<Figures/MainTask2.png, id=19, 693.34032pt x 555.57562pt>
+File: Figures/MainTask2.png Graphic file (type png)
+
+<use Figures/MainTask2.png>
+Package pdftex.def Info: Figures/MainTask2.png used on input line 446.
+(pdftex.def)             Requested size: 620.08003pt x 496.88527pt.
+
+Overfull \hbox (98.01178pt too wide) in paragraph at lines 446--446
+ [] 
+ []
+
+<placeholder.jpg, id=20, 361.35pt x 256.70906pt>
 File: placeholder.jpg Graphic file (type jpg)
  <use placeholder.jpg>
-Package pdftex.def Info: placeholder.jpg used on input line 357.
-(pdftex.def)             Requested size: 610.54266pt x 433.783pt.
+Package pdftex.def Info: placeholder.jpg used on input line 446.
+(pdftex.def)             Requested size: 992.13184pt x 704.89445pt.
 
 No file Poster_OPAM_H.bbl.
-<logo.png, id=17, 361.35pt x 256.70906pt>
+<logo.png, id=23, 361.35pt x 256.70906pt>
 File: logo.png Graphic file (type png)
  <use logo.png>
-Package pdftex.def Info: logo.png used on input line 357.
-(pdftex.def)             Requested size: 305.2655pt x 216.868pt.
+Package pdftex.def Info: logo.png used on input line 446.
+(pdftex.def)             Requested size: 496.05646pt x 352.41002pt.
 File: logo.png Graphic file (type png)
  <use logo.png>
-Package pdftex.def Info: logo.png used on input line 357.
-(pdftex.def)             Requested size: 305.2655pt x 216.868pt.
+Package pdftex.def Info: logo.png used on input line 446.
+(pdftex.def)             Requested size: 496.05646pt x 352.41002pt.
 
-Overfull \hbox (4.99402pt too wide) detected at line 357
+Overfull \hbox (2121.0882pt too wide) detected at line 446
 [][][] [][][][][][][][][] [][][][][][][][][] [][][][][][][][][] [][][][][][][][
 ][] [][][][][][][][][] [][][][][][][] 
  []
 
 
-Overfull \vbox (804.52043pt too high) detected at line 357
+Overfull \vbox (580.17204pt too high) detected at line 446
  []
 
 
-Overfull \hbox (88.20334pt too wide) has occurred while \output is active
+Overfull \hbox (2256.30334pt too wide) has occurred while \output is active
 []
  []
 
 [1{C:/Users/Adrifelcha/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
- <./placeholder.jpg> <./logo.png>]
+ <./Figures/UNAMiwi.jpg> <./Figures/Psicologia.png> <./Figures/Lab25.png> <./Fi
+gures/MirrorEffect.png> <./Figures/MainTask.png> <./Figures/MainTask2.png> <./p
+laceholder.jpg> <./logo.png>]
 \tf@nav=\write6
 \openout6 = `Poster_OPAM_H.nav'.
 
@@ -1766,38 +1807,37 @@ Overfull \hbox (88.20334pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `Poster_OPAM_H.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 359.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 359.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 448.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 448.
  (Poster_OPAM_H.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 359.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 359.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 448.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 448.
 Package rerunfilecheck Info: File `Poster_OPAM_H.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 359.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 448.
  ) 
 Here is how much of TeX's memory you used:
- 22903 strings out of 493334
- 446712 string characters out of 3139237
- 627062 words of memory out of 3000000
- 25841 multiletter control sequences out of 15000+200000
- 74164 words of font info for 64 fonts, out of 3000000 for 9000
+ 22936 strings out of 493334
+ 447441 string characters out of 3139237
+ 639483 words of memory out of 3000000
+ 25866 multiletter control sequences out of 15000+200000
+ 67113 words of font info for 62 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,16n,71p,882b,1452s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/M
-iKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
-nc/dvips/lm/lm-ec.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.en
+ 60i,18n,71p,724b,1518s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Program Files/
+MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/
+dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.en
 c}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/lm/lmmi12.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm
-/lmri12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmss17.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on Poster_OPAM_H.pdf (1 page, 668577 bytes).
+/lmss17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb>
+Output written on Poster_OPAM_H.pdf (1 page, 955743 bytes).
 PDF statistics:
- 63 PDF objects out of 1000 (max. 8388607)
- 5 named destinations out of 1000 (max. 500000)
- 59 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 69 PDF objects out of 1000 (max. 8388607)
+ 7 named destinations out of 1000 (max. 500000)
+ 89 words of extra memory for PDF output out of 10000 (max. 10000000)
 
