@@ -31,73 +31,73 @@
 %%%%%%%%%%
 
 
-\rput(7.5,10.5){\GM@node[nodeSize=15mm,
+\rput(7,11){\GM@node[nodeSize=15mm,
 					%observed=true,
 					observedColor=lightgray,
 					%query=true
 					]{Delta}}
-					\rput(7.5,10.5){\GM@node[nodeSize=12mm]{Q_small}}
-           \GM@label[offset=-2.5mm]{Delta}{\huge$\delta_{i}$}
+					\rput(7,11){\GM@node[nodeSize=12mm]{Q_small}}
+           \GM@label[offset=-2.5mm]{Delta}{\huge$\delta$}
 
 
 
 
 
-\rput(1.4,8.5){\GM@node[nodeSize=14mm,
+\rput(1.4,8.8){\GM@node[nodeSize=14mm,
 					%observed=true,
 					observedColor=lightgray,
 					%query=true
 					]{muca}}
-           \GM@label[offset=-4mm]{muca}{\huge$\mu^C_{Ai}$}
+           \GM@label[offset=-4mm]{muca}{\huge$\mu^C_{A}$}
 
-\rput(2.6,8.5){\GM@node[nodeSize=14mm,
+\rput(2.6,8.8){\GM@node[nodeSize=14mm,
 					%observed=true,
 					observedColor=lightgray,
 					%query=true
 					]{lamca}}
-           \GM@label[offset=-4.5mm]{lamca}{\huge$\lambda^C_{Ai}$}
+           \GM@label[offset=-4.5mm]{lamca}{\huge$\lambda^C_{A}$}
 
-\rput(4.1,8.5){\GM@node[nodeSize=14mm,
+\rput(4.1,8.8){\GM@node[nodeSize=14mm,
 					%observed=true,
 					observedColor=lightgray,
 					%query=true
 					]{muda}}
-           \GM@label[offset=-4mm]{muda}{\huge$\mu^D_{Ai}$}
+           \GM@label[offset=-4mm]{muda}{\huge$\mu^D_{A}$}
 
-\rput(5.3,8.5){\GM@node[nodeSize=14mm,
+\rput(5.3,8.8){\GM@node[nodeSize=14mm,
 					%observed=true,
 					observedColor=lightgray,
 					%query=true
 					]{lamda}}
-           \GM@label[offset=-4.5mm]{lamda}{\huge$\lambda^D_{Ai}$}
+           \GM@label[offset=-4.5mm]{lamda}{\huge$\lambda^D_{A}$}
 
-\rput(6.8,8.5){\GM@node[nodeSize=14mm,
+\rput(6.8,8.8){\GM@node[nodeSize=14mm,
 					%observed=true,
 					observedColor=lightgray,
 					%query=true
 					]{mucb}}
-           \GM@label[offset=-4mm]{mucb}{\huge$\mu^C_{Bi}$}
+           \GM@label[offset=-4mm]{mucb}{\huge$\mu^C_{B}$}
 
-\rput(8,8.5){\GM@node[nodeSize=14mm,
+\rput(8,8.8){\GM@node[nodeSize=14mm,
 					%observed=true,
 					observedColor=lightgray,
 					%query=true
 					]{lamcb}}
-           \GM@label[offset=-4.5mm]{lamcb}{\huge$\lambda^C_{Bi}$}
+           \GM@label[offset=-4.5mm]{lamcb}{\huge$\lambda^C_{B}$}
 
-\rput(9.3,8.5){\GM@node[nodeSize=14mm,
+\rput(9.3,8.8){\GM@node[nodeSize=14mm,
 					%observed=true,
 					observedColor=lightgray,
 					%query=true
 					]{mudb}}
-           \GM@label[offset=-4mm]{mudb}{\huge$\mu^D_{Bi}$}
+           \GM@label[offset=-4mm]{mudb}{\huge$\mu^D_{B}$}
 
-\rput(10.5,8.5){\GM@node[nodeSize=14mm,
+\rput(10.5,8.8){\GM@node[nodeSize=14mm,
 					%observed=true,
 					observedColor=lightgray,
 					%query=true
 					]{lamdb}}
-           \GM@label[offset=-4.5mm]{lamdb}{\huge$\lambda^D_{Bi}$}
+           \GM@label[offset=-4.5mm]{lamdb}{\huge$\lambda^D_{B}$}
 
 
 
@@ -266,7 +266,7 @@
 % 4. Plates
 %%%%%%%%%%%
 
-\rput(0.70, 0.9){\GM@plate[plateLabelPos=br]{10.5}{10.3}{\Large$i$ Sujeto}}
+\rput(0.70, 0.9){\GM@plate[plateLabelPos=br]{10.5}{7}{\Large$i$ Sujeto}}
 
 % 5. Model specification
 %%%%%%%%%%%%%%%%%%%%%%%%
@@ -293,17 +293,17 @@
 
 \rput(11.5,5.5){\pnode{equation}}\GM@label{equation}{\huge$\theta f^B_{i}\gets \phi (-\frac{1}{2}D^B_{i}-C^B_{i})$}
 
-\rput(11.5,4.3){\pnode{equation}}\GM@label{equation}{\huge$D^A_{i}, D^B_{i}\sim \mathrm{Gaussian}\bigl(0,0.5)$}
+\rput(11.5,4.3){\pnode{equation}}\GM@label{equation}{\huge$D^A_{i}\sim \mathrm{Gaussian}\bigl(0,0.5)$}
 
-\rput(11.5,3.5){\pnode{equation}}\GM@label{equation}{\huge$C^A_{i}, C^B_{i}\sim \mathrm{Gaussian}\bigl(0,2)$}
+\rput(11.5,3.5){\pnode{equation}}\GM@label{equation}{\huge$C^A_{i}\sim \mathrm{Gaussian}\bigl(0,2)$}
 
-\rput(11.5,2.7){\pnode{equation}}\GM@label{equation}{\huge$D^A_{i}, D^B_{i}\sim \mathrm{Gaussian}\bigl(0,0.5)$}
+\rput(11.5,2.7){\pnode{equation}}\GM@label{equation}{\huge$D^B_{i}\sim \mathrm{Gaussian}\bigl(0,0.5)$}
 
-\rput(11.5,1.9){\pnode{equation}}\GM@label{equation}{\huge$C^A_{i}, C^B_{i}\sim \mathrm{Gaussian}\bigl(0,2)$}
+\rput(11.5,1.9){\pnode{equation}}\GM@label{equation}{\huge$C^B_{i}\sim \mathrm{Gaussian}\bigl(0,2)$}
 
-\rput(11.5,0.7){\pnode{equation}}\GM@label{equation}{\huge$D^A_{i}, D^B_{i}\sim \mathrm{Gaussian}\bigl(0,0.5)$}
+\rput(11.3,0.7){\pnode{equation}}\GM@label{equation}{\huge$\mu^D_{Ai}, \mu^D_{Bi}, \mu^C_{Ai}, \mu^C_{Bi} \sim \mathrm{Gaussian}\bigl(0,0.001)$}
 
-\rput(11.5,-0.1){\pnode{equation}}\GM@label{equation}{\huge$C^A_{i}, C^B_{i}\sim \mathrm{Gaussian}\bigl(0,2)$}
+\rput(11.3,-0.1){\pnode{equation}}\GM@label{equation}{\huge$\lambda^D_{Ai}, \lambda^D_{Bi}, \lambda^C_{Ai}, \lambda^C_{Bi}\sim \mathrm{Gamma}\bigl(.001,.001)$}
 
 \rput(11.5,-1.3){\pnode{equation}}\GM@label{equation}{\huge$\delta_{i}\gets D^A_{i}-D^B_{i}$}
 
