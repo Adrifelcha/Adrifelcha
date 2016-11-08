@@ -222,8 +222,8 @@
 % 3. Arrows
 %%%%%%%%%%%
 
-\ncline[arrows=->]{Delta}{muda}
-\ncline[arrows=->]{Delta}{mudb}
+\ncline[arrows=->]{muda}{Delta}
+\ncline[arrows=->]{mudb}{Delta}
 
 
 \ncline[arrows=->]{muca}{cA}
@@ -293,13 +293,13 @@
 
 \rput(11.5,5.5){\pnode{equation}}\GM@label{equation}{\huge$\theta f^B_{i}\gets \phi (-\frac{1}{2}D^B_{i}-C^B_{i})$}
 
-\rput(11.5,4.3){\pnode{equation}}\GM@label{equation}{\huge$D^A_{i}\sim \mathrm{Gaussian}\bigl(0,0.5)$}
+\rput(11.5,4.3){\pnode{equation}}\GM@label{equation}{\huge$D^A_{i}\sim \mathrm{Gaussian}\bigl(\mu^D_{Ai},\lambda^D_{Ai})$}
 
-\rput(11.5,3.5){\pnode{equation}}\GM@label{equation}{\huge$C^A_{i}\sim \mathrm{Gaussian}\bigl(0,2)$}
+\rput(11.5,3.5){\pnode{equation}}\GM@label{equation}{\huge$C^A_{i}\sim \mathrm{Gaussian}\bigl(\mu^D_{Bi},\lambda^D_{Bi})$}
 
-\rput(11.5,2.7){\pnode{equation}}\GM@label{equation}{\huge$D^B_{i}\sim \mathrm{Gaussian}\bigl(0,0.5)$}
+\rput(11.5,2.7){\pnode{equation}}\GM@label{equation}{\huge$D^B_{i}\sim \mathrm{Gaussian}\bigl(\mu^C_{Ai},\lambda^C_{Ai})$}
 
-\rput(11.5,1.9){\pnode{equation}}\GM@label{equation}{\huge$C^B_{i}\sim \mathrm{Gaussian}\bigl(0,2)$}
+\rput(11.5,1.9){\pnode{equation}}\GM@label{equation}{\huge$C^B_{i}\sim \mathrm{Gaussian}\bigl(\mu^C_{Bi},\lambda^C_{Bi})$}
 
 \rput(11.3,0.7){\pnode{equation}}\GM@label{equation}{\huge$\mu^D_{Ai}, \mu^D_{Bi}, \mu^C_{Ai}, \mu^C_{Bi} \sim \mathrm{Gaussian}\bigl(0,0.001)$}
 
