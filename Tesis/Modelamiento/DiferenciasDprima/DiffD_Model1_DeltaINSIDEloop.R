@@ -1,4 +1,4 @@
-setwd("C:/Users/Alejandro/Desktop/Felisa/Tesis/CSVs")
+setwd("C:/Users/Adrifelcha/Desktop/Tesis/Tesis/CSVs")
 rm(list=ls())
 dir()
 library(R2jags)
@@ -59,7 +59,7 @@ niter <- 10000
 burnin <- 1000
 # Corremos JAGS
 samples <- jags(data, inits=myinits, parameters,
-                model.file ="C:/Users/Alejandro/Desktop/Felisa/Tesis/Modelamiento/DiferenciasDprima/DiffD_Modelo1_DeltaINSIDEloop.txt",
+                model.file ="C:/Users/Adrifelcha/Desktop/Tesis/Tesis/Modelamiento/DiferenciasDprima/DiffD_Modelo1_DeltaINSIDEloop.txt",
                 n.chains=1, n.iter=niter, n.burnin=burnin, n.thin=1)
 # Now the values for the monitodeepskyblue3 parameters are in the "samples" object, ready for inspection.
 
