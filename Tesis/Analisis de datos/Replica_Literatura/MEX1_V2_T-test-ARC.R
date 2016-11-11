@@ -1,4 +1,5 @@
-setwd("C:/Users/Alejandro/Desktop/Felisa/Mirror Experiment/Mirror Experimento 1/Data_Ex1a_SinSesgo1")
+rm(list=ls())
+setwd("C:/Users/Alejandro/Desktop/Felisa/Tesis/CSVs")
 rm(list=ls())
 dir()
 
@@ -8,9 +9,9 @@ datos <- read.csv(archive)
 
 ################ PRE PRUEBA
 ### Binomial para probar la evidencia recolectada contra el azar
-Mirror_Rates<- binom.test(17, 20, p = 0.5) 
+Mirror_Rates<- binom.test(19, 21, p = 0.5) 
 Mirror_Rates#La probabilidad de obtener #Casos con Mirror Effect, si dependiera del azar.
-Mirror_Confidence <- binom.test(18,20,p=0.5)
+Mirror_Confidence <- binom.test(19,21,p=0.5)
 Mirror_Confidence
 
 ### Corroborando que las condiciones SON Diferentes
@@ -22,7 +23,7 @@ d_Dificil <- datos$d_B
 d_AyB<- data.frame(cbind(d_Facil, d_Dificil))
 dprimas <- stack(d_AyB)
 #Corremos la T
-t.test(values~ind,data=dprimas,alternative = c("two.sided", "less", "greater"))
+t.test(values~ind,data=dprimas,alternative = c("less"))
 
 ############## MIRROR EFFECT
 ####  Diferencia en Rates (Patron principal)

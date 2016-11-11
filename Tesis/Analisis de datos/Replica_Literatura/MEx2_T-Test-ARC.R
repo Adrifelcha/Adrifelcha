@@ -1,9 +1,9 @@
-setwd("C:/Users/Alejandro/Desktop/Felisa/Mirror Experiment/Mirror Experimento 2/Data/Datos_Exp2")
+setwd("C:/Users/Alejandro/Desktop/Felisa/Tesis/CSVs")
 rm(list=ls())
 dir()
 
 #Archivo que contiene todos los datos
-archive <-'Ex2a_TODOS.csv'
+archive <-'Ex2a_TODOS-.csv'
 datos <- read.csv(archive)
 
 ############## PRE PRUEBAS
@@ -22,7 +22,7 @@ d_Dificil <- datos$d_B
 d_AyB<- data.frame(cbind(d_Facil, d_Dificil))
 dprimas <- stack(d_AyB)
 #Corremos la T
-t.test(values~ind,data=dprimas,alternative = c("two.sided", "less", "greater"))
+t.test(values~ind,data=dprimas,alternative = c("less"))
 
 
 ############## MIRROR EFFECT

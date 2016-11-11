@@ -1,9 +1,9 @@
-setwd("C:/Users/Alejandro/Desktop/Felisa/Mirror Experiment/Mirror Experimento 1/Data_Ex1a_SinSesgo1")
+setwd("C:/Users/Alejandro/Desktop/Felisa/Tesis/CSVs")
 rm(list=ls())
 dir()
 
 #Archivo que contiene nuestros datos
-archive <-'MirrEx1a_V2_TODOS.csv'
+archive <-'MirrEx1a_V2_TODOS-.csv'
 datos <- read.csv(archive)
 
 #####################################
@@ -85,7 +85,7 @@ title("Classical SDT: Mean Performance for Experiment 1", outer = TRUE, line = -
 #Mirror Effect
 #####################################
 
-layout(matrix(1:2,ncol=1))
+layout(matrix(1:1,ncol=1))
 
 AN<- (mean(datos$A_FA)/160)
 BN<- (mean(datos$B_FA)/160)
@@ -213,13 +213,15 @@ print(c(k,d_A,d_BN,d_BS))
   mtext('Mean Performance for Experiment 1',cex=0.8)
   
   
-  plot(soporte,dis_AN,type='l', lwd=2, lty=1, col='deepskyblue3', yaxt='n', ann=F)
+  plot(soporte,dis_AN,type='l', lwd=2, lty=1, col='deepskyblue3', ylim=c(0,0.5),yaxt='n', ann=F)
   lines(soporte,dis_AS,type='l', lwd=2, col='deepskyblue2')
   lines(soporte,dis_BN,type='l', lwd=2, lty=1, col='darkorchid3')
   lines(soporte,dis_BS, type='l', lwd=2, col='darkorchid2')
   abline(v=k,col='black', lwd=2)
   #abline(v=k1,col='red', lty=6, lwd=2)
   text(-3,0.15,paste("K = ",k))
+  title("Mirror Effect", outer = TRUE, line = -2, cex=2)
+  mtext('Mean Performance for Experiment 2',cex=0.8)
   #text(-2.5,0.35,paste("1"), col='red')
   #text(-3.4,0.15,paste("D' = ",d_B))
   #text(-3.4,0.39,paste("Hits = ",Hr_bs))
@@ -300,3 +302,5 @@ print(c(k,d_A,d_BN,d_BS))
   text(3.1,C_BS+.5,paste(CR_BS),cex=.8,col='violetred',f=2)
   text(3.9,C_BS+.5,paste(CR_AS),cex=.8,col='violetred',f=2)
   text(1.5,5.5,paste('Confidence Rate'),cex=1,col='violetred4',f=2)
+  mtext("Mean of confidence rate means in Experiment 2",3,cex=.8)
+  title("Confidence Rating", outer = TRUE, line = -2)
