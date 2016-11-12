@@ -31,111 +31,78 @@
 %%%%%%%%%%
 
 
-\rput(6.2,11){\GM@node[nodeSize=15mm,
+\rput(3,10){\GM@node[nodeSize=15mm,
 					%observed=true,
 					observedColor=lightgray,
 					%query=true
-					]{Delta}}
-					\rput(6.2,11){\GM@node[nodeSize=12mm]{Q_small}}
-           \GM@label[offset=-2.5mm]{Delta}{\huge$\delta$}
-
-
-
-\rput(2.8,8.7){\GM@node[nodeSize=14mm,
+					]{TauH}}
+					\rput(3,10){\GM@node[nodeSize=12mm]{Q_small}}
+           \GM@label[offset=-4mm]{TauH}{\huge$\tau^H_{i}$}
+\rput(9.3,10){\GM@node[nodeSize=15mm,
 					%observed=true,
 					observedColor=lightgray,
 					%query=true
-					]{muca}}
-           \GM@label[offset=-4mm]{muca}{\huge$\mu^C_{j}$}
-
-\rput(4.5,8.7){\GM@node[nodeSize=14mm,
-					%observed=true,
-					observedColor=lightgray,
-					%query=true
-					]{lamca}}
-           \GM@label[offset=-4.5mm]{lamca}{\huge$\lambda^C_{j}$}
-
-\rput(6.5,8.7){\GM@node[nodeSize=14mm,
-					%observed=true,
-					observedColor=lightgray,
-					%query=true
-					]{muda}}
-           \GM@label[offset=-4mm]{muda}{\huge$\mu^D_{j}$}
-
-\rput(8,8.7){\GM@node[nodeSize=14mm,
-					%observed=true,
-					observedColor=lightgray,
-					%query=true
-					]{lamda}}
-           \GM@label[offset=-4.5mm]{lamda}{\huge$\lambda^D_{j}$}
-
+					]{TauF}}
+					\rput(9.3,10){\GM@node[nodeSize=12mm]{Q_small}}
+           \GM@label[offset=-4mm]{TauF}{\huge$\tau^F_{i}$}
 
 
 
            
            
-\rput(3.5,6.5){\GM@node[nodeSize=14mm,
+\rput(4.5,7.5){\GM@node[nodeSize=14mm,
 					%observed=true,
 					observedColor=lightgray,
 					%query=true
 					]{cA}}
-           \GM@label[offset=-4mm]{cA}{\huge$C_{ij}$}
+           \GM@label[offset=-4mm]{cA}{\huge$C^{ij}$}
 
-\rput(7,6.5){\GM@node[nodeSize=14mm,
+\rput(7.5,7.5){\GM@node[nodeSize=14mm,
 					%observed=true,
 					observedColor=lightgray,
 					%query=true
 					]{dA}}
            \GM@label[offset=-4.5mm]{dA}{\huge$D_{ij}$}
 
-
-        
-
-
-\rput(3.5,4.2){\GM@node[nodeSize=16mm,
+  
+\rput(4.5,5.2){\GM@node[nodeSize=16mm,
 					%observed=true,
 					observedColor=lightgray,
 					%query=true
 					]{TetaHA}}
-           \GM@label[offset=-5mm]{TetaHA}{\huge$\theta h_{ij}$}
+           \GM@label[offset=-5mm]{TetaHA}{\huge$\theta^H_{ij}$}
 
-\rput(7,4.2){\GM@node[nodeSize=16mm,
+\rput(7.5,5.2){\GM@node[nodeSize=16mm,
 					%observed=true,
 					observedColor=lightgray,
 					%query=true
 					]{TetaFAA}}
-           \GM@label[offset=-5mm]{TetaFAA}{\huge$\theta f_{ij}$}
+           \GM@label[offset=-5mm]{TetaFAA}{\huge$\theta^F_{ij}$}
 
 
-
-
-
-\rput(3.5,2.2){\GM@node[nodeSize=14mm,
+\rput(4.5,3){\GM@node[nodeSize=14mm,
 					observed=true,
 					observedColor=lightgray,
 					query=true
 					]{hA}}
            \GM@label[offset=-4.5mm]{hA}{\huge$H_{ij}$}       
 
-\rput(7,2.2){\GM@node[nodeSize=15mm,
+\rput(7.5,3){\GM@node[nodeSize=15mm,
 					observed=true,
 					observedColor=lightgray,
 					query=true
 					]{faA}}
            \GM@label[offset=-6mm]{faA}{\huge$Fa_{ij}$}    
 
- 
 
-
-
-\rput(3.5,-0.5){\GM@node[nodeSize=13mm,
+\rput(7.5,0){\GM@node[nodeSize=13mm,
 					observed=true,
 					observedColor=lightgray,
 					query=true
 					]{N}}
            \GM@label[offset=-2.5mm]{N}{\huge$n$}    
 
-\rput(7,-0.5){\GM@node[nodeSize=13mm,
+\rput(4.5,0){\GM@node[nodeSize=13mm,
 					observed=true,
 					observedColor=lightgray,
 					query=true
@@ -149,14 +116,9 @@
 % 3. Arrows
 %%%%%%%%%%%
 
-\ncline[arrows=->]{muda}{Delta}
-\ncline[arrows=->]{mudb}{Delta}
+\ncline[arrows=->]{TetaFAA}{TauF}
+\ncline[arrows=->]{TetaHA}{TauH}
 
-
-\ncline[arrows=->]{muca}{cA}
-\ncline[arrows=->]{lamca}{cA}
-\ncline[arrows=->]{muda}{dA}
-\ncline[arrows=->]{lamda}{dA}
 
 
 \ncline[arrows=->]{cA}{TetaHA}
@@ -187,9 +149,9 @@
 % 4. Plates
 %%%%%%%%%%%
 
-\rput(1.40, 0.7){\GM@plate[plateLabelPos=br]{8.2}{7.3}{\Large$i$ Participant}}
+\rput(2.00, 0.8){\GM@plate[plateLabelPos=br]{8.6}{10}{\Large$i$ Participant}}
 
-\rput(1.80, 1.1){\GM@plate[plateLabelPos=br]{7.4}{8.5}{\Large$j$ Condition}}
+\rput(3.3, 1.3){\GM@plate[plateLabelPos=br]{5.9}{7.6}{\Large$j$ Condition}}
 
 % 5. Model specification
 %%%%%%%%%%%%%%%%%%%%%%%%
@@ -202,24 +164,19 @@
 
 \rput(11.5,11){\pnode{equation}}\GM@label{equation}{\huge$H_{ij}\sim \mathrm{Binomial}\bigl(\theta^H_{ij}, s)$}
 
-\rput(11.5,10){\pnode{equation}}\GM@label{equation}{\huge$Fa_{ij}\sim \mathrm{Binomial}\bigl(\theta^F_{ij}, s)$}
+\rput(11.5,9.5){\pnode{equation}}\GM@label{equation}{\huge$Fa_{ij}\sim \mathrm{Binomial}\bigl(\theta^F_{ij}, s)$}
 
 
-\rput(11.5,8){\pnode{equation}}\GM@label{equation}{\huge$\theta^H_{ij}\gets \phi (\frac{1}{2}D_{ij}-C_{ij})$}
+\rput(11.5,7){\pnode{equation}}\GM@label{equation}{\huge$\theta^H_{ij}\gets \phi (\frac{1}{2}D_{ij}-C_{ij})$}
 
-\rput(11.5,7){\pnode{equation}}\GM@label{equation}{\huge$\theta^F_{ij}\gets \phi (-\frac{1}{2}D_{ij}-C_{ij})$}
-
-
-\rput(11.5,5){\pnode{equation}}\GM@label{equation}{\huge$D_{ij}\sim \mathrm{Gaussian}\bigl(\mu^D_{ij},\lambda^D_{ij})$}
-
-\rput(11.5,4){\pnode{equation}}\GM@label{equation}{\huge$C_{ij}\sim \mathrm{Gaussian}\bigl(\mu^D_{ij},\lambda^C_{ij})$}
+\rput(11.5,5.5){\pnode{equation}}\GM@label{equation}{\huge$\theta^F_{ij}\gets \phi (-\frac{1}{2}D_{ij}-C_{ij})$}
 
 
-\rput(11.5,2){\pnode{equation}}\GM@label{equation}{\huge$\mu^C_{j}, \mu^D_{j}\sim \mathrm{Gaussian}\bigl(0,0.001)$}
+\rput(11.5,3){\pnode{equation}}\GM@label{equation}{\huge$D_{ij}\sim \mathrm{Gaussian}\bigl(0,0.5)$}
 
-\rput(11.5,1){\pnode{equation}}\GM@label{equation}{\huge$\lambda^C_{j}, \lambda^D_{j}\sim \mathrm{Gamma}\bigl(.001,.001)$}
+\rput(11.5,1.5){\pnode{equation}}\GM@label{equation}{\huge$C_{ij}\sim \mathrm{Gaussian}\bigl(0,2)$}
 
-\rput(11.5,-1){\pnode{equation}}\GM@label{equation}{\huge$\delta_{i}\gets \mu^D_{1}-\mu^D_{2}$}
+\rput(11.5,-0.5){\pnode{equation}}\GM@label{equation}{\huge$\delta_{i}\gets D_{i1}-D_{i2}$}
 
 
 % 6. End document

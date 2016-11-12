@@ -19,7 +19,7 @@ experimento <- 1
 
 if (experimento == 1) #Demo
 {
-  archive <-'Ex2a_TODOS.csv'
+  archive <-'Ex2a_TODOS-.csv'
   datos <- read.csv(archive)
   Hits_Facil <- datos$A_H
   Hits_Dificil <- datos$B_H
@@ -31,7 +31,7 @@ if (experimento == 1) #Demo
 
 if (experimento == 2) #Lehrner et al. (1995) data 
 {
-  archive <-'MirrEx1a_V2_TODOS.csv'
+  archive <-'MirrEx1a_V2_TODOS-.csv'
   datos <- read.csv(archive)
   Hits_Facil <- datos$A_H
   Hits_Dificil <- datos$B_H
@@ -63,23 +63,16 @@ samples <- jags(data, inits=myinits, parameters,
                 n.chains=1, n.iter=niter, n.burnin=burnin, n.thin=1)
 # Now the values for the monitodeepskyblue3 parameters are in the "samples" object, ready for inspection.
 
-
-
-for (a in 1:k){
-  d_a <- samples$BUGSoutput$sims.list$d_A[,a]
-  d_b <- samples$BUGSoutput$sims.list$d_B[,a]
-  c_a <- samples$BUGSoutput$sims.list$c_A[,a]
-  c_b <- samples$BUGSoutput$sims.list$c_B[,a]
-}
-
-for (b in 1:k){
-  tetaH_a <- samples$BUGSoutput$sims.list$thetah_A[,b]
-  tetaH_b <- samples$BUGSoutput$sims.list$thetah_B[,b]
-  tetaFA_a <- samples$BUGSoutput$sims.list$thetaf_A[,b]
-  tetaFA_b <- samples$BUGSoutput$sims.list$thetaf_B[,b]
-  tauH <- samples$BUGSoutput$sims.list$Tau_H[,b]
-  tauF <- samples$BUGSoutput$sims.list$Tau_F[,b]
-  }
+  d_a <- samples$BUGSoutput$sims.list$d_A
+  d_b <- samples$BUGSoutput$sims.list$d_B
+  c_a <- samples$BUGSoutput$sims.list$c_A
+  c_b <- samples$BUGSoutput$sims.list$c_B
+  tetaH_a <- samples$BUGSoutput$sims.list$thetah_A
+  tetaH_b <- samples$BUGSoutput$sims.list$thetah_B
+  tetaFA_a <- samples$BUGSoutput$sims.list$thetaf_A
+  tetaFA_b <- samples$BUGSoutput$sims.list$thetaf_B
+  tauH <- samples$BUGSoutput$sims.list$Tau_H
+  tauF <- samples$BUGSoutput$sims.list$Tau_F
 
 
 ###############################################
@@ -95,15 +88,19 @@ if (experimento ==1)
 {
   par(cex.main = 1.5, mar = c(5, 6, 4, 5) + 0.1, mgp = c(3.5, 1, 0), cex.lab = 1.5,
       font.lab = 2, cex.axis = 1.3, bty = "n", las=1)
-  
+  soporte <- c(0,5)
+    
   # Discriminability panel:    
-  plot(density(d_a), lwd=2, col="deepskyblue3", main="", ylab="", xlab="", 
-       xlim=c(0,5), axes=F)
-  lines(density(d_b), lwd=2, col="darkorchid3", lty=1)
-  axis(1)
-  axis(2, labels=F, at=c(0,24))
-  mtext("Probability Density", side=2, line = 2, cex=1, las=0)
-  mtext("D-primes", side=1, line = 2.5, cex=1, font=2)
+  plot(soporte, axes=F, main="", ylab="", xlab="", xlim=c(0,5), col='white')
+  for(a in 1:k){
+    lines(density(d_a[,a]), lwd=2, col="deepskyblue3")
+    lines(density(d_b[,a]), lwd=2, col="darkorchid3", lty=1)
+    axis(1)
+    axis(2, labels=F, at=c(0,24))
+    mtext("Probability Density", side=2, line = 2, cex=1, las=0)
+    mtext("D-primes", side=1, line = 2.5, cex=1, font=2)
+    }
+
   # Bias panel:    
   plot(density(c_a), lwd=2, col="deepskyblue3", main="", ylab="", xlab="", 
        xlim=c(-1,1), axes=F)
@@ -306,44 +303,62 @@ if (experimento ==2)
 layout(matrix(1:2,ncol=1))
 if (experimento ==1)
 {
+  soporte_t <- c(0,35)
   par(cex.main = 1.5, mar = c(5, 6, 4, 5) + 0.1, mgp = c(3.5, 1, 0), cex.lab = 1.5,
       font.lab = 2, cex.axis = 1.3, bty = "n", las=1)
   
-  plot(density(tauH), lwd=2, col="red", main="Are Hit Rates different?", ylab="", xlab="", 
+  plot(soporte_t, axes=F, main="Experiment 1", ylab="", xlab="", xlim=c(-0.5,0.5), col='white')
+  for(a in 1:k){
+  lines(density(tauH[,a]), lwd=1, col="red", ylab="", xlab="", 
        xlim=c(-0.5,0.5), axes=F)
-   axis(1)
-  axis(2, labels=F, at=c(0,24))
-  mtext("Probability Density", side=2, line = 2, cex=1, las=0)
-  mtext("Tau-H", side=1, line = 2.5, cex=1, font=2)
-  points(0,0.39, type='p', col='black', cex=1.5)
-  
-  plot(density(tauF), lwd=2, col="red", main="Are FA Rates different?", ylab="", xlab="", 
-       xlim=c(-0.5,0.5), axes=F)
+}
   axis(1)
+  abline(v=0, col='black', lty=2, lwd=3)
   axis(2, labels=F, at=c(0,24))
-  mtext("Probability Density", side=2, line = 2, cex=1, las=0)
-  mtext("Tau-F", side=1, line = 2.5, cex=1, font=2)
-  points(0,2.90, type='p', col='black', cex=1.5)
+  mtext("Density", side=2, line = 2, cex=1, las=0)
+  mtext("Differences on Hit Rates", side=3, line = 0.2, cex=1, font=1)
+  mtext("Tau-H", side=1, line = 2.5, cex=1.5, font=2)
+
+  
+  plot(soporte_t, axes=F, main="", ylab="", xlab="", xlim=c(-0.5,0.5), col='white')
+  for (a in 1:k){
+  lines(density(tauF[,a]), lwd=1, col="red", ylab="", main="", xlab="", xlim=c(-0.5,0.5), axes=F)
+  }
+  axis(1) 
+  abline(v=0, col='black', lty=2, lwd=3)
+  axis(2, labels=F, at=c(0,24))
+  mtext("Density", side=2, line = 2, cex=1, las=0)
+  mtext("Tau-F", side=1, line = 2.5, cex=1.5, font=2)
+  mtext("Differences on FA Rates", side=3, line = 0.2, cex=1, font=1)
 }
 
 if (experimento ==2)
 {
+  soporte_t <- c(0,35)
   par(cex.main = 1.5, mar = c(5, 6, 4, 5) + 0.1, mgp = c(3.5, 1, 0), cex.lab = 1.5,
       font.lab = 2, cex.axis = 1.3, bty = "n", las=1)
   
-  plot(density(tauH), lwd=2, col="red", main="Are Hit Rates different?", ylab="", xlab="", 
-       xlim=c(-0.5,0.5), axes=F)
+  plot(soporte_t, axes=F, main="Experiment 2", ylab="", xlab="", xlim=c(-0.5,0.5), col='white')
+  for(a in 1:k){
+    lines(density(tauH[,a]), lwd=1, col="red", ylab="", xlab="", 
+          xlim=c(-0.5,0.5), axes=F)
+  }
   axis(1)
+  abline(v=0, col='black', lty=2, lwd=3)
   axis(2, labels=F, at=c(0,24))
-  mtext("Probability Density", side=2, line = 2, cex=1, las=0)
-  mtext("Tau-H", side=1, line = 2.5, cex=1, font=2)
-  points(0,0.023006, type='p', col='black', cex=1.5)
+  mtext("Density", side=2, line = 2, cex=1, las=0)
+  mtext("Differences on Hit Rates", side=3, line = 0.2, cex=1, font=1)
+  mtext("Tau-H", side=1, line = 2.5, cex=1.5, font=2)
+
   
-  plot(density(tauF), lwd=2, col="red", main="Are FA Rates different?", ylab="", xlab="", 
-       xlim=c(-0.5,0.5), axes=F)
-  axis(1)
+  plot(soporte_t, axes=F, main="", ylab="", xlab="", xlim=c(-0.5,0.5), col='white')
+  for (a in 1:k){
+    lines(density(tauF[,a]), lwd=1, col="red", ylab="", main="", xlab="", xlim=c(-0.5,0.5), axes=F)
+  }
+  axis(1) 
+  abline(v=0, col='black', lty=2, lwd=3)
   axis(2, labels=F, at=c(0,24))
-  mtext("Probability Density", side=2, line = 2, cex=1, las=0)
-  mtext("Tau-F", side=1, line = 2.5, cex=1, font=2)
-  points(0,5.326, type='p', col='black', cex=1.5)
+  mtext("Density", side=2, line = 2, cex=1, las=0)
+  mtext("Tau-F", side=1, line = 2.5, cex=1.5, font=2)
+  mtext("Differences on FA Rates", side=3, line = 0.2, cex=1, font=1)
 }
