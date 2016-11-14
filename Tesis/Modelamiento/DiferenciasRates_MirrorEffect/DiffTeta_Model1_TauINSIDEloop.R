@@ -1,4 +1,4 @@
-setwd("C:/Users/Alejandro/Desktop/Felisa/Tesis/CSVs")
+setwd("C:/Users/Adrifelcha/Desktop/Tesis/Tesis/CSVs")
 rm(list=ls())
 dir()
 library(R2jags)
@@ -55,11 +55,11 @@ myinits <- list(
 # parameters to be monitodeepskyblue3:	
 parameters <- c("d_A", "c_A", "thetah_A", "thetaf_A", "d_B", "c_B", "thetah_B", "thetaf_B","Tau_H", "Tau_F")
 
-niter <- 10000
+niter <- 100000
 burnin <- 1000
 # Corremos JAGS
 samples <- jags(data, inits=myinits, parameters,
-                model.file ="C:/Users/Alejandro/Desktop/Felisa/Tesis/Modelamiento/DiferenciasRates_MirrorEffect/DiffTeta_Modelo1_TauINSIDEloop.txt",
+                model.file ="C:/Users/Adrifelcha/Desktop/Tesis/Tesis/Modelamiento/DiferenciasRates_MirrorEffect/DiffTeta_Modelo1_TauINSIDEloop.txt",
                 n.chains=1, n.iter=niter, n.burnin=burnin, n.thin=1)
 # Now the values for the monitodeepskyblue3 parameters are in the "samples" object, ready for inspection.
 
@@ -80,18 +80,21 @@ samples <- jags(data, inits=myinits, parameters,
 ###############################################
 
 #make the four panel plot:
-#layout(matrix(1:2,ncol=1))
-layout(matrix(c(1,2,3,4), 2, 2, byrow = TRUE))
+layout(matrix(1:2,ncol=1))
+#layout(matrix(c(1,2,3,4), 2, 2, byrow = TRUE))
 
 
 if (experimento ==1)
 {
   par(cex.main = 1.5, mar = c(5, 6, 4, 5) + 0.1, mgp = c(3.5, 1, 0), cex.lab = 1.5,
       font.lab = 2, cex.axis = 1.3, bty = "n", las=1)
-  soporte <- c(0,5)
+  soporte_d <- c(0,3)
+  soporte_c <- c(0,6)
+  soporte_h <- c(0,50)
+  soporte_f <- c(0,50)
     
   # Discriminability panel:    
-  plot(soporte, axes=F, main="", ylab="", xlab="", xlim=c(0,5), col='white')
+  plot(soporte_d, axes=F, main="", ylab="", xlab="", xlim=c(0,6), col='white')
   for(a in 1:k){
     lines(density(d_a[,a]), lwd=2, col="deepskyblue3")
     lines(density(d_b[,a]), lwd=2, col="darkorchid3", lty=1)
@@ -101,35 +104,42 @@ if (experimento ==1)
     mtext("D-primes", side=1, line = 2.5, cex=1, font=2)
     }
 
-  # Bias panel:    
-  plot(density(c_a), lwd=2, col="deepskyblue3", main="", ylab="", xlab="", 
-       xlim=c(-1,1), axes=F)
+  # Bias panel:   
+  plot(soporte_c, main="", ylab="", xlab="", col='white', xlim=c(-1,1), axes=F)
+  for(a in 1:k){
   axis(1)
   axis(2, labels=F, at=c(0,24))
-  lines(density(c_b), lwd=2, col="darkorchid3", lty=1)
+  lines(density(c_a[,a]), lwd=2, col="deepskyblue3")
+  lines(density(c_b[,a]), lwd=2, col="darkorchid3", lty=1)
   mtext("Probability Density", side=2, line = 2, cex=1, las=0)
   mtext("C (Bias)", side=1, line = 2.5, cex=1, font=2)
+  }
+  
   # Hit Rate panel:    
-  plot(density(tetaH_a), lwd=2, col="deepskyblue3", main="", ylab="", xlab="", 
-       xlim=c(0,1), axes=F)
+  plot(soporte_h, col="white", main="", ylab="", xlab="", xlim=c(0,1), axes=F)
+  for(a in 1:k){
   axis(1)
   axis(2, labels=F, at=c(0,24))
-  lines(density(tetaH_b), lwd=2, col="darkorchid3", lty=1)
-  lines(c(0, 0.1),c(12,12), lwd=2, lty=1, col="deepskyblue3")
+  lines(density(tetaH_a[,a]), lwd=2, col="deepskyblue3")
+  lines(density(tetaH_b[,a]), lwd=2, col="darkorchid3", lty=1)
+  lines(c(0, 0.1),c(20,20), lwd=2, lty=1, col="deepskyblue3")
   lines(c(0, 0.1),c(10,10), lwd=2, lty=1, col="darkorchid3")
-  text(0.15, 12, labels="A Condition", offset=0, cex = 0.8, pos=4)
+  text(0.15, 20, labels="A Condition", offset=0, cex = 0.8, pos=4)
   text(0.15, 10, labels="B Condition", offset=0, cex = 0.8, pos=4)
   mtext("Probability Density", side=2, line = 2, cex=1, las=0)
   mtext("Hit Rate", side=1, line = 2.5, cex=1, font=2)
+  }
+  
   # False-Alarm Rate panel:    
-  plot(density(tetaFA_a), lwd=2, col="deepskyblue3", main="", ylab="", xlab="", 
-       xlim=c(0,1), axes=F)
-  lines(density(tetaFA_b), lwd=2, col="darkorchid3", lty=1)
+  plot(soporte_f, col="white", main="", ylab="", xlab="", xlim=c(0,1), axes=F)
+  for(a in 1:k){
+  lines(density(tetaFA_a[,a]), lwd=2, col="deepskyblue3")
+  lines(density(tetaFA_b[,a]), lwd=2, col="darkorchid3", lty=1)
   axis(1)
   axis(2, labels=F, at=c(0,24))
   mtext("Probability Density", side=2, line = 2, cex=1, las=0)
   mtext("False-Alarm Rate", side=1, line = 2.5, cex=1, font=2)
-}
+}}
 
 
 if (experimento ==2)
@@ -358,7 +368,6 @@ if (experimento ==2)
   axis(1) 
   abline(v=0, col='black', lty=2, lwd=3)
   axis(2, labels=F, at=c(0,24))
-  mtext("Density", side=2, line = 2, cex=1, las=0)
   mtext("Tau-F", side=1, line = 2.5, cex=1.5, font=2)
   mtext("Differences on FA Rates", side=3, line = 0.2, cex=1, font=1)
 }

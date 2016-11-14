@@ -1,4 +1,4 @@
-setwd("C:/Users/Alejandro/Desktop/Felisa/Tesis/CSVs")
+setwd("C:/Users/Adrifelcha/Desktop/Tesis/Tesis/CSVs")
 rm(list=ls())
 dir()
 library(R2jags)
@@ -12,7 +12,7 @@ library(R2jags)
 
 
 ######################################################
-experimento <- 2
+experimento <- 1
 #####################################################
 
 
@@ -56,11 +56,11 @@ myinits <- list(
 parameters <- c("c_A", "c_B", "d_A", "d_B", "thetah_A", "thetah_B", "thetaf_A", "thetaf_B", "muc_A", "muc_B", "mud_A", "mud_B", "sigmac_A", "sigmac_B", "sigmad_A", "sigmad_B", "delta")
 
 
-niter <- 10000
-burnin <- 1000
+niter <- 100000
+burnin <- 2000
 # Corremos JAGS
 samples <- jags(data, inits=myinits, parameters,
-                model.file ="C:/Users/Alejandro/Desktop/Felisa/Tesis/Modelamiento/DiferenciasDprima/DiffD_Modelo2_DeltaOVERmeanD.txt",
+                model.file ="C:/Users/Adrifelcha/Desktop/Tesis/Tesis/Modelamiento/DiferenciasDprima/DiffD_Modelo2_DeltaOVERmeanD.txt",
                 n.chains=1, n.iter=niter, n.burnin=burnin, n.thin=1)
 # Now the values for the monitodeepskyblue3 parameters are in the "samples" object, ready for inspection.
 
@@ -211,8 +211,8 @@ if (experimento ==1)
 {
  # D' y C
   
-  par(mar=c(3,1,1,0))
-  plot(muDA[keep],muCA[keep], col="deepskyblue3", xlab="", main="Experiment 1", ylab="", axes=F,xlim=c(0,5), ylim=c(-1,1))
+  par(mar=c(0.7,1,3,0))
+  plot(muDA[keep],muCA[keep], col="deepskyblue3", xlab="", main="Experiment 1", cex.main=2, ylab="", axes=F,xlim=c(0,5), ylim=c(-1,1))
   points(muDB[keep],muCB[keep], col="darkorchid3")
   lines(c(0.2, 0.6),c(0.85,0.85), lwd=2, lty=1, col="deepskyblue3")
   lines(c(0.2, 0.6),c(0.7,0.7), lwd=2, lty=1, col="darkorchid3")
@@ -220,18 +220,18 @@ if (experimento ==1)
   text(0.65, 0.7, labels="B Condition", offset=0, cex = 1, pos=4)
   box(lty=1)
   
-  par(mar=c(3,1,1,8))
+  par(mar=c(0.7,0.5,3,6))
   plot(mu.Ca$y, mu.Ca$x, xlim=rev(c(0,5)),type='l', col="deepskyblue3", axes=F, xlab="", ylab="",ylim=c(-1,1))
   lines(mu.Cb$y, mu.Cb$x, col="darkorchid3")
   axis(4)
-  mtext(expression(paste(mu, "C")), side=4,line=3, cex=1.5, font=2, las=0)
+  mtext(expression(paste(mu, "C")), side=4,line=4.5, cex=1.5, font=2, las=0)
   box(lty=1)
   
-  par(mar=c(9,1,0,0))
+  par(mar=c(6,1,0,0))
   plot(density(muDA),zero.line=F ,main="", col="deepskyblue3", ylab="", xlab="", cex.lab=1.3, axes=F, xlim=c(0,5),ylim=c(0,3))
   lines(density(muDB), col="darkorchid3")
   axis(1, at=c(0.0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4, 4.5, 5))
-  mtext(expression(paste(mu, "D")), side=1.2,line=3, cex=1.5, font=2)
+  mtext(expression(paste(mu, "D")), side=1.2,line=4, cex=1.5, font=2)
   box(lty=1)
 }
 
@@ -240,8 +240,8 @@ if (experimento ==2)
 {
   # D' y C
   
-  par(mar=c(3,1,1,0))
-  plot(muDA[keep],muCA[keep], col="deepskyblue3", xlab="", ylab="", main="Experiment 2", axes=F,xlim=c(0,3), ylim=c(-1,1))
+  par(mar=c(0.7,1,3,0))
+  plot(muDA[keep],muCA[keep], col="deepskyblue3", xlab="", main="Experiment 2", cex.main=2, ylab="", axes=F,xlim=c(0,5), ylim=c(-1,1))
   points(muDB[keep],muCB[keep], col="darkorchid3")
   lines(c(0.2, 0.6),c(0.85,0.85), lwd=2, lty=1, col="deepskyblue3")
   lines(c(0.2, 0.6),c(0.7,0.7), lwd=2, lty=1, col="darkorchid3")
@@ -249,18 +249,18 @@ if (experimento ==2)
   text(0.65, 0.7, labels="B Condition", offset=0, cex = 1, pos=4)
   box(lty=1)
   
-  par(mar=c(3,1,1,8))
-  plot(mu.Ca$y, mu.Ca$x, xlim=rev(c(0,6)),type='l', col="deepskyblue3", axes=F, xlab="", ylab="",ylim=c(-1,1))
+  par(mar=c(0.7,0.5,3,6))
+  plot(mu.Ca$y, mu.Ca$x, xlim=rev(c(0,5)),type='l', col="deepskyblue3", axes=F, xlab="", ylab="",ylim=c(-1,1))
   lines(mu.Cb$y, mu.Cb$x, col="darkorchid3")
   axis(4)
-  mtext(expression(paste(mu, "C")), side=4,line=3, cex=1.5, font=2, las=0)
+  mtext(expression(paste(mu, "C")), side=4,line=4.5, cex=1.5, font=2, las=0)
   box(lty=1)
   
-  par(mar=c(9,1,0,0))
-  plot(density(muDA),zero.line=F ,main="", col="deepskyblue3", ylab="", xlab="", cex.lab=1.3, axes=F, xlim=c(0,3),ylim=c(0,3))
+  par(mar=c(6,1,0,0))
+  plot(density(muDA),zero.line=F ,main="", col="deepskyblue3", ylab="", xlab="", cex.lab=1.3, axes=F, xlim=c(0,5),ylim=c(0,3))
   lines(density(muDB), col="darkorchid3")
   axis(1, at=c(0.0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4, 4.5, 5))
-  mtext(expression(paste(mu, "D")), side=1.2,line=3, cex=1.5, font=2)
+  mtext(expression(paste(mu, "D")), side=1.2,line=4, cex=1.5, font=2)
   box(lty=1)
 }
 
@@ -273,7 +273,7 @@ if (experimento ==1)
   par(cex.main = 1.5, mar = c(5, 6, 4, 5) + 0.1, mgp = c(3.5, 1, 0), cex.lab = 1.5,
       font.lab = 2, cex.axis = 1.3, bty = "n", las=1)
   
-  plot(density(Delta), col='red', main="Experiment 1", cex.main=2, lwd=3.5, ylab="", xlab="", axes=F, xlim=c(-0.5,2))
+  plot(density(Delta), col='red', main="", cex.main=2, lwd=3.5, ylab="", xlab="", axes=F, xlim=c(-0.5,2))
   #text(1.5, 1.2, labels="Delta", offset=0, cex = 1, col='red', pos=4)
   axis(1)
   axis(2, labels=F, at=c(0,24))
@@ -283,11 +283,9 @@ if (experimento ==1)
   
   
   
-  plot(density(Delta), lwd=3.5, col="red", main="Experiment 1", cex.main=2,  ylab="", xlab="", 
+  plot(density(Delta), lwd=3.5, col="red", main="", cex.main=2,  ylab="", xlab="", 
        xlim=c(-3,3), axes=F)
   axis(1)
-  axis(2, labels=F, at=c(0,24))
-  mtext("Probability Density", side=2, line = 2, cex=2, font=2, las=0)
   mtext("Delta", side=1, line = 2.5, cex=2, font=2)
   points(0,0.03032, pch=16, type='p', col='black', cex=1.5)
   
@@ -298,7 +296,7 @@ if (experimento ==2)
   par(cex.main = 1.5, mar = c(5, 6, 4, 5) + 0.1, mgp = c(3.5, 1, 0), cex.lab = 1.5,
       font.lab = 2, cex.axis = 1.3, bty = "n", las=1)
   
-  plot(density(Delta), col='red', main="Experiment 2", cex.main=2, lwd=3.5, ylab="", xlab="", axes=F, xlim=c(-0.5,2))
+  plot(density(Delta), col='red', main="", cex.main=2, lwd=3.5, ylab="", xlab="", axes=F, xlim=c(-0.5,2))
 #  text(1.5, 1.2, labels="Delta", offset=0, cex = 1, col='red', pos=4)
   axis(1)
   axis(2, labels=F, at=c(0,24))
@@ -307,11 +305,9 @@ if (experimento ==2)
   points(0,0.007229, pch=16, type='p', col='black', cex=1.5)
   
   #     
-  plot(density(Delta), lwd=3.5, col="red", main="Experiment 2", cex.main=2, ylab="", xlab="", 
+  plot(density(Delta), lwd=3.5, col="red", main="", cex.main=2, ylab="", xlab="", 
        xlim=c(-3,3), axes=F)
   axis(1)
-  axis(2, labels=F, at=c(0,24))
-  mtext("Probability Density", side=2, line = 2, cex=2, las=0, font=2)
   mtext("Delta", side=1, line = 2.5, cex=2, font=2)
   points(0,0.007229, pch=16, type='p', col='black', cex=1.5)
 }
