@@ -1,4 +1,4 @@
-setwd("C:/Users/Adrifelcha/Dropbox/Tesis/Experimentos/Mirror Experimento 2/Data/Datos_Exp2")
+setwd("C:/Users/Adrifelcha/Desktop/Tesis/Tesis/CSVs/Datos_Exp2")
 rm(list=ls())
 dir()
 
@@ -173,10 +173,10 @@ for(archive in dir()){
   axis(1,at=1:640,labels=c(1:640))
   #axis(2,at=0:10,labels=c("0", "1","2","3","4","5","6","7","8","9","10"))
   points(jaime$Errores,type='o', lty=1, lwd=.5, pch=16, col='red')
-  mtext(archive,3,cex=.8)
-  text(70,500,paste('Aciertos'),cex=1,col='chartreuse4',f=2)
-  text(70,400,paste('Errores'),cex=1,col='red',f=2)
-  title("Aciertos y errores por ensayo", outer = TRUE, line = -2)
+  mtext("Experiment 2 - P. 3",3,cex=.8)
+  text(70,500,paste('Right'),cex=1,col='chartreuse4',f=2)
+  text(70,400,paste('Wrong'),cex=1,col='red',f=2)
+  title("Performance across time", outer = TRUE, line = -2)
   
   
   plot(jaime$Exito[1:215],type='o',pch=16, col='darkgreen',ylim=c(0,1),axes=F , ann = F )
@@ -216,22 +216,22 @@ for(archive in dir()){
   text(646,jaime$ContadorM[630]+20,paste("M"),cex=1,col='purple',f=2)
   text(646,jaime$ContadorR[639]+20,paste("R"),cex=1,col='green',f=2)
   text(646,jaime$ContadorH[639]+20,paste("H"),cex=1,col='blue',f=2)
-  mtext(archive,3,cex=.8)
-  title("Contadores por ensayo", outer = TRUE, line = -2)
+  mtext("Experiment 2 - P. 5",3,cex=.8)
+  title("Counters across time", outer = TRUE, line = -2)
   
   plot(jaime$outcome[1:215],type='o',pch=16, col='deepskyblue4',ylim=c(1,4),axes=F , ann = F )
   axis(1,at=1:215,labels=c(1:215))
-  axis(2,at=c(1,2,3,4), labels=c('F.Alarma', 'Miss', 'Rejection', 'Hit'))
+  axis(2,at=c(1,2,3,4), labels=c('F.Alarm', 'Miss', 'Rejection', 'Hit'))
   mtext('1-215',3,cex=.8)
   
   plot(jaime$outcome[216:430],type='o',pch=16, col='deepskyblue4',ylim=c(1,4),axes=F , ann = F )
   axis(1,at=1:215,labels=c(216:430))
-  axis(2,at=c(1,2,3,4), labels=c('F.Alarma', 'Miss', 'Rejection', 'Hit'))
+  axis(2,at=c(1,2,3,4), labels=c('F.Alarm', 'Miss', 'Rejection', 'Hit'))
   mtext('216-430',3,cex=.8)
   
   plot(jaime$outcome[431:640],type='o',pch=16, col='deepskyblue4',ylim=c(1,4),axes=F , ann = F )
   axis(1,at=1:210,labels=c(431:640))
-  axis(2,at=c(1,2,3,4), labels=c('F.Alarma','Miss','Rejection','Hit'))
+  axis(2,at=c(1,2,3,4), labels=c('F.Alarm','Miss','Rejection','Hit'))
   mtext('431-640',3,cex=.8)
   
 }
@@ -254,10 +254,10 @@ for(archive in dir()){
   axis(1,at=1:640,labels=sort(unique(jaime$Ensayo)))
   axis(2,at=c(0,2,4,6,8,10,12,14,16),labels=c("0","2","4","6","8","10","12","14","16"))
   points(jaime$RTime2,type='o', lty=3, pch=16, col='brown')
-  text(100,14,paste('Estimulo'),cex=1,col='purple',f=2)
-  text(100,10,paste('Escala'),cex=1,col='brown',f=2)
+  text(100,14,paste('Stimulus'),cex=1,col='purple',f=2)
+  text(100,10,paste('Rating'),cex=1,col='brown',f=2)
   mtext(archive,3,cex=.8)
-  title("Tiempo de Respuesta por Ensayo", outer = TRUE, line = -2)
+  title("Response Time per trial", outer = TRUE, line = -2)
 }
 
 ################################
@@ -277,7 +277,7 @@ for(archive in dir()){
   axis(1,at=1:160,labels=c(1:160))
   axis(2,at=0:20,labels=c(0:20))
   text(145,9.5,paste("1-160"),cex=1,col='darkorange',f=2)
-  mtext(archive,3,cex=.8)
+  mtext("Experiment 2 - P.8",3,cex=.8)
   
   
   plot(jaime$RTime1[161:320],type='o',pch=16, col='darkorange1',ylim=c(1,10),axes=F , ann = F )
@@ -297,14 +297,14 @@ for(archive in dir()){
   axis(2,at=0:20,labels=c(0:20))
   text(145,8,paste("481-640"),cex=1,col='darkorange3',f=2)
   # text(170,7.5,paste("5"),cex=1,col='violet',f=2)
-  title("Tiempo de Respuesta al Estimulo", outer = TRUE, line = -2)
+  title("Response time per trial (Stimulus)", outer = TRUE, line = -2)
   
   }  
   {plot(jaime$RTime2[1:160],type='o',pch=16, col='violetred1',ylim=c(0,10),axes=F , ann = F )
   axis(1,at=1:160,labels=c(1:160))
   axis(2,at=0:20,labels=c(0:20))
   text(145,9.5,paste("1-160"),cex=1,col='violetred1',f=2)
-  mtext(archive,3,cex=.8)
+  mtext("Experiment 2 - P. 8",3,cex=.8)
   
   
   plot(jaime$RTime2[161:320],type='o',pch=16, col='violetred2',ylim=c(0,10),axes=F , ann = F )
@@ -324,7 +324,7 @@ for(archive in dir()){
   axis(2,at=0:20,labels=c(0:20))
   text(145,8,paste("481-640"),cex=1,col='violetred4',f=2)
   # text(170,7.5,paste("5"),cex=1,col='violet',f=2)
-  title( "Tiempo de Respuesta a la Escala", outer = TRUE, line = -2)
+  title( "Response Time per Trial (Rating)", outer = TRUE, line = -2)
   
 }}
 
@@ -340,11 +340,11 @@ for(archive in dir()){
   jaime$Ensayo <- as.character(jaime$Ensayo)
   cafe <- strsplit(as.character(jaime$Ensayo),split='-')
   
-  plot(jaime$Confidence[1:160],type='o',pch=16, col='darkorchid',ylim=c(1,10),axes=F , ylab='Confidence Value', xlab='Trial' )
+  plot(jaime$Confidence[1:160],type='o',pch=16, col='darkorchid',ylim=c(1,10),axes=F , ylab='Confidence', xlab='Trial' )
   axis(1,at=1:160,labels=c(1:160))
   axis(2,at=1:6,labels=c("1","2","3","4","5","6"))
   text(140,9.5,paste("1-160"),cex=1,col='darkorchid',f=2)
-  mtext(archive,3,cex=.8)
+  mtext("Experiment 2 - P. 12",3,cex=.8)
   
   plot(jaime$Confidence[161:320],type='o',pch=16, col='darkorchid3',ylim=c(1,10),axes=F , ann = F )
   axis(1,at=1:160,labels=c(161:320))
@@ -362,7 +362,7 @@ for(archive in dir()){
   axis(1,at=1:160,labels=c(481:640))
   axis(2,at=1:6,labels=c("1","2","3","4","5","6"))
   text(140,8,paste("481-640"),cex=1,col='darkorchid1',f=2)
-  title( "ConfidenceRate por Ensayo", outer = TRUE, line = -2)
+  title( "Confidence Rating per Trial", outer = TRUE, line = -2)
  
 }
 
@@ -377,29 +377,29 @@ for(archive in dir()){
   jaime$Ensayo <- as.character(jaime$Ensayo)
   cafe <- strsplit(as.character(jaime$Ensayo),split='-')
   
-  plot(jaime$choice[1:160],type='o',pch=16, col='darkorchid',ylim=c(0,1),axes=F , ylab='Respuesta', xlab='Trial' )
+  plot(jaime$choice[1:160],type='o',pch=16, col='darkorchid',ylim=c(0,1),axes=F , ylab='Response', xlab='Trial' )
   axis(1,at=1:160,labels=c(1:160))
-  axis(2,at=0:1,labels=c("No","Sí"))
+  axis(2,at=0:1,labels=c("No","Yes"))
   text(140,9.5,paste("1-160"),cex=1,col='darkorchid',f=2)
-  mtext(archive,3,cex=.8)
+  mtext("Experiment 2 - P. 12",3,cex=.8)
   
   plot(jaime$choice[161:320],type='o',pch=16, col='darkorchid3',ylim=c(0,1),axes=F , ann = F )
   axis(1,at=1:160,labels=c(161:320))
-  axis(2,at=0:1,labels=c("No","Sí"))
+  axis(2,at=0:1,labels=c("No","Yes"))
   text(140,9,paste("161-320"),cex=1,col='darkorchid3',f=2)
   
   
   plot(jaime$choice[321:480],type='o',pch=16, col='darkorchid2',ylim=c(0,1),axes=F , ann = F )
   axis(1,at=1:160,labels=c(321:480))
-  axis(2,at=0:1,labels=c("No","Sí"))
+  axis(2,at=0:1,labels=c("No","Yes"))
   text(140,8.5,paste("321-480"),cex=1,col='darkorchid2',f=2)
   
   
   plot(jaime$choice[481:640],type='o',pch=16, col='darkorchid1',ylim=c(0,1),axes=F , ann = F )
   axis(1,at=1:160,labels=c(481:640))
-  axis(2,at=0:1,labels=c("No","Sí"))
+  axis(2,at=0:1,labels=c("No","Yes"))
   text(140,8,paste("481-640"),cex=1,col='darkorchid1',f=2)
-  title( "Choice por ensayo", outer = TRUE, line = -2)
+  title( "Choice per Trial", outer = TRUE, line = -2)
 }
 
 ############################
@@ -436,16 +436,16 @@ for(archive in dir()){
   axis(1,at=1:4,labels=sort(unique(jaime$num_circulos_externos)))
   axis(2,at=c(50, 60, 70, 80, 90, 100),labels=c("50","60","70","80","90","100"),las=1)
   points(fa,type='o',pch=16,col='red')
-  mtext(archive,3,cex=.8)
+  #mtext(archive,3,cex=.8)
   text(3.5,90,paste('Hits'),cex=1,col='blue',f=2)
-  title("Hits y F. Alarmas por No. Circulos Externos", outer = TRUE, line = -2)
+  title("Hits y F. Alarmas per No. External Circles", outer = TRUE, line = -2)
   
   plot(fa,type='o',pch=16,col='red',ylim=c(0,50),axes=F , ann = F )
   axis(1,at=1:4,labels=sort(unique(jaime$num_circulos_externos)))
   axis(2,at=c(0, 10, 20, 30, 40, 50),labels=c("0", "10","20","30","40","50"),las=1)
   points(fa,type='o',pch=16,col='red')
   text(1.5,40,paste('F.A'),cex=1,col='red',f=2)
-  mtext(archive,3,cex=.8)
+  #mtext(archive,3,cex=.8)
   
  }
 

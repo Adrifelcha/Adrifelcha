@@ -45,10 +45,10 @@
 \newlength{\onecolwid}
 \newlength{\twocolwid}
 \newlength{\threecolwid}
-\setlength{\paperwidth}{59in} % Width 198 cm
-\setlength{\paperheight}{47.244in} % Heighth 109.22
-\setlength{\sepwid}{0.024\paperwidth} % Separation width (white space) between columns
-\setlength{\onecolwid}{0.22\paperwidth} % Width of one column
+\setlength{\paperwidth}{62.99in} % Width 150 cm  [Max 96in - 244 cm]
+\setlength{\paperheight}{43.307in} % Heighth 120.22 [Max 48 - 121 m]
+\setlength{\sepwid}{0.01\paperwidth} % Separation width (white space) between columns
+\setlength{\onecolwid}{0.24\paperwidth} % Width of one column
 \setlength{\twocolwid}{0.464\paperwidth} % Width of two columns
 \setlength{\threecolwid}{0.708\paperwidth} % Width of three columns
 \setlength{\topmargin}{0in} % Reduce the top margin size
@@ -72,15 +72,13 @@
 \begin{document}
 \addtobeamertemplate{block end}{}{\vspace*{1.5ex}} % White space under blocks
 \addtobeamertemplate{block alerted end}{}{\vspace*{1.5ex}} % White space under highlighted (alert) blocks
-\setlength{\belowcaptionskip}{2ex} % White space under figures
-\setlength\belowdisplayshortskip{2ex} % White space under equations
+\setlength{\belowcaptionskip}{1ex} % White space under figures
+\setlength\belowdisplayshortskip{1ex} % White space under equations
 \begin{frame}[t] % The whole poster is enclosed in one beamer frame
 \begin{tikzpicture}[remember picture,overlay]
 \node[anchor=north west] at ([shift={(5cm,-1cm)}]current page.north west)
     {\includegraphics[width=10cm]{Figures/UNAMiwi.jpg}};
-\node[anchor=north west] at ([shift={(23cm,-2cm)}]current page.north west)
-    {\includegraphics[width=10cm]{Figures/Psicologia.png}};
-\node[anchor=north east] at ([shift={(-15cm,-1cm)}]current page.north east)
+\node[anchor=north east] at ([shift={(-5cm,-1cm)}]current page.north east)
     {\includegraphics[width=12cm]{Figures/Lab25.png}};
 \end{tikzpicture}
 
@@ -100,14 +98,14 @@
 \setbeamercolor{block alerted body}{fg=black,bg=white} % Cuerpo / Contenido del cuadro
 \begin{alertblock}{Introduction: A memory phenomenon?}
 
-Signal Detection Theory has been applied to Recognition Memory studies to describe subjects’ ability to discriminate between stimuli that have been presented before from a new set of stimuli (Wixted, 2007). When comparing subjects' performance between two classes of stimuli, one being more easily recognized (A) than the other (B), the response patterns obtained show that the difference in their discriminability is reflected in the identification of both target and lure stimuli, leading to its identification as the Mirror Effect (Glanzer, Adams, Kim, 1993).
+Signal Detection Theory has been applied to Recognition Memory studies to describe subjects’ ability to discriminate between stimuli that have been presented before from a new set of stimuli. When comparing subjects' performance between two classes of stimuli, one being more easily recognized (A) than the other (B), the response patterns obtained show that the difference in their discriminability is reflected in the identification of both target and lure stimuli, leading to its identification as the Mirror Effect (Glanzer, Adams, Kim, 1993).
 
 
 \begin{figure}
 \includegraphics[width=0.5\linewidth]{Figures/MirrorEffect.png}
 \end{figure}
 
-Evidence in favor of the Mirror Effect has been reported across different SDT-alike procedures. In typical Yes/No tasks, the Mirror Effect appears as:
+Evidence in favor of the Mirror Effect has been reported across different SDT-alike procedures. In typical Yes/No tasks, it appears as:
 
 \begin{equation}
 FA(A) < FA(B) < Hits(B) < Hits(A)
@@ -169,7 +167,7 @@ $\qquad$
 \item 640 trials (total)
 %	\item 340 - A condition |  340 - B condition
 %		\item 160 - Noise | 160 - Signal
-\item 40 different stimuli, (10 repetitions, at least)
+%\item 40 different stimuli, (10 repetitions, at least)
 %	\item 16 different noise stimuli per condition
 %	\item 4 different signal stimuli per condition
 \item 1.5 s exposure
@@ -195,22 +193,71 @@ $\qquad$
 \setbeamercolor{block alerted body}{fg=black,bg=white} 
 \begin{alertblock}{What did we find? (Spoiler alert!)}
 
-We had 20 and 21 participants on Experiments 1 and 2 respectively. In both cases, we found evidence for the Mirror Effect in at least 85\% of the participants. In Experiment 1, we had 17 cases showing the Mirror Effect pattern within the hits and false alarm rates and 18 in terms of Confidence Ratings. In Experiment 2 we had 19 participants, out of 21, showing the Mirror Effect in both patterns of response. All these proportions have proven to be of great significance against chance when we apply a simple Binomial Test (p=0.002577 and p=0.0004025, for Experiment 1, and p=0.0002213 for Experiment 2).
+We had 20 and 21 participants on Experiments 1 and 2 respectively. In both cases, we found evidence for the Mirror Effect in at least 85\% of the participants. In Experiment 1, we had 17 cases showing the Mirror Effect pattern within the hit and false alarm rates and 18 in terms of Confidence Ratings. In Experiment 2 we had 19 participants showing the Mirror Effect in both patterns of response. All these proportions have proven to be of great significance against chance when we apply a simple Binomial Test (p=0.0025 and p=0.0004, for Experiment 1, and p=0.0002 for Experiment 2).
 
 \end{alertblock} 
 
 %----------------------------------------------------------------------------------------
 %   ANALISIS POR REPLICA 
 %-------------------------------||||||||
+\setlength{\onecolwid}{0.24\paperwidth}
 \begin{columns}[t,totalwidth=\twocolwid] % Split up the two columns wide column
 \begin{column}{\onecolwid}\vspace{-.6in} % The first column within column 2 (column 2.1)
 
 
+\setbeamercolor{block alerted title}{fg=white,bg=TealBlue} % Change the alert block title colors
+\setbeamercolor{block alerted body}{fg=black,bg=white} % Change the alert block body colors
+\begin{alertblock}{Plotting our data.}
+
+
+% set colors for itemize/enumerate
+\setbeamercolor{item}{fg=Violet}
+\setbeamercolor{item projected}{fg=white,bg=Violet}
+\begin{itemize}
+\item Are there changes in participants' performance across time?
+
+\begin{center}
+\begin{tabular}{ccc}
+\includegraphics[width=0.48\linewidth]{Figures/4_RT_St.pdf} & \hfill & \includegraphics[width=0.48\linewidth]{Figures/4_RT_CR.pdf}
+\end{tabular}
+\end{center}
+
+
+\begin{center}
+\begin{tabular}{ccc}
+\includegraphics[width=0.48\linewidth]{Figures/2_Counters.pdf} & \hfill & \includegraphics[width=0.48\linewidth]{Figures/2_Counters_.pdf}
+\end{tabular}
+\end{center}
+
+
+\item Are participant's actually paying attention?
+
+\begin{center}
+\begin{tabular}{ccc}
+\includegraphics[width=0.45\linewidth]{Figures/5_CR.pdf} & \hfill & \includegraphics[width=0.5\linewidth]{Figures/6_ChoicePer.pdf}
+\end{tabular}
+\end{center}
+
+
+\item Are the variables involved within stimuli affecting participants' responses?
+
+\begin{center}
+\begin{tabular}{ccc}
+\includegraphics[width=0.35\linewidth]{Figures/7_ExternalC.pdf} & \hfill & \includegraphics[width=0.35\linewidth]{Figures/7_ExternalCircle.pdf}
+\end{tabular}
+\end{center}
+
+
+\begin{center}
+\begin{tabular}{ccc}
+\includegraphics[width=0.35\linewidth]{Figures/8_Color.pdf} & \hfill & \includegraphics[width=0.35\linewidth]{Figures/8_Colors.pdf}
+\end{tabular}
+\end{center}
 
 
 
-
-
+\end{itemize}
+\end{alertblock}
 
 
 
@@ -223,6 +270,7 @@ We had 20 and 21 participants on Experiments 1 and 2 respectively. In both cases
 %----------------------------------------------------------------------------------------
 %   BAYESIAN MODELING 
 %----------------------------------------------------------------------------------------
+\setlength{\onecolwid}{0.21\paperwidth}
 \begin{column}{\sepwid}\end{column} % Empty spacer column
 \begin{column}{\onecolwid}\vspace{-2.1in} % The second column within column 2 (column 2.2)
 
@@ -249,7 +297,7 @@ We had 20 and 21 participants on Experiments 1 and 2 respectively. In both cases
 \item D' differences: Are conditions actually different?
 \begin{center}
 \begin{tabular}{ccc}
-\includegraphics[width=0.65\linewidth]{Figures/Delta_DiffD_Model4.pdf}
+\includegraphics[width=0.6\linewidth]{Figures/Delta_DiffD_Model4.pdf}
 \end{tabular}
 \end{center}
 
@@ -273,12 +321,12 @@ $\qquad$
 \item Hit and False Alarm Rate Differences
 \begin{center}
 \begin{tabular}{ccc}
-\includegraphics[width=0.65\linewidth]{Figures/Tau_DiffTeta_Model3.pdf}
+\includegraphics[width=0.6\linewidth]{Figures/Tau_DiffTeta_Model3.pdf}
 \end{tabular}
 
 
 \begin{tabular}{ccc}
-\includegraphics[width=0.48\linewidth]{Figures/Tau_1.pdf} & \hfill & \includegraphics[width=0.48\linewidth]{Figures/Tau_2.pdf}
+\includegraphics[width=0.46\linewidth]{Figures/Tau_1.pdf} & \hfill & \includegraphics[width=0.46\linewidth]{Figures/Tau_2.pdf}
 \end{tabular}
 \end{center}
 
@@ -290,6 +338,24 @@ $\quad$
 
 \end{alertblock}
 
+
+\setbeamercolor{block title}{fg=red,bg=white} % Change the block title color
+
+\setbeamercolor{item}{fg=white}
+\setbeamercolor{item projected}{fg=white,bg=white}
+\setbeamercolor{block alerted title}{fg=white,bg=Cyan} % Change the alert block title colors
+\setbeamercolor{block alerted body}{fg=black,bg=white} % Change the alert block body colors
+\begin{alertblock}{Acknowledgments \& Contact Information}
+
+\small{\rmfamily{This project was supported by PAPIIT IN307214 and PAPIME PE310016.}} \\
+
+\begin{itemize}
+\item Web: \href{https://sites.google.com/site/adaptabilidad25/}{https://sites.google.com/site/adaptabilidad25/}
+\item Email: \href{mailto:adrifelcha@gmail.com}{adrifelcha@gmail.com}
+\end{itemize}
+
+
+\end{alertblock}
 
 %----------------------------------------------------------------------------------------
 
@@ -313,6 +379,7 @@ $\quad$
 
 \begin{column}{\sepwid}\end{column} % Empty spacer column
 
+\setlength{\onecolwid}{0.252\paperwidth} % Width of one column
 \begin{column}{\onecolwid} % The third column
 
 %----------------------------------------------------------------------------------------
@@ -322,10 +389,6 @@ $\quad$
 \setbeamercolor{block alerted title}{fg=white,bg=Purple} % Titulo
 \setbeamercolor{block alerted body}{fg=black,bg=white} % Cuerpo
 \begin{alertblock}{Classical Analysis}
-
-Data analysis as reported by Glanzer \& Adams, 1990.
-
-$\qquad$
 
 % set colors for itemize/enumerate
 \setbeamercolor{item}{fg=Purple}
@@ -384,6 +447,7 @@ Exp 2 & Noise & 2.386905 & 2.752381 & -1.809 & 0.03919 \\
 \end{tabular}
 \end{table}
 \end{enumerate}
+.$\qquad$$\qquad$$\qquad$$\qquad$$\qquad$$\qquad$$\qquad$$\qquad$$\qquad$$\qquad$ Glanzer \& Adams (1993)
 \end{alertblock}
 
 
@@ -427,23 +491,6 @@ The present study is the first to show evidence of the Mirror Effect patterns of
 %   ACKNOWLEDGEMENTS
 %----------------------------------------------------------------------------------------
 
-\setbeamercolor{block title}{fg=red,bg=white} % Change the block title color
-
-\setbeamercolor{item}{fg=white}
-\setbeamercolor{item projected}{fg=white,bg=white}
-\setbeamercolor{block alerted title}{fg=white,bg=Cyan} % Change the alert block title colors
-\setbeamercolor{block alerted body}{fg=black,bg=white} % Change the alert block body colors
-\begin{alertblock}{Acknowledgments \& Contact Information}
-
-\small{\rmfamily{This project was supported by PAPIIT IN307214 and PAPIME PE310016. And last but not least, I thank Lab 25 crew!}} \\
-
-\begin{itemize}
-\item Web: \href{https://sites.google.com/site/adaptabilidad25/}{https://sites.google.com/site/adaptabilidad25/}
-\item Email: \href{mailto:adrifelcha@gmail.com}{adrifelcha@gmail.com}
-\end{itemize}
-
-
-\end{alertblock}
 \end{column} % End of the third column
 \end{columns} % End of all the columns in the poster
 \end{frame} % End of the enclosing frame
