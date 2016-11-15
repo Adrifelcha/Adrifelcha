@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.25)  14 NOV 2016 16:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.25)  14 NOV 2016 18:03
 entering extended mode
-**./Poster_OPAM_2.tex
-(Poster_OPAM_2.tex
+**./Poster_OPAM_3.tex
+(Poster_OPAM_3.tex
 LaTeX2e <2016/03/31> patch level 3
 Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\beamer.cls"
@@ -1462,8 +1462,8 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@lastruleclass=\count178
 \@thisrulewidth=\dimen269
 )
-(Poster_OPAM_2.aux)
-\openout1 = `Poster_OPAM_2.aux'.
+(Poster_OPAM_3.aux)
+\openout1 = `Poster_OPAM_3.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
 LaTeX Font Info:    ... okay on input line 72.
@@ -1500,7 +1500,7 @@ File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 * modes: includehead includefoot 
 * h-part:(L,W,R)=(28.45274pt, 3323.85117pt, 28.45274pt)
 * v-part:(T,H,B)=(0.0pt, 2388.89357pt, 0.0pt)
-* \paperwidth=5690.54019pt
+* \paperwidth=4263.93pt
 * \paperheight=3414.32411pt
 * \textwidth=3323.85117pt
 * \textheight=2360.44084pt
@@ -1566,9 +1566,9 @@ LaTeX Info: Redefining \ref on input line 72.
 LaTeX Info: Redefining \pageref on input line 72.
 LaTeX Info: Redefining \nameref on input line 72.
 
-(Poster_OPAM_2.out) (Poster_OPAM_2.out)
+(Poster_OPAM_3.out) (Poster_OPAM_3.out)
 \@outlinefile=\write5
-\openout5 = `Poster_OPAM_2.out'.
+\openout5 = `Poster_OPAM_3.out'.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\translator\dicts\translator
@@ -1599,7 +1599,7 @@ LaTeX Info: Redefining \includegraphics on input line 72.
 
 ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 72.
- (Poster_OPAM_2.nav)
+ (Poster_OPAM_3.nav)
 LaTeX Font Info:    Calculating math sizes for size <17.86> on input line 72.
 LaTeX Font Info:    Try loading font information for OT1+lmr on input line 72.
 
@@ -1630,26 +1630,30 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8.93> on input line 72.
 
+Overfull \hbox (810.33452pt too wide) detected at line 72
+ [] 
+ []
+
 <Figures/UNAMiwi.jpg, id=12, 266.49562pt x 310.15875pt>
 File: Figures/UNAMiwi.jpg Graphic file (type jpg)
 
 <use Figures/UNAMiwi.jpg>
-Package pdftex.def Info: Figures/UNAMiwi.jpg used on input line 469.
+Package pdftex.def Info: Figures/UNAMiwi.jpg used on input line 449.
 (pdftex.def)             Requested size: 284.52756pt x 331.17561pt.
 
 <Figures/Psicologia.png, id=13, 79.04532pt x 80.55093pt>
 File: Figures/Psicologia.png Graphic file (type png)
 
 <use Figures/Psicologia.png>
-Package pdftex.def Info: Figures/Psicologia.png used on input line 469.
+Package pdftex.def Info: Figures/Psicologia.png used on input line 449.
 (pdftex.def)             Requested size: 284.52756pt x 289.99788pt.
 
 <Figures/Lab25.png, id=14, 532.23843pt x 434.37282pt>
 File: Figures/Lab25.png Graphic file (type png)
  <use Figures/Lab25.png>
-Package pdftex.def Info: Figures/Lab25.png used on input line 469.
+Package pdftex.def Info: Figures/Lab25.png used on input line 449.
 (pdftex.def)             Requested size: 341.43306pt x 278.66045pt.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 469.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 449.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1658,16 +1662,16 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 File: Figures/MirrorEffect.png Graphic file (type png)
 
 <use Figures/MirrorEffect.png>
-Package pdftex.def Info: Figures/MirrorEffect.png used on input line 469.
-(pdftex.def)             Requested size: 604.62334pt x 287.7775pt.
-LaTeX Font Info:    Calculating math sizes for size <37.03> on input line 469.
+Package pdftex.def Info: Figures/MirrorEffect.png used on input line 449.
+(pdftex.def)             Requested size: 447.69534pt x 213.07059pt.
+LaTeX Font Info:    Calculating math sizes for size <37.03> on input line 449.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <37.03> on input line 469.
+(Font)              <37.03> on input line 449.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <25.92088> on input line 469.
+(Font)              <25.92088> on input line 449.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <18.515> on input line 469.
-LaTeX Font Info:    Try loading font information for TS1+lmss on input line 469
+(Font)              <18.515> on input line 449.
+LaTeX Font Info:    Try loading font information for TS1+lmss on input line 449
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ts1lmss.fd"
@@ -1677,138 +1681,122 @@ File: ts1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 File: Figures/MainTask.png Graphic file (type png)
 
 <use Figures/MainTask.png>
-Package pdftex.def Info: Figures/MainTask.png used on input line 469.
-(pdftex.def)             Requested size: 415.57855pt x 325.69405pt.
+Package pdftex.def Info: Figures/MainTask.png used on input line 449.
+(pdftex.def)             Requested size: 305.72705pt x 239.60149pt.
 
 <Figures/MainTask2.png, id=18, 694.09312pt x 533.74406pt>
 File: Figures/MainTask2.png Graphic file (type png)
 
 <use Figures/MainTask2.png>
-Package pdftex.def Info: Figures/MainTask2.png used on input line 469.
-(pdftex.def)             Requested size: 415.57855pt x 319.58107pt.
+Package pdftex.def Info: Figures/MainTask2.png used on input line 449.
+(pdftex.def)             Requested size: 305.72705pt x 235.10059pt.
 
-<Figures/An_Diff_D_1.pdf, id=19, 439.6425pt x 608.2725pt>
-File: Figures/An_Diff_D_1.pdf Graphic file (type pdf)
-
-<use Figures/An_Diff_D_1.pdf>
-Package pdftex.def Info: Figures/An_Diff_D_1.pdf used on input line 469.
-(pdftex.def)             Requested size: 356.2076pt x 492.84654pt.
-
-<Figures/An_Diff_D_2.pdf, id=20, 439.6425pt x 608.2725pt>
-File: Figures/An_Diff_D_2.pdf Graphic file (type pdf)
-
-<use Figures/An_Diff_D_2.pdf>
-Package pdftex.def Info: Figures/An_Diff_D_2.pdf used on input line 469.
-(pdftex.def)             Requested size: 356.2076pt x 492.84654pt.
-
-<Figures/MirrorRate_1.pdf, id=21, 794.97pt x 614.295pt>
-File: Figures/MirrorRate_1.pdf Graphic file (type pdf)
-
-<use Figures/MirrorRate_1.pdf>
-Package pdftex.def Info: Figures/MirrorRate_1.pdf used on input line 469.
-(pdftex.def)             Requested size: 474.9314pt x 367.00511pt.
-
-<Figures/MirrorRate_2.pdf, id=22, 794.97pt x 614.295pt>
-File: Figures/MirrorRate_2.pdf Graphic file (type pdf)
-
-<use Figures/MirrorRate_2.pdf>
-Package pdftex.def Info: Figures/MirrorRate_2.pdf used on input line 469.
-(pdftex.def)             Requested size: 474.9314pt x 367.00511pt.
-
-<Figures/MirrorConfidence_1.pdf, id=23, 794.97pt x 614.295pt>
-File: Figures/MirrorConfidence_1.pdf Graphic file (type pdf)
-
-<use Figures/MirrorConfidence_1.pdf>
-Package pdftex.def Info: Figures/MirrorConfidence_1.pdf used on input line 469.
-
-(pdftex.def)             Requested size: 474.9314pt x 367.00511pt.
-
-<Figures/MirrorConfidence_2.pdf, id=24, 794.97pt x 614.295pt>
-File: Figures/MirrorConfidence_2.pdf Graphic file (type pdf)
-
-<use Figures/MirrorConfidence_2.pdf>
-Package pdftex.def Info: Figures/MirrorConfidence_2.pdf used on input line 469.
-
-(pdftex.def)             Requested size: 474.9314pt x 367.00511pt.
-
-<Figures/Delta_DiffD_Model4.pdf, id=25, 758.835pt x 505.89pt>
+<Figures/Delta_DiffD_Model4.pdf, id=19, 758.835pt x 505.89pt>
 File: Figures/Delta_DiffD_Model4.pdf Graphic file (type pdf)
 
 <use Figures/Delta_DiffD_Model4.pdf>
-Package pdftex.def Info: Figures/Delta_DiffD_Model4.pdf used on input line 469.
+Package pdftex.def Info: Figures/Delta_DiffD_Model4.pdf used on input line 449.
 
-(pdftex.def)             Requested size: 807.387pt x 538.271pt.
+(pdftex.def)             Requested size: 567.76357pt x 378.5134pt.
 
-<Figures/Modelo_Delta_MeanDC_1.pdf, id=26, 794.97pt x 614.295pt>
+<Figures/Modelo_Delta_MeanDC_1.pdf, id=20, 794.97pt x 614.295pt>
 File: Figures/Modelo_Delta_MeanDC_1.pdf Graphic file (type pdf)
 
 <use Figures/Modelo_Delta_MeanDC_1.pdf>
 Package pdftex.def Info: Figures/Modelo_Delta_MeanDC_1.pdf used on input line 4
-69.
-(pdftex.def)             Requested size: 534.30235pt x 412.8784pt.
+49.
+(pdftex.def)             Requested size: 393.06812pt x 303.7442pt.
 
-<Figures/Modelo_Delta_MeanDC_2.pdf, id=27, 794.97pt x 614.295pt>
+<Figures/Modelo_Delta_MeanDC_2.pdf, id=21, 794.97pt x 614.295pt>
 File: Figures/Modelo_Delta_MeanDC_2.pdf Graphic file (type pdf)
 
 <use Figures/Modelo_Delta_MeanDC_2.pdf>
 Package pdftex.def Info: Figures/Modelo_Delta_MeanDC_2.pdf used on input line 4
-69.
-(pdftex.def)             Requested size: 534.30235pt x 412.8784pt.
+49.
+(pdftex.def)             Requested size: 393.06812pt x 303.7442pt.
 
-<Figures/Delta_1.pdf, id=28, 794.97pt x 614.295pt>
+<Figures/Delta_1.pdf, id=22, 794.97pt x 614.295pt>
 File: Figures/Delta_1.pdf Graphic file (type pdf)
  <use Figures/Delta_1.pdf>
-Package pdftex.def Info: Figures/Delta_1.pdf used on input line 469.
-(pdftex.def)             Requested size: 356.2076pt x 275.25851pt.
+Package pdftex.def Info: Figures/Delta_1.pdf used on input line 449.
+(pdftex.def)             Requested size: 305.72705pt x 236.24654pt.
 
-<Figures/Delta_2.pdf, id=29, 794.97pt x 614.295pt>
+<Figures/Delta_2.pdf, id=23, 794.97pt x 614.295pt>
 File: Figures/Delta_2.pdf Graphic file (type pdf)
  <use Figures/Delta_2.pdf>
-Package pdftex.def Info: Figures/Delta_2.pdf used on input line 469.
-(pdftex.def)             Requested size: 356.2076pt x 275.25851pt.
+Package pdftex.def Info: Figures/Delta_2.pdf used on input line 449.
+(pdftex.def)             Requested size: 305.72705pt x 236.24654pt.
 
-<Figures/Tau_DiffTeta_Model3.pdf, id=30, 758.835pt x 505.89pt>
+<Figures/Tau_DiffTeta_Model3.pdf, id=24, 758.835pt x 505.89pt>
 File: Figures/Tau_DiffTeta_Model3.pdf Graphic file (type pdf)
 
 <use Figures/Tau_DiffTeta_Model3.pdf>
-Package pdftex.def Info: Figures/Tau_DiffTeta_Model3.pdf used on input line 469
+Package pdftex.def Info: Figures/Tau_DiffTeta_Model3.pdf used on input line 449
 .
-(pdftex.def)             Requested size: 807.387pt x 538.271pt.
+(pdftex.def)             Requested size: 567.76357pt x 378.5134pt.
 
-<Figures/Tau_1.pdf, id=31, 608.2725pt x 439.6425pt>
+<Figures/Tau_1.pdf, id=25, 608.2725pt x 439.6425pt>
 File: Figures/Tau_1.pdf Graphic file (type pdf)
  <use Figures/Tau_1.pdf>
-Package pdftex.def Info: Figures/Tau_1.pdf used on input line 469.
-(pdftex.def)             Requested size: 569.9213pt x 411.93573pt.
+Package pdftex.def Info: Figures/Tau_1.pdf used on input line 449.
+(pdftex.def)             Requested size: 419.27176pt x 303.04506pt.
 
-<Figures/Tau_2.pdf, id=32, 608.2725pt x 439.6425pt>
+<Figures/Tau_2.pdf, id=26, 608.2725pt x 439.6425pt>
 File: Figures/Tau_2.pdf Graphic file (type pdf)
  <use Figures/Tau_2.pdf>
-Package pdftex.def Info: Figures/Tau_2.pdf used on input line 469.
-(pdftex.def)             Requested size: 569.9213pt x 411.93573pt.
+Package pdftex.def Info: Figures/Tau_2.pdf used on input line 449.
+(pdftex.def)             Requested size: 419.27176pt x 303.04506pt.
 
-Underfull \hbox (badness 10000) detected at line 469
+Overfull \hbox (1.05289pt too wide) in paragraph at lines 449--449
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 449
 [][][][][][][][][]
  []
 
-File: Figures/Tau_1.pdf Graphic file (type pdf)
-<use Figures/Tau_1.pdf>
-Package pdftex.def Info: Figures/Tau_1.pdf used on input line 469.
-(pdftex.def)             Requested size: 725.55537pt x 524.42882pt.
-File: Figures/Tau_2.pdf Graphic file (type pdf)
- <use Figures/Tau_2.pdf>
-Package pdftex.def Info: Figures/Tau_2.pdf used on input line 469.
-(pdftex.def)             Requested size: 725.55537pt x 524.42882pt.
+<Figures/An_Diff_D_1.pdf, id=27, 439.6425pt x 608.2725pt>
+File: Figures/An_Diff_D_1.pdf Graphic file (type pdf)
 
-No file Poster_OPAM_2.bbl.
+<use Figures/An_Diff_D_1.pdf>
+Package pdftex.def Info: Figures/An_Diff_D_1.pdf used on input line 449.
+(pdftex.def)             Requested size: 262.04985pt x 362.5717pt.
 
-Overfull \hbox (2173.28554pt too wide) detected at line 469
+<Figures/An_Diff_D_2.pdf, id=28, 439.6425pt x 608.2725pt>
+File: Figures/An_Diff_D_2.pdf Graphic file (type pdf)
+
+<use Figures/An_Diff_D_2.pdf>
+Package pdftex.def Info: Figures/An_Diff_D_2.pdf used on input line 449.
+(pdftex.def)             Requested size: 262.04985pt x 362.5717pt.
+
+Underfull \hbox (badness 2073) in paragraph at lines 449--449
+[]\T1/lmr/m/n/30.85 This pro-ject was sup-por-ted by PA-PIIT IN307214 and PA-PI
+ME
+ []
+
+
+Overfull \hbox (780.89517pt too wide) detected at line 449
 [][][] [][][][][][][][][] [][][][][][][][][] [][][][][][][][][] [][][][][][][][
 ][] [][][][][][][][][] [][][][][][][] 
  []
 
 
-Overfull \hbox (2309.78354pt too wide) has occurred while \output is active
+Overfull \vbox (112.86612pt too high) detected at line 449
+ []
+
+
+Overfull \hbox (810.33452pt too wide) has occurred while \output is active
+ [] 
+ []
+
+
+Overfull \hbox (36.135pt too wide) has occurred while \output is active
+[] []
+ []
+
+
+Overfull \hbox (883.17334pt too wide) has occurred while \output is active
 []
  []
 
@@ -1816,36 +1804,33 @@ Overfull \hbox (2309.78354pt too wide) has occurred while \output is active
 
  <./Figures/UNAMiwi.jpg> <./Figures/Psicologia.png> <./Figures/Lab25.png> <./Fi
 gures/MirrorEffect.png> <./Figures/MainTask.png> <./Figures/MainTask2.png> <./F
-igures/An_Diff_D_1.pdf> <./Figures/An_Diff_D_2.pdf> <./Figures/MirrorRate_1.pdf
-> <./Figures/MirrorRate_2.pdf> <./Figures/MirrorConfidence_1.pdf> <./Figures/Mi
-rrorConfidence_2.pdf> <./Figures/Delta_DiffD_Model4.pdf> <./Figures/Modelo_Delt
-a_MeanDC_1.pdf> <./Figures/Modelo_Delta_MeanDC_2.pdf> <./Figures/Delta_1.pdf> <
-./Figures/Delta_2.pdf> <./Figures/Tau_DiffTeta_Model3.pdf> <./Figures/Tau_1.pdf
-> <./Figures/Tau_2.pdf>]
+igures/Delta_DiffD_Model4.pdf> <./Figures/Modelo_Delta_MeanDC_1.pdf> <./Figures
+/Modelo_Delta_MeanDC_2.pdf> <./Figures/Delta_1.pdf> <./Figures/Delta_2.pdf> <./
+Figures/Tau_DiffTeta_Model3.pdf> <./Figures/Tau_1.pdf> <./Figures/Tau_2.pdf> <.
+/Figures/An_Diff_D_1.pdf> <./Figures/An_Diff_D_2.pdf>]
 \tf@nav=\write6
-\openout6 = `Poster_OPAM_2.nav'.
+\openout6 = `Poster_OPAM_3.nav'.
 
 \tf@toc=\write7
-\openout7 = `Poster_OPAM_2.toc'.
+\openout7 = `Poster_OPAM_3.toc'.
 
 \tf@snm=\write8
-\openout8 = `Poster_OPAM_2.snm'.
+\openout8 = `Poster_OPAM_3.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 470.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 470.
-
-(Poster_OPAM_2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 470.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 470.
-Package rerunfilecheck Info: File `Poster_OPAM_2.out' has not changed.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 450.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 450.
+ (Poster_OPAM_3.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 450.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 450.
+Package rerunfilecheck Info: File `Poster_OPAM_3.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 470.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 450.
  ) 
 Here is how much of TeX's memory you used:
- 22960 strings out of 493334
- 442664 string characters out of 3139239
- 674323 words of memory out of 3000000
- 25879 multiletter control sequences out of 15000+200000
+ 22939 strings out of 493334
+ 442076 string characters out of 3139239
+ 653772 words of memory out of 3000000
+ 25863 multiletter control sequences out of 15000+200000
  69902 words of font info for 63 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,23n,71p,696b,1985s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1861,9 +1846,9 @@ ts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 .pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/public/lm/lmss17.pfb><C:/Program Files/MiKTeX 2.9/f
 onts/type1/public/lm/lmssbx10.pfb>
-Output written on Poster_OPAM_2.pdf (1 page, 985631 bytes).
+Output written on Poster_OPAM_3.pdf (1 page, 958041 bytes).
 PDF statistics:
- 191 PDF objects out of 1000 (max. 8388607)
+ 163 PDF objects out of 1000 (max. 8388607)
  5 named destinations out of 1000 (max. 500000)
- 143 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 123 words of extra memory for PDF output out of 10000 (max. 10000000)
 

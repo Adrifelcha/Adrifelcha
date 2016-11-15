@@ -1,0 +1,293 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Template graphical model %
+% Author: Tom Lodewyckx    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% 0. Begin document
+%%%%%%%%%%%%%%%%%%%
+
+\documentclass{article}
+\usepackage[paperwidth=10.5in, paperheight=7in]{geometry}
+\usepackage{pst-all,pstricks,pst-tools}
+\usepackage{com.braju.graphicalmodels}
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\catcode`\@=11%
+\pagestyle{empty}
+\begin{document}
+\TeXtoEPS
+\psset{unit=13mm,arrowscale=1.5}
+\SpecialCoor
+
+
+% 1. Grid
+%%%%%%%%%
+
+\begin{pspicture}(2,0)(12,10)
+%\showgrid
+
+
+% 2. Nodes
+%%%%%%%%%%
+
+
+\rput(1.4,8.3){\GM@node[nodeSize=15mm,
+%					observed=true,
+					observedColor=lightgray,
+%					query=true
+					]{phi1}}
+					\rput(1.4,8.3){\GM@node[nodeSize=12mm]{Q_small}}
+           \GM@label[offset=-4.5mm]{phi1}{\huge$\phi^1_{i}$}
+\rput(2.9,8.3){\GM@node[nodeSize=15mm,
+%					observed=true,
+					observedColor=lightgray,
+%					query=true
+					]{phi2}}
+					\rput(2.9,8.3){\GM@node[nodeSize=12mm]{Q_small}}
+           \GM@label[offset=-4.5mm]{phi2}{\huge$\phi^2_{i}$}
+\rput(4.4,8.3){\GM@node[nodeSize=15mm,
+%					observed=true,
+					observedColor=lightgray,
+%					query=true
+					]{phi3}}
+					\rput(4.4,8.3){\GM@node[nodeSize=12mm]{Q_small}}
+           \GM@label[offset=-4.5mm]{phi3}{\huge$\phi^3_{i}$}
+
+\rput(6.4,8.3){\GM@node[nodeSize=15mm,
+%					observed=true,
+					observedColor=lightgray,
+%					query=true
+					]{phi4}}
+					\rput(6.4,8.3){\GM@node[nodeSize=12mm]{Q_small}}
+           \GM@label[offset=-4.5mm]{phi4}{\huge$\phi^4_{i}$}
+\rput(7.9,8.3){\GM@node[nodeSize=15mm,
+%					observed=true,
+					observedColor=lightgray,
+%					query=true
+					]{phi5}}
+					\rput(7.9,8.3){\GM@node[nodeSize=12mm]{Q_small}}
+           \GM@label[offset=-4.5mm]{phi5}{\huge$\phi^5_{i}$}
+\rput(9.4,8.3){\GM@node[nodeSize=15mm,
+%					observed=true,
+					observedColor=lightgray,
+%					query=true
+					]{phi6}}
+					\rput(9.4,8.3){\GM@node[nodeSize=12mm]{Q_small}}
+           \GM@label[offset=-4.5mm]{phi6}{\huge$\phi^6_{i}$}
+
+
+
+
+
+
+
+
+\rput(1.4,6.2){\GM@node[nodeSize=15mm,
+%					observed=true,
+					observedColor=lightgray,
+%					query=true
+					]{alpha1}}
+           \GM@label[offset=-4.5mm]{alpha1}{\huge$\alpha^1_{ij}$}
+\rput(2.9,6.2){\GM@node[nodeSize=15mm,
+%					observed=true,
+					observedColor=lightgray,
+%					query=true
+					]{beta2}}
+           \GM@label[offset=-4.5mm]{beta2}{\huge$\beta^2_{ij}$}
+\rput(4.4,6.2){\GM@node[nodeSize=15mm,
+%					observed=true,
+					observedColor=lightgray,
+%					query=true
+					]{gamma3}}
+           \GM@label[offset=-4.5mm]{gamma3}{\huge$\gamma^3_{ij}$}
+
+\rput(6.4,6.2){\GM@node[nodeSize=15mm,
+%					observed=true,
+					observedColor=lightgray,
+%					query=true
+					]{alpha4}}
+           \GM@label[offset=-4.5mm]{alpha4}{\huge$\alpha^4_{ij}$}
+\rput(7.9,6.2){\GM@node[nodeSize=15mm,
+%					observed=true,
+					observedColor=lightgray,
+%					query=true
+					]{beta5}}
+           \GM@label[offset=-4.5mm]{beta5}{\huge$\beta^5_{ij}$}
+\rput(9.4,6.2){\GM@node[nodeSize=15mm,
+%					observed=true,
+					observedColor=lightgray,
+%					query=true
+					]{gamma6}}
+           \GM@label[offset=-4.5mm]{gamma6}{\huge$\gamma^6_{ij}$}
+
+           
+           
+
+
+
+
+
+
+
+
+        
+\rput(1.4,4.2){\GM@node[nodeSize=17mm,
+					observed=true,
+					observedColor=lightgray,
+					query=true
+					]{K1}}
+           \GM@label[offset=-4.5mm]{K1}{\huge$\kappa^1_{ij}$}
+\rput(2.9,4.2){\GM@node[nodeSize=17mm,
+					observed=true,
+					observedColor=lightgray,
+					query=true
+					]{K2}}
+           \GM@label[offset=-4.5mm]{K2}{\huge$\kappa^2_{ij}$}
+\rput(4.4,4.2){\GM@node[nodeSize=17mm,
+					observed=true,
+					observedColor=lightgray,
+					query=true
+					]{K3}}
+           \GM@label[offset=-4.5mm]{K3}{\huge$\kappa^3_{ij}$}
+
+
+
+
+\rput(6.4,4.2){\GM@node[nodeSize=17mm,
+					observed=true,
+					observedColor=lightgray,
+					query=true
+					]{K4}}
+           \GM@label[offset=-4.5mm]{K4}{\huge$\kappa^4_{ij}$}
+\rput(7.9,4.2){\GM@node[nodeSize=17mm,
+					observed=true,
+					observedColor=lightgray,
+					query=true
+					]{K5}}
+           \GM@label[offset=-4.5mm]{K5}{\huge$\kappa^5_{ij}$}
+\rput(9.4,4.2){\GM@node[nodeSize=17mm,
+					observed=true,
+					observedColor=lightgray,
+					query=true
+					]{K6}}
+           \GM@label[offset=-4.5mm]{K6}{\huge$\kappa^6_{ij}$}
+
+
+
+
+
+
+
+\rput(7,2.2){\GM@node[nodeSize=15mm,
+					observed=true,
+					observedColor=lightgray,
+					query=true
+					]{RS}}
+					\rput(7,2.2){\GM@node[nodeSize=12mm, observed=true, observedColor=lightgray, query=true]{Q_small}}
+           \GM@label[offset=-4.5mm]{RS}{\huge$R^S_{ij}$}       
+
+\rput(3.5,2.2){\GM@node[nodeSize=15mm,
+					observed=true,
+					observedColor=lightgray,
+					query=true
+					]{RN}}
+					\rput(3.5,2.2){\GM@node[nodeSize=12mm, observed=true, observedColor=lightgray, query=true]{Q_small}}
+           \GM@label[offset=-6mm]{RN}{\huge$R^N_{ij}$}    
+
+ 
+
+
+
+\rput(3.5,-0.5){\GM@node[nodeSize=13mm,
+					observed=true,
+					observedColor=lightgray,
+					query=true
+					]{N}}
+           \GM@label[offset=-2.5mm]{N}{\huge$n$}    
+
+\rput(7,-0.5){\GM@node[nodeSize=13mm,
+					observed=true,
+					observedColor=lightgray,
+					query=true
+					]{S}}
+           \GM@label[offset=-2mm]{S}{\huge$s$} 
+
+
+
+ 
+ 
+% 3. Arrows
+%%%%%%%%%%%
+
+\ncline[arrows=->]{alpha1}{K1}
+\ncline[arrows=->]{alpha4}{K4}
+\ncline[arrows=->]{beta2}{K2}
+\ncline[arrows=->]{beta5}{K5}
+\ncline[arrows=->]{gamma3}{K3}
+\ncline[arrows=->]{gamma6}{K6}
+
+
+\ncline[arrows=->]{alpha1}{phi1}
+\ncline[arrows=->]{alpha4}{phi4}
+\ncline[arrows=->]{beta2}{phi2}
+\ncline[arrows=->]{beta5}{phi5}
+\ncline[arrows=->]{gamma3}{phi3}
+\ncline[arrows=->]{gamma6}{phi6}
+
+
+
+\ncline[arrows=->]{K1}{RN}
+\ncline[arrows=->]{K2}{RN}
+\ncline[arrows=->]{K3}{RN}
+
+\ncline[arrows=->]{K4}{RS}
+\ncline[arrows=->]{K5}{RS}
+\ncline[arrows=->]{K6}{RS}
+
+
+\ncline[arrows=->]{S}{RS}
+\ncline[arrows=->]{N}{RN}
+% 4. Plates
+%%%%%%%%%%%
+
+\rput(0.3, 0.7){\GM@plate[plateLabelPos=br]{10.4}{8.5}{\Large$i$ Participant}}
+
+\rput(0.5, 1.1){\GM@plate[plateLabelPos=br]{10}{6.3}{\Large$j$ Condition}}
+
+% 5. Model specification
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\rput(11.5,8.5){\pnode{equation}}\GM@label{equation}{\huge$\epsilon_{i}\sim \mathrm{Lognorm}\bigl(0,1\bigr)$}
+
+%\rput(11.5,10.5){\pnode{equation}}\GM@label{equation}{\huge$\vartheta_{i}\sim \mathrm{Lognorm}\bigl(1,1\bigr)$}
+
+%\rput(11.5,10.5){\pnode{equation}}\GM@label{equation}{\huge$\vartheta_{i}\sim \mathrm{Lognorm}\bigl(0,1\bigr)$}
+
+\rput(11.5,11){\pnode{equation}}\GM@label{equation}{\huge$H_{ij}\sim \mathrm{Binomial}\bigl(\theta^H_{ij}, s)$}
+
+\rput(11.5,10){\pnode{equation}}\GM@label{equation}{\huge$Fa_{ij}\sim \mathrm{Binomial}\bigl(\theta^F_{ij}, s)$}
+
+
+\rput(11.5,8){\pnode{equation}}\GM@label{equation}{\huge$\theta^H_{ij}\gets \phi (\frac{1}{2}D_{ij}-C_{ij})$}
+
+\rput(11.5,7){\pnode{equation}}\GM@label{equation}{\huge$\theta^F_{ij}\gets \phi (-\frac{1}{2}D_{ij}-C_{ij})$}
+
+
+\rput(11.5,5){\pnode{equation}}\GM@label{equation}{\huge$D_{ij}\sim \mathrm{Gaussian}\bigl(\mu^D_{ij},\lambda^D_{ij})$}
+
+\rput(11.5,4){\pnode{equation}}\GM@label{equation}{\huge$C_{ij}\sim \mathrm{Gaussian}\bigl(\mu^D_{ij},\lambda^C_{ij})$}
+
+
+\rput(11.5,2){\pnode{equation}}\GM@label{equation}{\huge$\mu^C_{j}, \mu^D_{j}\sim \mathrm{Gaussian}\bigl(0,0.001)$}
+
+\rput(11.5,1){\pnode{equation}}\GM@label{equation}{\huge$\lambda^C_{j}, \lambda^D_{j}\sim \mathrm{Gamma}\bigl(.001,.001)$}
+
+\rput(11.5,-1){\pnode{equation}}\GM@label{equation}{\huge$\delta_{i}\gets \mu^D_{1}-\mu^D_{2}$}
+
+
+% 6. End document
+%%%%%%%%%%%%%%%%%
+
+\end{pspicture}
+\endTeXtoEPS
+\end{document}

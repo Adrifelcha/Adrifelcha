@@ -45,7 +45,7 @@
 \newlength{\onecolwid}
 \newlength{\twocolwid}
 \newlength{\threecolwid}
-\setlength{\paperwidth}{78.74in} % Width 198 cm
+\setlength{\paperwidth}{59in} % Width 198 cm
 \setlength{\paperheight}{47.244in} % Heighth 109.22
 \setlength{\sepwid}{0.024\paperwidth} % Separation width (white space) between columns
 \setlength{\onecolwid}{0.22\paperwidth} % Width of one column
@@ -100,7 +100,7 @@
 \setbeamercolor{block alerted body}{fg=black,bg=white} % Cuerpo / Contenido del cuadro
 \begin{alertblock}{Introduction: A memory phenomenon?}
 
-Signal Detection Theory has been applied to Recognition Memory studies to describe subjects’ ability to discriminate between stimuli that have been presented before from a new set of stimuli (Wixted, 2007). When comparing subjects' performance between two classes of stimuli, one being more easily recognized (A) than the other (B), the response patterns obtained show that the difference in their discriminability is reflected in the identification of both target and lure stimuli, suggesting that the stimuli distributions involved move along the decision axis in such a way that it has been identified as the Mirror Effect (Glanzer, Adams, Kim, 1993).
+Signal Detection Theory has been applied to Recognition Memory studies to describe subjects’ ability to discriminate between stimuli that have been presented before from a new set of stimuli (Wixted, 2007). When comparing subjects' performance between two classes of stimuli, one being more easily recognized (A) than the other (B), the response patterns obtained show that the difference in their discriminability is reflected in the identification of both target and lure stimuli, leading to its identification as the Mirror Effect (Glanzer, Adams, Kim, 1993).
 
 
 \begin{figure}
@@ -110,18 +110,18 @@ Signal Detection Theory has been applied to Recognition Memory studies to descri
 Evidence in favor of the Mirror Effect has been reported across different SDT-alike procedures. In typical Yes/No tasks, the Mirror Effect appears as:
 
 \begin{equation}
-FalseAlarms(A) < FalseAlarms(B) < Hits(B) < Hits(A)
+FA(A) < FA(B) < Hits(B) < Hits(A)
 \label{eqn:Rates}
 \end{equation}
 
-When Confidence Rating procedure is implemented, the following pattern appears:
+In Confidence Rating procedures, it has been found that:
 
 \begin{equation}
 R(AN) < R(BN) < R(BS) < R(AS)
 \label{eqn:Confidence}
 \end{equation}
 
-However, the Mirror Effect has only been studied within Recognition Memory and so, most theories and models proposed to explain it tend to do it in terms of high-level processes engaged in the study phase (DeCarlo, 2007, Glanzer et. al, 1993). The main goal of the present study was to explore the existence of the Mirror Effect outside Recognition Memory, thus testing these assumptions. 
+However, the Mirror Effect has only been studied within Recognition Memory and so, most theories and models proposed to explain it tend to do it in terms of high-level processes engaged in the study phase. The main goal of the present study was to explore the existence of the Mirror Effect outside Recognition Memory, thus testing these assumptions. 
 \end{alertblock}
 
 
@@ -136,8 +136,8 @@ However, the Mirror Effect has only been studied within Recognition Memory and s
 \textbf{Ebbinghaus illusion: Two levels of perceptual discriminability} (Massaro, 1971).
 
 \begin{itemize}
-\item High accuracy (A): Ebbinghaus illusions with 2 or 3 surrounding circles.
-\item Low accuracy (B): Ebbinghaus illusions with 7 or 8 surrounding circles.
+\item High accuracy (A): 2 or 3 surrounding circles.
+\item Low accuracy (B): 7 or 8 surrounding circles.
 \end{itemize}
 
 $\quad$
@@ -150,14 +150,14 @@ $\quad$
 \includegraphics[width=0.35\linewidth]{Figures/MainTask.png} & \hfill & \includegraphics[width=0.35\linewidth]{Figures/MainTask2.png}
 \end{tabular}
 \end{center}
-\item \textbf{Confident Rating:} How confident are you of your response?
+\item \textbf{Confident Rating:}
 \end{enumerate}
 $\qquad$
 
 \textbf{Two experiments:} 
 
 \begin{itemize}
-\item Experiment 1: Just the right circle is shown as part of an Ebbinghaus illusion.
+\item Experiment 1: Just the right circle was an Ebbinghaus illusion.
 \item Experiment 2: Both circles were constructed as Ebbinghaus illusions.
 \end{itemize}
 
@@ -173,7 +173,6 @@ $\qquad$
 %	\item 16 different noise stimuli per condition
 %	\item 4 different signal stimuli per condition
 \item 1.5 s exposure
-\item Space-bar between trials
 \end{itemize}
 \end{alertblock}
 
@@ -206,11 +205,125 @@ We had 20 and 21 participants on Experiments 1 and 2 respectively. In both cases
 \begin{columns}[t,totalwidth=\twocolwid] % Split up the two columns wide column
 \begin{column}{\onecolwid}\vspace{-.6in} % The first column within column 2 (column 2.1)
 
+
+
+
+
+
+
+
+
+
+
+
+
+\end{column} % End of column 2.1
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%   BAYESIAN MODELING 
+%----------------------------------------------------------------------------------------
+\begin{column}{\sepwid}\end{column} % Empty spacer column
+\begin{column}{\onecolwid}\vspace{-2.1in} % The second column within column 2 (column 2.2)
+
+
+%Agregamos un espacio para que la columna 2.2 no se encime con el Spoiler
+\setbeamercolor{item}{fg=white}
+\setbeamercolor{item projected}{fg=white,bg=white}
+\begin{itemize}
+\item
+\item
+\end{itemize}
+
+
+
+\setbeamercolor{block alerted title}{fg=white,bg=DarkOrchid} % Change the alert block title colors
+\setbeamercolor{block alerted body}{fg=black,bg=white} % Change the alert block body colors
+\begin{alertblock}{Bayesian Modeling}
+
+
+% set colors for itemize/enumerate
+\setbeamercolor{item}{fg=Violet}
+\setbeamercolor{item projected}{fg=white,bg=Violet}
+\begin{enumerate}
+\item D' differences: Are conditions actually different?
+\begin{center}
+\begin{tabular}{ccc}
+\includegraphics[width=0.65\linewidth]{Figures/Delta_DiffD_Model4.pdf}
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{ccc}
+\includegraphics[width=0.45\linewidth]{Figures/Modelo_Delta_MeanDC_1.pdf} & \hfill & \includegraphics[width=0.45\linewidth]{Figures/Modelo_Delta_MeanDC_2.pdf}
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{ccc}
+\includegraphics[width=0.35\linewidth]{Figures/Delta_1.pdf}  $\qquad$ $\qquad$ & \hfill & \includegraphics[width=0.35\linewidth]{Figures/Delta_2.pdf}
+\end{tabular}
+\end{center}
+
+
+
+$\qquad$
+
+
+\item Hit and False Alarm Rate Differences
+\begin{center}
+\begin{tabular}{ccc}
+\includegraphics[width=0.65\linewidth]{Figures/Tau_DiffTeta_Model3.pdf}
+\end{tabular}
+
+
+\begin{tabular}{ccc}
+\includegraphics[width=0.48\linewidth]{Figures/Tau_1.pdf} & \hfill & \includegraphics[width=0.48\linewidth]{Figures/Tau_2.pdf}
+\end{tabular}
+\end{center}
+
+
+
+$\quad$
+\end{enumerate}
+%Lorem ipsum dolor \textbf{sit amet}, consectetur adipiscing elit. Sed laoreet accumsan mattis. Integer sapien tellus, auctor ac blandit eget, sollicitudin vitae lorem. Praesent dictum tempor pulvinar. Suspendisse potenti. Sed tincidunt varius ipsum, et porta nulla suscipit et. Etiam congue bibendum felis, ac dictum augue cursus a. \textbf{Donec} magna eros, iaculis sit amet placerat quis, laoreet id est. In ut orci purus, interdum ornare nibh. Pellentesque pulvinar, nibh ac malesuada accumsan, urna nunc convallis tortor, ac vehicula nulla tellus eget nulla. Nullam lectus tortor, \textit{consequat tempor hendrerit} quis, vestibulum in diam. Maecenas sed diam augue.
+
+\end{alertblock}
+
+
+%----------------------------------------------------------------------------------------
+
+\end{column} % End of column 2.2
+
+\end{columns} % End of the split of column 2 - any content after this will now take up 2 columns width
+
+%----------------------------------------------------------------------------------------
+
+\begin{columns}[t,totalwidth=\twocolwid] % Split up the two columns wide column again
+
+\begin{column}{\onecolwid} % The first column within column 2 (column 2.1)
+
+%----------------------------------------------------------------------------------------
+
+\end{column} % End of column 2.1
+
+\end{columns} % End of the split of column 2
+
+\end{column} % End of the second column
+
+\begin{column}{\sepwid}\end{column} % Empty spacer column
+
+\begin{column}{\onecolwid} % The third column
+
+%----------------------------------------------------------------------------------------
+%   CONCLUSION
+%----------------------------------------------------------------------------------------
+
 \setbeamercolor{block alerted title}{fg=white,bg=Purple} % Titulo
 \setbeamercolor{block alerted body}{fg=black,bg=white} % Cuerpo
 \begin{alertblock}{Classical Analysis}
 
-The following analysis was conducted as reported by Glanzer \& Adams, 1990.
+Data analysis as reported by Glanzer \& Adams, 1990.
 
 $\qquad$
 
@@ -240,11 +353,6 @@ $\qquad$
 
 
 \item Differences across Hit and False Alarm Rates
-\begin{center}
-\begin{tabular}{ccc}
-\includegraphics[width=0.4\linewidth]{Figures/MirrorRate_1.pdf} & \hfill & \includegraphics[width=0.4\linewidth]{Figures/MirrorRate_2.pdf}
-\end{tabular}
-\end{center}
 \begin{table}
 \vspace{3ex}
 \begin{tabular}{l l | c c c c}
@@ -262,11 +370,6 @@ Exp 2 & FA & 0.2681548 & 0.3366071 & 1.769 & 0.04254 \\
 $\quad$
 
 \item Mean Confidence Rating per class of stimuli
-\begin{center}
-\begin{tabular}{ccc}
-\includegraphics[width=0.4\linewidth]{Figures/MirrorConfidence_1.pdf} & \hfill & \includegraphics[width=0.4\linewidth]{Figures/MirrorConfidence_2.pdf}
-\end{tabular}
-\end{center}
 \begin{table}
 \vspace{3ex}
 \begin{tabular}{l l |  c c c c}
@@ -280,130 +383,9 @@ Exp 2 & Noise & 2.386905 & 2.752381 & -1.809 & 0.03919 \\
 \bottomrule
 \end{tabular}
 \end{table}
-\item Checking for any RT correlation.
 \end{enumerate}
 \end{alertblock}
-\end{column} % End of column 2.1
-%----------------------------------------------------------------------------------------
 
-%----------------------------------------------------------------------------------------
-%   BAYESIAN MODELING 
-%----------------------------------------------------------------------------------------
-\begin{column}{\sepwid}\end{column} % Empty spacer column
-\begin{column}{\onecolwid}\vspace{-2.1in} % The second column within column 2 (column 2.2)
-
-
-%Agregamos un espacio para que la columna 2.2 no se encime con el Spoiler
-\setbeamercolor{item}{fg=white}
-\setbeamercolor{item projected}{fg=white,bg=white}
-\begin{itemize}
-\item
-\item
-\end{itemize}
-
-
-\setbeamercolor{block alerted title}{fg=white,bg=DarkOrchid} % Change the alert block title colors
-\setbeamercolor{block alerted body}{fg=black,bg=white} % Change the alert block body colors
-\begin{alertblock}{Bayesian Modeling}
-
-
-% set colors for itemize/enumerate
-\setbeamercolor{item}{fg=Violet}
-\setbeamercolor{item projected}{fg=white,bg=Violet}
-\begin{enumerate}
-\item D' differences: Are conditions actually different?
-\begin{center}
-\begin{tabular}{ccc}
-\includegraphics[width=0.68\linewidth]{Figures/Delta_DiffD_Model4.pdf}
-\end{tabular}
-\end{center}
-
-\begin{center}
-\begin{tabular}{ccc}
-\includegraphics[width=0.45\linewidth]{Figures/Modelo_Delta_MeanDC_1.pdf} & \hfill & \includegraphics[width=0.45\linewidth]{Figures/Modelo_Delta_MeanDC_2.pdf}
-\end{tabular}
-\end{center}
-
-\begin{center}
-\begin{tabular}{ccc}
-\includegraphics[width=0.3\linewidth]{Figures/Delta_1.pdf}  $\qquad$ $\qquad$ & \hfill & \includegraphics[width=0.3\linewidth]{Figures/Delta_2.pdf}
-\end{tabular}
-\end{center}
-
-
-
-$\qquad$
-
-
-\item Hit and False Alarm Rate Differences
-\begin{center}
-\begin{tabular}{ccc}
-\includegraphics[width=0.68\linewidth]{Figures/Tau_DiffTeta_Model3.pdf}
-\end{tabular}
-\end{center}
-
-
-
-
-\begin{tabular}{ccc}
-\includegraphics[width=0.48\linewidth]{Figures/Tau_1.pdf} & \hfill & \includegraphics[width=0.48\linewidth]{Figures/Tau_2.pdf}
-\end{tabular}
-
-
-
-$\quad$
-\end{enumerate}
-%Lorem ipsum dolor \textbf{sit amet}, consectetur adipiscing elit. Sed laoreet accumsan mattis. Integer sapien tellus, auctor ac blandit eget, sollicitudin vitae lorem. Praesent dictum tempor pulvinar. Suspendisse potenti. Sed tincidunt varius ipsum, et porta nulla suscipit et. Etiam congue bibendum felis, ac dictum augue cursus a. \textbf{Donec} magna eros, iaculis sit amet placerat quis, laoreet id est. In ut orci purus, interdum ornare nibh. Pellentesque pulvinar, nibh ac malesuada accumsan, urna nunc convallis tortor, ac vehicula nulla tellus eget nulla. Nullam lectus tortor, \textit{consequat tempor hendrerit} quis, vestibulum in diam. Maecenas sed diam augue.
-
-\end{alertblock}
-
-%----------------------------------------------------------------------------------------
-
-\end{column} % End of column 2.2
-
-\end{columns} % End of the split of column 2 - any content after this will now take up 2 columns width
-
-%----------------------------------------------------------------------------------------
-
-\begin{columns}[t,totalwidth=\twocolwid] % Split up the two columns wide column again
-
-\begin{column}{\onecolwid} % The first column within column 2 (column 2.1)
-
-%----------------------------------------------------------------------------------------
-
-\end{column} % End of column 2.1
-
-\end{columns} % End of the split of column 2
-
-\end{column} % End of the second column
-
-\begin{column}{\sepwid}\end{column} % Empty spacer column
-
-\begin{column}{\onecolwid} % The third column
-
-%----------------------------------------------------------------------------------------
-%   CONCLUSION
-%----------------------------------------------------------------------------------------
-\setbeamercolor{block alerted title}{fg=white,bg=DarkOrchid} % Change the alert block title colors
-\setbeamercolor{block alerted body}{fg=black,bg=white} % Change the alert block body colors
-\begin{alertblock}{...}
-
-\begin{center}
-\begin{tabular}{ccc}
-\includegraphics[width=0.6\linewidth]{Figures/Tau_1.pdf}
-\end{tabular}
-\end{center}
-
-\begin{center}
-\begin{tabular}{ccc}
-\includegraphics[width=0.6\linewidth]{Figures/Tau_2.pdf}
-\end{tabular}
-\end{center}
-
-
-%Lorem ipsum dolor \textbf{sit amet}, consectetur adipiscing elit. Sed laoreet accumsan mattis. Integer sapien tellus, auctor ac blandit eget, sollicitudin vitae lorem. Praesent dictum tempor pulvinar. Suspendisse potenti. Sed tincidunt varius ipsum, et porta nulla suscipit et. Etiam congue bibendum felis, ac dictum augue cursus a. \textbf{Donec} magna eros, iaculis sit amet placerat quis, laoreet id est. In ut orci purus, interdum ornare nibh. Pellentesque pulvinar, nibh ac malesuada accumsan, urna nunc convallis tortor, ac vehicula nulla tellus eget nulla. Nullam lectus tortor, \textit{consequat tempor hendrerit} quis, vestibulum in diam. Maecenas sed diam augue.
-
-\end{alertblock}
 
 
 
@@ -413,7 +395,7 @@ $\quad$
 \setbeamercolor{block alerted body}{fg=black,bg=white} % Change the alert block body colors
 \begin{alertblock}{Conclusion}
 
-The present study is the first to show evidence of the Mirror Effect patterns of response, on a SD task that does not involve recognition memory. The perceptual task here presented lacked a pre-experimental phase where participants had the chance to manipulate how powerful were the illusions elicited in each condition, contradicting what has been proposed within recognition memory studies and suggesting that there might be a much more basic principle regulating the observed pattern of responses.
+The present study is the first to show evidence of the Mirror Effect patterns of response on a SD task that does not involve recognition memory. The perceptual task here presented lacked a pre-experimental phase where participants had the chance to manipulate how powerful were the illusions elicited in each condition suggesting that there might be a much more basic principle regulating the observed pattern of responses.
 
 \end{alertblock}
 
@@ -430,16 +412,14 @@ The present study is the first to show evidence of the Mirror Effect patterns of
 \setbeamercolor{item}{fg=WildStrawberry}
 \setbeamercolor{item projected}{fg=white,bg=WildStrawberry}
 \begin{itemize}
-\item DeCarlo, L. (2007) The Mirror Effect and Mixture Signal Detection Theory. Journal of Experimental Psychology\: Learning, Memory and Cognition. Vol. 33. No. 1. 18-33.
 \item Glanzer, M., Adams, J. (1990) The Mirror Effect in Recognition Memory \: Data and Theory. Journal of Experimental Psychology: Learning, Memory and Cognition. Vol. 16. No. 1, 5-16.
 \item Glanzer, M., Adams, J., Iverson, G. \& Kim, K. (1993) The Regularities of Recognition Memory. Psychological Review. Vol. 100. No. 3. 546-567.
 \item Massaro, D., Anderson, N. (1971). Judgmental model of the Ebbinghaus Illusion. Journal of Experimental Psychology. Vol. 89. 147 - 151
-\item Wixted, J. (2007) Dual-process theory and signal-detection theory of recognition memory. Psychological Review. Vol. 114. No. 1, 152-176.
 \end{itemize}
 
-\nocite{*} % Insert publications even if they are not cited in the poster
-\small{\bibliographystyle{unsrt}
-\bibliography{sample}\vspace{0.75in}}
+%\nocite{*} % Insert publications even if they are not cited in the poster
+%\small{\bibliographystyle{unsrt}
+%\bibliography{sample}\vspace{0.75in}}
 
 \end{alertblock}
 
