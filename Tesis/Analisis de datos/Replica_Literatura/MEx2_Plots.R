@@ -438,7 +438,7 @@ for(archive in dir()){
   points(fa,type='o',pch=16,col='red')
   #mtext(archive,3,cex=.8)
   text(3.5,90,paste('Hits'),cex=1,col='blue',f=2)
-  title("Hits y F. Alarmas per No. External Circles", outer = TRUE, line = -2)
+  title("Hits & F. Alarms per No. External Circles", outer = TRUE, line = -2)
   
   plot(fa,type='o',pch=16,col='red',ylim=c(0,50),axes=F , ann = F )
   axis(1,at=1:4,labels=sort(unique(jaime$num_circulos_externos)))
@@ -481,19 +481,19 @@ for(archive in dir()){
   
   plot(hits,type='o',pch=16,col='blue',ylim=c(40,80),axes=F , ann = F )
   axis(2,at=c(40, 50, 60, 70, 80),labels=c("40", "50","60","70","80"),las=1)
-  axis(1,at=1:5,labels=sort(unique(jaime$color)))
+  axis(1,at=1:5,labels=c("Blue","Red", "Orange", "Purple", "Green"))
   #points(fa,type='o',pch=16,col='red')
   text(2,70,paste('Hits'),cex=1,col='blue',f=2)
-  mtext(archive,3,cex=.8)
-  title("Hits y F.A. por Color", outer = TRUE, line = -2)
+  #mtext(archive,3,cex=.8)
+  title("Hits & F.A. per Color", outer = TRUE, line = -2)
   
  
   plot(fa,type='o',pch=16,col='red',ylim=c(0,40),axes=F , ann = F )
-  axis(1,at=1:5,labels=sort(unique(jaime$color)))
+  axis(1,at=1:5,labels=c("Blue","Red", "Orange", "Purple", "Green"))
   axis(2,at=c(0, 10, 20, 30, 40),labels=c("0", "10","20","30","40"),las=1)
   #points(fa,type='o',pch=16,col='red')
   text(2,30,paste('F.A.'),cex=1,col='red',f=2)
-  mtext(archive,3,cex=.8) 
+  #mtext(archive,3,cex=.8) 
  }
 
 
