@@ -1,4 +1,4 @@
-setwd("C:/Users/Adrifelcha/Desktop/Tesis/Tesis/CSVs")
+setwd("C:/Users/Alejandro/Desktop/Felisa/Tesis/CSVs")
 rm(list=ls())
 dir()
 library(R2jags)
@@ -13,7 +13,7 @@ library(R2jags)
 
 
 ######################################################
-experimento <- 1
+experimento <- 2
 #####################################################
 
 
@@ -59,7 +59,7 @@ niter <- 100000
 burnin <- 1000
 # Corremos JAGS
 samples <- jags(data, inits=myinits, parameters,
-                model.file ="C:/Users/Adrifelcha/Desktop/Tesis/Tesis/Modelamiento/DiferenciasRates_MirrorEffect/DiffTeta_Modelo1_TauINSIDEloop.txt",
+                model.file ="C:/Users/Alejandro/Desktop/Felisa/Tesis/Modelamiento/DiferenciasRates_MirrorEffect/DiffTeta_Modelo1_TauINSIDEloop.txt",
                 n.chains=1, n.iter=niter, n.burnin=burnin, n.thin=1)
 # Now the values for the monitodeepskyblue3 parameters are in the "samples" object, ready for inspection.
 
@@ -317,29 +317,30 @@ if (experimento ==1)
   par(cex.main = 1.5, mar = c(5, 6, 4, 5) + 0.1, mgp = c(3.5, 1, 0), cex.lab = 1.5,
       font.lab = 2, cex.axis = 1.3, bty = "n", las=1)
   
-  plot(soporte_t, axes=F, main="Experiment 1", ylab="", xlab="", xlim=c(-0.5,0.5), col='white')
+  plot(soporte_t, axes=F, main="", ylab="", xlab="", xlim=c(-0.5,0.5), col='white')
   for(a in 1:k){
-  lines(density(tauH[,a]), lwd=1, col="red", ylab="", xlab="", 
+  title("Experiment 1", line=2.5)
+  lines(density(tauH[,a]), lwd=1, col="dodgerblue3", ylab="", xlab="", 
        xlim=c(-0.5,0.5), axes=F)
 }
   axis(1)
   abline(v=0, col='black', lty=2, lwd=3)
-  axis(2, labels=F, at=c(0,24))
-  mtext("Density", side=2, line = 2, cex=1, las=0)
-  mtext("Differences on Hit Rates", side=3, line = 0.2, cex=1, font=1)
-  mtext("Tau-H", side=1, line = 2.5, cex=1.5, font=2)
+  #axis(2, labels=F, at=c(0,24))
+  #mtext("Density", side=2, line = 0, cex=1, las=0)
+  mtext("Differences on Hit Rates", side=3, line = 0.2, cex=1.2, font=1)
+  mtext("Tau-H", side=1, line = 3, cex=1.5, font=2)
 
   
   plot(soporte_t, axes=F, main="", ylab="", xlab="", xlim=c(-0.5,0.5), col='white')
   for (a in 1:k){
-  lines(density(tauF[,a]), lwd=1, col="red", ylab="", main="", xlab="", xlim=c(-0.5,0.5), axes=F)
+  lines(density(tauF[,a]), lwd=1, col="dodgerblue3", ylab="", main="", xlab="", xlim=c(-0.5,0.5), axes=F)
   }
   axis(1) 
   abline(v=0, col='black', lty=2, lwd=3)
-  axis(2, labels=F, at=c(0,24))
-  mtext("Density", side=2, line = 2, cex=1, las=0)
-  mtext("Tau-F", side=1, line = 2.5, cex=1.5, font=2)
-  mtext("Differences on FA Rates", side=3, line = 0.2, cex=1, font=1)
+  #axis(2, labels=F, at=c(0,24))
+  #mtext("Density", side=2, line = 2, cex=1, las=0)
+  mtext("Tau-F", side=1, line = 3, cex=1.5, font=2)
+  mtext("Differences on FA Rates", side=3, line = 0.2, cex=1.2, font=1)
 }
 
 if (experimento ==2)
@@ -348,26 +349,27 @@ if (experimento ==2)
   par(cex.main = 1.5, mar = c(5, 6, 4, 5) + 0.1, mgp = c(3.5, 1, 0), cex.lab = 1.5,
       font.lab = 2, cex.axis = 1.3, bty = "n", las=1)
   
-  plot(soporte_t, axes=F, main="Experiment 2", ylab="", xlab="", xlim=c(-0.5,0.5), col='white')
+  plot(soporte_t, axes=F, main="", ylab="", xlab="", xlim=c(-0.5,0.5), col='white')
   for(a in 1:k){
-    lines(density(tauH[,a]), lwd=1, col="red", ylab="", xlab="", 
+    title("Experiment 2", line=2.5)
+    lines(density(tauH[,a]), lwd=1, col="dodgerblue3", ylab="", xlab="", 
           xlim=c(-0.5,0.5), axes=F)
   }
   axis(1)
   abline(v=0, col='black', lty=2, lwd=3)
-  axis(2, labels=F, at=c(0,24))
-  mtext("Density", side=2, line = 2, cex=1, las=0)
-  mtext("Differences on Hit Rates", side=3, line = 0.2, cex=1, font=1)
-  mtext("Tau-H", side=1, line = 2.5, cex=1.5, font=2)
+  #axis(2, labels=F, at=c(0,24))
+  #mtext("Density", side=2, line = 2, cex=1, las=0)
+  mtext("Differences on Hit Rates", side=3, line = 0.2, cex=1.2, font=1)
+  mtext("Tau-H", side=1, line = 3, cex=1.5, font=2)
 
   
   plot(soporte_t, axes=F, main="", ylab="", xlab="", xlim=c(-0.5,0.5), col='white')
   for (a in 1:k){
-    lines(density(tauF[,a]), lwd=1, col="red", ylab="", main="", xlab="", xlim=c(-0.5,0.5), axes=F)
+    lines(density(tauF[,a]), lwd=1, col="dodgerblue3", ylab="", main="", xlab="", xlim=c(-0.5,0.5), axes=F)
   }
   axis(1) 
   abline(v=0, col='black', lty=2, lwd=3)
-  axis(2, labels=F, at=c(0,24))
-  mtext("Tau-F", side=1, line = 2.5, cex=1.5, font=2)
-  mtext("Differences on FA Rates", side=3, line = 0.2, cex=1, font=1)
+  #axis(2, labels=F, at=c(0,24))
+  mtext("Tau-F", side=1, line = 3, cex=1.5, font=2)
+  mtext("Differences on FA Rates", side=3, line = 0.2, cex=1.2, font=1)
 }

@@ -13,7 +13,7 @@ dir()
 #Archivo que contiene todos los datos
 archive <-'Ex2a_TODOS.csv'
 datos <- read.csv(archive)
-
+layout(matrix(1:1,ncol=1))
 #Datos a plotear
 d_Facil <- datos$d_A
 d_Dificil <- datos$d_B
@@ -21,7 +21,7 @@ d_mtx<-matrix(data=c(d_Facil,d_Dificil), nrow=2, ncol=20, byrow=TRUE)
 
 #Ploteamos diferencias en D'
 matplot(d_mtx, type="b", lty=1, lwd=3, pch=21, col=c("Blue"),
-        cex=1, ylim=c(0,5), xlim=c(0.75,2.25), xlab='Class of stimulus', ylab='D-prime', cex.lab=1.5,
+        cex=1, ylim=c(0,5), xlim=c(0.75,2.25), xlab='Class of stimulus', ylab='D-prime', font.lab=2, cex.lab=1,
         las=1, labels=F)
 mtext('Experiment 1',3,cex=1.7, col='darkblue')
 
@@ -43,7 +43,7 @@ D_mtx<-matrix(data=c(D_Facil,D_Dificil), nrow=2, ncol=21, byrow=TRUE)
 
 #Plot
 matplot(D_mtx, type="b", lty=1, lwd=3, pch=21, col=c("Red"),
-        cex=1, ylim=c(0,5), xlim=c(0.75,2.25), xlab='Class of stimulus', ylab='D-prime', cex.lab=1.5,
+        cex=1, ylim=c(0,5), xlim=c(0.75,2.25), xlab='Class of stimulus', ylab='D-prime', font.lab=2, cex.lab=1,
         las=1, labels=F)
 mtext('Experiment 2',3,cex=1.7, col='brown4')
 
