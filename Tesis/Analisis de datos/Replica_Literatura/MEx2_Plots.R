@@ -634,7 +634,6 @@ for(archive in dir()){
     text(0.7, 0.3, labels="D' for A Condition", offset=0, cex = 0.8, pos=4)
     text(0.7, 0.2, labels="D' for B Condition", offset=0, cex = 0.8, pos=4)
     title('ROC per Condition')
-    mtext('Experimento 1',3,cex=.8)
-    mtext(archive,1,cex=.8, line=3)
-}
+    mtext(archive,3,cex=.8)
+    }
   
