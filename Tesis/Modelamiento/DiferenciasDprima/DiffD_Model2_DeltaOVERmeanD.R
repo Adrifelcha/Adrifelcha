@@ -335,8 +335,6 @@ layout(matrix(1:1,ncol=1))
 
 d_a <- samples$BUGSoutput$sims.list$d_A
 d_b <- samples$BUGSoutput$sims.list$d_B
-c_a <- samples$BUGSoutput$sims.list$c_A
-c_b <- samples$BUGSoutput$sims.list$c_B
 tetaH_a <- samples$BUGSoutput$sims.list$thetah_A
 tetaH_b <- samples$BUGSoutput$sims.list$thetah_B
 tetaFA_a <- samples$BUGSoutput$sims.list$thetaf_A
@@ -344,11 +342,6 @@ tetaFA_b <- samples$BUGSoutput$sims.list$thetaf_B
 
 muDA <- samples$BUGSoutput$sims.list$mud_A
 muDB <- samples$BUGSoutput$sims.list$mud_B
-muCA <- samples$BUGSoutput$sims.list$muc_A
-muCB <- samples$BUGSoutput$sims.list$muc_B
-
-Delta <- samples$BUGSoutput$sims.list$delta
-
 
 keep_ <- (1000)
 keep <- sample(niter, keep_)
@@ -385,8 +378,8 @@ par(cex.main = 1.5, mar = c(5, 6, 4, 5) + 0.1, mgp = c(3.5, 1, 0), cex.lab = 1.5
 
 plot(hits_na,falarm_na, type='o', col='white', xlim=c(0,1), ylim=c(0,1), xlab='', ylab='')
 lines(hits_na,falarm_na,lwd=1,col='black', lty=2)
-lines(hits_A,falarm_A[keep],lwd=3,col='deepskyblue3')
-lines(hits_B,falarm_B[keep],lwd=3,col='darkorchid3')
+lines(hits_A,falarm_A,lwd=3,col='deepskyblue3')
+lines(hits_B,falarm_B,lwd=3,col='darkorchid3')
 lines(c(0.58, 0.68),c(0.3,0.3), lwd=2, lty=1, col="deepskyblue3")
 lines(c(0.58, 0.68),c(0.2,0.2), lwd=2, lty=1, col="darkorchid3")
 text(0.7, 0.3, labels="D' for A Condition", offset=0, cex = 0.8, pos=4)
