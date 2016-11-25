@@ -47,6 +47,10 @@ h_A <- data[,4]
 s <- 160
 n <- 160
 
+################
+#Preparamos el modelo
+################
+
 data <- list("fa_A", "fa_B", "h_B", "h_A", "s", "n", "k") # to be passed on to JAGS
 myinits <- list(
   list(d_A = rep(0,k), d_B = rep(0,k), c_A = rep(0,k), c_B = rep(0,k),  muc_A = 0, lambdac_A = 1, muc_B = 0, lambdac_B = 1, mud_A = 0, lambdad_A = 1, mud_B = 0, lambdad_B = 1))
@@ -65,17 +69,19 @@ samples <- jags(data, inits=myinits, parameters,
 # Now the values for the monitodeepskyblue3 parameters are in the "samples" object, ready for inspection.
 
 
+#####################
+# Extraemos las inferencias
+####################
 
-for (a in 1:k){
-  d_a <- samples$BUGSoutput$sims.list$d_A[,a]
-  d_b <- samples$BUGSoutput$sims.list$d_B[,a]
-  c_a <- samples$BUGSoutput$sims.list$c_A[,a]
-  c_b <- samples$BUGSoutput$sims.list$c_B[,a]
-  tetaH_a <- samples$BUGSoutput$sims.list$thetah_A[,a]
-  tetaH_b <- samples$BUGSoutput$sims.list$thetah_B[,a]
-  tetaFA_a <- samples$BUGSoutput$sims.list$thetaf_A[,a]
-  tetaFA_b <- samples$BUGSoutput$sims.list$thetaf_B[,a]
-}
+d_a <- samples$BUGSoutput$sims.list$d_A
+d_b <- samples$BUGSoutput$sims.list$d_B
+c_a <- samples$BUGSoutput$sims.list$c_A
+c_b <- samples$BUGSoutput$sims.list$c_B
+tetaH_a <- samples$BUGSoutput$sims.list$thetah_A
+tetaH_b <- samples$BUGSoutput$sims.list$thetah_B
+tetaFA_a <- samples$BUGSoutput$sims.list$thetaf_A
+tetaFA_b <- samples$BUGSoutput$sims.list$thetaf_B
+
 
 muDA <- samples$BUGSoutput$sims.list$mud_A
 muDB <- samples$BUGSoutput$sims.list$mud_B
@@ -83,6 +89,10 @@ muCA <- samples$BUGSoutput$sims.list$muc_A
 muCB <- samples$BUGSoutput$sims.list$muc_B
 
 Delta <- samples$BUGSoutput$sims.list$delta
+
+
+
+
 
 ######################################################
 ######### DRAWING ALL THE PLOTS
@@ -223,6 +233,7 @@ if (experimento ==1)
   par(mar=c(0.7,0.5,3,6))
   plot(mu.Ca$y, mu.Ca$x, xlim=rev(c(0,5)),type='l', col="deepskyblue3", axes=F, xlab="", ylab="",ylim=c(-1,1), lwd=2)
   lines(mu.Cb$y, mu.Cb$x, col="darkorchid3", lwd=2)
+  
   axis(4)
   mtext(expression(paste(mu, "C")), side=4,line=5, cex=1.5, font=2, las=0)
   box(lty=1)
@@ -264,8 +275,8 @@ if (experimento ==2)
   box(lty=1)
 }
 
-
-########## DIFFERENCES ON D'
+############################
+######### DIFFERENCES ON D'
 
 layout(matrix(1:1,ncol=1))
 if (experimento ==1)
@@ -311,3 +322,74 @@ if (experimento ==2)
   mtext("Delta", side=1, line = 3, cex=2, font=2)
   points(0,0.007229, pch=16, type='p', col='red', cex=1.5)
 }
+
+
+
+############################################
+############ ROC CURVES
+
+
+############### ROC Curves
+
+layout(matrix(1:1,ncol=1))
+
+d_a <- samples$BUGSoutput$sims.list$d_A
+d_b <- samples$BUGSoutput$sims.list$d_B
+c_a <- samples$BUGSoutput$sims.list$c_A
+c_b <- samples$BUGSoutput$sims.list$c_B
+tetaH_a <- samples$BUGSoutput$sims.list$thetah_A
+tetaH_b <- samples$BUGSoutput$sims.list$thetah_B
+tetaFA_a <- samples$BUGSoutput$sims.list$thetaf_A
+tetaFA_b <- samples$BUGSoutput$sims.list$thetaf_B
+
+muDA <- samples$BUGSoutput$sims.list$mud_A
+muDB <- samples$BUGSoutput$sims.list$mud_B
+muCA <- samples$BUGSoutput$sims.list$muc_A
+muCB <- samples$BUGSoutput$sims.list$muc_B
+
+Delta <- samples$BUGSoutput$sims.list$delta
+
+
+keep_ <- (1000)
+keep <- sample(niter, keep_)
+d.FA_a <- density(tetaFA_a)
+d.FA_b <- density(tetaFA_b)
+d.H_a <- density(tetaH_a)
+d.H_b <- density(tetaH_b)
+mu.Da <- density(muDA)
+mu.Db <- density(muDB)
+mu.Ca <- density(muCA)
+mu.Cb <- density(muCB)
+
+
+hits_A <- c()
+falarm_A <- c()
+hits_B <- c()
+falarm_B <- c()
+hits_na <- c()
+falarm_na <- c()
+c <- seq(-10,10,0.1)
+d_null <- 0
+
+  for (i in 1:length(c)){
+    hits_A[i] <- pnorm((-muDA/2)-c[i])
+    falarm_A[i] <- pnorm((muDA/2)-c[i])
+    hits_B[i] <- pnorm((-muDB/2)-c[i])
+    falarm_B[i] <- pnorm((muDB/2)-c[i])
+    hits_na[i] <- pnorm((d_null/2)-c[i])
+    falarm_na[i] <- pnorm((-d_null/2)-c[i])
+}
+
+par(cex.main = 1.5, mar = c(5, 6, 4, 5) + 0.1, mgp = c(3.5, 1, 0), cex.lab = 1.5,
+    font.lab = 2, cex.axis = 1.3, bty = "n", las=1)
+
+plot(hits_na,falarm_na, type='o', col='white', xlim=c(0,1), ylim=c(0,1), xlab='', ylab='')
+lines(hits_na,falarm_na,lwd=1,col='black', lty=2)
+lines(hits_A,falarm_A[keep],lwd=3,col='deepskyblue3')
+lines(hits_B,falarm_B[keep],lwd=3,col='darkorchid3')
+lines(c(0.58, 0.68),c(0.3,0.3), lwd=2, lty=1, col="deepskyblue3")
+lines(c(0.58, 0.68),c(0.2,0.2), lwd=2, lty=1, col="darkorchid3")
+text(0.7, 0.3, labels="D' for A Condition", offset=0, cex = 0.8, pos=4)
+text(0.7, 0.2, labels="D' for B Condition", offset=0, cex = 0.8, pos=4)
+title('ROC per Condition')
+mtext(archive,3,cex=.8)
