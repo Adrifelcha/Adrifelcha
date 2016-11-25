@@ -362,7 +362,7 @@ for(archive in dir()){
 # Hits y Falsas alarmas x  No. Circulos externos
 
 rm(list=ls())
-layout(matrix(1:4,ncol=2))
+layout(matrix(1:2,ncol=2))
 for(archive in dir()){
 
   jaime <- read.csv(archive)
@@ -387,21 +387,39 @@ for(archive in dir()){
     
   }
   
-  plot(hits,type='o',pch=16,col='blue',ylim=c(50,100),axes=F , xlab='No. External Circles', ylab='', font.lab=2)
-  axis(1,at=1:4,labels=sort(unique(jaime$num_circulos_externos)))
-  axis(2,at=c(50, 60, 70, 80, 90, 100),labels=c("50","60","70","80","90","100"),las=1)
-  points(fa,type='o',pch=16,col='red')
-  #mtext(archive,3,cex=.8)
-  text(3.5,90,paste('Hits'),cex=1,col='blue',f=2)
-  title("Hits & F. Alarms per No. External Circles", outer = TRUE, line = -2)
+  #plot(hits,type='o',pch=16,col='blue',ylim=c(50,100),axes=F , xlab='No. External Circles', ylab='', font.lab=2)
+  #axis(1,at=1:4,labels=sort(unique(jaime$num_circulos_externos)))
+  #axis(2,at=c(50, 60, 70, 80, 90, 100),labels=c("50","60","70","80","90","100"),las=1)
+  #points(fa,type='o',pch=16,col='red')
+  ##mtext(archive,3,cex=.8)
+  #text(3.5,90,paste('Hits'),cex=1,col='blue',f=2)
+  #title("Hits & F. Alarms per No. External Circles", outer = TRUE, line = -2)
   
-  plot(fa,type='o',pch=16,col='red',ylim=c(0,50),axes=F , xlab='No. External Circles', ylab='', font.lab=2)
-  axis(1,at=1:4,labels=sort(unique(jaime$num_circulos_externos)))
-  axis(2,at=c(0, 10, 20, 30, 40, 50),labels=c("0", "10","20","30","40","50"),las=1)
-  points(fa,type='o',pch=16,col='red')
-  text(1.5,40,paste('F.A'),cex=1,col='red',f=2)
-  mtext("(Experiment 2)", 3, line=3, col='black', cex=1, font=3)
+  barplot(hits, main = "", xlab = "", ylab = " ", ylim = c(0, 100), axes = FALSE, col = c("dodgerblue1","dodgerblue2","dodgerblue3","dodgerblue4"))
+  axis(2,at=c(0, 20, 40, 60, 80, 100),labels=c("0", "20", "40","60","80","100"),las=1)
+  axis(1,at=c(0.7,1.9,3.1,4.3),labels=c("2","3", "7", "8"))
+  mtext("Number of External Circles", side = 1, line = 2.5, cex = 1, font = 1)
+  mtext("Hits", side = 2, line = 3, cex = 1, font = 1, las = 0)
+  mtext('Hits per External Circles',3,cex=1.2, font=2)
+  title(archive, outer = TRUE, line = -2)
+  
+  
+  #plot(fa,type='o',pch=16,col='red',ylim=c(0,50),axes=F , xlab='No. External Circles', ylab='', font.lab=2)
+  #axis(1,at=1:4,labels=sort(unique(jaime$num_circulos_externos)))
+  #axis(2,at=c(0, 10, 20, 30, 40, 50),labels=c("0", "10","20","30","40","50"),las=1)
+  #points(fa,type='o',pch=16,col='red')
+  #text(1.5,40,paste('F.A'),cex=1,col='red',f=2)
+  #mtext("(Experiment 2)", 3, line=3, col='black', cex=1, font=3)
   #mtext(archive,3,cex=.8)
+  
+  barplot(fa, main = "", xlab = "", ylab = " ", ylim = c(0, 100), axes = FALSE, col = c("firebrick1","firebrick2","firebrick3", "firebrick4"))
+  axis(2,at=c(0, 20, 40, 60, 80, 100),labels=c("0", "20", "40","60","80","100"),las=1)
+  axis(1,at=c(0.7,1.9,3.1,4.3),labels=c("2","3", "7", "8"))
+  mtext("Number of External Circles", side = 1, line = 2.5, cex = 1, font = 1)
+  mtext("Hits", side = 2, line = 3, cex = 1, font = 1, las = 0)
+  mtext('F. Alarms per External Circles',3,cex=1.2, font=2)
+  title(archive, outer = TRUE, line = -2)
+  
   
  }
 
@@ -410,19 +428,13 @@ for(archive in dir()){
 #Hits y Falsas Alarmas x Color
 
 rm(list=ls())
-layout(matrix(1:4,ncol=2))
+layout(matrix(1:2,ncol=2, byrow = TRUE))
 for(archive in dir()){
   
   jaime <- read.csv(archive)
   jaime$color <- as.character(jaime$color)
   cafe <- strsplit(as.character(jaime$color),split='-')
   #index <- which(jaime$facilidad=='muchos')
-  
-  
-  #for(i in index){
-  #  jaime$num_circulos_externos[i] <- paste(as.numeric(cafe[[i]])+5,collapse = '-')
-  #}
-  
   
   fa <- NULL
   hits <- NULL
@@ -435,37 +447,67 @@ for(archive in dir()){
     
   }
   
-  plot(hits,type='o',pch=16,col='blue',ylim=c(40,90),axes=F , xlab='Color', ylab='')
-  axis(2,at=c(40, 50, 60, 70, 80, 90),labels=c("40", "50","60","70","80", "90"),las=1)
-  axis(1,at=1:5,labels=c("Blue","Red", "Orange", "Purple", "Green"))
-  #points(fa,type='o',pch=16,col='red')
-  text(2,70,paste('Hits'),cex=1,col='blue',f=2)
-  #mtext(archive,3,cex=.8)
-  title("Hits & F.Alarms per Color", outer = TRUE, line = -2)
+  #par(cex.main = 1.5, mar = c(5, 6, 4, 5) + 0.1, mgp = c(3.5, 1, 0), cex.lab = 1.5 , font.lab = 2, cex.axis = 1.3, bty = "n", las=1)
   
- 
-  plot(fa,type='o',pch=16,col='red',ylim=c(0,50),axes=F , xlab='Color', ylab='' )
-  axis(1,at=1:5,labels=c("Blue","Red", "Orange", "Purple", "Green"))
-  axis(2,at=c(0, 10, 20, 30, 40,50),labels=c("0", "10","20","30","40", "50"),las=1)
+  
+  #plot(hits,type='o',pch=16,col='blue',ylim=c(40,90),axes=F , xlab="", ylab="")
+  #axis(2,at=c(40, 50, 60, 70, 80, 90),labels=c("40", "50","60","70","80", "90"),las=1)
+  #axis(1,at=1:5,labels=c("Blue","Red", "Orange", "Purple", "Green"))
   #points(fa,type='o',pch=16,col='red')
-  text(2,30,paste('F.A.'),cex=1,col='red',f=2)
+  #text(2,70,paste('Hits'),cex=1,col='blue',f=2)
+  #mtext("Color", side = 1, line = 2.5, cex = 1, font = 1)
+  #mtext("Hits", side = 2, line = 3, cex = 1, font = 1, las = 0)
+  #mtext(archive,3,cex=.8)
+  #title(archive, outer = TRUE, line = -2)
+ 
+  
+  barplot(hits, main = "", xlab = "", ylab = " ", ylim = c(0, 100), axes = FALSE, col = c("dodgerblue3","firebrick3", "chocolate3", "darkorchid4", "forestgreen"))
+  axis(2,at=c(0, 20, 40, 60, 80, 100),labels=c("0", "20", "40","60","80","100"),las=1)
+  axis(1,at=c(0.7,1.9,3.1,4.3,5.5),labels=c("Blue","Red", "Orange", "Purple", "Green"))
+  text(0.7,hits[1]+5,paste(hits[1]),cex=1,col='black',f=1)
+  text(1.9,hits[2]+5,paste(hits[2]),cex=1,col='black',f=1)
+  text(3.1,hits[3]+5,paste(hits[3]),cex=1,col='black',f=1)
+  text(4.3,hits[4]+5,paste(hits[4]),cex=1,col='black',f=1)
+  text(5.5,hits[5]+5,paste(hits[5]),cex=1,col='black',f=1)
+  mtext("Color", side = 1, line = 2.5, cex = 1, font = 1)
+  mtext("Hits", side = 2, line = 3, cex = 1, font = 1, las = 0)
+  mtext('Hits per color',3,cex=1.2, font=2)
+  title(archive, outer = TRUE, line = -2)
+   
+ 
+  #plot(fa,type='o',pch=16,col='red',ylim=c(0,50),axes=F , xlab='', ylab='' )
+  #axis(1,at=1:5,labels=c("Blue","Red", "Orange", "Purple", "Green"))
+  #axis(2,at=c(0, 10, 20, 30, 40,50),labels=c("0", "10","20","30","40", "50"),las=1)
+  #points(fa,type='o',pch=16,col='red')
+  #mtext("Color", side = 1, line = 2.5, cex = 1, font = 1)
+  #mtext("False Alarms", side = 2, line = 3, cex = 1, font = 1, las = 0)
+  #text(2,30,paste('F.A.'),cex=1,col='red',f=2)
   #mtext(archive,3,cex=.8) 
+  
+  
+  barplot(fa, main = "", xlab = "", ylab = " ", ylim = c(0, 100), axes = FALSE, col =c("dodgerblue3","firebrick3", "chocolate3", "darkorchid4", "forestgreen"))
+  axis(2,at=c(0, 20, 40, 60, 80, 100),labels=c("0", "20", "40","60","80","100"),las=1)
+  axis(1,at=c(0.7,1.9,3.1,4.3,5.5),labels=c("Blue","Red", "Orange", "Purple", "Green"))
+  text(0.7,fa[1]+5,paste(fa[1]),cex=1,col='black',f=1)
+  text(1.9,fa[2]+5,paste(fa[2]),cex=1,col='black',f=1)
+  text(3.1,fa[3]+5,paste(fa[3]),cex=1,col='black',f=1)
+  text(4.3,fa[4]+5,paste(fa[4]),cex=1,col='black',f=1)
+  text(5.5, fa[5]+5,paste(fa[5]), cex=1,col='black',f=1)
+  mtext("Color", side = 1, line = 2.5, cex = 1, font = 1)
+  mtext("False Alarms", side = 2, line = 3, cex = 1, font = 1, las = 0)
+  mtext('F. Alarms per color',3,cex=1.2, font=2)
+  
+  
  }
 
 
 
-
-############
-
-
-############################
-###########################
 ###########################
 #Hits y Falsas Alarmas  x Tamaño Circulo Central
 
 
 rm(list=ls())
-layout(matrix(1:4,ncol=2))
+layout(matrix(1:2,ncol=2, byrow=TRUE))
 for(archive in dir()){
   jaime <- read.csv(archive)
   fa <- NULL
@@ -479,20 +521,120 @@ for(archive in dir()){
     
   }
   
-  plot(fa,type='o',pch=16,col='red',ylim=c(0,50),axes=F , ann=F)
-  axis(1,at=1:8,labels=sort(unique(jaime$tamano_central)))
-  axis(2,at=c(0, 10, 20, 30, 40, 50),labels=c("0", "10","20","30","40","50"),las=1)
+  #plot(fa[c(1,2,3,8)],type='o',pch=16,col='red',ylim=c(0,50),axes=F , ann=F)
+  #axis(1,at=1:4,labels=c("1.0", "1,5", "2.5", "3.0"))
+  #axis(2,at=c(0, 10, 20, 30, 40, 50),labels=c("0", "10","20","30","40","50"),las=1)
   #points(hits,type='o',pch=16,col='red')
-  text(6,40,paste('F.A.'),cex=1,col='red',f=2)
-  mtext(archive,3,cex=.8)
-  
-  plot(hits,type='o',pch=16,col='blue',ylim=c(50,100),axes=F , ann=F)
-  axis(1,at=1:8,labels=sort(unique(jaime$tamano_central)))
-  axis(2,at=c(50, 60, 70, 80, 90, 100),labels=c("50", "60","70","80","90","100"),las=1)
-  text(2,90 ,paste('Hits'),cex=1,col='blue',f=2)
-  mtext(archive,3,cex=.8)
-  title("Hits y F.A. por Tamaño Interno", outer = TRUE, line = -2)
-  
-###########################
-  }
+  #text(6,40,paste('F.A.'),cex=1,col='red',f=2)
 
+  barplot(fa[c(1,2,3,8)], main = "", xlab = "", ylab = " ", ylim = c(0, 100), axes = FALSE, col =c("firebrick1", "firebrick2", "firebrick3", "firebrick4"))
+  axis(2,at=c(0, 20, 40, 60, 80, 100),labels=c("0", "20", "40","60","80","100"),las=1)
+  axis(1,at=c(0.7,1.9,3.1,4.3),labels=c("1.0", "1,5", "2.5", "3.0"))
+  text(0.7,fa[1]+5,paste(fa[1]),cex=1,col='brown4',f=1)
+  text(1.9,fa[2]+5,paste(fa[2]),cex=1,col='brown4',f=1)
+  text(3.1,fa[3]+5,paste(fa[3]),cex=1,col='brown4',f=1)
+  text(4.3,fa[8]+5,paste(fa[8]),cex=1,col='brown4',f=1)
+  mtext("Central Circle to compare size", side = 1, line = 2.5, cex = 1, font = 1)
+  mtext("False Alarms", side = 2, line = 3, cex = 1, font = 1, las = 0)
+  title(archive, outer = TRUE, font=1, line = -1)
+  mtext('F. Alarms per Size (Central)',3,cex=1.2, font=2)
+  
+      
+  #plot(hits[c(4,5,6,7)],type='o',pch=16,col='blue',ylim=c(50,100),axes=F , ann=F)
+  #axis(1,at=1:8,labels=sort(unique(jaime$tamano_central)))
+  #axis(2,at=c(50, 60, 70, 80, 90, 100),labels=c("50", "60","70","80","90","100"),las=1)
+  #text(2,90 ,paste('Hits'),cex=1,col='blue',f=2)
+  #title("Hits per Illusion", outer = TRUE, line = -2)
+  
+  barplot( hits[c(4,5,6,7)], main = "", xlab = "", ylab = " ", ylim = c(0, 100), axes = FALSE, ann= FALSE,  col =c("dodgerblue1", "dodgerblue2", "dodgerblue3", "dodgerblue4"))
+  axis(2,at=c(0, 20, 40, 60, 80, 100),labels=c("0", "20", "40","60","80","100"),las=1)
+  axis(1,at=c(0.7,1.9,3.1,4.3),labels=c("Over-1", "Over-2", "Under-1", "Under-2"))
+  text(0.7,hits[4]+5,paste(hits[4]),cex=1,col='blue4',f=1)
+  text(1.9,hits[5]+5,paste(hits[5]),cex=1,col='blue4',f=1)
+  text(3.1,hits[6]+5,paste(hits[6]),cex=1,col='blue4',f=1)
+  text(4.3,hits[7]+5,paste(hits[7]),cex=1,col='blue4',f=1)
+  mtext("Type of Illusion presented", side = 1, line = 2.5, cex = 1, font = 1)
+  mtext("Hits", side = 2, line = 3, cex = 1, font = 1, las = 0)
+  mtext('Hits per Illusion',3,cex=1.2, font=2)
+}
+
+###########################
+##########################
+###### R  O   C
+
+
+
+rm(list=ls())
+layout(matrix(1:1,ncol=1))
+for(archive in dir()){
+  jaime <- read.csv(archive)
+  fa_AN <- NULL
+  hits_AN <- NULL
+  fa_AS <- NULL
+  fa_AS <- NULL
+  hits_AN <- NULL
+  hits_AS <- NULL
+  hits_BS <- NULL
+  hits_BN <- NULL
+  { fa_AN <- sum(jaime$Falsas.alarmas[jaime$Estimulo>=161&jaime$Estimulo<=320]=='True')
+  fa_AS <- sum(jaime$Falsas.alarmas[jaime$Estimulo>=1&jaime$Estimulo<=160]=='True')
+  hits_AS <- sum(jaime$Hits[jaime$Estimulo>=1&jaime$Estimulo<=160]=='True')
+  hits_AN <- sum(jaime$Hits[jaime$Estimulo>=161&jaime$Estimulo<=320]=='True')
+  fa_BN <- sum(jaime$Falsas.alarmas[jaime$Estimulo>=481&jaime$Estimulo<=640]=='True')
+  fa_BS <- sum(jaime$Falsas.alarmas[jaime$Estimulo>=321&jaime$Estimulo<=480]=='True')
+  hits_BS <- sum(jaime$Hits[jaime$Estimulo>=321&jaime$Estimulo<=480]=='True')
+  hits_BN <- sum(jaime$Hits[jaime$Estimulo>=481&jaime$Estimulo<=640]=='True')
+  FAr_an <- fa_AN/160 
+  Hr_as <- hits_AS/160
+  FAr_bn <- fa_BN/160
+  Hr_bs <- hits_BS/160
+  print(c(fa_AN[length(fa_AN)], 
+          FAr_an[length(FAr_an)], 
+          fa_BN[length(fa_BN)], 
+          FAr_bn[length(FAr_bn)], 
+          hits_BS[length(hits_BS)], 
+          Hr_bs[length(Hr_bs)], 
+          hits_AS[length(hits_AS)], 
+          Hr_as[length(Hr_as)]))
+  k_A <- qnorm(1-FAr_an,0,1)
+  d_A <- qnorm(Hr_as,0,1)-qnorm(FAr_an,0,1)
+  c_A <- k_A-(d_A/2)                    
+  beta_A <- dnorm(k_A,d_A,1)/dnorm(k_A,0,1)
+  k_B <- qnorm(1-FAr_bn,0,1)
+  d_B <-qnorm(Hr_bs,0,1)-qnorm(FAr_bn,0,1)
+  c_B <-k_B-(d_B/2)                    
+  beta_B <-dnorm(k_B,d_B,1)/dnorm(k_B,0,1)
+  }
+  
+  hits_A <- c()
+  falarm_A <- c()
+  hits_B <- c()
+  falarm_B <- c()
+  hits_na <- c()
+  falarm_na <- c()
+  c <- seq(-10,10,0.1)
+  d_null <- 0
+  
+  for (i in 1:length(c)){
+    hits_A[i] <- pnorm((-d_A/2)-c[i])
+    falarm_A[i] <- pnorm((d_A/2)-c[i])
+    hits_B[i] <- pnorm((-d_B/2)-c[i])
+    falarm_B[i] <- pnorm((d_B/2)-c[i])
+    hits_na[i] <- pnorm((d_null/2)-c[i])
+    falarm_na[i] <- pnorm((-d_null/2)-c[i])
+  }
+  
+  plot(FAr_an,Hr_as, pch=16, col='deepskyblue4', xlim=c(0,1), ylim=c(0,1), xlab='', ylab='')
+    points(FAr_bn,Hr_bs, lty=3, pch=16, col='darkorchid4')
+    lines(hits_A,falarm_A,lwd=3,col='deepskyblue3')
+    lines(hits_B,falarm_B,lwd=3,col='darkorchid3')
+    lines(hits_na,falarm_na,lwd=1,col='black', lty=2)
+    lines(c(0.58, 0.68),c(0.3,0.3), lwd=2, lty=1, col="deepskyblue3")
+    lines(c(0.58, 0.68),c(0.2,0.2), lwd=2, lty=1, col="darkorchid3")
+    text(0.7, 0.3, labels="D' for A Condition", offset=0, cex = 0.8, pos=4)
+    text(0.7, 0.2, labels="D' for B Condition", offset=0, cex = 0.8, pos=4)
+    title('ROC per Condition')
+    mtext('Experimento 1',3,cex=.8)
+    mtext(archive,1,cex=.8, line=3)
+}
+  
