@@ -401,7 +401,7 @@ for(archive in dir()){
   mtext("Number of External Circles", side = 1, line = 2.5, cex = 1, font = 1)
   mtext("Hits", side = 2, line = 3, cex = 1, font = 1, las = 0)
   mtext('Hits per External Circles',3,cex=1.2, font=2)
-  title(archive, outer = TRUE, line = -2)
+  title('Experiment 1 - P.10', outer = TRUE, line = -2)
   
   
   #plot(fa,type='o',pch=16,col='red',ylim=c(0,50),axes=F , xlab='No. External Circles', ylab='', font.lab=2)
@@ -418,7 +418,7 @@ for(archive in dir()){
   mtext("Number of External Circles", side = 1, line = 2.5, cex = 1, font = 1)
   mtext("Hits", side = 2, line = 3, cex = 1, font = 1, las = 0)
   mtext('F. Alarms per External Circles',3,cex=1.2, font=2)
-  title(archive, outer = TRUE, line = -2)
+ # title(archive, outer = TRUE, line = -2)
   
   
  }
@@ -472,7 +472,7 @@ for(archive in dir()){
   mtext("Color", side = 1, line = 2.5, cex = 1, font = 1)
   mtext("Hits", side = 2, line = 3, cex = 1, font = 1, las = 0)
   mtext('Hits per color',3,cex=1.2, font=2)
-  title(archive, outer = TRUE, line = -2)
+  title('Experiment 1 - p. 19', outer = TRUE, line = -2)
    
  
   #plot(fa,type='o',pch=16,col='red',ylim=c(0,50),axes=F , xlab='', ylab='' )
