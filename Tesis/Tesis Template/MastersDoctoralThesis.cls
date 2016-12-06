@@ -319,7 +319,7 @@ KOMA-script documentation for details.}]{fancyhdr}
 %	ABBREVIATIONS PAGE DESIGN
 %----------------------------------------------------------------------------------------
 
-\newcommand{\abbrevname}{List of Abbreviations}
+\newcommand{\abbrevname}{Listado de Abreviaturas}
 \providecaptionname{english,british,american}{\abbrevname}{List of Abbreviations}
 \providecaptionname{ngerman,german,austrian,naustrian}{\abbrevname}{Abk\"urzungsverzeichnis}
 \NewDocumentEnvironment{abbreviations}{ m }{%

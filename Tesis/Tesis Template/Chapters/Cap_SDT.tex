@@ -13,31 +13,47 @@
 \newcommand{\file}[1]{\texttt{\bfseries#1}}
 \newcommand{\option}[1]{\texttt{\itshape#1}}
 
-%----------------------------------------------------------------------------------------
+%--------------------------------------------------------------------------------s--------
 
-\section{Introducción: El problema de la Detección}
+\section{Introducción: Detección e Incertidumbre}
 
-Uno de los problemas más frecuentes a los que se enfrenta cualquier sistema que se encuentre inmerso en un ambiente variable es la detección de estados particulares, asociados de manera especial a una conducta específica. Dicho en otras palabras, con frecuencia los organismos que buscan distribuir su conducta de manera óptima se encuentran a sí mismos tratando de 'decidir' si ‘algo’ está o no ocurriendo en el mundo, para poder guiar su comportamiento en consecuencia. 
+Uno de los problemas más frecuentes a los que se enfrentan los sistemas inmersos en entornos variables es la detección de estados o eventos particulares, cuya identificación resulta importante dado que permite al organismo tomar una decisión respecto a los posibles comportamientos que pueda realizar y las posibles consecuencias que puede tener. En otras palabras, con frecuencia los sistemas que aspiran a optimizar su comportamiento se encuentran ante el conflicto de 'decidir' si ‘algo’ está o no ocurriendo en el mundo para poder guiar su comportamiento en consecuencia. \\
 
+En escencia, determinar si 'algo' está o no ocurriendo no parecería representar un problema significativo si pudieramos tener entera confianza en la capacidad que se tiene de detectar dichos eventos. Sin embargo, este no parece ser nunca el caso. Cuando hablamos de la Detección de un estado/evento como un problema de adaptabilidad, estamos asumiendo que el sistema que se enfrenta a dicha tarea lo está haciendo dentro de un entorno donde la presentación de dichos eventos es aleatoria y donde estará expuesto a otro tipo de eventos.\\
 
+La noción de incertidumbre representa un punto clave para hablar de la Detección como un problema para los organismos adaptables. El mundo está cargado de ruido: ni los sistemas perceptuales de detección de los organismos son perfectos, ni los eventos cuya detección interesa a los mismos suelen ocurrir de manera aislada e inconfundible. De tal forma que el ruido en el entorno afecta nuestra capacidad para detectar un evento en particular en ambos sentidos: en la propia presentación del evento y en la forma en que el sistema puede extraer información de su entorno para juzgar su ocurrencia.\\
 
-
-
-(e.g. ‘¿mi mamá está enojada?, ¿mi perro está enfermo?, ¿esta comida está pasada?'). No parecería tratarse de un gran problema si tuvieramos entera confianza en nuestra capacidad para identificar dichos eventos, sin embargo, este no parece ser el caso casi nunca.\\
-
-
-Desafortunadamente, el mundo siempre está cargado de ruido e incertidumbre: tanto la información con base en la cual buscamos tomar una decisión, como la precisión con que nuestro sistema es capaz de evaluarla, son imperfectos. 
+Los organismos habitan en entornos donde están siendo constantemente expuestos a distintos tipos de estimulación. 
 
 
-\section{El papel de la incertidumbre}
+
+
 
 \section{Teoría de Detección de Señales}
 
-\subsection{Supuestos generales del modelo}
-
-La Teoría de Detección de Señales (TDS o SDT, por sus siglas en inglés) plantea que la información que  interesa  detectar  (i.e. señal)  suele  presentarse  en  conjunto  con  otro  tipo  de  estimulación (i.e. ruido),  cargándola  de  incertidumbre  y  haciendo de  la  percepción  un  proceso  de  toma  de decisiones  donde  el  sistema  debe  formular  un  juicio  de  detección que  le  permita  guiar  su comportamiento. Es importante precisar  que la TDS no es exclusiva del estudio de la percepción visual  u  otras  modalidades  de  detección  sensorial,  sino  que  también  puede  referirse,  en  un sentido más abstracto, a la detección de información dentro de un conjunto de datos ambiguos; (e.g.  estudios  de  memoria  donde  se  solicita  al  participante  detectar  los  elementos  que  ya  se  le habían mostrado antes, o bien, la interpretación de baterías clínicas). (Wei Ji Ma, 2012)\\
+La Teoría de Detección de Señales (TDS o SDT, por sus siglas en inglés) plantea que la información que  interesa  detectar  (Sea un evento en particular o un estado o categoría más general, identificada como una señal)  suele  presentarse  en  conjunto  con  otro  tipo  de  estimulación (i.e. ruido),  cargándola  de  incertidumbre  y  haciendo de  la  percepción  un  proceso  de  toma  de decisiones  donde  el  sistema  debe  formular  un  juicio  de  detección que  le  permita  guiar  su comportamiento. Es importante precisar  que la TDS no es exclusiva del estudio de la percepción visual  u  otras  modalidades  de  detección  sensorial,  sino  que  también  puede  referirse,  en  un sentido más abstracto, a la detección de información dentro de un conjunto de datos ambiguos; (e.g.  estudios  de  memoria  donde  se  solicita  al  participante  detectar  los  elementos  que  ya  se  le habían mostrado antes, o bien, la interpretación de baterías clínicas). (Wei Ji Ma, 2012)\\
 
 En el laboratorio, la  TDS se estudia a partir  de tareas de detección donde se expone a un  sujeto  a  N  número  de  ensayos,  (comprendidos  por  n  ensayos con  sólo  ruido  y  n  ensayos donde  el  ruido  viene  acompañado  de  la  señal)  ante  los  que  se  le  pide  al  participante  que responda eligiendo una de dos opciones: Sí está la señal o No está la señal. En estos escenarios controlados,  el  experimentador  decide  la  proporción  de  ensayos  con  y  sin  señal  que  se presentarán, así como la matriz de pagos que definirán la utilidad de sus aciertos y errores. \\
+
+
+\subsection{Supuestos generales del modelo}
+
+
+1.	Hay variabilidad, siempre (Ver Fig. 1).
+
+a.	Hay variabilidad en la señal
+
+La idea central de variabilidad radica en la noción de que ningún estímulo se presenta ni se percibe exactamente igual cada vez que nos encontramos con él.  Es decir, cada vez que nos encontramos con la  señal en el mundo, ésta puede hacerlo dentro de un rango de posibilidades con cierta probabilidad. Esta idea se muestra gráficamente en la Figura 1, con la distribución normal azul identificada bajo la etiqueta de ‘Señal’. La idea es que la señal va adoptar una cierta forma de entre los puntos que abarca la distribución de probabilidad; siendo unas más probables que otras, conforme se aproximan a la media.
+
+La variabilidad en la señal puede interpretarse en términos de dos fuentes: la percepción del sistema que ejecuta la tarea de detección, o la propia presentación estímulo en sí mismo. En el primer caso, se asume que cada vez qu e vemos un mismo estímulo que se mantiene constante en términos de sus propiedades físicas,  (e.g. una luz o un tono),  este puede ser percibido de manera distinta en cada presentación (i.e. unas veces parecerá un poco más intenso y otras, un poco menos). En el segundo caso, se asume que la señal puede tomar más de una forma, (e.g. si la señal es el enojo de un amigo, existen ciertos rasgos que son más o menos comúnmente asociados a su enfado; pero no siempre se va a ver exactamente igual).
+
+b.	Hay variabilidad en el entorno.
+
+Por otro lado, es importante tomar en cuenta que las señales que interesa detectar coexisten en el mundo con otros estímulos; algunos de los cuales pueden llegar a producir una evidencia similar a la de nuestra señal y ser, por tanto, confundidos con la misma. Esta idea se representa en la Figura 1 con la distribución normal negra identificada bajo el nombre de ruido, que se traslapa con cierta probabilidad con la distribución de señal.
+
+
+El soporte de las distribuciones, identificado en la Figura 1 bajo el nombre de ‘Evidencia’ rara vez se define con precisión,  teniendo una concepción más bien abstracta; La idea general es que cuando queremos detectar una señal particular, comenzamos a recolectar un tipo de evidencia específico a la tarea ante la que nos encontramos. Lo más importante, es que la señal siempre va a estar asociada en mayor medida con dicha evidencia, distribuyéndose siempre en valores situados por encima (a la derecha, en la Figura 1) del ruido.
+
 
 \subsection{Parámetros del modelo}
 

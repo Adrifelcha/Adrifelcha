@@ -1,7 +1,11 @@
+####################################
+# Ploteo de Datos
+# EXPERIMENTO 1 (Dos Ebbinghaus)
+####################################
+
 setwd("C:/Users/Adrifelcha/Desktop/Tesis/Tesis/CSVs/Datos_Exp1")
 rm(list=ls())
 dir()
-
 
 ####################################################
 ####################################################
