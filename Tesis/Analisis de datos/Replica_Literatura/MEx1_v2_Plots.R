@@ -3,9 +3,119 @@
 # EXPERIMENTO 1 (Dos Ebbinghaus)
 ####################################
 
-setwd("C:/Users/Adrifelcha/Desktop/Tesis/Tesis/CSVs/Datos_Exp1")
+setwd("C:/Users/Alejandro/Desktop/Felisa/Tesis/CSVs/Datos_Exp1")
 rm(list=ls())
 dir()
+
+
+#####################################
+#####################################
+#     Evaluando/ GRaficando         #
+#        Mirror Effect              #
+#####################################
+#####################################
+#####################################
+
+
+#####################################
+####            HITS Y FALSAS ALARMAS
+#####################################
+
+
+rm(list=ls())
+layout(matrix(1:2,ncol=1))
+for(archive in dir()){
+  jaime <- read.csv(archive)
+  fa <- NULL
+  hits <- NULL
+  conf <- NULL
+  for(nce in sort(unique(jaime$tipo))){
+    fa <- append(fa, sum(jaime$Falsas.alarmas[jaime$tipo==nce]=='True'))
+    hits <- append(hits, sum(jaime$Hits[jaime$tipo==nce]=='True'))
+    rate <- (fa+hits)/160
+    total <- (fa+hits)
+    print(c(nce,
+            fa[length(fa)],
+            hits[length(hits)],
+            rate[length(rate)],
+            total[length(total)]))
+  }
+  
+  barplot(total, main = "", xlab = "", ylab = "Cumulative Frequency", font.lab=2, ylim = c(0, 160), axes = FALSE, col =c("deepskyblue3", "darkorchid3", "darkorchid3", "deepskyblue3"))
+  #axis(1,at=1:4,labels=sort(unique(jaime$tipo)))
+  axis(1,at=c(0.72,1.9,3.1,4.3),labels=c("Fa(AN)", "Fa(BN)", "H(BS)", "H(AS)"), font=2)
+  axis(2,at=c(0, 20, 40, 60, 80, 100, 120, 140, 160),labels=c("0","20","40","60", "80", "100", "120", "140", "160"),las=1)
+  text(0.72,total[1]+12,paste(total[1]),cex=.8,col='black',f=2)
+  text(1.9,total[2]+12,paste(total[2]),cex=.8,col='black',f=2)
+  text(3.1,total[3]-12,paste(total[3]),cex=.8,col='black',f=2)
+  text(4.3,total[4]-12,paste(total[4]),cex=.8,col='black',f=2)
+  text(1.5,100,paste('Hits & F.A.'),cex=1,col='black',f=2)
+  mtext(archive,3,cex=.8, line=1)
+  title("Mirror Effect: Yes/No Responses", outer = TRUE, line = -2)  
+  
+  plot(rate, main = "", type='o', pch=16, xlab = "", ylab = "Rate", font.lab=2, ylim = c(0, 1), axes = FALSE, col ='royalblue')
+  axis(1,at=1:4,labels=c("Fa(AN)", "Fa(BN)", "H(BS)", "H(AS)"), font=2)
+  axis(2,at=c(0, 0.15, 0.30, 0.45, 0.60, 0.75, 0.90, 1),labels=c("0",".15",".30",".45",".60", ".75", ".90", "1"),las=1)
+  text(1.1,rate[1]+.1,paste(rate[1]),cex=1,col='blue',f=2)
+  text(1.9,rate[2]+.1,paste(rate[2]),cex=1,col='blue',f=2)
+  text(3.1,rate[3]-.1,paste(rate[3]),cex=1,col='blue',f=2)
+  text(3.9,rate[4]-.1,paste(rate[4]),cex=1,col='blue',f=2)
+  text(1.5,.8,paste('Hits & F.A. rates'),cex=1,col='black',f=2)
+}  
+
+#####################################
+####            Confidence Rating
+#####################################
+
+rm(list=ls())
+layout(matrix(1:2,ncol=1))
+for(archive in dir()){
+  jaime <- read.csv(archive)
+  
+  C_AS <- NULL
+  C_AN <- NULL
+  C_BS <- NULL
+  C_BN <- NULL
+  
+  for(nce in sort(jaime$Estimulo)){
+    C_AS <- sum(jaime$Confidence[jaime$tipo=='4 AS'])/160
+    C_AN <- sum(jaime$Confidence[jaime$tipo=='1 AN'])/160
+    C_BS <- sum(jaime$Confidence[jaime$tipo=='3 BS'])/160
+    C_BN <- sum(jaime$Confidence[jaime$tipo=='2 BN'])/160
+    Confidence <- c(C_AN, C_BN, C_BS, C_AS)
+  }
+  
+  plot(Confidence,type='o',pch=16,col='white',ylim=c(0,6), yaxt='n', xaxt='n', ann=F)
+  #axis(1,at=c(0,6),labels=c("AN","BN","BS","AS"), col='white')
+  #axis(2,at=c(2.5,7.5),labels=c("Rate","No."),las=0)
+  abline(3,c(0.1,0.1), col="black",lwd=1)
+  abline(v=1.75,h=c(-10,15),col='black')
+  abline(v=2.5,h=c(-10,15),col='black')
+  abline(v=3.4,h=c(-10,15),col='black')
+  text(1.3,1.5,paste(C_AN),cex=1,col='royalblue4')
+  text(2.2,1.5,paste(C_BN),cex=1,col='royalblue4')
+  text(2.9,1.5,paste(C_BS),cex=1,col='royalblue4')
+  text(3.75,1.5,paste(C_AS),cex=1,col='royalblue4')
+  text(1.3,4.5,paste('R(AN)'),cex=1,col='royalblue4')
+  text(2.2,4.5,paste('R(BN)'),cex=1,col='royalblue4')
+  text(2.9,4.5,paste('R(BS)'),cex=1,col='royalblue4')
+  text(3.75,4.5,paste('R(AS)'),cex=1,col='royalblue4')
+  mtext(archive,3,cex=.8)
+  #text(1.5,.8,paste('Hits & F.A. rate'),cex=1,col='blue',f=2)
+  #mtext(archive,3,cex=.8)
+  title("Confidence Rating", outer = TRUE, line = -2)
+  #points(hits,type='o',pch=16,col='black')
+  
+  plot(Confidence,type='o',pch=16,col='maroon2',ylim=c(0,6),axes=F , ylab="Confidence Rating", xlab="", font.lab=2)
+  axis(1,at=1:4,labels=c("R(AN)", "R(BN)", "R(BS)", "R(AS)"), font=2)
+  axis(2,at=c(0, 1, 2, 3, 4, 5, 6),labels=c("0","1", "2","3","4","5","6"),las=1)
+  text(1.1,C_AN+.5,paste(C_AN),cex=1,col='violetred',f=2)
+  text(1.9,C_BN+.5,paste(C_BN),cex=1,col='violetred',f=2)
+  text(3.1,C_BS-.6,paste(C_BS),cex=1,col='violetred',f=2)
+  text(3.9,C_AS-.5,paste(C_AS),cex=1,col='violetred',f=2)
+  text(1.5,5.5,paste('Mean Confidence Rating'),cex=1,col='violetred4',f=2)
+}
+
 
 ####################################################
 ####################################################
@@ -450,4 +560,87 @@ for(archive in dir()){
   #points(fa,type='o',pch=16,col='red')
   text(2,30,paste('F.A.'),cex=1,col='red',f=2)
   mtext(archive,3,cex=.8) 
+}
+
+
+####################################
+####################################
+######       ROC curves     ########
+####################################
+####################################
+
+
+rm(list=ls())
+layout(matrix(1:1,ncol=1))
+for(archive in dir()){
+  jaime <- read.csv(archive)
+  fa_AN <- NULL
+  hits_AN <- NULL
+  fa_AS <- NULL
+  fa_AS <- NULL
+  hits_AN <- NULL
+  hits_AS <- NULL
+  hits_BS <- NULL
+  hits_BN <- NULL
+  { fa_AN <- sum(jaime$Falsas.alarmas[jaime$Estimulo>=161&jaime$Estimulo<=320]=='True')
+  fa_AS <- sum(jaime$Falsas.alarmas[jaime$Estimulo>=1&jaime$Estimulo<=160]=='True')
+  hits_AS <- sum(jaime$Hits[jaime$Estimulo>=1&jaime$Estimulo<=160]=='True')
+  hits_AN <- sum(jaime$Hits[jaime$Estimulo>=161&jaime$Estimulo<=320]=='True')
+  fa_BN <- sum(jaime$Falsas.alarmas[jaime$Estimulo>=481&jaime$Estimulo<=640]=='True')
+  fa_BS <- sum(jaime$Falsas.alarmas[jaime$Estimulo>=321&jaime$Estimulo<=480]=='True')
+  hits_BS <- sum(jaime$Hits[jaime$Estimulo>=321&jaime$Estimulo<=480]=='True')
+  hits_BN <- sum(jaime$Hits[jaime$Estimulo>=481&jaime$Estimulo<=640]=='True')
+  FAr_an <- fa_AN/160 
+  Hr_as <- hits_AS/160
+  FAr_bn <- fa_BN/160
+  Hr_bs <- hits_BS/160
+  print(c(fa_AN[length(fa_AN)], 
+          FAr_an[length(FAr_an)], 
+          fa_BN[length(fa_BN)], 
+          FAr_bn[length(FAr_bn)], 
+          hits_BS[length(hits_BS)], 
+          Hr_bs[length(Hr_bs)], 
+          hits_AS[length(hits_AS)], 
+          Hr_as[length(Hr_as)]))
+  k_A <- qnorm(1-FAr_an,0,1)
+  d_A <- qnorm(Hr_as,0,1)-qnorm(FAr_an,0,1)
+  c_A <- k_A-(d_A/2)                    
+  beta_A <- dnorm(k_A,d_A,1)/dnorm(k_A,0,1)
+  k_B <- qnorm(1-FAr_bn,0,1)
+  d_B <-qnorm(Hr_bs,0,1)-qnorm(FAr_bn,0,1)
+  c_B <-k_B-(d_B/2)                    
+  beta_B <-dnorm(k_B,d_B,1)/dnorm(k_B,0,1)
+  }
+  
+  hits_A <- c()
+  falarm_A <- c()
+  hits_B <- c()
+  falarm_B <- c()
+  hits_na <- c()
+  falarm_na <- c()
+  c <- seq(-10,10,0.1)
+  d_null <- 0
+  
+  for (i in 1:length(c)){
+    hits_A[i] <- pnorm((-d_A/2)-c[i])
+    falarm_A[i] <- pnorm((d_A/2)-c[i])
+    hits_B[i] <- pnorm((-d_B/2)-c[i])
+    falarm_B[i] <- pnorm((d_B/2)-c[i])
+    hits_na[i] <- pnorm((d_null/2)-c[i])
+    falarm_na[i] <- pnorm((-d_null/2)-c[i])
+  }
+  
+  plot(FAr_an,Hr_as, pch=16, col='deepskyblue4', xlim=c(0,1), ylim=c(0,1), xlab='F.A. Rate', ylab='Hit Rate', font.lab=2)
+  points(FAr_bn,Hr_bs, lty=3, pch=16, col='darkorchid4')
+  lines(hits_A,falarm_A,lwd=2,col='deepskyblue3')
+  lines(hits_B,falarm_B,lwd=2,col='darkorchid3')
+  lines(hits_na,falarm_na,lwd=1,col='black', lty=2)
+  lines(c(0.58, 0.68),c(0.3,0.3), lwd=2, lty=1, col="deepskyblue3")
+  lines(c(0.58, 0.68),c(0.2,0.2), lwd=2, lty=1, col="darkorchid3")
+  text(FAr_an, Hr_as+.04, paste("D'(A)=", round(d_A,2)), offset=0, cex = 0.8, pos=4, col='deepskyblue4', font=2)
+  text(FAr_bn, Hr_bs-.04, paste("D'(B)=", round(d_B,2)), offset=0, cex = 0.8, pos=4, col='darkorchid4', font=2)
+  text(0.7, 0.3, labels="D' for A Condition", offset=0, cex = 0.8, pos=4)
+  text(0.7, 0.2, labels="D' for B Condition", offset=0, cex = 0.8, pos=4)
+  title('ROC per Condition')
+  mtext(archive,3,cex=.8)
 }
