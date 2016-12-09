@@ -475,7 +475,7 @@ for(archive in dir()){
 
 
 rm(list=ls())
-layout(matrix(1:1,ncol=1))
+layout(matrix(1:20,ncol=5, byrow=TRUE))
 for(archive in dir()){
   jaime <- read.csv(archive)
   fa_AN <- NULL
@@ -534,18 +534,18 @@ for(archive in dir()){
     falarm_na[i] <- pnorm((-d_null/2)-c[i])
   }
   
-  plot(FAr_an,Hr_as, pch=16, col='deepskyblue4', xlim=c(0,1), ylim=c(0,1), xlab='F.A. Rate', ylab='Hit Rate', font.lab=2)
+  plot(FAr_an,Hr_as, pch=16, col='deepskyblue4', xlim=c(0,1), ylim=c(0,1), xlab='F.A. Rate', ylab='Hit Rate', font.lab=2, cex.lab=0.9)
     points(FAr_bn,Hr_bs, lty=3, pch=16, col='darkorchid4')
     lines(hits_A,falarm_A,lwd=2,col='deepskyblue3')
     lines(hits_B,falarm_B,lwd=2,col='darkorchid3')
     lines(hits_na,falarm_na,lwd=1,col='black', lty=2)
     lines(c(0.58, 0.68),c(0.3,0.3), lwd=2, lty=1, col="deepskyblue3")
     lines(c(0.58, 0.68),c(0.2,0.2), lwd=2, lty=1, col="darkorchid3")
-    text(FAr_an, Hr_as+.04, paste("D'(A)=", round(d_A,2)), offset=0, cex = 0.8, pos=4, col='deepskyblue4', font=2)
-    text(FAr_bn, Hr_bs-.04, paste("D'(B)=", round(d_B,2)), offset=0, cex = 0.8, pos=4, col='darkorchid4', font=2)
-    text(0.7, 0.3, labels="D' for A Condition", offset=0, cex = 0.8, pos=4)
-    text(0.7, 0.2, labels="D' for B Condition", offset=0, cex = 0.8, pos=4)
-    title('ROC per Condition')
-    mtext(archive,3,cex=.8)
+    text(FAr_an, Hr_as+.04, paste("D'(A)=", round(d_A,2)), offset=0, cex = 0.7, pos=4, col='deepskyblue4', font=2)
+    text(FAr_bn, Hr_bs-.04, paste("D'(B)=", round(d_B,2)), offset=0, cex = 0.7, pos=4, col='darkorchid4', font=2)
+    text(0.7, 0.3, labels="D' for A Condition", offset=0, cex = 0.7, pos=4)
+    text(0.7, 0.2, labels="D' for B Condition", offset=0, cex = 0.7, pos=4)
+    title('ROC per Condition; Experiment 2',outer = TRUE, line = -2)
+    mtext(archive,3,cex=.7)
     }
   

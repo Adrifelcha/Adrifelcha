@@ -17,13 +17,13 @@
 
 \section{Introducción: Detección e Incertidumbre}
 
-Uno de los problemas más frecuentes a los que se enfrentan los sistemas inmersos en entornos variables es la detección de estados o eventos particulares, cuya identificación resulta importante dado que permite al organismo tomar una decisión respecto a los posibles comportamientos que pueda realizar y las posibles consecuencias que puede tener. En otras palabras, con frecuencia los sistemas que aspiran a optimizar su comportamiento se encuentran ante el conflicto de 'decidir' si ‘algo’ está o no ocurriendo en el mundo para poder guiar su comportamiento en consecuencia. \\
+Uno de los problemas más frecuentes a los que se enfrentan los sistemas inmersos en entornos variables es la detección de estados o eventos particulares, cuya identificación resulta importante dado que permite tomar una decisión respecto a los posibles comportamientos que pueda realizar y las posibles consecuencias que puede tener cada uno de ellos. En otras palabras, con frecuencia los sistemas que aspiran a optimizar su comportamiento se encuentran ante el conflicto de 'decidir' si ‘algo’ está o no ocurriendo en el mundo para poder guiar su comportamiento en consecuencia. \\
 
-En escencia, determinar si 'algo' está o no ocurriendo no parecería representar un problema significativo si pudieramos tener entera confianza en la capacidad que se tiene de detectar dichos eventos. Sin embargo, este no parece ser nunca el caso. Cuando hablamos de la Detección de un estado/evento como un problema de adaptabilidad, estamos asumiendo que el sistema que se enfrenta a dicha tarea lo está haciendo dentro de un entorno donde la presentación de dichos eventos es aleatoria y donde estará expuesto a otro tipo de eventos.\\
+En escencia, determinar si 'algo' está o no ocurriendo no parecería representar un problema significativo si pudieramos tener entera confianza en la capacidad que se tiene de detectar dichos eventos. Sin embargo, este no parece ser nunca el caso. Cuando hablamos de la Detección de un estado/evento como un problema de adaptabilidad, estamos asumiendo que el sistema que se enfrenta a dicha tarea lo está haciendo dentro de un entorno donde la presentación de dichos evento o estados es aleatoria y donde estará expuesto a otro tipo de eventos.\\
 
 La noción de incertidumbre representa un punto clave para hablar de la Detección como un problema para los organismos adaptables. El mundo está cargado de ruido: ni los sistemas perceptuales de detección de los organismos son perfectos, ni los eventos cuya detección interesa a los mismos suelen ocurrir de manera aislada e inconfundible. De tal forma que el ruido en el entorno afecta nuestra capacidad para detectar un evento en particular en ambos sentidos: en la propia presentación del evento y en la forma en que el sistema puede extraer información de su entorno para juzgar su ocurrencia.\\
 
-Los organismos habitan en entornos donde están siendo constantemente expuestos a distintos tipos de estimulación. 
+Los organismos habitan en entornos donde están siendo constantemente expuestos a distintos tipos de estimulación. Dichos estímulos pueden, o no, aportar al organismo cierta información respecto a las relaciones de contingencia operando en su entorno.
 
 
 
@@ -34,6 +34,8 @@ Los organismos habitan en entornos donde están siendo constantemente expuestos 
 La Teoría de Detección de Señales (TDS o SDT, por sus siglas en inglés) plantea que la información que  interesa  detectar  (Sea un evento en particular o un estado o categoría más general, identificada como una señal)  suele  presentarse  en  conjunto  con  otro  tipo  de  estimulación (i.e. ruido),  cargándola  de  incertidumbre  y  haciendo de  la  percepción  un  proceso  de  toma  de decisiones  donde  el  sistema  debe  formular  un  juicio  de  detección que  le  permita  guiar  su comportamiento. Es importante precisar  que la TDS no es exclusiva del estudio de la percepción visual  u  otras  modalidades  de  detección  sensorial,  sino  que  también  puede  referirse,  en  un sentido más abstracto, a la detección de información dentro de un conjunto de datos ambiguos; (e.g.  estudios  de  memoria  donde  se  solicita  al  participante  detectar  los  elementos  que  ya  se  le habían mostrado antes, o bien, la interpretación de baterías clínicas). (Wei Ji Ma, 2012)\\
 
 En el laboratorio, la  TDS se estudia a partir  de tareas de detección donde se expone a un  sujeto  a  N  número  de  ensayos,  (comprendidos  por  n  ensayos con  sólo  ruido  y  n  ensayos donde  el  ruido  viene  acompañado  de  la  señal)  ante  los  que  se  le  pide  al  participante  que responda eligiendo una de dos opciones: Sí está la señal o No está la señal. En estos escenarios controlados,  el  experimentador  decide  la  proporción  de  ensayos  con  y  sin  señal  que  se presentarán, así como la matriz de pagos que definirán la utilidad de sus aciertos y errores. \\
+
+La TDS ha sido utilizada para describir un amplio número de fenómenos. Cuando hablamos de detección de señales, podemos referirnos a la señal tanto como un estímulo sensorial concreto (e.g. una luz, tono, u objeto particular), como una categoría más abstracta (e.g. una enfermedad, una emoción o un estado).  (Ver la sección de lecturas recomendadas para más ejemplos).\\
 
 
 \subsection{Supuestos generales del modelo}
@@ -55,14 +57,79 @@ Por otro lado, es importante tomar en cuenta que las señales que interesa detec
 El soporte de las distribuciones, identificado en la Figura 1 bajo el nombre de ‘Evidencia’ rara vez se define con precisión,  teniendo una concepción más bien abstracta; La idea general es que cuando queremos detectar una señal particular, comenzamos a recolectar un tipo de evidencia específico a la tarea ante la que nos encontramos. Lo más importante, es que la señal siempre va a estar asociada en mayor medida con dicha evidencia, distribuyéndose siempre en valores situados por encima (a la derecha, en la Figura 1) del ruido.
 
 
+Este primer supuesto de variabilidad, como algo inherente a todo estímulo y sistema, nos lleva a hablar de la discriminabilidad de la señal, o bien, de la sensibilidad del sistema ante la señal, que el modelo de detección de señales va a representar con un mismo parámetro: d’, que corresponde a la distancia entre las medias de las distribuciones de ruido y señal, y cuyo cómputo abordaremos más afondo más adelante con ayuda de nuestro graficador en Python. 
+
+2.	Las consecuencias importan:
+
+La TDS define toda tarea de detección como una tarea de decisión, donde el fin último por el cual el organismo se interesa en determinar si la señal está o no presente, es el de guiar su curso de acción. Es decir, el comportamiento de cualquier organismo va a depender de las señales que este detecta en su entorno.
+
+Una consecuencia directa de la variabilidad involucrada en el entorno de decisión, es que el desempeño de todo sistema de detección es propenso a cometer errores y emitir un juicio de presencia o ausencia de la señal, que puede no coincidir con el estado del mundo. Dependiendo la correspondencia entre el estado del mundo y el juicio emitido por el sistema de detección, la TDS maneja las clasificaciones de respuesta mostradas en la Tabla 1; donde las celdas 2 y 3, corresponden a los errores posibles.
+
+La TDS asume que el organismo fija un criterio de elección a lo largo del eje de la Evidencia, que va a determinar a partir de cuánta evidencia va a juzgar la señal como presente. Dicho criterio se va a representar como una línea transversal que atraviesa ambas distribuciones en una determinada altura, y se le va a identificar con el parámetro k. La TDS asume que los organismos van a fijar esta regla de elección, ponderando la información a la que tienen acceso con la información que poseen sobre la estructura de la tarea (i.e. cómo suele presentarse la señal, qué tan probable es que se presente, etc.)
+
+a.	Sesgo
+Sin embargo, no todos los errores tienen el mismo costo. Imaginemos el caso de una presa en potencia que busca determinar si el sonido que acaba de escuchar en la maleza corresponde o no con el de un depredador; no hay tiempo que perder, y el costo que dicho organismo tendría que pagar por cometer una falsa alarma (gasto innecesario de energía) o una omisión (morir devorado) es sustancialmente diferente. En este escenario particular, es muy probable que la presa sea mucho más propensa a correr por su vida, juzgando la presencia del depredador a partir de valores menores de evidencia.
+
+Esta discrepancia en el peso que se le da a las consecuencias posibles de emitir una u otra respuesta y obtener uno de los cuatro posibles resultados, suele representarse en términos de una matriz de pagos, que nos ayude a definir cuáles son las consecuencias que el organismo buscará evitar o promover, según sea el caso, en mayor medida.
+
+Ya sea por los distintos pesos que tengan las posibles consecuencias para el organismo, o porque se tiene una preferencia o predisposición inherente a decretar la presencia o ausencia de la señal, la TDS asume que el desempeño de los organismos que se enfrentan a tareas de detección de señales va a depender tanto de la calidad de la información a la que se tiene acceso (dentro de lo que se incluye la importancia de la variabilidad, que determina tanto la discriminabilidad de la señal como la sensibilidad del sistema ante la misma), como de un sesgo de elección.
+
+La localización del criterio en nuestro eje de evidencia recolectada va a estar altamente influida por el sesgo que tenga nuestro sistema. Podemos hablar entonces de dos tipos distintos de sesgo: conservador y liberal. El primero, favorece la emisión de respuestas negativas al desplazar el criterio a la derecha y requerir al sistema la recolección de mayores niveles de evidencia antes de dar por detectada la señal. El segundo, promueve la detección de la señal, situando el criterio de elección hacia la izquierda, emitiendo un juicio de detección con valores menores de evidencia. Nótese que un sistema carente de sesgo, sería aquel que situara su criterio de elección justo en el punto en que las dos distribuciones se juntan, donde la probabilidad de cometer cualquiera de los tipos de acierto y errores, son iguales entre sí. 
+
+Para cuantificar el sesgo del sistema, la TDS nos proporciona dos medidas: la primera de ellas corresponde a la distancia entre el punto de sesgo-neutro (i.e. el punto donde se interceptan ambas distribuciones) y la localización del criterio (c) y la segunda, a la razón entre el punto en que el criterio toca la distribución de la señal y la distribución de ruido ($\beta$). Dichos parámetros no sólo permiten saber cuán grande es el sesgo del sistema, sino que facilitan su clasificación en las categorías previamente expuestas, siendo el caso que si $\beta<1$ o C<0, sabemos se trata de un sesgo liberal y si $\beta>1$, C>0, hablamos de un sesgo conservador. 
+
+
+
 \subsection{Parámetros del modelo}
+
+Antes de ahondar a detalle en los parámetros, hay que declarar un par de supuestos formales que hace la Teoría para facilitar la representación gráfica del modelo y la estimación paramétrica:
+
+1)	En su forma clásica, la TDS asume que las distribuciones de ruido y señal son distribuciones normales.
+2)	La TDS asume equivarianza entre las distribuciones de ruido y señal. Es decir, asume que la dispersión de ambas distribuciones es la misma, fijando la desviación estándar a 1.
+3)	Para facilitar la estimación paramétrica, a la distribución de ruido (que por definición debe aparecer siempre a la izquierda de la señal) se le asigna una media de 0.
+Una revisión un poco más profunda en la literatura, (sobre todo en literatura más formal y especializada) nos demuestra que, si se cuenta con información suficiente, los supuestos 1 y 2 pueden violarse. Por ejemplo, en estudios de memoria de reconocimiento, donde se les pide a los participantes que discriminen entre estímulos que les fueron presentados en una etapa previa y estímulos completamente nuevos,  los resultados demuestran consistentemente que la distribución de señal (de estímulos previamente vistos), tiene una mayor varianza que la distribución de ruido; dicho eso, si se piensa utilizar la TDS como modelo de referencia para una tarea de memoria de reconocimiento, se puede hacer caso omiso del supuesto de equivarianza.  
+
+
+Como se mencionó previamente, al realizar una tarea de detección existen dos posibles tipos de aciertos: al detectar la señal (Hits) y al rechazar el ruido (Rechazos), y dos posibles tipos de errores: los falsos positivos (Falsas alarmas) y los falsos negativos (Omisiones). La materia prima con base en la cual funciona el modelo propuesto por la TDS, son las tasas de aciertos y errores cometidos durante la tarea, de manera que por cada participante que pasa por una tarea de detección, tenemos cuatro tasas que describen su ejecución:
+
+La Tabla 2 ilustra el cómputo de las cuatro tasas de ejecución, como una relación entre el resultado obtenido y el tipo de ensayo con base en el que se le definió como tal. Es decir, tenemos dos tasas definidas en relación al número total de ensayos con la señal (la tasa de hits y la tasa de omisiones) que nos dicen qué proporción de los ensayos con señal fueron detectados correctamente y cuáles se dejaron pasar; y tenemos dos tasas definidas en relación al total de ensayos con ruido (la tasa de falsas alarmas y la tasa de rechazos correctos) que nos describen la relación de los ensayos con ruido que fueron discriminados correctamente y aquellos que se confundieron con la señal.
+
+Para realizar el análisis de datos, bajo el marco de la TDS, sólo necesitaremos un par de estas tasas: la tasa de hits y la tasa de falsas alarmas. Esto bajo el entendido de que las tasas de omisión y rechazos correctos no son más que su complemento, respectivamente, y que estas dos tasas contienen toda la información que necesitamos sobre el desempeño de los participantes.
+
+La idea general de la importancia de estas tasas de ejecución, es que cada una representa el área de las distribuciones de ruido y señal que cae a la izquierda o derecha del criterio de decisión.
+
+Fig. 2. El Graficador de Tasas de Ejecución ilustra la idea de que, dependiendo la localización del criterio de decisión que esté usando el participante, cambia la proporción de aciertos y errores que se puedan cometer en función al área bajo la curva. En la parte superior del simulador se muestra la proporción de cada distribución que cae bajo cada clasificación hecha por el modelo. El slider colocado en la parte inferior del graficador permite al usuario alterar la posición del criterio sobre el eje de decisión y alterar así la probabilidad de obtener cada outcome posible.  Con fines ilustrativos, en este graficador el valor de d’ se mantiene constante y lo único que se altera es la localización de la línea que atraviesa ambas distribuciones (y que simula al criterio de elección).
+
+La Fig. 2 presenta una vista previa del Graficador. En ella, se puede observar cómo la distribución de señal y la distribución de ruido se dividen a ambos lados del criterio, en los aciertos y errores correspondientes. El supuesto descriptivo que hace la teoría, es que el organismo computa la evidencia que observa con la información que tiene sobre las consecuencias de cometer uno u otro posible error para colocar un criterio de elección que maximice sus ganancias, o bien, minimice sus pérdidas.  Esto se ilustra en el Graficador con el slider ubicado en la parte inferior, con el que se puede alterar la posición del criterio sobre el eje de decisión y observar los cambios en la probabilidad de cometer ciertos aciertos o ciertos errores que se dan en consecuencia.
+
+Para la estimación paramétrica se utiliza la misma lógica, pero se sigue el procedimiento inverso. Dado que no podemos observar ni cuantificar de manera directa el criterio usado por los participantes para responder a la tarea, qué tan juntas o separadas se encuentran las distribuciones de ruido y señal para cada participante o qué tipo de sesgo pudieran estar siguiendo, utilizamos las tasas de ejecución para hacer inferencias sobre la localización del criterio, la diferencia entre las medias de ambas distribuciones y el grado en que una respuesta se favorece sobre otra. 
+
+A partir de ahora comenzaremos a hablar sobre cómo se calculan cada uno de los parámetros del modelo, de acuerdo a la teoría clásica que sigue los supuestos estadísticos previamente descritos.  Es importante aclarar que el Graficador de Tasas previamente expuesto no representa la teoría con entera precisión; el propósito de ese primer Graficador es simplemente ilustrar cómo describe la TDS el comportamiento de un sistema que se enfrenta ante una tarea de detección, donde existen dos distribuciones que se sobreponen. El Graficador permite manipular directamente la localización del criterio, con la simpleza que implicaría desplazar una línea vertical sobre el eje de decisión y ver qué consecuencias tiene sobre la probabilidad de obtener un tipo particular de acierto o error.
+
 
 
 \begin{itemize}
 \item Discriminabilidad
+
+Para encontrar la distancia entre las medias de la distribución de ruido y señal, necesitamos saber el punto en que el criterio toca cada distribución. Para ello, calculamos las probabilidades complementarias a las tasas de hits y falsas alarmas y las traducimos a puntajes Z (Ver Fig. 3). Dado que el puntaje Z funciona como una medida de dispersión de la media, basta con restar el puntaje Z de la intersección del criterio con la distribución de señal a el puntaje Z de intersección con la distribución de ruido para conocer la localización de la media de la señal. Por definición, d’ sólo puede tener valores positivos ya que la teoría asume que la distribución de señal siempre está a la derecha de la distribución de ruido porque contiene una mayor cantidad de la evidencia con base en la cual se hace el juicio de detección de la señal.
+
+
+
 \item Criterio
-\item Sesgo - Beta
+
+Una vez que hemos resumido el desempeño de nuestro participante en la tarea de detección, el parámetro cuya estimación resulta más sencilla y directa es el Criterio (k). Entender cómo se computa el parámetro nos requiere únicamente de mantener presente el supuesto de que el Ruido se distribuye normalmente y se va a localizar siempre a la izquierda de la señal, por lo que le asignamos una media de cero para tener un punto de referencia para estimar el espacio en que se desarrollan el resto de los parámetros. 
+
+Para calcular el criterio lo único que necesitamos es conocer la tasa de Falsas Alarmas, que tal y como mencionábamos en el segmento anterior, nos indica qué proporción de la distribución de ruido cae a la derecha del criterio. Dado que a la distribución de ruido, le fue asignada arbitrariamente una media de cero, podemos asignar un valor al punto en que el criterio corta la distribución de ruido y define las tasas de Rechazos y Falsas Alarmas obtenidas por el participante. Conociendo el área de la distribución de Ruido que cae bajo el criterio, (el complemento de la tasa de Falsas Alarmas, o bien, la Tasa de Rechazos correctos), y sabiendo que la distribución tiene una desviación estándar de 1, podemos convertir el valor de la tasa (que corresponde a la probabilidad de cometer un rechazo correcto, de acuerdo al área bajo la curva) en Puntajes Z y conocer la localización del criterio.
+
+ El parámetro k, por lo general, va estar representado por un número natural (un número positivo), que indica en términos de Puntajes Z  la posición del criterio sobre el eje de decisión, relativo a la distribución de ruido con media cero. El criterio sólo tiene valores positivos, porque normalmente se espera que la tasa de falsas alarmas nunca tenga un valor mayor a 0.5 (las consecuencias de una tasa de Falsas Alarmas tan alta, se expondrán con más claridad en el apartado correspondiente a la d’
+
+
+\item Sesgo - $\beta$
+
+
 \item Sesgo - C
+
+
 \end{itemize}
 
 %----------------------------------------------------------------
