@@ -35,9 +35,9 @@
 \contentsline {chapter}{\numberline {5}Datos: S\IeC {\'o}lo datos.}{15}{chapter.38}
 \contentsline {section}{\numberline {5.1}Explorando la ejecuci\IeC {\'o}n de los participantes}{15}{section.39}
 \contentsline {subsection}{\numberline {5.1.1}Control 1: \IeC {\textquestiondown }Los participantes estaban poniendo atenci\IeC {\'o}n a la tarea?}{15}{subsection.40}
-\contentsline {subsection}{\numberline {5.1.2}Control 2: Evaluando tiempos de respuesta a lo largo del experimento}{15}{subsection.41}
-\contentsline {subsection}{\numberline {5.1.3}Control 3: \IeC {\textquestiondown }La duraci\IeC {\'o}n del experimento tuvo un impacto en la ejecuci\IeC {\'o}n de los participantes?}{15}{subsection.42}
-\contentsline {subsection}{\numberline {5.1.4}Control 4: \IeC {\textquestiondown }Las variables mezcladas para construir los est\IeC {\'\i }mulos est\IeC {\'a}n afectando el desempe\IeC {\~n}o de los participantes?}{15}{subsection.43}
-\contentsline {section}{\numberline {5.2}Evidencia del Efecto Espejo}{15}{section.45}
-\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{17}{appendix.46}
-\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{17}{section.47}
+\contentsline {subsection}{\numberline {5.1.2}Control 2: Evaluando tiempos de respuesta a lo largo del experimento}{15}{subsection.43}
+\contentsline {subsection}{\numberline {5.1.3}Control 3: \IeC {\textquestiondown }La duraci\IeC {\'o}n del experimento tuvo un impacto en la ejecuci\IeC {\'o}n de los participantes?}{15}{subsection.47}
+\contentsline {subsection}{\numberline {5.1.4}Control 4: \IeC {\textquestiondown }Las variables mezcladas para construir los est\IeC {\'\i }mulos est\IeC {\'a}n afectando el desempe\IeC {\~n}o de los participantes?}{15}{subsection.50}
+\contentsline {section}{\numberline {5.2}Evidencia del Efecto Espejo}{15}{section.53}
+\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{27}{appendix.56}
+\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{27}{section.57}
