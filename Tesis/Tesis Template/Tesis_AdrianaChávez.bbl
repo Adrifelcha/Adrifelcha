@@ -1,0 +1,54 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.8 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\sortlist[entry]{nyt/global/}
+  \entry{Reference1}{article}{}
+    \name{author}{1}{}{%
+      {{hash=LTDC}{%
+         family={Lawrence},
+         familyi={L\bibinitperiod},
+         given={T.\bibnamedelima De\bibnamedelima Carlo},
+         giveni={T\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim
+  C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LTDC1}
+    \strng{fullhash}{LTDC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2007}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{abstract}{%
+    The mirror effect for word frequency refers to the finding that
+  low-frequency words have.%
+    }
+    \field{number}{12}
+    \field{pages}{4477\bibrangedash 4479}
+    \field{title}{The Mirror Effect and Mixture Signal Detection Theory}
+    \verb{url}
+    \verb http://link.aip.org/link/?RSI/72/4477/1
+    \endverb
+    \field{volume}{72}
+    \field{journaltitle}{Journal of Experimental Psychology: Learning, Memory
+  and Cognition}
+    \field{month}{12}
+    \field{year}{2007}
+  \endentry
+\endsortlist
+\endinput

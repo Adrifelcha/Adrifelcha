@@ -44,10 +44,12 @@ headsepline, % Uncomment to get a line under the header
 \usepackage{palatino} % Use the Palatino font by default
 
 \usepackage[backend=bibtex,style=authoryear,natbib=true]{biblatex} % Use the bibtex backend with the authoryear citation style (which resembles APA)
+%\usepackage[natbibapa]{apacite}
+%\bibliographystyle{apacite}
 
-\addbibresource{example.bib} % The filename of the bibliography
+\addbibresource{Bib_Adrifelcha.bib} % The filename of the bibliography
 
-\usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
+%\usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
 
 %----------------------------------------------------------------------------------------
 %	MARGIN SETTINGS
@@ -194,7 +196,7 @@ La idea general del trabajo de tesis aquí expuesto es la siguiente: Tenemos un 
 
 Al aplicar el modelo de Detección de Señales a tareas de Memoria de Reconocimiento donde, después de haber sido expuestos a una lista de items, los participantes tienen que identificar los elementos ya antes vistos (la señal) dentro de un conjunto que incluye también elementos no presentados antes (el ruido) y comparar la ejecución de los participantes entre dos clases de estímulos, siendo una de ellas más fácil de reconocer (A) que la otra (B), consistentemente se ha encontrado un patrón de respuestas que demuestra que los participantes no sólamente son mejores reconociendo los elementos previamente mostrados en la condición A ($Hits(A)>Hits(B)$), sino que también son mejores identificando los estímulos nuevos dentro de esta misma condición ($F.alarm(A)<F.alarm(B)$). Este patrón, identificado como 'Efecto Espejo', ha sido interpretado en términos de participantes experimentales que están respondiendo a una misma tarea, utilizando un sólo criterio de elección, donde ambas condiciones se mueven a lo largo del mismo eje de decisión de tal forma que las distribuciones de ruido de cada condición reflejan las distribuciones de señal.\\
 
-El Efecto Espejo sólo ha sido estudiado en Memoria de Reconocimiento y por tanto, ha sido explicado a partir de diferencias en la atención y procesamiento que recibe cada una de las condiciones durante la fase de estudio previa a la tarea de reconocimiento. El presente trabajo es el primero en explorar la existencia del Efecto Espejo fuera del ámbito de la Memoria de Reconocimiento. Se presentan dos variaciones de una tarea meramente perceptual donde con base en la literatura en ilusiones ópticas se diseñaron dos niveles de discriminabilidad y se encontró evidencia de el Efecto Espejo en 85\% de los participantes. Los resultados obtenidos fueron evaluados tanto a partir de la replicación del análisis clásico (pruebas t y ANOVAS), como con la construcción de Modelos Bayesianos Jerárquicos y Latentes. Las posibles implicaciones de los resultados obtenidos se desarrollan y discuten con detalle. 
+El Efecto Espejo sólo ha sido estudiado en Memoria de Reconocimiento y por tanto, ha sido explicado a partir de diferencias en la atención y procesamiento que recibe cada una de las condiciones durante la fase de estudio previa a la tarea de reconocimiento. El presente trabajo es el primero en explorar la existencia del Efecto Espejo fuera del ámbito de la Memoria de Reconocimiento. Se presentan dos variaciones de una tarea meramente perceptual donde con base en la literatura en ilusiones ópticas se diseñaron dos niveles de discriminabilidad y se encontró evidencia de el Efecto Espejo en 85\% de los participantes. Los resultados obtenidos fueron evaluados tanto a partir de la replicación del análisis clásico (pruebas t y ANOVAS), como con la construcción de Modelos Bayesianos Jerárquicos y Latentes. Las posibles implicaciones de los resultados obtenidos se desarrollan y discuten con detalle. \cite{Reference1}
 \end{abstract}
 
 %\ldots
@@ -327,7 +329,9 @@ Tantas y tantas personas a las que agradecer...\\
 %----------------------------------------------------------------------------------------
 
 \printbibliography[heading=bibintoc]
+%\include{Bib_Adrifelcha.bib}
 
+%\bibliography{Bib_Adrifelcha}
 %----------------------------------------------------------------------------------------
 
 \end{document}  

@@ -2,7 +2,7 @@
 \defcounter {refsection}{0}\relax 
 \select@language {spanish}
 \contentsline {chapter}{Declaracion de Autoria}{\es@scroman {iii}}{section*.1}
-\contentsline {chapter}{Resumen}{\es@scroman {vii}}{section*.2}
+\contentsline {chapter}{Resumen}{\es@scroman {viii}}{section*.2}
 \contentsline {chapter}{Agradecimientos}{\es@scroman {ix}}{section*.3}
 \contentsline {chapter}{\numberline {1}Teor\IeC {\'\i }a de Detecci\IeC {\'o}n de Se\IeC {\~n}ales}{1}{chapter.10}
 \contentsline {section}{\numberline {1.1}Introducci\IeC {\'o}n: Detecci\IeC {\'o}n e Incertidumbre}{1}{section.11}
@@ -41,3 +41,4 @@
 \contentsline {section}{\numberline {5.2}Evidencia del Efecto Espejo}{15}{section.53}
 \contentsline {chapter}{\numberline {A}Frequently Asked Questions}{27}{appendix.56}
 \contentsline {section}{\numberline {A.1}How do I change the colors of links?}{27}{section.57}
+\contentsline {chapter}{Bibliograf\'{\i }a}{29}{appendix*.58}
