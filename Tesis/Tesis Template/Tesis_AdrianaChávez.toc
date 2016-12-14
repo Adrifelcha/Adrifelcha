@@ -19,27 +19,30 @@
 \contentsline {subsection}{\numberline {2.1.1}Teor\IeC {\'\i }a del Umbral}{9}{subsection.23}
 \contentsline {subsection}{\numberline {2.1.2}Teor\IeC {\'\i }a del Procesamiento Dual}{9}{subsection.24}
 \contentsline {subsection}{\numberline {2.1.3}Teor\IeC {\'\i }a de Detecci\IeC {\'o}n de Se\IeC {\~n}ales}{9}{subsection.25}
-\contentsline {section}{\numberline {2.2}El Efecto Espejo}{9}{section.26}
-\contentsline {chapter}{\numberline {3}El Efecto Espejo: Implicaciones y Aproximaciones}{11}{chapter.27}
-\contentsline {section}{\numberline {3.1}Evidencia recolectada}{11}{section.28}
-\contentsline {section}{\numberline {3.2}Relevancia}{11}{section.29}
-\contentsline {section}{\numberline {3.3}Algunos modelos desarrollados para dar cuenta del Efecto Espejo}{11}{section.30}
-\contentsline {section}{\numberline {3.4}Main Section 2}{12}{section.31}
-\contentsline {chapter}{\numberline {4}Experimento: Buscando el Efecto Espejo en otras \IeC {\'a}reas}{13}{chapter.32}
-\contentsline {section}{\numberline {4.1}Planteamiento general}{13}{section.33}
-\contentsline {subsection}{\numberline {4.1.1}Objetivo}{14}{subsection.34}
-\contentsline {section}{\numberline {4.2}Construcci\IeC {\'o}n de la Tarea}{14}{section.35}
-\contentsline {subsection}{\numberline {4.2.1}Materiales}{14}{subsection.36}
-\contentsline {section}{\numberline {4.3}Procedimiento}{14}{section.37}
-\contentsline {subsection}{\numberline {4.3.1}Instrucciones}{14}{subsection.38}
-\contentsline {subsection}{\numberline {4.3.2}Registro de respuestas}{14}{subsection.39}
-\contentsline {chapter}{\numberline {5}Datos: S\IeC {\'o}lo datos.}{15}{chapter.40}
-\contentsline {section}{\numberline {5.1}Explorando la ejecuci\IeC {\'o}n de los participantes}{15}{section.41}
-\contentsline {subsection}{\numberline {5.1.1}Control 1: \IeC {\textquestiondown }Los participantes estaban poniendo atenci\IeC {\'o}n a la tarea?}{15}{subsection.42}
-\contentsline {subsection}{\numberline {5.1.2}Control 2: Evaluando tiempos de respuesta a lo largo del experimento}{15}{subsection.45}
-\contentsline {subsection}{\numberline {5.1.3}Control 3: \IeC {\textquestiondown }La duraci\IeC {\'o}n del experimento tuvo un impacto en la ejecuci\IeC {\'o}n de los participantes?}{15}{subsection.49}
-\contentsline {subsection}{\numberline {5.1.4}Control 4: \IeC {\textquestiondown }Las variables mezcladas para construir los est\IeC {\'\i }mulos est\IeC {\'a}n afectando el desempe\IeC {\~n}o de los participantes?}{15}{subsection.53}
-\contentsline {section}{\numberline {5.2}Evidencia del Efecto Espejo}{15}{section.56}
-\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{29}{appendix.59}
-\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{29}{section.60}
-\contentsline {chapter}{Bibliograf\'{\i }a}{31}{appendix*.61}
+\contentsline {section}{\numberline {2.2}Conflicto entre modelos}{11}{section.28}
+\contentsline {subsection}{\numberline {2.2.1}Proceso Dual Detecci\IeC {\'o}n de Se\IeC {\~n}ales - Umbral alto}{11}{subsection.29}
+\contentsline {subsection}{\numberline {2.2.2}}{12}{subsection.30}
+\contentsline {section}{\numberline {2.3}El Efecto Espejo}{12}{section.31}
+\contentsline {chapter}{\numberline {3}El Efecto Espejo: Implicaciones y Aproximaciones}{13}{chapter.32}
+\contentsline {section}{\numberline {3.1}Evidencia recolectada}{13}{section.33}
+\contentsline {section}{\numberline {3.2}Relevancia}{13}{section.34}
+\contentsline {section}{\numberline {3.3}Algunos modelos desarrollados para dar cuenta del Efecto Espejo}{13}{section.35}
+\contentsline {section}{\numberline {3.4}Main Section 2}{14}{section.36}
+\contentsline {chapter}{\numberline {4}Experimento: Buscando el Efecto Espejo en otras \IeC {\'a}reas}{15}{chapter.37}
+\contentsline {section}{\numberline {4.1}Planteamiento general}{15}{section.38}
+\contentsline {subsection}{\numberline {4.1.1}Objetivo}{16}{subsection.39}
+\contentsline {section}{\numberline {4.2}Construcci\IeC {\'o}n de la Tarea}{16}{section.40}
+\contentsline {subsection}{\numberline {4.2.1}Materiales}{16}{subsection.41}
+\contentsline {subsection}{\numberline {4.2.2}Participantes}{16}{subsection.42}
+\contentsline {section}{\numberline {4.3}Procedimiento}{16}{section.43}
+\contentsline {subsection}{\numberline {4.3.1}Registro de respuestas}{16}{subsection.44}
+\contentsline {chapter}{\numberline {5}Datos: S\IeC {\'o}lo datos.}{17}{chapter.45}
+\contentsline {section}{\numberline {5.1}Explorando la ejecuci\IeC {\'o}n de los participantes}{17}{section.46}
+\contentsline {subsection}{\numberline {5.1.1}Control 1: \IeC {\textquestiondown }Los participantes estaban poniendo atenci\IeC {\'o}n a la tarea?}{17}{subsection.47}
+\contentsline {subsection}{\numberline {5.1.2}Control 2: Evaluando tiempos de respuesta a lo largo del experimento}{17}{subsection.50}
+\contentsline {subsection}{\numberline {5.1.3}Control 3: \IeC {\textquestiondown }La duraci\IeC {\'o}n del experimento tuvo un impacto en la ejecuci\IeC {\'o}n de los participantes?}{17}{subsection.54}
+\contentsline {subsection}{\numberline {5.1.4}Control 4: \IeC {\textquestiondown }Las variables mezcladas para construir los est\IeC {\'\i }mulos est\IeC {\'a}n afectando el desempe\IeC {\~n}o de los participantes?}{17}{subsection.58}
+\contentsline {section}{\numberline {5.2}Evidencia del Efecto Espejo}{17}{section.61}
+\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{31}{appendix.64}
+\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{31}{section.65}
+\contentsline {chapter}{Bibliograf\'{\i }a}{33}{appendix*.66}
