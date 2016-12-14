@@ -49,8 +49,8 @@ text(1.9,total[2]+12,paste(total[2]),cex=.8,col='black',f=2)
 text(3.1,total[3]-12,paste(total[3]),cex=.8,col='black',f=2)
 text(4.3,total[4]-12,paste(total[4]),cex=.8,col='black',f=2)
 text(1.5,100,paste('Hits & F.A.'),cex=1,col='black',f=2)
-mtext(archive,3,cex=.8, line=1)
-title("Mirror Effect: Yes/No Responses", outer = TRUE, line = -2)  
+mtext(archive,3,cex=1.2, line=1, f=2)
+#title("Mirror Effect: Yes/No Responses", outer = TRUE, line = -2)  
 
 plot(rate, main = "", type='o', pch=16, xlab = "", ylab = "Rate", font.lab=2, ylim = c(0, 1), axes = FALSE, col ='royalblue')
 axis(1,at=1:4,labels=c("Fa(AN)", "Fa(BN)", "H(BS)", "H(AS)"), font=2)
@@ -60,6 +60,7 @@ text(1.9,rate[2]+.1,paste(rate[2]),cex=1,col='blue',f=2)
 text(3.1,rate[3]-.1,paste(rate[3]),cex=1,col='blue',f=2)
 text(3.9,rate[4]-.1,paste(rate[4]),cex=1,col='blue',f=2)
 text(1.5,.8,paste('Hits & F.A. rates'),cex=1,col='black',f=2)
+mtext(archive,3,cex=1.2, line=1, f=2)
 }  
   #points(hits,type='o',pch=16,col='red')
 
@@ -68,7 +69,7 @@ text(1.5,.8,paste('Hits & F.A. rates'),cex=1,col='black',f=2)
 #####################################
   
 rm(list=ls())
-layout(matrix(1:2,ncol=1))
+layout(matrix(1,ncol=1))
 for(archive in dir()){
   jaime <- read.csv(archive)
   
@@ -85,25 +86,25 @@ for(archive in dir()){
     Confidence <- c(C_AN, C_BN, C_BS, C_AS)
   }
   
-  plot(Confidence,type='o',pch=16,col='white',ylim=c(0,6), yaxt='n', xaxt='n', ann=F)
-  #axis(1,at=c(0,6),labels=c("AN","BN","BS","AS"), col='white')
-  #axis(2,at=c(2.5,7.5),labels=c("Rate","No."),las=0)
-  abline(3,c(0.1,0.1), col="black",lwd=1)
-  abline(v=1.75,h=c(-10,15),col='black')
-  abline(v=2.5,h=c(-10,15),col='black')
-  abline(v=3.4,h=c(-10,15),col='black')
-  text(1.3,1.5,paste(C_AN),cex=1,col='royalblue4')
-  text(2.2,1.5,paste(C_BN),cex=1,col='royalblue4')
-  text(2.9,1.5,paste(C_BS),cex=1,col='royalblue4')
-  text(3.75,1.5,paste(C_AS),cex=1,col='royalblue4')
-  text(1.3,4.5,paste('R(AN)'),cex=1,col='royalblue4')
-  text(2.2,4.5,paste('R(BN)'),cex=1,col='royalblue4')
-  text(2.9,4.5,paste('R(BS)'),cex=1,col='royalblue4')
-  text(3.75,4.5,paste('R(AS)'),cex=1,col='royalblue4')
-  mtext(archive,3,cex=.8)
+  #plot(Confidence,type='o',pch=16,col='white',ylim=c(0,6), yaxt='n', xaxt='n', ann=F)
+#  #axis(1,at=c(0,6),labels=c("AN","BN","BS","AS"), col='white')
+#  #axis(2,at=c(2.5,7.5),labels=c("Rate","No."),las=0)
+  #abline(3,c(0.1,0.1), col="black",lwd=1)
+  #abline(v=1.75,h=c(-10,15),col='black')
+  #abline(v=2.5,h=c(-10,15),col='black')
+  #abline(v=3.4,h=c(-10,15),col='black')
+  #text(1.3,1.5,paste(C_AN),cex=1,col='royalblue4')
+  #text(2.2,1.5,paste(C_BN),cex=1,col='royalblue4')
+  #text(2.9,1.5,paste(C_BS),cex=1,col='royalblue4')
+  #text(3.75,1.5,paste(C_AS),cex=1,col='royalblue4')
+  #text(1.3,4.5,paste('R(AN)'),cex=1,col='royalblue4')
+  #text(2.2,4.5,paste('R(BN)'),cex=1,col='royalblue4')
+  #text(2.9,4.5,paste('R(BS)'),cex=1,col='royalblue4')
+  #text(3.75,4.5,paste('R(AS)'),cex=1,col='royalblue4')
+  #mtext(archive,3,cex=1.2, f=2)
   #text(1.5,.8,paste('Hits & F.A. rate'),cex=1,col='blue',f=2)
   #mtext(archive,3,cex=.8)
-  title("Confidence Rating", outer = TRUE, line = -2)
+  #title("Confidence Rating", outer = TRUE, line = -2)
   #points(hits,type='o',pch=16,col='black')
   
   plot(Confidence,type='o',pch=16,col='maroon2',ylim=c(0,6),axes=F , ylab="Confidence Rating", xlab="", font.lab=2)
@@ -114,6 +115,7 @@ for(archive in dir()){
   text(3.1,C_BS-.6,paste(C_BS),cex=1,col='violetred',f=2)
   text(3.9,C_AS-.5,paste(C_AS),cex=1,col='violetred',f=2)
   text(1.5,5.5,paste('Mean Confidence Rating'),cex=1,col='violetred4',f=2)
+  mtext(archive,3,cex=1.2,f=2)
 }
 
 
@@ -146,12 +148,11 @@ for(archive in dir()){
   plot(jaime$Aciertos,type='o',pch=16, col='green', lwd=.5, ylim=c(0,640),axes=F , ylab="Cumulative Frequency", font.lab=2, line=2, xlab='Trial' )
   axis(1,at=a,labels=a)
   axis(2,at=b, labels=b, tck=0, line=-1.3, font=2)
-  #axis(2,at=0:10,labels=c("0", "1","2","3","4","5","6","7","8","9","10"))
   points(jaime$Errores,type='o', lty=1, lwd=.5, pch=16, col='red')
-  mtext(archive,3,cex=.8)
+  mtext(archive,3,cex=1, f=2)
   text(70,500,paste('Right'),cex=1,col='chartreuse4',f=2)
   text(70,400,paste('Wrong'),cex=1,col='red',f=2)
-  title("Performance across time", outer = TRUE, line = -2)
+  #title("Performance across time", outer = TRUE, line = -2)
   
   
   plot(jaime$Exito[1:320],type='o',pch=16, col='darkgreen',ylim=c(0,1),axes=F , ann = F )
@@ -162,9 +163,7 @@ for(archive in dir()){
   plot(jaime$Exito[321:640],type='o',pch=16, col='darkgreen',ylim=c(0,1),axes=F , ann = F )
   axis(1,at=1:320,labels=c(321:640))
   axis(2,at=c(0,1), labels=c('Wrong', 'Right'), font=2)
-  mtext('Trials 321-640',3,cex=.8, font=2)
-  
-}
+  mtext('Trials 321-640',3,cex=.8, font=2)}
 
 ##################################
 ####            Output  Por Ensayo
@@ -191,8 +190,8 @@ for(archive in dir()){
   text(646,jaime$ContadorM[630]+20,paste("M"),cex=1,col='purple',f=2)
   text(646,jaime$ContadorR[639]+20,paste("R"),cex=1,col='green',f=2)
   text(646,jaime$ContadorH[639]+20,paste("H"),cex=1,col='blue',f=2)
-  title("Outcome per trial", line = 3)
-  mtext(archive, 3, line=1, col='black', cex=1, font=3)
+  #title("Outcome per trial", line = 3)
+  mtext(archive, 3, line=1, col='black', cex=1.2, font=2)
   
   plot(jaime$outcome[1:640],type='o',pch=16, col='deepskyblue4',ylim=c(1,4),axes=F, ylab="", xlab="Trial", font.lab=2 )
   axis(1,at=a,labels=a)
@@ -225,8 +224,8 @@ for(archive in dir()){
   points(jaime$RTime2,type='o', lty=3, pch=16, col='brown')
   text(100,14,paste('RT to Visual Stimulus'),cex=1,col='purple',f=2)
   text(100,13,paste('RT to Rating Scale'),cex=1,col='brown',f=2)
-  mtext(archive,3,cex=.8)
-  title("Response Times per trial", outer = TRUE, line = -2)
+  mtext(archive,3,cex=1.2, f=2)
+  #title("Response Times per trial", outer = TRUE, line = -2)
 }
 
 #########################################################
@@ -246,24 +245,24 @@ for(archive in dir()){
   b <- c(321,330,340,350,360,370,380,390,400,410,420,430,440,450,460,470,480,490,500,510,520,530,540,550,560,570,580,590,600,610,620,630,640)
   
   
-  {plot(jaime$RTime1[1:320],type='o',pch=16, col='darkorange',ylim=c(1,10),axes=F , ylab='Seconds', xlab='Trials', font.lab=2)
+  {plot(jaime$RTime1[1:320],type='o',pch=16, col='purple',ylim=c(1,10),axes=F , ylab='Seconds', xlab='Trials 1-320', font.lab=2)
   axis(1,at=a,labels=a)
   axis(2,at=0:10,labels=c(0:10))
-  mtext(archive, 3, line=1, col='black', cex=1, font=3)
-  title("Response time per Trial (to the Stimulus)",line = 3)  
+  mtext(archive, 3, line=1, col='black', cex=1.2, font=2)
+  #title("Response time per Trial (to the Stimulus)",line = 3)  
   
-  plot(jaime$RTime1[321:640],type='o',pch=16, col='darkorange1',ylim=c(1,10),axes=F , ylab='Seconds', xlab='Trials', font.lab=2)
+  plot(jaime$RTime1[321:640],type='o',pch=16, col='purple',ylim=c(1,10),axes=F , ylab='Seconds', xlab='Trials 321-640', font.lab=2)
   axis(1,at=a,labels=b)
   axis(2,at=0:10,labels=c(0:10))
 
   }  
-  {plot(jaime$RTime2[1:320],type='o',pch=16, col='violetred1',ylim=c(0,10),axes=F , ylab='Seconds', xlab='Trials', font.lab=2)
+  {plot(jaime$RTime2[1:320],type='o',pch=16, col='brown',ylim=c(0,10),axes=F , ylab='Seconds', xlab='Trials 1-320', font.lab=2)
   axis(1,at=a,labels=a)
   axis(2,at=0:10,labels=c(0:10))
-  mtext(archive, 3, line=1, col='black', cex=1, font=3)
-  title( "Response Time per Trial (to the Scale)", line = 3)
+  mtext(archive, 3, line=1, col='black', cex=1.2, font=2)
+  #title( "Response Time per Trial (to the Scale)", line = 3)
   
-  plot(jaime$RTime2[321:640],type='o',pch=16, col='violetred3',ylim=c(0,10),axes=F , ylab='Seconds', xlab='Trials', font.lab=2)
+  plot(jaime$RTime2[321:640],type='o',pch=16, col='brown',ylim=c(0,10),axes=F , ylab='Seconds', xlab='Trials 321-640', font.lab=2)
   axis(1,at=a,labels=b)
   axis(2,at=0:10,labels=c(0:10))
   }
@@ -284,14 +283,14 @@ for(archive in dir()){
   jaime$Ensayo <- as.character(jaime$Ensayo)
   cafe <- strsplit(as.character(jaime$Ensayo),split='-')
   
-  plot(jaime$Confidence[1:320],type='o',pch=16, col='darkorchid',ylim=c(1,6),axes=F , ylab='Confidence', xlab='Trial', font.lab=2)
+  plot(jaime$Confidence[1:320],type='o',pch=16, col='darkorchid',ylim=c(1,6),axes=F , ylab='Confidence', xlab='Trials 1-320', font.lab=2)
   axis(1,at=a,labels=a)
   axis(2,at=1:6,labels=c("1","2","3","4","5","6"))
   text(140,9.5,paste("1-160"),cex=1,col='darkorchid',f=2)
-  title( "Confidence Rating per Trial", line = 3)
-  mtext(archive, 3, line=1, col='black', cex=1, font=3)
+  #title( "Confidence Rating per Trial", line = 3)
+  mtext(archive, 3, line=1, col='black', cex=1.2, font=2)
     
-  plot(jaime$Confidence[321:640],type='o',pch=16, col='darkorchid2',ylim=c(1,6), ylab='Confidence',xlab='Trial', axes=F, font.lab=2 )
+  plot(jaime$Confidence[321:640],type='o',pch=16, col='darkorchid2',ylim=c(1,6), ylab='Confidence',xlab='Trials 321-640', axes=F, font.lab=2 )
   axis(1,at=a,labels=b)
   axis(2,at=1:6,labels=c("1","2","3","4","5","6"))
   text(140,8.5,paste("321-480"),cex=1,col='darkorchid2',f=2)
@@ -315,14 +314,14 @@ for(archive in dir()){
   b <- c(321,330,340,350,360,370,380,390,400,410,420,430,440,450,460,470,480,490,500,510,520,530,540,550,560,570,580,590,600,610,620,630,640)
   
   
-  plot(jaime$choice[1:320],type='o',pch=16, col='darkorchid',ylim=c(0,1),axes=F , ylab='Response', xlab='Trials', font.lab=2 )
+  plot(jaime$choice[1:320],type='o',pch=16, col='dodgerblue3',ylim=c(0,1),axes=F , ylab='Response', xlab='Trials 1-320', font.lab=2 )
   axis(1,at=a,labels=a)
   axis(2,at=0:1,labels=c("No","Yes"))
   text(140,9.5,paste("1-160"),cex=1,col='darkorchid',f=2)
-  title( "Response per Trial", line = 3)  
-  mtext(archive, 3, line=1, col='black', cex=1, font=3)
+  #title( "Response per Trial", line = 3)  
+  mtext(archive, 3, line=1, col='black', cex=1.2, font=2)
     
-  plot(jaime$choice[321:640],type='o',pch=16, col='darkorchid2',ylim=c(0,1),axes=F , ylab='Response', xlab='Trials', font.lab=2 )
+  plot(jaime$choice[321:640],type='o',pch=16, col='dodgerblue3',ylim=c(0,1),axes=F , ylab='Response', xlab='Trials 321-640', font.lab=2 )
   axis(1,at=a,labels=b)
   axis(2,at=0:1,labels=c("No","Yes"))
   text(140,8.5,paste("321-480"),cex=1,col='darkorchid2',f=2)

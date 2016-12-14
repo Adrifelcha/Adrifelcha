@@ -117,47 +117,44 @@ for(archive in dir()){
 }
 
 
-####################################################
-####################################################
-##################### Aciertos y errores x Ensayo
+#############################################
+####            Aciertos y Errores Por Ensayo
+#############################################
 rm(list=ls())
 
-pdf_name<-'Intento1.pdf'
-pdf(file=pdf_name,width=8,height=8)
-layout(matrix(1:4,ncol=2))
+#pdf_name<-'Intento1.pdf'
+#pdf(file=pdf_name,width=8,height=8)
+layout(matrix(1:3,ncol=1))
 for(archive in dir()){
   
   jaime <- read.csv(archive)
   jaime$Ensayo <- as.character(jaime$Ensayo)
   cafe <- strsplit(as.character(jaime$Ensayo),split='-')
   
-  plot(jaime$Aciertos,type='o',pch=16, col='green', lwd=.5, ylim=c(0,640),axes=F , ann = F )
-  axis(1,at=1:640,labels=c(1:640))
-  #axis(2,at=0:10,labels=c("0", "1","2","3","4","5","6","7","8","9","10"))
+  a <- c(1,20,40,60,80,100,120,140,160,180,200,220,240,260,280,300,320,340,360,380,400,420,440,460,480,500,520,540,560,580,600,620,640)
+  b <- c(1,30,60,90,120,150,180,210,240,270,300,330,360,390,420,450,480,510,540,570,600,630)
+  
+  plot(jaime$Aciertos,type='o',pch=16, col='green', lwd=.5, ylim=c(0,640), ylab="Cumulative Frequency",axes=F, line=2, xlab="Trial", font.lab=2)
+  axis(1,at=a,labels=a)
+  axis(2,at=b, labels=b, tck=0, line=-1.3, font=2)
   points(jaime$Errores,type='o', lty=1, lwd=.5, pch=16, col='red')
-  mtext(archive,3,cex=.8)
+  mtext(archive,3,cex=1, f=2)
   text(70,500,paste('Aciertos'),cex=1,col='chartreuse4',f=2)
   text(70,400,paste('Errores'),cex=1,col='red',f=2)
-  title("Aciertos y errores por ensayo", outer = TRUE, line = -2)
+  #title("Aciertos y errores por ensayo", outer = TRUE, line = -2)
   
   
-  plot(jaime$Exito[1:215],type='o',pch=16, col='darkgreen',ylim=c(0,1),axes=F , ann = F )
-  axis(1,at=1:215,labels=c(1:215))
-  axis(2,at=c(0,1), labels=c('Fail', 'Success'))
-  mtext('1-215',3,cex=.8)
+  plot(jaime$Exito[1:320],type='o',pch=16, col='darkgreen',ylim=c(0,1),axes=F , ann = F )
+  axis(1,at=1:320,labels=c(1:320))
+  axis(2,at=c(0,1), labels=c('Fail', 'Success'), f=2)
+  mtext('Trials 1-320',3,cex=.8, font=2)
   
-  plot(jaime$Exito[216:430],type='o',pch=16, col='darkgreen',ylim=c(0,1),axes=F , ann = F )
-  axis(1,at=1:215,labels=c(216:430))
-  axis(2,at=c(0,1), labels=c('Fail', 'Success'))
-  mtext('216-430',3,cex=.8)
-  
-  plot(jaime$Exito[431:640],type='o',pch=16, col='darkgreen',ylim=c(0,1),axes=F , ann = F )
-  axis(1,at=1:210,labels=c(431:640))
-  axis(2,at=c(0,1), labels=c('Fail', 'Success'))
-  mtext('431-640',3,cex=.8)
-}
+  plot(jaime$Exito[321:640],type='o',pch=16, col='darkgreen',ylim=c(0,1),axes=F , ann = F )
+  axis(1,at=1:320,labels=c(321:640))
+  axis(2,at=c(0,1), labels=c('Fail', 'Success'), f=2)
+  mtext('Trials 321-640',3,cex=.8, font=2)}
 
-dev.off()
+#dev.off()
 #############################################
 #############################################
 ######### Contadores x Ensayo

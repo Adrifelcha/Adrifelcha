@@ -359,13 +359,13 @@ KOMA-script documentation for details.}]{fancyhdr}
 		\thispagestyle{plain}
 		\begin{center}
 			{\normalsize \MakeUppercase{\univname} \par} % University name in capitals
-			\bigskip
-			{\huge\textit{\abstractname} \par}
-			\bigskip
 			{\normalsize \facname \par} % Faculty name
 			{\normalsize \deptname \par} % Department name
 			\bigskip
-			{\normalsize \degreename\par} % Degree name
+			{\huge\textit{\abstractname} \par}
+			\bigskip
+
+%			{\normalsize \degreename\par} % Degree name
 			\bigskip
 			{\normalsize\bfseries \@title \par} % Thesis title
 			\medskip
