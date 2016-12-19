@@ -21,7 +21,7 @@
 \contentsline {subsection}{\numberline {2.1.3}Teor\IeC {\'\i }a de Detecci\IeC {\'o}n de Se\IeC {\~n}ales}{9}{subsection.25}
 \contentsline {section}{\numberline {2.2}Conflicto entre modelos}{11}{section.28}
 \contentsline {subsection}{\numberline {2.2.1}Proceso Dual Detecci\IeC {\'o}n de Se\IeC {\~n}ales - Umbral alto}{11}{subsection.29}
-\contentsline {subsection}{\numberline {2.2.2}}{12}{subsection.30}
+\contentsline {subsection}{\numberline {2.2.2}}{11}{subsection.30}
 \contentsline {section}{\numberline {2.3}El Efecto Espejo}{12}{section.31}
 \contentsline {chapter}{\numberline {3}El Efecto Espejo: Implicaciones y Aproximaciones}{13}{chapter.32}
 \contentsline {section}{\numberline {3.1}Evidencia recolectada}{13}{section.33}
@@ -39,10 +39,9 @@
 \contentsline {chapter}{\numberline {5}Datos: S\IeC {\'o}lo datos.}{17}{chapter.45}
 \contentsline {section}{\numberline {5.1}Explorando la ejecuci\IeC {\'o}n de los participantes}{17}{section.46}
 \contentsline {subsection}{\numberline {5.1.1}Control 1: \IeC {\textquestiondown }Los participantes estaban poniendo atenci\IeC {\'o}n a la tarea?}{17}{subsection.47}
-\contentsline {subsection}{\numberline {5.1.2}Control 2: Evaluando tiempos de respuesta a lo largo del experimento}{17}{subsection.50}
-\contentsline {subsection}{\numberline {5.1.3}Control 3: \IeC {\textquestiondown }La duraci\IeC {\'o}n del experimento tuvo un impacto en la ejecuci\IeC {\'o}n de los participantes?}{17}{subsection.54}
-\contentsline {subsection}{\numberline {5.1.4}Control 4: \IeC {\textquestiondown }Las variables mezcladas para construir los est\IeC {\'\i }mulos est\IeC {\'a}n afectando el desempe\IeC {\~n}o de los participantes?}{17}{subsection.58}
-\contentsline {section}{\numberline {5.2}Evidencia del Efecto Espejo}{17}{section.61}
-\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{31}{appendix.64}
-\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{31}{section.65}
-\contentsline {chapter}{Bibliograf\'{\i }a}{33}{appendix*.66}
+\contentsline {subsection}{\numberline {5.1.2}Control 2: Evaluando tiempos de respuesta a lo largo del experimento}{17}{subsection.51}
+\contentsline {subsection}{\numberline {5.1.3}Control 3: \IeC {\textquestiondown }La duraci\IeC {\'o}n del experimento tuvo un impacto en la ejecuci\IeC {\'o}n de los participantes?}{17}{subsection.55}
+\contentsline {subsection}{\numberline {5.1.4}Control 4: \IeC {\textquestiondown }Las variables mezcladas para construir los est\IeC {\'\i }mulos est\IeC {\'a}n afectando el desempe\IeC {\~n}o de los participantes?}{17}{subsection.60}
+\contentsline {section}{\numberline {5.2}Evidencia del Efecto Espejo}{17}{section.63}
+\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{35}{appendix.68}
+\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{35}{section.69}

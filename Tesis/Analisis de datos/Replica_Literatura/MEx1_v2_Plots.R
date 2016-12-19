@@ -38,8 +38,7 @@ for(archive in dir()){
             fa[length(fa)],
             hits[length(hits)],
             rate[length(rate)],
-            total[length(total)]))
-  }
+            total[length(total)]))}
   
   barplot(total, main = "", xlab = "", ylab = "Cumulative Frequency", font.lab=2, ylim = c(0, 160), axes = FALSE, col =c("deepskyblue3", "darkorchid3", "darkorchid3", "deepskyblue3"))
   #axis(1,at=1:4,labels=sort(unique(jaime$tipo)))
@@ -50,8 +49,8 @@ for(archive in dir()){
   text(3.1,total[3]-12,paste(total[3]),cex=.8,col='black',f=2)
   text(4.3,total[4]-12,paste(total[4]),cex=.8,col='black',f=2)
   text(1.5,100,paste('Hits & F.A.'),cex=1,col='black',f=2)
-  mtext(archive,3,cex=.8, line=1)
-  title("Mirror Effect: Yes/No Responses", outer = TRUE, line = -2)  
+  mtext(archive,3,cex=1.2, line=1, f=2)
+  #title("Mirror Effect: Yes/No Responses", outer = TRUE, line = -2)  
   
   plot(rate, main = "", type='o', pch=16, xlab = "", ylab = "Rate", font.lab=2, ylim = c(0, 1), axes = FALSE, col ='royalblue')
   axis(1,at=1:4,labels=c("Fa(AN)", "Fa(BN)", "H(BS)", "H(AS)"), font=2)
@@ -60,15 +59,15 @@ for(archive in dir()){
   text(1.9,rate[2]+.1,paste(rate[2]),cex=1,col='blue',f=2)
   text(3.1,rate[3]-.1,paste(rate[3]),cex=1,col='blue',f=2)
   text(3.9,rate[4]-.1,paste(rate[4]),cex=1,col='blue',f=2)
-  text(1.5,.8,paste('Hits & F.A. rates'),cex=1,col='black',f=2)
-}  
+  mtext(archive,3,cex=1.2, line=1, f=2)
+  text(1.5,.8,paste('Hits & F.A. rates'),cex=1,col='black',f=2)}  
 
 #####################################
 ####            Confidence Rating
 #####################################
 
 rm(list=ls())
-layout(matrix(1:2,ncol=1))
+layout(matrix(1:1,ncol=1))
 for(archive in dir()){
   jaime <- read.csv(archive)
   
@@ -85,25 +84,25 @@ for(archive in dir()){
     Confidence <- c(C_AN, C_BN, C_BS, C_AS)
   }
   
-  plot(Confidence,type='o',pch=16,col='white',ylim=c(0,6), yaxt='n', xaxt='n', ann=F)
-  #axis(1,at=c(0,6),labels=c("AN","BN","BS","AS"), col='white')
-  #axis(2,at=c(2.5,7.5),labels=c("Rate","No."),las=0)
-  abline(3,c(0.1,0.1), col="black",lwd=1)
-  abline(v=1.75,h=c(-10,15),col='black')
-  abline(v=2.5,h=c(-10,15),col='black')
-  abline(v=3.4,h=c(-10,15),col='black')
-  text(1.3,1.5,paste(C_AN),cex=1,col='royalblue4')
-  text(2.2,1.5,paste(C_BN),cex=1,col='royalblue4')
-  text(2.9,1.5,paste(C_BS),cex=1,col='royalblue4')
-  text(3.75,1.5,paste(C_AS),cex=1,col='royalblue4')
-  text(1.3,4.5,paste('R(AN)'),cex=1,col='royalblue4')
-  text(2.2,4.5,paste('R(BN)'),cex=1,col='royalblue4')
-  text(2.9,4.5,paste('R(BS)'),cex=1,col='royalblue4')
-  text(3.75,4.5,paste('R(AS)'),cex=1,col='royalblue4')
-  mtext(archive,3,cex=.8)
-  #text(1.5,.8,paste('Hits & F.A. rate'),cex=1,col='blue',f=2)
+  #plot(Confidence,type='o',pch=16,col='white',ylim=c(0,6), yaxt='n', xaxt='n', ann=F)
+  ###axis(1,at=c(0,6),labels=c("AN","BN","BS","AS"), col='white')
+  ###axis(2,at=c(2.5,7.5),labels=c("Rate","No."),las=0)
+  #abline(3,c(0.1,0.1), col="black",lwd=1)
+  #abline(v=1.75,h=c(-10,15),col='black')
+  #abline(v=2.5,h=c(-10,15),col='black')
+  #abline(v=3.4,h=c(-10,15),col='black')
+  #text(1.3,1.5,paste(C_AN),cex=1,col='royalblue4')
+  #text(2.2,1.5,paste(C_BN),cex=1,col='royalblue4')
+  #text(2.9,1.5,paste(C_BS),cex=1,col='royalblue4')
+  #text(3.75,1.5,paste(C_AS),cex=1,col='royalblue4')
+  #text(1.3,4.5,paste('R(AN)'),cex=1,col='royalblue4')
+  #text(2.2,4.5,paste('R(BN)'),cex=1,col='royalblue4')
+  #text(2.9,4.5,paste('R(BS)'),cex=1,col='royalblue4')
+  #text(3.75,4.5,paste('R(AS)'),cex=1,col='royalblue4')
   #mtext(archive,3,cex=.8)
-  title("Confidence Rating", outer = TRUE, line = -2)
+  ###text(1.5,.8,paste('Hits & F.A. rate'),cex=1,col='blue',f=2)
+  #mtext(archive,3,cex=.8)
+  #title("Confidence Rating", outer = TRUE, line = -2)
   #points(hits,type='o',pch=16,col='black')
   
   plot(Confidence,type='o',pch=16,col='maroon2',ylim=c(0,6),axes=F , ylab="Confidence Rating", xlab="", font.lab=2)
@@ -114,6 +113,7 @@ for(archive in dir()){
   text(3.1,C_BS-.6,paste(C_BS),cex=1,col='violetred',f=2)
   text(3.9,C_AS-.5,paste(C_AS),cex=1,col='violetred',f=2)
   text(1.5,5.5,paste('Mean Confidence Rating'),cex=1,col='violetred4',f=2)
+  mtext(archive,3,cex=1.2, f=2)
 }
 
 
@@ -155,183 +155,113 @@ for(archive in dir()){
   mtext('Trials 321-640',3,cex=.8, font=2)}
 
 #dev.off()
+
 #############################################
+####                   Contadores por Ensayo
 #############################################
-######### Contadores x Ensayo
 
 rm(list=ls())
-layout(matrix(1:4,ncol=2))
+layout(matrix(1:2,ncol=1))
 for(archive in dir()){
   jaime <- read.csv(archive)
   jaime$Ensayo <- as.character(jaime$Ensayo)
   cafe <- strsplit(as.character(jaime$Ensayo),split='-')
   
-  plot(jaime$ContadorH,type='o',pch=16, col='blue',ylim=c(0,320),axes=F , ann = F )
-  axis(1,at=1:640,labels=sort(unique(jaime$Ensayo)))
+  a <- c(1,20,40,60,80,100,120,140,160,180,200,220,240,260,280,300,320,340,360,380,400,420,440,460,480,500,520,540,560,580,600,620,640)
+  
+  
+  plot(jaime$ContadorH,type='o',pch=16, col='blue',ylim=c(0,320),axes=F , xlab="Trial", ylab="", font.lab=2, line.lab=1)
+  axis(1,at=a,labels=a)
   #axis(2,at=0:10,labels=c("0", "1","2","3","4","5","6","7","8","9","10"))
   points(jaime$ContadorF,type='o', lty=3, pch=16, col='red')
   points(jaime$ContadorM,type='o', lty=3, pch=16, col='purple')
   points(jaime$ContadorR,type='o', lty=3, pch=16, col='green')
   text(646,jaime$ContadorF[639]+20,paste("FA"),cex=1,col='red',f=2)
   text(646,jaime$ContadorM[630]+20,paste("M"),cex=1,col='purple',f=2)
+  axis(2,at=160, labels="Cumulative Frequency", tck=0, line=-0.5, font=2)
   text(646,jaime$ContadorR[639]+20,paste("R"),cex=1,col='green',f=2)
   text(646,jaime$ContadorH[639]+20,paste("H"),cex=1,col='blue',f=2)
-  mtext(archive,3,cex=.8)
-  title("Counters per trial", outer = TRUE, line = -2)
+  mtext(archive,3,cex=1.2, f=2)
+  #title("Counters per trial", outer = TRUE, line = -2)
   
-  plot(jaime$outcome[1:215],type='o',pch=16, col='deepskyblue4',ylim=c(1,4),axes=F , ann = F )
-  axis(1,at=1:215,labels=c(1:215))
-  axis(2,at=c(1,2,3,4), labels=c('F.Alarma', 'Miss', 'Rejection', 'Hit'))
-  mtext('1-215',3,cex=.8)
-  
-  plot(jaime$outcome[216:430],type='o',pch=16, col='deepskyblue4',ylim=c(1,4),axes=F , ann = F )
-  axis(1,at=1:215,labels=c(216:430))
-  axis(2,at=c(1,2,3,4), labels=c('F.Alarma', 'Miss', 'Rejection', 'Hit'))
-  mtext('216-430',3,cex=.8)
-  
-  plot(jaime$outcome[431:640],type='o',pch=16, col='deepskyblue4',ylim=c(1,4),axes=F , ann = F )
-  axis(1,at=1:210,labels=c(431:640))
-  axis(2,at=c(1,2,3,4), labels=c('F.Alarma','Miss','Rejection','Hit'))
-  mtext('431-640',3,cex=.8)
-  
-}
+  plot(jaime$outcome[1:640],type='o',pch=16, col='deepskyblue4',ylim=c(1,4),axes=F , xlab="Trial", ylab="", font.lab=2)
+  axis(1,at=a,labels=a)
+  axis(2,at=c(1,2,3,4), labels=c('F.Alarma', 'Miss', 'Rejection', 'Hit'),f=2)}
 
-############################
-######### Choice por ENSAYO
+#############################################
+####                  Respuesta por Ensayo
+#############################################
 
 rm(list=ls())
-layout(matrix(1:8,ncol=2))
+#layout(matrix(1:1,ncol=1))
 for(archive in dir()){
   
   jaime <- read.csv(archive)
   jaime$Ensayo <- as.character(jaime$Ensayo)
   cafe <- strsplit(as.character(jaime$Ensayo),split='-')
 
+  m <- c(1,20,40,60,80,100,120,140,160,180,200,220,240,260,280,300,320,340,360,380,400,420,440,460,480,500,520,540,560,580,600,620,640)
+  n <- c(1,10,20,30,40,50,60,70,80,90,100,110,120,130,140,150,160,170,180,190,200,210,220,230,240,250,260,270,280,290,300,310,320)
+  o <- c(321,330,340,350,360,370,380,390,400,410,420,430,440,450,460,470,480,490,500,510,520,530,540,550,560,570,580,590,600,610,620,630,640)
+  
+  
   colp <- c('deepskyblue3','darkorchid3', 'green', 'red', 'orange')
 
 #Choice sola
-  
-  plot(jaime$choice[1:160],type='o',pch=16, col='black',ylim=c(0,1),axes=F , ylab='Respuesta', xlab='Trial' )
-  axis(1,at=1:160,labels=c(1:160))
-  axis(2,at=0:1,labels=c("No","S?"))
+  layout(matrix(1:2,ncol=1))
+  plot(jaime$choice[1:320],type='o',pch=16, col='dodgerblue',ylim=c(0,1),axes=F , ylab='Respuesta', xlab='Trials 1-320', font.lab=2 )
+  axis(1,at=n,labels=n)
+  axis(2,at=0:1,labels=c("No","Sí"))
   text(140,9.5,paste("1-160"),cex=1,col='darkorchid',f=2)
-  mtext(archive,3,cex=.8)
-  
-  plot(jaime$choice[161:320],type='o',pch=16, col='black',ylim=c(0,1),axes=F , ann = F )
-  axis(1,at=1:160,labels=c(161:320))
-  axis(2,at=0:1,labels=c("No","S?"))
-  text(140,9,paste("161-320"),cex=1,col='darkorchid3',f=2)
-  
-  
-  plot(jaime$choice[321:480],type='o',pch=16, col='black',ylim=c(0,1),axes=F , ann = F )
-  axis(1,at=1:160,labels=c(321:480))
-  axis(2,at=0:1,labels=c("No","S?"))
-  text(140,8.5,paste("321-480"),cex=1,col='darkorchid2',f=2)
-  
-  plot(jaime$choice[481:640],type='o',pch=16, col='black',ylim=c(0,1),axes=F , ann = F )
-  axis(1,at=1:160,labels=c(481:640))
-  axis(2,at=0:1,labels=c("No","S?"))
-  text(140,8,paste("481-640"),cex=1,col='darkorchid1',f=2)
-  title( "Choice per trial", outer = TRUE, line = -2)
-  
+  mtext(archive,3,cex=1.2, f=2, line=2)
+
+  plot(jaime$choice[321:640],type='o',pch=16, col='dodgerblue',ylim=c(0,1),axes=F , ylab='Respuesta', xlab='Trials 321-640', font.lab=2 )
+  axis(1,at=n,labels=o)
+  axis(2,at=0:1,labels=c("No","Sí"))
+  text(140,9.5,paste("1-160"),cex=1,col='darkorchid',f=2)
+
+
+
 ### Choice por FACIL DIFICIL
   
+  layout(matrix(1:3,ncol=1))
     
-  plot(jaime$choice[1:160],type='o',pch=16, col='black',ylim=c(0,1),axes=F , ylab='Respuesta', xlab='Trial' )
-  axis(1,at=1:160,labels=c(1:160))
-  axis(2,at=0:1,labels=c("No","S?"))
-  for (a in 1:160){
+  plot(jaime$choice[1:640],type='o',pch=16, col='black',ylim=c(0,1), xlim=c(0,700),axes=F , ylab='Respuesta', xlab='Trial', font.lab=2 )
+  axis(1,at=m,labels=m)
+  axis(2,at=0:1,labels=c("No","Sí"))
+  for (a in 1:640){
     if (jaime$facilidad[a] == 'pocos'){
       points(a,jaime$choice[a],pch=16,col=colp[1])}
     if (jaime$facilidad[a] == 'muchos'){
       points(a,jaime$choice[a],pch=16,col=colp[2])}}
-  text(140,9.5,paste("1-160"),cex=1,col='darkorchid',f=2)
-  mtext("Facil-Dificil",3,cex=.8)
-  
-  plot(jaime$choice[161:320],type='o',pch=16, col='black',ylim=c(0,1),axes=F , ann = F )
-  axis(1,at=1:160,labels=c(161:320))
-  axis(2,at=0:1,labels=c("No","S?"))
-  for (a in 1:160){
-    if (jaime$facilidad[a] == 'pocos'){
-      points(a,jaime$choice[a+160],pch=16,col=colp[1])}
-    if (jaime$facilidad[a] == 'muchos'){
-      points(a,jaime$choice[a+160],pch=16,col=colp[2])}}
-  text(140,9,paste("161-320"),cex=1,col='darkorchid3',f=2)
+  text(670,0.8,"Fácil",cex=1,col=colp[1],f=2)
+  text(670,0.3,"Difícil",cex=1,col=colp[2],f=2)
+  mtext("Respuesta Registrada por Condición",3,cex=0.8, f=3)
+  mtext(archive, 3, line=2, cex=1.2, f=2)
   
   
-  plot(jaime$choice[321:480],type='o',pch=16, col='black',ylim=c(0,1),axes=F , ann = F )
-  axis(1,at=1:160,labels=c(321:480))
-  axis(2,at=0:1,labels=c("No","S?"))
-  for (a in 1:160){
-    if (jaime$facilidad[a] == 'pocos'){
-      points(a,jaime$choice[a+320],pch=16,col=colp[1])}
-    if (jaime$facilidad[a] == 'muchos'){
-      points(a,jaime$choice[a+320],pch=16,col=colp[2])}}
-  text(140,8.5,paste("321-480"),cex=1,col='darkorchid2',f=2)
-  
-  plot(jaime$choice[481:640],type='o',pch=16, col='black',ylim=c(0,1),axes=F , ann = F )
-  axis(1,at=1:160,labels=c(481:640))
-  axis(2,at=0:1,labels=c("No","S?"))
-  for (a in 1:160){
-    if (jaime$facilidad[a] == 'pocos'){
-      points(a,jaime$choice[a+480],pch=16,col=colp[1])}
-    if (jaime$facilidad[a] == 'muchos'){
-      points(a,jaime$choice[a+480],pch=16,col=colp[2])}}
-  text(140,8,paste("481-640"),cex=1,col='darkorchid1',f=2)
-  #title( "Choice per Trial ", outer = TRUE, line = -2)
-
 ##### Choice por SENAL
   
-  plot(jaime$choice[1:160],type='o',pch=16, col='black',ylim=c(0,1),axes=F , ylab='Respuesta', xlab='Trial' )
-  axis(1,at=1:160,labels=c(1:160))
-  axis(2,at=0:1,labels=c("No","S?"))
-  for (a in 1:160){
+  plot(jaime$choice[1:640],type='o',pch=16, col='black',ylim=c(0,1), xlim=c(0,700),axes=F , ylab='Respuesta', xlab='Trial', font.lab=2 )
+  axis(1,at=m,labels=m)
+  axis(2,at=0:1,labels=c("No","Sí"))
+  for (a in 1:640){
     if (jaime$senal[a] == 'senal'){
       points(a,jaime$choice[a],pch=16,col=colp[3])}
     if (jaime$senal[a] == 'ruido'){
       points(a,jaime$choice[a],pch=16,col=colp[4])}}
+  text(670,0.8,"Señal",cex=1,col='forestgreen',f=2)
+  text(670,0.3,"Ruido",cex=1,col=colp[4],f=2)
   text(140,9.5,paste("1-160"),cex=1,col='darkorchid',f=2)
-  mtext("SE?AL - RUIDO",3,cex=.8)
-  
-  plot(jaime$choice[161:320],type='o',pch=16, col='black',ylim=c(0,1),axes=F , ann = F )
-  axis(1,at=1:160,labels=c(161:320))
-  axis(2,at=0:1,labels=c("No","S?"))
-  for (a in 1:160){
-    if (jaime$senal[a] == 'senal'){
-      points(a,jaime$choice[a+160],pch=16,col=colp[3])}
-    if (jaime$senal[a] == 'ruido'){
-      points(a,jaime$choice[a+160],pch=16,col=colp[4])}}
-  text(140,9,paste("161-320"),cex=1,col='darkorchid3',f=2)
-  
-  
-  plot(jaime$choice[321:480],type='o',pch=16, col='black',ylim=c(0,1),axes=F , ann = F )
-  axis(1,at=1:160,labels=c(321:480))
-  axis(2,at=0:1,labels=c("No","S?"))
-  for (a in 1:160){
-    if (jaime$senal[a] == 'senal'){
-      points(a,jaime$choice[a+320],pch=16,col=colp[3])}
-    if (jaime$senal[a] == 'ruido'){
-      points(a,jaime$choice[a+320],pch=16,col=colp[4])}}
-  text(140,8.5,paste("321-480"),cex=1,col='darkorchid2',f=2)
-  
-  plot(jaime$choice[481:640],type='o',pch=16, col='black',ylim=c(0,1),axes=F , ann = F )
-  axis(1,at=1:160,labels=c(481:640))
-  axis(2,at=0:1,labels=c("No","S?"))
-  for (a in 1:160){
-    if (jaime$senal[a] == 'senal'){
-      points(a,jaime$choice[a+480],pch=16,col=colp[3])}
-    if (jaime$senal[a] == 'ruido'){
-      points(a,jaime$choice[a+480],pch=16,col=colp[4])}}
-  text(140,8,paste("481-640"),cex=1,col='darkorchid1',f=2)
-  #title( "Choice por Ensayo (Signal - Noise )", outer = TRUE, line = -2)
+  mtext("Respuesta Registrada por Estímulo",3,cex=.8, f=3)
   
 
   ##### Choice por COLOR
   
-  plot(jaime$choice[1:160],type='o',pch=16, col='black',ylim=c(0,1),axes=F , ylab='Respuesta', xlab='Trial' )
-  axis(1,at=1:160,labels=c(1:160))
-  axis(2,at=0:1,labels=c("No","S?"))
-  for (a in 1:160){
+  plot(jaime$choice[1:640],type='o',pch=16, col='black',ylim=c(0,1), xlim=c(0,700),axes=F , ylab='Respuesta', xlab='Trial', font.lab=2 )
+  axis(1,at=m,labels=m)
+  axis(2,at=0:1,labels=c("No","Sí"),f=2)
+  for (a in 1:640){
     if (jaime$Color[a] == 'Purpura'){
       points(a,jaime$choice[a],pch=16,col=colp[2])}
     if (jaime$Color[a] == 'Naranja'){
@@ -340,53 +270,14 @@ for(archive in dir()){
       points(a,jaime$choice[a],pch=16,col=colp[1])}
     if (jaime$Color[a] == 'Verde'){
       points(a,jaime$choice[a],pch=16,col=colp[3])}}
-  text(140,9.5,paste("1-160"),cex=1,col='darkorchid',f=2)
-  mtext("COLOR",3,cex=.8)
+  text(670,0.9,"Púrpura",cex=1,col=colp[2],f=2)
+  text(670,0.7,"Naranja",cex=1,col=colp[5],f=2)
+  text(670,0.5,"Azul",cex=1,col=colp[1],f=2)
+  text(670,0.3,"Verde",cex=1,col=colp[3],f=2)
+  text(670,9.5,paste("1-160"),cex=1,col='darkorchid',f=2)
+  mtext("Respuesta Registrada por Color",3,cex=.8, f=3)}
   
-  plot(jaime$choice[161:320],type='o',pch=16, col='black',ylim=c(0,1),axes=F , ann = F )
-  axis(1,at=1:160,labels=c(161:320))
-  axis(2,at=0:1,labels=c("No","S?"))
-  for (a in 1:160){
-    if (jaime$Color[a] == 'Purpura'){
-      points(a,jaime$choice[a+160],pch=16,col=colp[2])}
-    if (jaime$Color[a] == 'Naranja'){
-      points(a,jaime$choice[a+160],pch=16,col=colp[5])}
-  if (jaime$Color[a] == 'Azul'){
-    points(a,jaime$choice[a+160],pch=16,col=colp[1])}
-  if (jaime$Color[a] == 'Verde'){
-    points(a,jaime$choice[a+160],pch=16,col=colp[3])}}
-  text(140,9,paste("161-320"),cex=1,col='darkorchid3',f=2)
-  
-  
-  plot(jaime$choice[321:480],type='o',pch=16, col='black',ylim=c(0,1),axes=F , ann = F )
-  axis(1,at=1:160,labels=c(321:480))
-  axis(2,at=0:1,labels=c("No","S?"))
-  for (a in 1:160){
-    if (jaime$Color[a] == 'Purpura'){
-      points(a,jaime$choice[a+320],pch=16,col=colp[2])}
-    if (jaime$Color[a] == 'Naranja'){
-      points(a,jaime$choice[a+320],pch=16,col=colp[5])}
-  if (jaime$Color[a] == 'Azul'){
-    points(a,jaime$choice[a+320],pch=16,col=colp[1])}
-  if (jaime$Color[a] == 'Verde'){
-    points(a,jaime$choice[a+320],pch=16,col=colp[3])}}
-  text(140,8.5,paste("321-480"),cex=1,col='darkorchid2',f=2)
-  
-  plot(jaime$choice[481:640],type='o',pch=16, col='black',ylim=c(0,1),axes=F , ann = F )
-  axis(1,at=1:160,labels=c(481:640))
-  axis(2,at=0:1,labels=c("No","S?"))
-  for (a in 1:160){
-    if (jaime$Color[a] == 'Purpura'){
-      points(a,jaime$choice[a+480],pch=16,col=colp[2])}
-    if (jaime$Color[a] == 'Naranja'){
-      points(a,jaime$choice[a+480],pch=16,col=colp[5])}
-    if (jaime$Color[a] == 'Azul'){
-      points(a,jaime$choice[a+480],pch=16,col=colp[1])}
-    if (jaime$Color[a] == 'Verde'){
-      points(a,jaime$choice[a+480],pch=16,col=colp[3])}}
-  text(140,8,paste("481-640"),cex=1,col='darkorchid1',f=2)
-  #title( "Choice por Ensayo (Color)", outer = TRUE, line = -2)
-  }
+
 
 ##################################
 ######### Confidence por ENSAYO
