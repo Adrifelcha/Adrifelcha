@@ -73,6 +73,7 @@ lines(density(d3), lwd=2, col="blue", lty=2)
 
 mtext("Probability Density", side=2, line = 2, cex=1.5, las=0)
 mtext("Discriminability", side=1, line = 2.5, cex=1.5)
+#mtext("Holiwi", side=1, line=2.5, cex=1.5)
 
 # Bias panel:    
 plot(density(c1), lwd=2, col="red", main="", ylab="", xlab="", 
