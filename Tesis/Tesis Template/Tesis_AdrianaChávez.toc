@@ -8,63 +8,63 @@
 \contentsline {section}{\numberline {1.1}Introducci\IeC {\'o}n: Detecci\IeC {\'o}n e Incertidumbre}{1}{section.11}
 \contentsline {section}{\numberline {1.2}Teor\IeC {\'\i }a de Detecci\IeC {\'o}n de Se\IeC {\~n}ales}{2}{section.12}
 \contentsline {subsection}{\numberline {1.2.1}Supuestos generales del modelo}{2}{subsection.13}
-\contentsline {subsection}{\numberline {1.2.2}Par\IeC {\'a}metros del modelo}{4}{subsection.14}
-\contentsline {section}{\numberline {1.3}La Teor\IeC {\'\i }a de Detecci\IeC {\'o}n de Se\IeC {\~n}ales en el desarrollo de la Psicolog\IeC {\'\i }a}{7}{section.15}
-\contentsline {subsection}{\numberline {1.3.1}Psicof\IeC {\'\i }sica}{7}{subsection.16}
-\contentsline {subsection}{\numberline {1.3.2}Teor\IeC {\'\i }a de la Decisi\IeC {\'o}n}{7}{subsection.17}
-\contentsline {subsection}{\numberline {1.3.3}Modelos de decisi\IeC {\'o}n perceptual}{7}{subsection.18}
-\contentsline {chapter}{\numberline {2}Memoria de Reconocimiento}{9}{chapter.19}
-\contentsline {section}{\numberline {2.1}Modelos utilizados en el estudio de la Memoria de Reconocimiento}{9}{section.20}
-\contentsline {subsection}{\numberline {2.1.1}Teor\IeC {\'\i }a del Umbral}{9}{subsection.21}
-\contentsline {subsection}{\numberline {2.1.2}Teor\IeC {\'\i }a del Procesamiento Dual}{9}{subsection.22}
-\contentsline {subsection}{\numberline {2.1.3}Teor\IeC {\'\i }a de Detecci\IeC {\'o}n de Se\IeC {\~n}ales}{10}{subsection.23}
-\contentsline {section}{\numberline {2.2}Conflicto entre modelos}{11}{section.26}
-\contentsline {subsection}{\numberline {2.2.1}Proceso Dual Detecci\IeC {\'o}n de Se\IeC {\~n}ales - Umbral alto}{11}{subsection.27}
-\contentsline {subsection}{\numberline {2.2.2}}{12}{subsection.28}
-\contentsline {section}{\numberline {2.3}El Efecto Espejo}{12}{section.29}
-\contentsline {chapter}{\numberline {3}El Efecto Espejo: Implicaciones y Aproximaciones}{13}{chapter.30}
-\contentsline {section}{\numberline {3.1}Evidencia recolectada}{13}{section.31}
-\contentsline {section}{\numberline {3.2}Relevancia}{13}{section.32}
-\contentsline {section}{\numberline {3.3}Algunos modelos desarrollados para dar cuenta del Efecto Espejo}{13}{section.33}
-\contentsline {section}{\numberline {3.4}Main Section 2}{14}{section.34}
-\contentsline {chapter}{\numberline {4}Experimento: Buscando el Efecto Espejo en una tarea Perceptual}{15}{chapter.35}
-\contentsline {section}{\numberline {4.1}Planteamiento general}{15}{section.36}
-\contentsline {subsection}{\numberline {4.1.1}Objetivo}{15}{subsection.37}
-\contentsline {section}{\numberline {4.2}Construcci\IeC {\'o}n de la Tarea}{15}{section.38}
-\contentsline {subsection}{\numberline {4.2.1}Materiales}{15}{subsection.39}
-\contentsline {subsection}{\numberline {4.2.2}Participantes}{16}{subsection.40}
-\contentsline {section}{\numberline {4.3}Procedimiento}{16}{section.41}
-\contentsline {subsection}{\numberline {4.3.1}Registro de respuestas}{16}{subsection.42}
-\contentsline {chapter}{\numberline {5}Datos: S\IeC {\'o}lo datos.}{17}{chapter.43}
-\contentsline {section}{\numberline {5.1}Explorando la ejecuci\IeC {\'o}n de los participantes}{17}{section.44}
-\contentsline {subsection}{\numberline {5.1.1}Control 1: \IeC {\textquestiondown }Los participantes estaban poniendo atenci\IeC {\'o}n a la tarea?}{17}{subsection.45}
-\contentsline {subsection}{\numberline {5.1.2}Control 2: Evaluando tiempos de respuesta a lo largo del experimento}{17}{subsection.50}
-\contentsline {subsection}{\numberline {5.1.3}Control 3: \IeC {\textquestiondown }La duraci\IeC {\'o}n del experimento tuvo un impacto en la ejecuci\IeC {\'o}n de los participantes?}{17}{subsection.54}
-\contentsline {subsection}{\numberline {5.1.4}Control 4: \IeC {\textquestiondown }Las variables mezcladas para construir los est\IeC {\'\i }mulos est\IeC {\'a}n afectando el desempe\IeC {\~n}o de los participantes?}{17}{subsection.59}
-\contentsline {section}{\numberline {5.2}Evidencia del Efecto Espejo}{17}{section.62}
-\contentsline {chapter}{\numberline {6}Resultados}{37}{chapter.67}
-\contentsline {section}{\numberline {6.1}Diferencia entre las condiciones}{37}{section.68}
-\contentsline {section}{\numberline {6.2}Learning \LaTeX {}}{37}{section.70}
-\contentsline {subsection}{\numberline {6.2.1}A (not so short) Introduction to \LaTeX {}}{37}{subsection.72}
-\contentsline {subsection}{\numberline {6.2.2}A Short Math Guide for \LaTeX {}}{38}{subsection.73}
-\contentsline {subsection}{\numberline {6.2.3}Common \LaTeX {} Math Symbols}{38}{subsection.74}
-\contentsline {subsection}{\numberline {6.2.4}\LaTeX {} on a Mac}{38}{subsection.75}
-\contentsline {section}{\numberline {6.3}Getting Started with this Template}{39}{section.76}
-\contentsline {subsection}{\numberline {6.3.1}About this Template}{39}{subsection.77}
-\contentsline {section}{\numberline {6.4}What this Template Includes}{39}{section.78}
-\contentsline {subsection}{\numberline {6.4.1}Folders}{39}{subsection.79}
-\contentsline {subsection}{\numberline {6.4.2}Files}{40}{subsection.80}
-\contentsline {section}{\numberline {6.5}Filling in Your Information in the \texttt {\bfseries main.tex} File}{41}{section.81}
-\contentsline {section}{\numberline {6.6}The \texttt {main.tex} File Explained}{41}{section.82}
-\contentsline {section}{\numberline {6.7}Thesis Features and Conventions}{42}{section.83}
-\contentsline {subsection}{\numberline {6.7.1}Printing Format}{42}{subsection.84}
-\contentsline {subsection}{\numberline {6.7.2}Using US Letter Paper}{42}{subsection.85}
-\contentsline {subsection}{\numberline {6.7.3}References}{43}{subsection.86}
-\contentsline {subsubsection}{A Note on bibtex}{43}{section*.88}
-\contentsline {subsection}{\numberline {6.7.4}Tables}{44}{subsection.89}
-\contentsline {subsection}{\numberline {6.7.5}Figures}{44}{subsection.91}
-\contentsline {subsection}{\numberline {6.7.6}Typesetting mathematics}{45}{subsection.93}
-\contentsline {section}{\numberline {6.8}Sectioning and Subsectioning}{46}{section.95}
-\contentsline {section}{\numberline {6.9}In Closing}{46}{section.96}
-\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{47}{appendix.97}
-\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{47}{section.98}
+\contentsline {subsection}{\numberline {1.2.2}Par\IeC {\'a}metros del modelo}{5}{subsection.14}
+\contentsline {section}{\numberline {1.3}La Teor\IeC {\'\i }a de Detecci\IeC {\'o}n de Se\IeC {\~n}ales en el desarrollo de la Psicolog\IeC {\'\i }a}{8}{section.18}
+\contentsline {subsection}{\numberline {1.3.1}Psicof\IeC {\'\i }sica}{8}{subsection.19}
+\contentsline {subsection}{\numberline {1.3.2}Teor\IeC {\'\i }a de la Decisi\IeC {\'o}n}{8}{subsection.20}
+\contentsline {subsection}{\numberline {1.3.3}Modelos de decisi\IeC {\'o}n perceptual}{8}{subsection.21}
+\contentsline {chapter}{\numberline {2}Memoria de Reconocimiento}{9}{chapter.22}
+\contentsline {section}{\numberline {2.1}Modelos utilizados en el estudio de la Memoria de Reconocimiento}{9}{section.23}
+\contentsline {subsection}{\numberline {2.1.1}Teor\IeC {\'\i }a del Umbral}{9}{subsection.24}
+\contentsline {subsection}{\numberline {2.1.2}Teor\IeC {\'\i }a del Procesamiento Dual}{9}{subsection.25}
+\contentsline {subsection}{\numberline {2.1.3}Teor\IeC {\'\i }a de Detecci\IeC {\'o}n de Se\IeC {\~n}ales}{10}{subsection.26}
+\contentsline {section}{\numberline {2.2}Conflicto entre modelos}{11}{section.29}
+\contentsline {subsection}{\numberline {2.2.1}Proceso Dual Detecci\IeC {\'o}n de Se\IeC {\~n}ales - Umbral alto}{11}{subsection.30}
+\contentsline {subsection}{\numberline {2.2.2}}{12}{subsection.31}
+\contentsline {section}{\numberline {2.3}El Efecto Espejo}{12}{section.32}
+\contentsline {chapter}{\numberline {3}El Efecto Espejo: Implicaciones y Aproximaciones}{13}{chapter.33}
+\contentsline {section}{\numberline {3.1}Evidencia recolectada}{13}{section.34}
+\contentsline {section}{\numberline {3.2}Relevancia}{13}{section.35}
+\contentsline {section}{\numberline {3.3}Algunos modelos desarrollados para dar cuenta del Efecto Espejo}{13}{section.36}
+\contentsline {section}{\numberline {3.4}Main Section 2}{14}{section.37}
+\contentsline {chapter}{\numberline {4}Experimento: Buscando el Efecto Espejo en una tarea Perceptual}{15}{chapter.38}
+\contentsline {section}{\numberline {4.1}Planteamiento general}{15}{section.39}
+\contentsline {subsection}{\numberline {4.1.1}Objetivo}{15}{subsection.40}
+\contentsline {section}{\numberline {4.2}Construcci\IeC {\'o}n de la Tarea}{15}{section.41}
+\contentsline {subsection}{\numberline {4.2.1}Materiales}{15}{subsection.42}
+\contentsline {subsection}{\numberline {4.2.2}Participantes}{16}{subsection.43}
+\contentsline {section}{\numberline {4.3}Procedimiento}{16}{section.44}
+\contentsline {subsection}{\numberline {4.3.1}Registro de respuestas}{16}{subsection.45}
+\contentsline {chapter}{\numberline {5}Datos: S\IeC {\'o}lo datos.}{17}{chapter.46}
+\contentsline {section}{\numberline {5.1}Explorando la ejecuci\IeC {\'o}n de los participantes}{17}{section.47}
+\contentsline {subsection}{\numberline {5.1.1}Control 1: \IeC {\textquestiondown }Los participantes estaban poniendo atenci\IeC {\'o}n a la tarea?}{17}{subsection.48}
+\contentsline {subsection}{\numberline {5.1.2}Control 2: Evaluando tiempos de respuesta a lo largo del experimento}{17}{subsection.53}
+\contentsline {subsection}{\numberline {5.1.3}Control 3: \IeC {\textquestiondown }La duraci\IeC {\'o}n del experimento tuvo un impacto en la ejecuci\IeC {\'o}n de los participantes?}{17}{subsection.57}
+\contentsline {subsection}{\numberline {5.1.4}Control 4: \IeC {\textquestiondown }Las variables mezcladas para construir los est\IeC {\'\i }mulos est\IeC {\'a}n afectando el desempe\IeC {\~n}o de los participantes?}{17}{subsection.62}
+\contentsline {section}{\numberline {5.2}Evidencia del Efecto Espejo}{17}{section.65}
+\contentsline {chapter}{\numberline {6}Resultados}{37}{chapter.70}
+\contentsline {section}{\numberline {6.1}Diferencia entre las condiciones}{37}{section.71}
+\contentsline {section}{\numberline {6.2}Learning \LaTeX {}}{37}{section.73}
+\contentsline {subsection}{\numberline {6.2.1}A (not so short) Introduction to \LaTeX {}}{37}{subsection.75}
+\contentsline {subsection}{\numberline {6.2.2}A Short Math Guide for \LaTeX {}}{38}{subsection.76}
+\contentsline {subsection}{\numberline {6.2.3}Common \LaTeX {} Math Symbols}{38}{subsection.77}
+\contentsline {subsection}{\numberline {6.2.4}\LaTeX {} on a Mac}{38}{subsection.78}
+\contentsline {section}{\numberline {6.3}Getting Started with this Template}{39}{section.79}
+\contentsline {subsection}{\numberline {6.3.1}About this Template}{39}{subsection.80}
+\contentsline {section}{\numberline {6.4}What this Template Includes}{39}{section.81}
+\contentsline {subsection}{\numberline {6.4.1}Folders}{39}{subsection.82}
+\contentsline {subsection}{\numberline {6.4.2}Files}{40}{subsection.83}
+\contentsline {section}{\numberline {6.5}Filling in Your Information in the \texttt {\bfseries main.tex} File}{41}{section.84}
+\contentsline {section}{\numberline {6.6}The \texttt {main.tex} File Explained}{41}{section.85}
+\contentsline {section}{\numberline {6.7}Thesis Features and Conventions}{42}{section.86}
+\contentsline {subsection}{\numberline {6.7.1}Printing Format}{42}{subsection.87}
+\contentsline {subsection}{\numberline {6.7.2}Using US Letter Paper}{42}{subsection.88}
+\contentsline {subsection}{\numberline {6.7.3}References}{43}{subsection.89}
+\contentsline {subsubsection}{A Note on bibtex}{43}{section*.91}
+\contentsline {subsection}{\numberline {6.7.4}Tables}{44}{subsection.92}
+\contentsline {subsection}{\numberline {6.7.5}Figures}{44}{subsection.94}
+\contentsline {subsection}{\numberline {6.7.6}Typesetting mathematics}{45}{subsection.96}
+\contentsline {section}{\numberline {6.8}Sectioning and Subsectioning}{46}{section.98}
+\contentsline {section}{\numberline {6.9}In Closing}{46}{section.99}
+\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{47}{appendix.100}
+\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{47}{section.101}
