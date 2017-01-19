@@ -28,7 +28,10 @@ Uno de los problemas más frecuentes a los que se enfrentan los sistemas u organ
 Determinar que 'algo' está o no ocurriendo parecería no ser un problema significativo si asumimos que dichos eventos aparecen de manera inconfundible y con perfecta claridad, o bien, que los sistemas comprometidos en tal tarea cuentan con detectores altamente sensibles que garantizan su identificación infalible. Sin embargo, difícilmente este es el caso. Comúnmente, la información a partir de la cual queremos juzgar si algo está o no ocurriendo es confusa y puede malinterpretarse como evidencia de un estado diferente del mundo. Por ejemplo: el adolescente que quiere conseguir un permiso para ir de fiesta necesita encontrar el momento ideal para pedírselo a su mamá, cuando ella esté de muy buen humor, y para ello cuenta con indicadores poco precisos como podrían ser los gestos, el tono de voz o las actividades que su madre realice durante el día. Equivocar el diagnóstico del estado anímico de la madre y obtener una negativa al permiso solicitado es un riesgo latente, ya sea por una mala lectura de los datos disponibles (en nuestro ejemplo previo, puede que las ansias del adolescente por salir de fiesta le hagan apresurar el momento) o bien porque los datos son poco claros en sí mismos (la mamá en cuestión podría ser una persona particularmente poco expresiva).\\ 
 
 %Los eventos que interesa detectar se encuentran constantemente rodeados de ruido
- Cuando hablamos de la detección de un estado o evento como un problema de adaptabilidad, estamos asumiendo que el sistema que se enfrenta a dicha tarea lo está haciendo dentro de un entorno donde la presentación de dichos evento o estados es aleatoria y donde estará expuesto a otro tipo de eventos.\\
+
+
+
+Cuando hablamos de la detección de un estado o evento como un problema de adaptabilidad, estamos asumiendo que el sistema que se enfrenta a dicha tarea lo está haciendo dentro de un entorno donde la presentación de dichos evento o estados es aleatoria y donde estará expuesto a otro tipo de eventos.\\
 
 %La detección de eventos se convierte en un problema adaptativo, donde se compensa la incertidumbre con el conocimiento que se tiene de la tarea y el entorno en que esta tiene lugar.
 La noción de incertidumbre representa un punto clave para hablar de la Detección como un problema para los organismos adaptables. El mundo está cargado de ruido: ni los sistemas perceptuales de detección de los organismos son perfectos, ni los eventos cuya detección interesa a los mismos suelen ocurrir de manera aislada e inconfundible. De tal forma que el ruido en el entorno afecta nuestra capacidad para detectar un evento en particular en ambos sentidos: en la propia presentación del evento y en la forma en que el sistema puede extraer información de su entorno para juzgar su ocurrencia.\\
@@ -53,6 +56,7 @@ La Teoría de Detección de Señales (TDS o SDT, por sus siglas en inglés) plan
     \begin{itemize}
       \item{Variabilidad en la Señal}\\
 
+La idea de que la variabilidad forma parte fundamental de toda tarea de detección comienza situándola en la propia presentación de la señal. 
 
 La idea central de variabilidad radica en la noción de que ningún estímulo se presenta ni se percibe exactamente igual cada vez que nos encontramos con él.  Es decir, cada vez que nos encontramos con la  señal en el mundo, ésta puede hacerlo dentro de un rango de posibilidades con cierta probabilidad. Esta idea se muestra gráficamente en la Figura 1, con la distribución normal azul identificada bajo la etiqueta de ‘Señal’. La idea es que la señal va adoptar una cierta forma de entre los puntos que abarca la distribución de probabilidad; siendo unas más probables que otras, conforme se aproximan a la media.\\
 
@@ -69,7 +73,7 @@ El soporte de las distribuciones, identificado en la Figura 1 bajo el nombre de 
 Este primer supuesto de variabilidad, como algo inherente a todo estímulo y sistema, nos lleva a hablar de la discriminabilidad de la señal, o bien, de la sensibilidad del sistema ante la señal, que el modelo de detección de señales va a representar con un mismo parámetro: d’, que corresponde a la distancia entre las medias de las distribuciones de ruido y señal, y cuyo cómputo abordaremos más afondo más adelante con ayuda de nuestro graficador en Python.\\ 
 
      \end{itemize}
-  \item{Hay consecuencias}
+  \item{Las consecuencias importan }
 
 La TDS define toda tarea de detección como una tarea de decisión, donde el fin último por el cual el organismo se interesa en determinar si la señal está o no presente, es el de guiar su curso de acción. Es decir, el comportamiento de cualquier organismo va a depender de las señales que este detecta en su entorno.\\
 
@@ -78,6 +82,8 @@ Una consecuencia directa de la variabilidad involucrada en el entorno de decisi�
 La TDS asume que el organismo fija un criterio de elección a lo largo del eje de la Evidencia, que va a determinar a partir de cuánta evidencia va a juzgar la señal como presente. Dicho criterio se va a representar como una línea transversal que atraviesa ambas distribuciones en una determinada altura, y se le va a identificar con el parámetro k. La TDS asume que los organismos van a fijar esta regla de elección, ponderando la información a la que tienen acceso con la información que poseen sobre la estructura de la tarea (i.e. cómo suele presentarse la señal, qué tan probable es que se presente, etc.)\\
 
     \begin{itemize}
+      \item{Los errores cuestan y los aciertos pagan: Matrices de pago}\\
+
       \item{Sesgo o Preferencial}\\
 
  Sin embargo, no todos los errores tienen el mismo costo. Imaginemos el caso de una presa en potencia que busca determinar si el sonido que acaba de escuchar en la maleza corresponde o no con el de un depredador; no hay tiempo que perder, y el costo que dicho organismo tendría que pagar por cometer una falsa alarma (gasto innecesario de energía) o una omisión (morir devorado) es sustancialmente diferente. En este escenario particular, es muy probable que la presa sea mucho más propensa a correr por su vida, juzgando la presencia del depredador a partir de valores menores de evidencia.\\
@@ -98,16 +104,6 @@ La TDS ha sido utilizada para describir un amplio número de fenómenos. Cuando 
 
 
 \subsection{Parámetros del modelo}
-
-Antes de ahondar a detalle en los parámetros, hay que declarar un par de supuestos formales que hace la Teoría para facilitar la representación gráfica del modelo y la estimación paramétrica:
-
-\begin{enumerate}
-\item En su forma clásica, la TDS asume que las distribuciones de ruido y señal son distribuciones normales.
-\item La TDS asume equivarianza entre las distribuciones de ruido y señal. Es decir, asume que la dispersión de ambas distribuciones es la misma, fijando la desviación estándar a 1.
-\item Para facilitar la estimación paramétrica, a la distribución de ruido (que por definición debe aparecer siempre a la izquierda de la señal) se le asigna una media de 0.
-\end{enumerate}
-
-Una revisión un poco más profunda en la literatura, (sobre todo en literatura más formal y especializada) nos demuestra que, si se cuenta con información suficiente, los supuestos 1 y 2 pueden violarse. Por ejemplo, en estudios de memoria de reconocimiento, donde se les pide a los participantes que discriminen entre estímulos que les fueron presentados en una etapa previa y estímulos completamente nuevos,  los resultados demuestran consistentemente que la distribución de señal (de estímulos previamente vistos), tiene una mayor varianza que la distribución de ruido; dicho eso, si se piensa utilizar la TDS como modelo de referencia para una tarea de memoria de reconocimiento, se puede hacer caso omiso del supuesto de equivarianza.  
 
 Como se mencionó previamente, al realizar una tarea de detección existen dos posibles tipos de aciertos: al detectar la señal (Hits) y al rechazar el ruido (Rechazos), y dos posibles tipos de errores: los falsos positivos (Falsas alarmas) y los falsos negativos (Omisiones). La materia prima con base en la cual funciona el modelo propuesto por la TDS, son las tasas de aciertos y errores cometidos durante la tarea, de manera que por cada participante que pasa por una tarea de detección, tenemos cuatro tasas que describen su ejecución:
 
@@ -155,6 +151,16 @@ $\beta = \frac{p(Signal)}{p(Noise)}$
 
 \end{itemize}
 
+Antes de ahondar a detalle en los parámetros, hay que declarar un par de supuestos formales que hace la Teoría para facilitar la representación gráfica del modelo y la estimación paramétrica:
+
+\begin{enumerate}
+\item En su forma clásica, la TDS asume que las distribuciones de ruido y señal son distribuciones normales.
+\item La TDS asume equivarianza entre las distribuciones de ruido y señal. Es decir, asume que la dispersión de ambas distribuciones es la misma, fijando la desviación estándar a 1.
+\item Para facilitar la estimación paramétrica, a la distribución de ruido (que por definición debe aparecer siempre a la izquierda de la señal) se le asigna una media de 0.
+\end{enumerate}
+
+Una revisión un poco más profunda en la literatura, (sobre todo en literatura más formal y especializada) nos demuestra que, si se cuenta con información suficiente, los supuestos 1 y 2 pueden violarse. Por ejemplo, en estudios de memoria de reconocimiento, donde se les pide a los participantes que discriminen entre estímulos que les fueron presentados en una etapa previa y estímulos completamente nuevos,  los resultados demuestran consistentemente que la distribución de señal (de estímulos previamente vistos), tiene una mayor varianza que la distribución de ruido; dicho eso, si se piensa utilizar la TDS como modelo de referencia para una tarea de memoria de reconocimiento, se puede hacer caso omiso del supuesto de equivarianza.  
+
 %----------------------------------------------------------------
 
 \section{La Teoría de Detección de Señales en el desarrollo de la Psicología}
@@ -166,4 +172,5 @@ $\beta = \frac{p(Signal)}{p(Noise)}$
 \subsection{Teoría de la Decisión}
 
 \subsection{Modelos de decisión perceptual}
+
 
