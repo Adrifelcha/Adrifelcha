@@ -13,7 +13,7 @@
 \newcommand{\file}[1]{\texttt{\bfseries#1}}
 \newcommand{\option}[1]{\texttt{\itshape#1}}
 
-%--------------------------------------------------------------------------------s--------
+%----------------------------------------------------------------------------------------
 
 En este capítulo se expone a detalle el modelo estadístico que protagoniza la presente tesis. Se trata de uno de los modelos más importantes en el desarrollo de la psicología científica y que, aún a la fecha, sigue formando parte importante en el estudio de varios fenómenos psicológicos donde se asume que los organismos emiten sus respuestas en función a la detección de casos particulares en su entorno.\\
 
@@ -21,17 +21,11 @@ La revisión del modelo de Detección de Señales comienza por una exposición a
 
 \section{Introducción: Detección e Incertidumbre}
 
-%Detectar ciertos estados en el mundo nos ayuda a guiar nuestro comportamiento
+%Detectar ciertos estados en el mundo es importante para guiar nuestro comportamiento
 Uno de los problemas más frecuentes a los que se enfrentan los sistemas u organismos inmersos en entornos variables es la detección de estados o eventos particulares. Determinar que 'algo' está, o no, ocurriendo es fundamental para tomar una decisión respecto a nuestro curso de acción. Todo sistema que tienda a la optimización de su comportamiento debe decidir si lo que está evaluando es evidencia de que se encuentra ante un evento particular, para actuar en consecuencia de las contingencias asociadas con el mismo y con cada posible acción a tomar. Por ejemplo, determinar si el plato de comida que tengo frente a mí está o no en buen estado, es fundamental para decidir si voy a consumirlo, o no.\\
 
 %La detección de ciertos eventos no es una tarea sencilla. La información a evaluar suele ser ambigua.
 Determinar que 'algo' está o no ocurriendo parecería no ser un problema significativo si asumimos que dichos eventos aparecen de manera inconfundible y con perfecta claridad, o bien, que los sistemas comprometidos en tal tarea cuentan con detectores altamente sensibles que garantizan su identificación infalible. Sin embargo, difícilmente este es el caso. Comúnmente, la información a partir de la cual queremos juzgar si algo está o no ocurriendo es confusa y puede malinterpretarse como evidencia de un estado diferente del mundo. Por ejemplo: el adolescente que quiere conseguir un permiso para ir de fiesta necesita encontrar el momento ideal para pedírselo a su mamá, cuando ella esté de muy buen humor, y para ello cuenta con indicadores poco precisos como podrían ser los gestos, el tono de voz o las actividades que su madre realice durante el día. Equivocar el diagnóstico del estado anímico de la madre y obtener una negativa al permiso solicitado es un riesgo latente, ya sea por una mala lectura de los datos disponibles (en nuestro ejemplo previo, puede que las ansias del adolescente por salir de fiesta le hagan apresurar el momento) o bien porque los datos son poco claros en sí mismos (la mamá en cuestión podría ser una persona particularmente poco expresiva).\\ 
-
-%Los eventos que interesa detectar se encuentran constantemente rodeados de ruido
-
-
-
-Cuando hablamos de la detección de un estado o evento como un problema de adaptabilidad, estamos asumiendo que el sistema que se enfrenta a dicha tarea lo está haciendo dentro de un entorno donde la presentación de dichos evento o estados es aleatoria y donde estará expuesto a otro tipo de eventos.\\
 
 %La detección de eventos se convierte en un problema adaptativo, donde se compensa la incertidumbre con el conocimiento que se tiene de la tarea y el entorno en que esta tiene lugar.
 La noción de incertidumbre representa un punto clave para hablar de la Detección como un problema para los organismos adaptables. El mundo está cargado de ruido: ni los sistemas perceptuales de detección de los organismos son perfectos, ni los eventos cuya detección interesa a los mismos suelen ocurrir de manera aislada e inconfundible. De tal forma que el ruido en el entorno afecta nuestra capacidad para detectar un evento en particular en ambos sentidos: en la propia presentación del evento y en la forma en que el sistema puede extraer información de su entorno para juzgar su ocurrencia.\\
@@ -45,10 +39,6 @@ Los organismos habitan en entornos donde están siendo constantemente expuestos 
 %La Teoría de Detección de Señales admite la importancia de la incertidumbre: El ruido y la señal.
 La Teoría de Detección de Señales (TDS o SDT, por sus siglas en inglés) plantea que la información que  interesa  detectar  (Sea un evento en particular o un estado o categoría más general, identificada como una señal)  suele  presentarse  en  conjunto  con  otro  tipo  de  estimulación (i.e. ruido),  cargándola  de  incertidumbre  y  haciendo de  la  percepción  un  proceso  de  toma  de decisiones  donde  el  sistema  debe  formular  un  juicio  de  detección que  le  permita  guiar  su comportamiento. Es importante precisar  que la TDS no es exclusiva del estudio de la percepción visual  u  otras  modalidades  de  detección  sensorial,  sino  que  también  puede  referirse,  en  un sentido más abstracto, a la detección de información dentro de un conjunto de datos ambiguos; (e.g.  estudios  de  memoria  donde  se  solicita  al  participante  detectar  los  elementos  que  ya  se  le habían mostrado antes, o bien, la interpretación de baterías clínicas). (Wei Ji Ma, 2012)\\
 
-%
-
-
-
 \subsection{Supuestos generales del modelo}
 
 \begin{itemize}
@@ -56,6 +46,7 @@ La Teoría de Detección de Señales (TDS o SDT, por sus siglas en inglés) plan
     \begin{itemize}
       \item{Variabilidad en la Señal}\\
 
+%
 La idea de que la variabilidad forma parte fundamental de toda tarea de detección comienza situándola en la propia presentación de la señal. 
 
 La idea central de variabilidad radica en la noción de que ningún estímulo se presenta ni se percibe exactamente igual cada vez que nos encontramos con él.  Es decir, cada vez que nos encontramos con la  señal en el mundo, ésta puede hacerlo dentro de un rango de posibilidades con cierta probabilidad. Esta idea se muestra gráficamente en la Figura 1, con la distribución normal azul identificada bajo la etiqueta de ‘Señal’. La idea es que la señal va adoptar una cierta forma de entre los puntos que abarca la distribución de probabilidad; siendo unas más probables que otras, conforme se aproximan a la media.\\
@@ -162,6 +153,14 @@ Antes de ahondar a detalle en los parámetros, hay que declarar un par de supues
 Una revisión un poco más profunda en la literatura, (sobre todo en literatura más formal y especializada) nos demuestra que, si se cuenta con información suficiente, los supuestos 1 y 2 pueden violarse. Por ejemplo, en estudios de memoria de reconocimiento, donde se les pide a los participantes que discriminen entre estímulos que les fueron presentados en una etapa previa y estímulos completamente nuevos,  los resultados demuestran consistentemente que la distribución de señal (de estímulos previamente vistos), tiene una mayor varianza que la distribución de ruido; dicho eso, si se piensa utilizar la TDS como modelo de referencia para una tarea de memoria de reconocimiento, se puede hacer caso omiso del supuesto de equivarianza.  
 
 %----------------------------------------------------------------
+
+\subsection{Tareas de detección}
+
+\begin{itemize}
+\item Tareas de detección binaria 
+\item Tareas con escala de confianza
+\item Tarea con elección forzada entre dos alternativas.
+\end{itemize}
 
 \section{La Teoría de Detección de Señales en el desarrollo de la Psicología}
 
