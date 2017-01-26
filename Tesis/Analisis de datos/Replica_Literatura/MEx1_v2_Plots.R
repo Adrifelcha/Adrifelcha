@@ -283,37 +283,23 @@ for(archive in dir()){
 ######### Confidence por ENSAYO
 
 rm(list=ls())
-layout(matrix(1:4,ncol=2))
+layout(matrix(1:2,ncol=1))
 for(archive in dir()){
   
   jaime <- read.csv(archive)
   jaime$Ensayo <- as.character(jaime$Ensayo)
   cafe <- strsplit(as.character(jaime$Ensayo),split='-')
   
-  plot(jaime$Confidence[1:160],type='o',pch=16, col='darkorchid',ylim=c(1,10),axes=F , ylab='Confidence Value', xlab='Trial' )
-  axis(1,at=1:160,labels=c(1:160))
+  plot(jaime$Confidence[1:320],type='o',pch=16, col='darkorchid',ylim=c(1,10),axes=F , ylab='Confidence Value', xlab='Trial' )
+  axis(1,at=1:320,labels=c(1:320))
   axis(2,at=1:6,labels=c("1","2","3","4","5","6"))
   text(140,9.5,paste("1-160"),cex=1,col='darkorchid',f=2)
   mtext(archive,3,cex=.8)
   
-  plot(jaime$Confidence[161:320],type='o',pch=16, col='darkorchid3',ylim=c(1,10),axes=F , ann = F )
-  axis(1,at=1:160,labels=c(161:320))
+  plot(jaime$Confidence[321:640],type='o',pch=16, col='darkorchid3',ylim=c(1,10),axes=F , ann = F )
+  axis(1,at=1:320,labels=c(321:640))
   axis(2,at=1:6,labels=c("1","2","3","4","5","6"))
   text(140,9,paste("161-320"),cex=1,col='darkorchid3',f=2)
-  
-  
-  plot(jaime$Confidence[321:480],type='o',pch=16, col='darkorchid2',ylim=c(1,10),axes=F , ann = F )
-  axis(1,at=1:160,labels=c(321:480))
-  axis(2,at=1:6,labels=c("1","2","3","4","5","6"))
-  text(140,8.5,paste("321-480"),cex=1,col='darkorchid2',f=2)
-  
-  
-  plot(jaime$Confidence[481:640],type='o',pch=16, col='darkorchid1',ylim=c(1,10),axes=F , ann = F )
-  axis(1,at=1:160,labels=c(481:640))
-  axis(2,at=1:6,labels=c("1","2","3","4","5","6"))
-  text(140,8,paste("481-640"),cex=1,col='darkorchid1',f=2)
-  title( "ConfidenceRate per Trial", outer = TRUE, line = -2)
-  
 }
 
 ######################
