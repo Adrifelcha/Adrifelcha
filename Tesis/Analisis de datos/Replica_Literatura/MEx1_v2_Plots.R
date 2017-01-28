@@ -405,15 +405,13 @@ for(archive in dir()){
 #Hits y Falsas Alarmas x Color
 
 rm(list=ls())
-layout(matrix(1:4,ncol=2))
+layout(matrix(1:2,ncol=2, byrow=TRUE))
 for(archive in dir()){
   
   jaime <- read.csv(archive)
   jaime$Color <- as.character(jaime$Color)
   cafe <- strsplit(as.character(jaime$Color),split='-')
   #index <- which(jaime$facilidad=='muchos')
-  
-  
   
   fa <- NULL
   hits <- NULL
@@ -422,25 +420,31 @@ for(archive in dir()){
     hits <- append(hits,sum(jaime$Hits[jaime$Color==nce]=='True'))
     print(c(nce,
             fa[length(fa)],
-            hits[length(hits)]))
-    
-  }
+            hits[length(hits)]))}
   
-  plot(hits,type='o',pch=16,col='blue',ylim=c(40,80),axes=F , ann = F )
-  axis(2,at=c(40, 50, 60, 70, 80),labels=c("40", "50","60","70","80"),las=1)
-  axis(1,at=1:4,labels=sort(unique(jaime$Color)))
-  #points(fa,type='o',pch=16,col='red')
-  text(2,70,paste('Hits'),cex=1,col='blue',f=2)
-  mtext(archive,3,cex=.8)
-  title("Hits y F.A. por Color", outer = TRUE, line = -2)
+  barplot(hits, main = "", xlab = "", ylab = " ", ylim = c(0, 100), axes = FALSE, col = c("dodgerblue3", "chocolate3", "darkorchid4", "forestgreen"))
+  axis(2,at=c(0, 20, 40, 60, 80, 100),labels=c("0", "20", "40","60","80","100"),las=1)
+  axis(1,at=c(0.7,1.9,3.1,4.3),labels=c("Azul","Naranja", "Morado", "Verde"))
+  text(0.7,hits[1]+5,paste(hits[1]),cex=1,col='black',f=1)
+  text(1.9,hits[2]+5,paste(hits[2]),cex=1,col='black',f=1)
+  text(3.1,hits[3]+5,paste(hits[3]),cex=1,col='black',f=1)
+  text(4.3,hits[4]+5,paste(hits[4]),cex=1,col='black',f=1)
+  mtext("Color", side = 1, line = 2.5, cex = 1, font = 2)
+  mtext("Hits", side = 2, line = 3, cex = 1, font = 2, las = 0)
+  mtext('Hits por color',3,cex=1, font=2)
+  title(archive, outer = TRUE,cex=2, line = -2)
   
   
-  plot(fa,type='o',pch=16,col='red',ylim=c(0,40),axes=F , ann = F )
-  axis(1,at=1:4,labels=sort(unique(jaime$Color)))
-  axis(2,at=c(0, 10, 20, 30, 40),labels=c("0", "10","20","30","40"),las=1)
-  #points(fa,type='o',pch=16,col='red')
-  text(2,30,paste('F.A.'),cex=1,col='red',f=2)
-  mtext(archive,3,cex=.8) 
+  barplot(fa, main = "", xlab = "", ylab = " ", ylim = c(0, 100), axes = FALSE, col =c("dodgerblue3", "chocolate3", "darkorchid4", "forestgreen"))
+  axis(2,at=c(0, 20, 40, 60, 80, 100),labels=c("0", "20", "40","60","80","100"),las=1)
+  axis(1,at=c(0.7,1.9,3.1,4.3),labels=c("Azul","Naranja", "Morado", "Verde"))
+  text(0.7,fa[1]+5,paste(fa[1]),cex=1,col='black',f=1)
+  text(1.9,fa[2]+5,paste(fa[2]),cex=1,col='black',f=1)
+  text(3.1,fa[3]+5,paste(fa[3]),cex=1,col='black',f=1)
+  text(4.3,fa[4]+5,paste(fa[4]),cex=1,col='black',f=1)
+  mtext("Color", side = 1, line = 2.5, cex = 1, font = 2)
+  mtext("Falsas Alarmas", side = 2, line = 3, cex = 1, font = 2, las = 0)
+  mtext('F. Alarms por color',3,cex=1, font=2) 
 }
 
 
