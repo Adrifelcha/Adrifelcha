@@ -5,7 +5,7 @@
 \contentsline {chapter}{Resumen}{\es@scroman {vii}}{section*.2}
 \contentsline {chapter}{Agradecimientos}{\es@scroman {ix}}{section*.3}
 \contentsline {chapter}{\numberline {1}Teor\IeC {\'\i }a de Detecci\IeC {\'o}n de Se\IeC {\~n}ales}{1}{chapter.10}
-\contentsline {section}{\numberline {1.1}Introducci\IeC {\'o}n: Detecci\IeC {\'o}n e Incertidumbre}{1}{section.11}
+\contentsline {section}{\numberline {1.1}El problema de la Detecci\IeC {\'o}n y la Incertidumbre}{1}{section.11}
 \contentsline {section}{\numberline {1.2}Teor\IeC {\'\i }a de Detecci\IeC {\'o}n de Se\IeC {\~n}ales}{2}{section.12}
 \contentsline {subsection}{\numberline {1.2.1}Supuestos generales del modelo}{2}{subsection.13}
 \contentsline {subsection}{\numberline {1.2.2}Par\IeC {\'a}metros del modelo}{5}{subsection.14}

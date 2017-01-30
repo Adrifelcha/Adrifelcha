@@ -24,10 +24,12 @@ La revisión del modelo de Detección de Señales comienza por una exposición a
 \section{El problema de la Detección y la Incertidumbre}
 
 %Detectar ciertos estados en el mundo es importante para guiar nuestro comportamiento
-Uno de los problemas más frecuentes a los que se enfrentan los organismos como sistemas inmersos en entornos variables es la detección de estados o eventos particulares. Determinar si 'algo' está, o no, ocurriendo es fundamental para tomar una decisión respecto a nuestro curso de acción. Todo sistema que tienda a la optimización de su comportamiento debe identificar ciertas propiedades en su entorno para actuar de acuerdo con las contingencias asociadas al estado del mismo.Por ejemplo, determinar si la comida que se piensa ingerir está o no en buen estado es fundamental para decidir si consumirla o no, de acuerdo con el riesgo que podría representar para la salud.\\
+Uno de los problemas más frecuentes a los que se enfrentan los organismos como sistemas inmersos en entornos variables es la detección de estados o eventos particulares. Determinar si 'algo' está, o no, ocurriendo es fundamental para tomar una decisión respecto a nuestro curso de acción. Todo sistema que tienda a la optimización de su comportamiento debe identificar ciertas propiedades en su entorno para actuar de acuerdo con las contingencias asociadas al estado del mismo.\\
 
 %La detección de ciertos eventos no es una tarea sencilla. La información a evaluar suele ser ambigua.
-Detectar 'algo' no parece ser un problema importante si asumimos que dichos casos aparecen con perfecta claridad y son inconfundibles, o bien, que los sistemas comprometidos en su detección cuentan con detectores altamente sensibles que garantizan su identificación infalible. En el 'mundo real', este es difícilmente el caso. Comúnmente, la información a partir de la cual queremos juzgar si algo está o no ocurriendo es confusa y puede incluso juzgarse erróneamente como evidencia de un estado del mundo diferente. Como un ejemplo cotidiano, imaginemos el caso de un adolescente que quiere tener permiso para salir de fiesta y necesita encontrar el momento ideal para pedírselo a su mamá (i.e. cuando ella esté de muy buen humor). Los indicadores con que dispone son poco precisos (e.g. los gestos, el tono de voz, las actividades que su madre realice durante el día, etc.), equivocar el diagnóstico del estado emocional de su madre y en consecuencia quedarse sin el permiso solicitado es un riesgo latente, ya sea por una mala lectura de los datos disponibles (e.g. que las ansias del adolescente por salir de fiesta le hagan apresurar el momento) o bien porque los datos en sí mismos son poco claros (e.g. la mamá podría ser una persona particularmente inexpresiva).\\ 
+Detectar 'algo' no parecería ser un problema importante si asumimos que dichos casos aparecen con perfecta claridad y son inconfundibles, o bien, que los sistemas comprometidos en su detección cuentan con detectores altamente sensibles que garantizan su identificación infalible. En el 'mundo real', este es difícilmente el caso. Comúnmente, la información a partir de la cual queremos juzgar si algo está o no ocurriendo es confusa y puede incluso juzgarse erróneamente como evidencia de un estado del mundo diferente. Como un ejemplo cotidiano, imaginemos el caso de un adolescente que quiere tener permiso para salir de fiesta y necesita encontrar el momento ideal para pedírselo a su mamá (i.e. cuando ella esté de muy buen humor). Los indicadores con que dispone son poco precisos (e.g. los gestos, el tono de voz, las actividades que su madre realice durante el día, etc.), equivocar el diagnóstico del estado emocional de su madre y en consecuencia quedarse sin el permiso solicitado es un riesgo latente, ya sea por una mala lectura de los datos disponibles (e.g. que las ansias del adolescente por salir de fiesta le hagan apresurar el momento) o bien porque los datos en sí mismos son poco claros (e.g. la mamá podría ser una persona particularmente inexpresiva).\\ 
+
+
 
 %El mundo está cargado de ruido (estimulación externa) y los organismos tienen que lidiar con la incertidumbre resultante mediante inferencias probabilísticas, relaciones causales (contingencia), experiencia. ??????????
 
@@ -37,6 +39,12 @@ Todo organismo habita en entornos donde están constantemente expuestos a distin
 
 
 \section{Teoría de Detección de Señales}
+
+La Teoría de Detección de Señales (TDS o SDT, por sus siglas en inglés) constituye un modelo sólido, que sirve como marco teórico  
+
+se desarrolla originalmente en el ámbito del estudio de las señales eléctricas tras la Segunda Guerra Mundial 
+
+La TDS 
 
 %La Teoría de Detección de Señales como el modelo predominante en Psicología para lidiar con la incertidumbre que rodea los juicios de detección
 Desde que Fechner extendiera las teoría de Gauss sobre la incertidumbre contenida en toda medición a su aplicación en el estudio de la sensación y la percepción, 
@@ -73,7 +81,7 @@ El soporte de las distribuciones, identificado en la Figura 1 bajo el nombre de 
 Este primer supuesto de variabilidad, como algo inherente a todo estímulo y sistema, nos lleva a hablar de la discriminabilidad de la señal, o bien, de la sensibilidad del sistema ante la señal, que el modelo de detección de señales va a representar con un mismo parámetro: d’, que corresponde a la distancia entre las medias de las distribuciones de ruido y señal, y cuyo cómputo abordaremos más afondo más adelante con ayuda de nuestro graficador en Python.\\ 
 
      \end{itemize}
-  \item{Las consecuencias importan }
+  \item{La detección es decisión}
 
 La TDS define toda tarea de detección como una tarea de decisión, donde el fin último por el cual el organismo se interesa en determinar si la señal está o no presente, es el de guiar su curso de acción. Es decir, el comportamiento de cualquier organismo va a depender de las señales que este detecta en su entorno.\\
 
