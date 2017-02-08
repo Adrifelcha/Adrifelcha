@@ -34,13 +34,17 @@ for(archive in dir()){
   Hr_as <- hits_AS/160
   FAr_bn <- fa_BN/160
   Hr_bs <- hits_BS/160
-  print(c(fa_AN[length(fa_AN)], 
+  print(c('F(A):', fa_AN[length(fa_AN)],
+          'F(B):', fa_BN[length(fa_BN)], 
+          'H(B):', hits_BS[length(hits_BS)],
+          'H(A):', hits_AS[length(hits_AS)]))
+  print(c('TasaFA (A)', 
+          'TasaFA (B)',
+          'TasaH (B)',
+          'TasaH (A)',
           FAr_an[length(FAr_an)], 
-          fa_BN[length(fa_BN)], 
           FAr_bn[length(FAr_bn)], 
-          hits_BS[length(hits_BS)], 
           Hr_bs[length(Hr_bs)], 
-          hits_AS[length(hits_AS)], 
           Hr_as[length(Hr_as)]))
   k_A <- qnorm(1-FAr_an,0,1)
   d_A <- qnorm(Hr_as,0,1)-qnorm(FAr_an,0,1)
@@ -50,7 +54,8 @@ for(archive in dir()){
   d_B <-qnorm(Hr_bs,0,1)-qnorm(FAr_bn,0,1)
   c_B <-k_B-(d_B/2)                    
   beta_B <-dnorm(k_B,d_B,1)/dnorm(k_B,0,1)
-  print(c(k_A[length(k_A)], 
+  print(c('hola',
+          k_A[length(k_A)], 
           k_B[length(k_B)], 
           d_A[length(d_A)], 
           d_B[length(d_B)], 
