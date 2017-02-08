@@ -34,18 +34,18 @@ for(archive in dir()){
   Hr_as <- hits_AS/160
   FAr_bn <- fa_BN/160
   Hr_bs <- hits_BS/160
+  Hr_as<-round(Hr_as,3)
+  FAr_an<-round(FAr_an,3)
+  Hr_bs<-round(Hr_bs,3)
+  FAr_bn<-round(FAr_bn,3)
   print(c('F(A):', fa_AN[length(fa_AN)],
           'F(B):', fa_BN[length(fa_BN)], 
           'H(B):', hits_BS[length(hits_BS)],
           'H(A):', hits_AS[length(hits_AS)]))
-  print(c('TasaFA (A)', 
-          'TasaFA (B)',
-          'TasaH (B)',
-          'TasaH (A)',
-          FAr_an[length(FAr_an)], 
-          FAr_bn[length(FAr_bn)], 
-          Hr_bs[length(Hr_bs)], 
-          Hr_as[length(Hr_as)]))
+  print(c('F(A):', FAr_an[length(FAr_an)], 
+          'F(B):', FAr_bn[length(FAr_bn)],
+          'H(B):', Hr_bs[length(Hr_bs)], 
+          'H(A):', Hr_as[length(Hr_as)]))
   k_A <- qnorm(1-FAr_an,0,1)
   d_A <- qnorm(Hr_as,0,1)-qnorm(FAr_an,0,1)
   c_A <- k_A-(d_A/2)                    
@@ -54,23 +54,6 @@ for(archive in dir()){
   d_B <-qnorm(Hr_bs,0,1)-qnorm(FAr_bn,0,1)
   c_B <-k_B-(d_B/2)                    
   beta_B <-dnorm(k_B,d_B,1)/dnorm(k_B,0,1)
-  print(c('hola',
-          k_A[length(k_A)], 
-          k_B[length(k_B)], 
-          d_A[length(d_A)], 
-          d_B[length(d_B)], 
-          c_A[length(c_A)], 
-          c_B[length(c_B)], 
-          beta_A[length(hits_AS)], 
-          beta_B[length(Hr_as)]))
-  
-  }
-  soporte <- seq(-4,7,.05)
-  d_AN <- dnorm(soporte,0,1)
-  d_AS <- dnorm(soporte,d_A,1)
-  d_BN <- dnorm(soporte,0,1)
-  d_BS <- dnorm(soporte,d_B,1)
-  
   d_A<-round(d_A,3)
   d_B<-round(d_B,3)
   k_A<-round(k_A,3)
@@ -79,11 +62,25 @@ for(archive in dir()){
   c_B<-round(c_B,3)
   beta_A<-round(beta_A,3)
   beta_B<-round(beta_B,3)
-  Hr_as<-round(Hr_as,3)
-  FAr_an<-round(FAr_an,3)
-  Hr_bs<-round(Hr_bs,3)
-  FAr_bn<-round(FAr_bn,3)
+  print(c('EASY',
+          'K:', k_A[length(k_A)], 
+          'D:', d_A[length(d_A)], 
+          'C:', c_A[length(c_A)], 
+          'B:', beta_A[length(hits_AS)]))
+  print(c('HARD',
+          'K:', k_B[length(k_B)],
+          'D:', d_B[length(d_B)], 
+          'C:', c_B[length(c_B)],
+          'B:', beta_B[length(Hr_as)]))
   
+  }
+  soporte <- seq(-4,7,.05)
+  d_AN <- dnorm(soporte,0,1)
+  d_AS <- dnorm(soporte,d_A,1)
+  d_BN <- dnorm(soporte,0,1)
+  d_BS <- dnorm(soporte,d_B,1)
+  
+
   #CLASSICAL SDT : One single Noise Distribution
   plot(soporte,d_AN,type='l', lwd=2, lty=6, col='black', yaxt='n', ann=F)
   lines(soporte,d_AS,type='l', lwd=2, col='deepskyblue2')
