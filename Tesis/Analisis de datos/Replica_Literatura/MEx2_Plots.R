@@ -25,6 +25,7 @@ rm(list=ls())
 layout(matrix(1:2,ncol=1))
 for(archive in dir()){
 jaime <- read.csv(archive)
+print(c(archive))
 fa <- NULL
 hits <- NULL
 conf <- NULL
@@ -34,10 +35,8 @@ for(nce in sort(unique(jaime$tipo))){
   rate <- (fa+hits)/160
   total <- (fa+hits)
   print(c(nce,
-          fa[length(fa)],
-          hits[length(hits)],
-          rate[length(rate)],
-          total[length(total)]))
+          'Tasa:', rate[length(rate)],
+          'Total:', total[length(total)]))
 }
 
 barplot(total, main = "", xlab = "", ylab = "Cumulative Frequency", font.lab=2, ylim = c(0, 160), axes = FALSE, col =c("deepskyblue3", "darkorchid3", "darkorchid3", "deepskyblue3"))
@@ -83,8 +82,15 @@ for(archive in dir()){
     C_AN <- sum(jaime$Confidence[jaime$tipo=='1 AN'])/160
     C_BS <- sum(jaime$Confidence[jaime$tipo=='3 BS'])/160
     C_BN <- sum(jaime$Confidence[jaime$tipo=='2 BN'])/160
+    C_AS <- round(C_AS,3)
+    C_AN <- round(C_AN,3)
+    C_BS <- round(C_BS,3)
+    C_BN <- round(C_BN,3)
     Confidence <- c(C_AN, C_BN, C_BS, C_AS)
   }
+
+  print(c(archive))
+  print(c(Confidence))
   
   #plot(Confidence,type='o',pch=16,col='white',ylim=c(0,6), yaxt='n', xaxt='n', ann=F)
 #  #axis(1,at=c(0,6),labels=c("AN","BN","BS","AS"), col='white')
@@ -406,15 +412,16 @@ for(archive in dir()){
   jaime <- read.csv(archive)
   jaime$num_circulos_externos <- as.character(jaime$num_circulos_externos)
   cafe <- strsplit(as.character(jaime$num_circulos_externos),split='-')
-
+  print(c(archive))
+  
   fa <- NULL
   hits <- NULL
   for(nce in sort(unique(jaime$num_circulos_externos))){
     fa <- append(fa, sum(jaime$Falsas.alarmas[jaime$num_circulos_externos==nce]=='True'))
     hits <- append(hits,sum(jaime$Hits[jaime$num_circulos_externos==nce]=='True'))
     print(c(nce,
-            fa[length(fa)],
-            hits[length(hits)]))}
+            'F.A.', fa[length(fa)],
+            'Hits', hits[length(hits)]))}
   
   barplot(hits, main = "", xlab = "", ylab = " ", ylim = c(0, 100), axes = FALSE, col = c("dodgerblue1","dodgerblue2","dodgerblue3","dodgerblue4"))
   axis(2,at=c(0, 20, 40, 60, 80, 100),labels=c("0", "20", "40","60","80","100"),las=1)
@@ -444,14 +451,16 @@ for(archive in dir()){
   jaime$color <- as.character(jaime$color)
   cafe <- strsplit(as.character(jaime$color),split='-')
 
+  print(c(archive))
+  
   fa <- NULL
   hits <- NULL
   for(nce in sort(unique(jaime$color))){
     fa <- append(fa, sum(jaime$Falsas.alarmas[jaime$color==nce]=='True'))
     hits <- append(hits,sum(jaime$Hits[jaime$color==nce]=='True'))
     print(c(nce,
-            fa[length(fa)],
-            hits[length(hits)]))}
+            'F.A.', fa[length(fa)],
+            'Hits', hits[length(hits)]))}
   
   barplot(hits, main = "", xlab = "", ylab = " ", ylim = c(0, 100), axes = FALSE, col = c("dodgerblue3","firebrick3", "chocolate3", "darkorchid4", "forestgreen"))
   axis(2,at=c(0, 20, 40, 60, 80, 100),labels=c("0", "20", "40","60","80","100"),las=1)
@@ -491,14 +500,14 @@ for(archive in dir()){
   jaime <- read.csv(archive)
   fa <- NULL
   hits <- NULL
+  print(c(archive))
+  
   for(nce in sort(unique(jaime$tamano_central))){
     fa <- append(fa, sum(jaime$Falsas.alarmas[jaime$tamano_central==nce]=='True'))
     hits <- append(hits,sum(jaime$Hits[jaime$tamano_central==nce]=='True'))
+    yes <- fa+hits
     print(c(nce,
-            fa[length(fa)],
-            hits[length(hits)]))
-    
-  }
+            'Yes:', yes[length(yes)]))}
 
   barplot( hits[c(4,5,6,7)], main = "", xlab = "", ylab = " ", ylim = c(0, 100), axes = FALSE, ann= FALSE,  col =c("dodgerblue1", "dodgerblue2", "dodgerblue3", "dodgerblue4"))
   axis(2,at=c(0, 20, 40, 60, 80, 100),labels=c("0", "20", "40","60","80","100"),las=1)
@@ -555,6 +564,7 @@ for(archive in dir()){
   Hr_as <- hits_AS/160
   FAr_bn <- fa_BN/160
   Hr_bs <- hits_BS/160
+  print(c(archive))
   print(c(fa_AN[length(fa_AN)], 
           FAr_an[length(FAr_an)], 
           fa_BN[length(fa_BN)], 

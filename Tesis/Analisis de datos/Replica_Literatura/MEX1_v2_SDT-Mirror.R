@@ -38,6 +38,7 @@ for(archive in dir()){
   FAr_an<-round(FAr_an,3)
   Hr_bs<-round(Hr_bs,3)
   FAr_bn<-round(FAr_bn,3)
+  print(c(archive))
   print(c('F(A):', fa_AN[length(fa_AN)],
           'F(B):', fa_BN[length(fa_BN)], 
           'H(B):', hits_BS[length(hits_BS)],
@@ -154,26 +155,37 @@ for(archive in dir()){
   C_BS <- sum(jaime$Confidence[jaime$tipo=='3 BS'])/160
   C_BN <- sum(jaime$Confidence[jaime$tipo=='2 BN'])/160
   Confidence <- c(C_AN, C_BN, C_BS, C_AS)
-  #print(c(fa_AN[length(fa_AN)], 
-  #        FAr_an[length(FAr_an)], 
-  #        fa_BN[length(fa_BN)], 
-  #        FAr_bn[length(FAr_bn)], 
-  #        hits_BS[length(hits_BS)], 
-  #        Hr_bs[length(Hr_bs)], 
-  #        hits_AS[length(hits_AS)], 
-  #        Hr_as[length(Hr_as)]))
   k <- qnorm(1-FAr_an,0,1)
   d_A <- qnorm(Hr_as,0,1)-qnorm(FAr_an,0,1)
   d_BN <- qnorm(FAr_bn,0,1)-qnorm(FAr_an,0,1)
   d_BS <- (qnorm(Hr_bs,0,1)-qnorm(FAr_bn,0,1))+d_BN
-  c <- k-(d_A/2)                    
+  c <- k-(d_A/2)   
+  k<- round(k,3)
+  d_A<-round(d_A,3)
+  d_BN<-round(d_BN,3)
+  d_BS<-round(d_BS,3)
+  c<-round(c,3)
+  fa_AN <-round(fa_AN,3)
+  fa_BN <-round(fa_BN,3)
+  hits_BS <-round(hits_BS,3)
+  hits_AS <-round(hits_AS,3)
+   
   #  beta_A <- dnorm(k_A,d_A,1)/dnorm(k_A,0,1)
   #  beta_B <-dnorm(k_B,d_B,1)/dnorm(k_B,0,1)
-  print(c(k[length(k)], 
-          d_A[length(d_A)], 
-          d_BN[length(d_BN)], 
-          d_BS[length(d_BS)], 
-          c[length(c)]))
+  print(c(archive))
+  print(c('K:', k[length(k)], 
+          'D(A):', d_A[length(d_A)], 
+          'D(BS):', d_BS[length(d_BS)], 
+          'D(BN):', d_BN[length(d_BN)], 
+          'C:', c[length(c)]))
+  print(c('F(A):', fa_AN[length(fa_AN)], 
+          'F(B):', fa_BN[length(fa_BN)], 
+          'H(B):', hits_BS[length(hits_BS)], 
+          'H(A):', hits_AS[length(hits_AS)]))
+  print(c('F(A):', FAr_an[length(FAr_an)], 
+          'F(B):', FAr_bn[length(FAr_bn)], 
+          'H(B):', Hr_bs[length(Hr_bs)], 
+          'H(A):', Hr_as[length(Hr_as)]))
   fa_AN6 <- sum(jaime$FR6[jaime$Estimulo>=161&jaime$Estimulo<=320])/160
   fa_BN6 <- sum(jaime$FR6[jaime$Estimulo>=481&jaime$Estimulo<=640])/160
   h_AS6 <- sum(jaime$HR6[jaime$Estimulo>=1&jaime$Estimulo<=160])/160
@@ -223,43 +235,57 @@ for(archive in dir()){
   fa_BN1 <- round(fa_BN1,3)
   h_AS1 <- round(h_AS1,3)
   h_BS1 <- round(h_BS1,3)
-  #
-  print(c(h_AS6[length(h_AS6)], 
-          h_AS5[length(h_AS5)], 
-          h_AS4[length(h_AS4)], 
-          h_AS3[length(h_AS3)],
-          h_AS2[length(h_AS2)], 
-          h_AS1[length(h_AS1)], 
-          h_BS6[length(h_BS6)],
-          h_BS5[length(h_BS5)], 
-          h_BS4[length(h_BS4)], 
-          h_BS3[length(h_BS3)],
-          h_BS2[length(h_BS5)], 
-          h_BS1[length(h_BS1)],
-          fa_AN6[length(fa_AN6)],
-          fa_AN5[length(fa_AN5)], 
-          fa_AN4[length(fa_AN4)], 
-          fa_AN3[length(fa_AN3)],
-          fa_AN2[length(fa_AN2)], 
-          fa_AN1[length(fa_AN1)], 
-          fa_BN6[length(fa_BN6)],
-          fa_BN5[length(fa_BN5)], 
-          fa_BN4[length(fa_BN4)], 
-          fa_BN3[length(fa_BN3)],
-          fa_BN2[length(fa_BN5)]))
+  print(c('H(A)',
+          '6:', h_AS6[length(h_AS6)], 
+          '5:', h_AS5[length(h_AS5)], 
+          '4:', h_AS4[length(h_AS4)], 
+          '3:', h_AS3[length(h_AS3)],
+          '2:', h_AS2[length(h_AS2)], 
+          '1:', h_AS1[length(h_AS1)]))
+  print(c('H(B)',
+          '6:', h_BS6[length(h_BS6)],
+          '5:', h_BS5[length(h_BS5)], 
+          '4:', h_BS4[length(h_BS4)], 
+          '3:', h_BS3[length(h_BS3)],
+          '2:', h_BS2[length(h_BS5)], 
+          '1:', h_BS1[length(h_BS1)]))
+  print(c('F(A)', 
+          '6:', fa_AN6[length(fa_AN6)],
+          '5:', fa_AN5[length(fa_AN5)], 
+          '4:', fa_AN4[length(fa_AN4)], 
+          '3:', fa_AN3[length(fa_AN3)],
+          '2:', fa_AN2[length(fa_AN2)], 
+          '1:', fa_AN1[length(fa_AN1)]))
+  print(c('F(B)',
+          '6:', fa_BN6[length(fa_BN6)],
+          '5:', fa_BN5[length(fa_BN5)], 
+          '4:', fa_BN4[length(fa_BN4)], 
+          '3:', fa_BN3[length(fa_BN3)],
+          '2:', fa_BN2[length(fa_BN2)],
+          '1:', fa_BN2[length(fa_BN1)]))
   k1 <- qnorm(1-fa_AN1,0,1)
   k2 <- qnorm(1-fa_AN2,0,1)
   k3 <- qnorm(1-fa_AN3,0,1)
   k4 <- qnorm(1-h_AS4,d_A,1)
   k5 <- qnorm(1-h_AS5,d_A,1)
   k6 <- qnorm(1-h_AS6,d_A,1)
-  
-  dif_A <-d_A-0
+  k1<-round(k1,3)
+  k2<-round(k2,3)
+  k3<-round(k3,3)
+  k4<-round(k4,3)
+  k5<-round(k5,3)
+  k6<-round(k6,3)
+  print(c('K1', k1[length(k1)],
+          'k2', k2[length(k2)],
+          'k3', k3[length(k3)],
+          'k4', k4[length(k4)],
+          'k5', k5[length(k5)],
+          'k6', k6[length(k6)]))
+  dif_A <-d_A
   dif_B <-d_BS-d_BN
-  print(c(dif_A[length(dif_A)], 
-          dif_B[length(dif_B)]))
+  print(c('D(A)', dif_A[length(dif_A)], 
+          'D(B)', dif_B[length(dif_B)]))}
   
-  }
   soporte <- seq(-3.5,6.5,.05)
   dis_AN <- dnorm(soporte,0,1)
   dis_AS <- dnorm(soporte,d_A,1)
@@ -405,4 +431,10 @@ for(archive in dir()){
     text(3.1,C_BS+.5,paste(C_BS),cex=.8,col='violetred',f=2)
     text(3.9,C_BS+.5,paste(C_AS),cex=.8,col='violetred',f=2)
     text(1.5,5.5,paste('Confidence Rate'),cex=1,col='violetred4',f=2)
+    
+    print(c(archive))
+    print(c(C_AN[length(C_AN)],
+          C_BN[length(C_BN)],
+          C_BS[length(C_BS)],
+          C_AS[length(C_AS)]))
 }
