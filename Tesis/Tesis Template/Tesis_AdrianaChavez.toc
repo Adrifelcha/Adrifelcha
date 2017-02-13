@@ -9,7 +9,7 @@
 \contentsline {section}{\numberline {1.2}Teor\IeC {\'\i }a de Detecci\IeC {\'o}n de Se\IeC {\~n}ales}{2}{section.12}
 \contentsline {subsection}{\numberline {1.2.1}Supuestos generales del modelo}{3}{subsection.13}
 \contentsline {subsection}{\numberline {1.2.2}Par\IeC {\'a}metros del modelo}{6}{subsection.14}
-\contentsline {subsection}{\numberline {1.2.3}Tareas de detecci\IeC {\'o}n}{8}{subsection.18}
+\contentsline {subsection}{\numberline {1.2.3}Tareas de detecci\IeC {\'o}n}{9}{subsection.18}
 \contentsline {chapter}{\numberline {2}El Efecto Espejo en Memoria de Reconocimiento}{11}{chapter.19}
 \contentsline {section}{\numberline {2.1}Panorama general del estudio de Memoria de Reconocimiento}{11}{section.20}
 \contentsline {subsection}{\numberline {2.1.1}Teor\IeC {\'\i }a del Umbral}{11}{subsection.21}
@@ -42,4 +42,3 @@
 \contentsline {section}{\numberline {5.2}Procedimiento}{41}{section.72}
 \contentsline {chapter}{\numberline {A}Frequently Asked Questions}{43}{appendix.73}
 \contentsline {section}{\numberline {A.1}How do I change the colors of links?}{43}{section.74}
-\contentsline {chapter}{Bibliograf\'{\i }a}{45}{appendix*.75}
