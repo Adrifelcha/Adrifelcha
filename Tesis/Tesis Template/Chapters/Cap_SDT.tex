@@ -45,17 +45,17 @@ Las nociones de la variabilidad en el entorno y la incertidumbre resultante perm
 La Teoría de Detección de Señales (TDS o SDT, por sus siglas en inglés) aparece por primera vez en 1954 como parte del amplio cuerpo de avances tecnológicos y científicos motivados por las necesidades planteadas por la Segunda Guerra Mundial, para el estudio de señales eléctricas en radares y rastreadores por el estilo ($CITA: Peterson, Birdsall and Fox, 1954$). Muy poco tiempo después, los psicólogos John A. Swets y Wilson P. Tanner contribuyeron al desarrollo de la teoría situándola en el contexto psicológico, como un modelo para estudiar la percepción ($Citas (2); Swets, Tanner y Birdsall  \& Tanner y Swets$). Actualmente, la TDS constituye uno de los modelos más estudiados, desarrollados y ampliamente aplicados en Psicología extendiéndose desde su foco en el estudio de la percepción ($Citas: Ejemplos TDS en percepcion$) al estudio de fenómenos y tarea varias dentro y fuera de la psicología, donde el factor común es la necesidad de formular juicios de detección (i.e 'Algo está o no está') para emitir una respuesta; por ejemplo, en materia de la emisión de diagnósticos clínicos ($CITAS$) o en el estudio de ciertas condiciones clínicas ($SDT on paranoia$), en el estudio de la identificación visual de testigos ($CITAS: John Wixted$), etc.\\ 
 
 %La Teoría de Detección de señales como un modelo descriptivo para el problema de la detección que admite la importancia de la incertidumbre, como parte del entorno y como motor en el uso de sesgos de respuesta.
-La TDS se sitúa como un modelo y marco teórico orientado a describir el actuar de organismos y sistemas que se enfrentan ante la tarea de detectar una señal particular (i.e. el estimulo, caso o estado - objetivo) dentro de un conjunto que contiene tanto instancias de dicha señal como ruido (i.e. estímulos, casos o estados que no son el objetivo a detectar). Dicho modelo captura la noción de incertidumbre y su importancia al asumir que tanto la señal, como la estimulación ajena a est a (ruido) son variables: no en todas las ocasiones se percibes con la misma claridad ni todo el ruido es distinguible de esta, de hecho, se admite la posibilidad de que el ruido pase equívocamente por una instancia de la señal (llevando al organismo a cometer un falso positivo). La generalizabilidad de la teoría se debe a la abstracción de sus elementos; la señal que interesa detectar peude comprenderse como un estímulo concreto muy específico, o bien, como algo tan abstracto como la pertenencia a una categoría (i.e. la presencia de una condición clínica particular), englomerando a todo estímulo presente en la tarea que no es la señal en el concepto de 'ruido'.  \\ 
+La TDS opera como un modelo y marco teórico orientado a describir el actuar de organismos y sistemas que se enfrentan ante la tarea de detectar una señal particular (i.e. el estimulo, caso o estado - objetivo) dentro de un conjunto que contiene tanto instancias de dicha señal como ruido (i.e. estímulos, casos o estados que no son el objetivo a detectar). Dicho modelo captura la noción de incertidumbre y su importancia al asumir que tanto la señal, como la estimulación ajena a est a (ruido) son variables: no en todas las ocasiones se percibes con la misma claridad ni todo el ruido es distinguible de esta, de hecho, se admite la posibilidad de que el ruido pase equívocamente por una instancia de la señal (llevando al organismo a cometer un falso positivo). La generalizabilidad de la teoría se debe a la abstracción de sus elementos; la señal que interesa detectar peude comprenderse como un estímulo concreto muy específico, o bien, como algo tan abstracto como la pertenencia a una categoría (i.e. la presencia de una condición clínica particular), englomerando a todo estímulo presente en la tarea que no es la señal en el concepto de 'ruido'.  \\ 
 
 \subsection{Supuestos generales del modelo}
 
-%La TDS distingue dos grandes factores en la emisión de un juicio o respuesta: La discriminabilidad y el ruido.
-La TDS funciona como un modelo descriptivo, que traduce el desempeño de sistemas en tareas de detección (aciertos y errores), en inferencias sobre la precisión con que se están distinguiendo la señal del ruido (i.e. discriminabilidad) y la posible preferencia que tenga el sistema a responder en favor o en contra de la detección (i.e. sesgo). Uno \\
+%La TDS distingue dos grandes factores en la emisión de un juicio o respuesta: La discriminabilidad y el sesgo.
+La TDS funciona como un modelo descriptivo, que traduce el desempeño de sistemas en tareas de detección (aciertos y errores), en inferencias sobre la precisión con que se están distinguiendo la señal del ruido (i.e. discriminabilidad) y la posible preferencia que tenga el sistema a responder en favor o en contra de la detección (i.e. sesgo). La distinción que hace la TDS entre la discriminabilidad y el sesgo como factores ponderados en la emisión de un juicio de detección es una de sus principales propiedades. Hablando de manera general, la TDS asume que existen dos grandes factores latentes que van a influir en el desempeño del participante: el primero de ellos, la discriminabilidad, apela exclusivamente a qué tan distinta es la señal respecto del resto de los estímulos; el segundo, el sesgo, tiene que ver con el tipo de juicio que al organismo le convenga evitar o buscar en función a las consecuencias en juego. A continuación revisaremos a detalle las implicaciones de esta distinción y cómo se definen en la TDS.\\
 
 \begin{itemize}
-  \item{Siempre hay incertidumbre}
+  \item{El papel de la Discriminabilidad: Siempre hay incertidumbre}
 
-%Aportacion de Fechner: De la teoría de Gauss a una teoría mentalista de percepción
+
 
     \begin{itemize}
       \item{Variabilidad en la Señal}\\
@@ -79,9 +79,10 @@ El soporte de las distribuciones, identificado en la Figura 1 bajo el nombre de 
 Este primer supuesto de variabilidad, como algo inherente a todo estímulo y sistema, nos lleva a hablar de la discriminabilidad de la señal, o bien, de la sensibilidad del sistema ante la señal, que el modelo de detección de señales va a representar con un mismo parámetro: d’, que corresponde a la distancia entre las medias de las distribuciones de ruido y señal, y cuyo cómputo abordaremos más afondo más adelante con ayuda de nuestro graficador en Python.\\ 
 
      \end{itemize}
-  \item{La detección es decisión}
+  \item{El papel del Sesgo: La detección es decisión}
 
 La TDS define toda tarea de detección como una tarea de decisión, donde el fin último por el cual el organismo se interesa en determinar si la señal está o no presente, es el de guiar su curso de acción. Es decir, el comportamiento de cualquier organismo va a depender de las señales que este detecta en su entorno.\\
+
 Una consecuencia directa de la variabilidad involucrada en el entorno de decisión, es que el desempeño de todo sistema de detección es propenso a cometer errores y emitir un juicio de presencia o ausencia de la señal, que puede no coincidir con el estado del mundo. Dependiendo la correspondencia entre el estado del mundo y el juicio emitido por el sistema de detección, la TDS maneja las clasificaciones de respuesta mostradas en la Tabla 1; donde las celdas 2 y 3, corresponden a los errores posibles.\\
 
 La TDS asume que el organismo fija un criterio de elección a lo largo del eje de la Evidencia, que va a determinar a partir de cuánta evidencia va a juzgar la señal como presente. Dicho criterio se va a representar como una línea transversal que atraviesa ambas distribuciones en una determinada altura, y se le va a identificar con el parámetro k. La TDS asume que los organismos van a fijar esta regla de elección, ponderando la información a la que tienen acceso con la información que poseen sobre la estructura de la tarea (i.e. cómo suele presentarse la señal, qué tan probable es que se presente, etc.)\\
@@ -131,13 +132,25 @@ Antes de ahondar a detalle en los parámetros, hay que declarar un par de supues
 
 \begin{enumerate}
 \item En su forma clásica, la TDS asume que las distribuciones de ruido y señal son distribuciones normales.
-\item La TDS asume equivarianza entre las distribuciones de ruido y señal. Es decir, asume que la dispersión de ambas distribuciones es la misma, fijando la desviación estándar a 1.
-\item Para facilitar la estimación paramétrica, a la distribución de ruido (que por definición debe aparecer siempre a la izquierda de la señal) se le asigna una media de 0.
+  \begin{itemize}
+  \item 
+  \end{itemize}
+\item En su forma estándar, se asume que las distribuciones de ruido y señal son equivariantes, (compartiendo una desviación estándar de 1).
+  \begin{itemize}
+  \item 
+  \end{itemize}
+\item La distribución de ruido tiene su media en 0. 
+  \begin{itemize}
+  \item La estimación de todos los parámetros del modelo de detección de señales se hace tomando como referencia la distribución del ruido (con  media 0 y desviación estándar de 1)
+  \end{itemize}
 \end{enumerate}
+
 
 
 \begin{itemize}
 \item Discriminabilidad $(d')$
+
+La discriminabilidad se representa en los modelos de detección de señales con un parámetro $d'$, que representa la distancia entre las medias de las distribuciones de ruido y señal. 
 
 
 
@@ -156,7 +169,7 @@ Para calcular el criterio lo único que necesitamos es conocer la tasa de Falsas
 
 \item Sesgo - $\beta$
 
-La razón de la densid
+El sesgo se define como la preferencia del sistema a emitir respuestas de un tipo particular (i.e. 'Sí, detecto la señal' o 'No, no está'). La TDS cuenta con dos parámetros dedicados a la medición y evaluación del sesgo de los sistemas sometidos a tareas de detección. El parámetro más 
 
 $\beta = \frac{p(Signal)}{p(Noise)}$
 
@@ -167,8 +180,6 @@ $\beta = \frac{p(Signal)}{p(Noise)}$
 \end{itemize}
 
 
-
-Una revisión un poco más profunda en la literatura, (sobre todo en literatura más formal y especializada) nos demuestra que, si se cuenta con información suficiente, los supuestos 1 y 2 pueden violarse. Por ejemplo, en estudios de memoria de reconocimiento, donde se les pide a los participantes que discriminen entre estímulos que les fueron presentados en una etapa previa y estímulos completamente nuevos,  los resultados demuestran consistentemente que la distribución de señal (de estímulos previamente vistos), tiene una mayor varianza que la distribución de ruido; dicho eso, si se piensa utilizar la TDS como modelo de referencia para una tarea de memoria de reconocimiento, se puede hacer caso omiso del supuesto de equivarianza.\\
 
 %----------------------------------------------------------------
 
@@ -181,6 +192,8 @@ En el laboratorio, la  TDS se estudia a partir  de tareas de detección donde se
 
 
 \item Tareas con escala de confianza
+
+Un segundo procedimiento comúnmente utilizado en tareas de detección implica añadir un paso adicional a la tarea de los participantes. 
 
 
 \item Tarea con elección forzada entre dos alternativas.
