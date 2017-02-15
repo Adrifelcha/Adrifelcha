@@ -8,37 +8,37 @@
 \contentsline {section}{\numberline {1.1}El problema de la Detecci\IeC {\'o}n y la Incertidumbre}{1}{section.11}
 \contentsline {section}{\numberline {1.2}Teor\IeC {\'\i }a de Detecci\IeC {\'o}n de Se\IeC {\~n}ales}{2}{section.12}
 \contentsline {subsection}{\numberline {1.2.1}Supuestos generales del modelo}{3}{subsection.13}
-\contentsline {subsection}{\numberline {1.2.2}Par\IeC {\'a}metros del modelo}{6}{subsection.14}
-\contentsline {subsection}{\numberline {1.2.3}Tareas de detecci\IeC {\'o}n}{9}{subsection.18}
-\contentsline {chapter}{\numberline {2}El Efecto Espejo en Memoria de Reconocimiento}{11}{chapter.19}
-\contentsline {section}{\numberline {2.1}Panorama general del estudio de Memoria de Reconocimiento}{11}{section.20}
-\contentsline {subsection}{\numberline {2.1.1}Teor\IeC {\'\i }a del Umbral}{11}{subsection.21}
-\contentsline {subsection}{\numberline {2.1.2}Teor\IeC {\'\i }a del Procesamiento Dual}{11}{subsection.22}
-\contentsline {section}{\numberline {2.2}Teor\IeC {\'\i }a de Detecci\IeC {\'o}n de Se\IeC {\~n}ales en Memoria de Reconocimiento}{12}{section.23}
-\contentsline {subsection}{\numberline {2.2.1}Implicaciones y conflictos}{13}{subsection.26}
-\contentsline {subsection}{\numberline {2.2.2}Proceso Dual Detecci\IeC {\'o}n de Se\IeC {\~n}ales - Umbral alto}{13}{subsection.27}
-\contentsline {section}{\numberline {2.3}El Efecto Espejo}{14}{section.28}
-\contentsline {subsection}{\numberline {2.3.1}Evidencia recolectada}{14}{subsection.29}
-\contentsline {subsection}{\numberline {2.3.2}Relevancia}{14}{subsection.30}
-\contentsline {subsection}{\numberline {2.3.3}Algunos modelos desarrollados para dar cuenta del Efecto Espejo}{14}{subsection.31}
-\contentsline {chapter}{\numberline {3}Experimento: Buscando el Efecto Espejo en una tarea Perceptual}{15}{chapter.32}
-\contentsline {section}{\numberline {3.1}Planteamiento general}{15}{section.33}
-\contentsline {subsection}{\numberline {3.1.1}Objetivo}{15}{subsection.34}
-\contentsline {section}{\numberline {3.2}Construcci\IeC {\'o}n de la Tarea}{15}{section.35}
-\contentsline {subsection}{\numberline {3.2.1}Est\IeC {\'\i }mulos}{15}{subsection.36}
-\contentsline {subsection}{\numberline {3.2.2}Materiales}{16}{subsection.37}
-\contentsline {subsection}{\numberline {3.2.3}Participantes}{16}{subsection.38}
-\contentsline {section}{\numberline {3.3}Procedimiento}{16}{section.39}
-\contentsline {subsection}{\numberline {3.3.1}Registro de respuestas}{16}{subsection.40}
-\contentsline {chapter}{\numberline {4}Datos}{17}{chapter.41}
-\contentsline {section}{\numberline {4.1}Control 1: \IeC {\textquestiondown }Los participantes estaban poniendo atenci\IeC {\'o}n a la tarea para emitir una respuesta?}{17}{section.42}
-\contentsline {section}{\numberline {4.2}Control 2: \IeC {\textquestiondown }La duraci\IeC {\'o}n del experimento tuvo un impacto en la ejecuci\IeC {\'o}n de los participantes?}{20}{section.52}
-\contentsline {section}{\numberline {4.3}Control 3: \IeC {\textquestiondown }Las variables mezcladas para construir los est\IeC {\'\i }mulos est\IeC {\'a}n afectando el desempe\IeC {\~n}o de los participantes?}{21}{section.59}
-\contentsline {section}{\numberline {4.4}Evidencia del Efecto Espejo}{21}{section.63}
-\contentsline {chapter}{\numberline {5}Discusi\IeC {\'o}n y Conclusiones}{41}{chapter.68}
-\contentsline {section}{\numberline {5.1}Objetivo}{41}{section.69}
-\contentsline {subsection}{\numberline {5.1.1}Construcci\IeC {\'o}n de la Tarea}{41}{subsection.70}
-\contentsline {subsection}{\numberline {5.1.2}Detalles t\IeC {\'e}cnicos}{41}{subsection.71}
-\contentsline {section}{\numberline {5.2}Procedimiento}{41}{section.72}
-\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{43}{appendix.73}
-\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{43}{section.74}
+\contentsline {subsection}{\numberline {1.2.2}Par\IeC {\'a}metros del modelo}{7}{subsection.16}
+\contentsline {subsection}{\numberline {1.2.3}Tareas de detecci\IeC {\'o}n}{9}{subsection.20}
+\contentsline {chapter}{\numberline {2}El Efecto Espejo en Memoria de Reconocimiento}{11}{chapter.21}
+\contentsline {section}{\numberline {2.1}Panorama general del estudio de Memoria de Reconocimiento}{11}{section.22}
+\contentsline {subsection}{\numberline {2.1.1}Teor\IeC {\'\i }a del Umbral}{11}{subsection.23}
+\contentsline {subsection}{\numberline {2.1.2}Teor\IeC {\'\i }a del Procesamiento Dual}{11}{subsection.24}
+\contentsline {section}{\numberline {2.2}Teor\IeC {\'\i }a de Detecci\IeC {\'o}n de Se\IeC {\~n}ales en Memoria de Reconocimiento}{12}{section.25}
+\contentsline {subsection}{\numberline {2.2.1}Implicaciones y conflictos}{13}{subsection.28}
+\contentsline {subsection}{\numberline {2.2.2}Proceso Dual Detecci\IeC {\'o}n de Se\IeC {\~n}ales - Umbral alto}{13}{subsection.29}
+\contentsline {section}{\numberline {2.3}El Efecto Espejo}{14}{section.30}
+\contentsline {subsection}{\numberline {2.3.1}Evidencia recolectada}{14}{subsection.31}
+\contentsline {subsection}{\numberline {2.3.2}Relevancia}{14}{subsection.32}
+\contentsline {subsection}{\numberline {2.3.3}Algunos modelos desarrollados para dar cuenta del Efecto Espejo}{14}{subsection.33}
+\contentsline {chapter}{\numberline {3}Experimento: Buscando el Efecto Espejo en una tarea Perceptual}{15}{chapter.34}
+\contentsline {section}{\numberline {3.1}Planteamiento general}{15}{section.35}
+\contentsline {subsection}{\numberline {3.1.1}Objetivo}{15}{subsection.36}
+\contentsline {section}{\numberline {3.2}Construcci\IeC {\'o}n de la Tarea}{15}{section.37}
+\contentsline {subsection}{\numberline {3.2.1}Est\IeC {\'\i }mulos}{15}{subsection.38}
+\contentsline {subsection}{\numberline {3.2.2}Materiales}{16}{subsection.39}
+\contentsline {subsection}{\numberline {3.2.3}Participantes}{16}{subsection.40}
+\contentsline {section}{\numberline {3.3}Procedimiento}{16}{section.41}
+\contentsline {subsection}{\numberline {3.3.1}Registro de respuestas}{16}{subsection.42}
+\contentsline {chapter}{\numberline {4}Datos}{17}{chapter.43}
+\contentsline {section}{\numberline {4.1}Control 1: \IeC {\textquestiondown }Los participantes estaban poniendo atenci\IeC {\'o}n a la tarea para emitir una respuesta?}{17}{section.44}
+\contentsline {section}{\numberline {4.2}Control 2: \IeC {\textquestiondown }La duraci\IeC {\'o}n del experimento tuvo un impacto en la ejecuci\IeC {\'o}n de los participantes?}{20}{section.54}
+\contentsline {section}{\numberline {4.3}Control 3: \IeC {\textquestiondown }Las variables mezcladas para construir los est\IeC {\'\i }mulos est\IeC {\'a}n afectando el desempe\IeC {\~n}o de los participantes?}{21}{section.61}
+\contentsline {section}{\numberline {4.4}Evidencia del Efecto Espejo}{21}{section.65}
+\contentsline {chapter}{\numberline {5}Discusi\IeC {\'o}n y Conclusiones}{41}{chapter.70}
+\contentsline {section}{\numberline {5.1}Objetivo}{41}{section.71}
+\contentsline {subsection}{\numberline {5.1.1}Construcci\IeC {\'o}n de la Tarea}{41}{subsection.72}
+\contentsline {subsection}{\numberline {5.1.2}Detalles t\IeC {\'e}cnicos}{41}{subsection.73}
+\contentsline {section}{\numberline {5.2}Procedimiento}{41}{section.74}
+\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{43}{appendix.75}
+\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{43}{section.76}
