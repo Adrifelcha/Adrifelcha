@@ -26,10 +26,10 @@
 \contentsline {subsection}{\numberline {3.1.1}Objetivo}{15}{subsection.36}
 \contentsline {section}{\numberline {3.2}Construcci\IeC {\'o}n de los Experimentos}{15}{section.37}
 \contentsline {subsection}{\numberline {3.2.1}Dise\IeC {\~n}o de los Est\IeC {\'\i }mulos}{18}{subsection.40}
-\contentsline {subsection}{\numberline {3.2.2}Materiales}{20}{subsection.43}
-\contentsline {subsection}{\numberline {3.2.3}Participantes}{20}{subsection.44}
+\contentsline {subsection}{\numberline {3.2.2}Materiales}{21}{subsection.43}
+\contentsline {subsection}{\numberline {3.2.3}Participantes}{21}{subsection.44}
 \contentsline {section}{\numberline {3.3}Procedimiento}{21}{section.45}
-\contentsline {subsection}{\numberline {3.3.1}Registro de respuestas}{21}{subsection.46}
+\contentsline {subsection}{\numberline {3.3.1}Registro de respuestas}{22}{subsection.46}
 \contentsline {chapter}{\numberline {4}Datos}{25}{chapter.47}
 \contentsline {section}{\numberline {4.1}Control 1: \IeC {\textquestiondown }Los participantes estaban poniendo atenci\IeC {\'o}n a la tarea para emitir una respuesta?}{25}{section.48}
 \contentsline {section}{\numberline {4.2}Control 2: \IeC {\textquestiondown }La duraci\IeC {\'o}n del experimento tuvo un impacto en la ejecuci\IeC {\'o}n de los participantes?}{28}{section.58}
