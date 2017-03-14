@@ -1,0 +1,55 @@
+
+
+ div#content { position:absolute; left:300px; top:25px; width:425px; height:550px; z-index:1 } 
+
+ h2 { position:absolute; color:#ffffcc; left:0px; top:25px; width:425px; text-align:center; }
+
+ img#bg {      position:absolute; left:300px; top:25px; width:425px; height:550px; } 
+
+ input, select, textarea { 
+	color:#333333; background-color:#c7cfe2; font-size:14px; font-weight:normal; font-family:arial,"lucinda console",sans-serif; z-index:10; cursor:pointer;
+ }
+
+.PdfPreviewText { position:absolute; color:#e1e7f0; left:25px; /*L-margin*/ top:5px; width:213px; /*R-margin*/ text-align:center; font-size:14px; font-weight:bold; font-family:"Times New Roman",serif; }
+
+.PHeader { margin-top:5px; text-align:center; font-size:20px; font-weight:bold; }
+
+.PPanel { position:absolute; color:black; background-color:#b3bfd9; font-size:12px; font-weight:normal; font-family:"Times New Roman",serif; z-index:-10; }
+
+.PrintOptionIndent { position:absolute; color:black; left:36px; /*L-margin*/ width:300px; /*R-margin*/ text-align:left; font-size:13px; font-weight:normal; font-family:"Times New Roman",serif; }
+
+.PrintOption { position:absolute; color:black; left:10px; /*L-margin*/ width:320px; /*R-margin*/ text-align:left; font-size:15px; font-weight:bold; font-family:"Times New Roman",serif; }
+
+.PSubHeader { text-align:center; color:#444444; font-size:12px; margin-left:10px; margin-right:10px; }
+
+.PText { margin-left:10px; /*L-margin*/ margin-right:10px; /*R-margin*/ text-align:left; }
+
+.TabText1 { margin-top:1px; text-align:center; font-size:20px; font-weight:bold; }
+
+.TabText2 { color:#444444; text-align:center; font-size:15px; }
+
+.TextButton { position:static; border:none; background-color: transparent; padding:0; text-decoration:none; color:blue; vertical-align:bottom; overflow:visible; display:inline; margin:0; cursor:pointer; text-align:left; font-size:12px; font-weight:normal; font-family:"Times New Roman",serif; }
+
+.TextButton:hover { color:red; }
+
+.ToolBoxHeader { position:absolute; color:black; left:1px; top:25px; width:600px; text-align:center; font-size:20px; font-weight:bold; font-family:"Times New Roman",serif; }
+
+.ToolBox { position:absolute; opacity:0.95; left:25px; }
+
+.ToolBoxText { position:absolute; color:black; left:1px; /*L-margin*/ top:555px; width:600px; /*R-margin*/ text-align:left; font-size:12px; font-weight:normal; font-family:"Times New Roman",serif; }
+
+.ToolHeader { position:absolute; color:black; left:25px; top:15px; width:250px; text-align:center; font-size:20px; font-weight:bold; font-family:"Times New Roman",serif; }
+
+.ToolTextCenter { position:absolute; color:black; left:35px; /*L-margin*/ width:225px; /*R-margin*/ text-align:center; font-size:12px; font-weight:normal; font-family:"Times New Roman",serif; }
+
+.ToolTextLeft { position:absolute; color:black; left:35px; /*L-margin*/ width:220px; /*R-margin*/ text-align:left; font-size:12px; font-weight:normal; font-family:"Times New Roman",serif; }
+
+.ToolText { position:absolute; color:black; left:35px; /*L-margin*/ top:55px; width:230px; /*R-margin*/ text-align:left; font-size:12px; font-weight:normal; font-family:"Times New Roman",serif; }
+
+.ToolTextRight { position:absolute; color:black; left:35px; /*L-margin*/ width:225px; /*R-margin*/ text-align:right; font-size:12px; font-weight:normal; font-family:"Times New Roman",serif; }
+
+
+.FixedAtCenter { position:fixed; top:50%; left:50%; margin-top:-32; margin-left:-32; }
+
+
+

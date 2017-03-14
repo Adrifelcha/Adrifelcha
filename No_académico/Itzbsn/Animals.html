@@ -1,0 +1,1551 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0047)http://my.puzzle-maker.com/crossword_Design.cgi -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- pmt English_Preview.htm -->
+
+<meta name="google-translate-customization" content="15676fb3bcb91263-c46cf6a5a6f11e14-gb5ab39f3a02fdcae-1e">
+<link rel="stylesheet" type="text/css" href="./Animals_files/default.css">
+<link rel="stylesheet" type="text/css" href="./Animals_files/nouislider.min.css">
+<title>Crossword Puzzle Maker: Preview Draft of Puzzle</title>
+<style type="text/css">
+  .noUi-origin {
+	z-index:10;
+  }
+  .noUi-handle {
+	background:#b3bfd9;
+	border: 1px solid #62a0c4;	//page background is 024074
+	cursor:pointer;
+	z-index:10;
+  }
+  .noUi-horizontal {
+	height: 24px;	// not 18px
+  }	
+  .noUi-horizontal .noUi-handle {
+	top:-3px;	// not -6;
+  }	
+  .sliderSize {
+	margin:10px 18px;
+	background-size:cover;
+  }
+  .popControlCell {
+	position:absolute;
+	top:5px;
+	width:13px;
+	height:13px;
+	background-color: white;
+	z-index: 1;
+	border: 1px solid black;
+	visibility:hidden;
+  }
+<!--
+.CtrTxt {              color:#000000; position:absolute; z-index:2; font-size:8.0px; text-align:left;  }
+.CellNumbering {       color:#000000; position:absolute; z-index:2; font-size:8.0px; font-family:Helvetica,sans-serif; line-height:normal;      }
+.CellLettering {       color:#000000; position:absolute; z-index:3; text-align:center; font-family:Helvetica,sans-serif; line-height:normal;      }
+.ClueNum {             color:#000000; position:absolute; z-index:2; font-size:8.0px; text-align:left; font-family:sans-serif; line-height:normal;        }
+.ClueText {            color:#000000; position:absolute; z-index:2; font-size:8.0px; text-align:left; font-family:sans-serif; line-height:normal;        }
+DIV.WSLetter {         display:table-cell; cursor:default; color:#000000; position:absolute; z-index:3; text-align:center; vertical-align:center; font-family:Helvetica,sans-serif;      }
+.WSLoop {              position:absolute; z-index:-10; }
+.WSLine {              position:absolute; z-index:-10; opacity:0.40;   }
+.HeaderText {          color:#000000; position:absolute; z-index:2; font-size:8.0px; text-align:left; font-family:sans-serif; line-height:normal;        }
+.TitleText {           color:#000000; position:absolute; z-index:2; font-size:8.0px; text-align:center; font-family:sans-serif; line-height:normal;        }
+.Calibrate {           color:#000000; position:absolute; z-index:4; font-size:25px; text-align:left;   }
+.CWGrid {              position:absolute; z-index:2; }
+.DocPage {             position:absolute; font-family: Helvetica,sans-serif; z-index:2; text-align:left; top:25px; left:25px; width:213px; height:275px; line-height:110%; }
+.FreePage {            position:absolute; font-family: Helvetica,sans-serif; z-index:2; text-align:center; vertical-align:top; line-height:110%; background:white; }
+.FreeSection {         position:relative; vertical-align:top; z-index:3; }
+.AlignTop {            vertical-align:top; }
+td    {                vertical-align:top; }
+.Num  {                width:25px; vertical-align:top; }
+.Text {                vertical-align:top; }
+-->
+</style>
+
+
+
+
+
+
+
+
+
+
+<script src="./Animals_files/ca-pub-2469845013248145.js.descarga"></script><script async="" src="./Animals_files/analytics.js.descarga"></script><script type="text/javascript" src="./Animals_files/jquery.min.js.descarga"></script>
+<script type="text/javascript">
+
+var SavedBackground = "http://images.puzzle-maker.com/Preview/sunbeams.jpg";
+var TabDown = "best";
+var DocReady = false;
+var StoredBtn;
+var bgSlider;
+var popSlider;
+var WSDataParadigm = "GUI";
+
+$(document).ready(function(){
+  window.DocReady = true;
+  trySubmit(null);
+
+  bgSlider = document.getElementById('BackgroundSlider');
+  popSlider = document.getElementById('PuzzlePopSlider');
+
+  noUiSlider.create(bgSlider, {
+	start: [50],
+	connect: false,
+	range: { 'min': 0, 'max': 100 }
+  });
+  noUiSlider.create(popSlider, {
+	start: [50],
+	connect: false,
+	range: { 'min': 0, 'max': 100 }
+  });
+  bgSlider.noUiSlider.on('slide',setBg);
+
+  // 2016-05-10 block inserted to initialize sliders
+  var bgStr  = $('[name=BackgroundOpacity]').val();
+  var popStr = $('[name=PuzzlePopOpacity]').val();
+  if( ! (bgStr > 0   &&  popStr > 0)  ){ // if undefined or defined as default 0, get legacy values. (Use 0.01 as substitute for user-selected 0.00.)
+	var InkSaver  = $('[name=InkSaver]').val();
+	bgStr = (InkSaver / 2.55);
+	if(bgStr <= 0){ bgStr = 0.01; } // Keep 0.00 reserved for undefined.
+	$('[name=BackgroundOpacity]').val(bgStr);
+	var Alpha = $('[name=alpha]').val();
+	//alert( InkSaver + ", Alpha=" + Alpha );
+	if( Alpha.indexOf('%') > 0 ){  Alpha = Alpha.substring(0,Alpha.indexOf('%')); }
+	popStr = Alpha;
+	//alert( bgStr + ", popStr=" + popStr );
+	$('[name=PuzzlePopOpacity]').val(popStr);
+  }
+
+  bgSlider.noUiSlider.set( $('[name=BackgroundOpacity]').val() );
+  popSlider.noUiSlider.on('slide',setPop);
+  popSlider.noUiSlider.set( $('[name=PuzzlePopOpacity]').val() );
+  setBg();
+  setPop();
+  $('.popControlCell').css('visibility','visible');
+
+  // Internal to PuzType conversion
+  if( $('#PuzType').val() == 'WS' ){
+	var DirCount = $('input[name="Directions"]').val();
+	//alert( "Detected WS number of direstions:  " + DirCount );
+	if( DirCount == "2" ){ $('#PuzType').val('WS2'); }
+	if( DirCount == "3" ){ $('#PuzType').val('WS3'); }
+	if( DirCount == "4" ){ $('#PuzType').val('WS4'); }
+	WSDataParadigm = "GUI";
+  }
+
+});
+
+
+
+function PuzType2Internal()
+{
+	// Convert user interface puzzle type to its internal representation.
+	var DesiredType = $('#PuzType').val();
+	//alert( "Converting " + DesiredType );
+	if( WSDataParadigm == "GUI" ){
+		if( DesiredType == 'WS' ){
+			$('input[name="Directions"]').val('8');
+		} else if( DesiredType == 'WS2' ){
+			$('#PuzType').val('WS');
+			$('input[name="Directions"]').val('2');
+		} else if( DesiredType == 'WS3' ){
+			$('#PuzType').val('WS');
+			$('input[name="Directions"]').val('3');
+		} else if( DesiredType == 'WS4' ){
+			$('#PuzType').val('WS');
+			$('input[name="Directions"]').val('4');
+		} else {
+			// This causes problems:  $('input[name="Directions"]').val('8');
+		}
+		WSDataParadigm = "pAD"; 
+	}
+}
+
+
+
+
+function setBg(){
+	var opVal = bgSlider.noUiSlider.get();
+	var strBC = 'rgba(255,255,255,' + (opVal/100) + ')';
+	$('#BackgroundOp').css('background-color', strBC );
+	$('.PopControlBackground').css('background-color', strBC );
+	$('[name=BackgroundOpacity]').val(opVal);
+}
+
+
+function setPop(){
+	var opVal = popSlider.noUiSlider.get();
+	var strBC = 'rgba(255,255,255,' + (opVal/100) + ')';
+	$('.cssPop').css('background-color', strBC );
+	var strBC = 'rgba(0,0,0,' + (opVal/100) + ')';
+	$('.cssHide').css('background-color', strBC );
+	$('[name=PuzzlePopOpacity]').val(opVal);
+}
+
+
+
+function trySubmit(ButtonToStore)
+{
+	var result = false;
+	if(  Boolean(ButtonToStore)  ){
+		window.StoredBtn = ButtonToStore;
+	}
+	if(  window.DocReady  ){
+		if(  Boolean(document.MyForm.action)  &&  Boolean(window.StoredBtn)  ){ 
+			PuzType2Internal();
+			window.StoredBtn.click(); // can't use submit() because of form elements named submit.
+			result = true;
+		}
+	}
+	return result;
+}
+
+
+function tab_good()
+{
+	document.getElementById('FadeBackgroundArea').style.zIndex="998";
+	document.getElementById('ClickForPictures').style.top='0px';
+	document.getElementById('FadeOptionsArea').style.zIndex="998";
+	window.TabDown = "good";
+	document.getElementById('tabdown').value = "good";
+	document.getElementById('HiddenGood').style.top='5px';
+	document.getElementById('HiddenBetter').style.top='-1999px';
+	document.getElementById('HiddenBest').style.top='-999px';
+	/*document.getElementById('background').setAttribute('src','http://images.puzzle-maker.com/Preview/sunbeams.jpg');*/
+	document.getElementById(  'GoodTab').style.backgroundColor="#b3bfd9";
+	document.getElementById('BetterTab').style.backgroundColor="#909fc2";
+	document.getElementById(  'BestTab').style.backgroundColor="#909fc2";
+	document.getElementById('PreviewPanel').style.height="1348px";
+	document.getElementById('FreeClues').style.opacity='1';
+	document.getElementById('FreeClues').style.filter='alpha(opacity=100)';
+}
+
+function tab_better()
+{
+	window.TabDown = "better";
+	document.getElementById('tabdown').value = "better";
+	restoreSavedBackground();
+	document.getElementById('HiddenGood').style.top='-1999px';
+	document.getElementById('HiddenBetter').style.top='5px';
+	document.getElementById('HiddenBest').style.top='-1999px';
+	document.getElementById(  'GoodTab').style.backgroundColor="#909fc2";
+	document.getElementById('BetterTab').style.backgroundColor="#b3bfd9";
+	document.getElementById(  'BestTab').style.backgroundColor="#909fc2";
+	document.getElementById('FadeBackgroundArea').style.zIndex="998";
+	document.getElementById('ClickForPictures').style.top='0px';
+	document.getElementById('FadeOptionsArea').style.zIndex="998";
+	document.getElementById('Caption2').innerHTML="Preview of &quot;Better&quot; puzzle, pdf page 1";
+	document.getElementById('PreviewPanel').style.height="465";
+}
+
+
+function Solution_Hide()
+{
+	$('.WSLoop').css({ opacity:0.0 });
+	$('.WSLine').css({ opacity:0.0 });
+	$('.CellLettering').css({ opacity:0.0 });
+	$('.ClueText').css({ opacity:1.0 });
+	$('.ClueNum').css({ opacity:1.0 });
+	if( window.TabDown == "good"   ){ tab_good();   }
+	if( window.TabDown == "better" ){ tab_better(); }
+	if( window.TabDown == "best"   ){ tab_best();   }
+}
+
+function Solution_Show()
+{
+	$('.WSLoop').css({ opacity:1.0 });
+	$('.WSLine').css({ opacity:1.0 });
+	$('.CellLettering').css({ opacity:1.0 });
+	$('.ClueText').css({ opacity:0.0 });
+	$('.ClueNum').css({ opacity:0.0 });
+	if( window.TabDown == "good" ){
+		document.getElementById('HiddenGood').style.top='5px';
+		document.getElementById('HiddenBetter').style.top='-1999px';
+		document.getElementById('HiddenBest').style.top='-999px';
+		document.getElementById('FreeClues').style.opacity='0';
+		document.getElementById('FreeClues').style.filter='alpha(opacity=0)';
+	}
+	if( window.TabDown == "better" ){
+		document.getElementById('Caption2').innerHTML = "Preview of &quot;Better&quot; solution, pdf page 2";
+	}
+	if( window.TabDown == "best" ){
+		document.getElementById('HiddenBetter').style.top='5px';
+		document.getElementById('HiddenBest').style.top='-1999px';
+		document.getElementById('Caption2').innerHTML = "Preview of &quot;Best&quot; solution, pdf page 3";
+		document.getElementById('PreviewPanel').style.height="465";
+	}
+}
+
+function tab_best()
+{
+	window.TabDown = "best";
+	document.getElementById('tabdown').value = "best";
+	restoreSavedBackground();
+	document.getElementById('HiddenGood').style.top='-1999px';
+	document.getElementById('HiddenBetter').style.top='465px';
+	document.getElementById('HiddenBest').style.top='5px';
+	document.getElementById(  'GoodTab').style.backgroundColor="#909fc2";
+	document.getElementById('BetterTab').style.backgroundColor="#909fc2";
+	document.getElementById(  'BestTab').style.backgroundColor="#b3bfd9";
+	document.getElementById('FadeBackgroundArea').style.zIndex="-999";
+	document.getElementById('ClickForPictures').style.top='-2000px';
+	document.getElementById('FadeOptionsArea').style.zIndex="-999";
+	document.getElementById('Caption2').innerHTML="&quot;Best&quot; pdf page 2 (same as &quot;Better&quot; puzzle)";
+	document.getElementById('PreviewPanel').style.height="925";
+}
+
+function tab_restore()
+{
+	window.TabDown = document.getElementById('tabdown').value;
+	if( window.TabDown == "good"   ){ 
+		tab_good();   
+	}
+	else if( window.TabDown == "better" ){ 
+		tab_better(); 
+	} else { 
+		tab_best();   
+	}
+	Solution_Hide();
+	restoreSavedBackground();
+}
+
+function viewOtherBackground( OtherBackground )
+{
+	document.getElementById('background').setAttribute('src',OtherBackground);
+}
+
+function restoreSavedBackground()
+{
+	if( window.TabDown == "best" ){
+		document.getElementById('background').setAttribute('src',window.SavedBackground);
+	} else {
+		document.getElementById('background').setAttribute('src','http://images.puzzle-maker.com/Preview/blank_white.jpg');
+	}
+}
+
+
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-66847202-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</head>
+<body bgcolor="#024074">
+<!-- 14  of 14 -->
+
+
+ <!--[if IE 6]>
+ <style type="text/css">
+ img#bg { z-index: -1; }
+ </style>
+ <![endif]--> 
+
+
+<form name="MyForm" id="MyForm" method="POST" action="http://my.puzzle-maker.com/crossword_Design.cgi" onsubmit="return OnSubmitForm();">  <!-- was /crossword_Preview.cgi -->
+
+<!-- INSTRUCTIONS SECTION -->
+
+<div class="PPanel" style="Left:10px; top:10px; height:250px; width:265px;">
+ <div class="PHeader">Instructions</div>
+ <div class="PText">
+	<span style=";">
+		14 of your 14 answer words were placed in the grid.</span> 
+	If you want to improve your puzzle, click "Rearrange" (below) and Back as needed.<br>
+
+  <input type="submit" name="submit" value="Edit" style="z-index:1000; width:70px;" onclick="this.form.target=&#39;_self&#39;;document.MyForm.action=&#39;/crossword_Edit.cgi&#39;;return trySubmit(this);" title="Change your title, subtitle, answers, or clues.">
+		to change clues, answers or title.<br> 
+  <input type="submit" name="submit" value="Open" style="z-index:1000; width:70px;" onclick="this.form.target=&#39;_self&#39;;document.MyForm.action=&#39;/crossword_Open.cgi&#39;;return trySubmit(this);" title="See a list of all the puzzles you have saved.">
+		to see your other puzzles.<br> 
+  <input type="submit" name="submit" value="Save" style="z-index:1000; width:70px;" onclick="this.form.target=&#39;_self&#39;;document.MyForm.action=&#39;/crossword_Save.cgi&#39;;return trySubmit(this);" title="Save your puzzle in your online account. Do this to keep your puzzle and changes.">
+		to save puzzle &amp; changes online.<br>
+
+  <input type="submit" name="submit" style="z-index:1000; width:95px; height:22px; font-weight:bold; color:#E03030;" value="Print / Next" onclick="this.form.target=&#39;_self&#39;;document.MyForm.action=&#39;/crossword_Print.cgi&#39;;return trySubmit(this);" title="Choose one of the four printing options, some of which let you save your puzzle as a PDF file that you can save locally, email and print anywhere.">
+	<span style=""> 
+		when ready to print or buy.<br>
+	</span>
+
+  <span style="vertical-align:baseline">
+	<input type="submit" name="submit" value="Rearrange" class="TextButton" style="vertical-align:baseline" id="RearrangeBtn" title="Rearrange the words in the puzzle. Some arrangements look better than others. You can use your web browser&#39;s &#39;Back&#39; button to undo this." onclick="this.form.target=&#39;_self&#39;; document.MyForm.action=&#39;/crossword_Preview.cgi&#39;;return trySubmit(this);"> &nbsp; (can be repeated)
+		<br>
+	<input type="submit" name="submit" value="Contact us" class="TextButton" style="vertical-align:baseline " title="Opens a new tab with a form for emailing us." onclick="this.form.target=&#39;_blank&#39;; document.MyForm.action=&#39;/crossword_ContactUs.cgi&#39;; return trySubmit(this);">  &nbsp; &nbsp; &nbsp;
+	<input type="submit" name="submit" value="Start a new puzzle" class="TextButton" style="vertical-align:baseline" title="Opens a new tab so you can create a new crossword or word search puzzle. (Leaves current puzzle in current tab.  You might want to save it first.)" onclick="this.form.target=&#39;_blank&#39;; document.MyForm.action=&#39;/crossword_StartNew.cgi&#39;; return trySubmit(this);">
+	<br>
+  </span>
+	<br>
+	
+  <span id="debugField"></span>
+ </div>
+</div>
+
+
+<!-- OPTIONS -->
+
+<div class="PPanel" style="top:270px; left:10px; height:310px; width:265px;">
+ <img id="FadeOptionsArea" src="./Animals_files/FadeBackgroundArea.png" style="position: absolute; top: 110px; left: 0px; height: 108px; width: 265px; cursor: pointer; z-index: -999;" title="Click to enable background picture and &quot;Best&quot; tab." onclick="tab_best(); document.getElementById(&#39;UpdateBtn&#39;).click();" alt="">
+ <div class="PHeader">Options</div>
+ <div class="PText">
+	<font size="-2"><br></font>
+	Puzzle type: 
+	<select id="PuzType" name="PuzType" style="width:185px; height:22px;" onchange="document.getElementById(&#39;RearrangeBtn&#39;).click();" title="Switches puzzle type.  Please note that crossword puzzles should have clues. Clues are optional for word search puzzles.">
+		<option value="FFCW" selected="selected">crossword</option>
+		<option value="WS">word search</option>
+		<option value="WS4">word search - Easy 4 directions ⇒ ⇓ ⇘ ⇗</option>
+		<option value="WS3">word search - Easy 3 directions ⇒ ⇓ ⇘</option>
+		<option value="WS2">word search - Easy 2 directions ⇒ ⇓</option>
+	</select><br>
+
+<!-- This feature awaits a subwindow for widget for proper GUI:
+	Adjust clues:
+	<select name="AdjustClueSize" style="width:45px; height:22px;" onChange="document.getElementById('UpdateBtn').click();"
+	   title="Adjust the font size of the clues. Add the number (in points) to the suggested font size. Enlarging the clues can take space awary from the grid of boxes, forcing them smaller.">
+		<option value="-4">-4</option>
+		<option value="-3">-3</option>
+		<option value="-2">-2</option>
+		<option value="-1">-1</option>
+		<option value="0" selected="selected" >0</option>
+		<option value="1">+1</option>
+		<option value="2">+2</option>
+		<option value="3">+3</option>
+		<option value="4">+4</option>
+		<option value="5">+5</option>
+		<option value="6">+6</option>
+		<option value="7">+7</option>
+		<option value="8">+8</option>
+		<option value="9">+9</option>
+	</select> &nbsp; Margins:
+	<select name="AdjustWhitespace" style="width:72px; height:22px;" onChange="document.getElementById('UpdateBtn').click();"
+	   title="This lets you reduce the space between features of the puzzle, including reducing the size of the margins.">
+		<option value="1" selected="selected" >Normal</option>
+		<option value="2">Less</option>
+		<option value="4">Much less</option>
+		<option value="9">Crowded</option>
+	</select><br>
+-->
+
+	<input type="checkbox" name="Worksheet" value="Yes" onchange="document.getElementById(&#39;UpdateBtn&#39;).click();">Make it a worksheet (adds "Name___").<br>
+	<input type="checkbox" name="Wordbank" value="Yes" onchange="document.getElementById(&#39;UpdateBtn&#39;).click();">Provide a list of answer words.<br><br>
+
+	Picture intensity &amp; Puzzle contrast:
+	<div style="width:100%; height:75px;">
+		<div id="BackgroundSlider" class="sliders sliderSize noUi-target noUi-ltr noUi-horizontal noUi-background" style="background-image:url(&#39;http://cdn.puzzle-maker.com/PNG/InkSaverGradientHorz.png&#39;);"><div class="noUi-base"><div class="noUi-origin" style="left: 0.01%;"><div class="noUi-handle noUi-handle-lower"></div></div></div></div>
+		<div id="PuzzlePopSlider" class="sliders sliderSize cssPop noUi-target noUi-ltr noUi-horizontal noUi-background" style="background-image: url(&quot;http://cdn.puzzle-maker.com/PNG/PopControlBackgroundHorz.png&quot;); background-color: rgba(255, 255, 255, 0.498039);">
+			<div class="popControlCell PopControlBackground" style="border: 0px; left: 0px; top: 0px; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0); visibility: visible;"></div>
+			<div class="popControlCell" style="background-color: rgba(255, 255, 255, 0); left: 5px; visibility: visible;"></div>
+			<div class="popControlCell" style="background-color: rgba(255, 255, 255, 0.0980392); left: 23px; visibility: visible;"></div>
+			<div class="popControlCell" style="background-color: rgba(255, 255, 255, 0.2); left: 41px; visibility: visible;"></div>
+			<div class="popControlCell" style="background-color: rgba(255, 255, 255, 0.298039); left: 59px; visibility: visible;"></div>
+			<div class="popControlCell" style="background-color: rgba(255, 255, 255, 0.4); left: 77px; visibility: visible;"></div>
+			<div class="popControlCell" style="background-color: rgba(255, 255, 255, 0.498039); left: 95px; visibility: visible;"></div>
+			<div class="popControlCell" style="background-color: rgba(255, 255, 255, 0.6); left: 113px; visibility: visible;"></div>
+			<div class="popControlCell" style="background-color: rgba(255, 255, 255, 0.701961); left: 131px; visibility: visible;"></div>
+			<div class="popControlCell" style="background-color: rgba(255, 255, 255, 0.8); left: 149px; visibility: visible;"></div>
+			<div class="popControlCell" style="background-color: rgba(255, 255, 255, 0.901961); left: 167px; visibility: visible;"></div>
+			<div class="popControlCell" style="background-color: rgb(255, 255, 255); left: 185px; visibility: visible;"></div>
+		<div class="noUi-base"><div class="noUi-origin" style="left: 50%;"><div class="noUi-handle noUi-handle-lower"></div></div></div></div>
+	</div>
+	
+
+	<span style="color:black; background-color:#e1e7f0; padding-top:5px; padding-bottom:2px; text-weight:bold; cursor:pointer;" onclick="document.getElementById(&#39;BlackInk&#39;).click();return true;" title="Use normal black font color for the clues. Lighten the area around clues to make them more visible.  Best for light to medium background pictures.">
+	  <input id="BlackInk" type="radio" name="CluesBox" value="Lighten" checked="checked" style="background-color:#e1e7f0;" onchange="document.getElementById(&#39;UpdateBtn&#39;).click();">Clues in black ink.&nbsp;
+	</span>
+	&nbsp;&nbsp;
+	<span style="color:white; background-color:#333333; padding-top:5px; padding-bottom:2px; text-weight:bold; cursor:pointer;" onclick="document.getElementById(&#39;WhiteInk&#39;).click();return true;" title="Use white font color for the clues. Darken the area around clues to make them more visible.  Best for dark to black background pictures.">
+	  <input id="WhiteInk" type="radio" name="CluesBox" value="Darken" style="background-color:#333333" onchange="document.getElementById(&#39;UpdateBtn&#39;).click();">
+		white ink.&nbsp;
+	</span><br>
+
+
+
+
+
+
+	<!--
+	 Solution Style &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Soloution Color <br>
+	 <select name="WSSolType" style="width:100px; height:22px;" onChange="document.getElementById('UpdateBtn').click();" 
+		title="This lets you control the transparency of the little boxes. It also fades the background picture near the clues to make them easier to read.">
+	 <option value="FilledLoops" selected="selected" >FilledLoops</option>
+	 <option value="PlainLoops">PlainLoops</option>
+	 <option value="Markers">Markers</option>
+	 <option value="Lines">Lines</option>
+	 </select>
+ 
+	 <select name="WSSolColor" style="width:100px; height:22px;" onChange="document.getElementById('UpdateBtn').click();" 
+		title="This lets you control the transparency of the little boxes. It also fades the background picture near the clues to make them easier to read.">
+	 <option value="Multi" selected="selected" >Multi</option>
+	 <option value="Black">Black</option>
+	 <option value="Brown">Brown</option>
+	 <option value="Magenta">Magenta</option>
+	 <option value="Red">Red</option>
+	 <option value="Orange">Orange</option>
+	 <option value="Yellow">Yellow</option>
+	 <option value="Green">Green</option>
+	 <option value="Teal">Teal</option>
+	 <option value="Blue">Blue</option>
+	 <option value="Violet">Violet</option>
+	 </select><div style="font-size:8pt;"><br></div>
+	-->
+
+
+
+
+	<span style="position:relative; top:4px">
+		Click <input type="submit" name="submit" value="Update Options" id="UpdateBtn" class="TextButton" style="vertical-align:baseline" title="Click this if your Options changes don&#39;t show up automatically." onclick="this.form.target=&#39;_self&#39;; document.MyForm.action=&#39;/crossword_Preview.cgi&#39;;return trySubmit(this);"> if necessary.
+	</span>
+ </div>
+</div>
+
+<!-- SOLUTION VIEW -->
+<div id="SolutionHover" class="PPanel" style="top:590px; left:10px; height:50px; width:265px;" onmouseover="Solution_Show(); document.getElementById(&#39;SolutionHover&#39;).style.backgroundColor=&#39;#d4dbe9&#39;;" onmouseout="Solution_Hide(); document.getElementById(&#39;SolutionHover&#39;).style.backgroundColor=&#39;#b3bfd9&#39;;">
+ <div class="PHeader">Preview Solution Page<br>
+	<span style="font-size:12px; font-weight:normal;">Hover mouse here to see solution.</span>
+ </div>
+</div>
+
+
+<!-- PUZZLE PREVIEW TABS -->
+<div id="GoodTab" class="PPanel" style="top: 10px; left: 300px; height: 45px; width: 105px; cursor: pointer; background-color: rgb(144, 159, 194);" onclick="tab_good();"> <!-- document.getElementById('UpdateBtn').click();">-->
+   <div class="TabText1">Good</div>
+   <div class="TabText2">(free)</div>
+</div>
+<div id="BetterTab" class="PPanel" style="top: 10px; left: 415px; height: 45px; width: 105px; cursor: pointer; background-color: rgb(144, 159, 194);" onclick="tab_better();"> <!-- document.getElementById('UpdateBtn').click();">-->
+   <div class="TabText1">Better</div>
+   <div class="TabText2" style="">
+	   ($2.95)
+   </div>
+</div>
+<div id="BestTab" class="PPanel" style="top: 10px; left: 530px; height: 45px; width: 105px; cursor: pointer; background-color: rgb(179, 191, 217);" onclick="tab_best();"> <!-- document.getElementById('UpdateBtn').click();">-->
+   <div class="TabText1">Best</div>
+   <div class="TabText2" style="">
+	   ($4.95)
+   </div>
+</div>
+<!-- PUZZLE PREVIEW PANEL -->
+<div id="PreviewPanel" class="PPanel" style="top:55px; left:285px; height:1385px; width:368px; z-index:-10;">
+
+  <!--  div id="HiddenBest" style="position:absolute; top:5px; left:10px; width:290px; height:400px;"  -->
+  <div id="HiddenBest" style="position:absolute; top:5px; left:10px; width:334px; height:460px;">
+    <span id="Caption1" class="ToolText" style="top:3px; left:0px; width:334px; text-align:center;">Preview of "Best" puzzle, pdf page 1</span>
+    
+<!-- BackgroundOpacity=, + OPACITYSTR='background-color:rgba(255,255,255,1.00000); , + PuzzlePopOpacity='' -->
+<img src="./Animals_files/sunbeams.jpg" alt="background" id="background" style="position:absolute; left:0px; top:20px; width:348px; height:431px; z-index:-1000;">
+<div id="BackgroundOp" style="position: absolute; left: 0px; top: 20px; width: 348px; height: 431px; z-index: -900; background-color: rgba(255, 255, 255, 0);"></div>
+<span class="TitleText" style="left:0px; top:55px; width:348px; font-size:20px;  font-family:serif; text-shadow: 0px 1.1px 0.0px rgba(255,255,255,0.3), 0px -1.1px 0.0px rgba(255,255,255,0.3), 1.1px 0px 0.0px rgba(255,255,255,0.3), -1.1px 0px 0.0px rgba(255,255,255,0.3), 1.1px 1.1px 0.0px rgba(255,255,255,0.3), 1.1px -1.1px 0.0px rgba(255,255,255,0.3), -1.1px -1.1px 0.0px rgba(255,255,255,0.3), -1.1px 1.1px 0.0px rgba(255,255,255,0.3); text-align:center">Animals</span>
+<img name="ClueBox" src="./Animals_files/WhiteAlpha000.png" class="cssPop" alt="" style="position: absolute; z-index: -800; left: 24px; top: 327px; width: 286px; height: 95px; background-color: rgba(255, 255, 255, 0.498039);">
+<img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 118px; top: 104px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="B in BIRD" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="17" height="1" style="position:absolute; cursor:default; left:118px; top:104px; z-index:102" alt="">
+<img src="./Animals_files/BlackDot1.png" width="17" height="1" style="position:absolute; cursor:default; left:118px; top:120px; z-index:102" alt="">
+<span class="CellNumbering" style="left:120px; top:104px; font-size:6px; z-index:103;">1</span>
+<span class="CellLettering" title="B in BIRD" style="cursor: default; left: 120px; top: 106px; width: 16px; font-size: 13px; z-index: 104; opacity: 0;">B</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 118px; top: 120px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="I in BIRD" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="17" height="1" style="position:absolute; cursor:default; left:118px; top:120px; z-index:202" alt="">
+<span class="CellLettering" title="I in BIRD" style="cursor: default; left: 120px; top: 122px; width: 16px; font-size: 13px; z-index: 204; opacity: 0;">I</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 182px; top: 120px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="L in LIZZARD" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="17" height="1" style="position:absolute; cursor:default; left:182px; top:120px; z-index:206" alt="">
+<span class="CellNumbering" style="left:184px; top:120px; font-size:6px; z-index:207;">2</span>
+<span class="CellLettering" title="L in LIZZARD" style="cursor: default; left: 184px; top: 122px; width: 16px; font-size: 13px; z-index: 208; opacity: 0;">L</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 118px; top: 136px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="Common R in RABBIT &amp; BIRD" class="cssPop">
+<span class="CellNumbering" style="left:120px; top:136px; font-size:6px; z-index:303;">3</span>
+<span class="CellLettering" title="Common R in RABBIT &amp; BIRD" style="cursor: default; left: 120px; top: 138px; width: 16px; font-size: 13px; z-index: 304; opacity: 0;">R</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 134px; top: 136px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="A in RABBIT" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="1" height="17" style="position:absolute; cursor:default; left:150px; top:136px; z-index:303" alt="">
+<span class="CellLettering" title="A in RABBIT" style="cursor: default; left: 136px; top: 138px; width: 16px; font-size: 13px; z-index: 305; opacity: 0;">A</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 150px; top: 136px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="B in RABBIT" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="1" height="17" style="position:absolute; cursor:default; left:150px; top:136px; z-index:304" alt="">
+<img src="./Animals_files/BlackDot1.png" width="1" height="17" style="position:absolute; cursor:default; left:166px; top:136px; z-index:304" alt="">
+<span class="CellLettering" title="B in RABBIT" style="cursor: default; left: 152px; top: 138px; width: 16px; font-size: 13px; z-index: 306; opacity: 0;">B</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 166px; top: 136px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="B in RABBIT" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="1" height="17" style="position:absolute; cursor:default; left:166px; top:136px; z-index:305" alt="">
+<span class="CellLettering" title="B in RABBIT" style="cursor: default; left: 168px; top: 138px; width: 16px; font-size: 13px; z-index: 307; opacity: 0;">B</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 182px; top: 136px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="Common I in RABBIT &amp; LIZZARD" class="cssPop">
+<span class="CellLettering" title="Common I in RABBIT &amp; LIZZARD" style="cursor: default; left: 184px; top: 138px; width: 16px; font-size: 13px; z-index: 308; opacity: 0;">I</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 198px; top: 136px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="T in RABBIT" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="1" height="17" style="position:absolute; cursor:default; left:214px; top:136px; z-index:307" alt="">
+<span class="CellLettering" title="T in RABBIT" style="cursor: default; left: 200px; top: 138px; width: 16px; font-size: 13px; z-index: 309; opacity: 0;">T</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 246px; top: 136px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="B in BEAR" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="17" height="1" style="position:absolute; cursor:default; left:246px; top:136px; z-index:310" alt="">
+<img src="./Animals_files/BlackDot1.png" width="17" height="1" style="position:absolute; cursor:default; left:246px; top:152px; z-index:310" alt="">
+<span class="CellNumbering" style="left:248px; top:136px; font-size:6px; z-index:311;">4</span>
+<span class="CellLettering" title="B in BEAR" style="cursor: default; left: 248px; top: 138px; width: 16px; font-size: 13px; z-index: 312; opacity: 0;">B</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 118px; top: 152px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="D in BIRD" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="17" height="1" style="position:absolute; cursor:default; left:118px; top:168px; z-index:402" alt="">
+<span class="CellLettering" title="D in BIRD" style="cursor: default; left: 120px; top: 154px; width: 16px; font-size: 13px; z-index: 404; opacity: 0;">D</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 182px; top: 152px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="Z in LIZZARD" class="cssPop">
+<span class="CellLettering" title="Z in LIZZARD" style="cursor: default; left: 184px; top: 154px; width: 16px; font-size: 13px; z-index: 408; opacity: 0;">Z</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 246px; top: 152px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="E in BEAR" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="17" height="1" style="position:absolute; cursor:default; left:246px; top:152px; z-index:410" alt="">
+<span class="CellLettering" title="E in BEAR" style="cursor: default; left: 248px; top: 154px; width: 16px; font-size: 13px; z-index: 412; opacity: 0;">E</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 182px; top: 168px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="Common Z in ZEBRA &amp; LIZZARD" class="cssPop">
+<span class="CellNumbering" style="left:184px; top:168px; font-size:6px; z-index:507;">5</span>
+<span class="CellLettering" title="Common Z in ZEBRA &amp; LIZZARD" style="cursor: default; left: 184px; top: 170px; width: 16px; font-size: 13px; z-index: 508; opacity: 0;">Z</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 198px; top: 168px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="E in ZEBRA" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="1" height="17" style="position:absolute; cursor:default; left:214px; top:168px; z-index:507" alt="">
+<span class="CellLettering" title="E in ZEBRA" style="cursor: default; left: 200px; top: 170px; width: 16px; font-size: 13px; z-index: 509; opacity: 0;">E</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 214px; top: 168px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="B in ZEBRA" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="1" height="17" style="position:absolute; cursor:default; left:214px; top:168px; z-index:508" alt="">
+<img src="./Animals_files/BlackDot1.png" width="1" height="17" style="position:absolute; cursor:default; left:230px; top:168px; z-index:508" alt="">
+<span class="CellLettering" title="B in ZEBRA" style="cursor: default; left: 216px; top: 170px; width: 16px; font-size: 13px; z-index: 510; opacity: 0;">B</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 230px; top: 168px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="R in ZEBRA" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="1" height="17" style="position:absolute; cursor:default; left:230px; top:168px; z-index:509" alt="">
+<span class="CellLettering" title="R in ZEBRA" style="cursor: default; left: 232px; top: 170px; width: 16px; font-size: 13px; z-index: 511; opacity: 0;">R</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 246px; top: 168px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="Common A in ZEBRA &amp; BEAR" class="cssPop">
+<span class="CellLettering" title="Common A in ZEBRA &amp; BEAR" style="cursor: default; left: 248px; top: 170px; width: 16px; font-size: 13px; z-index: 512; opacity: 0;">A</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 182px; top: 184px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="A in LIZZARD" class="cssPop">
+<span class="CellLettering" title="A in LIZZARD" style="cursor: default; left: 184px; top: 186px; width: 16px; font-size: 13px; z-index: 608; opacity: 0;">A</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 246px; top: 184px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="R in BEAR" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="17" height="1" style="position:absolute; cursor:default; left:246px; top:200px; z-index:610" alt="">
+<span class="CellLettering" title="R in BEAR" style="cursor: default; left: 248px; top: 186px; width: 16px; font-size: 13px; z-index: 612; opacity: 0;">R</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 134px; top: 200px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="O in OSTRICH" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="1" height="17" style="position:absolute; cursor:default; left:134px; top:200px; z-index:703" alt="">
+<span class="CellNumbering" style="left:136px; top:200px; font-size:6px; z-index:704;">6</span>
+<span class="CellLettering" title="O in OSTRICH" style="cursor: default; left: 136px; top: 202px; width: 16px; font-size: 13px; z-index: 705; opacity: 0;">O</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 150px; top: 200px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="Common S in OSTRICH &amp; SPIDER" class="cssPop">
+<span class="CellNumbering" style="left:152px; top:200px; font-size:6px; z-index:705;">7</span>
+<span class="CellLettering" title="Common S in OSTRICH &amp; SPIDER" style="cursor: default; left: 152px; top: 202px; width: 16px; font-size: 13px; z-index: 706; opacity: 0;">S</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 166px; top: 200px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="T in OSTRICH" class="cssPop">
+<span class="CellLettering" title="T in OSTRICH" style="cursor: default; left: 168px; top: 202px; width: 16px; font-size: 13px; z-index: 707; opacity: 0;">T</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 182px; top: 200px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="Common R in OSTRICH &amp; LIZZARD" class="cssPop">
+<span class="CellLettering" title="Common R in OSTRICH &amp; LIZZARD" style="cursor: default; left: 184px; top: 202px; width: 16px; font-size: 13px; z-index: 708; opacity: 0;">R</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 198px; top: 200px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="I in OSTRICH" class="cssPop">
+<span class="CellLettering" title="I in OSTRICH" style="cursor: default; left: 200px; top: 202px; width: 16px; font-size: 13px; z-index: 709; opacity: 0;">I</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 214px; top: 200px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="Common C in OSTRICH &amp; CAT" class="cssPop">
+<span class="CellNumbering" style="left:216px; top:200px; font-size:6px; z-index:709;">8</span>
+<span class="CellLettering" title="Common C in OSTRICH &amp; CAT" style="cursor: default; left: 216px; top: 202px; width: 16px; font-size: 13px; z-index: 710; opacity: 0;">C</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 230px; top: 200px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="H in OSTRICH" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="1" height="17" style="position:absolute; cursor:default; left:246px; top:200px; z-index:709" alt="">
+<span class="CellLettering" title="H in OSTRICH" style="cursor: default; left: 232px; top: 202px; width: 16px; font-size: 13px; z-index: 711; opacity: 0;">H</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 102px; top: 216px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="L in LION" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="17" height="1" style="position:absolute; cursor:default; left:102px; top:216px; z-index:801" alt="">
+<span class="CellNumbering" style="left:104px; top:216px; font-size:6px; z-index:802;">9</span>
+<span class="CellLettering" title="L in LION" style="cursor: default; left: 104px; top: 218px; width: 16px; font-size: 13px; z-index: 803; opacity: 0;">L</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 150px; top: 216px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="P in SPIDER" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="17" height="1" style="position:absolute; cursor:default; left:150px; top:232px; z-index:804" alt="">
+<span class="CellLettering" title="P in SPIDER" style="cursor: default; left: 152px; top: 218px; width: 16px; font-size: 13px; z-index: 806; opacity: 0;">P</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 182px; top: 216px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="D in LIZZARD" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="17" height="1" style="position:absolute; cursor:default; left:182px; top:232px; z-index:806" alt="">
+<span class="CellLettering" title="D in LIZZARD" style="cursor: default; left: 184px; top: 218px; width: 16px; font-size: 13px; z-index: 808; opacity: 0;">D</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 214px; top: 216px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="A in CAT" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="17" height="1" style="position:absolute; cursor:default; left:214px; top:232px; z-index:808" alt="">
+<span class="CellLettering" title="A in CAT" style="cursor: default; left: 216px; top: 218px; width: 16px; font-size: 13px; z-index: 810; opacity: 0;">A</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 86px; top: 232px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="P in PIG" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="1" height="17" style="position:absolute; cursor:default; left:86px; top:232px; z-index:900" alt="">
+<span class="CellNumbering" style="left:88px; top:232px; font-size:6px; z-index:901;">10</span>
+<span class="CellLettering" title="P in PIG" style="cursor: default; left: 88px; top: 234px; width: 16px; font-size: 13px; z-index: 902; opacity: 0;">P</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 102px; top: 232px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="Common I in PIG &amp; LION" class="cssPop">
+<span class="CellLettering" title="Common I in PIG &amp; LION" style="cursor: default; left: 104px; top: 234px; width: 16px; font-size: 13px; z-index: 903; opacity: 0;">I</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 118px; top: 232px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="G in PIG" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="1" height="17" style="position:absolute; cursor:default; left:134px; top:232px; z-index:902" alt="">
+<span class="CellLettering" title="G in PIG" style="cursor: default; left: 120px; top: 234px; width: 16px; font-size: 13px; z-index: 904; opacity: 0;">G</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 150px; top: 232px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="I in SPIDER" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="17" height="1" style="position:absolute; cursor:default; left:150px; top:232px; z-index:904" alt="">
+<span class="CellLettering" title="I in SPIDER" style="cursor: default; left: 152px; top: 234px; width: 16px; font-size: 13px; z-index: 906; opacity: 0;">I</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 214px; top: 232px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="T in CAT" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="17" height="1" style="position:absolute; cursor:default; left:214px; top:232px; z-index:908" alt="">
+<img src="./Animals_files/BlackDot1.png" width="17" height="1" style="position:absolute; cursor:default; left:214px; top:248px; z-index:908" alt="">
+<span class="CellLettering" title="T in CAT" style="cursor: default; left: 216px; top: 234px; width: 16px; font-size: 13px; z-index: 910; opacity: 0;">T</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 102px; top: 248px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="O in LION" class="cssPop">
+<span class="CellLettering" title="O in LION" style="cursor: default; left: 104px; top: 250px; width: 16px; font-size: 13px; z-index: 1003; opacity: 0;">O</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 150px; top: 248px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="Common D in DOG &amp; SPIDER" class="cssPop">
+<span class="CellNumbering" style="left:152px; top:248px; font-size:6px; z-index:1005;">11</span>
+<span class="CellLettering" title="Common D in DOG &amp; SPIDER" style="cursor: default; left: 152px; top: 250px; width: 16px; font-size: 13px; z-index: 1006; opacity: 0;">D</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 166px; top: 248px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="O in DOG" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="1" height="17" style="position:absolute; cursor:default; left:182px; top:248px; z-index:1005" alt="">
+<span class="CellLettering" title="O in DOG" style="cursor: default; left: 168px; top: 250px; width: 16px; font-size: 13px; z-index: 1007; opacity: 0;">O</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 182px; top: 248px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="G in DOG" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="1" height="17" style="position:absolute; cursor:default; left:182px; top:248px; z-index:1006" alt="">
+<img src="./Animals_files/BlackDot1.png" width="1" height="17" style="position:absolute; cursor:default; left:198px; top:248px; z-index:1006" alt="">
+<span class="CellLettering" title="G in DOG" style="cursor: default; left: 184px; top: 250px; width: 16px; font-size: 13px; z-index: 1008; opacity: 0;">G</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 86px; top: 264px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="S in SNAKE" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="1" height="17" style="position:absolute; cursor:default; left:86px; top:264px; z-index:1100" alt="">
+<span class="CellNumbering" style="left:88px; top:264px; font-size:6px; z-index:1101;">12</span>
+<span class="CellLettering" title="S in SNAKE" style="cursor: default; left: 88px; top: 266px; width: 16px; font-size: 13px; z-index: 1102; opacity: 0;">S</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 102px; top: 264px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="Common N in SNAKE &amp; LION" class="cssPop">
+<span class="CellLettering" title="Common N in SNAKE &amp; LION" style="cursor: default; left: 104px; top: 266px; width: 16px; font-size: 13px; z-index: 1103; opacity: 0;">N</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 118px; top: 264px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="Common A in SNAKE &amp; ANT" class="cssPop">
+<span class="CellNumbering" style="left:120px; top:264px; font-size:6px; z-index:1103;">13</span>
+<span class="CellLettering" title="Common A in SNAKE &amp; ANT" style="cursor: default; left: 120px; top: 266px; width: 16px; font-size: 13px; z-index: 1104; opacity: 0;">A</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 134px; top: 264px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="K in SNAKE" class="cssPop">
+<span class="CellLettering" title="K in SNAKE" style="cursor: default; left: 136px; top: 266px; width: 16px; font-size: 13px; z-index: 1105; opacity: 0;">K</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 150px; top: 264px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="Common E in SNAKE &amp; SPIDER" class="cssPop">
+<span class="CellLettering" title="Common E in SNAKE &amp; SPIDER" style="cursor: default; left: 152px; top: 266px; width: 16px; font-size: 13px; z-index: 1106; opacity: 0;">E</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 118px; top: 280px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="N in ANT" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="17" height="1" style="position:absolute; cursor:default; left:118px; top:296px; z-index:1202" alt="">
+<span class="CellLettering" title="N in ANT" style="cursor: default; left: 120px; top: 282px; width: 16px; font-size: 13px; z-index: 1204; opacity: 0;">N</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 150px; top: 280px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="Common R in RAY &amp; SPIDER" class="cssPop">
+<span class="CellNumbering" style="left:152px; top:280px; font-size:6px; z-index:1205;">14</span>
+<span class="CellLettering" title="Common R in RAY &amp; SPIDER" style="cursor: default; left: 152px; top: 282px; width: 16px; font-size: 13px; z-index: 1206; opacity: 0;">R</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 166px; top: 280px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="A in RAY" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="1" height="17" style="position:absolute; cursor:default; left:182px; top:280px; z-index:1205" alt="">
+<span class="CellLettering" title="A in RAY" style="cursor: default; left: 168px; top: 282px; width: 16px; font-size: 13px; z-index: 1207; opacity: 0;">A</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 182px; top: 280px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="Y in RAY" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="1" height="17" style="position:absolute; cursor:default; left:182px; top:280px; z-index:1206" alt="">
+<img src="./Animals_files/BlackDot1.png" width="1" height="17" style="position:absolute; cursor:default; left:198px; top:280px; z-index:1206" alt="">
+<span class="CellLettering" title="Y in RAY" style="cursor: default; left: 184px; top: 282px; width: 16px; font-size: 13px; z-index: 1208; opacity: 0;">Y</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 118px; top: 296px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="T in ANT" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="17" height="1" style="position:absolute; cursor:default; left:118px; top:296px; z-index:1302" alt="">
+<img src="./Animals_files/BlackDot1.png" width="17" height="1" style="position:absolute; cursor:default; left:118px; top:312px; z-index:1302" alt="">
+<span class="CellLettering" title="T in ANT" style="cursor: default; left: 120px; top: 298px; width: 16px; font-size: 13px; z-index: 1304; opacity: 0;">T</span><img src="./Animals_files/BlackDot1.png" width="97" height="1" style="position:absolute; cursor:default; left:118px; top:136px; z-index:307" alt="">
+<img src="./Animals_files/BlackDot1.png" width="97" height="1" style="position:absolute; cursor:default; left:118px; top:152px; z-index:307" alt="">
+<img src="./Animals_files/BlackDot1.png" width="81" height="1" style="position:absolute; cursor:default; left:182px; top:168px; z-index:510" alt="">
+<img src="./Animals_files/BlackDot1.png" width="81" height="1" style="position:absolute; cursor:default; left:182px; top:184px; z-index:510" alt="">
+<img src="./Animals_files/BlackDot1.png" width="113" height="1" style="position:absolute; cursor:default; left:134px; top:200px; z-index:709" alt="">
+<img src="./Animals_files/BlackDot1.png" width="113" height="1" style="position:absolute; cursor:default; left:134px; top:216px; z-index:709" alt="">
+<img src="./Animals_files/BlackDot1.png" width="49" height="1" style="position:absolute; cursor:default; left:86px; top:232px; z-index:902" alt="">
+<img src="./Animals_files/BlackDot1.png" width="49" height="1" style="position:absolute; cursor:default; left:86px; top:248px; z-index:902" alt="">
+<img src="./Animals_files/BlackDot1.png" width="49" height="1" style="position:absolute; cursor:default; left:150px; top:248px; z-index:1006" alt="">
+<img src="./Animals_files/BlackDot1.png" width="49" height="1" style="position:absolute; cursor:default; left:150px; top:264px; z-index:1006" alt="">
+<img src="./Animals_files/BlackDot1.png" width="81" height="1" style="position:absolute; cursor:default; left:86px; top:264px; z-index:1104" alt="">
+<img src="./Animals_files/BlackDot1.png" width="81" height="1" style="position:absolute; cursor:default; left:86px; top:280px; z-index:1104" alt="">
+<img src="./Animals_files/BlackDot1.png" width="49" height="1" style="position:absolute; cursor:default; left:150px; top:280px; z-index:1206" alt="">
+<img src="./Animals_files/BlackDot1.png" width="49" height="1" style="position:absolute; cursor:default; left:150px; top:296px; z-index:1206" alt="">
+<img src="./Animals_files/Black1U76.png" width="47" height="2" style="position:absolute; cursor:default; left:135px; top:153px; z-index:305" alt="">
+<img src="./Animals_files/Black1U76.png" width="18" height="2" style="position:absolute; cursor:default; left:199px; top:153px; z-index:307" alt="">
+<img src="./Animals_files/Black1U76.png" width="16" height="2" style="position:absolute; cursor:default; left:121px; top:169px; z-index:402" alt="">
+<img src="./Animals_files/Black1U76.png" width="47" height="2" style="position:absolute; cursor:default; left:199px; top:185px; z-index:509" alt="">
+<img src="./Animals_files/Black1U76.png" width="16" height="2" style="position:absolute; cursor:default; left:249px; top:201px; z-index:610" alt="">
+<img src="./Animals_files/Black1U76.png" width="13" height="2" style="position:absolute; cursor:default; left:137px; top:217px; z-index:703" alt="">
+<img src="./Animals_files/Black1U76.png" width="15" height="2" style="position:absolute; cursor:default; left:167px; top:217px; z-index:705" alt="">
+<img src="./Animals_files/Black1U76.png" width="15" height="2" style="position:absolute; cursor:default; left:199px; top:217px; z-index:707" alt="">
+<img src="./Animals_files/Black1U76.png" width="18" height="2" style="position:absolute; cursor:default; left:231px; top:217px; z-index:709" alt="">
+<img src="./Animals_files/Black1U76.png" width="16" height="2" style="position:absolute; cursor:default; left:185px; top:233px; z-index:806" alt="">
+<img src="./Animals_files/Black1U76.png" width="13" height="2" style="position:absolute; cursor:default; left:89px; top:249px; z-index:900" alt="">
+<img src="./Animals_files/Black1U76.png" width="18" height="2" style="position:absolute; cursor:default; left:119px; top:249px; z-index:902" alt="">
+<img src="./Animals_files/Black1U76.png" width="16" height="2" style="position:absolute; cursor:default; left:217px; top:249px; z-index:908" alt="">
+<img src="./Animals_files/Black1U76.png" width="34" height="2" style="position:absolute; cursor:default; left:167px; top:265px; z-index:1006" alt="">
+<img src="./Animals_files/Black1U76.png" width="29" height="2" style="position:absolute; cursor:default; left:89px; top:281px; z-index:1101" alt="">
+<img src="./Animals_files/Black1U76.png" width="15" height="2" style="position:absolute; cursor:default; left:135px; top:281px; z-index:1103" alt="">
+<img src="./Animals_files/Black1U76.png" width="48" height="2" style="position:absolute; cursor:default; left:153px; top:297px; z-index:1206" alt="">
+<img src="./Animals_files/Black1U76.png" width="16" height="2" style="position:absolute; cursor:default; left:121px; top:313px; z-index:1302" alt="">
+<img src="./Animals_files/BlackDot1.png" width="1" height="65" style="position:absolute; cursor:default; left:102px; top:216px; z-index:1101" alt="">
+<img src="./Animals_files/BlackDot1.png" width="1" height="65" style="position:absolute; cursor:default; left:118px; top:216px; z-index:1101" alt="">
+<img src="./Animals_files/BlackDot1.png" width="1" height="65" style="position:absolute; cursor:default; left:118px; top:104px; z-index:402" alt="">
+<img src="./Animals_files/BlackDot1.png" width="1" height="65" style="position:absolute; cursor:default; left:134px; top:104px; z-index:402" alt="">
+<img src="./Animals_files/BlackDot1.png" width="1" height="49" style="position:absolute; cursor:default; left:118px; top:264px; z-index:1302" alt="">
+<img src="./Animals_files/BlackDot1.png" width="1" height="49" style="position:absolute; cursor:default; left:134px; top:264px; z-index:1302" alt="">
+<img src="./Animals_files/BlackDot1.png" width="1" height="97" style="position:absolute; cursor:default; left:150px; top:200px; z-index:1204" alt="">
+<img src="./Animals_files/BlackDot1.png" width="1" height="97" style="position:absolute; cursor:default; left:166px; top:200px; z-index:1204" alt="">
+<img src="./Animals_files/BlackDot1.png" width="1" height="113" style="position:absolute; cursor:default; left:182px; top:120px; z-index:806" alt="">
+<img src="./Animals_files/BlackDot1.png" width="1" height="113" style="position:absolute; cursor:default; left:198px; top:120px; z-index:806" alt="">
+<img src="./Animals_files/BlackDot1.png" width="1" height="49" style="position:absolute; cursor:default; left:214px; top:200px; z-index:908" alt="">
+<img src="./Animals_files/BlackDot1.png" width="1" height="49" style="position:absolute; cursor:default; left:230px; top:200px; z-index:908" alt="">
+<img src="./Animals_files/BlackDot1.png" width="1" height="65" style="position:absolute; cursor:default; left:246px; top:136px; z-index:610" alt="">
+<img src="./Animals_files/BlackDot1.png" width="1" height="65" style="position:absolute; cursor:default; left:262px; top:136px; z-index:610" alt="">
+<img src="./Animals_files/Black1U76.png" width="2" height="14" style="position:absolute; cursor:default; left:119px; top:219px; z-index:801" alt="">
+<img src="./Animals_files/Black1U76.png" width="2" height="14" style="position:absolute; cursor:default; left:119px; top:251px; z-index:1001" alt="">
+<img src="./Animals_files/Black1U76.png" width="2" height="30" style="position:absolute; cursor:default; left:135px; top:107px; z-index:202" alt="">
+<img src="./Animals_files/Black1U76.png" width="2" height="14" style="position:absolute; cursor:default; left:135px; top:155px; z-index:402" alt="">
+<img src="./Animals_files/Black1U76.png" width="2" height="14" style="position:absolute; cursor:default; left:135px; top:235px; z-index:902" alt="">
+<img src="./Animals_files/Black1U76.png" width="2" height="30" style="position:absolute; cursor:default; left:135px; top:283px; z-index:1302" alt="">
+<img src="./Animals_files/Black1U76.png" width="2" height="30" style="position:absolute; cursor:default; left:167px; top:219px; z-index:904" alt="">
+<img src="./Animals_files/Black1U76.png" width="2" height="14" style="position:absolute; cursor:default; left:167px; top:267px; z-index:1104" alt="">
+<img src="./Animals_files/Black1U76.png" width="2" height="14" style="position:absolute; cursor:default; left:199px; top:123px; z-index:206" alt="">
+<img src="./Animals_files/Black1U76.png" width="2" height="14" style="position:absolute; cursor:default; left:199px; top:155px; z-index:406" alt="">
+<img src="./Animals_files/Black1U76.png" width="2" height="14" style="position:absolute; cursor:default; left:199px; top:187px; z-index:606" alt="">
+<img src="./Animals_files/Black1U76.png" width="2" height="14" style="position:absolute; cursor:default; left:199px; top:219px; z-index:806" alt="">
+<img src="./Animals_files/Black1U76.png" width="2" height="14" style="position:absolute; cursor:default; left:199px; top:251px; z-index:1006" alt="">
+<img src="./Animals_files/Black1U76.png" width="2" height="14" style="position:absolute; cursor:default; left:199px; top:283px; z-index:1206" alt="">
+<img src="./Animals_files/Black1U76.png" width="2" height="14" style="position:absolute; cursor:default; left:215px; top:139px; z-index:307" alt="">
+<img src="./Animals_files/Black1U76.png" width="2" height="30" style="position:absolute; cursor:default; left:231px; top:219px; z-index:908" alt="">
+<img src="./Animals_files/Black1U76.png" width="2" height="14" style="position:absolute; cursor:default; left:247px; top:203px; z-index:709" alt="">
+<img src="./Animals_files/Black1U76.png" width="2" height="62" style="position:absolute; cursor:default; left:263px; top:139px; z-index:610" alt="">
+
+<span class="ClueNum" style="left: 37px; top: 334px; font-size: 7px; opacity: 1;">ACROSS</span>
+<span class="ClueNum" style="left: 37px; top: 352px; font-size: 7px; opacity: 1;">3</span>
+<span class="ClueText" style="left: 48px; top: 352px; width: 135px; font-size: 7px; opacity: 1;">Conejo</span>
+<span class="ClueNum" style="left: 37px; top: 361px; font-size: 7px; opacity: 1;">5</span>
+<span class="ClueText" style="left: 48px; top: 361px; width: 135px; font-size: 7px; opacity: 1;">Cebra</span>
+<span class="ClueNum" style="left: 37px; top: 370px; font-size: 7px; opacity: 1;">6</span>
+<span class="ClueText" style="left: 48px; top: 370px; width: 135px; font-size: 7px; opacity: 1;">Avestruz</span>
+<span class="ClueNum" style="left: 37px; top: 379px; font-size: 7px; opacity: 1;">10</span>
+<span class="ClueText" style="left: 48px; top: 379px; width: 135px; font-size: 7px; opacity: 1;">Puerco</span>
+<span class="ClueNum" style="left: 37px; top: 388px; font-size: 7px; opacity: 1;">11</span>
+<span class="ClueText" style="left: 48px; top: 388px; width: 135px; font-size: 7px; opacity: 1;">Perro</span>
+<span class="ClueNum" style="left: 37px; top: 397px; font-size: 7px; opacity: 1;">12</span>
+<span class="ClueText" style="left: 48px; top: 397px; width: 135px; font-size: 7px; opacity: 1;">Serpiente</span>
+<span class="ClueNum" style="left: 37px; top: 407px; font-size: 7px; opacity: 1;">14</span>
+<span class="ClueText" style="left: 48px; top: 407px; width: 135px; font-size: 7px; opacity: 1;">Mantarraya</span>
+<span class="ClueNum" style="left: 182px; top: 334px; font-size: 7px; opacity: 1;">DOWN</span>
+<span class="ClueNum" style="left: 182px; top: 352px; font-size: 7px; opacity: 1;">1</span>
+<span class="ClueText" style="left: 193px; top: 352px; width: 135px; font-size: 7px; opacity: 1;">Pájaro</span>
+<span class="ClueNum" style="left: 182px; top: 361px; font-size: 7px; opacity: 1;">2</span>
+<span class="ClueText" style="left: 193px; top: 361px; width: 135px; font-size: 7px; opacity: 1;">Lagartija</span>
+<span class="ClueNum" style="left: 182px; top: 370px; font-size: 7px; opacity: 1;">4</span>
+<span class="ClueText" style="left: 193px; top: 370px; width: 135px; font-size: 7px; opacity: 1;">Oso</span>
+<span class="ClueNum" style="left: 182px; top: 379px; font-size: 7px; opacity: 1;">7</span>
+<span class="ClueText" style="left: 193px; top: 379px; width: 135px; font-size: 7px; opacity: 1;">Araña</span>
+<span class="ClueNum" style="left: 182px; top: 388px; font-size: 7px; opacity: 1;">8</span>
+<span class="ClueText" style="left: 193px; top: 388px; width: 135px; font-size: 7px; opacity: 1;">Gato</span>
+<span class="ClueNum" style="left: 182px; top: 397px; font-size: 7px; opacity: 1;">9</span>
+<span class="ClueText" style="left: 193px; top: 397px; width: 135px; font-size: 7px; opacity: 1;">Leon</span>
+<span class="ClueNum" style="left: 182px; top: 407px; font-size: 7px; opacity: 1;">13</span>
+<span class="ClueText" style="left: 193px; top: 407px; width: 135px; font-size: 7px; opacity: 1;">Hormiga</span>
+
+  </div>
+
+  <div id="HiddenBetter" style="position: absolute; top: 465px; left: 10px; width: 334px; height: 460px;">
+    <span id="Caption2" class="ToolText" style="top:3px; left:0px; width:334px; text-align:center;">"Best" pdf page 2 (same as "Better" puzzle)</span>
+    
+<!-- BackgroundOpacity=, + OPACITYSTR='background-color:rgba(255,255,255,1.00000); , + PuzzlePopOpacity='' -->
+<table style="position:absolute; left:0px; top:20px; width:348px; height:431px; background-color:white; z-index:-1000; ">
+<tbody><tr> <td>&nbsp;</td></tr></tbody></table><span class="TitleText" style="left:0px; top:55px; width:348px; font-size:20px;  font-family:serif; text-align:center">Animals</span>
+<img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 118px; top: 104px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="B in BIRD" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="17" height="1" style="position:absolute; cursor:default; left:118px; top:104px; z-index:102" alt="">
+<img src="./Animals_files/BlackDot1.png" width="17" height="1" style="position:absolute; cursor:default; left:118px; top:120px; z-index:102" alt="">
+<span class="CellNumbering" style="left:120px; top:104px; font-size:6px; z-index:103;">1</span>
+<span class="CellLettering" title="B in BIRD" style="cursor: default; left: 120px; top: 106px; width: 16px; font-size: 13px; z-index: 104; opacity: 0;">B</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 118px; top: 120px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="I in BIRD" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="17" height="1" style="position:absolute; cursor:default; left:118px; top:120px; z-index:202" alt="">
+<span class="CellLettering" title="I in BIRD" style="cursor: default; left: 120px; top: 122px; width: 16px; font-size: 13px; z-index: 204; opacity: 0;">I</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 182px; top: 120px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="L in LIZZARD" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="17" height="1" style="position:absolute; cursor:default; left:182px; top:120px; z-index:206" alt="">
+<span class="CellNumbering" style="left:184px; top:120px; font-size:6px; z-index:207;">2</span>
+<span class="CellLettering" title="L in LIZZARD" style="cursor: default; left: 184px; top: 122px; width: 16px; font-size: 13px; z-index: 208; opacity: 0;">L</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 118px; top: 136px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="Common R in RABBIT &amp; BIRD" class="cssPop">
+<span class="CellNumbering" style="left:120px; top:136px; font-size:6px; z-index:303;">3</span>
+<span class="CellLettering" title="Common R in RABBIT &amp; BIRD" style="cursor: default; left: 120px; top: 138px; width: 16px; font-size: 13px; z-index: 304; opacity: 0;">R</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 134px; top: 136px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="A in RABBIT" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="1" height="17" style="position:absolute; cursor:default; left:150px; top:136px; z-index:303" alt="">
+<span class="CellLettering" title="A in RABBIT" style="cursor: default; left: 136px; top: 138px; width: 16px; font-size: 13px; z-index: 305; opacity: 0;">A</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 150px; top: 136px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="B in RABBIT" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="1" height="17" style="position:absolute; cursor:default; left:150px; top:136px; z-index:304" alt="">
+<img src="./Animals_files/BlackDot1.png" width="1" height="17" style="position:absolute; cursor:default; left:166px; top:136px; z-index:304" alt="">
+<span class="CellLettering" title="B in RABBIT" style="cursor: default; left: 152px; top: 138px; width: 16px; font-size: 13px; z-index: 306; opacity: 0;">B</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 166px; top: 136px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="B in RABBIT" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="1" height="17" style="position:absolute; cursor:default; left:166px; top:136px; z-index:305" alt="">
+<span class="CellLettering" title="B in RABBIT" style="cursor: default; left: 168px; top: 138px; width: 16px; font-size: 13px; z-index: 307; opacity: 0;">B</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 182px; top: 136px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="Common I in RABBIT &amp; LIZZARD" class="cssPop">
+<span class="CellLettering" title="Common I in RABBIT &amp; LIZZARD" style="cursor: default; left: 184px; top: 138px; width: 16px; font-size: 13px; z-index: 308; opacity: 0;">I</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 198px; top: 136px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="T in RABBIT" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="1" height="17" style="position:absolute; cursor:default; left:214px; top:136px; z-index:307" alt="">
+<span class="CellLettering" title="T in RABBIT" style="cursor: default; left: 200px; top: 138px; width: 16px; font-size: 13px; z-index: 309; opacity: 0;">T</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 246px; top: 136px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="B in BEAR" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="17" height="1" style="position:absolute; cursor:default; left:246px; top:136px; z-index:310" alt="">
+<img src="./Animals_files/BlackDot1.png" width="17" height="1" style="position:absolute; cursor:default; left:246px; top:152px; z-index:310" alt="">
+<span class="CellNumbering" style="left:248px; top:136px; font-size:6px; z-index:311;">4</span>
+<span class="CellLettering" title="B in BEAR" style="cursor: default; left: 248px; top: 138px; width: 16px; font-size: 13px; z-index: 312; opacity: 0;">B</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 118px; top: 152px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="D in BIRD" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="17" height="1" style="position:absolute; cursor:default; left:118px; top:168px; z-index:402" alt="">
+<span class="CellLettering" title="D in BIRD" style="cursor: default; left: 120px; top: 154px; width: 16px; font-size: 13px; z-index: 404; opacity: 0;">D</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 182px; top: 152px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="Z in LIZZARD" class="cssPop">
+<span class="CellLettering" title="Z in LIZZARD" style="cursor: default; left: 184px; top: 154px; width: 16px; font-size: 13px; z-index: 408; opacity: 0;">Z</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 246px; top: 152px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="E in BEAR" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="17" height="1" style="position:absolute; cursor:default; left:246px; top:152px; z-index:410" alt="">
+<span class="CellLettering" title="E in BEAR" style="cursor: default; left: 248px; top: 154px; width: 16px; font-size: 13px; z-index: 412; opacity: 0;">E</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 182px; top: 168px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="Common Z in ZEBRA &amp; LIZZARD" class="cssPop">
+<span class="CellNumbering" style="left:184px; top:168px; font-size:6px; z-index:507;">5</span>
+<span class="CellLettering" title="Common Z in ZEBRA &amp; LIZZARD" style="cursor: default; left: 184px; top: 170px; width: 16px; font-size: 13px; z-index: 508; opacity: 0;">Z</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 198px; top: 168px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="E in ZEBRA" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="1" height="17" style="position:absolute; cursor:default; left:214px; top:168px; z-index:507" alt="">
+<span class="CellLettering" title="E in ZEBRA" style="cursor: default; left: 200px; top: 170px; width: 16px; font-size: 13px; z-index: 509; opacity: 0;">E</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 214px; top: 168px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="B in ZEBRA" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="1" height="17" style="position:absolute; cursor:default; left:214px; top:168px; z-index:508" alt="">
+<img src="./Animals_files/BlackDot1.png" width="1" height="17" style="position:absolute; cursor:default; left:230px; top:168px; z-index:508" alt="">
+<span class="CellLettering" title="B in ZEBRA" style="cursor: default; left: 216px; top: 170px; width: 16px; font-size: 13px; z-index: 510; opacity: 0;">B</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 230px; top: 168px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="R in ZEBRA" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="1" height="17" style="position:absolute; cursor:default; left:230px; top:168px; z-index:509" alt="">
+<span class="CellLettering" title="R in ZEBRA" style="cursor: default; left: 232px; top: 170px; width: 16px; font-size: 13px; z-index: 511; opacity: 0;">R</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 246px; top: 168px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="Common A in ZEBRA &amp; BEAR" class="cssPop">
+<span class="CellLettering" title="Common A in ZEBRA &amp; BEAR" style="cursor: default; left: 248px; top: 170px; width: 16px; font-size: 13px; z-index: 512; opacity: 0;">A</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 182px; top: 184px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="A in LIZZARD" class="cssPop">
+<span class="CellLettering" title="A in LIZZARD" style="cursor: default; left: 184px; top: 186px; width: 16px; font-size: 13px; z-index: 608; opacity: 0;">A</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 246px; top: 184px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="R in BEAR" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="17" height="1" style="position:absolute; cursor:default; left:246px; top:200px; z-index:610" alt="">
+<span class="CellLettering" title="R in BEAR" style="cursor: default; left: 248px; top: 186px; width: 16px; font-size: 13px; z-index: 612; opacity: 0;">R</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 134px; top: 200px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="O in OSTRICH" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="1" height="17" style="position:absolute; cursor:default; left:134px; top:200px; z-index:703" alt="">
+<span class="CellNumbering" style="left:136px; top:200px; font-size:6px; z-index:704;">6</span>
+<span class="CellLettering" title="O in OSTRICH" style="cursor: default; left: 136px; top: 202px; width: 16px; font-size: 13px; z-index: 705; opacity: 0;">O</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 150px; top: 200px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="Common S in OSTRICH &amp; SPIDER" class="cssPop">
+<span class="CellNumbering" style="left:152px; top:200px; font-size:6px; z-index:705;">7</span>
+<span class="CellLettering" title="Common S in OSTRICH &amp; SPIDER" style="cursor: default; left: 152px; top: 202px; width: 16px; font-size: 13px; z-index: 706; opacity: 0;">S</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 166px; top: 200px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="T in OSTRICH" class="cssPop">
+<span class="CellLettering" title="T in OSTRICH" style="cursor: default; left: 168px; top: 202px; width: 16px; font-size: 13px; z-index: 707; opacity: 0;">T</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 182px; top: 200px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="Common R in OSTRICH &amp; LIZZARD" class="cssPop">
+<span class="CellLettering" title="Common R in OSTRICH &amp; LIZZARD" style="cursor: default; left: 184px; top: 202px; width: 16px; font-size: 13px; z-index: 708; opacity: 0;">R</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 198px; top: 200px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="I in OSTRICH" class="cssPop">
+<span class="CellLettering" title="I in OSTRICH" style="cursor: default; left: 200px; top: 202px; width: 16px; font-size: 13px; z-index: 709; opacity: 0;">I</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 214px; top: 200px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="Common C in OSTRICH &amp; CAT" class="cssPop">
+<span class="CellNumbering" style="left:216px; top:200px; font-size:6px; z-index:709;">8</span>
+<span class="CellLettering" title="Common C in OSTRICH &amp; CAT" style="cursor: default; left: 216px; top: 202px; width: 16px; font-size: 13px; z-index: 710; opacity: 0;">C</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 230px; top: 200px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="H in OSTRICH" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="1" height="17" style="position:absolute; cursor:default; left:246px; top:200px; z-index:709" alt="">
+<span class="CellLettering" title="H in OSTRICH" style="cursor: default; left: 232px; top: 202px; width: 16px; font-size: 13px; z-index: 711; opacity: 0;">H</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 102px; top: 216px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="L in LION" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="17" height="1" style="position:absolute; cursor:default; left:102px; top:216px; z-index:801" alt="">
+<span class="CellNumbering" style="left:104px; top:216px; font-size:6px; z-index:802;">9</span>
+<span class="CellLettering" title="L in LION" style="cursor: default; left: 104px; top: 218px; width: 16px; font-size: 13px; z-index: 803; opacity: 0;">L</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 150px; top: 216px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="P in SPIDER" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="17" height="1" style="position:absolute; cursor:default; left:150px; top:232px; z-index:804" alt="">
+<span class="CellLettering" title="P in SPIDER" style="cursor: default; left: 152px; top: 218px; width: 16px; font-size: 13px; z-index: 806; opacity: 0;">P</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 182px; top: 216px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="D in LIZZARD" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="17" height="1" style="position:absolute; cursor:default; left:182px; top:232px; z-index:806" alt="">
+<span class="CellLettering" title="D in LIZZARD" style="cursor: default; left: 184px; top: 218px; width: 16px; font-size: 13px; z-index: 808; opacity: 0;">D</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 214px; top: 216px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="A in CAT" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="17" height="1" style="position:absolute; cursor:default; left:214px; top:232px; z-index:808" alt="">
+<span class="CellLettering" title="A in CAT" style="cursor: default; left: 216px; top: 218px; width: 16px; font-size: 13px; z-index: 810; opacity: 0;">A</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 86px; top: 232px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="P in PIG" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="1" height="17" style="position:absolute; cursor:default; left:86px; top:232px; z-index:900" alt="">
+<span class="CellNumbering" style="left:88px; top:232px; font-size:6px; z-index:901;">10</span>
+<span class="CellLettering" title="P in PIG" style="cursor: default; left: 88px; top: 234px; width: 16px; font-size: 13px; z-index: 902; opacity: 0;">P</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 102px; top: 232px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="Common I in PIG &amp; LION" class="cssPop">
+<span class="CellLettering" title="Common I in PIG &amp; LION" style="cursor: default; left: 104px; top: 234px; width: 16px; font-size: 13px; z-index: 903; opacity: 0;">I</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 118px; top: 232px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="G in PIG" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="1" height="17" style="position:absolute; cursor:default; left:134px; top:232px; z-index:902" alt="">
+<span class="CellLettering" title="G in PIG" style="cursor: default; left: 120px; top: 234px; width: 16px; font-size: 13px; z-index: 904; opacity: 0;">G</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 150px; top: 232px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="I in SPIDER" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="17" height="1" style="position:absolute; cursor:default; left:150px; top:232px; z-index:904" alt="">
+<span class="CellLettering" title="I in SPIDER" style="cursor: default; left: 152px; top: 234px; width: 16px; font-size: 13px; z-index: 906; opacity: 0;">I</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 214px; top: 232px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="T in CAT" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="17" height="1" style="position:absolute; cursor:default; left:214px; top:232px; z-index:908" alt="">
+<img src="./Animals_files/BlackDot1.png" width="17" height="1" style="position:absolute; cursor:default; left:214px; top:248px; z-index:908" alt="">
+<span class="CellLettering" title="T in CAT" style="cursor: default; left: 216px; top: 234px; width: 16px; font-size: 13px; z-index: 910; opacity: 0;">T</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 102px; top: 248px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="O in LION" class="cssPop">
+<span class="CellLettering" title="O in LION" style="cursor: default; left: 104px; top: 250px; width: 16px; font-size: 13px; z-index: 1003; opacity: 0;">O</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 150px; top: 248px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="Common D in DOG &amp; SPIDER" class="cssPop">
+<span class="CellNumbering" style="left:152px; top:248px; font-size:6px; z-index:1005;">11</span>
+<span class="CellLettering" title="Common D in DOG &amp; SPIDER" style="cursor: default; left: 152px; top: 250px; width: 16px; font-size: 13px; z-index: 1006; opacity: 0;">D</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 166px; top: 248px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="O in DOG" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="1" height="17" style="position:absolute; cursor:default; left:182px; top:248px; z-index:1005" alt="">
+<span class="CellLettering" title="O in DOG" style="cursor: default; left: 168px; top: 250px; width: 16px; font-size: 13px; z-index: 1007; opacity: 0;">O</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 182px; top: 248px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="G in DOG" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="1" height="17" style="position:absolute; cursor:default; left:182px; top:248px; z-index:1006" alt="">
+<img src="./Animals_files/BlackDot1.png" width="1" height="17" style="position:absolute; cursor:default; left:198px; top:248px; z-index:1006" alt="">
+<span class="CellLettering" title="G in DOG" style="cursor: default; left: 184px; top: 250px; width: 16px; font-size: 13px; z-index: 1008; opacity: 0;">G</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 86px; top: 264px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="S in SNAKE" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="1" height="17" style="position:absolute; cursor:default; left:86px; top:264px; z-index:1100" alt="">
+<span class="CellNumbering" style="left:88px; top:264px; font-size:6px; z-index:1101;">12</span>
+<span class="CellLettering" title="S in SNAKE" style="cursor: default; left: 88px; top: 266px; width: 16px; font-size: 13px; z-index: 1102; opacity: 0;">S</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 102px; top: 264px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="Common N in SNAKE &amp; LION" class="cssPop">
+<span class="CellLettering" title="Common N in SNAKE &amp; LION" style="cursor: default; left: 104px; top: 266px; width: 16px; font-size: 13px; z-index: 1103; opacity: 0;">N</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 118px; top: 264px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="Common A in SNAKE &amp; ANT" class="cssPop">
+<span class="CellNumbering" style="left:120px; top:264px; font-size:6px; z-index:1103;">13</span>
+<span class="CellLettering" title="Common A in SNAKE &amp; ANT" style="cursor: default; left: 120px; top: 266px; width: 16px; font-size: 13px; z-index: 1104; opacity: 0;">A</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 134px; top: 264px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="K in SNAKE" class="cssPop">
+<span class="CellLettering" title="K in SNAKE" style="cursor: default; left: 136px; top: 266px; width: 16px; font-size: 13px; z-index: 1105; opacity: 0;">K</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 150px; top: 264px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="Common E in SNAKE &amp; SPIDER" class="cssPop">
+<span class="CellLettering" title="Common E in SNAKE &amp; SPIDER" style="cursor: default; left: 152px; top: 266px; width: 16px; font-size: 13px; z-index: 1106; opacity: 0;">E</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 118px; top: 280px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="N in ANT" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="17" height="1" style="position:absolute; cursor:default; left:118px; top:296px; z-index:1202" alt="">
+<span class="CellLettering" title="N in ANT" style="cursor: default; left: 120px; top: 282px; width: 16px; font-size: 13px; z-index: 1204; opacity: 0;">N</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 150px; top: 280px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="Common R in RAY &amp; SPIDER" class="cssPop">
+<span class="CellNumbering" style="left:152px; top:280px; font-size:6px; z-index:1205;">14</span>
+<span class="CellLettering" title="Common R in RAY &amp; SPIDER" style="cursor: default; left: 152px; top: 282px; width: 16px; font-size: 13px; z-index: 1206; opacity: 0;">R</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 166px; top: 280px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="A in RAY" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="1" height="17" style="position:absolute; cursor:default; left:182px; top:280px; z-index:1205" alt="">
+<span class="CellLettering" title="A in RAY" style="cursor: default; left: 168px; top: 282px; width: 16px; font-size: 13px; z-index: 1207; opacity: 0;">A</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 182px; top: 280px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="Y in RAY" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="1" height="17" style="position:absolute; cursor:default; left:182px; top:280px; z-index:1206" alt="">
+<img src="./Animals_files/BlackDot1.png" width="1" height="17" style="position:absolute; cursor:default; left:198px; top:280px; z-index:1206" alt="">
+<span class="CellLettering" title="Y in RAY" style="cursor: default; left: 184px; top: 282px; width: 16px; font-size: 13px; z-index: 1208; opacity: 0;">Y</span><img src="./Animals_files/1U25.png" width="16" height="16" style="position: absolute; cursor: default; left: 118px; top: 296px; z-index: 10; background-color: rgba(255, 255, 255, 0.498039);" alt="" title="T in ANT" class="cssPop">
+<img src="./Animals_files/BlackDot1.png" width="17" height="1" style="position:absolute; cursor:default; left:118px; top:296px; z-index:1302" alt="">
+<img src="./Animals_files/BlackDot1.png" width="17" height="1" style="position:absolute; cursor:default; left:118px; top:312px; z-index:1302" alt="">
+<span class="CellLettering" title="T in ANT" style="cursor: default; left: 120px; top: 298px; width: 16px; font-size: 13px; z-index: 1304; opacity: 0;">T</span><img src="./Animals_files/BlackDot1.png" width="97" height="1" style="position:absolute; cursor:default; left:118px; top:136px; z-index:307" alt="">
+<img src="./Animals_files/BlackDot1.png" width="97" height="1" style="position:absolute; cursor:default; left:118px; top:152px; z-index:307" alt="">
+<img src="./Animals_files/BlackDot1.png" width="81" height="1" style="position:absolute; cursor:default; left:182px; top:168px; z-index:510" alt="">
+<img src="./Animals_files/BlackDot1.png" width="81" height="1" style="position:absolute; cursor:default; left:182px; top:184px; z-index:510" alt="">
+<img src="./Animals_files/BlackDot1.png" width="113" height="1" style="position:absolute; cursor:default; left:134px; top:200px; z-index:709" alt="">
+<img src="./Animals_files/BlackDot1.png" width="113" height="1" style="position:absolute; cursor:default; left:134px; top:216px; z-index:709" alt="">
+<img src="./Animals_files/BlackDot1.png" width="49" height="1" style="position:absolute; cursor:default; left:86px; top:232px; z-index:902" alt="">
+<img src="./Animals_files/BlackDot1.png" width="49" height="1" style="position:absolute; cursor:default; left:86px; top:248px; z-index:902" alt="">
+<img src="./Animals_files/BlackDot1.png" width="49" height="1" style="position:absolute; cursor:default; left:150px; top:248px; z-index:1006" alt="">
+<img src="./Animals_files/BlackDot1.png" width="49" height="1" style="position:absolute; cursor:default; left:150px; top:264px; z-index:1006" alt="">
+<img src="./Animals_files/BlackDot1.png" width="81" height="1" style="position:absolute; cursor:default; left:86px; top:264px; z-index:1104" alt="">
+<img src="./Animals_files/BlackDot1.png" width="81" height="1" style="position:absolute; cursor:default; left:86px; top:280px; z-index:1104" alt="">
+<img src="./Animals_files/BlackDot1.png" width="49" height="1" style="position:absolute; cursor:default; left:150px; top:280px; z-index:1206" alt="">
+<img src="./Animals_files/BlackDot1.png" width="49" height="1" style="position:absolute; cursor:default; left:150px; top:296px; z-index:1206" alt="">
+<img src="./Animals_files/Black1U76.png" width="47" height="2" style="position:absolute; cursor:default; left:135px; top:153px; z-index:305" alt="">
+<img src="./Animals_files/Black1U76.png" width="18" height="2" style="position:absolute; cursor:default; left:199px; top:153px; z-index:307" alt="">
+<img src="./Animals_files/Black1U76.png" width="16" height="2" style="position:absolute; cursor:default; left:121px; top:169px; z-index:402" alt="">
+<img src="./Animals_files/Black1U76.png" width="47" height="2" style="position:absolute; cursor:default; left:199px; top:185px; z-index:509" alt="">
+<img src="./Animals_files/Black1U76.png" width="16" height="2" style="position:absolute; cursor:default; left:249px; top:201px; z-index:610" alt="">
+<img src="./Animals_files/Black1U76.png" width="13" height="2" style="position:absolute; cursor:default; left:137px; top:217px; z-index:703" alt="">
+<img src="./Animals_files/Black1U76.png" width="15" height="2" style="position:absolute; cursor:default; left:167px; top:217px; z-index:705" alt="">
+<img src="./Animals_files/Black1U76.png" width="15" height="2" style="position:absolute; cursor:default; left:199px; top:217px; z-index:707" alt="">
+<img src="./Animals_files/Black1U76.png" width="18" height="2" style="position:absolute; cursor:default; left:231px; top:217px; z-index:709" alt="">
+<img src="./Animals_files/Black1U76.png" width="16" height="2" style="position:absolute; cursor:default; left:185px; top:233px; z-index:806" alt="">
+<img src="./Animals_files/Black1U76.png" width="13" height="2" style="position:absolute; cursor:default; left:89px; top:249px; z-index:900" alt="">
+<img src="./Animals_files/Black1U76.png" width="18" height="2" style="position:absolute; cursor:default; left:119px; top:249px; z-index:902" alt="">
+<img src="./Animals_files/Black1U76.png" width="16" height="2" style="position:absolute; cursor:default; left:217px; top:249px; z-index:908" alt="">
+<img src="./Animals_files/Black1U76.png" width="34" height="2" style="position:absolute; cursor:default; left:167px; top:265px; z-index:1006" alt="">
+<img src="./Animals_files/Black1U76.png" width="29" height="2" style="position:absolute; cursor:default; left:89px; top:281px; z-index:1101" alt="">
+<img src="./Animals_files/Black1U76.png" width="15" height="2" style="position:absolute; cursor:default; left:135px; top:281px; z-index:1103" alt="">
+<img src="./Animals_files/Black1U76.png" width="48" height="2" style="position:absolute; cursor:default; left:153px; top:297px; z-index:1206" alt="">
+<img src="./Animals_files/Black1U76.png" width="16" height="2" style="position:absolute; cursor:default; left:121px; top:313px; z-index:1302" alt="">
+<img src="./Animals_files/BlackDot1.png" width="1" height="65" style="position:absolute; cursor:default; left:102px; top:216px; z-index:1101" alt="">
+<img src="./Animals_files/BlackDot1.png" width="1" height="65" style="position:absolute; cursor:default; left:118px; top:216px; z-index:1101" alt="">
+<img src="./Animals_files/BlackDot1.png" width="1" height="65" style="position:absolute; cursor:default; left:118px; top:104px; z-index:402" alt="">
+<img src="./Animals_files/BlackDot1.png" width="1" height="65" style="position:absolute; cursor:default; left:134px; top:104px; z-index:402" alt="">
+<img src="./Animals_files/BlackDot1.png" width="1" height="49" style="position:absolute; cursor:default; left:118px; top:264px; z-index:1302" alt="">
+<img src="./Animals_files/BlackDot1.png" width="1" height="49" style="position:absolute; cursor:default; left:134px; top:264px; z-index:1302" alt="">
+<img src="./Animals_files/BlackDot1.png" width="1" height="97" style="position:absolute; cursor:default; left:150px; top:200px; z-index:1204" alt="">
+<img src="./Animals_files/BlackDot1.png" width="1" height="97" style="position:absolute; cursor:default; left:166px; top:200px; z-index:1204" alt="">
+<img src="./Animals_files/BlackDot1.png" width="1" height="113" style="position:absolute; cursor:default; left:182px; top:120px; z-index:806" alt="">
+<img src="./Animals_files/BlackDot1.png" width="1" height="113" style="position:absolute; cursor:default; left:198px; top:120px; z-index:806" alt="">
+<img src="./Animals_files/BlackDot1.png" width="1" height="49" style="position:absolute; cursor:default; left:214px; top:200px; z-index:908" alt="">
+<img src="./Animals_files/BlackDot1.png" width="1" height="49" style="position:absolute; cursor:default; left:230px; top:200px; z-index:908" alt="">
+<img src="./Animals_files/BlackDot1.png" width="1" height="65" style="position:absolute; cursor:default; left:246px; top:136px; z-index:610" alt="">
+<img src="./Animals_files/BlackDot1.png" width="1" height="65" style="position:absolute; cursor:default; left:262px; top:136px; z-index:610" alt="">
+<img src="./Animals_files/Black1U76.png" width="2" height="14" style="position:absolute; cursor:default; left:119px; top:219px; z-index:801" alt="">
+<img src="./Animals_files/Black1U76.png" width="2" height="14" style="position:absolute; cursor:default; left:119px; top:251px; z-index:1001" alt="">
+<img src="./Animals_files/Black1U76.png" width="2" height="30" style="position:absolute; cursor:default; left:135px; top:107px; z-index:202" alt="">
+<img src="./Animals_files/Black1U76.png" width="2" height="14" style="position:absolute; cursor:default; left:135px; top:155px; z-index:402" alt="">
+<img src="./Animals_files/Black1U76.png" width="2" height="14" style="position:absolute; cursor:default; left:135px; top:235px; z-index:902" alt="">
+<img src="./Animals_files/Black1U76.png" width="2" height="30" style="position:absolute; cursor:default; left:135px; top:283px; z-index:1302" alt="">
+<img src="./Animals_files/Black1U76.png" width="2" height="30" style="position:absolute; cursor:default; left:167px; top:219px; z-index:904" alt="">
+<img src="./Animals_files/Black1U76.png" width="2" height="14" style="position:absolute; cursor:default; left:167px; top:267px; z-index:1104" alt="">
+<img src="./Animals_files/Black1U76.png" width="2" height="14" style="position:absolute; cursor:default; left:199px; top:123px; z-index:206" alt="">
+<img src="./Animals_files/Black1U76.png" width="2" height="14" style="position:absolute; cursor:default; left:199px; top:155px; z-index:406" alt="">
+<img src="./Animals_files/Black1U76.png" width="2" height="14" style="position:absolute; cursor:default; left:199px; top:187px; z-index:606" alt="">
+<img src="./Animals_files/Black1U76.png" width="2" height="14" style="position:absolute; cursor:default; left:199px; top:219px; z-index:806" alt="">
+<img src="./Animals_files/Black1U76.png" width="2" height="14" style="position:absolute; cursor:default; left:199px; top:251px; z-index:1006" alt="">
+<img src="./Animals_files/Black1U76.png" width="2" height="14" style="position:absolute; cursor:default; left:199px; top:283px; z-index:1206" alt="">
+<img src="./Animals_files/Black1U76.png" width="2" height="14" style="position:absolute; cursor:default; left:215px; top:139px; z-index:307" alt="">
+<img src="./Animals_files/Black1U76.png" width="2" height="30" style="position:absolute; cursor:default; left:231px; top:219px; z-index:908" alt="">
+<img src="./Animals_files/Black1U76.png" width="2" height="14" style="position:absolute; cursor:default; left:247px; top:203px; z-index:709" alt="">
+<img src="./Animals_files/Black1U76.png" width="2" height="62" style="position:absolute; cursor:default; left:263px; top:139px; z-index:610" alt="">
+
+<span class="ClueNum" style="left: 37px; top: 334px; font-size: 7px; opacity: 1;">ACROSS</span>
+<span class="ClueNum" style="left: 37px; top: 352px; font-size: 7px; opacity: 1;">3</span>
+<span class="ClueText" style="left: 48px; top: 352px; width: 135px; font-size: 7px; opacity: 1;">Conejo</span>
+<span class="ClueNum" style="left: 37px; top: 361px; font-size: 7px; opacity: 1;">5</span>
+<span class="ClueText" style="left: 48px; top: 361px; width: 135px; font-size: 7px; opacity: 1;">Cebra</span>
+<span class="ClueNum" style="left: 37px; top: 370px; font-size: 7px; opacity: 1;">6</span>
+<span class="ClueText" style="left: 48px; top: 370px; width: 135px; font-size: 7px; opacity: 1;">Avestruz</span>
+<span class="ClueNum" style="left: 37px; top: 379px; font-size: 7px; opacity: 1;">10</span>
+<span class="ClueText" style="left: 48px; top: 379px; width: 135px; font-size: 7px; opacity: 1;">Puerco</span>
+<span class="ClueNum" style="left: 37px; top: 388px; font-size: 7px; opacity: 1;">11</span>
+<span class="ClueText" style="left: 48px; top: 388px; width: 135px; font-size: 7px; opacity: 1;">Perro</span>
+<span class="ClueNum" style="left: 37px; top: 397px; font-size: 7px; opacity: 1;">12</span>
+<span class="ClueText" style="left: 48px; top: 397px; width: 135px; font-size: 7px; opacity: 1;">Serpiente</span>
+<span class="ClueNum" style="left: 37px; top: 407px; font-size: 7px; opacity: 1;">14</span>
+<span class="ClueText" style="left: 48px; top: 407px; width: 135px; font-size: 7px; opacity: 1;">Mantarraya</span>
+<span class="ClueNum" style="left: 182px; top: 334px; font-size: 7px; opacity: 1;">DOWN</span>
+<span class="ClueNum" style="left: 182px; top: 352px; font-size: 7px; opacity: 1;">1</span>
+<span class="ClueText" style="left: 193px; top: 352px; width: 135px; font-size: 7px; opacity: 1;">Pájaro</span>
+<span class="ClueNum" style="left: 182px; top: 361px; font-size: 7px; opacity: 1;">2</span>
+<span class="ClueText" style="left: 193px; top: 361px; width: 135px; font-size: 7px; opacity: 1;">Lagartija</span>
+<span class="ClueNum" style="left: 182px; top: 370px; font-size: 7px; opacity: 1;">4</span>
+<span class="ClueText" style="left: 193px; top: 370px; width: 135px; font-size: 7px; opacity: 1;">Oso</span>
+<span class="ClueNum" style="left: 182px; top: 379px; font-size: 7px; opacity: 1;">7</span>
+<span class="ClueText" style="left: 193px; top: 379px; width: 135px; font-size: 7px; opacity: 1;">Araña</span>
+<span class="ClueNum" style="left: 182px; top: 388px; font-size: 7px; opacity: 1;">8</span>
+<span class="ClueText" style="left: 193px; top: 388px; width: 135px; font-size: 7px; opacity: 1;">Gato</span>
+<span class="ClueNum" style="left: 182px; top: 397px; font-size: 7px; opacity: 1;">9</span>
+<span class="ClueText" style="left: 193px; top: 397px; width: 135px; font-size: 7px; opacity: 1;">Leon</span>
+<span class="ClueNum" style="left: 182px; top: 407px; font-size: 7px; opacity: 1;">13</span>
+<span class="ClueText" style="left: 193px; top: 407px; width: 135px; font-size: 7px; opacity: 1;">Hormiga</span>
+
+  </div>
+
+  <div id="HiddenGood" style="position: absolute; top: -1999px; left: 10px; width: 345px; height: 460px;">
+    <span id="Caption3" class="ToolText" style="top:3px; left:0px; width:334px; text-align:center;">Approximate preview of "Good" puzzle, html page 1</span>
+    
+<div class="FreePage" style="left:0px; top:20px; width:348px; height:431px; font-size:6px; ">
+<img style="height:40px" src="./Animals_files/Space.png" alt=""><br>
+<img style="height:71px; width:296px; z-index:10; " src="./Animals_files/FreePuzzleAd.jpg" alt=""><br>
+<img style="height:8px" src="./Animals_files/Space.png" alt=""><br>
+<div style="text-align:left; font-size:6px; margin-left:40px;"></div><br>
+<img style="height:4px" src="./Animals_files/Space.png" alt=""><br>
+<div style="font-family:serif; font-size:12px; margin-left:40px; margin-right:40px; line-height:120%;">Animals<br></div>
+<img style="height:4px" src="./Animals_files/Space.png" alt=""><br>
+<img style="height:8px" src="./Animals_files/Space.png" alt=""><br>
+<div class="FreeSection" style="height:208px; ">
+<img src="./Animals_files/16F255.png" id="B2x0y" style="position:absolute; width:17px; height:17px; left:118px; top:0px; z-index:102" alt=" " title="B in BIRD">
+<span style="position:absolute; left:119px; top:1px; font-size:5px; z-index:103; line-height:110%; text-align:left; vertical-align:top; font-family:Helvetica,sans-serif; ">1</span>
+<span class="CellLettering" id="L2x0y" style="position: absolute; left: 119px; top: 5px; width: 16px; font-size: 11px; z-index: 104; line-height: 110%; text-align: center; font-family: Helvetica, sans-serif; opacity: 0;">B</span>
+<img src="./Animals_files/16F255.png" id="B2x1y" style="position:absolute; width:17px; height:17px; left:118px; top:16px; z-index:202" alt=" " title="I in BIRD">
+<span class="CellLettering" id="L2x1y" style="position: absolute; left: 119px; top: 21px; width: 16px; font-size: 11px; z-index: 204; line-height: 110%; text-align: center; font-family: Helvetica, sans-serif; opacity: 0;">I</span>
+<img src="./Animals_files/16F255.png" id="B6x1y" style="position:absolute; width:17px; height:17px; left:182px; top:16px; z-index:206" alt=" " title="L in LIZZARD">
+<span style="position:absolute; left:183px; top:17px; font-size:5px; z-index:207; line-height:110%; text-align:left; vertical-align:top; font-family:Helvetica,sans-serif; ">2</span>
+<span class="CellLettering" id="L6x1y" style="position: absolute; left: 183px; top: 21px; width: 16px; font-size: 11px; z-index: 208; line-height: 110%; text-align: center; font-family: Helvetica, sans-serif; opacity: 0;">L</span>
+<img src="./Animals_files/16F255.png" id="B2x2y" style="position:absolute; width:17px; height:17px; left:118px; top:32px; z-index:302" alt=" " title="Common R in RABBIT &amp; BIRD">
+<span style="position:absolute; left:119px; top:33px; font-size:5px; z-index:303; line-height:110%; text-align:left; vertical-align:top; font-family:Helvetica,sans-serif; ">3</span>
+<span class="CellLettering" id="L2x2y" style="position: absolute; left: 119px; top: 37px; width: 16px; font-size: 11px; z-index: 304; line-height: 110%; text-align: center; font-family: Helvetica, sans-serif; opacity: 0;">R</span>
+<img src="./Animals_files/16F255.png" id="B3x2y" style="position:absolute; width:17px; height:17px; left:134px; top:32px; z-index:303" alt=" " title="A in RABBIT">
+<span class="CellLettering" id="L3x2y" style="position: absolute; left: 135px; top: 37px; width: 16px; font-size: 11px; z-index: 305; line-height: 110%; text-align: center; font-family: Helvetica, sans-serif; opacity: 0;">A</span>
+<img src="./Animals_files/16F255.png" id="B4x2y" style="position:absolute; width:17px; height:17px; left:150px; top:32px; z-index:304" alt=" " title="B in RABBIT">
+<span class="CellLettering" id="L4x2y" style="position: absolute; left: 151px; top: 37px; width: 16px; font-size: 11px; z-index: 306; line-height: 110%; text-align: center; font-family: Helvetica, sans-serif; opacity: 0;">B</span>
+<img src="./Animals_files/16F255.png" id="B5x2y" style="position:absolute; width:17px; height:17px; left:166px; top:32px; z-index:305" alt=" " title="B in RABBIT">
+<span class="CellLettering" id="L5x2y" style="position: absolute; left: 167px; top: 37px; width: 16px; font-size: 11px; z-index: 307; line-height: 110%; text-align: center; font-family: Helvetica, sans-serif; opacity: 0;">B</span>
+<img src="./Animals_files/16F255.png" id="B6x2y" style="position:absolute; width:17px; height:17px; left:182px; top:32px; z-index:306" alt=" " title="Common I in RABBIT &amp; LIZZARD">
+<span class="CellLettering" id="L6x2y" style="position: absolute; left: 183px; top: 37px; width: 16px; font-size: 11px; z-index: 308; line-height: 110%; text-align: center; font-family: Helvetica, sans-serif; opacity: 0;">I</span>
+<img src="./Animals_files/16F255.png" id="B7x2y" style="position:absolute; width:17px; height:17px; left:198px; top:32px; z-index:307" alt=" " title="T in RABBIT">
+<span class="CellLettering" id="L7x2y" style="position: absolute; left: 199px; top: 37px; width: 16px; font-size: 11px; z-index: 309; line-height: 110%; text-align: center; font-family: Helvetica, sans-serif; opacity: 0;">T</span>
+<img src="./Animals_files/16F255.png" id="B10x2y" style="position:absolute; width:17px; height:17px; left:246px; top:32px; z-index:310" alt=" " title="B in BEAR">
+<span style="position:absolute; left:247px; top:33px; font-size:5px; z-index:311; line-height:110%; text-align:left; vertical-align:top; font-family:Helvetica,sans-serif; ">4</span>
+<span class="CellLettering" id="L10x2y" style="position: absolute; left: 247px; top: 37px; width: 16px; font-size: 11px; z-index: 312; line-height: 110%; text-align: center; font-family: Helvetica, sans-serif; opacity: 0;">B</span>
+<img src="./Animals_files/16F255.png" id="B2x3y" style="position:absolute; width:17px; height:17px; left:118px; top:48px; z-index:402" alt=" " title="D in BIRD">
+<span class="CellLettering" id="L2x3y" style="position: absolute; left: 119px; top: 53px; width: 16px; font-size: 11px; z-index: 404; line-height: 110%; text-align: center; font-family: Helvetica, sans-serif; opacity: 0;">D</span>
+<img src="./Animals_files/16F255.png" id="B6x3y" style="position:absolute; width:17px; height:17px; left:182px; top:48px; z-index:406" alt=" " title="Z in LIZZARD">
+<span class="CellLettering" id="L6x3y" style="position: absolute; left: 183px; top: 53px; width: 16px; font-size: 11px; z-index: 408; line-height: 110%; text-align: center; font-family: Helvetica, sans-serif; opacity: 0;">Z</span>
+<img src="./Animals_files/16F255.png" id="B10x3y" style="position:absolute; width:17px; height:17px; left:246px; top:48px; z-index:410" alt=" " title="E in BEAR">
+<span class="CellLettering" id="L10x3y" style="position: absolute; left: 247px; top: 53px; width: 16px; font-size: 11px; z-index: 412; line-height: 110%; text-align: center; font-family: Helvetica, sans-serif; opacity: 0;">E</span>
+<img src="./Animals_files/16F255.png" id="B6x4y" style="position:absolute; width:17px; height:17px; left:182px; top:64px; z-index:506" alt=" " title="Common Z in ZEBRA &amp; LIZZARD">
+<span style="position:absolute; left:183px; top:65px; font-size:5px; z-index:507; line-height:110%; text-align:left; vertical-align:top; font-family:Helvetica,sans-serif; ">5</span>
+<span class="CellLettering" id="L6x4y" style="position: absolute; left: 183px; top: 69px; width: 16px; font-size: 11px; z-index: 508; line-height: 110%; text-align: center; font-family: Helvetica, sans-serif; opacity: 0;">Z</span>
+<img src="./Animals_files/16F255.png" id="B7x4y" style="position:absolute; width:17px; height:17px; left:198px; top:64px; z-index:507" alt=" " title="E in ZEBRA">
+<span class="CellLettering" id="L7x4y" style="position: absolute; left: 199px; top: 69px; width: 16px; font-size: 11px; z-index: 509; line-height: 110%; text-align: center; font-family: Helvetica, sans-serif; opacity: 0;">E</span>
+<img src="./Animals_files/16F255.png" id="B8x4y" style="position:absolute; width:17px; height:17px; left:214px; top:64px; z-index:508" alt=" " title="B in ZEBRA">
+<span class="CellLettering" id="L8x4y" style="position: absolute; left: 215px; top: 69px; width: 16px; font-size: 11px; z-index: 510; line-height: 110%; text-align: center; font-family: Helvetica, sans-serif; opacity: 0;">B</span>
+<img src="./Animals_files/16F255.png" id="B9x4y" style="position:absolute; width:17px; height:17px; left:230px; top:64px; z-index:509" alt=" " title="R in ZEBRA">
+<span class="CellLettering" id="L9x4y" style="position: absolute; left: 231px; top: 69px; width: 16px; font-size: 11px; z-index: 511; line-height: 110%; text-align: center; font-family: Helvetica, sans-serif; opacity: 0;">R</span>
+<img src="./Animals_files/16F255.png" id="B10x4y" style="position:absolute; width:17px; height:17px; left:246px; top:64px; z-index:510" alt=" " title="Common A in ZEBRA &amp; BEAR">
+<span class="CellLettering" id="L10x4y" style="position: absolute; left: 247px; top: 69px; width: 16px; font-size: 11px; z-index: 512; line-height: 110%; text-align: center; font-family: Helvetica, sans-serif; opacity: 0;">A</span>
+<img src="./Animals_files/16F255.png" id="B6x5y" style="position:absolute; width:17px; height:17px; left:182px; top:80px; z-index:606" alt=" " title="A in LIZZARD">
+<span class="CellLettering" id="L6x5y" style="position: absolute; left: 183px; top: 85px; width: 16px; font-size: 11px; z-index: 608; line-height: 110%; text-align: center; font-family: Helvetica, sans-serif; opacity: 0;">A</span>
+<img src="./Animals_files/16F255.png" id="B10x5y" style="position:absolute; width:17px; height:17px; left:246px; top:80px; z-index:610" alt=" " title="R in BEAR">
+<span class="CellLettering" id="L10x5y" style="position: absolute; left: 247px; top: 85px; width: 16px; font-size: 11px; z-index: 612; line-height: 110%; text-align: center; font-family: Helvetica, sans-serif; opacity: 0;">R</span>
+<img src="./Animals_files/16F255.png" id="B3x6y" style="position:absolute; width:17px; height:17px; left:134px; top:96px; z-index:703" alt=" " title="O in OSTRICH">
+<span style="position:absolute; left:135px; top:97px; font-size:5px; z-index:704; line-height:110%; text-align:left; vertical-align:top; font-family:Helvetica,sans-serif; ">6</span>
+<span class="CellLettering" id="L3x6y" style="position: absolute; left: 135px; top: 101px; width: 16px; font-size: 11px; z-index: 705; line-height: 110%; text-align: center; font-family: Helvetica, sans-serif; opacity: 0;">O</span>
+<img src="./Animals_files/16F255.png" id="B4x6y" style="position:absolute; width:17px; height:17px; left:150px; top:96px; z-index:704" alt=" " title="Common S in OSTRICH &amp; SPIDER">
+<span style="position:absolute; left:151px; top:97px; font-size:5px; z-index:705; line-height:110%; text-align:left; vertical-align:top; font-family:Helvetica,sans-serif; ">7</span>
+<span class="CellLettering" id="L4x6y" style="position: absolute; left: 151px; top: 101px; width: 16px; font-size: 11px; z-index: 706; line-height: 110%; text-align: center; font-family: Helvetica, sans-serif; opacity: 0;">S</span>
+<img src="./Animals_files/16F255.png" id="B5x6y" style="position:absolute; width:17px; height:17px; left:166px; top:96px; z-index:705" alt=" " title="T in OSTRICH">
+<span class="CellLettering" id="L5x6y" style="position: absolute; left: 167px; top: 101px; width: 16px; font-size: 11px; z-index: 707; line-height: 110%; text-align: center; font-family: Helvetica, sans-serif; opacity: 0;">T</span>
+<img src="./Animals_files/16F255.png" id="B6x6y" style="position:absolute; width:17px; height:17px; left:182px; top:96px; z-index:706" alt=" " title="Common R in OSTRICH &amp; LIZZARD">
+<span class="CellLettering" id="L6x6y" style="position: absolute; left: 183px; top: 101px; width: 16px; font-size: 11px; z-index: 708; line-height: 110%; text-align: center; font-family: Helvetica, sans-serif; opacity: 0;">R</span>
+<img src="./Animals_files/16F255.png" id="B7x6y" style="position:absolute; width:17px; height:17px; left:198px; top:96px; z-index:707" alt=" " title="I in OSTRICH">
+<span class="CellLettering" id="L7x6y" style="position: absolute; left: 199px; top: 101px; width: 16px; font-size: 11px; z-index: 709; line-height: 110%; text-align: center; font-family: Helvetica, sans-serif; opacity: 0;">I</span>
+<img src="./Animals_files/16F255.png" id="B8x6y" style="position:absolute; width:17px; height:17px; left:214px; top:96px; z-index:708" alt=" " title="Common C in OSTRICH &amp; CAT">
+<span style="position:absolute; left:215px; top:97px; font-size:5px; z-index:709; line-height:110%; text-align:left; vertical-align:top; font-family:Helvetica,sans-serif; ">8</span>
+<span class="CellLettering" id="L8x6y" style="position: absolute; left: 215px; top: 101px; width: 16px; font-size: 11px; z-index: 710; line-height: 110%; text-align: center; font-family: Helvetica, sans-serif; opacity: 0;">C</span>
+<img src="./Animals_files/16F255.png" id="B9x6y" style="position:absolute; width:17px; height:17px; left:230px; top:96px; z-index:709" alt=" " title="H in OSTRICH">
+<span class="CellLettering" id="L9x6y" style="position: absolute; left: 231px; top: 101px; width: 16px; font-size: 11px; z-index: 711; line-height: 110%; text-align: center; font-family: Helvetica, sans-serif; opacity: 0;">H</span>
+<img src="./Animals_files/16F255.png" id="B1x7y" style="position:absolute; width:17px; height:17px; left:102px; top:112px; z-index:801" alt=" " title="L in LION">
+<span style="position:absolute; left:103px; top:113px; font-size:5px; z-index:802; line-height:110%; text-align:left; vertical-align:top; font-family:Helvetica,sans-serif; ">9</span>
+<span class="CellLettering" id="L1x7y" style="position: absolute; left: 103px; top: 117px; width: 16px; font-size: 11px; z-index: 803; line-height: 110%; text-align: center; font-family: Helvetica, sans-serif; opacity: 0;">L</span>
+<img src="./Animals_files/16F255.png" id="B4x7y" style="position:absolute; width:17px; height:17px; left:150px; top:112px; z-index:804" alt=" " title="P in SPIDER">
+<span class="CellLettering" id="L4x7y" style="position: absolute; left: 151px; top: 117px; width: 16px; font-size: 11px; z-index: 806; line-height: 110%; text-align: center; font-family: Helvetica, sans-serif; opacity: 0;">P</span>
+<img src="./Animals_files/16F255.png" id="B6x7y" style="position:absolute; width:17px; height:17px; left:182px; top:112px; z-index:806" alt=" " title="D in LIZZARD">
+<span class="CellLettering" id="L6x7y" style="position: absolute; left: 183px; top: 117px; width: 16px; font-size: 11px; z-index: 808; line-height: 110%; text-align: center; font-family: Helvetica, sans-serif; opacity: 0;">D</span>
+<img src="./Animals_files/16F255.png" id="B8x7y" style="position:absolute; width:17px; height:17px; left:214px; top:112px; z-index:808" alt=" " title="A in CAT">
+<span class="CellLettering" id="L8x7y" style="position: absolute; left: 215px; top: 117px; width: 16px; font-size: 11px; z-index: 810; line-height: 110%; text-align: center; font-family: Helvetica, sans-serif; opacity: 0;">A</span>
+<img src="./Animals_files/16F255.png" id="B0x8y" style="position:absolute; width:17px; height:17px; left:86px; top:128px; z-index:900" alt=" " title="P in PIG">
+<span style="position:absolute; left:87px; top:129px; font-size:5px; z-index:901; line-height:110%; text-align:left; vertical-align:top; font-family:Helvetica,sans-serif; ">10</span>
+<span class="CellLettering" id="L0x8y" style="position: absolute; left: 87px; top: 133px; width: 16px; font-size: 11px; z-index: 902; line-height: 110%; text-align: center; font-family: Helvetica, sans-serif; opacity: 0;">P</span>
+<img src="./Animals_files/16F255.png" id="B1x8y" style="position:absolute; width:17px; height:17px; left:102px; top:128px; z-index:901" alt=" " title="Common I in PIG &amp; LION">
+<span class="CellLettering" id="L1x8y" style="position: absolute; left: 103px; top: 133px; width: 16px; font-size: 11px; z-index: 903; line-height: 110%; text-align: center; font-family: Helvetica, sans-serif; opacity: 0;">I</span>
+<img src="./Animals_files/16F255.png" id="B2x8y" style="position:absolute; width:17px; height:17px; left:118px; top:128px; z-index:902" alt=" " title="G in PIG">
+<span class="CellLettering" id="L2x8y" style="position: absolute; left: 119px; top: 133px; width: 16px; font-size: 11px; z-index: 904; line-height: 110%; text-align: center; font-family: Helvetica, sans-serif; opacity: 0;">G</span>
+<img src="./Animals_files/16F255.png" id="B4x8y" style="position:absolute; width:17px; height:17px; left:150px; top:128px; z-index:904" alt=" " title="I in SPIDER">
+<span class="CellLettering" id="L4x8y" style="position: absolute; left: 151px; top: 133px; width: 16px; font-size: 11px; z-index: 906; line-height: 110%; text-align: center; font-family: Helvetica, sans-serif; opacity: 0;">I</span>
+<img src="./Animals_files/16F255.png" id="B8x8y" style="position:absolute; width:17px; height:17px; left:214px; top:128px; z-index:908" alt=" " title="T in CAT">
+<span class="CellLettering" id="L8x8y" style="position: absolute; left: 215px; top: 133px; width: 16px; font-size: 11px; z-index: 910; line-height: 110%; text-align: center; font-family: Helvetica, sans-serif; opacity: 0;">T</span>
+<img src="./Animals_files/16F255.png" id="B1x9y" style="position:absolute; width:17px; height:17px; left:102px; top:144px; z-index:1001" alt=" " title="O in LION">
+<span class="CellLettering" id="L1x9y" style="position: absolute; left: 103px; top: 149px; width: 16px; font-size: 11px; z-index: 1003; line-height: 110%; text-align: center; font-family: Helvetica, sans-serif; opacity: 0;">O</span>
+<img src="./Animals_files/16F255.png" id="B4x9y" style="position:absolute; width:17px; height:17px; left:150px; top:144px; z-index:1004" alt=" " title="Common D in DOG &amp; SPIDER">
+<span style="position:absolute; left:151px; top:145px; font-size:5px; z-index:1005; line-height:110%; text-align:left; vertical-align:top; font-family:Helvetica,sans-serif; ">11</span>
+<span class="CellLettering" id="L4x9y" style="position: absolute; left: 151px; top: 149px; width: 16px; font-size: 11px; z-index: 1006; line-height: 110%; text-align: center; font-family: Helvetica, sans-serif; opacity: 0;">D</span>
+<img src="./Animals_files/16F255.png" id="B5x9y" style="position:absolute; width:17px; height:17px; left:166px; top:144px; z-index:1005" alt=" " title="O in DOG">
+<span class="CellLettering" id="L5x9y" style="position: absolute; left: 167px; top: 149px; width: 16px; font-size: 11px; z-index: 1007; line-height: 110%; text-align: center; font-family: Helvetica, sans-serif; opacity: 0;">O</span>
+<img src="./Animals_files/16F255.png" id="B6x9y" style="position:absolute; width:17px; height:17px; left:182px; top:144px; z-index:1006" alt=" " title="G in DOG">
+<span class="CellLettering" id="L6x9y" style="position: absolute; left: 183px; top: 149px; width: 16px; font-size: 11px; z-index: 1008; line-height: 110%; text-align: center; font-family: Helvetica, sans-serif; opacity: 0;">G</span>
+<img src="./Animals_files/16F255.png" id="B0x10y" style="position:absolute; width:17px; height:17px; left:86px; top:160px; z-index:1100" alt=" " title="S in SNAKE">
+<span style="position:absolute; left:87px; top:161px; font-size:5px; z-index:1101; line-height:110%; text-align:left; vertical-align:top; font-family:Helvetica,sans-serif; ">12</span>
+<span class="CellLettering" id="L0x10y" style="position: absolute; left: 87px; top: 165px; width: 16px; font-size: 11px; z-index: 1102; line-height: 110%; text-align: center; font-family: Helvetica, sans-serif; opacity: 0;">S</span>
+<img src="./Animals_files/16F255.png" id="B1x10y" style="position:absolute; width:17px; height:17px; left:102px; top:160px; z-index:1101" alt=" " title="Common N in SNAKE &amp; LION">
+<span class="CellLettering" id="L1x10y" style="position: absolute; left: 103px; top: 165px; width: 16px; font-size: 11px; z-index: 1103; line-height: 110%; text-align: center; font-family: Helvetica, sans-serif; opacity: 0;">N</span>
+<img src="./Animals_files/16F255.png" id="B2x10y" style="position:absolute; width:17px; height:17px; left:118px; top:160px; z-index:1102" alt=" " title="Common A in SNAKE &amp; ANT">
+<span style="position:absolute; left:119px; top:161px; font-size:5px; z-index:1103; line-height:110%; text-align:left; vertical-align:top; font-family:Helvetica,sans-serif; ">13</span>
+<span class="CellLettering" id="L2x10y" style="position: absolute; left: 119px; top: 165px; width: 16px; font-size: 11px; z-index: 1104; line-height: 110%; text-align: center; font-family: Helvetica, sans-serif; opacity: 0;">A</span>
+<img src="./Animals_files/16F255.png" id="B3x10y" style="position:absolute; width:17px; height:17px; left:134px; top:160px; z-index:1103" alt=" " title="K in SNAKE">
+<span class="CellLettering" id="L3x10y" style="position: absolute; left: 135px; top: 165px; width: 16px; font-size: 11px; z-index: 1105; line-height: 110%; text-align: center; font-family: Helvetica, sans-serif; opacity: 0;">K</span>
+<img src="./Animals_files/16F255.png" id="B4x10y" style="position:absolute; width:17px; height:17px; left:150px; top:160px; z-index:1104" alt=" " title="Common E in SNAKE &amp; SPIDER">
+<span class="CellLettering" id="L4x10y" style="position: absolute; left: 151px; top: 165px; width: 16px; font-size: 11px; z-index: 1106; line-height: 110%; text-align: center; font-family: Helvetica, sans-serif; opacity: 0;">E</span>
+<img src="./Animals_files/16F255.png" id="B2x11y" style="position:absolute; width:17px; height:17px; left:118px; top:176px; z-index:1202" alt=" " title="N in ANT">
+<span class="CellLettering" id="L2x11y" style="position: absolute; left: 119px; top: 181px; width: 16px; font-size: 11px; z-index: 1204; line-height: 110%; text-align: center; font-family: Helvetica, sans-serif; opacity: 0;">N</span>
+<img src="./Animals_files/16F255.png" id="B4x11y" style="position:absolute; width:17px; height:17px; left:150px; top:176px; z-index:1204" alt=" " title="Common R in RAY &amp; SPIDER">
+<span style="position:absolute; left:151px; top:177px; font-size:5px; z-index:1205; line-height:110%; text-align:left; vertical-align:top; font-family:Helvetica,sans-serif; ">14</span>
+<span class="CellLettering" id="L4x11y" style="position: absolute; left: 151px; top: 181px; width: 16px; font-size: 11px; z-index: 1206; line-height: 110%; text-align: center; font-family: Helvetica, sans-serif; opacity: 0;">R</span>
+<img src="./Animals_files/16F255.png" id="B5x11y" style="position:absolute; width:17px; height:17px; left:166px; top:176px; z-index:1205" alt=" " title="A in RAY">
+<span class="CellLettering" id="L5x11y" style="position: absolute; left: 167px; top: 181px; width: 16px; font-size: 11px; z-index: 1207; line-height: 110%; text-align: center; font-family: Helvetica, sans-serif; opacity: 0;">A</span>
+<img src="./Animals_files/16F255.png" id="B6x11y" style="position:absolute; width:17px; height:17px; left:182px; top:176px; z-index:1206" alt=" " title="Y in RAY">
+<span class="CellLettering" id="L6x11y" style="position: absolute; left: 183px; top: 181px; width: 16px; font-size: 11px; z-index: 1208; line-height: 110%; text-align: center; font-family: Helvetica, sans-serif; opacity: 0;">Y</span>
+<img src="./Animals_files/16F255.png" id="B2x12y" style="position:absolute; width:17px; height:17px; left:118px; top:192px; z-index:1302" alt=" " title="T in ANT">
+<span class="CellLettering" id="L2x12y" style="position: absolute; left: 119px; top: 197px; width: 16px; font-size: 11px; z-index: 1304; line-height: 110%; text-align: center; font-family: Helvetica, sans-serif; opacity: 0;">T</span>
+</div><br>
+<img style="height:12px" src="./Animals_files/Space.png" alt=""><br>
+<div id="FreeClues" class="FreeSection" style="font-size:6px; line-height:110%;">
+<table cellpadding="0" cellspacing="0" border="0" width="100%" style="text-align:left;">
+<tbody><tr class="AlignTop">
+<td style="width:40px; font-size:6px;">&nbsp;</td>
+<td style="font-size:6px" colspan="2">ACROSS<br></td>
+<td style="width:40px; font-size:6px;">&nbsp;</td>
+</tr>
+<tr class="AlignTop">
+<td style="width:40px; font-size:6px">&nbsp;</td>
+<td style="width:11px; font-size:6px">3</td>
+<td style="font-size:6px">Conejo</td>
+<td style="width:40px; font-size:6px">&nbsp;</td>
+</tr>
+<tr class="AlignTop">
+<td style="width:40px; font-size:6px">&nbsp;</td>
+<td style="width:11px; font-size:6px">5</td>
+<td style="font-size:6px">Cebra</td>
+<td style="width:40px; font-size:6px">&nbsp;</td>
+</tr>
+<tr class="AlignTop">
+<td style="width:40px; font-size:6px">&nbsp;</td>
+<td style="width:11px; font-size:6px">6</td>
+<td style="font-size:6px">Avestruz</td>
+<td style="width:40px; font-size:6px">&nbsp;</td>
+</tr>
+<tr class="AlignTop">
+<td style="width:40px; font-size:6px">&nbsp;</td>
+<td style="width:11px; font-size:6px">10</td>
+<td style="font-size:6px">Puerco</td>
+<td style="width:40px; font-size:6px">&nbsp;</td>
+</tr>
+<tr class="AlignTop">
+<td style="width:40px; font-size:6px">&nbsp;</td>
+<td style="width:11px; font-size:6px">11</td>
+<td style="font-size:6px">Perro</td>
+<td style="width:40px; font-size:6px">&nbsp;</td>
+</tr>
+<tr class="AlignTop">
+<td style="width:40px; font-size:6px">&nbsp;</td>
+<td style="width:11px; font-size:6px">12</td>
+<td style="font-size:6px">Serpiente</td>
+<td style="width:40px; font-size:6px">&nbsp;</td>
+</tr>
+<tr class="AlignTop">
+<td style="width:40px; font-size:6px">&nbsp;</td>
+<td style="width:11px; font-size:6px">14</td>
+<td style="font-size:6px">Mantarraya</td>
+<td style="width:40px; font-size:6px">&nbsp;</td>
+</tr>
+<tr class="AlignTop">
+<td style="width:40px; font-size:6px;">&nbsp;</td>
+<td style="font-size:6px" colspan="2"><br>DOWN<br></td>
+<td style="width:40px; font-size:6px;">&nbsp;</td>
+</tr>
+<tr class="AlignTop">
+<td style="width:40px; font-size:6px">&nbsp;</td>
+<td style="width:11px; font-size:6px">1</td>
+<td style="font-size:6px">Pájaro</td>
+<td style="width:40px; font-size:6px">&nbsp;</td>
+</tr>
+<tr class="AlignTop">
+<td style="width:40px; font-size:6px">&nbsp;</td>
+<td style="width:11px; font-size:6px">2</td>
+<td style="font-size:6px">Lagartija</td>
+<td style="width:40px; font-size:6px">&nbsp;</td>
+</tr>
+<tr class="AlignTop">
+<td style="width:40px; font-size:6px">&nbsp;</td>
+<td style="width:11px; font-size:6px">4</td>
+<td style="font-size:6px">Oso</td>
+<td style="width:40px; font-size:6px">&nbsp;</td>
+</tr>
+<tr class="AlignTop">
+<td style="width:40px; font-size:6px">&nbsp;</td>
+<td style="width:11px; font-size:6px">7</td>
+<td style="font-size:6px">Araña</td>
+<td style="width:40px; font-size:6px">&nbsp;</td>
+</tr>
+<tr class="AlignTop">
+<td style="width:40px; font-size:6px">&nbsp;</td>
+<td style="width:11px; font-size:6px">8</td>
+<td style="font-size:6px">Gato</td>
+<td style="width:40px; font-size:6px">&nbsp;</td>
+</tr>
+<tr class="AlignTop">
+<td style="width:40px; font-size:6px">&nbsp;</td>
+<td style="width:11px; font-size:6px">9</td>
+<td style="font-size:6px">Leon</td>
+<td style="width:40px; font-size:6px">&nbsp;</td>
+</tr>
+<tr class="AlignTop">
+<td style="width:40px; font-size:6px">&nbsp;</td>
+<td style="width:11px; font-size:6px">13</td>
+<td style="font-size:6px">Hormiga</td>
+<td style="width:40px; font-size:6px">&nbsp;</td>
+</tr>
+</tbody></table>
+</div>
+<img style="height:4px" src="./Animals_files/Space.png" alt=""><br>
+<div style="font-size:6px; line-height:110%; text-align:left; margin-left:40px; margin-right:40px; "><b>Note:</b>  You can use a different program named Crossword Weaver<sup>®</sup> to print a nicer copy of this puzzle, one that doesn't look like a web page.  
+This software program gives you much greater control over how the puzzle looks, lets you export your puzzle to other software, publish it interactively on the Web or 
+as a PDF file.  Check it out for free by downloading the demo from www.CrosswordWeaver.com.  Purchasing converts the demo into the full program.
+
+</div>
+</div>
+
+
+	<div class="FreePage" style="left:0px; top:25px; width:348px; height:25px; z-index:2000; ">
+		<span style="position:absolute; font-size:7px; left:15px;">Crossword Puzzle Maker: Free HTML Puzzle</span>
+		<span style="position:absolute; font-size:7px; right:15px;">Page 1 of 3</span>
+	</div>
+	<div class="FreePage" style="left:0px; top:426px; width:348px; height:25px; z-index:2000; ">
+		<span style="position:absolute; font-size:7px; top:10px; left:15px;">http://en.puzzle-maker.com/crossword</span>
+		<span style="position:absolute; font-size:7px; top:10px; right:15px;">03/13/2017</span>
+	</div>
+
+	<div class="PPanel" style="left:0px; top:451px; width:345px; height:10px; z-index:2000;"></div>	
+	<div class="FreePage" style="left:0px; top:461px; width:348px; height:431px; z-index:-20; "></div>
+	<div class="FreePage" style="left:0px; top:461px; width:348px; height:25px; z-index:2000; text-align:left; ">
+		<span style="position:absolute; font-size:7px; left:15px;">Crossword Puzzle Maker: Free HTML Puzzle</span>
+		<span style="position:absolute; font-size:7px; right:15px;">Page 2 of 3</span>
+	</div>
+	<div class="FreePage" style="left:0px; top:867px; width:348px; height:25px; z-index:2000; ">
+		<span style="position:absolute; font-size:7px; top:10px; left:15px;">http://en.puzzle-maker.com/crossword</span>
+		<span style="position:absolute; font-size:7px; top:10px; right:15px;">03/13/2017</span>
+	</div>
+	
+	<div class="PPanel" style="left:0px; top:892px; width:345px; height:10px; z-index:2000;"></div>	
+	<div class="FreePage" style="left:0px; top:902px; width:348px; height:431px; z-index:-20; "></div>
+	<div class="FreePage" style="left:0px; top:902px; width:348px; height:25px; z-index:2000; text-align:left; ">
+		<span style="position:absolute; font-size:7px; left:15px;">Crossword Puzzle Maker: Free HTML Puzzle</span>
+		<span style="position:absolute; font-size:7px; right:15px;">Page 3 of 3</span>
+	</div>
+	<div class="FreePage" style="left:0px; top:1308px; width:348px; height:25px; z-index:2000; ">
+		<span style="position:absolute; font-size:7px; top:10px; left:15px;">http://en.puzzle-maker.com/crossword</span>
+		<span style="position:absolute; font-size:7px; top:10px; right:15px;">03/13/2017</span>
+	</div>
+	
+  </div>
+
+</div>
+
+
+<!-- BACKGROUND PICTURE -->
+<div class="PPanel" style="top:10px; left:663px; height:560px; width:306px;" onmouseout="restoreSavedBackground()">
+ <img id="FadeBackgroundArea" src="./Animals_files/FadeBackgroundArea.png" alt="" style="position: absolute; top: -4px; left: 0px; height: 568px; width: 306px; z-index: -999;">
+ <img id="ClickForPictures" src="./Animals_files/ClickForPictures.png" alt="" style="position: absolute; top: -2000px; left: 0px; height: 550px; width: 306px; z-index: 999; cursor: pointer;" title="Click to enable background picture and &quot;Best&quot; tab." onclick="tab_best(); document.getElementById(&#39;UpdateBtn&#39;).click();">
+ <div class="PHeader">Background Picture<br></div>
+ <div class="PSubHeader">Only the "Best" puzzle comes with a backgound picture.<br>
+	(An ink-saving plain puzzle is included as well.)<br>
+	One payment lets you save your puzzle as a PDF file<br>
+	for as many Background &amp; Options sets as you like.<br>
+	</div>
+ <div class="PText"><br>&nbsp;Browse pictures by category<br>
+
+  <!-- Perhaps this list should just be an {offer type='ImageList' ...} because all the options need matching work on the back end anyway, and it would be cumbersome to force this into the main page and image page, etc. -->
+
+		<select name="ImageListName" title="Browse a rich collection of professional background images." onchange="this.form.target=&#39;_self&#39;; document.MyForm.action=&#39;/crossword_Images.cgi&#39;; trySubmit(document.getElementById(&#39;GoBtn&#39;));">
+		<option value="MostPopular.list">        Most Popular</option>
+		<option value="All.list">                            ALL (alphabetical)</option>
+		<option value="ACTIVITIES.list">                    ACTIVITIES</option>
+			<option value="Activities Ballooning.list">    - - Ballooning</option>
+			<option value="Activities Boating.list">        - - Boating</option>
+			<option value="Activities Circus.list">        - - Circus</option>
+			<option value="Activities Fishing.list">        - - Fishing</option>
+			<option value="Activities Hiking.list">        - - Hiking</option>
+			<option value="Activities Picnic.list">        - - Picnic</option>
+			<option value="Activities Shopping.list">        - - Shopping</option>
+			<option value="Activities Sports.list">        - - Sports</option>
+			<option value="Activities Surfing.list">        - - Surfing</option>
+			<option value="Activities Traveling.list">        - - Traveling</option>
+			<option value="Activities Winter Sports.list">    - - Winter Sports</option>
+		<option value="LIFE EVENTS.list">                    LIFE EVENTS</option>
+			<option value="Life Events Anniversary.list">- - Anniversaries</option>
+			<option value="Life Events Baby Shower.list">    - - Baby Shower</option>
+			<option value="Life Events Back to school.list">            - - Back to School</option>
+			<option value="Life Events Bar Bat Mitzva.list">            - - Bar/ Bat Mitzva</option> 
+			<option value="Life Events Birthday.list">        - - Birthday</option>
+			<option value="Life Events Family Reunion.list">             - - Family Reunion</option>
+			<option value="Life Events Get Well Soon.list">             - - Get Well Soon</option>
+			<option value="Life Events Graduation.list">             - - Graduation</option>
+			<option value="Life Events Tooth Fairy.list">             - - Lost Tooth</option>
+			<option value="Life Events New Home.list">             - - New Home</option>
+			<option value="Life Events Retirement.list">             - - Retirement</option>
+			<option value="Life Events Romance.list">             - - Romance</option>
+			<option value="Life Events Weddings.list">        - - Weddings</option>
+		<option value="HOLIDAYS.list">            HOLIDAYS</option>
+			<option value="Holidays New Year.list">                    - - New Year</option>
+			<option value="Holidays Chinese New Year.list">        - - Chinese New Years</option>
+			<option value="Holidays Human Rights Day.list">        - - Human Rights Day</option>
+			<option value="Holidays Valentines Day.list">                - - Valentine's Day</option>
+			<option value="Holidays Presidents Day.list">        - - Presidents' Day</option>
+			<option value="Holidays Mardi Gras.list">                - - Mardi Gras</option>
+			<option value="Holidays Earth Day.list">                - - Earth Day</option>
+			<option value="Holidays St Patricks Day.list">            - - St. Patrick's Day</option>
+			<option value="Holidays April Fools Day.list">            - - April Fools</option>
+			<option value="Holidays Passover Seder.list">            - - Passover Seder</option>
+			<option value="Holidays-Easter.list">                        - - Easter</option>
+			<option value="Holidays Cinco de Mayo.list">            - - Cinco de Mayo</option>
+			<option value="Holidays Mothers Day.list">                - - Mother's Day</option>
+			<option value="Holidays Memorial Day.list">            - - Memorial Day</option>
+			<option value="Holidays Fathers Day.list">                - - Father's Day</option>
+			<option value="Holidays July 4th.list">                     - - Independence Day</option>
+			<option value="Holidays Yom Kippur.list">                 - - Yom Kippur</option>
+			<option value="Holidays Columbus Day.list">            - - Columbus Day</option>
+			<option value="Holidays Halloween.list">                     - - Halloween</option>
+			<option value="Holidays Thanksgiving.list">                - - Thanksgiving</option>
+			<option value="Holidays Hannukah.list">                    - - Hannukah</option>
+			<option value="Holidays Christmas.list">                     - - Christmas</option>
+			<option value="Holidays Kwanzaa.list">                     - - Kwanzaa</option>
+		<option value="NATURE.list">                            NATURE &amp; SEASONS</option>
+			<option value="Nature and Seasons Animals.list">                - - Animals</option>
+			<option value="Nature and Seasons Birds.list">                - - Birds</option>
+			<option value="Nature and Seasons Desert.list">            - - Desert</option>
+			<option value="Nature and Seasons Dinosaurs.list">            - - Dinosaurs</option>
+			<option value="Nature and Seasons Fish and Marine Life.list">    - - Fish and Marine Life</option>
+			<option value="Nature and Seasons Flowers.list">                - - Flowers</option>
+			<option value="Nature and Seasons Insects.list">            - - Insects</option>
+			<option value="Nature and Seasons Lakes and Rivers.list">    - - Lakes and Rivers</option>
+			<option value="Nature and Seasons Leaves and Trees.list">    - - Leaves and Trees</option>
+			<option value="Nature and Seasons Mountains.list">             - - Mountains</option>
+			<option value="Nature and Seasons Ocean.list">                 - - Ocean</option>
+			<option value="Nature and Seasons Space.list">                 - - Space</option>
+			<option value="Nature and Seasons Sun and Sky.list">        - - Sun and Sky</option>
+			<option value="Nature and Seasons Waterfalls.list">        - - Waterfalls</option>
+			<option value="Nature and Seasons Spring.list">                - - Spring</option>
+			<option value="Nature and Seasons Summer.list">                - - Summer</option>
+			<option value="Nature and Seasons Autumn.list">                - - Autumn</option>
+			<option value="Nature and Seasons Winter.list">                - - Winter</option>
+		<option value="RELIGIOUS.list">        RELIGION</option> 
+			<option value="Religious Christianity.list">                 - - Christianity</option>
+			<option value="Religious Judaism.list">                     - - Judaism</option>
+		<option value="PEOPLE.list">                    PEOPLE</option>
+		<option value="PROFESSIONS.list">            PROFESSIONS</option>
+			<option value="Professions Agriculture.list">            - - Agriculture</option>  
+			<option value="Professions Business.list">                - - Business</option>    
+			<option value="Professions Circus.list">                - - Circus</option>   
+			<option value="Professions Education.list">                 - - Education</option>   
+			<option value="Professions Firefighting.list">            - - Firefighting</option>   
+			<option value="Professions Medical.list">                     - - Medical</option>   
+			<option value="Professions Music.list">                     - - Music</option>   
+			<option value="Professions Science.list">                 - - Science</option>   
+			<option value="Professions Theater.list">                 - - Theater</option> 
+		<option value="OBJECTS.list">                    OBJECTS</option>
+			<option value="Objects Airplanes.list">                 - - Airplanes</option>  
+			<option value="Objects Art.list">                 - - Art</option>   
+			<option value="Objects Buildings and Urban.list">                 - - Buildings and Urban</option>   
+			<option value="Objects Clothing.list">                 - - Clothing</option>   
+			<option value="Objects Food.list">                         - - Food</option>
+			<option value="Objects Maps.list">                     - - Maps</option>   
+			<option value="Objects Misc.list">                     - - Miscelaneous</option>   
+			<option value="Objects Money.list">                     - - Money</option>   
+			<option value="Objects Monuments.list">                 - - Monuments</option>   
+			<option value="Objects Nautical.list">                 - - Nautical</option>   
+			<option value="Objects Pirates.list">                 - - Pirates</option>   
+			<option value="Objects Textures.list">                 - - Textures</option>   
+			<option value="Objects Toys and Games.list">                 - - Toys and Games</option>
+		</select>
+
+
+
+
+  <input type="submit" name="submit" value="Go" id="GoBtn" style="width:35px;" onclick="this.form.target=&#39;_self&#39;; document.MyForm.action=&#39;/crossword_Images.cgi&#39;; return trySubmit(this);">
+  </div>
+
+  <div style="text-align:center;">
+    <span class="PText" style="vertical-align:baseline;"><br>Point to preview. &nbsp; Click to select.</span>
+    <span style="vertical-align:baseline;">
+	<input type="submit" name="submit" value="See more" class="TextButton" style="vertical-align:baseline;" onclick="this.form.target=&#39;_self&#39;; document.MyForm.action=&#39;/crossword_Images.cgi&#39;; return trySubmit(this);"><br>
+    </span>
+
+    <!-- The type called 'feature' has the native dimensions of 213x275 -->
+<!-- OFFER-OfferList sunbeams.jpg/sunflowers.jpg/clouds over lake.jpg/bird in flight.jpg/sun and flowers.jpg/spring cake.jpg/yellow cake.jpg/first prize.jpg/clover bottom border.jpg/column of strawberries.jpg/duckies group.jpg/english laurel.jpg/fisher's orchid.jpg/flower cake.jpg/its a boy.jpg/its a girl.jpg/jackson lake.jpg/leaves.jpg/hearts on arrow.jpg/meadow with pine trees and big sky with clouds.jpg/mountains and lake.jpg/mountain valley with lakes.jpg/ocotillo flower.jpg/sunflowers.jpg/4 leaf clover.jpg/4 clovers.jpg/tulip.jpg/stars.jpg/lipstick kisses.jpg/fireworks-7.jpg/three red roses.jpg/watermelon slices.jpg/, 1,  FOUND Number=1, FOUND: 'sunbeams.jpg' for item 1 -->
+    <input type="image" name="ISV-sunbeams.jpg" src="./Animals_files/sunbeams(1).jpg" style="width:70px; height:90px; " title="sunbeams" onmouseover="viewOtherBackground(&#39;https://crosswordweaver.cachefly.net/Preview/sunbeams.jpg&#39;)" alt="sunbeams">
+
+<!-- OFFER-OfferList sunbeams.jpg/sunflowers.jpg/clouds over lake.jpg/bird in flight.jpg/sun and flowers.jpg/spring cake.jpg/yellow cake.jpg/first prize.jpg/clover bottom border.jpg/column of strawberries.jpg/duckies group.jpg/english laurel.jpg/fisher's orchid.jpg/flower cake.jpg/its a boy.jpg/its a girl.jpg/jackson lake.jpg/leaves.jpg/hearts on arrow.jpg/meadow with pine trees and big sky with clouds.jpg/mountains and lake.jpg/mountain valley with lakes.jpg/ocotillo flower.jpg/sunflowers.jpg/4 leaf clover.jpg/4 clovers.jpg/tulip.jpg/stars.jpg/lipstick kisses.jpg/fireworks-7.jpg/three red roses.jpg/watermelon slices.jpg/, 2,  FOUND Number=2, FOUND: 'sunflowers.jpg' for item 2 -->
+    <input type="image" name="ISV-sunflowers.jpg" src="./Animals_files/sunflowers.jpg" style="width:70px; height:90px; " title="sunflowers" onmouseover="viewOtherBackground(&#39;https://crosswordweaver.cachefly.net/Preview/sunflowers.jpg&#39;)" alt="sunflowers">
+
+<!-- OFFER-OfferList sunbeams.jpg/sunflowers.jpg/clouds over lake.jpg/bird in flight.jpg/sun and flowers.jpg/spring cake.jpg/yellow cake.jpg/first prize.jpg/clover bottom border.jpg/column of strawberries.jpg/duckies group.jpg/english laurel.jpg/fisher's orchid.jpg/flower cake.jpg/its a boy.jpg/its a girl.jpg/jackson lake.jpg/leaves.jpg/hearts on arrow.jpg/meadow with pine trees and big sky with clouds.jpg/mountains and lake.jpg/mountain valley with lakes.jpg/ocotillo flower.jpg/sunflowers.jpg/4 leaf clover.jpg/4 clovers.jpg/tulip.jpg/stars.jpg/lipstick kisses.jpg/fireworks-7.jpg/three red roses.jpg/watermelon slices.jpg/, 3,  FOUND Number=3, FOUND: 'clouds over lake.jpg' for item 3 -->
+    <input type="image" name="ISV-clouds over lake.jpg" src="./Animals_files/clouds over lake.jpg" style="width:70px; height:90px; " title="clouds over lake" onmouseover="viewOtherBackground(&#39;https://crosswordweaver.cachefly.net/Preview/clouds over lake.jpg&#39;)" alt="clouds over lake">
+
+<!-- OFFER-OfferList sunbeams.jpg/sunflowers.jpg/clouds over lake.jpg/bird in flight.jpg/sun and flowers.jpg/spring cake.jpg/yellow cake.jpg/first prize.jpg/clover bottom border.jpg/column of strawberries.jpg/duckies group.jpg/english laurel.jpg/fisher's orchid.jpg/flower cake.jpg/its a boy.jpg/its a girl.jpg/jackson lake.jpg/leaves.jpg/hearts on arrow.jpg/meadow with pine trees and big sky with clouds.jpg/mountains and lake.jpg/mountain valley with lakes.jpg/ocotillo flower.jpg/sunflowers.jpg/4 leaf clover.jpg/4 clovers.jpg/tulip.jpg/stars.jpg/lipstick kisses.jpg/fireworks-7.jpg/three red roses.jpg/watermelon slices.jpg/, 4,  FOUND Number=4, FOUND: 'bird in flight.jpg' for item 4 -->
+    <input type="image" name="ISV-bird in flight.jpg" src="./Animals_files/bird in flight.jpg" style="width:70px; height:90px; " title="bird in flight" onmouseover="viewOtherBackground(&#39;https://crosswordweaver.cachefly.net/Preview/bird in flight.jpg&#39;)" alt="bird in flight">
+
+<!-- OFFER-OfferList sunbeams.jpg/sunflowers.jpg/clouds over lake.jpg/bird in flight.jpg/sun and flowers.jpg/spring cake.jpg/yellow cake.jpg/first prize.jpg/clover bottom border.jpg/column of strawberries.jpg/duckies group.jpg/english laurel.jpg/fisher's orchid.jpg/flower cake.jpg/its a boy.jpg/its a girl.jpg/jackson lake.jpg/leaves.jpg/hearts on arrow.jpg/meadow with pine trees and big sky with clouds.jpg/mountains and lake.jpg/mountain valley with lakes.jpg/ocotillo flower.jpg/sunflowers.jpg/4 leaf clover.jpg/4 clovers.jpg/tulip.jpg/stars.jpg/lipstick kisses.jpg/fireworks-7.jpg/three red roses.jpg/watermelon slices.jpg/, 5,  FOUND Number=5, FOUND: 'sun and flowers.jpg' for item 5 -->
+    <input type="image" name="ISV-sun and flowers.jpg" src="./Animals_files/sun and flowers.jpg" style="width:70px; height:90px; " title="sun and flowers" onmouseover="viewOtherBackground(&#39;https://crosswordweaver.cachefly.net/Preview/sun and flowers.jpg&#39;)" alt="sun and flowers">
+
+<!-- OFFER-OfferList sunbeams.jpg/sunflowers.jpg/clouds over lake.jpg/bird in flight.jpg/sun and flowers.jpg/spring cake.jpg/yellow cake.jpg/first prize.jpg/clover bottom border.jpg/column of strawberries.jpg/duckies group.jpg/english laurel.jpg/fisher's orchid.jpg/flower cake.jpg/its a boy.jpg/its a girl.jpg/jackson lake.jpg/leaves.jpg/hearts on arrow.jpg/meadow with pine trees and big sky with clouds.jpg/mountains and lake.jpg/mountain valley with lakes.jpg/ocotillo flower.jpg/sunflowers.jpg/4 leaf clover.jpg/4 clovers.jpg/tulip.jpg/stars.jpg/lipstick kisses.jpg/fireworks-7.jpg/three red roses.jpg/watermelon slices.jpg/, 6,  FOUND Number=6, FOUND: 'spring cake.jpg' for item 6 -->
+    <input type="image" name="ISV-spring cake.jpg" src="./Animals_files/spring cake.jpg" style="width:70px; height:90px; " title="spring cake" onmouseover="viewOtherBackground(&#39;https://crosswordweaver.cachefly.net/Preview/spring cake.jpg&#39;)" alt="spring cake">
+
+<!-- OFFER-OfferList sunbeams.jpg/sunflowers.jpg/clouds over lake.jpg/bird in flight.jpg/sun and flowers.jpg/spring cake.jpg/yellow cake.jpg/first prize.jpg/clover bottom border.jpg/column of strawberries.jpg/duckies group.jpg/english laurel.jpg/fisher's orchid.jpg/flower cake.jpg/its a boy.jpg/its a girl.jpg/jackson lake.jpg/leaves.jpg/hearts on arrow.jpg/meadow with pine trees and big sky with clouds.jpg/mountains and lake.jpg/mountain valley with lakes.jpg/ocotillo flower.jpg/sunflowers.jpg/4 leaf clover.jpg/4 clovers.jpg/tulip.jpg/stars.jpg/lipstick kisses.jpg/fireworks-7.jpg/three red roses.jpg/watermelon slices.jpg/, 7,  FOUND Number=7, FOUND: 'yellow cake.jpg' for item 7 -->
+    <input type="image" name="ISV-yellow cake.jpg" src="./Animals_files/yellow cake.jpg" style="width:70px; height:90px; " title="yellow cake" onmouseover="viewOtherBackground(&#39;https://crosswordweaver.cachefly.net/Preview/yellow cake.jpg&#39;)" alt="yellow cake">
+
+<!-- OFFER-OfferList sunbeams.jpg/sunflowers.jpg/clouds over lake.jpg/bird in flight.jpg/sun and flowers.jpg/spring cake.jpg/yellow cake.jpg/first prize.jpg/clover bottom border.jpg/column of strawberries.jpg/duckies group.jpg/english laurel.jpg/fisher's orchid.jpg/flower cake.jpg/its a boy.jpg/its a girl.jpg/jackson lake.jpg/leaves.jpg/hearts on arrow.jpg/meadow with pine trees and big sky with clouds.jpg/mountains and lake.jpg/mountain valley with lakes.jpg/ocotillo flower.jpg/sunflowers.jpg/4 leaf clover.jpg/4 clovers.jpg/tulip.jpg/stars.jpg/lipstick kisses.jpg/fireworks-7.jpg/three red roses.jpg/watermelon slices.jpg/, 8,  FOUND Number=8, FOUND: 'first prize.jpg' for item 8 -->
+    <input type="image" name="ISV-first prize.jpg" src="./Animals_files/first prize.jpg" style="width:70px; height:90px; " title="first prize" onmouseover="viewOtherBackground(&#39;https://crosswordweaver.cachefly.net/Preview/first prize.jpg&#39;)" alt="first prize">
+
+<!-- OFFER-OfferList sunbeams.jpg/sunflowers.jpg/clouds over lake.jpg/bird in flight.jpg/sun and flowers.jpg/spring cake.jpg/yellow cake.jpg/first prize.jpg/clover bottom border.jpg/column of strawberries.jpg/duckies group.jpg/english laurel.jpg/fisher's orchid.jpg/flower cake.jpg/its a boy.jpg/its a girl.jpg/jackson lake.jpg/leaves.jpg/hearts on arrow.jpg/meadow with pine trees and big sky with clouds.jpg/mountains and lake.jpg/mountain valley with lakes.jpg/ocotillo flower.jpg/sunflowers.jpg/4 leaf clover.jpg/4 clovers.jpg/tulip.jpg/stars.jpg/lipstick kisses.jpg/fireworks-7.jpg/three red roses.jpg/watermelon slices.jpg/, 9,  FOUND Number=9, FOUND: 'clover bottom border.jpg' for item 9 -->
+    <input type="image" name="ISV-clover bottom border.jpg" src="./Animals_files/clover bottom border.jpg" style="width:70px; height:90px; " title="clover bottom border" onmouseover="viewOtherBackground(&#39;https://crosswordweaver.cachefly.net/Preview/clover bottom border.jpg&#39;)" alt="clover bottom border">
+
+<!-- OFFER-OfferList sunbeams.jpg/sunflowers.jpg/clouds over lake.jpg/bird in flight.jpg/sun and flowers.jpg/spring cake.jpg/yellow cake.jpg/first prize.jpg/clover bottom border.jpg/column of strawberries.jpg/duckies group.jpg/english laurel.jpg/fisher's orchid.jpg/flower cake.jpg/its a boy.jpg/its a girl.jpg/jackson lake.jpg/leaves.jpg/hearts on arrow.jpg/meadow with pine trees and big sky with clouds.jpg/mountains and lake.jpg/mountain valley with lakes.jpg/ocotillo flower.jpg/sunflowers.jpg/4 leaf clover.jpg/4 clovers.jpg/tulip.jpg/stars.jpg/lipstick kisses.jpg/fireworks-7.jpg/three red roses.jpg/watermelon slices.jpg/, 10,  FOUND Number=10, FOUND: 'column of strawberries.jpg' for item 10 -->
+    <input type="image" name="ISV-column of strawberries.jpg" src="./Animals_files/column of strawberries.jpg" style="width:70px; height:90px; " title="column of strawberries" onmouseover="viewOtherBackground(&#39;https://crosswordweaver.cachefly.net/Preview/column of strawberries.jpg&#39;)" alt="column of strawberries">
+
+<!-- OFFER-OfferList sunbeams.jpg/sunflowers.jpg/clouds over lake.jpg/bird in flight.jpg/sun and flowers.jpg/spring cake.jpg/yellow cake.jpg/first prize.jpg/clover bottom border.jpg/column of strawberries.jpg/duckies group.jpg/english laurel.jpg/fisher's orchid.jpg/flower cake.jpg/its a boy.jpg/its a girl.jpg/jackson lake.jpg/leaves.jpg/hearts on arrow.jpg/meadow with pine trees and big sky with clouds.jpg/mountains and lake.jpg/mountain valley with lakes.jpg/ocotillo flower.jpg/sunflowers.jpg/4 leaf clover.jpg/4 clovers.jpg/tulip.jpg/stars.jpg/lipstick kisses.jpg/fireworks-7.jpg/three red roses.jpg/watermelon slices.jpg/, 11,  FOUND Number=11, FOUND: 'duckies group.jpg' for item 11 -->
+    <input type="image" name="ISV-duckies group.jpg" src="./Animals_files/duckies group.jpg" style="width:70px; height:90px; " title="duckies group" onmouseover="viewOtherBackground(&#39;https://crosswordweaver.cachefly.net/Preview/duckies group.jpg&#39;)" alt="duckies group">
+
+<!-- OFFER-OfferList sunbeams.jpg/sunflowers.jpg/clouds over lake.jpg/bird in flight.jpg/sun and flowers.jpg/spring cake.jpg/yellow cake.jpg/first prize.jpg/clover bottom border.jpg/column of strawberries.jpg/duckies group.jpg/english laurel.jpg/fisher's orchid.jpg/flower cake.jpg/its a boy.jpg/its a girl.jpg/jackson lake.jpg/leaves.jpg/hearts on arrow.jpg/meadow with pine trees and big sky with clouds.jpg/mountains and lake.jpg/mountain valley with lakes.jpg/ocotillo flower.jpg/sunflowers.jpg/4 leaf clover.jpg/4 clovers.jpg/tulip.jpg/stars.jpg/lipstick kisses.jpg/fireworks-7.jpg/three red roses.jpg/watermelon slices.jpg/, 12,  FOUND Number=12, FOUND: 'english laurel.jpg' for item 12 -->
+    <input type="image" name="ISV-english laurel.jpg" src="./Animals_files/english laurel.jpg" style="width:70px; height:90px; " title="english laurel" onmouseover="viewOtherBackground(&#39;https://crosswordweaver.cachefly.net/Preview/english laurel.jpg&#39;)" alt="english laurel">
+
+<!-- OFFER-OfferList sunbeams.jpg/sunflowers.jpg/clouds over lake.jpg/bird in flight.jpg/sun and flowers.jpg/spring cake.jpg/yellow cake.jpg/first prize.jpg/clover bottom border.jpg/column of strawberries.jpg/duckies group.jpg/english laurel.jpg/fisher's orchid.jpg/flower cake.jpg/its a boy.jpg/its a girl.jpg/jackson lake.jpg/leaves.jpg/hearts on arrow.jpg/meadow with pine trees and big sky with clouds.jpg/mountains and lake.jpg/mountain valley with lakes.jpg/ocotillo flower.jpg/sunflowers.jpg/4 leaf clover.jpg/4 clovers.jpg/tulip.jpg/stars.jpg/lipstick kisses.jpg/fireworks-7.jpg/three red roses.jpg/watermelon slices.jpg/, 13,  FOUND Number=13, FOUND: 'fisher's orchid.jpg' for item 13 -->
+    <input type="image" name="ISV-fisher&#39;s orchid.jpg" src="./Animals_files/fisher&#39;s orchid.jpg" style="width:70px; height:90px; " title="fisher&#39;s orchid" onmouseover="viewOtherBackground(&#39;https://crosswordweaver.cachefly.net/Preview/fisher\&#39;s orchid.jpg&#39;)" alt="fisher&#39;s orchid">
+
+<!-- OFFER-OfferList sunbeams.jpg/sunflowers.jpg/clouds over lake.jpg/bird in flight.jpg/sun and flowers.jpg/spring cake.jpg/yellow cake.jpg/first prize.jpg/clover bottom border.jpg/column of strawberries.jpg/duckies group.jpg/english laurel.jpg/fisher's orchid.jpg/flower cake.jpg/its a boy.jpg/its a girl.jpg/jackson lake.jpg/leaves.jpg/hearts on arrow.jpg/meadow with pine trees and big sky with clouds.jpg/mountains and lake.jpg/mountain valley with lakes.jpg/ocotillo flower.jpg/sunflowers.jpg/4 leaf clover.jpg/4 clovers.jpg/tulip.jpg/stars.jpg/lipstick kisses.jpg/fireworks-7.jpg/three red roses.jpg/watermelon slices.jpg/, 14,  FOUND Number=14, FOUND: 'flower cake.jpg' for item 14 -->
+    <input type="image" name="ISV-flower cake.jpg" src="./Animals_files/flower cake.jpg" style="width:70px; height:90px; " title="flower cake" onmouseover="viewOtherBackground(&#39;https://crosswordweaver.cachefly.net/Preview/flower cake.jpg&#39;)" alt="flower cake">
+
+<!-- OFFER-OfferList sunbeams.jpg/sunflowers.jpg/clouds over lake.jpg/bird in flight.jpg/sun and flowers.jpg/spring cake.jpg/yellow cake.jpg/first prize.jpg/clover bottom border.jpg/column of strawberries.jpg/duckies group.jpg/english laurel.jpg/fisher's orchid.jpg/flower cake.jpg/its a boy.jpg/its a girl.jpg/jackson lake.jpg/leaves.jpg/hearts on arrow.jpg/meadow with pine trees and big sky with clouds.jpg/mountains and lake.jpg/mountain valley with lakes.jpg/ocotillo flower.jpg/sunflowers.jpg/4 leaf clover.jpg/4 clovers.jpg/tulip.jpg/stars.jpg/lipstick kisses.jpg/fireworks-7.jpg/three red roses.jpg/watermelon slices.jpg/, 15,  FOUND Number=15, FOUND: 'its a boy.jpg' for item 15 -->
+    <input type="image" name="ISV-its a boy.jpg" src="./Animals_files/its a boy.jpg" style="width:70px; height:90px; " title="its a boy" onmouseover="viewOtherBackground(&#39;https://crosswordweaver.cachefly.net/Preview/its a boy.jpg&#39;)" alt="its a boy">
+
+<!-- OFFER-OfferList sunbeams.jpg/sunflowers.jpg/clouds over lake.jpg/bird in flight.jpg/sun and flowers.jpg/spring cake.jpg/yellow cake.jpg/first prize.jpg/clover bottom border.jpg/column of strawberries.jpg/duckies group.jpg/english laurel.jpg/fisher's orchid.jpg/flower cake.jpg/its a boy.jpg/its a girl.jpg/jackson lake.jpg/leaves.jpg/hearts on arrow.jpg/meadow with pine trees and big sky with clouds.jpg/mountains and lake.jpg/mountain valley with lakes.jpg/ocotillo flower.jpg/sunflowers.jpg/4 leaf clover.jpg/4 clovers.jpg/tulip.jpg/stars.jpg/lipstick kisses.jpg/fireworks-7.jpg/three red roses.jpg/watermelon slices.jpg/, 16,  FOUND Number=16, FOUND: 'its a girl.jpg' for item 16 -->
+    <input type="image" name="ISV-its a girl.jpg" src="./Animals_files/its a girl.jpg" style="width:70px; height:90px; " title="its a girl" onmouseover="viewOtherBackground(&#39;https://crosswordweaver.cachefly.net/Preview/its a girl.jpg&#39;)" alt="its a girl">
+
+  </div>
+</div>
+
+<input type="hidden" id="screenwidth" name="screenwidth" value="1920">
+<input type="hidden" id="screenheight" name="screenheight" value="1080">
+<input type="hidden" id="clientwidth" name="clientwidth" value="1903">
+<input type="hidden" id="clientheight" name="clientheight" value="950">
+<input type="hidden" id="tabdown" name="tabdown" value="best">
+<input type="hidden" name="PM3FileVersion" value="">
+<input type="hidden" name="Directions" value="">
+<input type="hidden" name="title" value="Animals">
+<input type="hidden" name="subtitle" value="">
+<input type="hidden" name="WordsAndClues" value="-*-_Multiline_-*-.Lizzard / Lagartija%0d%0aCat / Gato%0d%0aDog / Perro%0d%0aBird / Pájaro%0d%0aBear / Oso%0d%0aRay / Mantarraya%0d%0aLion / Leon%0d%0aZebra / Cebra%0d%0aSnake / Serpiente%0d%0aOstrich / Avestruz%0d%0aPig / Puerco%0d%0aRabbit / Conejo%0d%0aSpider / Araña%0d%0aAnt / Hormiga">
+<input type="hidden" name="Locations" value="-*-_Multiline_-*-.2D(6,1)LIZZARD%0a8D(8,6)CAT%0a11A(4,9)DOG%0a1D(2,0)BIRD%0a4D(10,2)BEAR%0a14A(4,11)RAY%0a9D(1,7)LION%0a5A(6,4)ZEBRA%0a12A(0,10)SNAKE%0a6A(3,6)OSTRICH%0a10A(0,8)PIG%0a3A(2,2)RABBIT%0a7D(4,6)SPIDER%0a13D(2,10)ANT%0a">
+<input type="hidden" name="AnswersGiven" value="14">
+<input type="hidden" name="AnswersPlaced" value="14">
+<input type="hidden" name="Email" value="">
+<input type="hidden" name="id" value="">
+<input type="hidden" name="Affiliate" value="">
+<input type="hidden" name="Profile" value="">
+<input type="hidden" name="Theme" value="">
+<input type="hidden" name="Template" value="">
+<input type="hidden" name="x_email" value="">
+<input type="hidden" name="Test" value="">
+<input type="hidden" name="Car" value="">
+<input type="hidden" name="alpha" value="50%">
+<input type="hidden" name="InkSaver" value="0">
+<input type="hidden" name="BackgroundChoice" value="">
+<input type="hidden" name="BackgroundOpacity" value="0.01">
+<input type="hidden" name="PuzzlePopOpacity" value="50.00">
+<input type="hidden" name="PickPuzzle" value="">
+<input type="hidden" name="FileName" value="">
+<input type="hidden" name="PaperSize" value="Letter">
+<input type="hidden" name="Orientation" value="Portrait">
+<input type="hidden" name="HeaderLeft" value="Name _________________">
+<input type="hidden" name="WordbankList" value="&lt;span class=&#39;wbItem&#39; id=&#39;wb13&#39; data-wb=&#39;ANT&#39;&gt;ANT&lt;/span&gt;   &lt;span class=&#39;wbItem&#39; id=&#39;wb4&#39; data-wb=&#39;BEAR&#39;&gt;BEAR&lt;/span&gt;   &lt;span class=&#39;wbItem&#39; id=&#39;wb3&#39; data-wb=&#39;BIRD&#39;&gt;BIRD&lt;/span&gt;   &lt;span class=&#39;wbItem&#39; id=&#39;wb1&#39; data-wb=&#39;CAT&#39;&gt;CAT&lt;/span&gt;   &lt;span class=&#39;wbItem&#39; id=&#39;wb2&#39; data-wb=&#39;DOG&#39;&gt;DOG&lt;/span&gt;   &lt;span class=&#39;wbItem&#39; id=&#39;wb6&#39; data-wb=&#39;LION&#39;&gt;LION&lt;/span&gt;   &lt;span class=&#39;wbItem&#39; id=&#39;wb0&#39; data-wb=&#39;LIZZARD&#39;&gt;LIZZARD&lt;/span&gt;   &lt;span class=&#39;wbItem&#39; id=&#39;wb9&#39; data-wb=&#39;OSTRICH&#39;&gt;OSTRICH&lt;/span&gt;   &lt;span class=&#39;wbItem&#39; id=&#39;wb10&#39; data-wb=&#39;PIG&#39;&gt;PIG&lt;/span&gt;   &lt;span class=&#39;wbItem&#39; id=&#39;wb11&#39; data-wb=&#39;RABBIT&#39;&gt;RABBIT&lt;/span&gt;   &lt;span class=&#39;wbItem&#39; id=&#39;wb5&#39; data-wb=&#39;RAY&#39;&gt;RAY&lt;/span&gt;   &lt;span class=&#39;wbItem&#39; id=&#39;wb8&#39; data-wb=&#39;SNAKE&#39;&gt;SNAKE&lt;/span&gt;   &lt;span class=&#39;wbItem&#39; id=&#39;wb12&#39; data-wb=&#39;SPIDER&#39;&gt;SPIDER&lt;/span&gt;   &lt;span class=&#39;wbItem&#39; id=&#39;wb7&#39; data-wb=&#39;ZEBRA&#39;&gt;ZEBRA&lt;/span&gt;">
+<input type="hidden" name="WordbankLabel" value="">
+<input type="hidden" name="Background" value="sunbeams.jpg">
+<input type="hidden" name="ImageListName_Old" value="">
+<input type="hidden" name="OfferStrain" value="Combo">
+<input type="hidden" name="OfferNumberPageOffset" value="0">
+<input type="hidden" name="CountOfImageSlotsOnPage" value="16">
+<input type="hidden" name="ImagePageNumber" value="1">
+<input type="hidden" name="PdfUrl" value="">
+<input type="hidden" name="GraphicUrl" value="">
+<input type="hidden" name="GraphicType" value="">
+<input type="hidden" name="GraphicChoice" value="">
+<input type="hidden" name="GraphicWidth" value="">
+<input type="hidden" name="GraphicHeight" value="">
+<input type="hidden" name="bgcolor" value="#024074">
+<input type="hidden" name="AcrossStr" value="ACROSS">
+<input type="hidden" name="DownStr" value="DOWN">
+<input type="hidden" name="Split_SlashCW" value="">
+<input type="hidden" name="Status" value="">
+<input type="hidden" name="Buying" value="">
+<input type="hidden" name="SalePendingID" value="">
+<input type="hidden" name="Date" value="">
+<input type="hidden" name="Expiry" value="">
+<input type="hidden" name="SealSub" value="">
+<input type="hidden" name="SealSubTS" value="">
+<input type="hidden" name="SealSubBuy" value="">
+<input type="hidden" name="SealPuz" value="">
+<input type="hidden" name="SealPuzTS" value="">
+<input type="hidden" name="SealPuzBuy" value="">
+<input type="hidden" name="Amount" value="0.00">
+<input type="hidden" name="x_first_name" value="">
+<input type="hidden" name="x_last_name" value="">
+<input type="hidden" name="x_city" value="">
+<input type="hidden" name="x_state" value="">
+<input type="hidden" name="x_zip" value="">
+<input type="hidden" name="x_country" value="">
+<input type="hidden" name="LoginMsg" value="">
+<input type="hidden" name="ExpiryMsg" value="">
+<input type="hidden" name="Referrer" value="">
+<input type="hidden" name="CssForPdf" value="-*-_Multiline_-*-.">
+<input type="hidden" name="InteractiveUrl" value="">
+<input type="hidden" name="ThumbnailUrl" value="">
+<input type="hidden" name="OfferList" value="sunbeams.jpg/sunflowers.jpg/clouds over lake.jpg/bird in flight.jpg/sun and flowers.jpg/spring cake.jpg/yellow cake.jpg/first prize.jpg/clover bottom border.jpg/column of strawberries.jpg/duckies group.jpg/english laurel.jpg/fisher&#39;s orchid.jpg/flower cake.jpg/its a boy.jpg/its a girl.jpg/jackson lake.jpg/leaves.jpg/hearts on arrow.jpg/meadow with pine trees and big sky with clouds.jpg/mountains and lake.jpg/mountain valley with lakes.jpg/ocotillo flower.jpg/sunflowers.jpg/4 leaf clover.jpg/4 clovers.jpg/tulip.jpg/stars.jpg/lipstick kisses.jpg/fireworks-7.jpg/three red roses.jpg/watermelon slices.jpg/">
+<input type="hidden" name="example" value="-*-_Multiline_-*-.Delaware / The first state.%0d%0a%0d%0aRhode Island / The only state with two unique words in its name.%0d%0a%0d%0aHawaii / A true island state.%0d%0a">
+<input type="hidden" name="Columns" value="auto">
+<input type="hidden" name="Rows" value="auto">
+</form>
+
+<span id="ADV" class="ToolBox" style="font-size:12px; text-align:center; text-decoration:underline; top:10px; left:980px; width:164px; color:silver;">&nbsp;&nbsp;ADVERTISEMENT&nbsp;&nbsp;</span>
+<span id="ADVsub" class="ToolBox" style="font-size:10px; text-align:center; top:25px; left:980px; width:164px; color:silver;">(opens new tab)</span>
+<div class="ToolBox" style="top:44px; left:980px; height:600px; width:160px; vertical-align:middle; text-align:center; border:1px solid silver;">
+	<script type="text/javascript">
+	<!--//<![CDATA[
+	var hasPII = 0;
+	//var pHeaderElements = document.getElementsByClassName("PHeader");
+	//for (var i = 0; i < pHeaderElements.length; i++) { pHeaderElements[i].style.color="navy"; }
+	var myUrl = document.URL + document.referrer;
+	if( myUrl.indexOf("Owner=")	  >= 0 )hasPII = 1;
+	if( myUrl.indexOf("StartPuzzle=") >= 0 )hasPII = 1;
+	//var mesgField = document.getElementById("debugField");
+	//mesgField.innerHTML = "myUrl=" + myUrl + ", hasPII=" + hasPII;
+	if( hasPII ){
+		document.getElementById("ADVsub").innerHTML = "(blocked)";
+	} else { 
+	   document.MAX_ct0 ='';
+	   var m3_u = (location.protocol=='https:'?'https://cas.criteo.com/delivery/ajs.php?':'http://cas.criteo.com/delivery/ajs.php?');
+	   var m3_r = Math.floor(Math.random()*99999999999);
+	   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+	   document.write ("zoneid=56280");document.write("&amp;nodis=1");
+	   document.write ('&amp;cb=' + m3_r);
+	   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+	   document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+	   document.write ("&amp;loc=" + escape(window.location));
+	   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+	   if (document.context) document.write ("&context=" + escape(document.context));
+	   if ((typeof(document.MAX_ct0) != 'undefined') && (document.MAX_ct0.substring(0,4) == 'http')) {
+	       document.write ("&amp;ct0=" + escape(document.MAX_ct0));
+	   }
+	   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+	   document.write ("'></scr"+"ipt>");
+	}
+	//]]>--></script><script type="text/javascript" src="./Animals_files/ajs.php"></script><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2469845013248145";
+/* No mans land R side wide skyscraper */
+google_ad_slot = "5380643784";
+google_ad_width = 160;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript" src="./Animals_files/show_ads.js.descarga">
+</script><ins id="aswift_0_expand" style="display:inline-table;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:160px;background-color:transparent"><ins id="aswift_0_anchor" style="display:block;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:160px;background-color:transparent"><iframe width="160" height="600" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;" src="./Animals_files/saved_resource.html"></iframe></ins></ins>
+<div id="beacon_b2bc2e7e7c" style="position: absolute; left: 0px; top: 0px; visibility: hidden;">
+<img width="0" height="0" src="./Animals_files/lg.php">
+</div>
+
+
+</div>
+
+<script type="text/javascript">
+function OnSubmitForm()
+{
+        document.getElementById("screenwidth").setAttribute( "value", screen.width );
+        document.getElementById("screenheight").setAttribute( "value", screen.height );
+        document.getElementById("clientwidth").setAttribute( "value", document.documentElement.clientWidth );
+        document.getElementById("clientheight").setAttribute( "value", document.documentElement.clientHeight );
+	//alert( "Form value is " + document.getElementById('tabdown').value );
+        return true;
+}
+
+tab_restore();
+</script>
+
+
+<script type="text/javascript" src="./Animals_files/nouislider.min.js.descarga"></script>
+
+
+
+
+<!-- Duration 0.119405590, HiddenMessage= -->
+</body></html>
