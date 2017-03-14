@@ -29,16 +29,16 @@
 \contentsline {subsection}{\numberline {3.2.2}Materiales}{21}{subsection.43}
 \contentsline {subsection}{\numberline {3.2.3}Participantes}{21}{subsection.44}
 \contentsline {section}{\numberline {3.3}Procedimiento}{21}{section.45}
-\contentsline {subsection}{\numberline {3.3.1}Registro de respuestas}{23}{subsection.46}
-\contentsline {chapter}{\numberline {4}Datos}{27}{chapter.47}
-\contentsline {section}{\numberline {4.1}Control 1: \IeC {\textquestiondown }Los participantes estaban poniendo atenci\IeC {\'o}n a la tarea para emitir una respuesta?}{27}{section.48}
-\contentsline {section}{\numberline {4.2}Control 2: \IeC {\textquestiondown }La duraci\IeC {\'o}n del experimento tuvo un impacto en la ejecuci\IeC {\'o}n de los participantes?}{30}{section.58}
-\contentsline {section}{\numberline {4.3}Control 3: \IeC {\textquestiondown }Las variables mezcladas para construir los est\IeC {\'\i }mulos est\IeC {\'a}n afectando el desempe\IeC {\~n}o de los participantes?}{31}{section.65}
-\contentsline {section}{\numberline {4.4}Evidencia del Efecto Espejo}{31}{section.69}
-\contentsline {chapter}{\numberline {5}Discusi\IeC {\'o}n y Conclusiones}{51}{chapter.74}
-\contentsline {section}{\numberline {5.1}Objetivo}{51}{section.75}
-\contentsline {subsection}{\numberline {5.1.1}Construcci\IeC {\'o}n de la Tarea}{51}{subsection.76}
-\contentsline {subsection}{\numberline {5.1.2}Detalles t\IeC {\'e}cnicos}{51}{subsection.77}
-\contentsline {section}{\numberline {5.2}Procedimiento}{51}{section.78}
-\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{53}{appendix.79}
-\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{53}{section.80}
+\contentsline {subsection}{\numberline {3.3.1}Registro de respuestas}{24}{subsection.46}
+\contentsline {chapter}{\numberline {4}Datos}{29}{chapter.48}
+\contentsline {section}{\numberline {4.1}Control 1: \IeC {\textquestiondown }Los participantes estaban poniendo atenci\IeC {\'o}n a la tarea para emitir una respuesta?}{29}{section.49}
+\contentsline {section}{\numberline {4.2}Control 2: \IeC {\textquestiondown }La duraci\IeC {\'o}n del experimento tuvo un impacto en la ejecuci\IeC {\'o}n de los participantes?}{32}{section.59}
+\contentsline {section}{\numberline {4.3}Control 3: \IeC {\textquestiondown }Las variables mezcladas para construir los est\IeC {\'\i }mulos est\IeC {\'a}n afectando el desempe\IeC {\~n}o de los participantes?}{33}{section.66}
+\contentsline {section}{\numberline {4.4}Evidencia del Efecto Espejo}{33}{section.70}
+\contentsline {chapter}{\numberline {5}Discusi\IeC {\'o}n y Conclusiones}{53}{chapter.75}
+\contentsline {section}{\numberline {5.1}Objetivo}{53}{section.76}
+\contentsline {subsection}{\numberline {5.1.1}Construcci\IeC {\'o}n de la Tarea}{53}{subsection.77}
+\contentsline {subsection}{\numberline {5.1.2}Detalles t\IeC {\'e}cnicos}{53}{subsection.78}
+\contentsline {section}{\numberline {5.2}Procedimiento}{53}{section.79}
+\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{55}{appendix.80}
+\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{55}{section.81}
