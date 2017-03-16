@@ -21,7 +21,7 @@
 \contentsline {subsection}{\numberline {2.3.1}Evidencia recolectada}{14}{subsection.31}
 \contentsline {subsection}{\numberline {2.3.2}Relevancia}{14}{subsection.32}
 \contentsline {subsection}{\numberline {2.3.3}Algunos modelos desarrollados para dar cuenta del Efecto Espejo}{14}{subsection.33}
-\contentsline {chapter}{\numberline {3}Experimento: Buscando el Efecto Espejo en una tarea Perceptual}{15}{chapter.34}
+\contentsline {chapter}{\numberline {3}M\IeC {\'e}todo: Poniendo a prueba la existencia del Efecto Espejo en una tarea Perceptual}{15}{chapter.34}
 \contentsline {section}{\numberline {3.1}Planteamiento general}{15}{section.35}
 \contentsline {subsection}{\numberline {3.1.1}Objetivo}{15}{subsection.36}
 \contentsline {section}{\numberline {3.2}Construcci\IeC {\'o}n de los Experimentos}{15}{section.37}
