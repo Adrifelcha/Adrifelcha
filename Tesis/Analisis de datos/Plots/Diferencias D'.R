@@ -11,9 +11,9 @@ dir()
 ########################################################
 #Experimento 1
 #Archivo que contiene todos los datos
-archive <-'Ex2a_TODOS.csv'
+archive <-'Ex2a_TODOS-.csv'
 datos <- read.csv(archive)
-layout(matrix(1:1,ncol=1))
+layout(matrix(1:2,ncol=2))
 #Datos a plotear
 d_Facil <- datos$d_A
 d_Dificil <- datos$d_B

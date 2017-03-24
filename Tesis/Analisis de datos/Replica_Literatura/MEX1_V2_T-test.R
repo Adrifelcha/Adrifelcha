@@ -3,7 +3,7 @@ rm(list=ls())
 dir()
 
 #Especificamos el archivo que contiene los datos
-archive <-'MirrEx1a_V2_TODOS.csv'
+archive <-'MirrEx1a_V2_TODOS-.csv'
 datos <- read.csv(archive)
 
 ################ PRE PRUEBA

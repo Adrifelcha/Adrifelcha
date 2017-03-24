@@ -1,5 +1,5 @@
 rm(list=ls())
-setwd("C:/Users/Alejandro/Desktop/Felisa/Tesis/CSVs")
+setwd("C:/Users/Adrifelcha/Desktop/Felisa/Tesis/CSVs")
 rm(list=ls())
 dir()
 

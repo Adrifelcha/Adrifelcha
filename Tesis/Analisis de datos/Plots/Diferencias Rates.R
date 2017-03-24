@@ -1,4 +1,4 @@
-setwd("C:/Users/Alejandro/Desktop/Felisa/Tesis/CSVs")
+setwd("C:/Users/Adrifelcha/Desktop/Felisa/Tesis/CSVs")
 rm(list=ls())
 #layout(matrix(1:2,ncol=1))
 dir()
@@ -12,7 +12,7 @@ dir()
 ########################################################
 #Experimento 1
 #Archivo que contiene todos los datos
-archive <-'Ex2a_TODOS.csv'
+archive <-'Ex2a_TODOS-.csv'
 datos <- read.csv(archive)
 layout(matrix(1:2,ncol=2, byrow=TRUE))
 
@@ -46,7 +46,7 @@ axis(2,at=c(0.0,0.05,0.1,0.15,0.2,0.25,0.3,0.35,0.4,0.45,0.5),labels=c("0","0.05
 ###############################################
 #Experimento2
 #Archivo que contiene los datos
-archivo <-'MirrEx1a_V2_TODOS.csv'
+archivo <-'MirrEx1a_V2_TODOS-.csv'
 data <- read.csv(archivo)
 layout(matrix(1:2,ncol=2, byrow=TRUE))
 

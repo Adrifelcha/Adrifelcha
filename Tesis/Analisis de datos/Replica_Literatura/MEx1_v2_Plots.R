@@ -3,7 +3,7 @@
 # EXPERIMENTO 1 (Dos Ebbinghaus)
 ####################################
 
-setwd("C:/Users/Alejandro/Desktop/Felisa/Tesis/CSVs/Datos_Exp1")
+setwd("C:/Users/Adrifelcha/Desktop/Felisa/Tesis/CSVs/Datos_Exp1")
 rm(list=ls())
 dir()
 
