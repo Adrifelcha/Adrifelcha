@@ -310,6 +310,8 @@ if (experimento ==2)
 }
 
 
+# Tau's posteriores por sujeto
+############################################
 layout(matrix(1:2,ncol=1))
 if (experimento ==1)
 {
