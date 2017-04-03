@@ -90,8 +90,8 @@ if (experimento ==1)
       font.lab = 2, cex.axis = 1.3, bty = "n", las=1)
   soporte_d <- c(0,3)
   soporte_c <- c(0,6)
-  soporte_h <- c(0,50)
-  soporte_f <- c(0,50)
+  soporte_h <- c(0,70)
+  soporte_f <- c(0,60)
     
   # Discriminability panel:    
   plot(soporte_d, axes=F, main="", ylab="", xlab="", xlim=c(0,6), col='white')
@@ -116,27 +116,27 @@ if (experimento ==1)
   }
   
   # Hit Rate panel:    
-  plot(soporte_h, col="white", main="", ylab="", xlab="", xlim=c(0,1), axes=F)
+  plot(soporte_h, col="white", main="", ylab="", xlab="", xlim=c(0.3,1), axes=F)
   for(a in 1:k){
   axis(1)
-  axis(2, labels=F, at=c(0,24))
+  axis(2, labels=F, at=c(0,94))
   lines(density(tetaH_a[,a]), lwd=2, col="deepskyblue3")
   lines(density(tetaH_b[,a]), lwd=2, col="darkorchid3", lty=1)
-  lines(c(0, 0.1),c(20,20), lwd=2, lty=1, col="deepskyblue3")
-  lines(c(0, 0.1),c(10,10), lwd=2, lty=1, col="darkorchid3")
-  text(0.15, 20, labels="A Condition", offset=0, cex = 0.8, pos=4)
-  text(0.15, 10, labels="B Condition", offset=0, cex = 0.8, pos=4)
+  lines(c(0.35, 0.4),c(40,40), lwd=2, lty=1, col="deepskyblue3")
+  lines(c(0.35, 0.4),c(30,30), lwd=2, lty=1, col="darkorchid3")
+  text(0.45, 40, labels="A Condition", offset=0, cex = 0.8, pos=4)
+  text(0.45, 30, labels="B Condition", offset=0, cex = 0.8, pos=4)
   mtext("Probability Density", side=2, line = 2, cex=1, las=0)
   mtext("Hit Rate", side=1, line = 2.5, cex=1, font=2)
   }
   
   # False-Alarm Rate panel:    
-  plot(soporte_f, col="white", main="", ylab="", xlab="", xlim=c(0,1), axes=F)
+  plot(soporte_f, col="white", main="", ylab="", xlab="", xlim=c(0,0.7), axes=F)
   for(a in 1:k){
   lines(density(tetaFA_a[,a]), lwd=2, col="deepskyblue3")
   lines(density(tetaFA_b[,a]), lwd=2, col="darkorchid3", lty=1)
   axis(1)
-  axis(2, labels=F, at=c(0,24))
+  axis(2, labels=F, at=c(0,94))
   mtext("Probability Density", side=2, line = 2, cex=1, las=0)
   mtext("False-Alarm Rate", side=1, line = 2.5, cex=1, font=2)
 }}
@@ -144,46 +144,61 @@ if (experimento ==1)
 
 if (experimento ==2)
 {
-par(cex.main = 1.5, mar = c(5, 6, 4, 5) + 0.1, mgp = c(3.5, 1, 0), cex.lab = 1.5,
-    font.lab = 2, cex.axis = 1.3, bty = "n", las=1)
+  par(cex.main = 1.5, mar = c(5, 6, 4, 5) + 0.1, mgp = c(3.5, 1, 0), cex.lab = 1.5,
+      font.lab = 2, cex.axis = 1.3, bty = "n", las=1)
+  soporte_d <- c(0,3)
+  soporte_c <- c(0,6)
+  soporte_h <- c(0,62)
+  soporte_f <- c(0,25)
   
-# Discriminability panel:    
-plot(density(d_a), lwd=2, col="deepskyblue3", main="", ylab="", xlab="", 
-     xlim=c(0,3), axes=F)
-lines(density(d_b), lwd=2, col="darkorchid3", lty=1)
-axis(1)
-axis(2, labels=F, at=c(0,24))
-mtext("Probability Density", side=2, line = 2, cex=1, las=0)
-mtext("D-primes", side=1, line = 2.5, cex=1, font=2)
-# Bias panel:    
-plot(density(c_a), lwd=2, col="deepskyblue3", main="", ylab="", xlab="", 
-     xlim=c(-1,1), axes=F)
-axis(1)
-axis(2, labels=F, at=c(0,24))
-lines(density(c_b), lwd=2, col="darkorchid3", lty=1)
-mtext("Probability Density", side=2, line = 2, cex=1, las=0)
-mtext("C (Bias)", side=1, line = 2.5, cex=1, font=2)
-# Hit Rate panel:    
-plot(density(tetaH_a), lwd=2, col="deepskyblue3", main="", ylab="", xlab="", 
-     xlim=c(0,1), axes=F)
-axis(1)
-axis(2, labels=F, at=c(0,24))
-lines(density(tetaH_b), lwd=2, col="darkorchid3", lty=1)
-lines(c(0, 0.1),c(12,12), lwd=2, lty=1, col="deepskyblue3")
-lines(c(0, 0.1),c(10,10), lwd=2, lty=1, col="darkorchid3")
-text(0.15, 12, labels="A Condition", offset=0, cex = 0.8, pos=4)
-text(0.15, 10, labels="B Condition", offset=0, cex = 0.8, pos=4)
-mtext("Probability Density", side=2, line = 2, cex=1, las=0)
-mtext("Hit Rate", side=1, line = 2.5, cex=1, font=2)
-# False-Alarm Rate panel:    
-plot(density(tetaFA_a), lwd=2, col="deepskyblue3", main="", ylab="", xlab="", 
-     xlim=c(0,1), axes=F)
-lines(density(tetaFA_b), lwd=2, col="darkorchid3", lty=1)
-axis(1)
-axis(2, labels=F, at=c(0,24))
-mtext("Probability Density", side=2, line = 2, cex=1, las=0)
-mtext("False-Alarm Rate", side=1, line = 2.5, cex=1, font=2)
-}
+  # Discriminability panel:    
+  plot(soporte_d, axes=F, main="", ylab="", xlab="", xlim=c(-0.5,5), col='white')
+  for(a in 1:k){
+    lines(density(d_a[,a]), lwd=2, col="deepskyblue3")
+    lines(density(d_b[,a]), lwd=2, col="darkorchid3", lty=1)
+    axis(1)
+    axis(2, labels=F, at=c(0,24))
+    mtext("Probability Density", side=2, line = 2, cex=1, las=0)
+    mtext("D-primes", side=1, line = 2.5, cex=1, font=2)
+  }
+  
+  # Bias panel:   
+  plot(soporte_c, main="", ylab="", xlab="", col='white', xlim=c(-1.7,1.2), axes=F)
+  for(a in 1:k){
+    axis(1)
+    axis(2, labels=F, at=c(0,24))
+    lines(density(c_a[,a]), lwd=2, col="deepskyblue3")
+    lines(density(c_b[,a]), lwd=2, col="darkorchid3", lty=1)
+    mtext("Probability Density", side=2, line = 2, cex=1, las=0)
+    mtext("C (Bias)", side=1, line = 2.5, cex=1, font=2)
+  }
+  
+  # Hit Rate panel:    
+  plot(soporte_h, col="white", main="", ylab="", xlab="", xlim=c(0.18,1), axes=F)
+  for(a in 1:k){
+    axis(1)
+    axis(2, labels=F, at=c(0,94))
+    lines(density(tetaH_a[,a]), lwd=2, col="deepskyblue3")
+    lines(density(tetaH_b[,a]), lwd=2, col="darkorchid3", lty=1)
+    lines(c(0.35, 0.4),c(40,40), lwd=2, lty=1, col="deepskyblue3")
+    lines(c(0.35, 0.4),c(30,30), lwd=2, lty=1, col="darkorchid3")
+    text(0.45, 40, labels="A Condition", offset=0, cex = 0.8, pos=4)
+    text(0.45, 30, labels="B Condition", offset=0, cex = 0.8, pos=4)
+    mtext("Probability Density", side=2, line = 2, cex=1, las=0)
+    mtext("Hit Rate", side=1, line = 2.5, cex=1, font=2)
+  }
+  
+  # False-Alarm Rate panel:    
+  plot(soporte_f, col="white", main="", ylab="", xlab="", xlim=c(0,0.7), axes=F)
+  for(a in 1:k){
+    lines(density(tetaFA_a[,a]), lwd=2, col="deepskyblue3")
+    lines(density(tetaFA_b[,a]), lwd=2, col="darkorchid3", lty=1)
+    axis(1)
+    axis(2, labels=F, at=c(0,94))
+    mtext("Probability Density", side=2, line = 2, cex=1, las=0)
+    mtext("False-Alarm Rate", side=1, line = 2.5, cex=1, font=2)
+  }}
+  
 
 
 
@@ -208,6 +223,10 @@ layout(matrix(c(1,2,3,0),2,2,byrow=T), width=c(2/3, 1/3), heights=c(2/3,1/3))
 
 if (experimento ==1)
 {
+  soporte_d <- c(0,3)
+  soporte_c <- c(0,6)
+  soporte_h <- c(0,62)
+  soporte_f <- c(0,25)
   par(mar=c(2,2,1,0))
   plot(tetaFA_a[keep],tetaH_a[keep], col="deepskyblue3", xlab="", ylab="", axes=F,xlim=c(0,0.5), ylim=c(0.5,1))
   points(tetaFA_b[keep],tetaH_b[keep], col="darkorchid3")
@@ -260,7 +279,13 @@ if (experimento ==1)
 
 if (experimento ==2)
 {
-  par(mar=c(2,2,1,0))
+  soporte_d <- c(0,3)
+  soporte_c <- c(0,6)
+  soporte_h <- c(0,62)
+  soporte_f <- c(0,25)
+
+  #Density Plot
+  par(mar=c(2,2,1,0))  
   plot(tetaFA_a[keep],tetaH_a[keep], col="deepskyblue3", xlab="", ylab="", axes=F,xlim=c(0,0.5), ylim=c(0.45,1))
   points(tetaFA_b[keep],tetaH_b[keep], col="darkorchid3")
   lines(c(0.02, 0.07),c(0.90,0.90), lwd=2, lty=1, col="deepskyblue3")
