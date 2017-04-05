@@ -54,9 +54,9 @@ n <- 160       #Ensayos con Ruido
 ######################################
 #Preparamos y Corremos el modelo
 ######################################
-data <- list("fa_A", "fa_B", "h_B", "h_A", "s", "n", "k")     #Los datos que vamos a utilizar para nuestro modelo
+data <- list("fa_A", "fa_B", "h_B", "h_A", "s", "n", "k")                    #Los datos que vamos a utilizar para nuestro modelo
 myinits <- list(
-  list(d_A = rep(0,k), c_A = rep(0,k), d_B = rep(0,k), c_B = rep(0,k)))  
+  list(d_A = rep(0,k), c_A = rep(0,k), d_B = rep(0,k), c_B = rep(0,k)))      #Valores iniciales para las extracciones de las cadenas de Markov
 
 #Parámetros monitoreados
 parameters <- c("d_A", "c_A", "thetah_A", "thetaf_A", "d_B", "c_B", "thetah_B", "thetaf_B","Tau_H", "Tau_F")
@@ -99,25 +99,25 @@ samples <- jags(data, inits=myinits, parameters,
 
   
   ###################################################################################
-  # Parejas de Paneles
+  # Paneles separados
   # Las posteriores de los parámetros INDVIDUALES estimados (D'y C; ThetaH y ThetaFA)
   ###################################################################################
   
-layout(matrix(1:2,ncol=1))
+layout(matrix(1:2,ncol=1))  #Dos paneles
 #layout(matrix(c(1,2,3,4), 2, 2, byrow = TRUE))  #Cuatro paneles
 
 
 if (experimento ==1)
 {
   par(cex.main = 1.5, mar = c(5, 6, 4, 5) + 0.1, mgp = c(3.5, 1, 0), cex.lab = 1.5, font.lab = 2, cex.axis = 1.3, bty = "n", las=1)
-  soporte_d <- c(0,3)
+  soporte_d <- c(0,3)      
   soporte_c <- c(0,6)
   soporte_h <- c(0,70)
   soporte_f <- c(0,60)
     
   # DISCRIMINABILIDAD (D'):    
   plot(soporte_d, axes=F, main="", ylab="", xlab="", xlim=c(0,6), col='white')
-  for(a in 1:k){
+  for(a in 1:k){                                                      
     lines(density(d_a[,a]), lwd=2, col="deepskyblue3")
     lines(density(d_b[,a]), lwd=2, col="darkorchid3", lty=1)
     axis(1)
@@ -242,8 +242,7 @@ layout(matrix(c(1,2,3,0),2,2,byrow=T), width=c(2/3, 1/3), heights=c(2/3,1/3))
 #layout.show()
 
 if (experimento ==1)
-{
-  soporte_d <- c(0,3)
+{ soporte_d <- c(0,3)
   soporte_c <- c(0,6)
   soporte_h <- c(0,62)
   soporte_f <- c(0,25)
@@ -355,29 +354,29 @@ if (experimento ==2)
 }
 
 
-# Tau's posteriores por sujeto
-############################################
+###################################################################################
+# Tau
+# Posteriores individuales para Tau por sujeto
+# ###################################################################################
 layout(matrix(1:2,ncol=1))
 
-#Un color diferente por sujeto
-#coltaufa <- c('chocolate', 'chocolate1', 'chocolate2', 'chocolate3', 'chocolate4', 'firebrick4', 'coral1', 'coral2', 'coral3', 'coral4','darkgoldenrod', 'brown', 'brown4', 'darkgoldenrod3', 'darkgoldenrod4','darkorange','coral4', 'darkorange2', 'darkorange3', 'darkorange4', 'goldenrod3')
-#coltauh <- c('darkolivegreen', 'darkolivegreen1', 'darkolivegreen2', 'darkolivegreen3', 'darkolivegreen4', 'darkseagreen', 'darkseagreen1', 'darkseagreen2', 'darkseagreen3', 'darkseagreen4','chartreuse4', 'chartreuse3', 'chartreuse2', 'aquamarine4', 'aquamarine3','aquamarine2','darkgreen', 'forestgreen', 'darkcyan', 'darkgoldenrod4', 'darkkhaki')
-#Tres colores diferentes por Tau: Ayuda a distinguir los colores sin cargar demasiado la gráfica
+####Un color diferente por sujeto
+coltaufa <- c('chocolate', 'chocolate1', 'chocolate2', 'chocolate3', 'chocolate4', 'firebrick4', 'coral1', 'coral2', 'coral3', 'coral4','darkgoldenrod', 'brown', 'brown4', 'darkgoldenrod3', 'darkgoldenrod4','darkorange','coral4', 'darkorange2', 'darkorange3', 'darkorange4', 'goldenrod3')
+coltauh <- c('darkolivegreen', 'darkolivegreen1', 'darkolivegreen2', 'darkolivegreen3', 'darkolivegreen4', 'darkseagreen', 'darkseagreen1', 'darkseagreen2', 'darkseagreen3', 'darkseagreen4','chartreuse4', 'chartreuse3', 'chartreuse2', 'aquamarine4', 'aquamarine3','aquamarine2','darkgreen', 'forestgreen', 'darkcyan', 'darkgoldenrod4', 'darkkhaki')
+
+#####Tres colores diferentes por Tau: Ayuda a distinguir los colores sin cargar demasiado la gráfica
 taucolfa <- c('chocolate3','firebrick4','goldenrod2','chocolate3','firebrick4','goldenrod2','chocolate3','firebrick4','goldenrod2','chocolate3','firebrick4','goldenrod2','chocolate3','firebrick4','goldenrod2','chocolate3','firebrick4','goldenrod2','chocolate3','firebrick4','goldenrod2')
 taucolh <- c('darkgreen','forestgreen','chartreuse3', 'darkgreen','forestgreen','chartreuse3','darkgreen','forestgreen','chartreuse3','darkgreen','forestgreen','chartreuse3','darkgreen','forestgreen','chartreuse3','darkgreen','forestgreen','chartreuse3','darkgreen','forestgreen','chartreuse3')
 
 if (experimento ==1)
-{
-  soporte_t <- c(0,35)
+{ soporte_t <- c(0,35)
   par(cex.main = 1.5, mar = c(5, 6, 4, 5) + 0.1, mgp = c(3.5, 1, 0), cex.lab = 1.5,
       font.lab = 2, cex.axis = 1.3, bty = "n", las=1)
   
   plot(soporte_t, axes=F, main="", ylab="", xlab="", xlim=c(-0.15,0.3), col='white')
   for(a in 1:k){
   title("Experiment 1", line=2.5)
-  lines(density(tauH[,a]), lwd=2.5, col=taucolh[a], ylab="", xlab="", 
-       xlim=c(-0.5,0.5), axes=F)
-}
+  lines(density(tauH[,a]), lwd=2.5, col=taucolh[a], ylab="", xlab="", xlim=c(-0.5,0.5), axes=F)}
   axis(1)
   abline(v=0, col='black', lty=2, lwd=3)
   #axis(2, labels=F, at=c(0,24))
