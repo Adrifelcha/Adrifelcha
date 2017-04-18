@@ -3,7 +3,7 @@
 # EXPERIMENTO 1 (Dos Ebbinghaus)
 ####################################
 
-setwd("C:/Users/Adrifelcha/Desktop/Felisa/Tesis/CSVs/Datos_Exp1")
+setwd("C:/Users/Alejandro/Desktop/Felisa/Tesis/CSVs/Datos_Exp1")
 rm(list=ls())
 dir()
 
@@ -224,7 +224,7 @@ for(archive in dir()){
 
 ### Choice por FACIL DIFICIL
   
-  layout(matrix(1:3,ncol=1))
+  layout(matrix(1:2,ncol=1))
     
   plot(jaime$choice[1:640],type='o',pch=16, col='black',ylim=c(0,1), xlim=c(0,700),axes=F , ylab='Respuesta', xlab='Trial', font.lab=2 )
   axis(1,at=m,labels=m)
@@ -258,24 +258,24 @@ for(archive in dir()){
 
   ##### Choice por COLOR
   
-  plot(jaime$choice[1:640],type='o',pch=16, col='black',ylim=c(0,1), xlim=c(0,700),axes=F , ylab='Respuesta', xlab='Trial', font.lab=2 )
-  axis(1,at=m,labels=m)
-  axis(2,at=0:1,labels=c("No","Sí"),f=2)
-  for (a in 1:640){
-    if (jaime$Color[a] == 'Purpura'){
-      points(a,jaime$choice[a],pch=16,col=colp[2])}
-    if (jaime$Color[a] == 'Naranja'){
-      points(a,jaime$choice[a],pch=16,col=colp[5])}
-   if (jaime$Color[a] == 'Azul'){
-      points(a,jaime$choice[a],pch=16,col=colp[1])}
-    if (jaime$Color[a] == 'Verde'){
-      points(a,jaime$choice[a],pch=16,col=colp[3])}}
-  text(670,0.9,"Púrpura",cex=1,col=colp[2],f=2)
-  text(670,0.7,"Naranja",cex=1,col=colp[5],f=2)
-  text(670,0.5,"Azul",cex=1,col=colp[1],f=2)
-  text(670,0.3,"Verde",cex=1,col=colp[3],f=2)
-  text(670,9.5,paste("1-160"),cex=1,col='darkorchid',f=2)
-  mtext("Respuesta Registrada por Color",3,cex=.8, f=3)}
+  #plot(jaime$choice[1:640],type='o',pch=16, col='black',ylim=c(0,1), xlim=c(0,700),axes=F , ylab='Respuesta', xlab='Trial', font.lab=2 )
+  #axis(1,at=m,labels=m)
+  #axis(2,at=0:1,labels=c("No","Sí"),f=2)
+  #for (a in 1:640){
+  #  if (jaime$Color[a] == 'Purpura'){
+  #    points(a,jaime$choice[a],pch=16,col=colp[2])}
+  #  if (jaime$Color[a] == 'Naranja'){
+  #    points(a,jaime$choice[a],pch=16,col=colp[5])}
+  # if (jaime$Color[a] == 'Azul'){
+  #    points(a,jaime$choice[a],pch=16,col=colp[1])}
+  #  if (jaime$Color[a] == 'Verde'){
+  #    points(a,jaime$choice[a],pch=16,col=colp[3])}}
+  #text(670,0.9,"Púrpura",cex=1,col=colp[2],f=2)
+  #text(670,0.7,"Naranja",cex=1,col=colp[5],f=2)
+  #text(670,0.5,"Azul",cex=1,col=colp[1],f=2)
+  #text(670,0.3,"Verde",cex=1,col=colp[3],f=2)
+  #text(670,9.5,paste("1-160"),cex=1,col='darkorchid',f=2)
+  #mtext("Respuesta Registrada por Color",3,cex=.8, f=3)}
   
 
 
