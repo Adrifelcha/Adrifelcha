@@ -21,25 +21,28 @@
 \contentsline {subsection}{\numberline {2.3.1}Evidencia recolectada}{14}{subsection.31}
 \contentsline {subsection}{\numberline {2.3.2}Relevancia}{14}{subsection.32}
 \contentsline {subsection}{\numberline {2.3.3}Algunos modelos desarrollados para dar cuenta del Efecto Espejo}{14}{subsection.33}
-\contentsline {chapter}{\numberline {3}M\IeC {\'e}todo: Poniendo a prueba la existencia del Efecto Espejo en una tarea Perceptual}{15}{chapter.34}
-\contentsline {section}{\numberline {3.1}Planteamiento general}{15}{section.35}
+\contentsline {chapter}{\numberline {3}M\IeC {\'e}todo}{15}{chapter.34}
+\contentsline {section}{\numberline {3.1}Planteamiento general: Poniendo a prueba la existencia del Efecto Espejo en una tarea Perceptual}{15}{section.35}
 \contentsline {subsection}{\numberline {3.1.1}Objetivo}{15}{subsection.36}
 \contentsline {section}{\numberline {3.2}Construcci\IeC {\'o}n de los Experimentos}{15}{section.37}
-\contentsline {subsection}{\numberline {3.2.1}Dise\IeC {\~n}o de los Est\IeC {\'\i }mulos}{18}{subsection.40}
+\contentsline {subsection}{\numberline {3.2.1}Dise\IeC {\~n}o de los Est\IeC {\'\i }mulos}{17}{subsection.40}
 \contentsline {subsection}{\numberline {3.2.2}Materiales}{21}{subsection.43}
 \contentsline {subsection}{\numberline {3.2.3}Participantes}{21}{subsection.44}
-\contentsline {section}{\numberline {3.3}Procedimiento}{21}{section.45}
-\contentsline {subsection}{\numberline {3.3.1}Registro de respuestas}{24}{subsection.46}
+\contentsline {section}{\numberline {3.3}Procedimiento}{22}{section.45}
+\contentsline {subsection}{\numberline {3.3.1}Registro de respuestas}{25}{subsection.46}
 \contentsline {chapter}{\numberline {4}Datos}{29}{chapter.48}
 \contentsline {section}{\numberline {4.1}Control 1: \IeC {\textquestiondown }Los participantes estaban poniendo atenci\IeC {\'o}n a la tarea para emitir una respuesta?}{29}{section.49}
-\contentsline {section}{\numberline {4.2}Control 2: \IeC {\textquestiondown }La duraci\IeC {\'o}n del experimento tuvo un impacto en la ejecuci\IeC {\'o}n de los participantes?}{32}{section.59}
-\contentsline {section}{\numberline {4.3}Control 3: \IeC {\textquestiondown }Las variables mezcladas para construir los est\IeC {\'\i }mulos est\IeC {\'a}n afectando el desempe\IeC {\~n}o de los participantes?}{33}{section.66}
-\contentsline {section}{\numberline {4.4}Evidencia del Efecto Espejo}{33}{section.70}
-\contentsline {chapter}{\numberline {5}Discusi\IeC {\'o}n y Conclusiones}{53}{chapter.75}
-\contentsline {section}{\numberline {5.1}Objetivo}{53}{section.76}
-\contentsline {subsection}{\numberline {5.1.1}Construcci\IeC {\'o}n de la Tarea}{53}{subsection.77}
-\contentsline {subsection}{\numberline {5.1.2}Detalles t\IeC {\'e}cnicos}{53}{subsection.78}
-\contentsline {section}{\numberline {5.2}Procedimiento}{53}{section.79}
-\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{55}{appendix.80}
-\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{55}{section.81}
-\contentsline {chapter}{Bibliograf\'{\i }a}{57}{appendix*.82}
+\contentsline {section}{\numberline {4.2}Control 2: \IeC {\textquestiondown }La duraci\IeC {\'o}n del experimento tuvo un impacto en la ejecuci\IeC {\'o}n de los participantes?}{32}{section.53}
+\contentsline {section}{\numberline {4.3}Control 3: \IeC {\textquestiondown }Las variables mezcladas para construir los est\IeC {\'\i }mulos est\IeC {\'a}n afectando el desempe\IeC {\~n}o de los participantes?}{34}{section.56}
+\contentsline {section}{\numberline {4.4}Control 4: Evidencia del Efecto Espejo}{35}{section.58}
+\contentsline {chapter}{\numberline {5}Resultados}{53}{chapter.75}
+\contentsline {section}{\numberline {5.1}Las condiciones propuestas difieren en su discriminabilidad}{53}{section.76}
+\contentsline {section}{\numberline {5.2}Diferencias en las Tasas de Hits y Falsas Alarmas}{54}{section.78}
+\contentsline {chapter}{\numberline {6}Discusi\IeC {\'o}n y Conclusiones}{55}{chapter.80}
+\contentsline {section}{\numberline {6.1}Objetivo}{55}{section.81}
+\contentsline {subsection}{\numberline {6.1.1}Construcci\IeC {\'o}n de la Tarea}{55}{subsection.82}
+\contentsline {subsection}{\numberline {6.1.2}Detalles t\IeC {\'e}cnicos}{55}{subsection.83}
+\contentsline {section}{\numberline {6.2}Procedimiento}{55}{section.84}
+\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{57}{appendix.85}
+\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{57}{section.86}
+\contentsline {chapter}{Bibliograf\'{\i }a}{59}{appendix*.87}
