@@ -1,0 +1,316 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Template graphical model %
+% Author: Tom Lodewyckx    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% 0. Begin document
+%%%%%%%%%%%%%%%%%%%
+
+\documentclass{article}
+\usepackage[paperwidth=10.5in, paperheight=7in]{geometry}
+\usepackage{pst-all,pstricks,pst-tools}
+\usepackage{com.braju.graphicalmodels}
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\catcode`\@=11%
+\pagestyle{empty}
+\begin{document}
+\TeXtoEPS
+\psset{unit=13mm,arrowscale=1.5}
+\SpecialCoor
+
+
+% 1. Grid
+%%%%%%%%%
+
+\begin{pspicture}(2,0)(12,10)
+%\showgrid
+
+
+% 2. Nodes
+%%%%%%%%%%
+
+
+\rput(7,11){\GM@node[nodeSize=15mm,
+					%observed=true,
+					observedColor=lightgray,
+					%query=true
+					]{Delta}}
+					\rput(7,11){\GM@node[nodeSize=12mm]{Q_small}}
+           \GM@label[offset=-2.5mm]{Delta}{\huge$\delta$}
+
+
+
+
+
+\rput(1.4,8.8){\GM@node[nodeSize=14mm,
+					%observed=true,
+					observedColor=lightgray,
+					%query=true
+					]{muca}}
+           \GM@label[offset=-4mm]{muca}{\huge$\mu^C_{A}$}
+
+\rput(2.6,8.8){\GM@node[nodeSize=14mm,
+					%observed=true,
+					observedColor=lightgray,
+					%query=true
+					]{lamca}}
+           \GM@label[offset=-4.5mm]{lamca}{\huge$\lambda^C_{A}$}
+
+\rput(4.1,8.8){\GM@node[nodeSize=14mm,
+					%observed=true,
+					observedColor=lightgray,
+					%query=true
+					]{muda}}
+           \GM@label[offset=-4mm]{muda}{\huge$\mu^D_{A}$}
+
+\rput(5.3,8.8){\GM@node[nodeSize=14mm,
+					%observed=true,
+					observedColor=lightgray,
+					%query=true
+					]{lamda}}
+           \GM@label[offset=-4.5mm]{lamda}{\huge$\lambda^D_{A}$}
+
+\rput(6.8,8.8){\GM@node[nodeSize=14mm,
+					%observed=true,
+					observedColor=lightgray,
+					%query=true
+					]{mucb}}
+           \GM@label[offset=-4mm]{mucb}{\huge$\mu^C_{B}$}
+
+\rput(8,8.8){\GM@node[nodeSize=14mm,
+					%observed=true,
+					observedColor=lightgray,
+					%query=true
+					]{lamcb}}
+           \GM@label[offset=-4.5mm]{lamcb}{\huge$\lambda^C_{B}$}
+
+\rput(9.3,8.8){\GM@node[nodeSize=14mm,
+					%observed=true,
+					observedColor=lightgray,
+					%query=true
+					]{mudb}}
+           \GM@label[offset=-4mm]{mudb}{\huge$\mu^D_{B}$}
+
+\rput(10.5,8.8){\GM@node[nodeSize=14mm,
+					%observed=true,
+					observedColor=lightgray,
+					%query=true
+					]{lamdb}}
+           \GM@label[offset=-4.5mm]{lamdb}{\huge$\lambda^D_{B}$}
+
+
+
+
+
+
+
+           
+           
+\rput(2,6.5){\GM@node[nodeSize=14mm,
+					%observed=true,
+					observedColor=lightgray,
+					%query=true
+					]{cA}}
+           \GM@label[offset=-4mm]{cA}{\huge$C^A_{i}$}
+
+\rput(5,6.5){\GM@node[nodeSize=14mm,
+					%observed=true,
+					observedColor=lightgray,
+					%query=true
+					]{dA}}
+           \GM@label[offset=-4.5mm]{dA}{\huge$D^A_{i}$}
+
+\rput(7,6.5){\GM@node[nodeSize=14mm,
+					%observed=true,
+					observedColor=lightgray,
+					%query=true
+					]{cB}}
+           \GM@label[offset=-4mm]{cB}{\huge$C^B_{i}$}
+
+\rput(10,6.5){\GM@node[nodeSize=14mm,
+					%observed=true,
+					observedColor=lightgray,
+					%query=true
+					]{dB}}
+           \GM@label[offset=-5mm]{dB}{\huge$D^B_{i}$}
+        
+
+
+\rput(2,4.2){\GM@node[nodeSize=17mm,
+					%observed=true,
+					observedColor=lightgray,
+					%query=true
+					]{TetaHA}}
+					\rput(2,4.2){\GM@node[nodeSize=14mm]{Q_small}}
+           \GM@label[offset=-5.5mm]{TetaHA}{\huge$\theta h^A_{i}$}
+\rput(5,4.2){\GM@node[nodeSize=17mm,
+					%observed=true,
+					observedColor=lightgray,
+					%query=true
+					]{TetaFAA}}
+					\rput(5,4.2){\GM@node[nodeSize=14mm]{Q_small}}
+           \GM@label[offset=-5.5mm]{TetaFAA}{\huge$\theta f^A_{i}$}
+\rput(7,4.2){\GM@node[nodeSize=17mm,
+					%observed=true,
+					observedColor=lightgray,
+					%query=true
+					]{TetaHB}}
+					\rput(7,4.2){\GM@node[nodeSize=14mm]{Q_small}}
+           \GM@label[offset=-5.5mm]{TetaHB}{\huge$\theta h^B_{i}$}
+\rput(10,4.2){\GM@node[nodeSize=17mm,
+					%observed=true,
+					observedColor=lightgray,
+					%query=true
+					]{TetaFAB}}
+					\rput(10,4.2){\GM@node[nodeSize=14mm]{Q_small}}
+           \GM@label[offset=-5.5mm]{TetaFAB}{\huge$\theta f^B_{i}$}
+
+
+
+\rput(2,2){\GM@node[nodeSize=14mm,
+					observed=true,
+					observedColor=lightgray,
+					query=true
+					]{hA}}
+           \GM@label[offset=-4.5mm]{hA}{\huge$H^A_{i}$}       
+
+\rput(5,2){\GM@node[nodeSize=15mm,
+					observed=true,
+					observedColor=lightgray,
+					query=true
+					]{faA}}
+           \GM@label[offset=-6mm]{faA}{\huge$Fa^A_{i}$}    
+
+\rput(7,2){\GM@node[nodeSize=14mm,
+					observed=true,
+					observedColor=lightgray,
+					query=true
+					]{hB}}
+           \GM@label[offset=-4.5mm]{hB}{\huge$H^B_{i}$}    
+
+\rput(10,2){\GM@node[nodeSize=15mm,
+					observed=true,
+					observedColor=lightgray,
+					query=true
+					]{faB}}
+           \GM@label[offset=-6mm]{faB}{\huge$Fa^B_{i}$}    
+
+
+
+
+
+
+\rput(8.5,-0.5){\GM@node[nodeSize=13mm,
+					observed=true,
+					observedColor=lightgray,
+					query=true
+					]{N}}
+           \GM@label[offset=-2.5mm]{N}{\huge$n$}    
+
+\rput(3.5,-0.5){\GM@node[nodeSize=13mm,
+					observed=true,
+					observedColor=lightgray,
+					query=true
+					]{S}}
+           \GM@label[offset=-2mm]{S}{\huge$s$} 
+
+
+
+ 
+ 
+% 3. Arrows
+%%%%%%%%%%%
+
+\ncline[arrows=->]{muda}{Delta}
+\ncline[arrows=->]{mudb}{Delta}
+
+
+\ncline[arrows=->]{muca}{cA}
+\ncline[arrows=->]{lamca}{cA}
+\ncline[arrows=->]{muda}{dA}
+\ncline[arrows=->]{lamda}{dA}
+
+
+\ncline[arrows=->]{mucb}{cB}
+\ncline[arrows=->]{lamcb}{cB}
+\ncline[arrows=->]{mudb}{dB}
+\ncline[arrows=->]{lamdb}{dB}
+
+
+\ncline[arrows=->]{cA}{TetaHA}
+\ncline[arrows=->]{cA}{TetaFAA}
+\ncline[arrows=->]{dA}{TetaHA}
+\ncline[arrows=->]{dA}{TetaFAA}
+
+\ncline[arrows=->]{cB}{TetaHB}
+\ncline[arrows=->]{cB}{TetaFAB}
+\ncline[arrows=->]{dB}{TetaHB}
+\ncline[arrows=->]{dB}{TetaFAB}
+
+
+
+\ncline[arrows=->]{TetaHA}{hA}
+\ncline[arrows=->]{TetaFAA}{faA}
+
+\ncline[arrows=->]{TetaHB}{hB}
+\ncline[arrows=->]{TetaFAB}{faB}
+
+
+
+\ncline[arrows=->]{N}{faA}
+\ncline[arrows=->]{N}{faB}
+
+\ncline[arrows=->]{S}{hA}
+\ncline[arrows=->]{S}{hB}
+% 4. Plates
+%%%%%%%%%%%
+
+\rput(0.70, 0.9){\GM@plate[plateLabelPos=br]{10.5}{7}{\Large$i$ Sujeto}}
+
+% 5. Model specification
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\rput(11.5,8.5){\pnode{equation}}\GM@label{equation}{\huge$\epsilon_{i}\sim \mathrm{Lognorm}\bigl(0,1\bigr)$}
+
+%\rput(11.5,10.5){\pnode{equation}}\GM@label{equation}{\huge$\vartheta_{i}\sim \mathrm{Lognorm}\bigl(1,1\bigr)$}
+
+%\rput(11.5,10.5){\pnode{equation}}\GM@label{equation}{\huge$\vartheta_{i}\sim \mathrm{Lognorm}\bigl(0,1\bigr)$}
+
+\rput(11.5,11.5){\pnode{equation}}\GM@label{equation}{\huge$H^A_{i}\sim \mathrm{Binomial}\bigl(\theta h^A_{i}, s)$}
+
+\rput(11.5,10.7){\pnode{equation}}\GM@label{equation}{\huge$Fa^A_{i}\sim \mathrm{Binomial}\bigl(\theta f^A_{i}, s)$}
+
+\rput(11.5,9.9){\pnode{equation}}\GM@label{equation}{\huge$H^B_{i}\sim \mathrm{Binomial}\bigl(\theta h^B_{i}, s)$}
+
+\rput(11.5,9.1){\pnode{equation}}\GM@label{equation}{\huge$Fa^A_{i}\sim \mathrm{Binomial}\bigl(\theta f^B_{i}, s)$}
+
+\rput(11.5,7.9){\pnode{equation}}\GM@label{equation}{\huge$\theta h^A_{i}\gets \phi (\frac{1}{2}D^A_{i}-C^A_{i})$}
+
+\rput(11.5,7.1){\pnode{equation}}\GM@label{equation}{\huge$\theta f^A_{i}\gets \phi (-\frac{1}{2}D^A_{i}-C^A_{i})$}
+
+\rput(11.5,6.3){\pnode{equation}}\GM@label{equation}{\huge$\theta h^B_{i}\gets \phi (\frac{1}{2}D^B_{i}-C^B_{i})$}
+
+\rput(11.5,5.5){\pnode{equation}}\GM@label{equation}{\huge$\theta f^B_{i}\gets \phi (-\frac{1}{2}D^B_{i}-C^B_{i})$}
+
+\rput(11.5,4.3){\pnode{equation}}\GM@label{equation}{\huge$D^A_{i}\sim \mathrm{Gaussian}\bigl(\mu^D_{Ai},\lambda^D_{Ai})$}
+
+\rput(11.5,3.5){\pnode{equation}}\GM@label{equation}{\huge$C^A_{i}\sim \mathrm{Gaussian}\bigl(\mu^D_{Bi},\lambda^D_{Bi})$}
+
+\rput(11.5,2.7){\pnode{equation}}\GM@label{equation}{\huge$D^B_{i}\sim \mathrm{Gaussian}\bigl(\mu^C_{Ai},\lambda^C_{Ai})$}
+
+\rput(11.5,1.9){\pnode{equation}}\GM@label{equation}{\huge$C^B_{i}\sim \mathrm{Gaussian}\bigl(\mu^C_{Bi},\lambda^C_{Bi})$}
+
+\rput(11.3,0.7){\pnode{equation}}\GM@label{equation}{\huge$\mu^D_{Ai}, \mu^D_{Bi}, \mu^C_{Ai}, \mu^C_{Bi} \sim \mathrm{Gaussian}\bigl(0,0.001)$}
+
+\rput(11.3,-0.1){\pnode{equation}}\GM@label{equation}{\huge$\lambda^D_{Ai}, \lambda^D_{Bi}, \lambda^C_{Ai}, \lambda^C_{Bi}\sim \mathrm{Gamma}\bigl(.001,.001)$}
+
+\rput(11.5,-1.3){\pnode{equation}}\GM@label{equation}{\huge$\delta_{i}\gets D^A_{i}-D^B_{i}$}
+
+
+% 6. End document
+%%%%%%%%%%%%%%%%%
+
+\end{pspicture}
+\endTeXtoEPS
+\end{document}

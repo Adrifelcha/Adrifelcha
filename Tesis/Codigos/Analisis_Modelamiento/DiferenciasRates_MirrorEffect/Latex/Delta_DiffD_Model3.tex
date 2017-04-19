@@ -1,0 +1,178 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Template graphical model %
+% Author: Tom Lodewyckx    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% 0. Begin document
+%%%%%%%%%%%%%%%%%%%
+
+\documentclass{article}
+\usepackage[paperwidth=10.5in, paperheight=7in]{geometry}
+\usepackage{pst-all,pstricks,pst-tools}
+\usepackage{com.braju.graphicalmodels}
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\catcode`\@=11%
+\pagestyle{empty}
+\begin{document}
+\TeXtoEPS
+\psset{unit=13mm,arrowscale=1.5}
+\SpecialCoor
+
+
+% 1. Grid
+%%%%%%%%%
+
+\begin{pspicture}(2,0)(12,10)
+%\showgrid
+
+
+% 2. Nodes
+%%%%%%%%%%
+
+
+\rput(9.3,10){\GM@node[nodeSize=15mm,
+					%observed=true,
+					observedColor=lightgray,
+					%query=true
+					]{Delta}}
+					\rput(9.3,10){\GM@node[nodeSize=12mm]{Q_small}}
+           \GM@label[offset=-2.5mm]{Delta}{\huge$\delta_{i}$}
+
+           
+           
+\rput(2,7.5){\GM@node[nodeSize=14mm,
+					%observed=true,
+					observedColor=lightgray,
+					%query=true
+					]{cA}}
+           \GM@label[offset=-4mm]{cA}{\huge$C^{ij}$}
+
+\rput(7,7.5){\GM@node[nodeSize=14mm,
+					%observed=true,
+					observedColor=lightgray,
+					%query=true
+					]{dA}}
+           \GM@label[offset=-4.5mm]{dA}{\huge$D_{ij}$}
+
+  
+\rput(2,5.2){\GM@node[nodeSize=16mm,
+					%observed=true,
+					observedColor=lightgray,
+					%query=true
+					]{TetaHA}}
+           \GM@label[offset=-5mm]{TetaHA}{\huge$\theta^H_{ij}$}
+
+\rput(7,5.2){\GM@node[nodeSize=16mm,
+					%observed=true,
+					observedColor=lightgray,
+					%query=true
+					]{TetaFAA}}
+           \GM@label[offset=-5mm]{TetaFAA}{\huge$\theta^F_{ij}$}
+
+
+\rput(2,3){\GM@node[nodeSize=14mm,
+					observed=true,
+					observedColor=lightgray,
+					query=true
+					]{hA}}
+           \GM@label[offset=-4.5mm]{hA}{\huge$H_{ij}$}       
+
+\rput(7,3){\GM@node[nodeSize=15mm,
+					observed=true,
+					observedColor=lightgray,
+					query=true
+					]{faA}}
+           \GM@label[offset=-6mm]{faA}{\huge$Fa_{ij}$}    
+
+
+\rput(7,0){\GM@node[nodeSize=13mm,
+					observed=true,
+					observedColor=lightgray,
+					query=true
+					]{N}}
+           \GM@label[offset=-2.5mm]{N}{\huge$n$}    
+
+\rput(2,0){\GM@node[nodeSize=13mm,
+					observed=true,
+					observedColor=lightgray,
+					query=true
+					]{S}}
+           \GM@label[offset=-2mm]{S}{\huge$s$} 
+
+
+
+ 
+ 
+% 3. Arrows
+%%%%%%%%%%%
+
+\ncline[arrows=->]{dA}{Delta}
+\ncline[arrows=->]{dB}{Delta}
+
+
+
+\ncline[arrows=->]{cA}{TetaHA}
+\ncline[arrows=->]{cA}{TetaFAA}
+\ncline[arrows=->]{dA}{TetaHA}
+\ncline[arrows=->]{dA}{TetaFAA}
+
+\ncline[arrows=->]{cB}{TetaHB}
+\ncline[arrows=->]{cB}{TetaFAB}
+\ncline[arrows=->]{dB}{TetaHB}
+\ncline[arrows=->]{dB}{TetaFAB}
+
+
+
+\ncline[arrows=->]{TetaHA}{hA}
+\ncline[arrows=->]{TetaFAA}{faA}
+
+\ncline[arrows=->]{TetaHB}{hB}
+\ncline[arrows=->]{TetaFAB}{faB}
+
+
+
+\ncline[arrows=->]{N}{faA}
+\ncline[arrows=->]{N}{faB}
+
+\ncline[arrows=->]{S}{hA}
+\ncline[arrows=->]{S}{hB}
+% 4. Plates
+%%%%%%%%%%%
+
+\rput(0.40, 0.8){\GM@plate[plateLabelPos=br]{10.1}{10}{\Large$i$ Subject}}
+
+\rput(0.80, 1.1){\GM@plate[plateLabelPos=br]{7.4}{7.6}{\Large$j$ Condition}}
+
+% 5. Model specification
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\rput(11.5,8.5){\pnode{equation}}\GM@label{equation}{\huge$\epsilon_{i}\sim \mathrm{Lognorm}\bigl(0,1\bigr)$}
+
+%\rput(11.5,10.5){\pnode{equation}}\GM@label{equation}{\huge$\vartheta_{i}\sim \mathrm{Lognorm}\bigl(1,1\bigr)$}
+
+%\rput(11.5,10.5){\pnode{equation}}\GM@label{equation}{\huge$\vartheta_{i}\sim \mathrm{Lognorm}\bigl(0,1\bigr)$}
+
+\rput(11.5,11){\pnode{equation}}\GM@label{equation}{\huge$H_{ij}\sim \mathrm{Binomial}\bigl(\theta^H_{ij}, s)$}
+
+\rput(11.5,9.5){\pnode{equation}}\GM@label{equation}{\huge$Fa_{ij}\sim \mathrm{Binomial}\bigl(\theta^F_{ij}, s)$}
+
+
+\rput(11.5,7){\pnode{equation}}\GM@label{equation}{\huge$\theta^H_{ij}\gets \phi (\frac{1}{2}D_{ij}-C_{ij})$}
+
+\rput(11.5,5.5){\pnode{equation}}\GM@label{equation}{\huge$\theta^F_{ij}\gets \phi (-\frac{1}{2}D_{ij}-C_{ij})$}
+
+
+\rput(11.5,3){\pnode{equation}}\GM@label{equation}{\huge$D_{ij}\sim \mathrm{Gaussian}\bigl(0,0.5)$}
+
+\rput(11.5,1.5){\pnode{equation}}\GM@label{equation}{\huge$C_{ij}\sim \mathrm{Gaussian}\bigl(0,2)$}
+
+\rput(11.5,-0.5){\pnode{equation}}\GM@label{equation}{\huge$\delta_{i}\gets D_{i1}-D_{i2}$}
+
+
+% 6. End document
+%%%%%%%%%%%%%%%%%
+
+\end{pspicture}
+\endTeXtoEPS
+\end{document}
