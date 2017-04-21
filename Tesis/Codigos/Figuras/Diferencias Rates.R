@@ -25,22 +25,22 @@ FA_Dificil <- datos$FaR_B
 FA_mtx<-matrix(data=c(FA_Facil,FA_Dificil), nrow=2, ncol=20, byrow=TRUE)
 
 #Ploteamos diferencias en D'
-matplot(Hits_mtx, type="b", lty=1, lwd=3, pch=21, col=c("Blue"),
+matplot(Hits_mtx, type="b", lty=1, lwd=3, pch=21, col=c("green3"),
         cex=1, ylim=c(0.5,1), xlim=c(0.75,2.25), xlab='Tipo de Estímulo', ylab='Tasa de Hits',
         xaxp=c(1,2,1), las=1, labels=F)
 title('Experimento 1', outer = TRUE, font=1, line = -1.5)
-mtext('Diferencias en Hits',3,cex=1.2, col='darkblue')
-axis(2,at=c(0.5,0.55,0.6,0.65,0.7,0.75,0.8,0.85,0.9,0.95,1),labels=c("0.5","0.55","0.6","0.65","0.7","0.75","0.8","0.85","0.9","0.95","1"),las=1)
+mtext('Diferencias en Hits',3,cex=1.2, col='green4')
+axis(2,at=c(0.5,0.6,0.7,0.8,0.9,1),labels=c("0.5","0.6","0.7","0.8","0.9","1"),las=1)
 axis(1,at=c(1,2),labels=c("A","B"),las=1)
 
 
-matplot(FA_mtx, type="b", lty=1, lwd=3, pch=21, col=c("Blue"),
+matplot(FA_mtx, type="b", lty=1, lwd=3, pch=21, col=c("indianred3"),
         cex=1, ylim=c(0,0.501), xlim=c(0.75,2.25), xlab='Tipo de Estímulo', ylab='Tasa de F. Alarmas',
         xaxp=c(1,2,1), las=1, labels=F)
-mtext('Diferencias en F. Alarmas',3,cex=1.2, col='darkblue')
+mtext('Diferencias en F. Alarmas',3,cex=1.2, col='Red')
 
 axis(1,at=c(1,2),labels=c("A","B"),las=1)
-axis(2,at=c(0.0,0.05,0.1,0.15,0.2,0.25,0.3,0.35,0.4,0.45,0.5),labels=c("0","0.05","0.1","0.15","0.2","0.25","0.3","0.35","0.4","0.45","0.5"),las=1)
+axis(2,at=c(0.0,0.1,0.2,0.3,0.4,0.5),labels=c("0","0.1","0.2","0.3","0.4","0.5"),las=1)
 
 
 ###############################################
@@ -59,13 +59,13 @@ Fa_Dificil <- data$FaR_B
 Fa_mtx<-matrix(data=c(Fa_Facil,Fa_Dificil), nrow=2, ncol=21, byrow=TRUE)
 
 #Plot
-matplot(H_mtx, type="b", lty=1, lwd=3, pch=21, col=c("Red"),
+matplot(H_mtx, type="b", lty=1, lwd=3, pch=21, col=c("olivedrab3"),
         cex=1, ylim=c(0.3,1), xlim=c(0.75,2.25), xlab='Tipo de Estímulos', ylab='Tasa de Hits',
         xaxp=c(1,2,1), las=1, labels=F)
-mtext('Diferencias en Hits',3,cex=1, col='brown4')
+mtext('Diferencias en Hits',3,cex=1, col='olivedrab4')
 
 axis(1,at=c(1,2),labels=c("A","B"),las=1)
-axis(2,at=c(0.5,0.55,0.6,0.65,0.7,0.75,0.8,0.85,0.9,0.95,1),labels=c("0.5","0.55","0.6","0.65","0.7","0.75","0.8","0.85","0.9","0.95","1"), las=1)
+axis(2,at=c(0.3,0.4,0.5,0.6,0.7,0.8,0.9,1),labels=c("0.3","0.4","0.5","0.6","0.7","0.8","0.9","1"),las=1)
 
 
 matplot(Fa_mtx, type="b", lty=1, lwd=3, pch=21, col=c("Red"),
@@ -75,4 +75,4 @@ title('Experimento 2', outer = TRUE, font=1, line = -1.5)
 mtext('Diferencias en F. Alarmas',3,cex=1, col='brown4')
 
 axis(1,at=c(1,2),labels=c("A","B"),las=1)
-axis(2,at=c(0.0,0.05,0.1,0.15,0.2,0.25,0.3,0.35,0.4,0.45,0.5),labels=c("0","0.05","0.1","0.15","0.2","0.25","0.3","0.35","0.4","0.45","0.5"),las=1)
+axis(2,at=c(0.0,0.1,0.2,0.3,0.4,0.5),labels=c("0","0.1","0.2","0.3","0.4","0.5"),las=1)
