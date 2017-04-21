@@ -34,14 +34,14 @@
 \contentsline {section}{\numberline {4.1}Control 1: \IeC {\textquestiondown }Los participantes estaban poniendo atenci\IeC {\'o}n a la tarea para emitir una respuesta?}{29}{section.49}
 \contentsline {section}{\numberline {4.2}Control 2: \IeC {\textquestiondown }La duraci\IeC {\'o}n del experimento tuvo un impacto en la ejecuci\IeC {\'o}n de los participantes?}{32}{section.53}
 \contentsline {section}{\numberline {4.3}Control 3: \IeC {\textquestiondown }Las variables mezcladas para construir los est\IeC {\'\i }mulos est\IeC {\'a}n afectando el desempe\IeC {\~n}o de los participantes?}{34}{section.56}
-\contentsline {section}{\numberline {4.4}Control 4: Evidencia del Efecto Espejo}{35}{section.58}
-\contentsline {chapter}{\numberline {5}Resultados}{53}{chapter.75}
-\contentsline {section}{\numberline {5.1}Las condiciones propuestas difieren en su discriminabilidad}{53}{section.76}
-\contentsline {section}{\numberline {5.2}Diferencias en las Tasas de Hits y Falsas Alarmas}{54}{section.78}
-\contentsline {chapter}{\numberline {6}Discusi\IeC {\'o}n y Conclusiones}{55}{chapter.80}
-\contentsline {section}{\numberline {6.1}Objetivo}{55}{section.81}
-\contentsline {subsection}{\numberline {6.1.1}Construcci\IeC {\'o}n de la Tarea}{55}{subsection.82}
-\contentsline {subsection}{\numberline {6.1.2}Detalles t\IeC {\'e}cnicos}{55}{subsection.83}
-\contentsline {section}{\numberline {6.2}Procedimiento}{55}{section.84}
-\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{57}{appendix.85}
-\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{57}{section.86}
+\contentsline {section}{\numberline {4.4}Control 4: Evidencia del Efecto Espejo}{36}{section.58}
+\contentsline {chapter}{\numberline {5}Resultados}{55}{chapter.77}
+\contentsline {section}{\numberline {5.1}Las condiciones propuestas difieren en su discriminabilidad}{55}{section.78}
+\contentsline {section}{\numberline {5.2}Diferencias en las Tasas de Hits y Falsas Alarmas}{56}{section.80}
+\contentsline {chapter}{\numberline {6}Discusi\IeC {\'o}n y Conclusiones}{57}{chapter.82}
+\contentsline {section}{\numberline {6.1}Objetivo}{57}{section.83}
+\contentsline {subsection}{\numberline {6.1.1}Construcci\IeC {\'o}n de la Tarea}{57}{subsection.84}
+\contentsline {subsection}{\numberline {6.1.2}Detalles t\IeC {\'e}cnicos}{57}{subsection.85}
+\contentsline {section}{\numberline {6.2}Procedimiento}{57}{section.86}
+\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{59}{appendix.87}
+\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{59}{section.88}
