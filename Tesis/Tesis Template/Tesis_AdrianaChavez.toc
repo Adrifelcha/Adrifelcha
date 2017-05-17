@@ -14,17 +14,17 @@
 \contentsline {section}{\numberline {2.1}Panorama general del estudio de Memoria de Reconocimiento}{13}{section.23}
 \contentsline {subsection}{\numberline {2.1.1}Teor\IeC {\'\i }a del Umbral}{13}{subsection.24}
 \contentsline {subsection}{\numberline {2.1.2}Teor\IeC {\'\i }a del Procesamiento Dual}{13}{subsection.25}
-\contentsline {section}{\numberline {2.2}Teor\IeC {\'\i }a de Detecci\IeC {\'o}n de Se\IeC {\~n}ales en Memoria de Reconocimiento}{14}{section.26}
-\contentsline {subsection}{\numberline {2.2.1}Implicaciones y conflictos}{15}{subsection.29}
+\contentsline {section}{\numberline {2.2}Teor\IeC {\'\i }a de Detecci\IeC {\'o}n de Se\IeC {\~n}ales en Memoria de Reconocimiento}{13}{section.26}
+\contentsline {subsection}{\numberline {2.2.1}Implicaciones y conflictos}{14}{subsection.29}
 \contentsline {subsection}{\numberline {2.2.2}Proceso Dual Detecci\IeC {\'o}n de Se\IeC {\~n}ales - Umbral alto}{15}{subsection.30}
-\contentsline {section}{\numberline {2.3}El Efecto Espejo}{16}{section.31}
+\contentsline {section}{\numberline {2.3}El Efecto Espejo}{15}{section.31}
 \contentsline {subsection}{\numberline {2.3.1}Evidencia recolectada}{16}{subsection.32}
 \contentsline {subsection}{\numberline {2.3.2}Relevancia}{16}{subsection.33}
 \contentsline {subsection}{\numberline {2.3.3}Algunos modelos desarrollados para dar cuenta del Efecto Espejo}{16}{subsection.34}
 \contentsline {chapter}{\numberline {3}M\IeC {\'e}todo}{17}{chapter.35}
-\contentsline {section}{\numberline {3.1}Planteamiento general: Poniendo a prueba la existencia del Efecto Espejo en una tarea Perceptual}{17}{section.36}
+\contentsline {section}{\numberline {3.1}Planteamiento general: Buscando el Efecto Espejo en una tarea de Detecci\IeC {\'o}n Perceptual}{17}{section.36}
 \contentsline {subsection}{\numberline {3.1.1}Objetivo}{17}{subsection.37}
-\contentsline {section}{\numberline {3.2}Construcci\IeC {\'o}n de los Experimentos}{17}{section.38}
+\contentsline {section}{\numberline {3.2}Construcci\IeC {\'o}n de los Experimentos}{18}{section.38}
 \contentsline {subsection}{\numberline {3.2.1}Dise\IeC {\~n}o de los Est\IeC {\'\i }mulos}{19}{subsection.41}
 \contentsline {subsection}{\numberline {3.2.2}Materiales}{23}{subsection.44}
 \contentsline {subsection}{\numberline {3.2.3}Participantes}{23}{subsection.45}
