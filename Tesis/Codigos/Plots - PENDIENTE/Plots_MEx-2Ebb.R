@@ -3,7 +3,7 @@
 # EXPERIMENTO 2 (Dos Ebbinghaus)
 ####################################
 
-setwd("C:/Users/Alejandro/Desktop/Felisa/Tesis/CSVs/Datos_MirrExp_2Ebb")
+setwd("C:/Users/Adriana/Desktop/Felisa/Tesis/CSVs/Datos_MirrExp_2Ebb")
 rm(list=ls())
 dir()
 

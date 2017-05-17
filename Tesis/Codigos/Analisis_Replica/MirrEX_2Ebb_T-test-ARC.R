@@ -1,10 +1,10 @@
 rm(list=ls())
-setwd("C:/Users/Alejandro/Desktop/Felisa/Tesis/CSVs")
+setwd("C:/Users/Adriana/Desktop/Felisa/Tesis/CSVs")
 rm(list=ls())
 dir()
 
 #Especificamos el archivo que contiene los datos
-archive <-'Ex_2Ebb_TODOS-.csv'
+archive <-'Ex_2Ebb_TODOS.csv'
 datos <- read.csv(archive)
 
 ################ PRE PRUEBA
@@ -23,7 +23,7 @@ d_Dificil <- datos$d_B
 d_AyB<- data.frame(cbind(d_Facil, d_Dificil))
 dprimas <- stack(d_AyB)
 #Corremos la T
-t.test(values~ind,data=dprimas,alternative = c("less"))
+t.test(values~ind,data=dprimas,alternative = c("greater"))
 
 ############## MIRROR EFFECT
 ####  Diferencia en Rates (Patron principal)
@@ -40,7 +40,7 @@ Rates <-stack(Combined_Rates)
 FalsasAlarmas <- stack(FA_Rates)
 Hits <- stack(Hits_Rates)
 #Corremos las T's
-t.test(values~ind,data=FalsasAlarmas,alternative = c("greater"))
+t.test(values~ind,data=FalsasAlarmas,alternative = c("less"))
 t.test(values~ind,data=Hits,alternative = c("less"))
 
 ##### Diferencias en Confidence Rates
@@ -58,7 +58,7 @@ EsRuido <- stack(No_Conf)
 EsSenal <- stack(Yes_Conf)
 #Corremos las T's
 t.test(values~ind,data=EsRuido,alternative = c("less"))
-t.test(values~ind,data=EsSenal,alternative = c("greater"))
+t.test(values~ind,data=EsSenal,alternative = c("less"))
 
 
 #### Diferencias en Misses

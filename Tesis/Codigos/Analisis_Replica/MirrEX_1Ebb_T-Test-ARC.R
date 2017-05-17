@@ -1,4 +1,4 @@
-setwd("C:/Users/Alejandro/Desktop/Felisa/Tesis/CSVs")
+setwd("C:/Users/Adriana/Desktop/Felisa/Tesis/CSVs")
 rm(list=ls())
 dir()
 
@@ -22,7 +22,7 @@ d_Dificil <- datos$d_B
 d_AyB<- data.frame(cbind(d_Facil, d_Dificil))
 dprimas <- stack(d_AyB)
 #Corremos la T
-t.test(values~ind,data=dprimas,alternative = c("less"))
+t.test(values~ind,data=dprimas,alternative = c("greater"))
 
 
 ############## MIRROR EFFECT
@@ -40,7 +40,7 @@ Rates <-stack(Combined_Rates)
 FalsasAlarmas <- stack(FA_Rates)
 Hits <- stack(Hits_Rates)
 #Corremos las T's
-t.test(values~ind,data=FalsasAlarmas,alternative = c("greater"))
+t.test(values~ind,data=FalsasAlarmas,alternative = c("less"))
 t.test(values~ind,data=Hits,alternative = c("less"))
 
 ##### Diferencias en Confidence Rates
@@ -58,7 +58,7 @@ EsRuido <- stack(No_Conf)
 EsSenal <- stack(Yes_Conf)
 #Corremos las T's
 t.test(values~ind,data=EsRuido,alternative = c("less"))
-t.test(values~ind,data=EsSenal,alternative = c("greater"))
+t.test(values~ind,data=EsSenal,alternative = c("less"))
 
 
 #### Diferencias en Misses
@@ -69,7 +69,7 @@ Miss_B <- datos$M_BS
 Miss_Conf <- data.frame(cbind(Miss_B,Miss_A))
 Misses <- stack(Miss_Conf)
 #Corremos la T
-t.test(values~ind,data=Misses,alternative = c("greater"))
+t.test(values~ind,data=Misses,alternative = c("less"))
 
 
 
