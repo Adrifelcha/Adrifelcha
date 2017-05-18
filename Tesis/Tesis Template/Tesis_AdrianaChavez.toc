@@ -22,34 +22,33 @@
 \contentsline {subsection}{\numberline {2.3.2}Relevancia}{16}{subsection.33}
 \contentsline {subsection}{\numberline {2.3.3}Algunos modelos desarrollados para dar cuenta del Efecto Espejo}{16}{subsection.34}
 \contentsline {chapter}{\numberline {3}M\IeC {\'e}todo}{17}{chapter.35}
-\contentsline {section}{\numberline {3.1}Planteamiento general: Buscando el Efecto Espejo en una tarea de Detecci\IeC {\'o}n Perceptual}{17}{section.36}
+\contentsline {section}{\numberline {3.1}Planteamiento general: Explorando la generalizabilidad del Efecto Espejo}{17}{section.36}
 \contentsline {subsection}{\numberline {3.1.1}Objetivo}{17}{subsection.37}
 \contentsline {section}{\numberline {3.2}Construcci\IeC {\'o}n de los Experimentos}{18}{section.38}
 \contentsline {subsection}{\numberline {3.2.1}Dise\IeC {\~n}o de los Est\IeC {\'\i }mulos}{19}{subsection.41}
 \contentsline {subsection}{\numberline {3.2.2}Materiales}{23}{subsection.44}
 \contentsline {subsection}{\numberline {3.2.3}Participantes}{23}{subsection.45}
-\contentsline {section}{\numberline {3.3}Procedimiento}{24}{section.46}
-\contentsline {subsection}{\numberline {3.3.1}Registro de respuestas}{27}{subsection.47}
-\contentsline {chapter}{\numberline {4}Datos}{31}{chapter.49}
-\contentsline {section}{\numberline {4.1}Control 1: \IeC {\textquestiondown }Los participantes estaban poniendo atenci\IeC {\'o}n a la tarea para emitir una respuesta?}{31}{section.50}
-\contentsline {section}{\numberline {4.2}Control 2: \IeC {\textquestiondown }La duraci\IeC {\'o}n del experimento tuvo un impacto en la ejecuci\IeC {\'o}n de los participantes?}{34}{section.54}
-\contentsline {section}{\numberline {4.3}Control 3: \IeC {\textquestiondown }Las variables mezcladas para construir los est\IeC {\'\i }mulos est\IeC {\'a}n afectando el desempe\IeC {\~n}o de los participantes?}{36}{section.57}
-\contentsline {section}{\numberline {4.4}Control 4: Evidencia del Efecto Espejo}{38}{section.59}
-\contentsline {chapter}{\numberline {5}Resultados}{59}{chapter.80}
-\contentsline {section}{\numberline {5.1}Las condiciones de dificultad son diferentes}{61}{section.81}
-\contentsline {subsection}{\numberline {5.1.1}An\IeC {\'a}lisis 1: Prueba T para comparar las medias de d' por cada condici\IeC {\'o}n}{61}{subsection.83}
-\contentsline {subsection}{\numberline {5.1.2}An\IeC {\'a}lisis 2: Modelo jer\IeC {\'a}rquico bayesiano: Modelo Delta para diferencias en d'}{61}{subsection.85}
-\contentsline {section}{\numberline {5.2}Diferencias en las Tasas de Hits y Falsas Alarmas}{63}{section.87}
-\contentsline {subsection}{\numberline {5.2.1}An\IeC {\'a}lisis 1: Prueba T}{63}{subsection.89}
-\contentsline {subsection}{\numberline {5.2.2}Modelo bayesiano}{63}{subsection.91}
-\contentsline {section}{\numberline {5.3}Diferencias en la asignaci\IeC {\'o}n de Puntajes de Confianza}{63}{section.93}
-\contentsline {subsection}{\numberline {5.3.1}An\IeC {\'a}lisis 1: }{63}{subsection.94}
-\contentsline {section}{\numberline {5.4}R\IeC {\'e}plica de controles reportados en la literatura}{63}{section.96}
-\contentsline {chapter}{\numberline {6}Discusi\IeC {\'o}n y Conclusiones}{67}{chapter.97}
-\contentsline {section}{\numberline {6.1}Objetivo}{67}{section.98}
-\contentsline {subsection}{\numberline {6.1.1}Construcci\IeC {\'o}n de la Tarea}{67}{subsection.99}
-\contentsline {subsection}{\numberline {6.1.2}Detalles t\IeC {\'e}cnicos}{67}{subsection.100}
-\contentsline {section}{\numberline {6.2}Procedimiento}{67}{section.101}
-\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{69}{appendix.102}
-\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{69}{section.103}
-\contentsline {chapter}{Bibliograf\'{\i }a}{71}{appendix*.104}
+\contentsline {section}{\numberline {3.3}Procedimiento}{23}{section.46}
+\contentsline {chapter}{\numberline {4}Datos}{29}{chapter.47}
+\contentsline {section}{\numberline {4.1}Control 1: \IeC {\textquestiondown }Los participantes estaban poniendo atenci\IeC {\'o}n a la tarea para emitir una respuesta?}{29}{section.48}
+\contentsline {section}{\numberline {4.2}Control 2: \IeC {\textquestiondown }La duraci\IeC {\'o}n del experimento tuvo un impacto en la ejecuci\IeC {\'o}n de los participantes?}{32}{section.52}
+\contentsline {section}{\numberline {4.3}Control 3: \IeC {\textquestiondown }Las variables mezcladas para construir los est\IeC {\'\i }mulos est\IeC {\'a}n afectando el desempe\IeC {\~n}o de los participantes?}{34}{section.55}
+\contentsline {section}{\numberline {4.4}Control 4: Evidencia del Efecto Espejo}{36}{section.57}
+\contentsline {chapter}{\numberline {5}Resultados}{57}{chapter.78}
+\contentsline {section}{\numberline {5.1}Las condiciones de dificultad son diferentes}{59}{section.79}
+\contentsline {subsection}{\numberline {5.1.1}An\IeC {\'a}lisis 1: Prueba T para comparar las medias de d' por cada condici\IeC {\'o}n}{60}{subsection.81}
+\contentsline {subsection}{\numberline {5.1.2}An\IeC {\'a}lisis 2: Modelo jer\IeC {\'a}rquico bayesiano: Modelo Delta para diferencias en d'}{60}{subsection.83}
+\contentsline {section}{\numberline {5.2}Diferencias en las Tasas de Hits y Falsas Alarmas}{60}{section.85}
+\contentsline {subsection}{\numberline {5.2.1}An\IeC {\'a}lisis 1: Prueba T}{60}{subsection.87}
+\contentsline {subsection}{\numberline {5.2.2}Modelo bayesiano}{60}{subsection.89}
+\contentsline {section}{\numberline {5.3}Diferencias en la asignaci\IeC {\'o}n de Puntajes de Confianza}{60}{section.91}
+\contentsline {subsection}{\numberline {5.3.1}An\IeC {\'a}lisis 1: }{60}{subsection.92}
+\contentsline {section}{\numberline {5.4}R\IeC {\'e}plica de controles reportados en la literatura}{60}{section.94}
+\contentsline {chapter}{\numberline {6}Discusi\IeC {\'o}n y Conclusiones}{65}{chapter.95}
+\contentsline {section}{\numberline {6.1}Objetivo}{65}{section.96}
+\contentsline {subsection}{\numberline {6.1.1}Construcci\IeC {\'o}n de la Tarea}{65}{subsection.97}
+\contentsline {subsection}{\numberline {6.1.2}Detalles t\IeC {\'e}cnicos}{65}{subsection.98}
+\contentsline {section}{\numberline {6.2}Procedimiento}{65}{section.99}
+\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{67}{appendix.100}
+\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{67}{section.101}
+\contentsline {chapter}{Bibliograf\'{\i }a}{69}{appendix*.102}
