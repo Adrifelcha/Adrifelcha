@@ -57,12 +57,12 @@ abline(v=d/2,col='dodgerblue3',lty=4,lwd=2)
 abline(v=1.8,col='dodgerblue3',lty=4,lwd=2)
 abline(v=3.2,col='dodgerblue3',lty=4,lwd=2)
 #Etiquetas
-text(-3.6,0.47,paste("1"),cex=1)
-text(-2.2,0.47,paste("2"), cex=1)
-text(-0.7,0.47, paste("3"),cex=1)
-text(((d/2)+.2),0.47,paste("4"),col='purple',cex=1)
-text(2,0.47,paste("5"),col='purple',cex=1)
-text(3.4,0.47,paste("6"),col='blue',cex=1)
+text(-3.6,0.57,paste("1"),cex=1)
+text(-2.2,0.57,paste("2"), cex=1)
+text(-0.7,0.57, paste("3"),cex=1)
+text(((d/2)+.2),0.57,paste("4"),col='purple',cex=1)
+text(2,0.57,paste("5"),col='purple',cex=1)
+text(3.4,0.57,paste("6"),col='blue',cex=1)
 
 
 
@@ -76,8 +76,8 @@ axis(2,at=c(0,.5),pos=-4,las=1)
 
 
 
-text(-0.5,0.58,paste("Ruido"), cex=1)
-text(1.5,0.58,paste("Señal"), cex=1)
+#text(-0.5,0.41,paste("Ruido"), cex=1)
+#text(1.5,0.41,paste("Señal"), cex=1)
 text(-1.2,0.43,paste("AR"), cex=1)
 text(0,0.43,paste("AR"), cex=1)
 text(1,0.43,paste("BS"), cex=1)
