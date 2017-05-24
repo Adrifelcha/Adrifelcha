@@ -19,35 +19,36 @@
 \contentsline {subsection}{\numberline {2.2.2}Proceso Dual Detecci\IeC {\'o}n de Se\IeC {\~n}ales - Umbral alto}{15}{subsection.30}
 \contentsline {section}{\numberline {2.3}El Efecto Espejo}{15}{section.31}
 \contentsline {subsection}{\numberline {2.3.1}Evidencia recolectada}{16}{subsection.32}
-\contentsline {subsection}{\numberline {2.3.2}Relevancia}{16}{subsection.33}
-\contentsline {subsection}{\numberline {2.3.3}Algunos modelos desarrollados para dar cuenta del Efecto Espejo}{16}{subsection.34}
-\contentsline {chapter}{\numberline {3}M\IeC {\'e}todo}{17}{chapter.35}
-\contentsline {section}{\numberline {3.1}Planteamiento general: Explorando la generalizabilidad del Efecto Espejo}{17}{section.36}
-\contentsline {subsection}{\numberline {3.1.1}Objetivo}{17}{subsection.37}
-\contentsline {section}{\numberline {3.2}Construcci\IeC {\'o}n de los Experimentos}{18}{section.38}
-\contentsline {subsection}{\numberline {3.2.1}Dise\IeC {\~n}o de los Est\IeC {\'\i }mulos}{19}{subsection.41}
-\contentsline {subsection}{\numberline {3.2.2}Materiales}{23}{subsection.44}
-\contentsline {subsection}{\numberline {3.2.3}Participantes}{23}{subsection.45}
-\contentsline {section}{\numberline {3.3}Procedimiento}{23}{section.46}
-\contentsline {chapter}{\numberline {4}Datos}{31}{chapter.48}
-\contentsline {section}{\numberline {4.1}Control 1: \IeC {\textquestiondown }Los participantes estaban poniendo atenci\IeC {\'o}n a la tarea para emitir una respuesta?}{31}{section.49}
-\contentsline {section}{\numberline {4.2}Control 2: \IeC {\textquestiondown }La duraci\IeC {\'o}n del experimento tuvo un impacto en la ejecuci\IeC {\'o}n de los participantes?}{34}{section.53}
-\contentsline {section}{\numberline {4.3}Control 3: \IeC {\textquestiondown }Las variables mezcladas para construir los est\IeC {\'\i }mulos est\IeC {\'a}n afectando el desempe\IeC {\~n}o de los participantes?}{36}{section.56}
-\contentsline {section}{\numberline {4.4}Control 4: Evidencia del Efecto Espejo}{38}{section.58}
-\contentsline {chapter}{\numberline {5}Resultados}{59}{chapter.79}
-\contentsline {section}{\numberline {5.1}Las condiciones de dificultad son diferentes}{61}{section.80}
-\contentsline {subsection}{\numberline {5.1.1}An\IeC {\'a}lisis 1: Prueba T para comparar las medias de d' por cada condici\IeC {\'o}n}{62}{subsection.82}
-\contentsline {subsection}{\numberline {5.1.2}An\IeC {\'a}lisis 2: Modelo jer\IeC {\'a}rquico bayesiano: Modelo Delta para diferencias en d'}{62}{subsection.84}
-\contentsline {section}{\numberline {5.2}Diferencias en las Tasas de Hits y Falsas Alarmas}{62}{section.86}
-\contentsline {subsection}{\numberline {5.2.1}An\IeC {\'a}lisis 1: Prueba T}{62}{subsection.88}
-\contentsline {subsection}{\numberline {5.2.2}Modelo bayesiano}{62}{subsection.90}
-\contentsline {section}{\numberline {5.3}Diferencias en la asignaci\IeC {\'o}n de Puntajes de Confianza}{62}{section.92}
-\contentsline {subsection}{\numberline {5.3.1}An\IeC {\'a}lisis 1: }{62}{subsection.93}
-\contentsline {section}{\numberline {5.4}R\IeC {\'e}plica de controles reportados en la literatura}{62}{section.95}
-\contentsline {chapter}{\numberline {6}Discusi\IeC {\'o}n y Conclusiones}{67}{chapter.96}
-\contentsline {section}{\numberline {6.1}Objetivo}{67}{section.97}
-\contentsline {subsection}{\numberline {6.1.1}Construcci\IeC {\'o}n de la Tarea}{67}{subsection.98}
-\contentsline {subsection}{\numberline {6.1.2}Detalles t\IeC {\'e}cnicos}{67}{subsection.99}
-\contentsline {section}{\numberline {6.2}Procedimiento}{67}{section.100}
-\contentsline {chapter}{\numberline {A}Registro de respuesta}{69}{appendix.101}
-\contentsline {chapter}{Bibliograf\'{\i }a}{71}{appendix*.103}
+\contentsline {subsection}{\numberline {2.3.2}Relevancia}{16}{subsection.34}
+\contentsline {subsection}{\numberline {2.3.3}Algunos modelos desarrollados para dar cuenta del Efecto Espejo}{16}{subsection.35}
+\contentsline {chapter}{\numberline {3}M\IeC {\'e}todo}{19}{chapter.36}
+\contentsline {section}{\numberline {3.1}Planteamiento general: Explorando la generalizabilidad del Efecto Espejo}{19}{section.37}
+\contentsline {subsection}{\numberline {3.1.1}Objetivo}{19}{subsection.38}
+\contentsline {section}{\numberline {3.2}Construcci\IeC {\'o}n de los Experimentos}{20}{section.39}
+\contentsline {subsection}{\numberline {3.2.1}Dise\IeC {\~n}o de los Est\IeC {\'\i }mulos}{21}{subsection.42}
+\contentsline {subsection}{\numberline {3.2.2}Materiales}{25}{subsection.43}
+\contentsline {subsection}{\numberline {3.2.3}Participantes}{25}{subsection.44}
+\contentsline {section}{\numberline {3.3}Procedimiento}{25}{section.45}
+\contentsline {chapter}{\numberline {4}Datos}{33}{chapter.50}
+\contentsline {section}{\numberline {4.1}Control 1: \IeC {\textquestiondown }Los participantes estaban poniendo atenci\IeC {\'o}n a la tarea para emitir una respuesta?}{33}{section.51}
+\contentsline {section}{\numberline {4.2}Control 2: \IeC {\textquestiondown }La duraci\IeC {\'o}n del experimento tuvo un impacto en la ejecuci\IeC {\'o}n de los participantes?}{35}{section.55}
+\contentsline {section}{\numberline {4.3}Control 3: \IeC {\textquestiondown }Las variables mezcladas para construir los est\IeC {\'\i }mulos est\IeC {\'a}n afectando el desempe\IeC {\~n}o de los participantes?}{37}{section.58}
+\contentsline {section}{\numberline {4.4}Control 4: Evidencia del Efecto Espejo}{39}{section.60}
+\contentsline {chapter}{\numberline {5}Resultados}{41}{chapter.63}
+\contentsline {section}{\numberline {5.1}Las condiciones de dificultad son diferentes}{43}{section.64}
+\contentsline {subsection}{\numberline {5.1.1}An\IeC {\'a}lisis 1: Prueba T para comparar las medias de d' por cada condici\IeC {\'o}n}{44}{subsection.66}
+\contentsline {subsection}{\numberline {5.1.2}An\IeC {\'a}lisis 2: Modelo jer\IeC {\'a}rquico bayesiano: Modelo Delta para diferencias en d'}{44}{subsection.68}
+\contentsline {section}{\numberline {5.2}Diferencias en las Tasas de Hits y Falsas Alarmas}{44}{section.70}
+\contentsline {subsection}{\numberline {5.2.1}An\IeC {\'a}lisis 1: Prueba T}{44}{subsection.72}
+\contentsline {subsection}{\numberline {5.2.2}Modelo bayesiano}{44}{subsection.74}
+\contentsline {section}{\numberline {5.3}Diferencias en la asignaci\IeC {\'o}n de Puntajes de Confianza}{44}{section.76}
+\contentsline {subsection}{\numberline {5.3.1}An\IeC {\'a}lisis 1: }{44}{subsection.77}
+\contentsline {section}{\numberline {5.4}R\IeC {\'e}plica de controles reportados en la literatura}{44}{section.79}
+\contentsline {chapter}{\numberline {6}Discusi\IeC {\'o}n y Conclusiones}{49}{chapter.80}
+\contentsline {section}{\numberline {6.1}Objetivo}{49}{section.81}
+\contentsline {subsection}{\numberline {6.1.1}Construcci\IeC {\'o}n de la Tarea}{49}{subsection.82}
+\contentsline {subsection}{\numberline {6.1.2}Detalles t\IeC {\'e}cnicos}{49}{subsection.83}
+\contentsline {section}{\numberline {6.2}Procedimiento}{49}{section.84}
+\contentsline {chapter}{\numberline {A}Registro de respuesta}{51}{appendix.85}
+\contentsline {chapter}{\numberline {B}Datos (Extensi\IeC {\'o}n)}{53}{appendix.87}
+\contentsline {chapter}{Bibliograf\'{\i }a}{73}{appendix*.106}

@@ -440,6 +440,63 @@
     \field{year}{1990}
   \endentry
 
+  \entry{Glanzer1993}{article}{}
+    \name{author}{4}{}{%
+      {{hash=GM}{%
+         family={Glanzer},
+         familyi={G\bibinitperiod},
+         given={Murray},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=AJK}{%
+         family={Adams},
+         familyi={A\bibinitperiod},
+         given={John\bibnamedelima K.},
+         giveni={J\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=IGJ}{%
+         family={Iverson},
+         familyi={I\bibinitperiod},
+         given={Geoffrey\bibnamedelima J.},
+         giveni={G\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=KK}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={Kisok},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GM+1}
+    \strng{fullhash}{GMAJKIGJKK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1993}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    Three regularities in recognitionmemory are described with supporting data:
+  the mirror effect, the order of receiver operating characteristic slopes, and
+  the symmetry of movement of underlying distributions. The derivation of these
+  regularities from attention/likelihood theory is demosntrated. The theory's
+  central concept, which distinguishes it from other theories, is the
+  following: Ss make recognition decisions by combining information about new
+  and old items, the combination made in the form of likelihood ratios. The
+  central role of the likelihood rations extends the implications of signal
+  detection theory for recognition memory. Attention/likelihood theory is
+  fitted to data of 2 series of experiments. One series involves yes-no tests
+  and confidence ratings, the other forced-choice experiments. It is argued
+  that the regularities require a revision of most current theories of
+  recognition memory%
+    }
+    \field{number}{3}
+    \field{pages}{546\bibrangedash 567}
+    \field{title}{The Regularities of Recognition Memory}
+    \field{volume}{100}
+    \field{journaltitle}{Psychological Review}
+    \field{year}{1993}
+  \endentry
+
   \entry{Gordon1974}{article}{}
     \name{author}{2}{}{%
       {{hash=GSK}{%
