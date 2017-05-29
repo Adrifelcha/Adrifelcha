@@ -8,30 +8,35 @@
 \title{Aprendiendo a usar Latex}
 \author{por Adriana F Chávez De la Peña}
 \maketitle
+
 Hola, bienvenidos a este hermoso ejemplo de como hacer un pdf decente en latex.
 
 
 
-Segun Marco, existen tres formas de insertar una ecuacion:
+Existen tres formas de insertar una ecuacion:
 
 
 
-La primera, es dentro de un parrafo. PAra lo cual bsata colocar entre signos de pesos lo que queremos aparezca en letra bonita, por ejemplo: $A+B=C$
+La primera, es dentro de un parrafo. Para ello bsata colocar entre signos de pesos lo que queremos aparezca en letra bonita, por ejemplo: $A+B=C$ \\
 
-
- 
-La segunda, es crear un espacio llamado equation dentro del texto, para que esto quede claro tendran que abrir el codigo de este documento. Dentro de un ambiente equation, se permite agregar una etiqueta a la qcuacion.
+La segunda, es crear un espacio llamado equation dentro del texto, (vean el txt de este mismo documento para acceder al codigo). Una de las ventajas de crear un ambiente equation, es que permite agregar una etiqueta a la ecuacion. \\
 
 \begin{equation}
 Love=\frac{1561521}{154191}
 \label{LoveEq}
 \end{equation}
 
-La tercera es sin referencia
+La tercera,  es sin referencia (ver archivo txt)\\
+
+
 \[Love=\frac{418511248648}{464135641866}\]
 
 
-Regresando a la segunda, la ventaja es que udes referirlo: Luego entonces, de acuerdo a la ecuacion \ref{LoveEq}
+Sin embargo, la ventaja de la segunda forma presentada, es que permite referirnos a ella en el texto así:  "Blablah...de acuerdo a la ecuacion~\ref{LoveEq}..."\\
+
+A continuación, insertamos una imagen (ver el codigo en el archivo txt, y la imagen en la Figura~\ref{Gatito1}
+
+
 
 \begin{figure}
 \centering
@@ -41,15 +46,7 @@ Regresando a la segunda, la ventaja es que udes referirlo: Luego entonces, de ac
 \end{figure}
 
 
-
-
-Como podemos ver en la imagen \ref{Gatito1}, esta es una practica bonita  \cite{chavez2016}
-
-
-
-
-
-Todo esto queda claro en mi famosa y aclamada obra \citep{chavez2016}
+Todo esto queda claro en mi famosa y aclamada obra \parencite{chavez2016}
 
 
 \bibliography{Referenceeeees}
