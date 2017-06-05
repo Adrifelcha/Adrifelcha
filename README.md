@@ -1,9 +1,6 @@
-# Tesis_AdrianaFelCha
+# Adriana F. Chávez: Lab 25 #
 
-Uniendo fuerzas entre el trabajo hecho en Alejandro y Adrifelcha
+Psychology undergrad student interested in SDT
 
-(Those are computer names, not people)
-
-
-
-PS: The repository (literally, the act of uploading MY work to gitHub) was done by a friend named Marco.
+Contact:
+adrifelcha@gmail.com
