@@ -118,11 +118,20 @@ Cabe señalar que la distribución-Señal se sitúa por encima de la distribuci�
 
 La variabilidad en la presentación y percepción de los posibles estados del entorno -la presencia o ausencia de la señal- constituye el elemento base sobre el cual se desarrolla la TDS y que nos lleva a pensar en la detección de señales como una tarea cargada de incertidumbre, donde los organismos no pueden confiar completamente en la evidencia que se les presenta -y no pueden emitir un juicio de detección basándose únicamente en esta- puesto que dicha evidencia puede corresponder a -o haber sido producida por- cualquiera de las interpretaciones posibles -'la señal está presente' o 'no, sólo hay ruido'-. Por ello, la TDS asume que el primer factor que incide en la ejecución y emisión de juicios de detección por parte de los sistemas inmersos en este tipo de tareas, es la discriminabilidad de la señal en relación al ruido.\\
 
-Hablar de la discriminabilidad en tareas de detección implica cuestionar '¿con qué probabilidad la señal y el ruido producen la misma evidencia?' -o bien, '¿qué tan probable es que la señal y el ruido se confundan?'-. En términos de la representación gráfica de las distribuciones de probabilidad de ruido y señal, implica preguntarnos y tratar de evaluar qué tanto se sobrelapan las distribuciones.  \\
+Hablar de la discriminabilidad en tareas de detección implica cuestionar '¿con qué probabilidad la señal y el ruido producen la misma evidencia?' -o bien, '¿qué tan probable es que la señal y el ruido se confundan?'-. En términos de la representación gráfica de las distribuciones de probabilidad de ruido y señal, implica preguntarnos -y tratar de evaluar- qué tanto se sobrelapan las distribuciones. En general, el área de sobrelape de las distribuciones es un reflejo de la incertidumbre contenida en la tarea. Por ejemplo, tal y como se ilustra en la Figura~\ref{fig:Overlap}, si las distribuciones de ruido y señal están muy separadas, el sobrelape entre estas será pequeño y podemos hablar de un entorno con poca incertidumbre -alta discriminabilidad- donde ambos estados del mundo comparten -con poca probabilidad- muy poca evidencia (panel a); por otro lado, si las distribuciones están más juntas, el sobrelape en estas será mayor, indicándonos que el rango de valores-evidencia que puede relacionarse a las dos interpretaciones posibles es más grande -discriminabilidad baja- (panel b).\\
 
-Podemos pensar en la discriminabilidad como el producto de la variabilidad intrínseca a la forma en que los estados del mundo se presentan y perciben por los sistemas detectores. Esto nos lleva a pensar que la discriminabilidad, como cualidad intrínseca a toda tarea de detección, se define tanto en función de las propiedades de los estímulos a evaluar -¿qué tanto comparten los estímulos con la señal vs los estímulos sin esta?- como de la precisión con que los sistemas detectores son capaces de discernir entre dichas instancias. Por ejemplo, \\
+\begin{figure}[th]
+\centering
+\includegraphics[width=0.55\textwidth]{Figures/Overlap_Small}\\ 
+\includegraphics[width=0.55\textwidth]{Figures/Overlap_Big} 
+%\decoRule
+\caption[El sobrelape Ruido-señal como reflejo de la incertidumbre contenida en las tareas de detección]{La incertidumbre contenida en las tareas de detección depende de la distancia que existe entre las distribuciones de ruido y señal implicadas, puesto que esta determina el área de sobrelape que existe entre las mismas, que refleja el rango de evidencia que puede ser producido y asociado con ambos estados del mundo -con su propia probabilidad-. El panel a presenta un ejemplo donde el sobrelape es pequeño al estar muy separadas las distribuciones, sugiriendo una tarea con poca incertidumbre; en el panel b, se presenta un escenario hipotético donde las distribuciones están más cerca y comparten, por tanto, más evidencia -hay más sobrelape-, cargando la tarea de una mayor incertidumbre.}
+\label{fig:Overlap}
+\end{figure}
 
-El soporte de las distribuciones, identificado en la Figura 1 bajo el nombre de ‘Evidencia’ rara vez se define con precisión,  teniendo una concepción más bien abstracta; La idea general es que cuando queremos detectar una señal particular, comenzamos a recolectar un tipo de evidencia específico a la tarea ante la que nos encontramos. Lo más importante, es que la señal siempre va a estar asociada en mayor medida con dicha evidencia, distribuyéndose siempre en valores situados por encima (a la derecha, en la Figura 1) del ruido.\\
+Podemos pensar en la discriminabilidad como producto de la variabilidad con que la TDS asume que los posibles estados del mundo se presentan y perciben por los sistemas detectores. Se dice entonces que la discriminabilidad, como cualidad intrínseca a toda tarea de detección, depende tanto de las propiedades intrínsecas de los estímulos a evaluar -¿qué tanto comparten los estímulos con la señal vs los estímulos sin esta?- como de la precisión con que los sistemas detectores son capaces de discernir entre dichas instancias. Por ejemplo, \\
+
+El soporte de las distribuciones -identificado en la Figura~\ref{fig:Overlap} bajo el nombre de ‘Evidencia’ ( y en las Figuras~\ref{fig:Senal_presentacion} y \ref{fig:Noise}, como 'Puntaje en prueba clínica' e 'Intensidad' en la Figura~\ref{fig:Senal_percepcion}- rara vez se define con precisión,  teniendo una concepción más bien abstracta; La idea general es que cuando queremos detectar una señal particular, comenzamos a recolectar un tipo de evidencia específico a la tarea ante la que nos encontramos. Lo más importante, es que la señal siempre va a estar asociada en mayor medida con dicha evidencia, distribuyéndose siempre en valores situados por encima (a la derecha, en la Figura 1) del ruido.\\
  
   \item{El papel del Sesgo: La detección es decisión}\\
 
@@ -144,11 +153,11 @@ La TDS asume que el organismo fija un criterio de elección a lo largo del eje d
 
       \item{Estimados de Probabilidad}
 
-      \item{Sesgo o Preferencial}\\
+     \end{itemize}
 
-  El sesgo se define como la preferencia del sistema a emitir respuestas de un tipo particular (i.e. 'Sí, detecto la señal' o 'No, no está'). La TDS cuenta con dos parámetros dedicados a la medición y evaluación del sesgo de los sistemas sometidos a tareas de detección.
+El sesgo se define como la preferencia del sistema a emitir respuestas de un tipo particular (i.e. 'Sí, detecto la señal' o 'No, no está'). La TDS cuenta con dos parámetros dedicados a la medición y evaluación del sesgo de los sistemas sometidos a tareas de detección.
 
- Sin embargo, no todos los errores tienen el mismo costo. Imaginemos el caso de una presa en potencia que busca determinar si el sonido que acaba de escuchar en la maleza corresponde o no con el de un depredador; no hay tiempo que perder, y el costo que dicho organismo tendría que pagar por cometer una falsa alarma (gasto innecesario de energía) o una omisión (morir devorado) es sustancialmente diferente. En este escenario particular, es muy probable que la presa sea mucho más propensa a correr por su vida, juzgando la presencia del depredador a partir de valores menores de evidencia.\\
+Sin embargo, no todos los errores tienen el mismo costo. Imaginemos el caso de una presa en potencia que busca determinar si el sonido que acaba de escuchar en la maleza corresponde o no con el de un depredador; no hay tiempo que perder, y el costo que dicho organismo tendría que pagar por cometer una falsa alarma (gasto innecesario de energía) o una omisión (morir devorado) es sustancialmente diferente. En este escenario particular, es muy probable que la presa sea mucho más propensa a correr por su vida, juzgando la presencia del depredador a partir de valores menores de evidencia.\\
 
 Esta discrepancia en el peso que se le da a las consecuencias posibles de emitir una u otra respuesta y obtener uno de los cuatro posibles resultados, suele representarse en términos de una matriz de pagos, que nos ayude a definir cuáles son las consecuencias que el organismo buscará evitar o promover, según sea el caso, en mayor medida.\\
 
@@ -156,7 +165,7 @@ Ya sea por los distintos pesos que tengan las posibles consecuencias para el org
 
 La localización del criterio en nuestro eje de evidencia recolectada va a estar altamente influida por el sesgo que tenga nuestro sistema. Podemos hablar entonces de dos tipos distintos de sesgo: conservador y liberal. El primero, favorece la emisión de respuestas negativas al desplazar el criterio a la derecha y requerir al sistema la recolección de mayores niveles de evidencia antes de dar por detectada la señal. El segundo, promueve la detección de la señal, situando el criterio de elección hacia la izquierda, emitiendo un juicio de detección con valores menores de evidencia. Nótese que un sistema carente de sesgo, sería aquel que situara su criterio de elección justo en el punto en que las dos distribuciones se juntan, donde la probabilidad de cometer cualquiera de los tipos de acierto y errores, son iguales entre sí.\\
 
-     \end{itemize}
+
 \end{itemize}
 
 \subsection{Parámetros del modelo}

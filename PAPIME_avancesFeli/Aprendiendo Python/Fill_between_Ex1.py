@@ -44,3 +44,5 @@ ax.legend(loc='upper left')
 ax.set_xlabel('num steps')
 ax.set_ylabel('position')
 ax.grid()
+
+fig.show()
