@@ -10,7 +10,7 @@ import numpy as np
 import matplotlib.mlab as mlab
 import math
 import scipy.stats
-from scipy.stats import norm
+#from scipy.stats import norm
 
 #Dibujando una distribucion normal
 mu = 0
@@ -35,5 +35,6 @@ print(quantile_position)
 #Podemos imprimir directamente el valor p y p acumulado
 print(scipy.stats.norm(0, 1).pdf(2))
 print(scipy.stats.norm(0, 1).cdf(2))
-print(scipy.stats.norm(0,1).ppf(0.977724))
+print(scipy.stats.norm(0,1).ppf(scipy.stats.norm(0, 1).cdf(2)))
+print(scipy.stats.norm(0,1).ppf(0.9772498))
 

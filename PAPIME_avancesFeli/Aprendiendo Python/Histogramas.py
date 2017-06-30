@@ -5,9 +5,9 @@ import random
 
 edgar = range(1,101)
 
-marco =[]
+adri =[]
 for i in range(1000):
-    marco.append(random.choice(edgar))
+    adri.append(random.choice(edgar))
 
 #hist(marco, 100, (0,101)) 
 #plt.xlabel('Lo que sea')
