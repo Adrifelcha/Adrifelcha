@@ -8,7 +8,7 @@
 \contentsline {section}{\numberline {1.1}El problema de la Detecci\IeC {\'o}n y la Incertidumbre}{1}{section.11}
 \contentsline {section}{\numberline {1.2}Teor\IeC {\'\i }a de Detecci\IeC {\'o}n de Se\IeC {\~n}ales}{3}{section.12}
 \contentsline {subsection}{\numberline {1.2.1}Supuestos generales del modelo}{4}{subsection.13}
-\contentsline {subsection}{\numberline {1.2.2}Par\IeC {\'a}metros del modelo}{11}{subsection.19}
+\contentsline {subsection}{\numberline {1.2.2}Par\IeC {\'a}metros del modelo}{10}{subsection.19}
 \contentsline {subsection}{\numberline {1.2.3}Tareas de detecci\IeC {\'o}n}{13}{subsection.23}
 \contentsline {chapter}{\numberline {2}El Efecto Espejo en Memoria de Reconocimiento}{15}{chapter.24}
 \contentsline {section}{\numberline {2.1}Panorama general del estudio de Memoria de Reconocimiento}{15}{section.25}
