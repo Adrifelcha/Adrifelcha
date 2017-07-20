@@ -13,10 +13,10 @@
 \contentsline {section}{\numberline {2.2}Panorama general del estudio de Memoria de Reconocimiento}{16}{section.24}
 \contentsline {subsection}{\numberline {2.2.1}Teor\IeC {\'\i }a del Umbral}{16}{subsection.25}
 \contentsline {subsection}{\numberline {2.2.2}Teor\IeC {\'\i }a del Procesamiento Dual}{16}{subsection.26}
-\contentsline {section}{\numberline {2.3}Teor\IeC {\'\i }a de Detecci\IeC {\'o}n de Se\IeC {\~n}ales en Memoria de Reconocimiento}{17}{section.27}
-\contentsline {subsection}{\numberline {2.3.1}Implicaciones y conflictos}{18}{subsection.30}
+\contentsline {section}{\numberline {2.3}Teor\IeC {\'\i }a de Detecci\IeC {\'o}n de Se\IeC {\~n}ales en Memoria de Reconocimiento}{16}{section.27}
+\contentsline {subsection}{\numberline {2.3.1}Implicaciones y conflictos}{17}{subsection.30}
 \contentsline {section}{\numberline {2.4}El Efecto Espejo}{18}{section.31}
-\contentsline {subsection}{\numberline {2.4.1}Evidencia recolectada}{19}{subsection.32}
+\contentsline {subsection}{\numberline {2.4.1}Evidencia recolectada}{18}{subsection.32}
 \contentsline {subsection}{\numberline {2.4.2}Relevancia e implicaciones}{19}{subsection.34}
 \contentsline {subsection}{\numberline {2.4.3}Algunos modelos desarrollados para dar cuenta del Efecto Espejo}{19}{subsection.35}
 \contentsline {chapter}{\numberline {3}M\IeC {\'e}todo}{21}{chapter.36}
