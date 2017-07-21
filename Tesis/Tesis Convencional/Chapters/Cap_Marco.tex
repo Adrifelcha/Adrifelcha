@@ -55,7 +55,7 @@ En el marco de la TDS, la variabilidad se considera una propiedad intrínseca de
 
 \begin{figure}[th]
 \centering
-\includegraphics[width=0.80\textwidth]{Figures/Signal_Perception} 
+\includegraphics[width=0.70\textwidth]{Figures/Signal_Perception} 
 %\decoRule
 \caption[Variabilidad en la percepción de los estímulos]{Figura representativa de la variabilidad en la percepción de los estímulos. Si se presenta un mismo estímulo con intensidad x en repetidas ocasiones, es muy probable que el valor percibido se acerque a su valor real, (la media de la distribución, $\mu$) sin embargo y aunque con menor probabilidad, también habrán ocasiones en que sea percibido como más, o menos, intenso, (siendo cada vez menos probables conforme se alejan del valor 'real'.}
 \label{fig:Senal_percepcion}
@@ -64,7 +64,7 @@ En el marco de la TDS, la variabilidad se considera una propiedad intrínseca de
 
 \begin{figure}[th]
 \centering
-\includegraphics[width=0.80\textwidth]{Figures/Signal_Presentation} 
+\includegraphics[width=0.70\textwidth]{Figures/Signal_Presentation} 
 %\decoRule
 \caption[Variabilidad en la presentación de los estímulos]{Figura representativa de la variabilidad en la presentación de los estímulos. Al aplicar una prueba clínica para detectar casos de Depresión, el diagnóstico emitido a partir de los puntajes observados se hace en relación a un rango identificado de valores que se asocian a dicha condición con mayor o menor probabilidad al rededor de una media ($\mu$, señalado en rojo). Los valores representados son arbitrarios.}
 \label{fig:Senal_presentacion}
@@ -82,7 +82,7 @@ Retomando el ejemplo planteado en la Figura~\ref{fig:Senal_presentacion} acerca 
 
 \begin{figure}[th]
 \centering
-\includegraphics[width=0.80\textwidth]{Figures/Noise} 
+\includegraphics[width=0.70\textwidth]{Figures/Noise} 
 %\decoRule
 \caption[Variabilidad en la señal y en el ruido]{Extensión del ejemplo acerca de la aplicación de una prueba clínica para detectar casos de depresión. Se presenta una distribución para representa el rango de puntajes asociados con dicha condición (en azul) y se agrega una nueva distribución que representa el rango de puntajes observados en personas sin depresión que realizan esta misma prueba (en negro). La Figura ilustra la noción de que los posibles estados de mundo -señal y ruido- se presentan y perciben dentro de su propia variabilidad en cada ocasión, siendo posible que la evidencia producida se confunda entre sí. Los valores utilizados son arbitrarios.}
 \label{fig:Noise}
@@ -152,7 +152,7 @@ Imaginemos el caso de un animal indefenso -un conejo- que tiene que decidir tan 
 \label{fig:Mat_Pagos}
 \end{figure}
 
-La figura~\ref{Mat_Pagos} presenta lo que en los modelos clásicos de decisión se conoce como una Matriz de Pagos y que se utiliza para señalar, de acuerdo a una matriz de contingencia, los costos y ganancias asociados con cada resultado observable en tareas de detección $Killeen$. En términos de la TDS, se asume que los organismos toman en cuenta esta información para definir la localización de su criterio de elección. En otras palabras, ya que los organismos nunca podrán tener certeza absoluta sobre los juicios de detección emitidos, se juzga la evidencia a partir de un criterio de elección que toma en cuenta las consecuencias comprometidas en un intento por optimizar su conducta y los resultados obtenidos.\\
+La figura~\ref{Mat_Pagos} presenta lo que en los modelos clásicos de decisión se conoce como una Matriz de Pagos y que se utiliza para señalar, de acuerdo a una matriz de contingencia, los costos y ganancias asociados con cada resultado observable en tareas de detección. En términos de la TDS, se asume que los organismos toman en cuenta esta información para definir la localización de su criterio de elección. En otras palabras, ya que los organismos nunca podrán tener certeza absoluta sobre los juicios de detección emitidos, se juzga la evidencia a partir de un criterio de elección que toma en cuenta las consecuencias comprometidas en un intento por optimizar su conducta y los resultados obtenidos, \parencite{Killeen2014}.\\
 
       \underline{b) Estimados de Probabilidad}\\
 
@@ -168,56 +168,41 @@ Si los organismos se encuentran en un entorno donde saben que es prácticamente 
 Asumir que los organismos apoyan su juicio de detección en el conocimiento que tienen sobre la verosimilitud de la evidencia, es el equivalente a suponer que tienen alguna idea sobre cómo se ven las distribuciones de probabilidad que rigen la ocurrencia del ruido y señal. Bajo este escenario, ante la incertidumbre -si los organismos se enfrentaran a evidencia que cae en el área de sobrelape entre las distribuciones- los agentes detectores optarían por elegir el juicio de detección que corresponda con la distribución que se asocie con dicha evidencia con mayor probabilidad (es decir, la distribución que sea más alta en ese punto particular del eje de decisión).\\
 \end{itemize}
 
-De contar con ambos elementos, es posible asumir que los organismos se decantan por un juicio de detección particular con base en el conocimiento que tienen sobre la estructura probabilística del entorno, mediante la realización de una inferencia bayesiana $WEIJIMA$.\\
+De contar con ambos elementos, es posible asumir que los organismos se decantan por un juicio de detección particular con base en el conocimiento que tienen sobre la estructura probabilística del entorno, mediante la realización de una inferencia bayesiana \parencite{WeijiMa}.\\
 
-\subsection{Parámetros del modelo}
+\subsection{Parámetros del modelo}\\
 
-Como se mencionó previamente, al realizar una tarea de detección existen dos posibles tipos de aciertos y dos posibles tipos de errores. La materia prima con base en la cual funciona el modelo propuesto por la TDS, son las tasas de aciertos y errores cometidos durante la tarea, de manera que por cada participante que pasa por una tarea de detección, tenemos cuatro tasas que describen su ejecución:
+Al someter a un sistema a una misma tarea de detección con incertidumbre en repetidas ocasiones (en una tarea experimental), se espera encontrar variabilidad en las respuestas y resultados observados, (el agente detector no acertará o errará consistentemente todas sus respuestas). La TDS, además de proporcionar un modelo estadístico para comprender las implicaciones adaptativas del problema de la detección, funge como una herramienta que -dados los supuestos que hace sobre este tipo de tareas- permite hacer estimaciones sobre la discriminabilidad y el sesgo del sistemas inmersos en tareas de detección particulares.\\
 
-La Tabla 2 ilustra el cómputo de las cuatro tasas de ejecución, como una relación entre el resultado obtenido y el tipo de ensayo con base en el que se le definió como tal. Es decir, tenemos dos tasas definidas en relación al número total de ensayos con la señal (la tasa de hits y la tasa de omisiones) que nos dicen qué proporción de los ensayos con señal fueron detectados correctamente y cuáles se dejaron pasar; y tenemos dos tasas definidas en relación al total de ensayos con ruido (la tasa de falsas alarmas y la tasa de rechazos correctos) que nos describen la relación de los ensayos con ruido que fueron discriminados correctamente y aquellos que se confundieron con la señal.
+Las tareas de detección diseñadas en el laboratorio para estudiar el desempeño de los participantes experimentales sometidos a ellas, suelen estar compuestas por un amplio número de ensayos que incluyen presentaciones de la señal y de ensayos con puro ruido. Dependiendo qué sea lo que quiere evaluarse de la tarea, pueden implementarse manipulaciones adicionales para inducir el sesgo de los participantes, modificando la matriz de pagos de manera explícita o variando la razón con que la señal y el ruido aparecen. Los procedimientos usados para evaluar las tareas de detección se presentan con mayor detalle más adelante (Sección 2.1.3).\\
 
-Para realizar el análisis de datos, bajo el marco de la TDS, sólo necesitaremos un par de estas tasas: la tasa de hits y la tasa de falsas alarmas. Esto bajo el entendido de que las tasas de omisión y rechazos correctos no son más que su complemento, respectivamente, y que estas dos tasas contienen toda la información que necesitamos sobre el desempeño de los participantes.
+Con base en las respuestas reportadas por los participantes en cada ensayo y el resultado obtenido en función a su correspondencia con el contenido real de los mismos, se computa la tasa con que se observó cada uno de estos. Es decir, dentro del total de veces que se presentó la señal, se identifica cuántas veces se cometió un Hit o una Omisión, así como la proporción de ensayos con ruido en que el participante hizo un Rechazo correcto o una Falsa alarma. De acuerdo con la representación gráfica de las tareas de detección planteado por la TDS, las tasas de ejecución observadas en una tarea particular son un reflejo del área de las distribuciones de ruido y señal que caen a ambos lados del criterio.\\
 
-La idea general de la importancia de estas tasas de ejecución, es que cada una representa el área de las distribuciones de ruido y señal que cae a la izquierda o derecha del criterio de decisión.
+Por ejemplo, en el caso ilustrado en la Figura~\ref{fig:Noise}, tiene sentido que las personas con Depresión obtengan puntajes más altos dado que la prueba fue hecha para evaluar la presencia de dicha condición y el puntaje final obtenido suele ser reflejo de cuántas de las respuestas proporcionadas coinciden con lo que se esperaría en una persona con Depresión.\\
 
-Para la estimación paramétrica se utiliza la misma lógica, pero se sigue el procedimiento inverso. Dado que no podemos observar ni cuantificar de manera directa el criterio usado por los participantes para responder a la tarea, qué tan juntas o separadas se encuentran las distribuciones de ruido y señal para cada participante o qué tipo de sesgo pudieran estar siguiendo, utilizamos las tasas de ejecución para hacer inferencias sobre la localización del criterio, la diferencia entre las medias de ambas distribuciones y el grado en que una respuesta se favorece sobre otra. 
+De acuerdo a la forma clásica de la TDS, las tasas de ejecución registradas en un experimento de detección de señales pueden utilizarse para hacer inferencias sobre la localización del criterio, la distancia entre las distribuciones involucradas y la preferencia que se tiene a emitir una respuesta sobre otra. Acontinuación, revisaremos en detalle cuáles son los parámetros incluidos en el modelo de detección de señales, cómo se calculan y qué información arrojan sobre la ejecución de los participantes.\\
 
-A partir de ahora comenzaremos a hablar sobre cómo se calculan cada uno de los parámetros del modelo, de acuerdo a la teoría clásica que sigue los supuestos estadísticos previamente descritos.  Es importante aclarar que el Graficador de Tasas previamente expuesto no representa la teoría con entera precisión; el propósito de ese primer Graficador es simplemente ilustrar cómo describe la TDS el comportamiento de un sistema que se enfrenta ante una tarea de detección, donde existen dos distribuciones que se sobreponen. El Graficador permite manipular directamente la localización del criterio, con la simpleza que implicaría desplazar una línea vertical sobre el eje de decisión y ver qué consecuencias tiene sobre la probabilidad de obtener un tipo particular de acierto o error.
+  \textbf{Supuestos formales}\\
 
-
-Antes de ahondar a detalle en los parámetros, hay que declarar un par de supuestos formales que hace la Teoría para facilitar la representación gráfica del modelo y la estimación paramétrica:
+La estimación paramétrica del modelo de detección de señales se desarrolla en torno a una serie de supuestos formales -pequeñas especificaciones técnicas- que facilitan la interpretación de los datos obtenidos a la luz de la representación gráfica propuesta por la TDS, \parencite{Wickens}.\\ 
 
 \begin{enumerate}
-\item En su forma clásica, la TDS asume que las distribuciones de ruido y señal son distribuciones normales.
+
+\item  Dado que las cuatro tasas de ejecución de los participantes se computan en función a dos conjuntos totales -el de los estímulos con señal y el ruido-, sólo se necesita trabajar con un par de ellas que no sea complementario entre sí. Por consenso, en la literatura suelen tomarse las tasas de Hits y Falsas Alarmas -los resultados obtenidos cuando el participante respondió 'Sí, detecto la señal'- para realizar todas las inferencias necesarias sobre la tarea; las tasas de Omisiones y Rechazos correctos no proporcionan información adicional, en tanto que son sólo el complemento de las primeras dos.\\
+
+\item En su forma clásica, la TDS asume que las distribuciones de ruido y señal son distribuciones normales equivariantes.\\
   \begin{itemize}
-  \item 
+  \item Se utilizan distribuciones Gaussianas como el 'default' para describir la variabilidad contenida en los estímulos con señal y ruido. Sin embargo, existe literatura que explora la conveniencia de representar la incertidumbre con otro tipo de distribuciones, \parencite{WeijiMa2010}.\\
+  \item En la mayoría de sus aplicaciones, se asume que las distribuciones de ruido y señal comparten una varianza de 1. No obstante, específicamente hablando en términos de la aplicación del modelo al área de la Memoria de Reconocimiento, este supuesto es desechado en tanto que se ha encontrado evidencia consistente que sugiere que la distribución de señal (la distribución de estímulos ya antes presentados a reconocer) tiene una varianza mayor que la del ruido. Las implicaciones de este hallazgo se discuten a profundidad más adelante.\\
   \end{itemize}
-\item En su forma estándar, se asume que las distribuciones de ruido y señal son equivariantes, (compartiendo una desviación estándar de 1).
+\item Se asigna de manera arbitraria una media en 0 a la distribución de ruido, para facilitar el cómputo del resto de los parámetros. En otras palabras, la media de la distribución de ruido funge como punto de referencia para la estimación paramétrica.\\
+\item Sin tratarse explícitamente de un supuesto formal hecho por la teoría, una de las implicaciones directas de la forma en que está constituida es que, sea cual sea la evidencia con base en la cual se asume que los organismos están formando los juicios de detección -los valores en el eje X sobre los cuales se despliegan las distribuciones-, se espera que la Señal tenga 'más' que el Ruido (en tanto que este último implica su ausencia).\\
   \begin{itemize}
-  \item 
-  \end{itemize}
-\item La distribución de ruido tiene su media en 0. 
-  \begin{itemize}
-  \item La estimación de todos los parámetros del modelo de detección de señales se hace tomando como referencia la distribución del ruido (con  media 0 y desviación estándar de 1)
+  \item La tasa de Falsas Alarmas no puede ser más grande que la tasa de Hits, puesto que esto implicaría que hay una mayor área de la distribución de ruido rebasando el criterio que de la distribución de la señal. De acuerdo con la representación del modelo, esto sugeriría que el ruido cae por encima de la señal en términos de la evidencia que produce y estaría violando el supuesto fundamental de que la señal -la presencia de lo que queremos detectar- contiene más información que el ruido -su ausencia-.\\
   \end{itemize}
 \end{enumerate}
 
-
-
-
-
-
-
-
-El soporte de las distribuciones -identificado en la Figura~\ref{fig:Overlap} bajo el nombre de ‘Evidencia’ ( y en las Figuras~\ref{fig:Senal_presentacion} y \ref{fig:Noise}, como 'Puntaje en prueba clínica' e 'Intensidad' en la Figura~\ref{fig:Senal_percepcion}- rara vez se define con precisión,  teniendo una concepción más bien abstracta; La idea general es que cuando queremos detectar una señal particular, comenzamos a recolectar un tipo de evidencia específico a la tarea ante la que nos encontramos. Lo más importante, es que la señal siempre va a estar asociada en mayor medida con dicha evidencia, distribuyéndose siempre en valores situados por encima (a la derecha, en la Figura 1) del ruido.\\
- 
-
-
-
-Sea cual sea la evidencia con base en la cual se forman los juicios de detección -los valores en el eje X sobre los cuales se despliegan las distribuciones de Ruido y Señal-, se espera que la Señal tenga 'más' de dicha evidencia que el Ruido (en tanto que este último implica su ausencia). 
-
-
-Por ejemplo, en el caso ilustrado en la Figura~\ref{fig:Noise}, tiene sentido que las personas con Depresión obtengan puntajes más altos dado que la prueba fue hecha para evaluar la presencia de dicha condición y el puntaje final obtenido suele ser reflejo de cuántas de las respuestas proporcionadas coinciden con lo que se esperaría en una persona con Depresión.\\
+Los parámetros contemplados por el modelo evalúan el desempeño de los participantes en términos de los grandes factores que se asocian con la emisión de juicios de detección: la discriminabilidad y el sesgo. La aplicación exitosa de la TDS al estudio de una amplia gama de tareas de detección -que pueden variar desde los estímulos específicos utilizados hasta el dominio o tipo de fenomeno a estudiar- es posible gracias a la abstracción de sus elementos. Los valores -o el tipo- específicos sobre los cuales se despliegan las distribuciones de ruido y señal no son tan relevantes -y de hecho no se toman en cuenta- como saber qué tanto sobrelape había entre las distribuciones y qué juicio de detección era emitido con preferencia.\\
 
 \begin{itemize}
 \item Discriminabilidad $(d')$

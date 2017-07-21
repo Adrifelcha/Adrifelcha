@@ -17,6 +17,41 @@
 \endgroup
 
 \sortlist[entry]{nyt/global/}
+  \entry{Wickens}{incollection}{}
+    \name{author}{2}{}{%
+      {{hash=AFG}{%
+         family={Ashby},
+         familyi={A\bibinitperiod},
+         given={F.\bibnamedelima Gregory},
+         giveni={F\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=SFA}{%
+         family={Soto},
+         familyi={S\bibinitperiod},
+         given={Fabian\bibnamedelima A.},
+         giveni={F\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {"Oxford University Press"}%
+    }
+    \strng{namehash}{AFGSFA1}
+    \strng{fullhash}{AFGSFA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2005}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{booktitle}{"Handbook of computational and mathematical psychology"}
+    \field{chapter}{2}
+    \field{pages}{"13\bibrangedash 31"}
+    \field{title}{Multidimensional Signal Detection Theory}
+    \list{location}{1}{%
+      {"Oxford"}%
+    }
+    \field{year}{2005}
+  \endentry
+
   \entry{Bonnel2003}{article}{}
     \name{author}{6}{}{%
       {{hash=BA}{%
@@ -252,13 +287,18 @@
          giveni={G\bibinitperiod\bibinitdelim T\bibinitperiod},
       }}%
     }
-    \name{editor}{1}{}{%
-      {{hash=HEGBDH}{%
+    \name{editor}{2}{}{%
+      {{hash=BEG}{%
+         family={Boring},
+         familyi={B\bibinitperiod},
+         given={"E.\bibnamedelima G.},
+         giveni={E\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=HDH}{%
          family={Howes"},
          familyi={H\bibinitperiod},
-         given={"E. G. Boring & D.\bibnamedelima H.},
-         giveni={E\bibinitperiod\bibinitdelim G\bibinitperiod B\bibinitperiod
-  \bibinitperiod D\bibinitperiod\bibinitdelim H\bibinitperiod},
+         given={D.\bibnamedelima H.},
+         giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod},
       }}%
     }
     \name{translator}{1}{}{%
@@ -727,6 +767,27 @@
     \field{year}{1954}
   \endentry
 
+  \entry{Killeen2014}{article}{}
+    \name{author}{1}{}{%
+      {{hash=KPR}{%
+         family={Killeen},
+         familyi={K\bibinitperiod},
+         given={Peter\bibnamedelima R.},
+         giveni={P\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KPR1}
+    \strng{fullhash}{KPR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2014}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{title}{Signal Detection Theory}
+    \field{journaltitle}{Enclyclopedia of Theory in Psychology}
+    \field{year}{2014}
+  \endentry
+
   \entry{Link1994}{article}{}
     \name{author}{1}{}{%
       {{hash=LSW}{%
@@ -760,6 +821,84 @@
     \field{volume}{5}
     \field{journaltitle}{Psychological Science}
     \field{year}{1994}
+  \endentry
+
+  \entry{WeijiMa2010}{article}{}
+    \name{author}{1}{}{%
+      {{hash=MWJ}{%
+         family={Ma},
+         familyi={M\bibinitperiod},
+         given={Wei\bibnamedelima Ji},
+         giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MWJ1}
+    \strng{fullhash}{MWJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2010}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    The juxtaposition of established signal detection theory models of
+  perception and more recent claims about the encoding of uncertainity in
+  perception is a rich source of confusion. Are the latter simply a rehash of
+  the former? Here, we make an attempt to distinguish precisely between optimal
+  and probabilistic computation- In optimal computation, the observer minimizes
+  the expected cost under a posterior probability distribution. In
+  probabilistic computation the observer uses higher moments of the likelihood
+  function of the stimulus on a trial-by-trial basis. Computation can be
+  optimal without being probabilistic and vice versa. Most signal detection
+  theory models describe optimal computation- Behavioral data only provide
+  evidence for a neural representation of uncertainty if they are best
+  described by a model of probabilistic computation. We argue that sngle-neuron
+  activity sometimes suffices for optimal computation, but never for
+  probabilistic computation. A population code is needed instead. Not every
+  population code is equally suitable because nuisance parameters have to be
+  marginalized out. This problem is solved by Poisson-like, but not by Gaussian
+  variability. Finally, we build a dictionary between signal detection theory
+  quantities and Poisson-like population quantities.%
+    }
+    \field{number}{50}
+    \field{pages}{2308\bibrangedash 2319}
+    \field{title}{Signal detection theory, uncertainty, and Poisson-like
+  populations}
+    \field{volume}{3}
+    \field{journaltitle}{Vision Research}
+    \field{year}{2010}
+  \endentry
+
+  \entry{WeijiMa}{unpublished}{}
+    \name{author}{3}{}{%
+      {{hash=MWJ}{%
+         family={Ma},
+         familyi={M\bibinitperiod},
+         given={Wei\bibnamedelima Ji},
+         giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=KK}{%
+         family={Kording},
+         familyi={K\bibinitperiod},
+         given={Konrad},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=GD}{%
+         family={Goldreich},
+         familyi={G\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MWJKKGD1}
+    \strng{fullhash}{MWJKKGD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2012}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{note}{Working paper}
+    \field{title}{"Bayesian modeling of perception"}
+    \field{year}{2012}
   \endentry
 
   \entry{Massaro1971}{article}{}
