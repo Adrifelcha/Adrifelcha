@@ -428,6 +428,36 @@
     \field{origyear}{1809}
   \endentry
 
+  \entry{Gescheider}{book}{}
+    \name{author}{1}{}{%
+      {{hash=GGA}{%
+         family={Gescheider},
+         familyi={G\bibinitperiod},
+         given={George\bibnamedelima A.},
+         giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \name{editor}{1}{}{%
+      {{hash=PP}{%
+         family={"Psychology\bibnamedelima Press},
+         familyi={P\bibinitperiod\bibinitdelim P\bibinitperiod},
+         given={2013"},
+         giveni={\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GGA1}
+    \strng{fullhash}{GGA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2013}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{edition}{3rd Edition}
+    \field{title}{"Psychophysics: The Fundamentals"}
+    \field{year}{2013}
+    \field{origyear}{1975}
+  \endentry
+
   \entry{Girgus1972}{article}{}
     \name{author}{3}{}{%
       {{hash=GJS}{%
@@ -786,6 +816,31 @@
     \field{title}{Signal Detection Theory}
     \field{journaltitle}{Enclyclopedia of Theory in Psychology}
     \field{year}{2014}
+  \endentry
+
+  \entry{PAPIME}{online}{}
+    \name{author}{1}{}{%
+      {{hash=LPPP}{%
+         family={Laboratorio\bibnamedelima 25},
+         familyi={L\bibinitperiod\bibinitdelim \bibinitperiod},
+         given={Proyecto PAPIME\bibnamedelima PE310016},
+         giveni={P\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim
+  P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LPPP1}
+    \strng{fullhash}{LPPP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016-2017}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{title}{Desarrollo de herramientas virtuales para la enseñanza de
+  ciencias cognitivas y del comportamiento}
+    \verb{url}
+    \verb https://github.com/Lab25UNAM/PAPIME2016
+    \endverb
+    \field{year}{2016-2017}
   \endentry
 
   \entry{Link1994}{article}{}

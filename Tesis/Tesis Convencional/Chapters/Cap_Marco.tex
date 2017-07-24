@@ -184,7 +184,7 @@ De acuerdo a la forma clásica de la TDS, las tasas de ejecución registradas en
 
   \textbf{Supuestos formales}\\
 
-La estimación paramétrica del modelo de detección de señales se desarrolla en torno a una serie de supuestos formales -pequeñas especificaciones técnicas- que facilitan la interpretación de los datos obtenidos a la luz de la representación gráfica propuesta por la TDS, \parencite{Wickens}.\\ 
+La estimación paramétrica del modelo de detección de señales se desarrolla en torno a una serie de supuestos formales -pequeñas especificaciones técnicas- que facilitan la interpretación de los datos obtenidos a la luz de la representación gráfica propuesta por la TDS, \parencite{Wickens, Gescheider}.\\ 
 
 \begin{enumerate}
 
@@ -205,45 +205,98 @@ La estimación paramétrica del modelo de detección de señales se desarrolla e
 Los parámetros contemplados por el modelo evalúan el desempeño de los participantes en términos de los grandes factores que se asocian con la emisión de juicios de detección: la discriminabilidad y el sesgo. La aplicación exitosa de la TDS al estudio de una amplia gama de tareas de detección -que pueden variar desde los estímulos específicos utilizados hasta el dominio o tipo de fenomeno a estudiar- es posible gracias a la abstracción de sus elementos. Los valores -o el tipo- específicos sobre los cuales se despliegan las distribuciones de ruido y señal no son tan relevantes -y de hecho no se toman en cuenta- como saber qué tanto sobrelape había entre las distribuciones y qué juicio de detección era emitido con preferencia.\\
 
 \begin{itemize}
-\item Discriminabilidad $(d')$
-
-La disc
-
-La discriminabilidad se representa en los modelos de detección de señales con un parámetro $d'$, que representa la distancia entre las medias de las distribuciones de ruido y señal. 
-
-Para encontrar la distancia entre las medias de la distribución de ruido y señal, necesitamos saber el punto en que el criterio toca cada distribución. Para ello, calculamos las probabilidades complementarias a las tasas de hits y falsas alarmas y las traducimos a puntajes Z (Ver Fig. 3). Dado que el puntaje Z funciona como una medida de dispersión de la media, basta con restar el puntaje Z de la intersección del criterio con la distribución de señal a el puntaje Z de intersección con la distribución de ruido para conocer la localización de la media de la señal. Por definición, d’ sólo puede tener valores positivos ya que la teoría asume que la distribución de señal siempre está a la derecha de la distribución de ruido porque contiene una mayor cantidad de la evidencia con base en la cual se hace el juicio de detección de la señal.
 
 
+\item \underline{Criterio ($k$)}\\
 
-\item Criterio  $k$
+La localización del criterio sobre el eje de decisión se puede computar de manera directa, tomando como referencia el valor asignado -de manera arbitraria- por el modelo de la TDS a la media de la distribución de ruido (media en 0), con base en las tasas de ejecución observadas en nuestro participante. \\
 
-Una vez que hemos resumido el desempeño de nuestro participante en la tarea de detección, el parámetro cuya estimación resulta más sencilla y directa es el Criterio (k). Entender cómo se computa el parámetro nos requiere únicamente de mantener presente el supuesto de que el Ruido se distribuye normalmente y se va a localizar siempre a la izquierda de la señal, por lo que le asignamos una media de cero para tener un punto de referencia para estimar el espacio en que se desarrollan el resto de los parámetros. \\
+\begin{figure}[th]
+\centering
+\includegraphics[width=0.60\textwidth]{Figures/Graficador_Criterio} 
+%\decoRule
+\caption[Estimación del criterio con base en las Falsas Alarmas]{La imagen presenta una captura de pantalla de un Graficador desarrollado por parte la autora de la presente tesis, como parte de un proyecto PAPIME trabajado en el Laboratorio 25, \parencite{PAPIME}}
+\label{fig:Graf_Criterio}
+\end{figure}
 
-Para calcular el criterio lo único que necesitamos es conocer la tasa de Falsas Alarmas, que tal y como mencionábamos en el segmento anterior, nos indica qué proporción de la distribución de ruido cae a la derecha del criterio. Dado que a la distribución de ruido, le fue asignada arbitrariamente una media de cero, podemos asignar un valor al punto en que el criterio corta la distribución de ruido y define las tasas de Rechazos y Falsas Alarmas obtenidas por el participante. Conociendo el área de la distribución de Ruido que cae bajo el criterio, (el complemento de la tasa de Falsas Alarmas, o bien, la Tasa de Rechazos correctos), y sabiendo que la distribución tiene una desviación estándar de 1, podemos convertir el valor de la tasa (que corresponde a la probabilidad de cometer un rechazo correcto, de acuerdo al área bajo la curva) en Puntajes Z y conocer la localización del criterio.\\
+El parámetro $k$, que representa la localización del criterio, se estima interpretando la tasa de Falsas Alarmas como reflejo del área bajo la curva de la distribución de Ruido que cae por encima del criterio y la tasa de Rechazos Correctos como el área bajo la curva restante. Dado que -de acuerdo con los supuestos formales previamente expuestos- se asume que la distribucion de Ruido tiene media en 0 y desviación estándar de 1, la tasa de Rechazos Correctos -la probabilidad acumulada en el área bajo la curva que cae por debajo del criterio- se transforma en Puntajes Z para estimar dónde se sitúa el criterio con respecto a la media de la distribución de Ruido (el 0 de referencia). La Figura~\ref{fig:Graf_Criterio} ilustra este proceso, presentando como ejemplo una tasa de Falsas Alarmas cualquiera con su tasa de Rechazos Correctos complementaria, que al ser transformada a puntajes Z permite evaluar la localización del criterio respecto del 0 de referencia planteado por la distribución de ruido. Es decir:\\
 
- El parámetro k, por lo general, va estar representado por un número natural (un número positivo), que indica en términos de Puntajes Z  la posición del criterio sobre el eje de decisión, relativo a la distribución de ruido con media cero. El criterio sólo tiene valores positivos, porque normalmente se espera que la tasa de falsas alarmas nunca tenga un valor mayor a 0.5 (las consecuencias de una tasa de Falsas Alarmas tan alta, se expondrán con más claridad en el apartado correspondiente a la d’. \\
+\begin{center}
+$k = PuntajeZ(Tasa de Rechazos Correctos)$\\
+\end{center}
 
+De acuerdo con los supuestos hechos por el modelo, el parámetro $k$ se expresa como un número real positivo que señala -en Puntajes Z- la posición del criterio en relacióna la media de la distribución de Ruido. El criterio adopta valores positivos porque, como se expuso previamente, se espera que la tasa de Falsas Alarmas no tenga un valor mayor a 0.5.\\
 
-\item Sesgo - $\beta$
+\item \underline{Discriminabilidad ($d'$)}\\
 
-El parámetro más comúnmente utilizado en la literatura para evaluar el sesgo de los participantes en estudios donde se aplica el modelo de detección de señales al análisis de tareas experimentales, es Beta ($\beta$). Se define como una razón entre la probabilidad con que la evidencia  \\
+La discriminabilidad se evalúa con un parámetro ($d'$) que define la distancia entr las medias de las distribuciones de Ruido y Señal. Dado que a la distribución de Ruido le ha sido asignada una media en 0, también podemos pensar en $d'$ como un parámetro que busca determinar la localización de la media de la distribución de Señal.\\ 
 
+Una vez determinada la localización del criterio relativa a la media de la distribución de Ruido con base en las tasas de Falsas Alarmas y Rechazos Correctos observadas, es sencillo entender que $d'$ se computa utilizando las tasas de Hits y Omisiones para conocer la localización de la distribución de Señal sobre el eje de evidencia, de manera que el área bajo la curva que cae por encima y por debajo del criterio coincidan con estas.\\ 
+
+\begin{figure}[th]
+\centering
+\includegraphics[width=0.75\textwidth]{Figures/Graficador_Discriminabilidad} 
+%\decoRule
+\caption[Estimación de la discriminabilidad con base en las Tasas de Ejecución]{La imagen presenta una captura de pantalla de un Graficador desarrollado por parte la autora de la presente tesis, como parte de un proyecto PAPIME trabajado en el Laboratorio 25, \parencite{PAPIME}}
+\label{fig:Graf_Discrim}
+\end{figure}
+
+La Figura~\ref{fig:Graf_Discrim} ilustra la secuencia lógica de pasos que guían el cómputo del valor de $d'$:\\
+
+\begin{enumerate}
+\item En el panel superior, la tasa de Falsas Alarmas (señalada en color púrpura) es convertida en puntajes Z. Nótese que el valor obtenido es negativo porque, aún representando el área bajo la curva que cae por encima del criterio, la tasa de Falsas Alarmas tiene un valor positivo que, en términos de la constitución de una distribución normal estandarizada como la que asume el modelo, sólo puede ser interpretado en términos de una probabilidad acumulada positiva que parte del extremo más pequeño de la distribución hacia la derecha. Es decir, el puntaje Z obtenido es negativo porque computarlo a partir de la tasa de Falsas Alarmas (el área por encima del criterio) es el equivalente a voltear la distribución para leer dicha probabilidad acumulada de izquierda a derecha.\\
+
+El primer panel representa la distancia del criterio respecto de la media de la distribución de Ruido.\\
+
+\item El panel intermedio muestra el resultado de transformar la tasa de Hits (señalada en color verde) en puntajes Z. A pesar de que el criterio golpea la distribución de Señal por debajo de la media, el puntaje Z obtenido es positivo porque -nuevamente- al interpretar la tasa de Hits como una probabilidad acumulada -que en términos de la TDS cae por encima del criterio-, su valor es interpretado en términos de la distribución normal estandarizada que le subyace como una probabilidad acumulada que parte del extremo izquierdo de la distribución. Dado que la tasa de Hits suele ser mayor al azar ($TasadeHits > 0.5$), el puntaje Z resultante es positivo porque, leyéndose de izquierda a derecha, caería por encima de la media de la distribución.\\
+
+El segundo panel muestra la distancia del criterio respecto de la media de la distribución de Señal.\\
+
+\item El panel inferior presenta la idea detrás del cómputo de $d'$: la suma de las distancias entre el criterio y las medias de las distribuciones de Ruido y Señal. En otras palabras, el parámetro $d'$ se obtiene como:\\
+
+\begin{center}
+$d' = PuntajeZ(Tasa de Hits) - PuntajeZ(Tasa de Falsas Alarmas)$\\
+\end{center}
+
+\end{enumerate}
+
+Al igual que con el parámetro $k$, $d’$ sólo puede tener valores positivos ya que la teoría asume que la distribución de señal siempre está a la derecha de la distribución de ruido (porque contiene una mayor cantidad de la evidencia con base en la cual se hace el juicio de detección de la señal).\\
+
+\item \underline{Sesgo ($\beta$ y $C$)}\\
+
+La TDS cuenta con dos parámetros que permiten evaluar la magnitud y dirección del sesgo bajo el cual se está respondiendo a la tarea:\\
+
+\begin{itemize}
+\item \underline{$\beta$}\\
+
+El parámetro más comúnmente reportado en la literatura es Beta ($\beta$), que se define como la razón entre la probabilidad con que la evidencia presente a la altura del criterio corresponde con la distribución de señal y la probabilidad con que podría representar una instancia del Ruido: \\
+
+\begin{center}
+$\beta = \frac{p(Signal)}{p(Noise)}$ \\
+\end{center}
+
+\item \underline{$C$}\\
+
+Un segundo parámetro para computar el sesgo, es $C$, que representa la distancia entre la localización del criterio utilizado por el participante sometido a la tarea y el punto donde se intersectan las distribuciones:\\
+
+\begin{center}
+$C =  K - \frac{d'}{2}$ \\
+\end{center}
+
+Se utiliza $\frac{d'}{2}$ como punto de referencia para evaluar el sesgo del sistema porque se asume que esta debería ser la localización del criterio utilizado por un sistema sin sesgo, porque el área de las distribuciones que caen por encima y por debajo del mismo son idénticas y parecieran reflejarse entre sí. En otras palabras, un criterio en $\frac{d'}{2}$ implicaría que existe la misma probabilidad de cometer ambos tipos de aciertos y errores. Es por ello que el sesgo del sistema detector observado se evalúa con respecto a la distancia entre el criterio utilizado y este punto neutro.\\
+
+\end{itemize}
+
+El valor absoluto de los parámetros $C$ y $\beta$ proporcionan información sobre la magnitud del sesgo bajo el cual el agente detector evaluado está favoreciendo la emisión de cierto juicio de detección sobre el otro. Y dependiendo de si 
 
 distinguiendo entre dos grandes tipos de sesgo: conservador y liberal. 
-
 
  El primero favorece la emisión de respuestas negativas al desplazar el criterio a la derecha y requerir al sistema la recolección de mayores niveles de evidencia antes de dar por detectada la señal. El segundo, promueve la detección de la señal, situando el criterio de elección hacia la izquierda, emitiendo un juicio de detección con valores menores de evidencia. Nótese que un sistema carente de sesgo, sería aquel que situara su criterio de elección justo en el punto en que las dos distribuciones se juntan, donde la probabilidad de cometer cualquiera de los tipos de acierto y errores, son iguales entre sí.\\
 
 
-$\beta = \frac{p(Signal)}{p(Noise)}$
-
-si $\beta<1$ o C<0, sabemos se trata de un sesgo liberal y si $\beta>1$, C>0, hablamos de un sesgo conservador.\\
-
-\item Sesgo - $C$
-
+si $\beta<1$ o $C<0$, sabemos se trata de un sesgo liberal y si $\beta>1$, $C>0$, hablamos de un sesgo conservador.\\
 
 \end{itemize}   %Terminan los parametros
-
 
 
 %----------------------------------------------------------------
@@ -288,15 +341,18 @@ Un segundo procedimiento comúnmente utilizado en tareas de detección implica a
 %-----------------------------------
 %	SUBSECTION 1
 %-----------------------------------
-\subsection{Teoría del Procesamiento Dual}
-
-La Teoría del Procesamiento Dual (TPD; o PDT por sus siglas en inglés) sostiene que existen dos procesos fundamentales involucrados en todo juicio de reconocimiento: la recolección y el análisis de familiaridad. El primero corresponde a la extracción de rasgos y detalles específicos del estímulo a evaluar, (i.e. el estímulo que queremos determinar si se ha visto antes, o no), un proceso que requiere cierto tiempo; el segundo, es entendido como un fenómeno más o menos automático y casi instantáneo donde el sistema identifica el estímulo como 'familiar' y decide que lo ha reconocido de alguna experiencia previa. 
 
 %-----------------------------------
 %	SUBSECTION 2
 %-----------------------------------
 
 \section{Teoría de Detección de Señales en Memoria de Reconocimiento}
+
+\subsection{Predecesores: Teoría del Procesamiento Dual}
+
+La Teoría del Procesamiento Dual (TPD; o PDT por sus siglas en inglés) sostiene que existen dos procesos fundamentales involucrados en todo juicio de reconocimiento: la recolección y el análisis de familiaridad. El primero corresponde a la extracción de rasgos y detalles específicos del estímulo a evaluar, (i.e. el estímulo que queremos determinar si se ha visto antes, o no), un proceso que requiere cierto tiempo; el segundo, es entendido como un fenómeno más o menos automático y casi instantáneo donde el sistema identifica el estímulo como 'familiar' y decide que lo ha reconocido de alguna experiencia previa. 
+
+
 Aplicar la TDS al estudio de la Memoria de Reconocimiento implica asumir que existe tal cosa como una 'fuerza de memoria' ('memory strength', en inglés) que refleja el grado en que un estímulo cualquiera es percibido como 'familiar' para el sistema que busca emitir un juicio de detección. La fuerza de memoria evocada por cada estímulo se compara con un criterio de elección para que el sistema pueda decidir si lo reconoce, o no, como 'elemento antes visto'.\\ 
 
 \begin{figure}[th]
