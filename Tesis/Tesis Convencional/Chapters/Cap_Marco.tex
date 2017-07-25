@@ -30,7 +30,7 @@ La generalizabilidad del modelo de la TDS al estudio de distintos fenómenos y t
 \subsection{Supuestos generales del modelo}
 
 %La TDS distingue dos grandes factores en la emisión de un juicio o respuesta: La discriminabilidad y el sesgo.
-La TDS funciona como una herramienta -o marco de análisis- para traducir el desempeño observado en tareas de detección en inferencias sobre la precisión con que la señal se distingue del ruido (la discriminabilidad) y la posible preferencia -o tendencia- del sistema detector a responder en favor o en contra de esta (el sesgo). Esta distinción entre la Discriminabilidad de los estímulos comprometidos y el Sesgo del sistema, como factores que interactúan en la emisión de juicios de detección, es una de las principales propiedades de la TDS cuya importancia e implicaciones se discuten a continuación:\\
+La TDS funciona como una herramienta -o marco de análisis- para traducir el desempeño observado en tareas de detección en inferencias sobre la precisión con que la señal se distingue del ruido (la discriminabilidad) y la posible preferencia -o tendencia- del sistema detector a responder en favor o en contra de esta (el sesgo), \parencite{McNicol}. Esta distinción entre la Discriminabilidad de los estímulos comprometidos y el Sesgo del sistema, como factores que interactúan en la emisión de juicios de detección, es una de las principales propiedades de la TDS cuya importancia e implicaciones se discuten a continuación:\\
 
 \textbf{1.- El papel de la Discriminabilidad: Siempre hay incertidumbre}\\
 
@@ -121,7 +121,7 @@ De acuerdo con la correspondencia entre el estado real del mundo y el juicio emi
 \label{fig:Mat_Output}
 \end{figure}
 
-La TDS asume que con base en la información de la que dispone sobre la estructura de la tarea, el organismo fija un criterio de elección para determinar a partir de cuánta evidencia va a juzgar la presencia de la señal dado lo que sabe sobre la probabilidad con que ésta ocurre y las consecuencias comprometidas con su detección. En términos de la representación gráfica del modelo, implica que sobre el eje de la Evidencia el organismo sitúa una línea vertical que atraviesa ambas distribuciones y que va a fungir como regla de elección para delimitar a partir de cuánta evidencia  emitir juicios de detección en favor de la señal,como se ilustra en la Figura~\ref{fig:Graf_Outputs} con una línea roja.\\
+La TDS asume que con base en la información de la que dispone sobre la estructura de la tarea, el organismo fija un criterio de elección para determinar a partir de cuánta evidencia va a juzgar la presencia de la señal dado lo que sabe sobre la probabilidad con que ésta ocurre y las consecuencias comprometidas con su detección, \parencite{Swets1961}. En términos de la representación gráfica del modelo, implica que sobre el eje de la Evidencia el organismo sitúa una línea vertical que atraviesa ambas distribuciones y que va a fungir como regla de elección para delimitar a partir de cuánta evidencia  emitir juicios de detección en favor de la señal,como se ilustra en la Figura~\ref{fig:Graf_Outputs} con una línea roja.\\
 
 \begin{figure}[th]
 \centering
@@ -174,7 +174,7 @@ De contar con ambos elementos, es posible asumir que los organismos se decantan 
 
 Al someter a un sistema a una misma tarea de detección con incertidumbre en repetidas ocasiones (en una tarea experimental), se espera encontrar variabilidad en las respuestas y resultados observados, (el agente detector no acertará o errará consistentemente todas sus respuestas). La TDS, además de proporcionar un modelo estadístico para comprender las implicaciones adaptativas del problema de la detección, funge como una herramienta que -dados los supuestos que hace sobre este tipo de tareas- permite hacer estimaciones sobre la discriminabilidad y el sesgo del sistemas inmersos en tareas de detección particulares.\\
 
-Las tareas de detección diseñadas en el laboratorio para estudiar el desempeño de los participantes experimentales sometidos a ellas, suelen estar compuestas por un amplio número de ensayos que incluyen presentaciones de la señal y de ensayos con puro ruido. Dependiendo qué sea lo que quiere evaluarse de la tarea, pueden implementarse manipulaciones adicionales para inducir el sesgo de los participantes, modificando la matriz de pagos de manera explícita o variando la razón con que la señal y el ruido aparecen. Los procedimientos usados para evaluar las tareas de detección se presentan con mayor detalle más adelante (Sección 2.1.3).\\
+Las tareas de detección diseñadas en el laboratorio para estudiar el desempeño de los participantes experimentales sometidos a ellas, suelen estar compuestas por un amplio número de ensayos que incluyen presentaciones de la señal y de ensayos con puro ruido. Dependiendo qué sea lo que quiere evaluarse de la tarea, pueden implementarse manipulaciones adicionales para inducir el sesgo de los participantes, modificando la matriz de pagos de manera explícita o variando la razón con que la señal y el ruido aparecen. Los protocolos que guían la presentacipon de tareas de detección se presentan con mayor detalle más adelante (Sección 2.1.3).\\
 
 Con base en las respuestas reportadas por los participantes en cada ensayo y el resultado obtenido en función a su correspondencia con el contenido real de los mismos, se computa la tasa con que se observó cada uno de estos. Es decir, dentro del total de veces que se presentó la señal, se identifica cuántas veces se cometió un Hit o una Omisión, así como la proporción de ensayos con ruido en que el participante hizo un Rechazo correcto o una Falsa alarma. De acuerdo con la representación gráfica de las tareas de detección planteado por la TDS, las tasas de ejecución observadas en una tarea particular son un reflejo del área de las distribuciones de ruido y señal que caen a ambos lados del criterio.\\
 
@@ -260,7 +260,7 @@ $d' = PuntajeZ(Tasa de Hits) - PuntajeZ(Tasa de Falsas Alarmas)$\\
 
 \end{enumerate}
 
-Al igual que con el parámetro $k$, $d’$ sólo puede tener valores positivos ya que la teoría asume que la distribución de señal siempre está a la derecha de la distribución de ruido (porque contiene una mayor cantidad de la evidencia con base en la cual se hace el juicio de detección de la señal).\\
+Al igual que con el parámetro $k$, $d’$ sólo puede tener valores positivos ya que la teoría asume que la distribución de señal siempre está a la derecha de la distribución de ruido (porque contiene una mayor cantidad de la evidencia con base en la cual se hace el juicio de detección de la señal). El valor de $d'$ es un reflejo de la discriminabilidad en la tarea (la distancia entre las distribuciones); cuando $d' = 0$, querría decir que las distribuciones de Ruido y Señal están completamente sobrelapadas y es imposible distinguir entre ellas ("No hay discriminabilidad entre los estímulos"). \\
 
 \item \underline{Sesgo ($\beta$ y $C$)}\\
 
@@ -332,25 +332,64 @@ En la Figura~\ref{fig:Graf_Sesgo} se ilustra el cómputo de ambos parámetros de
 \end{itemize}   %Terminan los parametros
 
 
+
+
+
+
+\subsection{Curvas ROC}
+
+Además de permitir la descripción e interpretación del desempeño observado en una tarea de detección particular, la TDS permite extrapolar las estimaciones realizadas en sesiones experimentales aisladas hacia formas más completas de evaluar la precisión con que el sistema podría responder a la misma tarea, cambiando la ubicación de su criterio de elección (dado que se asume que la discriminabilidad es constante).\\
+
+Las curvas ROC (identificadas así por su nombre en inglés: Receiver-Operating Characteristic) describen la relación entre las tasas de Hits y Falsas Alarmas observadas en una tarea experimental, \parencite{McNicol, Swets1973}.
+
+Aunque las curvas ROC pueden ser trazadas -en teoría- a partir de un solo conjunto de tasas de ejecución \parencite{McNicol} NORMAN, mediante distintos algoritmos que 
+
+
+
+
 %----------------------------------------------------------------
 
 \subsection{Tareas de detección}
 
+En cuanto a la aplicación de la TDS a la interpretación y evaluación de la ejecución de cierto tipo de participantes en cierto tipo de tareas de detección, existen tres grandes protocolos para presentar la tarea y obtener datos susceptibles de ser analizados bajo el marco del modelo propuesto, \parencite{McNicol}. A continuación se exponen de manera general las propiedades -en términos de la información que se obtiene- y especificaciones procedimentales que caracterizan cada uno de estos protocolos.\\
+
 \begin{itemize}
-\item Tareas de detección binaria 
+\item \underline{Tareas de detección binaria}\\
 
-En el laboratorio, la  TDS se estudia a partir  de tareas de detección donde se expone a un  sujeto  a  N  número  de  ensayos,  (comprendidos  por  n  ensayos con  sólo  ruido  y  n  ensayos donde  el  ruido  viene  acompañado  de  la  señal)  ante  los  que  se  le  pide  al  participante  que responda eligiendo una de dos opciones: Sí está la señal o No está la señal. En estos escenarios controlados,  el  experimentador  decide  la  proporción  de  ensayos  con  y  sin  señal  que  se presentarán, así como la matriz de pagos que definirán la utilidad de sus aciertos y errores. \\
+La forma más sencilla y estándar de presentar una tarea de detección es con un protocolo que únicamente solicite a los participantes la emisión de juicios binarios. Dicho procedimiento se identifica en la literatura con el nombre de "tareas de detección binaria" o "tareas Sí/No", \parencite{McNicol}.\\
+
+Las tareas Sí/No realizadas en el laboratorio consisten en la presentación aleatoria de una serie de ensayos (N), donde se incluyen ensayos que contienen la señal (S) y ensayos que sólo contienen ruido (R). Como su nombre indica, en este tipo de tareas la única respuesta que los participantes deben registrar en cada ensayo es si la señal está presente o no -Sí/No-.\\
+
+Típicamente, la cantidad de ensayos con ruido y señal presentados durante la tarea es la misma. Esto es recomendable por dos grandes razones: 1) Garantiza que las tasas de hits y omisiones sean tan representativas del desempeño del participante a lo largo de la tarea experimental como las tasas de falsas alarmas y rechazos correctos, pues se tienen la mismma cantidad de oportunidades de cometer cada tipo de acierto o error, y 2) Evita que el sistema evaluado desarrolle un sesgo a favor de una respuesta particular en función a cuál es el tipo de ensayo que más se le presenta.\\
+
+Por cada tarea 'Sí/No' conducida, se obtiene un set de tasas de ejecución a partir de los cuales pueden hacerse inferencias sobre la discriminabilidad y el sesgo del sistema ante una situación neutra (donde el diseño de la tarea no induce ningún sesgo en particular). 
 
 
-\item Tareas con escala de confianza
 
-Un segundo procedimiento comúnmente utilizado en tareas de detección implica añadir un paso adicional a la tarea de los participantes. 
+
+
+
+
+
+
+El problema con la construcción de curvas ROC a partir de 
+
+\item \underline{Tareas con escala de confianza}\\
+
+
+
+
+
+
+
+
+
+
+El protocolo de Escala de Confianza presenta la ventaja de que, en un sólo experimento y sin tener que fatigar a los participantes exponiéndolos a la misma tarea en varias ocasiones, se puede obtener información sobre distintos criterios de elección operantes bajo la misma discriminabilidad.
 
 \parencite{McNicol}
 
-\item Tarea con elección forzada entre dos alternativas.
-
-
+\item \underline{Tarea con elección forzada entre dos alternativas}\\
 
 \end{itemize}
 
