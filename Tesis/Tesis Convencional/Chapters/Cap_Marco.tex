@@ -264,7 +264,7 @@ Al igual que con el parámetro $k$, $d’$ sólo puede tener valores positivos y
 
 \item \underline{Sesgo ($\beta$ y $C$)}\\
 
-La TDS cuenta con dos parámetros que permiten evaluar la magnitud y dirección del sesgo bajo el cual se está respondiendo a la tarea:\\
+La TDS cuenta con dos parámetros que permiten evaluar la magnitud y la dirección del sesgo bajo el cual se está respondiendo a la tarea:\\
 
 \begin{itemize}
 \item \underline{$\beta$}\\
@@ -277,25 +277,58 @@ $\beta = \frac{p(Signal)}{p(Noise)}$ \\
 
 \item \underline{$C$}\\
 
-Un segundo parámetro para computar el sesgo, es $C$, que representa la distancia entre la localización del criterio utilizado por el participante sometido a la tarea y el punto donde se intersectan las distribuciones:\\
+Un segundo parámetro para computar el sesgo es $C$, que representa la distancia entre la localización del criterio utilizado por el participante sometido a la tarea y el punto de intersección entre las distribuciones ($\frac{d'}{2}$):\\
 
 \begin{center}
 $C =  K - \frac{d'}{2}$ \\
 \end{center}
 
-Se utiliza $\frac{d'}{2}$ como punto de referencia para evaluar el sesgo del sistema porque se asume que esta debería ser la localización del criterio utilizado por un sistema sin sesgo, porque el área de las distribuciones que caen por encima y por debajo del mismo son idénticas y parecieran reflejarse entre sí. En otras palabras, un criterio en $\frac{d'}{2}$ implicaría que existe la misma probabilidad de cometer ambos tipos de aciertos y errores. Es por ello que el sesgo del sistema detector observado se evalúa con respecto a la distancia entre el criterio utilizado y este punto neutro.\\
+Se utiliza $\frac{d'}{2}$ como punto de referencia para evaluar el sesgo del sistema porque se asume que esta debería ser la localización del criterio a utilizar por un sistema sin sesgo, ya que el área de las distribuciones que caen por encima y por debajo del mismo son idénticas y parecieran reflejarse entre sí. En otras palabras, un criterio en $\frac{d'}{2}$ implicaría que existe la misma probabilidad de cometer ambos tipos de aciertos y errores. Es por ello que el sesgo del sistema detector observado se evalúa a partir de su comparación directa con este punto neutro.\\
 
 \end{itemize}
 
-El valor absoluto de los parámetros $C$ y $\beta$ proporcionan información sobre la magnitud del sesgo bajo el cual el agente detector evaluado está favoreciendo la emisión de cierto juicio de detección sobre el otro. Y dependiendo de si 
+El sesgo puede ser evaluado en términos de dos grandes factores: 1) ¿Qué tan sesgado está el sistema? y 2) ¿Cuál es el juicio de detección que se está favoreciendo del sesgo?\\
 
-distinguiendo entre dos grandes tipos de sesgo: conservador y liberal. 
+El parámetro $\beta$ indica cuántas veces es más probable que la evidencia observada a la altura del criterio corresponda con la Señal. Valores de $\beta$ por encima de 1, sugieren que el punto en que la distribución de Señal toca el criterio es más alto que en la distribución de Ruido; es decir, el sistema detector no emite juicios afirmativos hasta que exista una alta probabilidad de correspondencia entre la evidencia evaluada y la variabilidad contenida en la Señal y, por el contrario, emite juicios negativos con mayor probabilidad. Valores de $\beta$ entre 0 y 1, por su parte, sugieren que es mucho más probable que la evidencia encontrada a la altura del criterio provengan de la distribución de Ruido que de la de Señal; esto sugiere que el sistema detector está emitiendo juicios afirmativos aún cuando es más probable que la evidencia observada corresponda con el Ruido. Cuando el criterio del participante coincide con el criterio neutro previamente descrito ($\frac{d'}{2}$), $\beta$ vale exactamente 1, pues toca ambas distribuciones a la misma altura.\\
 
- El primero favorece la emisión de respuestas negativas al desplazar el criterio a la derecha y requerir al sistema la recolección de mayores niveles de evidencia antes de dar por detectada la señal. El segundo, promueve la detección de la señal, situando el criterio de elección hacia la izquierda, emitiendo un juicio de detección con valores menores de evidencia. Nótese que un sistema carente de sesgo, sería aquel que situara su criterio de elección justo en el punto en que las dos distribuciones se juntan, donde la probabilidad de cometer cualquiera de los tipos de acierto y errores, son iguales entre sí.\\
+El valor absoluto del parámetro $C$ proporciona información sobre la magnitud del sesgo bajo el cual el agente detector evaluado está favoreciendo la emisión de cierto juicio de detección sobre el otro. Adicionalmente, se puede saber la dirección en que se mueve el sesgo dependiendo de si $C$ tiene un valor positivo o negativo. Si $C$ es negativo, quiere decir que $k < \frac{d'}{2}$; es decir, que se sitúa a la izquierda de este y promueve por tanto, una mayor cantidad de Hits y Falsas Alarmas. Si $C$ es positivo, quiere decir que $k > \frac{d'}{2}$ y se está promoviendo una tasa mayor de Rechazos Correctos y Omisiones.\\
 
+En función de la dirección en que se presente el sesgo, el sistema evaluado puede clasificarse dentro de dos grandes categorías:\\
 
-si $\beta<1$ o $C<0$, sabemos se trata de un sesgo liberal y si $\beta>1$, $C>0$, hablamos de un sesgo conservador.\\
+\begin{itemize}
+\item \textsl{Sesgo liberal}. Se muestra una tendencia hacia la emisión de respuestas afirmativas ("Sí, la señal está presente") aún con niveles bajos de evidencia (el criterio se encuentra orientado a la izquierda del eje de evidencia). Es decir: \\
+\begin{center}
+$C < 0$\\
+ó\\
+$0 < \beta < 1$\\
+\end{center}
 
+\item \textsl{Sesgo conservador}. Se presenta una tendencia hacia la emisión de respuestas negativas ("No, la señal no está"), requiriendo una mayor cantidad de evidencia para la emisión de juicios afirmativos (el criterio se encuentra desplazado a la derecha del eje de evidencia). Es decir: \\
+\begin{center}
+$C > 0$\\
+ó\\
+$\beta > 1$\\
+\end{center}
+
+\item \textsl{Sesgo neutro}. No se favorece ninguna de las dos respuestas y la probabilidad de cometer cualquier acierto o cualquier error es la misma, (el criterio se encuentra en $\frac{d'}{2}$). Es decir: \\
+\begin{center}
+$C = 0$\\
+ó\\
+$\beta = 1$\\
+\end{center}
+\end{itemize}
+
+En la Figura~\ref{fig:Graf_Sesgo} se ilustra el cómputo de ambos parámetros de sesgo ($\beta$ en los paneles izquierdos y $C$ en los derechos), con ejemplos que ilustran cada tipo de sesgo. En el panel superior, se presenta un ejemplo de sesgo liberal; la tasa de Hits y Falsas Alarmas es mayor al haber una mayor área de las distribuciones que caen por encima del criterio. El panel intermedio muestra un caso de sesgo neutro, donde la localización del criterio coincide con el punto en que las distribuciones de Ruido y Señal se intersectan. Finalmente, en el tercer panel se expone un escenario con sesgo conservador donde el sistema emite juicios de detección sólamente a partir de niveles altos de evidencia.\\
+
+\begin{figure}[th]
+\centering
+\includegraphics[width=0.60\textwidth]{Figures/Graficador_Sesgo_Liberal}\\
+\includegraphics[width=0.60\textwidth]{Figures/Graficador_Sesgo_Neutro}\\
+\includegraphics[width=0.60\textwidth]{Figures/Graficador_Sesgo_Conservador}\\
+%\decoRule
+\caption[Estimación del sesgo con base en el criterio]{La figura presenta tres capturas de pantalla de un Graficador desarrollado por parte la autora de la presente tesis, como parte de un proyecto PAPIME trabajado en el Laboratorio 25, \parencite{PAPIME}}
+\label{fig:Graf_Sesgo}
+\end{figure}
 \end{itemize}   %Terminan los parametros
 
 
@@ -330,21 +363,6 @@ Un segundo procedimiento comúnmente utilizado en tareas de detección implica a
 
 
 
-
-
-
-
-\section{Panorama general del estudio de Memoria de Reconocimiento}
-
-\subsection{Teoría del Umbral}
-
-%-----------------------------------
-%	SUBSECTION 1
-%-----------------------------------
-
-%-----------------------------------
-%	SUBSECTION 2
-%-----------------------------------
 
 \section{Teoría de Detección de Señales en Memoria de Reconocimiento}
 
