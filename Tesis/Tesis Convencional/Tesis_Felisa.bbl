@@ -997,7 +997,7 @@
     \field{year}{1971}
   \endentry
 
-  \entry{McNicol}{incollection}{}
+  \entry{McNicol5}{incollection}{}
     \name{author}{1}{}{%
       {{hash=MD}{%
          family={McNicol},
@@ -1014,12 +1014,73 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2005}
+    \field{extrayear}{1}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{booktitle}{"A Primer of Signal Detection Theory"}
+    \field{chapter}{5}
+    \field{pages}{"99\bibrangedash 130"}
+    \field{title}{Conducting a Rating Scale Experiment}
+    \list{location}{1}{%
+      {"Oxford"}%
+    }
+    \field{year}{2005}
+  \endentry
+
+  \entry{McNicol2}{incollection}{}
+    \name{author}{1}{}{%
+      {{hash=MD}{%
+         family={McNicol},
+         familyi={M\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {"Oxford University Press"}%
+    }
+    \strng{namehash}{MD1}
+    \strng{fullhash}{MD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2005}
+    \field{extrayear}{2}
     \field{sortinit}{M}
     \field{sortinithash}{M}
     \field{booktitle}{"A Primer of Signal Detection Theory"}
     \field{chapter}{2}
-    \field{pages}{"13\bibrangedash 31"}
-    \field{title}{A Primer of Signal Detection Theory}
+    \field{pages}{"18\bibrangedash 49"}
+    \field{title}{Non-parametric measures of sensitivity}
+    \list{location}{1}{%
+      {"Oxford"}%
+    }
+    \field{year}{2005}
+  \endentry
+
+  \entry{McNicol1}{incollection}{}
+    \name{author}{1}{}{%
+      {{hash=MD}{%
+         family={McNicol},
+         familyi={M\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {"Oxford University Press"}%
+    }
+    \strng{namehash}{MD1}
+    \strng{fullhash}{MD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2005}
+    \field{extrayear}{3}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{booktitle}{"A Primer of Signal Detection Theory"}
+    \field{chapter}{1}
+    \field{pages}{"1\bibrangedash 17"}
+    \field{title}{"What are statistical decisions?"}
     \list{location}{1}{%
       {"Oxford"}%
     }
@@ -1184,6 +1245,84 @@
     \field{year}{1954}
   \endentry
 
+  \entry{Pollack1964a}{article}{}
+    \name{author}{2}{}{%
+      {{hash=PI}{%
+         family={Pollack},
+         familyi={P\bibinitperiod},
+         given={Irwin},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=NDA}{%
+         family={Norman},
+         familyi={N\bibinitperiod},
+         given={Donald\bibnamedelima A.},
+         giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PINDA1}
+    \strng{fullhash}{PINDA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1964}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{abstract}{%
+    A non-parametric method for evaluating the results of recognition memory
+  experiments and psychophysical detection experiments is presented. The method
+  is based upon an ordinal analysis of recognition performance, which
+  transforms the results of recognition tests into equivalent results for a
+  forced-choice experiment%
+    }
+    \field{pages}{125\bibrangedash 126}
+    \field{title}{A non-parametric analysis of recognition experiments}
+    \field{volume}{1}
+    \field{journaltitle}{Psychonomic Science}
+    \field{year}{1964}
+  \endentry
+
+  \entry{Pollack1964b}{article}{}
+    \name{author}{3}{}{%
+      {{hash=PI}{%
+         family={Pollack},
+         familyi={P\bibinitperiod},
+         given={Irwin},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=NDA}{%
+         family={Norman},
+         familyi={N\bibinitperiod},
+         given={Donald\bibnamedelima A.},
+         giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=GE}{%
+         family={Galanter},
+         familyi={G\bibinitperiod},
+         given={Eugene},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PINDAGE1}
+    \strng{fullhash}{PINDAGE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1964}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{abstract}{%
+    A method for efficient evaluation of the results of recognition memory
+  experiments is illustrated. The method is based upon the area under the
+  iso-mnemonic curve relating correct and incorrect acceptances obtained by
+  means ratings%
+    }
+    \field{pages}{327\bibrangedash 328}
+    \field{title}{An efficient non-parametric analysis of recognition
+  experiments}
+    \field{volume}{1}
+    \field{journaltitle}{Psychonomic Science}
+    \field{year}{1964}
+  \endentry
+
   \entry{Roberts2005}{article}{}
     \name{author}{3}{}{%
       {{hash=RB}{%
@@ -1245,6 +1384,33 @@
     \field{journaltitle}{Journal of Experimental Psychology: Human Perception
   and Performance}
     \field{year}{2001}
+  \endentry
+
+  \entry{Swets1973}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SJA}{%
+         family={Swets},
+         familyi={S\bibinitperiod},
+         given={John\bibnamedelima A.},
+         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SJA1}
+    \strng{fullhash}{SJA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1973}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    NA%
+    }
+    \field{pages}{990\bibrangedash 1000}
+    \field{title}{The Relative Operating Characterstic in Psychology}
+    \field{volume}{182}
+    \field{journaltitle}{Science}
+    \field{month}{12}
+    \field{year}{1973}
   \endentry
 
   \entry{Swets2000}{article}{}
