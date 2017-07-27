@@ -372,9 +372,29 @@ Por cada tarea 'Sí/No' conducida, se obtiene un set de tasas de ejecución que 
 
 Un problema evidente con el trazo de curvas ROC a partir de los datos obtenidos en tareas de detección binarias repetidas, es que se requiere un número considerable de repeticiones que deben estar compuestas por el mismo número de ensayos. Exponer a un mismo participante a la misma tarea y los mismos estímulos tantas veces trae consigo el riesgo de que su desempeño se vea afectado por la fatigua o el aprendizaje. Si este fuera el caso, los datos obtenidos no sólo serían reflejo de cambios en el criterio usado para responder a la tarea, sino que también podría haberse alterado la propia discriminabilidad de la tarea (el aprendizaje puede hacer que los participantes se vuelvan mejores distinguiendo entre la Señal y el Ruido, y la fatiga, tener el efecto opuesto). Esto representa un problema porque entonces, la curva ROC trazada no representaría la sensibilidad del sistema evaluado ante la tarea al violar el supuesto fundamental de que la discriminabilidad debería mantenerse constante, \parencite{McNicol2}.\\
 
-
 \item \underline{Tareas con escala de confianza}\\
 
+Una segunda forma de presentar la tarea de detección -que puede ser entendida como una extensión del protocodo con tareas Sí/No-, es solicitándole a los participantes que respondan a la misma valorando y asignando un puntaje a la certeza que tienen sobre la pertenencia de los estímulos presentados a las categorías Señal o Ruido.\\
+
+En términos del procedimiento, las tareas de detección binarias y con escala de confianza son idénticas: se muestra a los participantes una serie de ensayos (N) dentro de la cual se presentan de manera aleatoria ensayos con la señal (S) y ensayos con sólo Ruido (R), solicitándoles que registren su respuesta al término de cada ensayo. La única diferencia entre estos dos protocolos es el tipo de respuesta solicitada -y en consecuencia, la robustez de las estimaciones que pueden hacerse sobre la sensibilidad del sistema-. En el caso del protocolo de Escala de confianza, los participantes tienen que asignar a cada estímulo evaluado un puntaje dentro de una Escala de Confianza particular.\\
+
+Existen varias formas en que puede presentarse la Escala de Confianza, \parencite{McNicol2}. Por ejemplo, una de ellas implicaría exclusivamente la evaluación de la confianza que se tiene en que el estímulo evaluado sea una instancia de la Señal (donde se asignarían los valores más altos a los estímulos que correspondan a los valores más extremos hacia la derecha del eje de decisión, y los valores más bajo a los estímulos que se encuentren más a la izquierda y correlacionen mejor con lo que el participante juzgaría como Ruido); una segunda forma sería presentar una Escala que contenga dos direcciones (una por cada juicio de detección) y permita distinguir entre la certeza que se tiene sobre que el estímulo evaluado sea una Señal o Ruido. Ambas formas de presentar la escala proporcionan -en teoría- la misma información y, en general, la elección de una u otra depende del experimentador.\\
+
+El supuesto detras de la interpretación de los puntajes de confianza registrados en cada ensayo, es que los participantes fijan un criterio sobre el eje de evidencia por cada opción de respuesta incluida en la Escala de Confianza. Es decir, se asume que el puntaje de confianza asignado en cada ensayo depende de cuál es el último criterio de elección en ser rebasado. La Figura~\ref{fig:Conf_Rat} ilustra esta idea: en la parte superior se presenta una escala de confianza de 6 elementos (que puede ser presentada en términos de qué tanta confianza se tiene en que el estímulo corresponda a una Señal, como en la primera fila; o bien, en términos de en cuál de las dos interpretaciones se tiene más confianza, como en la segunda), y en la parte inferior se presenta la representación gráfica del modelo de detección de señales\\
+
+\begin{figure}[th]
+\centering
+\includegraphics[width=0.80\textwidth]{Figures/Puntajes_Criterios}\\
+\includegraphics[width=0.50\textwidth]{Figures/ConfidenceRating}\\
+%\decoRule
+\caption[Ejemplo ]{}
+\label{fig:Conf_Rat}
+\end{figure}
+
+
+en el protocolo de Escala de Confianza se puede evaluar -en un mismo experimento- el desempeño del sistema sometido a la tarea a través del uso de tantos criterios de elección como opciones de respuesta se le proporcionen (ver Figura~\ref{fig:Conf_Rat}).
+
+En general, se recomienda que la Escala de Confianza esté compuesta por un número par de opciones de respuestas que oscile entre 4 y 10 \parencite{McNicol2}. Esto con el fin de evitar que los participantes elijan la opción intermedia siempre que se sientan inseguros sobre su respuesta. 
 
 
 
@@ -382,13 +402,18 @@ Un problema evidente con el trazo de curvas ROC a partir de los datos obtenidos 
 
 
 
+Idealmente, se espera que el participante haya utilizado todas las opciones de respuesta incluídas en la Escala de confianza durante la tarea.
 
 
-El protocolo de Escala de Confianza presenta la ventaja de que, en un sólo experimento y sin tener que fatigar a los participantes exponiéndolos a la misma tarea en varias ocasiones, se puede obtener información sobre distintos criterios de elección operantes bajo la misma discriminabilidad.
+El protocolo de Escala de Confianza presenta la ventaja de que, en un sólo experimento se puede obtener información sobre cómo se ve afectada la ejecución de los participantes con el uso de distintos criterios de elección en una misma tarea, con la discriminabilidad manteniéndose constante. 
 
 \parencite{McNicol2, McNicol5}
 
 \item \underline{Tarea con elección forzada entre dos alternativas}\\
+
+
+
+
 
 \end{itemize}
 
