@@ -17,6 +17,52 @@
 \endgroup
 
 \sortlist[entry]{nyt/global/}
+  \entry{Swets1986}{article}{}
+    \name{author}{1}{}{%
+      {{hash=ASJ}{%
+         family={A.},
+         familyi={A\bibinitperiod},
+         given={Swets\bibnamedelima J.},
+         giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ASJ1}
+    \strng{fullhash}{ASJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1986}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{abstract}{%
+    Presents a sample of empirical relative operating characteristics (ROCs),
+  drawn both from discrimination tasks in experimental psychology and from
+  diagnostic tasks in several practical fields. These illustrative ROCs are
+  seen to be fitted well by a straight line, of varying slope, on a binormal
+  graph. The form of empirical ROCs is consistent with one version of the
+  variable-criterion model provided by signal detection theory and inconsistent
+  both with other versions of that model and with the main threshold models.
+  That form supports the use of certain indices of discrimination accuracy
+  derived from detection theory and substantiates the potential unreliability
+  of others of that heritage and, more importantly, the unreliability of the
+  several accuracy indices in common use that can be shown to imply one or
+  another threshold model. The preferred detection-theory indices of accuracy
+  are ones that accommodate the varying slope of empirical ROCs. These indices
+  are effectively independent of the decision criterion, which can be indexed
+  separately. Measuring both accuracy and the decision criterion appropriately
+  enables the delineation of the dependent variables affected by independent
+  variables in psychological studies and the assessment of the efficacy and
+  accuracy of diagnostic systems. (43 ref) (PsycINFO Database Record (c) 2016
+  APA, all rights reserved)%
+    }
+    \field{number}{2}
+    \field{pages}{181\bibrangedash 198}
+    \field{title}{Form of empirical ROCs in discrimination and diagnostic
+  tasks: Implications for theory and measurement of performance}
+    \field{volume}{99}
+    \field{journaltitle}{Psychological Bulletin}
+    \field{year}{1986}
+  \endentry
+
   \entry{Wickens}{incollection}{}
     \name{author}{2}{}{%
       {{hash=AFG}{%
@@ -210,6 +256,46 @@
     \field{volume}{103}
     \field{journaltitle}{Journal of Abnormal Psychology}
     \field{year}{1994}
+  \endentry
+
+  \entry{Centor1985}{article}{}
+    \name{author}{2}{}{%
+      {{hash=CRM}{%
+         family={Centor},
+         familyi={C\bibinitperiod},
+         given={Robert\bibnamedelima M.},
+         giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=SJS}{%
+         family={Schwartz},
+         familyi={S\bibinitperiod},
+         given={J.\bibnamedelima Sanford},
+         giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CRMSJS1}
+    \strng{fullhash}{CRMSJS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1985}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{abstract}{%
+    The AUC ROC serves as one means for evaluating the performance of
+  diagnostic and predictive test systems. The most commonly used method for
+  estimating the area under an ROC curve utilizes the
+  maximum-likelihood.estimation technique, and a nonparametric method to
+  calculate the area under an ROC curve was recently described. We compared the
+  performance of these two methods. The results for the area under the ROC and
+  the standar error of the estimate as calculated by each of the two methods
+  exhibited hight correlation (...)%
+    }
+    \field{number}{2}
+    \field{title}{"An Evaluation of Methods for Estimating the Area Under the
+  Receiver Operating Characteristic (ROC) Curve"}
+    \field{volume}{5}
+    \field{journaltitle}{Psychological Review}
+    \field{year}{1985}
   \endentry
 
   \entry{Coren1971}{article}{}
@@ -1133,6 +1219,48 @@
     \field{year}{1981}
   \endentry
 
+  \entry{Nevin1969}{article}{}
+    \name{author}{1}{}{%
+      {{hash=NJA}{%
+         family={Nevin},
+         familyi={N\bibinitperiod},
+         given={John\bibnamedelima A.},
+         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{NJA1}
+    \strng{fullhash}{NJA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1969}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{abstract}{%
+    A review of Signal Detection Theory and Psychophysics in the Journal of the
+  Experimental Analysis of Behavior is justified by the growing interest in
+  signal detection among many psychologist concerned with operant behavior. The
+  nteractions of wavelngth discrimination and reinforcement (Boneau, Holland
+  and Baker, 1965) have been examined within a detection-theory framework
+  (Nevin,1965), and a full-blown decision theory of animal discrimination
+  performance has been published (Bonea and Cole, 1967). Blough (1967) has used
+  signal-detection analysis to present wavelength generalization gradients in a
+  novel way, and Rilling and Mc Diarmid (1969) and Stubbs (1968) have extended
+  this analysis to the study of response-produced and temporal stimuli. Most
+  recently, Blough (1969) has considered signal detection theory as an
+  alternative to traditional formulatios of stimulus generalization. A
+  knowledge of signal detection theory is therefore important for its relevance
+  to perant research as well as for its central position in sensory
+  psychology.%
+    }
+    \field{number}{3}
+    \field{pages}{475\bibrangedash 480}
+    \field{title}{Signal Detection Theory and Operant Behavior}
+    \field{volume}{12}
+    \field{journaltitle}{Journal of the Experimental Analysis of Behavior}
+    \field{month}{05}
+    \field{year}{1969}
+  \endentry
+
   \entry{Nuechterlein1983}{article}{}
     \name{author}{1}{}{%
       {{hash=NKH}{%
@@ -1386,6 +1514,47 @@
     \field{year}{2001}
   \endentry
 
+  \entry{Stainslaw1999}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SH}{%
+         family={Stainslaw},
+         familyi={S\bibinitperiod},
+         given={Harold},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=TN}{%
+         family={Todorov},
+         familyi={T\bibinitperiod},
+         given={Natasha},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SHTN1}
+    \strng{fullhash}{SHTN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1999}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    SDT may be applied to any area of psychology in which two different types
+  of stimuli must be discriminated. We describe several of these areas and the
+  advantages that can be realizad through the application of SDT. Three of the
+  most popular tasks used to study discriminability are then discussed,
+  together with the measures that SDT prescribers for quantifying performance
+  in these tasks. Mathematical formulae for the measures are presented, as are
+  methods for calculating the measures with lookup tables, computer software
+  specifically developed for SDT applications, and general purpose computer
+  software (including spreadsheets and statistical analysis software)%
+    }
+    \field{number}{1}
+    \field{pages}{137\bibrangedash 149}
+    \field{title}{Calculation of signal detection theory measures}
+    \field{volume}{31}
+    \field{journaltitle}{Behavior Research Methods, Instruments and Computers}
+    \field{year}{1999}
+  \endentry
+
   \entry{Swets1973}{article}{}
     \name{author}{1}{}{%
       {{hash=SJA}{%
@@ -1588,6 +1757,46 @@
     \field{journaltitle}{Journal of Behavior Therapy and Experimental
   Psychiatry}
     \field{year}{2010}
+  \endentry
+
+  \entry{Wixted2007}{article}{}
+    \name{author}{1}{}{%
+      {{hash=WJT}{%
+         family={Wixted},
+         familyi={W\bibinitperiod},
+         given={John\bibnamedelima T.},
+         giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WJT1}
+    \strng{fullhash}{WJT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2007}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{abstract}{%
+    Two influential models of recognition memory, the unequal variance
+  signal-detection model and a dual-process threshold/detection model
+  accurately describe the receiver operating characteristic, but only the
+  latter model can provide estimates of recollection and familiarity. Such
+  estimates often accord with those provided by the remember-know procedure,
+  and both methods are now widely used in the neuroscience literature to
+  identify the brain correlates of recollection and familiarity. However, in
+  recent years, a substantial literature has accumulated directly contrasting
+  the signal-detection model against the threshold/Detection-model, and that
+  litrature is almost unanimous in its endorsement of signal detection theory.
+  A dual process version of signal detection theory implies that individual
+  recgnition decisions are not process pure, and it suggest new ways to
+  investigate the brain correlates of recognition memory.%
+    }
+    \field{number}{1}
+    \field{pages}{152\bibrangedash 176}
+    \field{title}{Dual-Process Theory and Signal-Detection Theory of
+  Recognition Memory}
+    \field{volume}{114}
+    \field{journaltitle}{Psychological Review}
+    \field{year}{2007}
   \endentry
 
   \entry{Wixted2014}{article}{}
