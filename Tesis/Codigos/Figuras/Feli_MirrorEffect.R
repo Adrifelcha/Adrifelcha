@@ -7,8 +7,6 @@ h_rate<-.88
 fa_rate<-.12
 k<-qnorm(1-fa_rate,0,1)
 d<-1
-#d<-qnorm(h_rate,0,1)-qnorm(fa_rate,0,1)
-#d2<-qnorm(1-fa_rate,0,1)-qnorm(1-h_rate,0,1)
 zs<-qnorm(1-h_rate,0,1)
 c<-k-(d/2)                    
 beta<-dnorm(k,d,1)/dnorm(k,0,1)
@@ -17,7 +15,6 @@ lnB<--.27
 
 #Calculamos valores
 d<-round(d,3)
-d2<-round(d2,3)
 k<-round(k,3)
 c<-round(c,3)
 beta<-round(beta,3)
@@ -38,42 +35,83 @@ valor_sup<- 3
 pos_inf<-which(soporte==valor_inf)
 pos_sup<-which(round(soporte,2)==valor_sup)
 
-plot(0,type='n',axes=F,
-     xlab='Familiaridad',
-     ylab='Probabilidad',
-     cex.lab=1,
-     xlim=c(-4,6),ylim=c(-0.05,.5))
-#polygon(c(soporte[pos_inf],soporte[pos_inf:pos_sup],soporte[pos_sup]),
-#        c(0,d_ruido[pos_inf:pos_sup],0),
-#        col='darkorchid2',border=F)
+
+
+#####################################
+########################### Default
+#####################################
+plot(0,type='n',axes=F, ann=FALSE,
+     xlim=c(-4,5),ylim=c(-0.05,.5))
 lines(soporte,d_ruido, col='mediumvioletred',lty=1, lwd=3)
-lines(soporte,d_senal,col='mediumvioletred',lty=2, lwd=1)
-#CRITERIO
-#abline(v=k,col='red',lty=1,lwd=3)
-#CONFIDENCE CRITERIONS
-#abline(v=d/2,col='dodgerblue3',lty=4,lwd=2)
-#abline(v=d,col='dodgerblue3',lty=4,lwd=2)
-#abline(v=0,col='dodgerblue3',lty=4,lwd=2)
-#abline(v=-.5,col='dodgerblue3',lty=4,lwd=2)
-#abline(v=1.5,col='dodgerblue3',lty=4,lwd=2)
-#Distribuciones 'FACILES'
+lines(soporte,d_senal,col='mediumvioletred',lty=1, lwd=3)
+mtext(side=1, text = "Evidencia", line=1, cex=3.4)
+mtext(side=2, text = "Probabilidad", line=-0.5, cex=3.4)
+text(-0.5,0.48,paste("NUEVOS"), cex=2)
+text(1.5,0.48,paste("VIEJOS"), cex=2)
+text(-1.5,0.4,paste("A"), cex=1.8)
+text(-.4,0.4,paste("B"), cex=1.8)
+text(1.4,0.4,paste("B"), cex=1.8)
+text(2.5,0.4,paste("A"), cex=1.8)
 lines(soporte,d_ruido2,col='steelblue',lty=1, lwd=3)
-lines(soporte,d_senal2,col='steelblue',lty=2, lwd=1)
+lines(soporte,d_senal2,col='steelblue',lty=1, lwd=3)
 axis(1,at=-4:6,pos=0)
 axis(2,at=c(0,.5),pos=-4,las=1)
 
 
-#text(-2.7,0.47,paste("K = ",k),col='red',cex=1)
-#text(-2.7,0.43,paste("Tasa F.A. = ",fa_rate), cex=1)
-#text(-2.7,0.40, paste("Tasa Hits =", h_rate),cex=1)
-#text(-2.7,0.24,paste("D' = ",d),col='purple',cex=1)
-#text(-2.7,0.30,paste("D'2 = ",d2),col='purple',cex=1)
-#text(-2.7,0.20,paste("Beta = ",beta),col='blue',cex=1)
-#text(-2.7,0.17,paste("lnBeta = ",lnB),col='blue',cex=1)
-#text(-2.7,0.10,paste("C = ",c),col='blue',cex=1)
-text(-0.5,0.48,paste("NUEVOS"), cex=1)
-text(1.5,0.48,paste("VIEJOS"), cex=1)
-text(-1.2,0.43,paste("AN"), cex=1)
-text(0,0.43,paste("BN"), cex=1)
-text(1,0.43,paste("BO"), cex=1)
-text(2,0.43,paste("AO"), cex=1)
+#####################################
+########################### Yes / No
+#####################################
+plot(0,type='n',axes=F, ann=FALSE,
+     xlim=c(-4,5),ylim=c(-0.05,.5))
+lines(soporte,d_ruido, col='mediumvioletred',lty=1, lwd=3)
+lines(soporte,d_senal,col='mediumvioletred',lty=1, lwd=3)
+mtext(side=1, text = "Evidencia", line=1, cex=3.4)
+mtext(side=2, text = "Probabilidad", line=-0.5, cex=3.4)
+text(-0.5,0.48,paste("NUEVOS"), cex=2)
+text(1.5,0.48,paste("VIEJOS"), cex=2)
+text(-1.5,0.4,paste("A"), cex=1.8)
+text(-.4,0.4,paste("B"), cex=1.8)
+text(1.4,0.4,paste("B"), cex=1.8)
+text(2.5,0.4,paste("A"), cex=1.8)
+lines(soporte,d_ruido2,col='steelblue',lty=1, lwd=3)
+lines(soporte,d_senal2,col='steelblue',lty=1, lwd=3)
+lines(c(0.8, 0.8),c(0,0.46), lwd=3, lty=1, col="black") 
+axis(1,at=-4:6,pos=0)
+axis(2,at=c(0,.5),pos=-4,las=1)
+
+
+#####################################
+################### Confidence Rating
+#####################################
+
+plot(0,type='n',axes=F, ann=FALSE,
+     xlim=c(-4,5),ylim=c(-0.05,.5))
+lines(soporte,d_ruido, col='mediumvioletred',lty=1, lwd=3)
+lines(soporte,d_senal,col='mediumvioletred',lty=1, lwd=3)
+mtext(side=1, text = "Evidencia", line=1, cex=3.4)
+mtext(side=2, text = "Probabilidad", line=-0.5, cex=3.4)
+text(-0.5,0.48,paste("NUEVOS"), cex=2)
+text(1.5,0.48,paste("VIEJOS"), cex=2)
+text(-1.5,0.4,paste("A"), cex=1.8)
+text(-.4,0.4,paste("B"), cex=1.8)
+text(1.4,0.4,paste("B"), cex=1.8)
+text(2.5,0.4,paste("A"), cex=1.8)
+lines(soporte,d_ruido2,col='steelblue',lty=1, lwd=3)
+lines(soporte,d_senal2,col='steelblue',lty=1, lwd=3)
+lines(c(0.5, 0.5),c(0,0.46), lwd=2.5, lty=1, col="black") 
+lines(c(1.75, 1.75),c(0,0.46), lwd=2.5, lty=1, col="black")
+lines(c(-0.85, -0.85),c(0,0.46), lwd=2.5, lty=1, col="black")
+lines(c(3, 3),c(0,0.46), lwd=2.5, lty=1, col="black")
+lines(c(-2.2, -2.2),c(0,0.46), lwd=2.5, lty=1, col="black")
+lines(c(-3.8, -3.8),c(0,0.46), lwd=2.5, lty=1, col="black")
+lines(c(4.3, 4.3),c(0,0.46), lwd=2.5, lty=1, col="black")
+text(-3.6,0.02,paste("1"), cex=3)
+text(-2,0.02,paste("2"), cex=3)
+text(-0.65,0.02,paste("3"), cex=3)
+text(0.7,0.02,paste("4"), cex=3)
+text(1.95,0.02,paste("5"), cex=3)
+text(3.2,0.02,paste("6"), cex=3)
+text(4.5,0.02,paste("7"), cex=3)
+axis(1,at=-4:6,pos=0)
+axis(2,at=c(0,.5),pos=-4,las=1)
+
