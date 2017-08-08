@@ -168,7 +168,7 @@ Si los organismos se encuentran en un entorno donde saben que es prácticamente 
 Asumir que los organismos apoyan su juicio de detección en el conocimiento que tienen sobre la verosimilitud de la evidencia, es el equivalente a suponer que tienen alguna idea sobre cómo se ven las distribuciones de probabilidad que rigen la ocurrencia del ruido y señal. Bajo este escenario, ante la incertidumbre -si los organismos se enfrentaran a evidencia que cae en el área de sobrelape entre las distribuciones- los agentes detectores optarían por elegir el juicio de detección que corresponda con la distribución que se asocie con dicha evidencia con mayor probabilidad (es decir, la distribución que sea más alta en ese punto particular del eje de decisión).\\
 \end{itemize}
 
-De contar con ambos elementos, es posible asumir que los organismos se decantan por un juicio de detección particular con base en el conocimiento que tienen sobre la estructura probabilística del entorno, mediante la realización de una inferencia bayesiana \parencite{WeijiMa}.\\
+De contar con ambos elementos, es posible asumir que los organismos se decantan por un juicio de detección particular con base en el conocimiento que tienen sobre la estructura probabilística del entorno, mediante la realización de una inferencia bayesiana \parencite{WeijiMa, WeijiMa2012, Pouget2013}.\\
 
 \subsection{Parámetros del modelo}\\
 
@@ -420,6 +420,9 @@ Dada la relación que representan, el área bajo la curva ROC trazada con un pro
 
 \subsection{Predecesores: Teoría del Procesamiento Dual}
 
+Uno de los campos de aplicación más comúnes de la TDS en el ámbito del estudio de procesos cognitivos superiores, es el de la Memoria de Reconocimiento \parencite{Banks1970}.
+
+
 La Teoría del Procesamiento Dual (TPD; o PDT por sus siglas en inglés) sostiene que existen dos procesos fundamentales involucrados en todo juicio de reconocimiento: la recolección y el análisis de familiaridad. El primero corresponde a la extracción de rasgos y detalles específicos del estímulo a evaluar, (i.e. el estímulo que queremos determinar si se ha visto antes, o no), un proceso que requiere cierto tiempo; el segundo, es entendido como un fenómeno más o menos automático y casi instantáneo donde el sistema identifica el estímulo como 'familiar' y decide que lo ha reconocido de alguna experiencia previa. 
 
 
@@ -449,39 +452,108 @@ Como se mencionó en el Capítulo 1, la TDS en su forma típica define las distr
 
 \subsection{Implicaciones y conflictos}
 
+
+
 Me permitiré, por un momento, salirme del molde académico y hablar un poco de todo el proceso que hubo detrás de la realización del presente trabajo. Cuando comencé a revisar literatura para decidir cuál podría ser mi proyecto de tesis, descubrí la maravilla de la Teoría de Detección de Señales. 
 
 Sin embargo, pese a la flexibilidad de la que dispone la TDS para aplicarse a, aparentemente, cualquier tarea de decisión binaria, donde se admita el papel de la incertidumbre en la emisión de un juicio de detección, su aplicación al campo de la Memoria de Reconocimiento no ha estado excenta de críticas.
 
 Conceptualmente, es fácil pensar en una tarea de reconocimiento en términos del modelo de detección de señales. Sin embargo, cuando se revisan las implicaciones teóricas que conllevaría aceptar que la memoria de Reconocimiento funciona como un procedimiento cualquiera de detección de señales, no son del todo claras. 
 
+Una de las principales críticas que devienen de la aplicación de la TDS al estudio de la Memoria de Reconocimiento, es que ello implica que el organismo fija un criterio de elección a lo largo de un eje de evidencia -comúnmente identificado como 'familiaridad'-.   \parencite{Brown1977}
+
 \section{El Efecto Espejo}
 
-“is usually interpreted in terms of (unequal variance) signal detection theory (SD) in which case it implies that the order of the underlying old item distributions mirrors the order of the new item distributions” (DeCarlo, L.,  2007)\\
-Teoría de Atención /Verosimilitud: Un modelo de marcaje de rasgos, determinado por un muestreo diferencial dada la condición (H-frequency, L-frequency)\\
-Teoría de Atención / Verosimilitud; demasiado complicada, sus supuestos no son necesarios (Decarlo, 2007; Hintzman, 1994; Murdock, 1998) Intercambio de papers Hintzman-Glanzer\\
-‘The mixture model’ (DeCarlo, 2007) – Extensión de la SDT, una extensión mezclada.\\
-Between vs Within condition discussion (Listas separadas o mezcladas)\\
-Between condition: Problemas (1) No se puede descartar la posibilidad de que el criterio de respuesta difiera a lo largo de las condiciones. Y (2) las distribuciones subyacentes no necesariamente están escaladas de la misma forma a lo largo de las dos condiciones.\\
-“one cannot compare the values of d’ across the two conditions without further assuming that the variance of the reference distributions (LN and HN) are the same, which does not appear to be the case. (DeCarlo,2007)  
+El 'Efecto Espejo' refiere a un patrón de respuestas reportado consistentemente en estudios de Memoria de Reconocimiento donde se compara el desempeño de los participantes entre dos clases de estímulos, que difieren en la precisión con que sus estímulos son reconocidos (diferentes valores de $d'$), bajo el marco de la TDS, \parencite{Glanzer1993}. En dichos experimentos, se ha encontrado evidencia sólida de que la diferencia en la discriminabilidad de los elementos 'nuevos' y 'viejos' que conforman cada clase de éstímulos, se presenta tanto en términos de una mayor precisión identificando los estímulos viejos como 'viejos' (más Hits), como en la identificación de los estímulos nuevos como 'no viejos' (menos Falsas Alarmas). Es decir, las diferencias en $d'$ se ven reflejadas no sólamente en una mayor cantidad de aciertos, sino también, en una reducción de errores.\\
 
-%----------------------------------------------------------------------------------------
-%	SECTION 1
-%----------------------------------------------------------------------------------------
-
-\subsection{Evidencia recolectada}
-
-Teóricamente, este procedimiento nos permitiría inferir no uno, sino seis sub-criterios de elección que estarían permeando a partir de cuánta evidencia el participante se siente más, o menos seguro, de si los estímulos evaluados contienen la señal o sólo ruido. De encontrarse evidencia del Efecto Espejo en los experimentos realizados, se esperaría encontrar el mismo patrón en el promedio de los puntajes de confianza asignados a cada una de las cuatro categorías de estímulos (formadas por la combinación Condición (A o B) x Tipo de ensayo (S o R)) reportados en la literatura en Memoria de Reconocimiento \parencite{Glanzer1990, Glanzer1993}. \\
-
-La Figura~\ref{fig:Ejem_Crit} 
+La diferencia entre la proporción de Hits y Falsas Alarmas reportada entre dos clases de estímulo a comparar en tareas de reconocimiento (estímulos A, que son fácilmente reconocibles y estímulos B, que se reconocen con mayor dificultad) analizadas bajo el marco de la TDS, sugiere que existen cuatro distribuciones que subyacen a la presentación de los estímulos y el orden en que se despliegan las distribuciones de estímulos 'viejos' A y B, es el inverso del orden en que se presentan sus respectivas distribuciones de estímulos 'nuevos', \parencite{Glanzer1990, DeCarlo2007}. La representación gráfica de este orden (Nuevos(A), Nuevos(B), Viejos(B) y Viejos(A)), se presenta en la Figura~\ref{fig:Ejem_EfectoEspejo}. La peculiaridad con que las distribuciones de ruido y señal parecen "reflejarse" entre clases de estímulos, es la razón por la cual se ha identificado a dichos patrones de respuesta bajo el nombre de Efecto Espejo.\\
 
 \begin{figure}[th]
 \centering
-\includegraphics[width=0.55\textwidth]{Figures/Ejem_Criterios}
+\includegraphics[width=0.7\textwidth]{Figures/EfectoEspejo}
+%\decoRule
+\caption[Representación gráfica del Efecto Espejo]{}
+\label{fig:Ejem_EfectoEspejo}
+\end{figure}
+
+La evidencia en favor del Efecto Espejo en experimentos de Memoria de Reconocimiento se reporta a lo largo de una amplia variedad de "clases de estímulos" y en distintos protocolos de presentación de tareas de detección (Preguntas Sí/No; Escala de Confianza y Elección Forzada de dos alternativas), \parencite{Glanzer1990}, en estudios que cumplen las siguientes condiciones:\\
+
+\begin{itemize}
+\item Existen al menos dos clases de estímulos -típicamente identificados con las letras A y B-, entre los cuales se busca comparar el desempeño de los participantes, y que difieren en su nivel de discriminabilidad. En otras palabras, existe una clase de estímulos (A) que se caracteriza porque está compuesto de estímulos que se reconocen con mayor facilidad al ser presentados en más de una ocasión que la segunda clase de estímulos (B) incluida en el procedimiento.\\
+
+\item Los estímulos que componen las clases A y B se presentan de manera simultánea y aleatoria durante la tarea, tanto en la fase de entrenamiento (cuando los estímulos que más adelante serán identificados como 'viejos' se presentan por primera vez), como en la fase de reconocimiento; sin que los participantes tengan forma de saber que se le está presentando más de un tipo de estímulo, (y más aún,  que su desempeño se va a evaluar en términos de las diferencia con que responda a cada uno de estos). Esto se hace por dos razones: 1) permite asumir que el participante está respondiendo con base en un sólo criterio de elección y 2) provee cierta garantía sobre la forma en que las distribuciones subyacentes están escaladas, \parencite{DeCarlo2007}.\\
+\end{itemize}
+
+La separación que se observa en la Figura~\ref{fig:Ejem_EfectoEspejo} entre las distribuciones de estímulos viejos A y B (las distribuciones de las señales a detectar o, en este caso, "reconocer") tiene sentido bajo el supuesto de que las tareas de reconocimiento funcionan como una instancia de detección de señales y se espera que exista una mayor distancia entre la distribución señal cuyos estímulos se reconocen con mayor precisión (Vieja(A)) y el Ruido. Sin embargo, no existe razón para esperar que dicha diferencia se "refleje" y aparezca también en las distribuciones de estímulos nuevos. En el contexto del estudio de la Memoria de Reconocimiento, no habría por qué esperar que el desempeño de los participantes entre los estímulos nuevos A y B (el ruido), puesto que en cualquier caso se trata de  estímulos que no han sido mostrado previamente y no habría forma de explicar las discrepancias sugeridas por el Efecto Espejo entérminos de su "familiaridad", \parencite{Glanzer1993}. Esta y otras complicaciones e implicaciones arrojadas por el Efecto Espejo y su consistencia, se describen con detalle más adelante.\\
+
+\subsection{Evidencia recolectada}
+
+Como se mencionó previamente, la evidencia en favor de la prevalencia del Efecto Espejo en tareas de Memoria de Reconocimiento analizadas bajo el marco de la TDS, donde se compara la ejecución de los participantes entre clases de estímulos que difieren en su nivel de discriminabilidad, se presenta de manera consistente en los datos obtenidos a traves de distintos protocolos experimentales. \parencite{Glanzer1990, Glanzer1993}. Los patrones de respuesta identificados en cada caso y su relación con el Efecto Espejo (y su representación gráfica presentada en la Figura~\ref{fig:Ejem_EfectoEspejo}) se exponen a detalle a continuación:\\
+
+\begin{itemize}
+\item \underline{Efecto Espejo en Tareas Sí/No}\\
+
+En el caso de las tareas binarias "Sí/No", donde de manera aleatoria se presenta a los participantes estímulos nuevos y viejos de ambas clases de estímulos durante la fase de reconocimiento para que este emita una respuesta binaria "Sí/No" para señalar si se trata de un estímulo que le fue presentado con anterioridad (estímulo viejo; la señal), o no (estímulo nuevo; el ruido), se reporta el siguiente patrón de respuestas:\\
+
+\begin{center}
+$p[Si(NuevoA)] < p[Si(NuevoB)] < p[Si(ViejoB)] < p[Si(ViejoA)]$\\
+
+donde $p[Si]$ es la proporción de juicios de reconocimiento afirmativos ("Sí, este estímulo se me había presentado antes"), $A y B$ son las clases de estímulo empleadas y $Nuevo y Viejo$ señala la pertenencia de los estímulos presentados a la categoría Ruido o Señal, respectivamente.\\
+\end{center}
+
+De acuerdo con la correspondencia entre la emisión de juicios de reconocimiento afirmativos y el tipo de estímulo presentado, la relación anteriormente descrita también puede definirse en términos de Hits y Falsas Alarmas:\\
+
+\begin{center}
+$F.Alarmas(A) < F.Alarmas(B) < Hits(B) < Hits(A)$\\
+
+donde $F.Alarmas$ y $Hits$ refieren a la tasa de Hits y Falsas Alarmas observadas durante la tarea, para cada una de las clases de estímulos.\\
+\end{center}
+
+
+
+\begin{figure}[th]
+\centering
+\includegraphics[width=0.7\textwidth]{Figures/EfectoEspejo_YesNo}
+%\decoRule
+\caption[Representación gráfica del Efecto Espejo]{}
+\label{fig:Ejem_Espejo_YesNo}
+\end{figure}
+
+
+
+La Figura~\ref{fig:Ejem_Espejo_YesNo}
+
+\item \underline{Efecto Espejo con Escalas de Confianza}\\
+
+
+\begin{center}
+$P(NuevoA) < P(NuevoB) < P(ViejoB) < P(ViejoA)$\\
+\end{center}
+
+
+\begin{figure}[th]
+\centering
+\includegraphics[width=0.7\textwidth]{Figures/EfectoEspejo_Puntajes}
 %\decoRule
 \caption[Representación gráfica de los sub-Criterios para la emisión de puntajes de confianza ]{}
-\label{fig:Ejem_Crit}
+\label{fig:Ejem_Efecto_Punt}
 \end{figure}
+
+
+La Figura~\ref{fig:Ejem_Efecto_Punt}
+
+\item \underline{Efecto Espejo en Tareas de Elección forzada entre dos alternativas}\\
+
+
+\begin{center}
+$P(Nuevo-A, Nuevo-B) < Sí(Nuevo-B) < Sí(Viejo-B) < Sí(Viejo-A)$\\
+\end{center}
+
+
+\end{itemize}
+
+Teóricamente, este procedimiento nos permitiría inferir no uno, sino seis sub-criterios de elección que estarían permeando a partir de cuánta evidencia el participante se siente más, o menos seguro, de si los estímulos evaluados contienen la señal o sólo ruido. De encontrarse evidencia del Efecto Espejo en los experimentos realizados, se esperaría encontrar el mismo patrón en el promedio de los puntajes de confianza asignados a cada una de las cuatro categorías de estímulos (formadas por la combinación Condición (A o B) x Tipo de ensayo (S o R)) reportados en la literatura en Memoria de Reconocimiento \parencite{Glanzer1990, Glanzer1993}. \\
+
 
 
 
@@ -492,6 +564,10 @@ A primera vista el patrón de respuestas identificado como Efecto Espejo podría
 %	SUBSECTION 1
 %-----------------------------------
 \subsection{Algunos modelos desarrollados para dar cuenta del Efecto Espejo}
+
+Teoría de Atención /Verosimilitud: Un modelo de marcaje de rasgos, determinado por un muestreo diferencial dada la condición (H-frequency, L-frequency)\\
+Teoría de Atención / Verosimilitud; demasiado complicada, sus supuestos no son necesarios (Decarlo, 2007; Hintzman, 1994; Murdock, 1998) Intercambio de papers Hintzman-Glanzer\\
+‘The mixture model’ (DeCarlo, 2007) – Extensión de la SDT, una extensión mezclada.\\
 
 \begin{itemize} 
 \item

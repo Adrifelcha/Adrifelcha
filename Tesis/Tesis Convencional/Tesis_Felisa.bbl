@@ -98,6 +98,41 @@
     \field{year}{2005}
   \endentry
 
+  \entry{Banks1970}{article}{}
+    \name{author}{1}{}{%
+      {{hash=BWP}{%
+         family={Banks},
+         familyi={B\bibinitperiod},
+         given={William\bibnamedelima P.},
+         giveni={W\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BWP1}
+    \strng{fullhash}{BWP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1970}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    Some applications of SDT in the study of memorail processes are critically
+  reviewed in four categories: 1) uses of SDT to scale memory strenght, 2) use
+  of SDT in criterial interpretations of data that seem to indicate forgetting,
+  3) attempts using SDT to determine the form of trace storage and to settle
+  the question of all-or-none learning and 4) extensions of SDT to scale
+  memory-based discriminability in finer analyses of retention. The techniques
+  that SDT offers the student of memory are explained, their limitations and
+  past misapplications are discussed, their advantages in various situations
+  are enumerated, and future applications are suggested%
+    }
+    \field{number}{2}
+    \field{pages}{81\bibrangedash 99}
+    \field{title}{Sigal Detectio Theory and Human Memory}
+    \field{volume}{74}
+    \field{journaltitle}{Psychological Bulletin}
+    \field{year}{1970}
+  \endentry
+
   \entry{Bonnel2003}{article}{}
     \name{author}{6}{}{%
       {{hash=BA}{%
@@ -258,6 +293,42 @@
     \field{year}{1994}
   \endentry
 
+  \entry{Brown1977}{article}{}
+    \name{author}{3}{}{%
+      {{hash=BJ}{%
+         family={Brown},
+         familyi={B\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=LVJ}{%
+         family={Lewis},
+         familyi={L\bibinitperiod},
+         given={V.\bibnamedelima J.},
+         giveni={V\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=MAF}{%
+         family={Monk},
+         familyi={M\bibinitperiod},
+         given={A.\bibnamedelima F.},
+         giveni={A\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BJLVJMAF1}
+    \strng{fullhash}{BJLVJMAF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1977}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{number}{3}
+    \field{pages}{461\bibrangedash 473}
+    \field{title}{Memorability, Word Frequency and Negative Recognition}
+    \field{volume}{29}
+    \field{journaltitle}{Quarterly Journal of Experimental Psychology}
+    \field{year}{1977}
+  \endentry
+
   \entry{Centor1985}{article}{}
     \name{author}{2}{}{%
       {{hash=CRM}{%
@@ -362,6 +433,43 @@
     \field{volume}{16}
     \field{journaltitle}{Perception & Psychophysics}
     \field{year}{1974}
+  \endentry
+
+  \entry{DeCarlo2007}{article}{}
+    \name{author}{1}{}{%
+      {{hash=DLT}{%
+         family={DeCarlo},
+         familyi={D\bibinitperiod},
+         given={Lawrence\bibnamedelima T.},
+         giveni={L\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DLT1}
+    \strng{fullhash}{DLT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2007}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{abstract}{%
+    The mirror effect for word frequency refers to the finding that
+  low-frequency words have higher hit rates and lower false alarm rates that
+  high-frequency words. This result is typically interpreted in terms of
+  conventional signa detection theory (SDT), in which case it indicates that
+  the order of the underlying old item distributions mirrors the order of the
+  new item distributions. However, when viewed in terms of a mixture revision
+  of SDT, the order of hits and false alarms does not neccesarily imply the
+  same order in the underlying distributions because of possible effects of
+  mixing. A reversal in underlying distributions did not appear for fits of
+  mixture SDT models to data from 4 experiments.%
+    }
+    \field{number}{1}
+    \field{pages}{18\bibrangedash 33}
+    \field{title}{The Mirror Effect and Mixture Signal Detection Theory}
+    \field{volume}{33}
+    \field{journaltitle}{Journal of Experimental Psychology: Learning, Memory
+  and Cognition}
+    \field{year}{2007}
   \endentry
 
   \entry{Fechner}{book}{}
@@ -964,7 +1072,7 @@
     \field{year}{1994}
   \endentry
 
-  \entry{WeijiMa2010}{article}{}
+  \entry{WeijiMa2012}{article}{}
     \name{author}{1}{}{%
       {{hash=MWJ}{%
          family={Ma},
@@ -977,36 +1085,24 @@
     \strng{fullhash}{MWJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelyear}{2010}
+    \field{labelyear}{2012}
     \field{sortinit}{M}
     \field{sortinithash}{M}
     \field{abstract}{%
-    The juxtaposition of established signal detection theory models of
-  perception and more recent claims about the encoding of uncertainity in
-  perception is a rich source of confusion. Are the latter simply a rehash of
-  the former? Here, we make an attempt to distinguish precisely between optimal
-  and probabilistic computation- In optimal computation, the observer minimizes
-  the expected cost under a posterior probability distribution. In
-  probabilistic computation the observer uses higher moments of the likelihood
-  function of the stimulus on a trial-by-trial basis. Computation can be
-  optimal without being probabilistic and vice versa. Most signal detection
-  theory models describe optimal computation- Behavioral data only provide
-  evidence for a neural representation of uncertainty if they are best
-  described by a model of probabilistic computation. We argue that sngle-neuron
-  activity sometimes suffices for optimal computation, but never for
-  probabilistic computation. A population code is needed instead. Not every
-  population code is equally suitable because nuisance parameters have to be
-  marginalized out. This problem is solved by Poisson-like, but not by Gaussian
-  variability. Finally, we build a dictionary between signal detection theory
-  quantities and Poisson-like population quantities.%
+    Probability has played a central role in models of perception for more than
+  a century, but a look at probabilistic concepts in the literature raises many
+  questions. Is being Bayesian the same as being optimal? Are recent Bayesian
+  models fundamentally different from classic signal detection theory models?
+  Do findings of nearoptimal inference provide evidence that neurons compute
+  with probability distributions? This review aims to disentangle these
+  concepts and to classify empirical evidence accordingly%
     }
-    \field{number}{50}
-    \field{pages}{2308\bibrangedash 2319}
-    \field{title}{Signal detection theory, uncertainty, and Poisson-like
-  populations}
-    \field{volume}{3}
-    \field{journaltitle}{Vision Research}
-    \field{year}{2010}
+    \field{number}{10}
+    \field{pages}{511\bibrangedash 515}
+    \field{title}{Organizing probabilistic models of perception}
+    \field{volume}{16}
+    \field{journaltitle}{Cell Press}
+    \field{year}{2012}
   \endentry
 
   \entry{WeijiMa}{unpublished}{}
@@ -1449,6 +1545,61 @@
     \field{volume}{1}
     \field{journaltitle}{Psychonomic Science}
     \field{year}{1964}
+  \endentry
+
+  \entry{Pouget2013}{article}{}
+    \name{author}{4}{}{%
+      {{hash=PA}{%
+         family={Pouget},
+         familyi={P\bibinitperiod},
+         given={Alexandre},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=BJM}{%
+         family={Beck},
+         familyi={B\bibinitperiod},
+         given={Jeffrey\bibnamedelima M},
+         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=MWJ}{%
+         family={Ma},
+         familyi={M\bibinitperiod},
+         given={Wei\bibnamedelima Ji},
+         giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=LPE}{%
+         family={Latham},
+         familyi={L\bibinitperiod},
+         given={Peter\bibnamedelima E.},
+         giveni={P\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PA+1}
+    \strng{fullhash}{PABJMMWJLPE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2013}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{abstract}{%
+    There is a strong behavioral and physiological evidence that the brain both
+  represents probability distributions and performs probabilistic inference.
+  Computational neuroscientist have started to shed light on how these
+  probabilistic representations and computations might be implemented in neural
+  circuits. One particularly appealing aspect of these theories ins their
+  generality; they can be used to model a wide range fo tasks, from sensory
+  processing to high-level cognition. To date, however, these theories have
+  only been applied to very simple tasks. Here we discuss the challenges that
+  will emerge as researchers start focusing their efforts on real-life
+  computations, with a focus on probabilistic learning, structural learning and
+  approximate inference.%
+    }
+    \field{number}{9}
+    \field{pages}{1170\bibrangedash 1177}
+    \field{title}{Probabilistic brain: Knowns and unknowns}
+    \field{volume}{16}
+    \field{journaltitle}{Nature neuroscience}
+    \field{year}{2013}
   \endentry
 
   \entry{Roberts2005}{article}{}
