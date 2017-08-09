@@ -629,16 +629,56 @@ La idea detrás de la interpretación de las elecciones observadas en las pareja
 
 \end{itemize}
 
-La evidencia en favor de la consistencia del Efecto Espejo no se limita sólo a los patrones de respuesta observados a través de los distintos protocolos experimentales descritos previamente, sino que implica también el uso y manipulación de distintos tipos de variables en el diseño de las dos clases de estímulos a comparar. En otras palabras, el Efecto Espejo se ha reportado en tareas de Reconocimiento que hacen uso de los protocolos experimentales previamente descritos para comparar el desempeño de los participantes entre dos clases de estímulos A y B, que difieren en qué tan fácilmente se reconocen sus elementos al ser presentados una segunda vez, sea cual sea la naturaleza de dichas "clases". El caso más común en la literatura, es el uso de palabras comúnes y palabras poco comúnes como las clases de estímulos a comparar (B y A, respectivamente), \parencite{Glanzer1990}, pero el mismo hallazgo se sostiene cuando se comparan palabras con significado concreto (A) vs abstracto (B), imágenes (B) vs palabras (A) o rostros comúnes (B) vs rostros poco comúnes (A); o bien, cuando se manipulan variables tales como la complejidad, la ortografía o la veracidad de los enunciados presentados, \parencite{Glanzer1993}.\\
+Originalmente, el patrón de respuestas actualmente identificado como Efecto Espejo recibía el nombre de Efecto de Frecuencia en las Palabras ya que comenzó siendo reportado en estudios donde el desempeño de los participantes en tareas de reconocimiento se comparaba entre dos clases de estímulos compuestos por palabras poco comúnes y palabras muy comunes, de acuerdo a su Frecuencia de uso, \parencite{Kucera1967}. En dichos estudios, realizados con diferentes protocolos experimentales \parencite{Glanzer1976, Bowles1983, Glanzer1990}, se encontró evidencia consistente de que las palabras poco comúnes eran reconocidas con mayor precisión tanto como "nuevas" como "viejas" (clase A) y las palabras comúnes se confundían con mayor facilidad (clase B). 
+
+
+Sin embargo, la evidencia en favor de la consistencia del Efecto Espejo no se limita sólo a los patrones de respuesta observados a través de los distintos protocolos experimentales descritos previamente, sino que implica también el uso y manipulación de distintos tipos de variables en el diseño de las dos clases de estímulos a comparar. En otras palabras, el Efecto Espejo se ha reportado en tareas de Reconocimiento que hacen uso de los protocolos experimentales previamente descritos para comparar el desempeño de los participantes entre dos clases de estímulos A y B, que difieren en qué tan fácilmente se reconocen sus elementos al ser presentados una segunda vez, sea cual sea la naturaleza de dichas "clases". El caso más común en la literatura, es el uso de palabras comúnes y palabras poco comúnes como las clases de estímulos a comparar (B y A, respectivamente), \parencite{Glanzer1976, Bowles1983, Glanzer1990}, pero el mismo hallazgo se sostiene cuando se comparan palabras con significado concreto (A) vs abstracto (B), imágenes (B) vs palabras (A) o rostros comúnes (B) vs rostros poco comúnes (A); o bien, cuando se manipulan variables tales como la complejidad, la ortografía o la veracidad de los enunciados presentados, \parencite{Glanzer1993}.\\
 
 \subsection{Relevancia, implicaciones e interpretaciones}\\
 
-A primera vista el patrón de respuestas identificado como Efecto Espejo podría parecer trivial: Si sabemos que lo que distingue a las condiciones de estímulos \\
+A primera vista el patrón de respuestas identificado como Efecto Espejo podría parecer trivial: si sabemos que lo que distingue a los grupos de estímulos A y B presentados en este tipo de estudios es la precisión con que sus elementos son reconocidos al presentarse más de una vez -o bien, que en una condición los elementos previamente vistos se vuelven más reconocibles que en la otra- tiene sentido esperar que los participantes tengan un mejor desempeño en la clase A que en la clase B. Sin embargo, en el contexto específico de los estudios de Memoria de Reconicimiento, no parece claro por qué deberían haber diferencias entre las Falsas Alarmas registradas para cada clase de estímulo, en tanto que en cualquier caso se trata de elementos que no han sido presentados antes y que deberían de resultar "desconocidos".\\
 
+El Efecto Espejo 
 
-Teoría de Atención /Verosimilitud: Un modelo de marcaje de rasgos, determinado por un muestreo diferencial dada la condición (H-frequency, L-frequency)\\
+Dentro de los modelos y teorías desarrollados para dar cuenta del Efecto Espejo destacan dos grandes grupos: 1) Aquellos que asumen que los participantes hacen más que sólo responder en función al valor de cada estímulo sobre el eje de evidencia, dando un rol preponderante a la razpn de \parencite{Glanzer1993, Hilford2015} y 2) Aquel 
+
+Una de las primeras teorías en desarrollarse para dar cuenta del Efecto Espejo en Memoria de Reconocimiento es la Teoría de Atención/Verosimilityd \parencite{Glanzer19930}. Dicha teoría funciona como una teoría de muestreo de rasgos en la que se asume que todos los estímulos presentados están compuestos por un número fijo de rasgos ($N$), de los cuales, algunos se presentan "marcados" desde su primera aparición como "rasgos familiares" ($p(new$). Esta teoría asume que la diferencia fundamental entre  las clases de estímulos probadas ($i$) es que elicitan distintos gradientes de atención que van a repercutir en el número de rasgos atendidos ($n(i)$) dentro de la totalidad de los rasgos que componen cada estímulo. Es decir, cada clase de estímulo tiene su propia tasa de  "marcaje" ($\alpha(i)$). De tal forma que en la fase experimental de las tareas de reconocimiento, donde se asume que los participantes responden con base en el muestreo de rasgos de los estímulos evaluados, el número de rasgos marcados extraídos en cada ensayo resultará de una distribución binomial con probabilidad $p(i,j)$ (donde $j$ es el tipo de ensayo: nuevos o viejos) y un total de observaciones $n(i)$ (el número de rasgos atendidos en función a la clase del estímulo). Es decir:\\
+
+\begin{itemize}
+\item Todos los estímulos comienzan con una cierta proporción de rasgos marcados como "familiares"\\
+\begin{center}
+$p(A,nuevo) = p(new)$\\
+$p(B,nuevo) = p(new)$\\
+\end{center}
+\item Una vez que son presentados en la fase de estudio, se marcan como "conocidos" los rasgos que componen cada estímulo:\\
+\begin{center}
+$\alpha(A) = \frac{n(A)}{N}$\\
+$\alpha(B) = \frac{n(B)}{N}$\\
+\end{center}
+\begin{center}
+donde $n(A) > n(B)$ y por tanto, $\alpha(A) > \alpha(B)$\\
+\end{center}
+\item Al presentarse una segunda vez en la fase experimental, los estímulos viejos tienen una mayor proporción de rasgos marcados que los estímulos nuevos:\\
+\begin{center}
+$p(A,viejo) = p(new) + [\alpha(A)*(1-p(new))]$\\
+$p(B,viejo) = p (new) + [\alpha(B)*(1-p(new))]$\\
+\end{center}
+\end{itemize}
+
+De acuerdo con esta teoría, el Efecto Espejo se explica por medio de la siguiente relación:\\
+
+\begin{center}
+$p(x|p(A,nuevo),n(A)) < p(x|p(B,nuevo),n(B)) < p(x|p(B,viejo),n(B)) < p(x|p(A,viejo),n(A))$\\
+\end{center}
+
+En otras palabras, en términos de la Teoría de Atención/Verosimilitud el elemento clave para explicar 
+
 
 Por ejemplo, el caso más comúnmente referido en la literatura, implica el uso de distintos niveles de "Frecuencia con que se usan las palabras" para la creación de las cos clases de estímulos a comparar: las palabras poco comúnes parecen ser más fáciles de recordar y reconocer (A) y las palabras comúnes parecen confundirse con mayor facilidad (B). En este tipo de estudios, se asume que los estímulos Nuevos comúnes (B) tienen un mayor grado de familiaridad que los estímulos Nuevos poco comúnes (A), por lo que la separación de las dos distribuciones de estímulos Nuevos tiene sentido. A su vez, dado que las palabras poco comúnes son más salientes, se asume que se les presta más atención y terminan adquiriendo un mayor nivel de familiaridad cuando se les presenta por segunda vez que las palabras comúnes, lo que termina explicando el orden en que se presentan las distribuciones de estímulos Viejos, \parencite{Glanzer1993}. \\
+
+Sin embargo, pese al conjunto de experimentos desarrollados para probar la solidez de la Teoría de Atención/Verosimilitud mediante la manipulación de distintas variables experimentales que se asume tienen incidencia sobre los distintos parámetros propuestos por el modelos (Por ejemplo: restringiendo el tiempo de estudio para modificar $n(i)$ en la fase de estudio o el tiempo de respuesta para modificar $n(i)$ en la fase experimental, etc.) y evaluar la precisión con que el modelo propuesto predice y explica los datos encontrados, \parencite{Glanzer1993}, la Teoría de Atención/Verosimilitud ha recibido muchas críticas $CITAS$ \CITAS
+
+Teoría de Atención /Verosimilitud: Un modelo de marcaje de rasgos, determinado por un muestreo diferencial dada la condición (H-frequency, L-frequency)\\
 
 
 
