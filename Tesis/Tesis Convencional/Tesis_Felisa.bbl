@@ -17,52 +17,6 @@
 \endgroup
 
 \sortlist[entry]{nyt/global/}
-  \entry{Swets1986}{article}{}
-    \name{author}{1}{}{%
-      {{hash=ASJ}{%
-         family={A.},
-         familyi={A\bibinitperiod},
-         given={Swets\bibnamedelima J.},
-         giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{ASJ1}
-    \strng{fullhash}{ASJ1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{1986}
-    \field{sortinit}{A}
-    \field{sortinithash}{A}
-    \field{abstract}{%
-    Presents a sample of empirical relative operating characteristics (ROCs),
-  drawn both from discrimination tasks in experimental psychology and from
-  diagnostic tasks in several practical fields. These illustrative ROCs are
-  seen to be fitted well by a straight line, of varying slope, on a binormal
-  graph. The form of empirical ROCs is consistent with one version of the
-  variable-criterion model provided by signal detection theory and inconsistent
-  both with other versions of that model and with the main threshold models.
-  That form supports the use of certain indices of discrimination accuracy
-  derived from detection theory and substantiates the potential unreliability
-  of others of that heritage and, more importantly, the unreliability of the
-  several accuracy indices in common use that can be shown to imply one or
-  another threshold model. The preferred detection-theory indices of accuracy
-  are ones that accommodate the varying slope of empirical ROCs. These indices
-  are effectively independent of the decision criterion, which can be indexed
-  separately. Measuring both accuracy and the decision criterion appropriately
-  enables the delineation of the dependent variables affected by independent
-  variables in psychological studies and the assessment of the efficacy and
-  accuracy of diagnostic systems. (43 ref) (PsycINFO Database Record (c) 2016
-  APA, all rights reserved)%
-    }
-    \field{number}{2}
-    \field{pages}{181\bibrangedash 198}
-    \field{title}{Form of empirical ROCs in discrimination and diagnostic
-  tasks: Implications for theory and measurement of performance}
-    \field{volume}{99}
-    \field{journaltitle}{Psychological Bulletin}
-    \field{year}{1986}
-  \endentry
-
   \entry{Wickens}{incollection}{}
     \name{author}{2}{}{%
       {{hash=AFG}{%
@@ -957,40 +911,6 @@
     \field{year}{1992}
   \endentry
 
-  \entry{Tanner1954}{article}{}
-    \name{author}{2}{}{%
-      {{hash=JWPT}{%
-         family={JR.},
-         familyi={J\bibinitperiod},
-         given={Wilson P.\bibnamedelima Tanner},
-         giveni={W\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim
-  T\bibinitperiod},
-      }}%
-      {{hash=SJA}{%
-         family={Swets},
-         familyi={S\bibinitperiod},
-         given={John\bibnamedelima A.},
-         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{JWPTSJA1}
-    \strng{fullhash}{JWPTSJA1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{1954}
-    \field{sortinit}{J}
-    \field{sortinithash}{J}
-    \field{abstract}{%
-    NA%
-    }
-    \field{number}{6}
-    \field{pages}{401\bibrangedash 409}
-    \field{title}{A Decision-Making theory of visual detection}
-    \field{volume}{61}
-    \field{journaltitle}{Psychological Review}
-    \field{year}{1954}
-  \endentry
-
   \entry{Killeen2014}{article}{}
     \name{author}{1}{}{%
       {{hash=KPR}{%
@@ -1706,6 +1626,52 @@
     \field{year}{1999}
   \endentry
 
+  \entry{Swets1986}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SJA}{%
+         family={Swets},
+         familyi={S\bibinitperiod},
+         given={J.\bibnamedelima A.},
+         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SJA1}
+    \strng{fullhash}{SJA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1986}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    Presents a sample of empirical relative operating characteristics (ROCs),
+  drawn both from discrimination tasks in experimental psychology and from
+  diagnostic tasks in several practical fields. These illustrative ROCs are
+  seen to be fitted well by a straight line, of varying slope, on a binormal
+  graph. The form of empirical ROCs is consistent with one version of the
+  variable-criterion model provided by signal detection theory and inconsistent
+  both with other versions of that model and with the main threshold models.
+  That form supports the use of certain indices of discrimination accuracy
+  derived from detection theory and substantiates the potential unreliability
+  of others of that heritage and, more importantly, the unreliability of the
+  several accuracy indices in common use that can be shown to imply one or
+  another threshold model. The preferred detection-theory indices of accuracy
+  are ones that accommodate the varying slope of empirical ROCs. These indices
+  are effectively independent of the decision criterion, which can be indexed
+  separately. Measuring both accuracy and the decision criterion appropriately
+  enables the delineation of the dependent variables affected by independent
+  variables in psychological studies and the assessment of the efficacy and
+  accuracy of diagnostic systems. (43 ref) (PsycINFO Database Record (c) 2016
+  APA, all rights reserved)%
+    }
+    \field{number}{2}
+    \field{pages}{181\bibrangedash 198}
+    \field{title}{Form of empirical ROCs in discrimination and diagnostic
+  tasks: Implications for theory and measurement of performance}
+    \field{volume}{99}
+    \field{journaltitle}{Psychological Bulletin}
+    \field{year}{1986}
+  \endentry
+
   \entry{Swets1973}{article}{}
     \name{author}{1}{}{%
       {{hash=SJA}{%
@@ -1715,8 +1681,8 @@
          giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
       }}%
     }
-    \strng{namehash}{SJA1}
-    \strng{fullhash}{SJA1}
+    \strng{namehash}{SJA2}
+    \strng{fullhash}{SJA2}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{1973}
@@ -1809,6 +1775,39 @@
     \field{volume}{68}
     \field{journaltitle}{Psychological Review}
     \field{year}{1961}
+  \endentry
+
+  \entry{Tanner1954}{article}{}
+    \name{author}{2}{}{%
+      {{hash=TWP}{%
+         family={Tanner},
+         familyi={T\bibinitperiod},
+         given={Wilson\bibnamedelima P.},
+         giveni={W\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=SJA}{%
+         family={Swets},
+         familyi={S\bibinitperiod},
+         given={John\bibnamedelima A.},
+         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TWPSJA1}
+    \strng{fullhash}{TWPSJA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1954}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{abstract}{%
+    NA%
+    }
+    \field{number}{6}
+    \field{pages}{401\bibrangedash 409}
+    \field{title}{A Decision-Making theory of visual detection}
+    \field{volume}{61}
+    \field{journaltitle}{Psychological Review}
+    \field{year}{1954}
   \endentry
 
   \entry{Verghese2001}{article}{}
