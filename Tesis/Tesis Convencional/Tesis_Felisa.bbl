@@ -190,6 +190,52 @@
     \field{year}{2010}
   \endentry
 
+  \entry{Bowles1983}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BNL}{%
+         family={Bowles},
+         familyi={B\bibinitperiod},
+         given={Nancy\bibnamedelima L.},
+         giveni={N\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Glanzer},
+         familyi={G\bibinitperiod},
+         given={Murray},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BNLGM1}
+    \strng{fullhash}{BNLGM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1983}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    A stimulus-sampling model of recognition memory is presented that predicts
+  both proactive and retroactive interference. To test the predictions of the
+  model, a recognition memory experiment was carried out using a standard
+  proactive-retroactive design with a forced-choice task. Both accuracy and
+  latency were measured. The data showed, as predicted, equal proactive and
+  retroactive effects on accuracy, providing solid support for the model. The
+  interference effects are interpreted in terms of the model as arising from an
+  increase in indirect marking, the marking of shared stimulus elements in
+  words other than the study word. The model has two parameters representing
+  the rate of indirect marking for high-frequency and low-frequency words and
+  two parameters reflecting the efficiency of direct marking. The latency
+  results completely paralleled the accuracy findings, showing proactive and
+  retroactive effects. A possible extension of the model to handle latencies is
+  considered.%
+    }
+    \field{number}{3}
+    \field{pages}{307\bibrangedash 315}
+    \field{title}{An analysis of interference in recognition memory}
+    \field{volume}{11}
+    \field{journaltitle}{Memory & Cognition}
+    \field{year}{1983}
+  \endentry
+
   \entry{Brown1994}{article}{}
     \name{author}{5}{}{%
       {{hash=BHD}{%
@@ -694,6 +740,147 @@
     \field{year}{1990}
   \endentry
 
+  \entry{Glanzer1991}{article}{}
+    \name{author}{3}{}{%
+      {{hash=GM}{%
+         family={Glanzer},
+         familyi={G\bibinitperiod},
+         given={Murray},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=AJK}{%
+         family={Adams},
+         familyi={A\bibinitperiod},
+         given={John\bibnamedelima K.},
+         giveni={J\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=IG}{%
+         family={Iverson},
+         familyi={I\bibinitperiod},
+         given={Geoffrey},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GMAJKIG1}
+    \strng{fullhash}{GMAJKIG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1991}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    The mirror effect is a strong regularity in recognition memory: If there
+  are two conditions, A and B, with A giving higher recognition accuracy, then
+  old items in A are recognized as old better than old items in B, and also new
+  items in A are recognized as new better than new items in B. The mirror
+  effect is explained by attention/likelihood theory, which also makes several
+  new, counterintuitive predictions. One is that any variable, such as
+  forgetting, that affects recognition changes the responses to new as well as
+  old stimuli. In terms of underlying distributions, forgetting produces
+  concentering, the bilateral movement of distributions, both new (noise) and
+  old (signal), toward a midpoint. Data from two forced-choice experiments are
+  reported that support the prediction of concentering and other predictions
+  drawn from the theory. It is argued that current theories of memory': which
+  are strength theories, cannot handle these regularities.%
+    }
+    \field{number}{1}
+    \field{pages}{81\bibrangedash 93}
+    \field{title}{Forgetting and the Mirror Effect in Recognition Memory:
+  Concentering of Underlying Distributions}
+    \field{volume}{17}
+    \field{journaltitle}{Journal of Experimental Psychology: Learning, Memory
+  and Cognition}
+    \field{year}{1991}
+  \endentry
+
+  \entry{Glanzer1976}{article}{}
+    \name{author}{2}{}{%
+      {{hash=GM}{%
+         family={Glanzer},
+         familyi={G\bibinitperiod},
+         given={Murray},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BN}{%
+         family={Bowles},
+         familyi={B\bibinitperiod},
+         given={Nancy},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GMBN1}
+    \strng{fullhash}{GMBN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1976}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    A general decision-theory analysis of the word-frequency effect in
+  recognition memory is carried out. On the basis of the analysis and data from
+  a forced-choice experiment two distinct causes of the frequency effect are
+  defined. A more specific theory based oon the ideas of encoding and sampling
+  is then presented and evaluated. Several implications of the theory are
+  considered including implications for the resolution of the
+  recognition-recall frequency paradox.%
+    }
+    \field{number}{1}
+    \field{pages}{21\bibrangedash 31}
+    \field{title}{Analysis of the Word-Frequency Effect in Recognition Memory}
+    \field{volume}{12}
+    \field{journaltitle}{Journal of the Experimental Analysis of Behavior:
+  Human Learning and Memory}
+    \field{year}{1976}
+  \endentry
+
+  \entry{Glanzer1998}{article}{}
+    \name{author}{3}{}{%
+      {{hash=GM}{%
+         family={Glanzer},
+         familyi={G\bibinitperiod},
+         given={Murray},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=KK}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={Kisok},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=AJK}{%
+         family={Adams},
+         familyi={A\bibinitperiod},
+         given={John\bibnamedelima K.},
+         giveni={J\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GMKKAJK1}
+    \strng{fullhash}{GMKKAJK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1998}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    Response distribution has recently been proposed as an explanation of the
+  mirror effect in recognition memory. According to the proposal, participants
+  presented with distinctive sets of items (e.g., low- and high-frequency
+  words) vary their responses to give an equal number of positive responses
+  (e.g., the sum of hits and false alarms) to each set. Four experiments tested
+  this proposal. Two experiments showed that the mirror effect is present in
+  the absence of distinctive sets of items. Two experiments showed that the
+  mirror effect is present in the absence of response equalization. Wherever
+  the response distribution hypothesis can be tested, it fails.%
+    }
+    \field{number}{3}
+    \field{pages}{633\bibrangedash 644}
+    \field{title}{Response Distribution as an Explanation of the Mirror Effect}
+    \field{volume}{24}
+    \field{journaltitle}{Journal of Experimental Psychology: Learning, Memory
+  and Cognition}
+    \field{year}{1998}
+  \endentry
+
   \entry{Glanzer1993}{article}{}
     \name{author}{4}{}{%
       {{hash=GM}{%
@@ -932,6 +1119,83 @@
     \field{year}{2014}
   \endentry
 
+  \entry{Kim1993}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KK}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={Kisok},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Glanzer},
+         familyi={G\bibinitperiod},
+         given={Murray},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KKGM1}
+    \strng{fullhash}{KKGM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1993}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{abstract}{%
+    Attention/likelihood theory is a model of recognition memory designed to
+  explain the mirror effect (Glanzer & Adams, 1985, 1990). The theory and the
+  effect were studied using speed versus accuracy instructions and short versus
+  long exposure of stimuli. Speed versus accuracy instructions during test and
+  short versus long exposure of stimuli during study were used to vary the
+  number of features sampled from stimuli. When the number of features sampled
+  was reduced either by speed instructions or by shorter exposure, recognition
+  performance was impaired. The theory predicts that in such cases, all
+  distances between underlying distributions will contract. That means,
+  moreover, that when recognition accuracy is decreased for old stimuli, it is
+  also decreased for new stimuli. These predictions were supported by the data
+  from three experiments.%
+    }
+    \field{pages}{638\bibrangedash 652}
+    \field{title}{Speed versus Accuracy instructions, Study time, and the
+  Mirror Effect}
+    \field{volume}{19}
+    \field{journaltitle}{Journal of Experimental Psychology: Learning, Memory
+  and Cognition}
+    \field{month}{03}
+    \field{year}{1993}
+  \endentry
+
+  \entry{Kucera1967}{book}{}
+    \name{author}{2}{}{%
+      {{hash=KH}{%
+         family={Kučera},
+         familyi={K\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=FWN}{%
+         family={Francis},
+         familyi={F\bibinitperiod},
+         given={&\bibnamedelima W.\bibnamedelima N.},
+         giveni={\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim
+  N\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {"Dartmouth Publishing Group"}%
+    }
+    \strng{namehash}{KHFWN1}
+    \strng{fullhash}{KHFWN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1967}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{title}{"Theory of motion of the heavenly bodies moving about the sun
+  in conic sections"}
+    \field{year}{1967}
+  \endentry
+
   \entry{PAPIME}{online}{}
     \name{author}{1}{}{%
       {{hash=LPPP}{%
@@ -990,6 +1254,51 @@
     \field{volume}{5}
     \field{journaltitle}{Psychological Science}
     \field{year}{1994}
+  \endentry
+
+  \entry{WeijiMa2009}{article}{}
+    \name{author}{1}{}{%
+      {{hash=MWJ}{%
+         family={Ma},
+         familyi={M\bibinitperiod},
+         given={Wei\bibnamedelima Ji},
+         giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MWJ1}
+    \strng{fullhash}{MWJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2010}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    The juxtaposition of established signal detection theory models of
+  perception and more recent claims about the encoding of uncertainty in
+  perception is a rich source of confusion. Are the latter simpy a rehash of
+  the former? Here, we make ana ttempt to distinguish precisely between optimal
+  and probabilistic computation. In optimal computation, the observer minimizes
+  the expected cost under a posterior probability distribution. In
+  probabilistic computation, the observer uses higher moments of the likelihood
+  functon of the stimulus on a tria-by-trial basis. Computation can be optimal
+  without being probabilistic and vice-versa. Most signal detection theory
+  models describe optimal computation. Behavioral data only provide evidence
+  for a neural representation of uncertaity if they are best described by a
+  model of probabilistic computation. We argue that single-neuron activity
+  sometimes suffices for optimal computation, but never for probabilistic
+  computation. A population code is needed instead. Not every population code
+  is equally suitable, because nusance parameters have to be marginalized out.
+  This problem is solved by Poisson-like, but not by Gaussian bariability.
+  Finally we build a dictionary between signal detection theory quantities and
+  Poisson.like population quantities.%
+    }
+    \field{pages}{2308\bibrangedash 2319}
+    \field{title}{Signal detection theory, uncertainty, and Poisson-like
+  population codes}
+    \field{volume}{50}
+    \field{journaltitle}{Vision Research}
+    \field{month}{10}
+    \field{year}{2010}
   \endentry
 
   \entry{WeijiMa2012}{article}{}
@@ -1056,6 +1365,55 @@
     \field{note}{Working paper}
     \field{title}{"Bayesian modeling of perception"}
     \field{year}{2012}
+  \endentry
+
+  \entry{Macmillan1996}{article}{}
+    \name{author}{2}{}{%
+      {{hash=MNA}{%
+         family={Macmillan},
+         familyi={M\bibinitperiod},
+         given={Neil\bibnamedelima A.},
+         giveni={N\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=CCD}{%
+         family={Creelman},
+         familyi={C\bibinitperiod},
+         given={C.\bibnamedelima Douglas},
+         giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MNACCD1}
+    \strng{fullhash}{MNACCD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1996}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    Can accuracy and response bias in two-stimulus, two-response recognition or
+  detection experiments be measured nonparametrically? Pollack and Norman
+  (1964) answered this question affirmatively for sensitivity, Hodos (1970) for
+  bias: Both proposed measures based on triangular areas in receiver-operating
+  characteristic space. Their papers, and especially a paper by Grier (1971)
+  that provided computing formulas for the measures, continue to be heavily
+  cited in a wide range of content areas. In our sample of articles, most
+  authors described triangle-based measures as making fewer assumptions than
+  measures associated with detection theory. However, we show that statistics
+  based on products or ratios of right triangle areas, including recently
+  proposed bias index and not-yet-proposed but apparently plausible sensitivity
+  index, are consistent with a decision process based on logistic
+  distributions. Even the Pollack and Norman measure, which is based on
+  non-right triangles, is approximately logistic for low values of sensitivity.
+  Simple geometric models for sensitivity and bias are not nonparametric, even
+  if their implications are not acknowledged in the defining publications%
+    }
+    \field{number}{2}
+    \field{pages}{164\bibrangedash 170}
+    \field{title}{Triangles in ROC space: History and theory of "nonparametric"
+  measures of sensitivity and response bias}
+    \field{volume}{3}
+    \field{journaltitle}{Psychonomic: Bulletin & Review}
+    \field{year}{1996}
   \endentry
 
   \entry{Massaro1971}{article}{}
@@ -1187,6 +1545,34 @@
       {"Oxford"}%
     }
     \field{year}{2005}
+  \endentry
+
+  \entry{Greene1996}{article}{}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1996}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    Classes of stimuli that are relatively easy to classify in recognition as
+  old when old also appear to be relatively easy to classify as new when new.
+  Five experiments are reported that extend this mirror effect to tests
+  requiring retention of order and associative information. These experiments
+  tested memory for words and nonwords; across experiments, the mirror effect
+  was found on both yes-no and forced-choice tests. In addition, a new account
+  of the mirror effect is proposed, one which suggests that this pattern
+  results from participants' attempts to distribute responses equally across
+  stimulus classes on tests. Support from this account came from additional
+  experiments in which the mirror effect was eliminated when participants were
+  asked to refrain from using positive responses as guesses.%
+    }
+    \field{number}{3}
+    \field{pages}{687\bibrangedash 695}
+    \field{title}{Mirror Effect in Order and Associative Information: Role of
+  Response Strategies}
+    \field{volume}{22}
+    \field{journaltitle}{Journal of Experimental Psychology: Learning, Memory
+  and Cognition}
+    \field{year}{1996}
   \endentry
 
   \entry{Naliboff1981}{article}{}
@@ -1907,6 +2293,48 @@
     \field{journaltitle}{Journal of Behavior Therapy and Experimental
   Psychiatry}
     \field{year}{2010}
+  \endentry
+
+  \entry{Wixted1992}{article}{}
+    \name{author}{1}{}{%
+      {{hash=WJT}{%
+         family={Wixted},
+         familyi={W\bibinitperiod},
+         given={John\bibnamedelima T.},
+         giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WJT1}
+    \strng{fullhash}{WJT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1992}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{abstract}{%
+    The mirror effect refers to the common finding that hit and false alarm
+  rates on a recognition test are inversely related. The present research
+  investigated the generality of the mirror effect (to rare words) and tested
+  whether the effect might be grounded in accurate estimates of word
+  memorability. The first 2 experiments showed that although high- and
+  low-frequency words exhibit a mirror effect, rare words do not. Furthermore,
+  contrary' to expectations. Ss consistently (and mistakenly) predicted that
+  memorability was directly correlated with frequency of usage. These findings
+  weigh against the idea that the mirror effect arises because of a S's ability
+  to reject low-frequency lures on the grounds that such words would have been
+  remembered had they appeared previously. Instead, the rejection of lures from
+  different frequency categories may be determined by their semantic or
+  phonemic overlap with list targets, and an analysis along these lines may
+  help to explain why rare words constitute an exception to the otherwise
+  ubiquitous mirror effect.%
+    }
+    \field{number}{4}
+    \field{pages}{681\bibrangedash 690}
+    \field{title}{Subjective Memorability and the Mirror Effect}
+    \field{volume}{18}
+    \field{journaltitle}{Journal of Experimental Psychology: Learning, Memory
+  and Cognition}
+    \field{year}{1992}
   \endentry
 
   \entry{Wixted2007}{article}{}
