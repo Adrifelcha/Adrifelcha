@@ -657,14 +657,24 @@ Una segunda aproximación, (strength)\\
 Por ejemplo, el caso más comúnmente referido en la literatura, implica el uso de distintos niveles de "Frecuencia con que se usan las palabras" para la creación de las cos clases de estímulos a comparar: las palabras poco comúnes parecen ser más fáciles de recordar y reconocer (A) y las palabras comúnes parecen confundirse con mayor facilidad (B). En este tipo de estudios, se asume que los estímulos Nuevos comúnes (B) tienen un mayor grado de familiaridad que los estímulos Nuevos poco comúnes (A), por lo que la separación de las dos distribuciones de estímulos Nuevos tiene sentido. A su vez, dado que las palabras poco comúnes son más salientes, se asume que se les presta más atención y terminan adquiriendo un mayor nivel de familiaridad cuando se les presenta por segunda vez que las palabras comúnes, lo que termina explicando el orden en que se presentan las distribuciones de estímulos Viejos, \parencite{Glanzer1993}. \\
 
 
-Una tercera aproximación implica asumir que las clases de estímulos empleadas en estos estudios tienen un efecto sobre los procesos superiores involucrados en las tareas de reconocimiento. En otras palabras, este segundo conjunto de explicaciones asume que cada clase de estímulos A y B es procesada de manera diferencial por el participante. Por ejemplo, una de las primeras teorías en desarrollarse para dar cuenta del Efecto Espejo en Memoria de Reconocimiento es la Teoría de Atención/Verosimilityd \parencite{Glanzer1993}. Dicha teoría funciona como una teoría de muestreo de rasgos en la que se asume que todos los estímulos presentados están compuestos por un número fijo de rasgos ($N$), de los cuales, algunos se presentan "marcados" desde su primera aparición como "rasgos familiares" ($p(new$). Esta teoría asume que la diferencia fundamental entre  las clases de estímulos probadas ($i$) es que elicitan distintos gradientes de atención que van a repercutir en el número de rasgos atendidos ($n(i)$) dentro de la totalidad de los rasgos que componen cada estímulo. Es decir, cada clase de estímulo tiene su propia tasa de  "marcaje" ($\alpha(i)$). De tal forma que en la fase experimental de las tareas de reconocimiento, donde se asume que los participantes responden con base en el muestreo de rasgos de los estímulos evaluados, el número de rasgos marcados extraídos en cada ensayo resultará de una distribución binomial con probabilidad $p(i,j)$ (donde $j$ es el tipo de ensayo: nuevos o viejos) y un total de observaciones $n(i)$ (el número de rasgos atendidos en función a la clase del estímulo). Es decir:\\
+Una tercera aproximación implica asumir que las clases de estímulos empleadas en estos estudios tienen un efecto sobre los procesos superiores involucrados en las tareas de reconocimiento. En otras palabras, este segundo conjunto de explicaciones asume que cada clase de estímulos A y B es procesada de manera diferencial por el participante. Por ejemplo, una de las primeras teorías en desarrollarse para dar cuenta del Efecto Espejo en Memoria de Reconocimiento es la Teoría de Atención/Verosimilitud \parencite{Glanzer1993}. Dicha teoría funciona como una teoría de muestreo de rasgos en la que se asume que todos los estímulos a presentar están compuestos por un número fijo de rasgos ($N$), de los cuales, algunos se presentan "marcados" desde su primera aparición como "rasgos familiares" ($p(new$). Esta teoría asume que la diferencia fundamental entre  las clases de estímulos probadas ($i$) es que elicitan distintos gradientes de atención que van a repercutir en el número de rasgos atendidos por los participantes ($n(i)$) de $N$, definiendo una tasa de  "marcaje" propia de cada clase ($\alpha(i)$).\\
+
+En otras palabras, el proceso mediante el cual se explica el Efecto Espejo de acuerdo a la Teoría de Atención/Verosimilitud es el siguiente:\\
 
 \begin{numerate}
+\item Todos los estímulos están compuestos por una cantidad $N$ de rasgos.\\
+
 \item Todos los estímulos comienzan con una cierta proporción de rasgos marcados como "familiares"\\
 \begin{center}
 $p(A,nuevo) = p(new)$\\
 $p(B,nuevo) = p(new)$\\
 \end{center}
+
+\item Las clases de estímulos A y B difieren en \\
+\begin{center}
+$n(A) > n(B)$\\
+\end{center}
+
 \item Una vez que son presentados en la fase de estudio, se marcan como "conocidos" los rasgos que componen cada estímulo:\\
 \begin{center}
 $\alpha(A) = \frac{n(A)}{N}$\\
@@ -673,6 +683,7 @@ $\alpha(B) = \frac{n(B)}{N}$\\
 \begin{center}
 donde $n(A) > n(B)$ y por tanto, $\alpha(A) > \alpha(B)$\\
 \end{center}
+
 \item Al presentarse una segunda vez en la fase experimental, los estímulos viejos tienen una mayor proporción de rasgos marcados que los estímulos nuevos:\\
 \begin{center}
 $p(A,viejo) = p(new) + [\alpha(A)*(1-p(new))]$\\
@@ -680,11 +691,14 @@ $p(B,viejo) = p (new) + [\alpha(B)*(1-p(new))]$\\
 \end{center}
 \end{numerate}
 
+De tal forma que de acuerdo con la Teoría de Atención/Verosimilitud, en la fase de reconocimiento se asume que los participantes responden con base en la cantidad de rasgos "marcados" muestreados de cada estímulo a evaluar. El número de rasgos marcados extraídos en cada ensayo ($x$) se distribuye de acuerdo a una distribución binomial con probabilidad $p(i,j)$ (donde $j$ es el tipo de ensayo: nuevos o viejos) y un total de observaciones $n(i)$ (el número de rasgos atendidos en función a la clase del estímulo).\\
+
 De acuerdo con esta teoría, el Efecto Espejo se explica por medio de la siguiente relación:\\
 
 \begin{center}
 $p(x|p(A,nuevo),n(A)) < p(x|p(B,nuevo),n(B)) < p(x|p(B,viejo),n(B)) < p(x|p(A,viejo),n(A))$\\
 \end{center}
+
 
 En otras palabras, en términos de la Teoría de Atención/Verosimilitud el elemento clave para explicar las discrepancias en el desempeño de los participantes entre ambas clases de estímulos es la atención elicitada por cada uno de estos y el número de rasgos muestreados en consecuencia ($n(i)$). Es decir, que aunque los estímulos A y B contienen el mismo número de rasgos marcados en su primera presentación ($p(A,nuevo) = p(B,nuevo)$), el número de elementos muestreados para su marcaje es mayor en la condición A ($n(A) > n(B)$) y por tanto, se extrae una mayor cantidad de rasgos marcados en A que en B desde su primera presentación ($p(x|p(A,nuevo),n(A)) < p(x|p(B,nuevo),n(B))$).\\
 
