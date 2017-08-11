@@ -662,20 +662,26 @@ Una tercera aproximación implica asumir que las clases de estímulos empleadas 
 En otras palabras, el proceso mediante el cual se explica el Efecto Espejo de acuerdo a la Teoría de Atención/Verosimilitud es el siguiente:\\
 
 \begin{numerate}
-\item Todos los estímulos están compuestos por una cantidad $N$ de rasgos.\\
+\item Todos los estímulos están compuestos por una cantidad $N$ de rasgos que pueden estar marcados o no como "conocidos".\\
 
-\item Todos los estímulos comienzan con una cierta proporción de rasgos marcados como "familiares"\\
+\item Todos los estímulos comienzan con una cierta proporción de rasgos marcados.\\
 \begin{center}
 $p(A,nuevo) = p(new)$\\
 $p(B,nuevo) = p(new)$\\
 \end{center}
+\begin{center}
+Según el modelo, la cantidad de rasgos marcados inicialmente es la misma entre las clases A y B.\\
+\end{center}
 
-\item Las clases de estímulos A y B difieren en \\
+\item A y B difieren en el número de rasgos que los participantes muestrean de sus elementos al interactuar con ellos, debido a que elicitan distintos niveles de atención.\\
 \begin{center}
 $n(A) > n(B)$\\
 \end{center}
+\begin{center}
+La clase A es más atendida que B.\\
+\end{center}
 
-\item Una vez que son presentados en la fase de estudio, se marcan como "conocidos" los rasgos que componen cada estímulo:\\
+\item Al muestrear los rasgos muestreados en la interacción con los estímulos son marcados. De acuerdo con $n(i)$, A y B tienen su propia tasa de marcaje.\\
 \begin{center}
 $\alpha(A) = \frac{n(A)}{N}$\\
 $\alpha(B) = \frac{n(B)}{N}$\\
@@ -684,14 +690,20 @@ $\alpha(B) = \frac{n(B)}{N}$\\
 donde $n(A) > n(B)$ y por tanto, $\alpha(A) > \alpha(B)$\\
 \end{center}
 
-\item Al presentarse una segunda vez en la fase experimental, los estímulos viejos tienen una mayor proporción de rasgos marcados que los estímulos nuevos:\\
+\item En la fase de estudio, los participantes muestrean cierto número de rasgos y marcan aquellos que no lo estén con anterioridad. De manera que en la fase de reconocimiento, los estímulos presentados previamente tienen una mayor proporción de rasgos marcados que los estímulos nuevos:\\
 \begin{center}
 $p(A,viejo) = p(new) + [\alpha(A)*(1-p(new))]$\\
 $p(B,viejo) = p (new) + [\alpha(B)*(1-p(new))]$\\
 \end{center}
 \end{numerate}
 
-De tal forma que de acuerdo con la Teoría de Atención/Verosimilitud, en la fase de reconocimiento se asume que los participantes responden con base en la cantidad de rasgos "marcados" muestreados de cada estímulo a evaluar. El número de rasgos marcados extraídos en cada ensayo ($x$) se distribuye de acuerdo a una distribución binomial con probabilidad $p(i,j)$ (donde $j$ es el tipo de ensayo: nuevos o viejos) y un total de observaciones $n(i)$ (el número de rasgos atendidos en función a la clase del estímulo).\\
+De acuerdo con la Teoría de Atención/Verosimilitud, los participantes registran sus respuestas en la fase de reconocimiento con base en la cantidad de rasgos "marcados" muestreado ($x$). La probabilidad de observar cierto valor de $x$ se describe en relación a una distribución binomial con probabilidad $p(i,j)$ (donde $j$ es el tipo de ensayo: nuevos o viejos), para el total de observaciones $n(i)$ (el número de rasgos atendidos en función a la clase del estímulo). Es decir:\\
+
+\begin{center}
+$p(x|p(i,j),n(i))$\\
+\end{center}
+
+El modelo asume que los participantes observan una $x$ cantidad de rasgos marcados en cada ensayo y emiten el juicio de reconocimiento que corresponda a dicha evidencia con mayor probabilidad, en función al cómputo de la razón de verosimilitud.\\
 
 De acuerdo con esta teoría, el Efecto Espejo se explica por medio de la siguiente relación:\\
 
@@ -699,14 +711,9 @@ De acuerdo con esta teoría, el Efecto Espejo se explica por medio de la siguien
 $p(x|p(A,nuevo),n(A)) < p(x|p(B,nuevo),n(B)) < p(x|p(B,viejo),n(B)) < p(x|p(A,viejo),n(A))$\\
 \end{center}
 
+En otras palabras, en la Teoría de Atención/Verosimilitud el elemento clave para explicar las diferencias en el desempeño de los participantes entre A y B es la atención elicitada por cada clase y el número de rasgos muestreados en consecuencia ($n(i)$). Es decir, que aunque los estímulos A y B contienen el mismo número de rasgos marcados en su primera presentación ($p(A,nuevo) = p(B,nuevo)$), el número de elementos muestreados es mayor en la condición A ($n(A) > n(B)$) y por tanto, se extrae una mayor cantidad total de rasgos marcados que en B ($p(x|p(A,nuevo),n(A)) < p(x|p(B,nuevo),n(B))$).\\
 
-En otras palabras, en términos de la Teoría de Atención/Verosimilitud el elemento clave para explicar las discrepancias en el desempeño de los participantes entre ambas clases de estímulos es la atención elicitada por cada uno de estos y el número de rasgos muestreados en consecuencia ($n(i)$). Es decir, que aunque los estímulos A y B contienen el mismo número de rasgos marcados en su primera presentación ($p(A,nuevo) = p(B,nuevo)$), el número de elementos muestreados para su marcaje es mayor en la condición A ($n(A) > n(B)$) y por tanto, se extrae una mayor cantidad de rasgos marcados en A que en B desde su primera presentación ($p(x|p(A,nuevo),n(A)) < p(x|p(B,nuevo),n(B))$).\\
-
-Sin embargo, pese al conjunto de experimentos desarrollados para probar la solidez de la Teoría de Atención/Verosimilitud mediante la manipulación de distintas variables experimentales que se asume tienen incidencia sobre los distintos parámetros propuestos por el modelos (Por ejemplo: restringiendo el tiempo de estudio para modificar $n(i)$ en la fase de estudio o el tiempo de respuesta para modificar $n(i)$ en la fase experimental, etc.) y evaluar la precisión con que el modelo propuesto predice y explica los datos encontrados, \parencite{Glanzer1993, Kim1993, Glanzer1991}, la Teoría de Atención/Verosimilitud ha recibido muchas críticas $CITAS$ \CITAS
-
-Teoría de Atención /Verosimilitud: Un modelo de marcaje de rasgos, determinado por un muestreo diferencial dada la condición (H-frequency, L-frequency)\\
-
-
+Sin embargo, pese al conjunto de experimentos desarrollados para probar la solidez de la Teoría de Atención/Verosimilitud mediante la manipulación de distintas variables experimentales que deberían incidir sobre los distintos parámetros del modelos (Por ejemplo: restringiendo el tiempo de estudio para modificar $n(i)$ en la fase de estudio o el tiempo de respuesta para modificar $n(i)$ en la fase experimental, etc.) y evaluar la precisión con que el modelo predice y explica los datos encontrados, \parencite{Glanzer1993, Kim1993, Glanzer1991}, la Teoría de Atención/Verosimilitud ha recibido muchas críticas  \parencite{Hintzman1994, Murdock1998, DeCarlo2007}.\\
 
 Teoría de Atención / Verosimilitud; demasiado complicada, sus supuestos no son necesarios (Decarlo, 2007; Hintzman, 1994; Murdock, 1998) Intercambio de papers Hintzman-Glanzer\\
 ‘The mixture model’ (DeCarlo, 2007) – Extensión de la SDT, una extensión mezclada.\\

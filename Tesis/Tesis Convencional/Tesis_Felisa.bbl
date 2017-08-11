@@ -1575,6 +1575,48 @@
     \field{year}{1996}
   \endentry
 
+  \entry{Murdock1998}{article}{}
+    \name{author}{1}{}{%
+      {{hash=MBB}{%
+         family={Murdock},
+         familyi={M\bibinitperiod},
+         given={Bennet\bibnamedelima B.},
+         giveni={B\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MBB1}
+    \strng{fullhash}{MBB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1998}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    The mirror effect refers to findings from studies of recognition memory
+  consistent with the idea that the underlying "strength" distributions are
+  symmetric around their midpoint separating studied and nonstudied items.
+  Attention-likelihood theory assumes underlying binomial distributions of
+  marked features and claims that old-item differences result from differential
+  attention across conditions during study. The symmetry arises because
+  subjects use the likelihood ratio as the basis for decision. The author
+  analyzes the model and argues that one of the main criticisms (the complexity
+  of the likelihood-ratio decision rule) is unwarranted. A further analysis
+  shows that other distributions (the Poisson and the hypergeometric) can also
+  produce a mirror effect. Even with the binomial distribution, a variety of
+  parameter values can produce a mirror effect, and with the right combination
+  of parameter values, differential attention across conditions is not
+  necessary for a mirror effect to occur.%
+    }
+    \field{number}{2}
+    \field{pages}{524\bibrangedash 534}
+    \field{title}{The Mirror Effect and Attention-Likelihood Theory: A
+  reflective Analysis}
+    \field{volume}{24}
+    \field{journaltitle}{Journal of Experimental Psychology: Learning, Memory
+  and Cognition}
+    \field{year}{1998}
+  \endentry
+
   \entry{Naliboff1981}{article}{}
     \name{author}{2}{}{%
       {{hash=NBD}{%
@@ -1701,6 +1743,32 @@
     \field{volume}{92}
     \field{journaltitle}{Journal of Abnormal Psychology}
     \field{year}{1983}
+  \endentry
+
+  \entry{Hintzman1994}{article}{}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1994}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{abstract}{%
+    Two points are made in relation to the recent article by K. Kim and M.
+  Glanzer (1993). First, the attention-likelihood model is more complex than
+  these authors and others suggest. In particular, 2 kinds of quantities—(a)
+  parameters representing the true state of the subject's memory and (b) the
+  subject's estimates of those parameters—have been referred to using the
+  same symbols. This obscures the essential role of metamemory in the model's
+  predictions. Second, log-likelihood rescaling is not needed to explain the
+  mirror effect. An alternative rescaling scheme is described, which can be
+  added to a variety of memory models. This new rescaling method estimates a
+  test item's learnability by learning it. Simulations show that the method is
+  consistent with Kim and Glanzer's experimental results.%
+    }
+    \field{number}{1}
+    \field{pages}{201\bibrangedash 205}
+    \field{title}{On explaining the Mirror Effect}
+    \field{volume}{20}
+    \field{journaltitle}{Douglas L. Hintzman}
+    \field{year}{1994}
   \endentry
 
   \entry{Pessoa2005}{article}{}
