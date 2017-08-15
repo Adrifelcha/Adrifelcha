@@ -17,32 +17,33 @@
 \contentsline {section}{\numberline {2.3}El Efecto Espejo}{34}{section.41}
 \contentsline {subsection}{\numberline {2.3.1}Evidencia recolectada}{36}{subsection.43}
 \contentsline {subsection}{\numberline {2.3.2}Relevancia, implicaciones e interpretaciones}{42}{subsection.46}
-\contentsline {chapter}{\numberline {3}M\IeC {\'e}todo}{47}{chapter.47}
-\contentsline {section}{\numberline {3.1}Planteamiento general}{47}{section.48}
-\contentsline {subsection}{\numberline {3.1.1}Objetivo}{47}{subsection.49}
-\contentsline {section}{\numberline {3.2}Construcci\IeC {\'o}n de los Experimentos}{48}{section.50}
-\contentsline {subsection}{\numberline {3.2.1}Dise\IeC {\~n}o de los Est\IeC {\'\i }mulos}{50}{subsection.53}
-\contentsline {subsection}{\numberline {3.2.2}Materiales}{53}{subsection.54}
-\contentsline {subsection}{\numberline {3.2.3}Participantes}{54}{subsection.55}
-\contentsline {section}{\numberline {3.3}Procedimiento}{54}{section.56}
-\contentsline {chapter}{\numberline {4}Resultados}{61}{chapter.61}
-\contentsline {section}{\numberline {4.1}Datos recolectados}{61}{section.62}
-\contentsline {subsection}{\numberline {4.1.1}Control 1: \IeC {\textquestiondown }Los participantes estaban poniendo atenci\IeC {\'o}n a la tarea para emitir una respuesta?}{62}{subsection.63}
-\contentsline {subsection}{\numberline {4.1.2}Control 2: \IeC {\textquestiondown }La duraci\IeC {\'o}n del experimento tuvo un impacto en la ejecuci\IeC {\'o}n de los participantes?}{64}{subsection.67}
-\contentsline {subsection}{\numberline {4.1.3}Control 3: \IeC {\textquestiondown }Las variables mezcladas para construir los est\IeC {\'\i }mulos est\IeC {\'a}n afectando el desempe\IeC {\~n}o de los participantes?}{67}{subsection.70}
-\contentsline {section}{\numberline {4.2}An\IeC {\'a}lisis estad\IeC {\'\i }sticos}{68}{section.72}
-\contentsline {section}{\numberline {4.3}Las condiciones de dificultad son diferentes}{71}{section.73}
-\contentsline {subsection}{\numberline {4.3.1}An\IeC {\'a}lisis 1: Prueba T para comparar las medias de d' por cada condici\IeC {\'o}n}{71}{subsection.75}
-\contentsline {subsection}{\numberline {4.3.2}An\IeC {\'a}lisis 2: Modelo jer\IeC {\'a}rquico bayesiano: Modelo Delta para diferencias en d'}{71}{subsection.77}
-\contentsline {section}{\numberline {4.4}Diferencias en las Tasas de Hits y Falsas Alarmas}{72}{section.79}
-\contentsline {subsection}{\numberline {4.4.1}An\IeC {\'a}lisis 1: Prueba T}{73}{subsection.82}
-\contentsline {subsection}{\numberline {4.4.2}Modelo bayesiano}{73}{subsection.84}
-\contentsline {section}{\numberline {4.5}Diferencias en la asignaci\IeC {\'o}n de Puntajes de Confianza}{73}{section.86}
-\contentsline {subsection}{\numberline {4.5.1}An\IeC {\'a}lisis 1: }{74}{subsection.88}
-\contentsline {section}{\numberline {4.6}R\IeC {\'e}plica de controles reportados en la literatura}{74}{section.90}
-\contentsline {chapter}{\numberline {5}Discusi\IeC {\'o}n y Conclusiones}{77}{chapter.91}
-\contentsline {section}{\numberline {5.1}Recapitulando}{77}{section.92}
-\contentsline {subsection}{\numberline {5.1.1}Construcci\IeC {\'o}n de la Tarea}{77}{subsection.93}
-\contentsline {chapter}{\numberline {A}Registro de respuesta}{79}{appendix.94}
-\contentsline {chapter}{\numberline {B}Datos (Extensi\IeC {\'o}n)}{81}{appendix.96}
-\contentsline {chapter}{Bibliograf\'{\i }a}{101}{appendix*.115}
+\contentsline {section}{\numberline {2.4}Planteamiento del problema}{46}{section.53}
+\contentsline {chapter}{\numberline {3}M\IeC {\'e}todo}{49}{chapter.54}
+\contentsline {section}{\numberline {3.1}Planteamiento general}{49}{section.55}
+\contentsline {subsection}{\numberline {3.1.1}Objetivo}{49}{subsection.56}
+\contentsline {section}{\numberline {3.2}Construcci\IeC {\'o}n de los Experimentos}{50}{section.57}
+\contentsline {subsection}{\numberline {3.2.1}Dise\IeC {\~n}o de los Est\IeC {\'\i }mulos}{52}{subsection.60}
+\contentsline {subsection}{\numberline {3.2.2}Materiales}{55}{subsection.61}
+\contentsline {subsection}{\numberline {3.2.3}Participantes}{56}{subsection.62}
+\contentsline {section}{\numberline {3.3}Procedimiento}{56}{section.63}
+\contentsline {chapter}{\numberline {4}Resultados}{63}{chapter.68}
+\contentsline {section}{\numberline {4.1}Datos recolectados}{63}{section.69}
+\contentsline {subsection}{\numberline {4.1.1}Control 1: \IeC {\textquestiondown }Los participantes estaban poniendo atenci\IeC {\'o}n a la tarea para emitir una respuesta?}{64}{subsection.70}
+\contentsline {subsection}{\numberline {4.1.2}Control 2: \IeC {\textquestiondown }La duraci\IeC {\'o}n del experimento tuvo un impacto en la ejecuci\IeC {\'o}n de los participantes?}{66}{subsection.74}
+\contentsline {subsection}{\numberline {4.1.3}Control 3: \IeC {\textquestiondown }Las variables mezcladas para construir los est\IeC {\'\i }mulos est\IeC {\'a}n afectando el desempe\IeC {\~n}o de los participantes?}{69}{subsection.77}
+\contentsline {section}{\numberline {4.2}An\IeC {\'a}lisis estad\IeC {\'\i }sticos}{70}{section.79}
+\contentsline {section}{\numberline {4.3}Las condiciones de dificultad son diferentes}{73}{section.80}
+\contentsline {subsection}{\numberline {4.3.1}An\IeC {\'a}lisis 1: Prueba T para comparar las medias de d' por cada condici\IeC {\'o}n}{73}{subsection.82}
+\contentsline {subsection}{\numberline {4.3.2}An\IeC {\'a}lisis 2: Modelo jer\IeC {\'a}rquico bayesiano: Modelo Delta para diferencias en d'}{73}{subsection.84}
+\contentsline {section}{\numberline {4.4}Diferencias en las Tasas de Hits y Falsas Alarmas}{74}{section.86}
+\contentsline {subsection}{\numberline {4.4.1}An\IeC {\'a}lisis 1: Prueba T}{75}{subsection.89}
+\contentsline {subsection}{\numberline {4.4.2}Modelo bayesiano}{75}{subsection.91}
+\contentsline {section}{\numberline {4.5}Diferencias en la asignaci\IeC {\'o}n de Puntajes de Confianza}{75}{section.93}
+\contentsline {subsection}{\numberline {4.5.1}An\IeC {\'a}lisis 1: }{76}{subsection.95}
+\contentsline {section}{\numberline {4.6}R\IeC {\'e}plica de controles reportados en la literatura}{76}{section.97}
+\contentsline {chapter}{\numberline {5}Discusi\IeC {\'o}n y Conclusiones}{79}{chapter.98}
+\contentsline {section}{\numberline {5.1}Recapitulando}{79}{section.99}
+\contentsline {subsection}{\numberline {5.1.1}Construcci\IeC {\'o}n de la Tarea}{79}{subsection.100}
+\contentsline {chapter}{\numberline {A}Registro de respuesta}{81}{appendix.101}
+\contentsline {chapter}{\numberline {B}Datos (Extensi\IeC {\'o}n)}{83}{appendix.103}
+\contentsline {chapter}{Bibliograf\'{\i }a}{103}{appendix*.122}

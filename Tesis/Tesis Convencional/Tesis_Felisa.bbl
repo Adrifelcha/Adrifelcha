@@ -435,6 +435,44 @@
     \field{year}{1974}
   \endentry
 
+  \entry{DeCarlo2002}{article}{}
+    \name{author}{1}{}{%
+      {{hash=DLT}{%
+         family={DeCarlo},
+         familyi={D\bibinitperiod},
+         given={Lawrence\bibnamedelima T.},
+         giveni={L\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DLT1}
+    \strng{fullhash}{DLT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2002}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{abstract}{%
+    An extension of signal detection theory (SDT) that incorporates mixtures of
+  the underlying distributions is presented. The mixtures can be motivated by
+  the idea that a presentation fo a signal shifts the location of anunderlying
+  distribution only if the observer is attending to the signal; otherwise, the
+  distribution is not shifted or is only partially shifted. Thus, trials with a
+  signal presentation consist of a mixture of 2 (or more) latent classes of
+  trials. Mixture SDT provides a general theoretical framework that offers a
+  new perspective on a number of findings. For example, mixture SDT offers an
+  alternative to the unequal variance signal detection model; it can also
+  account for nonlinear normal receiver operating characteristic curves, as
+  found in recent research.%
+    }
+    \field{number}{4}
+    \field{pages}{710\bibrangedash 721}
+    \field{title}{Signal Detection Theory with Finite Mixture Distributions:
+  Theoretical Developments with applications to Recognition Memory}
+    \field{volume}{109}
+    \field{journaltitle}{Psychological Review}
+    \field{year}{2002}
+  \endentry
+
   \entry{DeCarlo2007}{article}{}
     \name{author}{1}{}{%
       {{hash=DLT}{%
@@ -833,6 +871,55 @@
     \field{year}{1976}
   \endentry
 
+  \entry{Glanzer2009}{article}{}
+    \name{author}{3}{}{%
+      {{hash=GM}{%
+         family={Glanzer},
+         familyi={G\bibinitperiod},
+         given={Murray},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=HA}{%
+         family={Hilford},
+         familyi={H\bibinitperiod},
+         given={Andrew},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MLT}{%
+         family={Maloney},
+         familyi={M\bibinitperiod},
+         given={Laurence\bibnamedelima T.},
+         giveni={L\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GMHAMLT1}
+    \strng{fullhash}{GMHAMLT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2009}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    We analyze four general signal detection models for recognition memory that
+  differ in their distributional assumptions. Our analyses show that a basic
+  assumption of signal detection theory, the likelihood ratio decision axis,
+  implies three regularities in recognition memory: (1) the mirror effect, (2)
+  the variance effect, and (3) the z-ROC length effect. For each model, we
+  present the equations that produce the three regularities and show, in
+  computed examples, how they do so. We then show that the regularities appear
+  in data from a range of recognition studies. The analyses and data in our
+  study support the following generalization: Individuals make efficient
+  recognition decisions on the basis of likelihood ratios.%
+    }
+    \field{number}{3}
+    \field{pages}{431\bibrangedash 455}
+    \field{title}{Likelihood ratio decisions in memory: Three implied
+  regularities}
+    \field{volume}{16}
+    \field{journaltitle}{Psychonomic Bulletin \& Review}
+    \field{year}{2009}
+  \endentry
+
   \entry{Glanzer1998}{article}{}
     \name{author}{3}{}{%
       {{hash=GM}{%
@@ -969,6 +1056,45 @@
     \field{year}{1974}
   \endentry
 
+  \entry{Greene1996}{article}{}
+    \name{author}{1}{}{%
+      {{hash=GRL}{%
+         family={Greene},
+         familyi={G\bibinitperiod},
+         given={Robert\bibnamedelima L.},
+         giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GRL1}
+    \strng{fullhash}{GRL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1996}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    Classes of stimuli that are relatively easy to classify in recognition as
+  old when old also appear to be relatively easy to classify as new when new.
+  Five experiments are reported that extend this mirror effect to tests
+  requiring retention of order and associative information. These experiments
+  tested memory for words and nonwords; across experiments, the mirror effect
+  was found on both yes-no and forced-choice tests. In addition, a new account
+  of the mirror effect is proposed, one which suggests that this pattern
+  results from participants' attempts to distribute responses equally across
+  stimulus classes on tests. Support from this account came from additional
+  experiments in which the mirror effect was eliminated when participants were
+  asked to refrain from using positive responses as guesses.%
+    }
+    \field{number}{3}
+    \field{pages}{687\bibrangedash 695}
+    \field{title}{Mirror Effect in Order and Associative Information: Role of
+  Response Strategies}
+    \field{volume}{22}
+    \field{journaltitle}{Journal of Experimental Psychology: Learning, Memory
+  and Cognition}
+    \field{year}{1996}
+  \endentry
+
   \entry{Gronlund2014}{article}{}
     \name{author}{3}{}{%
       {{hash=GSD}{%
@@ -1042,6 +1168,108 @@
     \field{volume}{85}
     \field{journaltitle}{Psychological Bulletin}
     \field{year}{1978}
+  \endentry
+
+  \entry{Hilford2015}{article}{}
+    \name{author}{4}{}{%
+      {{hash=HA}{%
+         family={Hilford},
+         familyi={H\bibinitperiod},
+         given={Andrew},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MLT}{%
+         family={Maloney},
+         familyi={M\bibinitperiod},
+         given={Laurence\bibnamedelima T.},
+         giveni={L\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Glanzer},
+         familyi={G\bibinitperiod},
+         given={Murray},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=KK}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={Kisok},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HA+1}
+    \strng{fullhash}{HAMLTGMKK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2015}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{abstract}{%
+    A basic assumption of Signal Detection Theory is that decisions are made on
+  the basis of likelihood ratios. In a preceding paper, Glanzer, Hilfor, and
+  Maloney /psychonomic Bulletin & Review, 16, 431-455, 2009) showed that the
+  likelihood ratio assumption implies that three regularities will occur in
+  recognition memory: (1) the Mirror Effect, (2) the Variance Effect, (3) the
+  normalized Receiver Operating Characteristic (z-ROC) Length Effect. The paper
+  offered formal proofs and computational demosntrations that decisions based
+  on likelihood ratios produce the three regularities. A survey of data ased on
+  group ROCs from 36 studies validated the likelihood ratio assumption by
+  showing that its three implied regularities are ubiquituous. The study noted,
+  however, that bias, another basis factor in Signal Detection Theory, can
+  obscure the Mirror Effect. In this paper we examine how bias affects the
+  regularities at the theoretical leve. The theoretical analysis shows: (1) how
+  bias obscures the Mirror Effect, not the other two reguarities, and (2) four
+  ways to counter that obscuring. We then report the results of five
+  experiments that support the theoretical analysis. The analyses and the
+  experimental results also demonstrate: (1) that the three regularities govern
+  individual, as well as group, performance, (2) alternative explanations of
+  the regularities are ruled oyt, and (3) tat Signal Detection Theory,
+  correctly applied, gives a simple and unified explanation of recognition
+  memory data.%
+    }
+    \field{pages}{1646\bibrangedash 1664}
+    \field{title}{Three regularities of recognition memory: the role of bias}
+    \field{journaltitle}{Psychonomic Bulletin Review}
+    \field{month}{05}
+    \field{year}{2015}
+  \endentry
+
+  \entry{Hintzman1994}{article}{}
+    \name{author}{1}{}{%
+      {{hash=HDL}{%
+         family={Hintzman},
+         familyi={H\bibinitperiod},
+         given={Douglas\bibnamedelima L.},
+         giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HDL1}
+    \strng{fullhash}{HDL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1994}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{abstract}{%
+    Two points are made in relation to the recent article by K. Kim and M.
+  Glanzer (1993). First, the attention-likelihood model is more complex than
+  these authors and others suggest. In particular, 2 kinds of quantities—(a)
+  parameters representing the true state of the subject's memory and (b) the
+  subject's estimates of those parameters—have been referred to using the
+  same symbols. This obscures the essential role of metamemory in the model's
+  predictions. Second, log-likelihood rescaling is not needed to explain the
+  mirror effect. An alternative rescaling scheme is described, which can be
+  added to a variety of memory models. This new rescaling method estimates a
+  test item's learnability by learning it. Simulations show that the method is
+  consistent with Kim and Glanzer's experimental results.%
+    }
+    \field{number}{1}
+    \field{pages}{201\bibrangedash 205}
+    \field{title}{On explaining the Mirror Effect}
+    \field{volume}{20}
+    \field{journaltitle}{Journal of Experimental Psychology: Learning, Memory
+  and Cognition}
+    \field{year}{1994}
   \endentry
 
   \entry{Harvey1992}{article}{}
@@ -1547,34 +1775,6 @@
     \field{year}{2005}
   \endentry
 
-  \entry{Greene1996}{article}{}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{1996}
-    \field{sortinit}{M}
-    \field{sortinithash}{M}
-    \field{abstract}{%
-    Classes of stimuli that are relatively easy to classify in recognition as
-  old when old also appear to be relatively easy to classify as new when new.
-  Five experiments are reported that extend this mirror effect to tests
-  requiring retention of order and associative information. These experiments
-  tested memory for words and nonwords; across experiments, the mirror effect
-  was found on both yes-no and forced-choice tests. In addition, a new account
-  of the mirror effect is proposed, one which suggests that this pattern
-  results from participants' attempts to distribute responses equally across
-  stimulus classes on tests. Support from this account came from additional
-  experiments in which the mirror effect was eliminated when participants were
-  asked to refrain from using positive responses as guesses.%
-    }
-    \field{number}{3}
-    \field{pages}{687\bibrangedash 695}
-    \field{title}{Mirror Effect in Order and Associative Information: Role of
-  Response Strategies}
-    \field{volume}{22}
-    \field{journaltitle}{Journal of Experimental Psychology: Learning, Memory
-  and Cognition}
-    \field{year}{1996}
-  \endentry
-
   \entry{Murdock1998}{article}{}
     \name{author}{1}{}{%
       {{hash=MBB}{%
@@ -1743,32 +1943,6 @@
     \field{volume}{92}
     \field{journaltitle}{Journal of Abnormal Psychology}
     \field{year}{1983}
-  \endentry
-
-  \entry{Hintzman1994}{article}{}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{1994}
-    \field{sortinit}{O}
-    \field{sortinithash}{O}
-    \field{abstract}{%
-    Two points are made in relation to the recent article by K. Kim and M.
-  Glanzer (1993). First, the attention-likelihood model is more complex than
-  these authors and others suggest. In particular, 2 kinds of quantities—(a)
-  parameters representing the true state of the subject's memory and (b) the
-  subject's estimates of those parameters—have been referred to using the
-  same symbols. This obscures the essential role of metamemory in the model's
-  predictions. Second, log-likelihood rescaling is not needed to explain the
-  mirror effect. An alternative rescaling scheme is described, which can be
-  added to a variety of memory models. This new rescaling method estimates a
-  test item's learnability by learning it. Simulations show that the method is
-  consistent with Kim and Glanzer's experimental results.%
-    }
-    \field{number}{1}
-    \field{pages}{201\bibrangedash 205}
-    \field{title}{On explaining the Mirror Effect}
-    \field{volume}{20}
-    \field{journaltitle}{Douglas L. Hintzman}
-    \field{year}{1994}
   \endentry
 
   \entry{Pessoa2005}{article}{}
@@ -1974,6 +2148,56 @@
     \field{volume}{16}
     \field{journaltitle}{Nature neuroscience}
     \field{year}{2013}
+  \endentry
+
+  \entry{Rao1984}{article}{}
+    \name{author}{2}{}{%
+      {{hash=RKV}{%
+         family={Rao},
+         familyi={R\bibinitperiod},
+         given={K.\bibnamedelima Venkata},
+         giveni={K\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+      {{hash=PRW}{%
+         family={Proctor},
+         familyi={P\bibinitperiod},
+         given={Robert\bibnamedelima W.},
+         giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RKVPRW1}
+    \strng{fullhash}{RKVPRW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1984}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{abstract}{%
+    Accuracy on recognition-memory tests has been found to be an inverted
+  U-shaped function of linguistic frequency. The present experiments were
+  designed to provide insight into the basis for this relationship. Experiment
+  1 demonstrated that the inverted U-shaped function is obtained not only when
+  a semantic orienting task (in this case, a lexical-decision task) is
+  performed during the study phase but also when either a syllable-counting
+  task is performed or nondirected study is allowed. The advantage for
+  low-frequency words relative to high-frequency words was greater with the
+  lexical-decision orienting task than with either of the other orienting
+  tasks. Experiment 2 used self-paced presentation to show that study time is a
+  monotonically decreasing function of linguistic frequency. Thus, recognition
+  for high-frequency words may suffer, in part, from less processing than that
+  performed for low-frequency words. The poor recognition accuracy for very
+  low-frequency words, however, apparently is not due to a deficient amount of
+  processing but rather to limitations in the effectiveness of the processing
+  that is performed.%
+    }
+    \field{number}{3}
+    \field{pages}{386\bibrangedash 394}
+    \field{title}{Study-Phase processing and the Word Frequency effect in
+  Recognition Memory}
+    \field{volume}{10}
+    \field{journaltitle}{Journal of Experimental Psychology: Learning, Memory
+  and Cognition}
+    \field{year}{1984}
   \endentry
 
   \entry{Roberts2005}{article}{}
