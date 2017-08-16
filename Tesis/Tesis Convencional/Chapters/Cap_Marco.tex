@@ -335,7 +335,7 @@ En la Figura~\ref{fig:Graf_Sesgo} se ilustra el cómputo de ambos parámetros de
 
 \subsection{Curvas ROC}
 
-Además de permitir la descripción e interpretación del desempeño observado en una tarea de detección particular con base en la estimación de los parámetros descritos, los datos obtenidos en sesiones experimentales aisladas también pueden servir para una evaluación más completa de la precisión con que el sistema evaluado podría responder a la misma tarea usando distintos criterio de elección. Las curvas ROC (identificadas así por su nombre en inglés: Receiver-Operating Characteristic curve) describen la relación entre la tasa en que las respuestas afirmativas emitidas son correctas o incorrectas -las tasas de Hits y Falsas Alarmas- en tareas de detección con cierto valor de $d'$, por cada localización posible del criterio sobre el eje de evidencia \parencite{McNicol2, Swets1973}.\\
+Además de permitir la descripción e interpretación del desempeño observado en una tarea de detección particular con base en la estimación de los parámetros descritos, los datos obtenidos en sesiones experimentales aisladas también pueden servir para una evaluación más completa de la precisión con que el sistema evaluado podría responder a la misma tarea usando distintos criterio de elección. Las curvas ROC (identificadas así por su nombre en inglés: Receiver-Operating Characteristic curve) describen la relación entre la tasa en que las respuestas afirmativas emitidas son correctas o incorrectas -las tasas de Hits y Falsas Alarmas- en tareas de detección con cierto valor de $d'$, por cada localización posible del criterio sobre el eje de evidencia \parencite{McNicol2, Egan1959, Swets1973}.\\
 
 La Figura~\ref{fig:Graf_ROC} ilustra la construcción de curvas ROC a partir de las tasas de ejecución reportadas en tareas de detección. En el primer panel a la izquierda, se presenta la representación gráfica (con cierta $d'$ y $k$) del desempeño observado en un caso hipotético con ciertas tasas de ejecución. En el panel intermedio, se muestra una primera aproximación al trazo de las curvas ROC, ubicando el punto de coordenadas que describe las tasas registradas de Falsas Alarmas (en el eje de las x) y Hits (en el eje de las Y). El último panel presenta la curva ROC completa para este mismo escenario (la misma $d'$) a traves de los distintos valores posibles de $k$, uniendo una serie de puntos que muestran la relación entre los Hits y Falsas alarmas que se espera observar con cada posible localización del criterio sobre el eje de evidencia.\\
 
@@ -357,7 +357,7 @@ El valor estimado de $d'$ representa la distancia entre las medias de las distri
 
 Cuando los estímulos con Señal son indistinguibles de los estímulos con Ruido ($d' = 0$), la curva ROC resultante se ve como una función de identidad que indica que al emitir un juicio de detección afirmativo, existe la misma probabilidad de que este termine siendo un Hit o una Falsa Alarma, con un AUC de 0.5 (la mitad del área total cae por debajo de la curva). Mientras mayor sea el valor de $d'$, la curva ROC resultante se alejará más de la función identidad y su AUC será cada vez más cercano a 1.0. Es decir, el AUC puede tomar valores entre 0.5 -que correspondería a un sistema que no distingue en lo absoluto entre la Señal y el Ruido- y 1.0 -que representa una distinción perfecta entre los mismos-, \parencite{Swets1973, Stainslaw1999, McNicol5}.\\
 
-Las curvas ROC pueden ser trazadas -en teoría- a partir de un solo conjunto de tasas de ejecución \parencite{Pollack1964a, Pollack1964b, McNicol2} mediante algoritmos que asumen que el desempeño observado por parte del participante no puede "mejorar" o "empeorar" (dado que la discriminabilidad no depende de su conducta) y que se limitan a computar las Tasa de ejecución que se esperaría observar en cada ubicación posible del criterio. Sin embargo, también pueden trazarse varios puntos para guiar el trazo de la curva ROC a partir de datos obtenidos en tareas de detección donde experimentalmente se induce el uso de distintos criterios de elección por parte de los participantes, obteniendo varios conjuntos de tasas de ejecucción (varias parejas de tasas de Hits y Falsas Alarmas), \parencite{Swets1961, Swets1986}. Los procedimientos mediante los cuales esto se lleva a cabo se discuten a continuación.\\
+Las curvas ROC pueden ser trazadas -en teoría- a partir de un solo conjunto de tasas de ejecución \parencite{Pollack1964a, Pollack1964b, McNicol2} mediante algoritmos que asumen que el desempeño observado por parte del participante no puede "mejorar" o "empeorar" (dado que la discriminabilidad no depende de su conducta) y que se limitan a computar las Tasa de ejecución que se esperaría observar en cada ubicación posible del criterio. Sin embargo, también pueden trazarse varios puntos para guiar el trazo de la curva ROC a partir de datos obtenidos en tareas de detección donde experimentalmente se induce el uso de distintos criterios de elección por parte de los participantes, obteniendo varios conjuntos de tasas de ejecucción (varias parejas de tasas de Hits y Falsas Alarmas), \parencite{Egan1959, Swets1961, Swets1986}. Los procedimientos mediante los cuales esto se lleva a cabo se discuten a continuación.\\
 
 %----------------------------------------------------------------
 
@@ -405,7 +405,6 @@ Idealmente, se espera que el participante utilice todas las opciones de respuest
 Existe un tercer protocolo bajo el cual se presentan las tareas de detección, identificado como tareas de Elección forzada entre $m$ alternativas, donde se presentan simultáneamente $m - 1$ estímulos que contienen sólo ruido y $1$ con señal. La tarea del participante consiste en identificar la Señal dentro del conjunto de estímulos que se le presentan, \parencite{Stainslaw1999}. En general, se asume que cada estímulo presentado contiene cierto valor de evidencia -cierta ubicación en el eje sobre el cual se despliegan las distribuciones- que el participante compara para elegir como 'Señal' aquel que tenga un valor mayor -de acuerdo con el supuesto de que en general, los valores de la distribución Señal caen por encima del Ruido-, \parencite{McNicol2}.\\
 
 Dada la relación que representan, el área bajo la curva ROC trazada con un protocolo de preguntas binarias o con Escala de confianza puede interpretarse como la proporción de veces que el participante cuyo desempeño se describe, podría identificar correctamente la Señal, si esta fuera presentada simultáneamente junto con el Ruido. A su vez, la proporción de respuestas correctas obtenidas a lo largo de una tarea de Elección forzada proporciona una medida de la sesibilidad del sistema, independiente del sesgo del sistema. Dicha medida -al igual que el AUC-, tendría que variar entre el azar ($\frac{1}{m}$) y el desempeño perfecto ($1.0$), \parencite{Stainslaw1999}.\\
-
 \end{itemize}
 
 
@@ -425,20 +424,48 @@ Dada la relación que representan, el área bajo la curva ROC trazada con un pro
 
 
 
+\section{Teoría de Detección de Señales en Memoria}
+
+La Teoría de Detección de Señales ha sido ampliamente utilizada en distitnas áreas de la Psicología Experimental como tanto como un marco de referencia conceptual para pensar en diversas situaciones de detección, como herramienta de análisis de datos obtenidos en este tipo de tareas. Una de estas áreas la constituye el estudio de la Memoria, donde se han aterrizado los supuestos y conceptos desarrollados originalmente en la TDS para el estudio del aprendizaje humano, la retención y el reconocimiento de ciertos elementos estudiados, \parencite{Murdock1965, Bernbach1967, Banks1970, White1999}.\\
+
+Al diseñar las tareas presentadas en estudios de Memoria como instancias de un problema de detección, los resultados obtenidos se pueden clasificar de acuerdo a las mismas categorías señaladas en cada celda de la matriz que se presenta en la Figura~\ref{fig:Mat_Output}, dependiendo la correspondencia que exista entre la respuesta registrada por los participantes y el tipo de ensayo presentado. Y de la misma forma, las tasas de Hits y Falsas Alarmas registradas para la localización de los criterios evaluados (en tareas Sí/No que inducen distintos sesgos, o mediante el uso de escalas de confianza) pueden emplearse para trazar curvas ROC \parencite{Egan1958}, también llamadas curvas MOC (por sus siglas en inglés "Memory Operant Curve") para enfatizar su adscripción al estudio de la Memoria, \parencite{Norman1965, KintschCarlson1967}.\\
+
+La aplicación de la TDS al estudio de la Memoria ha impactado en el desarrollo de este útlimo en términos de cuatro grandes ejes \parencite{Banks1970}, que son:\\
+
+\begin{enumerate}
+\item La noción de la "Fuerza de Memoria".\\
+
+Aceptar la TDS como marco para la descripción de tareas en Memoria implica asumir que el "input" con base en el cual los participantes emiten sus respuestas son los valores evaluados en cada ensayo, que representan puntos sobre el eje de evidencia sobre el cual se despliegan las distribuciones de Ruido (los estímulos distractores) y Señal (los estímulos a identificar de acuerdo al procedimiento empleado). Es decir, el desempeño observado es interpretado como resultado de la interacción entre la "fuerza de memoria" evaluada en cada ensayo y un proceso de decisión que determina cuando ésta es lo suficientemente grande para juzgar la pertenencia de los estímulos a la categoría "conocida".\\ 
+
+En términos de la exploración de este supuesto y sus implicaciones, resaltan los trabajos orientados a evaluar la naturaleza de tal "fuerza de memoria" (por ejemplo, si puede definirse como una serie de valores contínuos o discretos), y a estudiar la interacción entre los procesos cognitivos involucrados en memoria y la adquisición o la pérdida de dicha fuerza (por ejemplo, el estudio, la retención y el olvido), \parencite{Bernbach1967, Wickelgren1966, Parks1966}.
+
+\item La noción del Criterio de Elección como opuesta a los Umbrales de respuesta.\\
+
+Una de las ventajas más evidentes de la aplicación de la TDS al estudio de la memoria es que permite entender los Falsos Positivos en términos de la confusión entre la evidencia -la "fuerza de memoria"- elicitada por los estímulos Ruido y los estímulos Señal (el sobrelape entre las distribuciones). Es decir, en vez de plantear el problema en términos de "umbrales de estimulación" que deben ser rebasados para poder ""
+
+\item La noción de que existen distribuciones subyacentes (y la definición de sus características).\\
+
+Las MOC se construyen a partir de los datos obtenidos en los experimentos, y permiten a su vez hacer inferencias sobre el tipo de distribución que mejor describe los datos.
+
+\item Análisis de datos y descripción del desempeño de los participantes.\\
+
+Finalmente, se encuentran los trabajos que se limitan a utilizar la TDS como una herramienta para interpretar los datos obtenidos en estudios de memoria que incorporan la metodología asociada con las tareas de detección, \parencite{Marks1964}.
+
+\end{enumerate} 
 
 
+\subsection{ Memoria de Reconocimiento}
 
+Dentro del estudio de la Memoria, uno de los sub-campos de aplicación más comúnes de la TDS es el de la Memoria de Reconocimiento \parencite{Parks1966}.
 
-\section{Teoría de Detección de Señales en Memoria de Reconocimiento}
+Las Tareas en memoria de reconocimiento pueden entenderse como ... \parencite{Bernbach1967, Kintsch1967}
 
-\subsection{Predecesores: Teoría del Procesamiento Dual}
-
-Uno de los campos de aplicación más comúnes de la TDS en el ámbito del estudio de procesos cognitivos superiores, es el de la Memoria de Reconocimiento \parencite{Banks1970}.
+\parencite{Wixted2007}
 
 La Teoría del Procesamiento Dual (TPD; o PDT por sus siglas en inglés) sostiene que existen dos procesos fundamentales involucrados en todo juicio de reconocimiento: la recolección y el análisis de familiaridad. El primero corresponde a la extracción de rasgos y detalles específicos del estímulo a evaluar, (i.e. el estímulo que queremos determinar si se ha visto antes, o no), un proceso que requiere cierto tiempo; el segundo, es entendido como un fenómeno más o menos automático y casi instantáneo donde el sistema identifica el estímulo como 'familiar' y decide que lo ha reconocido de alguna experiencia previa. 
 
 
-Aplicar la TDS al estudio de la Memoria de Reconocimiento implica asumir que existe tal cosa como una 'fuerza de memoria' ('memory strength', en inglés) que refleja el grado en que un estímulo cualquiera es percibido como 'familiar' para el sistema que busca emitir un juicio de detección. La fuerza de memoria evocada por cada estímulo se compara con un criterio de elección para que el sistema pueda decidir si lo reconoce, o no, como 'elemento antes visto'.\\ 
+Aplicar la TDS al estudio de la Memoria de Reconocimiento implica asumir que existe tal cosa como una 'fuerza de memoria' ('memory strength', en inglés) que refleja el grado en que un estímulo cualquiera es percibido como 'familiar' para el sistema que busca emitir un juicio de detección -o en este caso, de reconocimiento-. La fuerza de memoria evocada por cada estímulo se compara con un criterio de elección para que el sistema pueda decidir si lo reconoce, o no, como 'elemento antes visto'.\\ 
 
 \begin{figure}[th]
 \centering
@@ -464,7 +491,7 @@ Como se mencionó en el Capítulo 1, la TDS en su forma típica define las distr
 
 \subsection{Implicaciones y conflictos}
 
-
+La aplicación de la TDS al estudio
 
 Me permitiré, por un momento, salirme del molde académico y hablar un poco de todo el proceso que hubo detrás de la realización del presente trabajo. Cuando comencé a revisar literatura para decidir cuál podría ser mi proyecto de tesis, descubrí la maravilla de la Teoría de Detección de Señales. 
 
@@ -628,7 +655,7 @@ La idea detrás de la interpretación de las elecciones observadas en las pareja
 
 \end{itemize}
 
-En un inicio, los patrones de respuestas actualmente identificados como parte del Efecto Espejo fueron conocidos como Efecto de Frecuencia de las Palabras, ya que fueron reportados por primera vez en estudios donde el desempeño de los participantes en tareas de reconocimiento se comparaba a través de dos clases de estímulos compuestas por palabras "poco comúnes" y palabras "muy comunes" de acuerdo a la Frecuencia de su uso \parencite{Kucera1967}. En dichos estudios, realizados con diferentes protocolos experimentales \parencite{Glanzer1976, Bowles1983, Glanzer1990}, se ha mostrado consistentemente evidencia de que las palabras poco comúnes eran reconocidas con mayor precisión tanto como "nuevas" como "viejas" (clase A) y que las palabras comúnes se confundían con mayor facilidad (clase B). No fue hasta que se demostró que estos mismos patrones de respuesta aparecían en cualquier tipo de tareas de reconocimiento en que se presentara a los participantes más de una clase de estímulos que se distinguieran entre sí por la precisión con que sus elementos son reconocidos en la fase de reconocimiento, sea cual sea la naturaleza de estas clases, que se comenzó a hablar del Efecto Espejo como una regularidad propia de la Memoria de Reconocimiento, \parencite{Glanzer1993}.\\
+En un inicio, los patrones de respuestas actualmente identificados como parte del Efecto Espejo fueron conocidos como Efecto de Frecuencia de las Palabras \parencite{Schulman1967}, ya que fueron reportados por primera vez en estudios donde el desempeño de los participantes en tareas de reconocimiento se comparaba a través de dos clases de estímulos compuestas por palabras "poco comúnes" y palabras "muy comunes" de acuerdo a la Frecuencia de su uso \parencite{Kucera1967}. En dichos estudios, realizados con diferentes protocolos experimentales \parencite{Glanzer1976, Bowles1983, Glanzer1990}, se ha mostrado consistentemente evidencia de que las palabras poco comúnes eran reconocidas con mayor precisión tanto como "nuevas" como "viejas" (clase A) y que las palabras comúnes se confundían con mayor facilidad (clase B). No fue hasta que se demostró que estos mismos patrones de respuesta aparecían en cualquier tipo de tareas de reconocimiento en que se presentara a los participantes más de una clase de estímulos que se distinguieran entre sí por la precisión con que sus elementos son reconocidos en la fase de reconocimiento, sea cual sea la naturaleza de estas clases, que se comenzó a hablar del Efecto Espejo como una regularidad propia de la Memoria de Reconocimiento, \parencite{Allen1968, Glanzer1993}.\\
 
 La evidencia del Efecto Espejo se presenta en una amplia variedad de estudios donde se manipulan distintas variables en la definición de las clases de estímulos A y B,  tales como la complejidad, la ortografía o la veracidad de los enunciados presentados. O bien, cuando se presentan grupos distintos de estímulos que se sabe son reconocidos con distinta precisión, por ejemplo, en estudios donde se comparan palabras con significado concreto (A) vs abstracto (B); imágenes (B) vs palabras (A); rostros comúnes (B) vs rostros poco comúnes (A), \parencite{Glanzer1993, Greene1996, Glanzer1998}.\\
 

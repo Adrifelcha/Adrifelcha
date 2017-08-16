@@ -17,6 +17,46 @@
 \endgroup
 
 \sortlist[entry]{nyt/global/}
+  \entry{Allen1968}{article}{}
+    \name{author}{2}{}{%
+      {{hash=ALR}{%
+         family={Allen},
+         familyi={A\bibinitperiod},
+         given={L.\bibnamedelima R.},
+         giveni={L\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=GRF}{%
+         family={Garton},
+         familyi={G\bibinitperiod},
+         given={R.\bibnamedelima F.},
+         giveni={R\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ALRGRF1}
+    \strng{fullhash}{ALRGRF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1968}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{abstract}{%
+    This experiment was conducted in an attempt to separate the effects of
+  word-frequency and word-knowledge in recognition memory. Operating
+  characteristics supported previous findings that it was easier for Ss to
+  distinguish between old and new words having a low-frequency word count than
+  between old and new common words. A knowledge of the meaning of a rare word
+  was found to facilitate the discrimination of old from new low-frequency
+  words.%
+    }
+    \field{number}{10}
+    \field{pages}{401\bibrangedash 402}
+    \field{title}{The influence of word-knowledge on the word-frequency effect
+  in recognition memory}
+    \field{volume}{12}
+    \field{journaltitle}{Psychonomic Science}
+    \field{year}{1968}
+  \endentry
+
   \entry{Wickens}{incollection}{}
     \name{author}{2}{}{%
       {{hash=AFG}{%
@@ -85,6 +125,44 @@
     \field{volume}{74}
     \field{journaltitle}{Psychological Bulletin}
     \field{year}{1970}
+  \endentry
+
+  \entry{Bernbach1967}{article}{}
+    \name{author}{1}{}{%
+      {{hash=BHA}{%
+         family={Bernbach},
+         familyi={B\bibinitperiod},
+         given={Harley\bibnamedelima A.},
+         giveni={H\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BHA1}
+    \strng{fullhash}{BHA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1967}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    Several current theories of the response process in recognition memory, or
+  in confidence rating in recall, have postulated a continuous decision process
+  as in the theory of signal detectability. This assumption, however, does not
+  rule out assuming that the process by which information is stored and
+  retained in memory is a discrete one. In the finite-state decision theory
+  presented here, the continuous decision process is combined with a
+  representation of the memory trace as a tag that is either available or not
+  available at the time of test. In its predictions for recognition memory
+  experiments, this theory is at least the equal of theories based on
+  traditional habit strength assumptions. Furthermore, data from studies of
+  confidence ratings in recall provide considerable support for the
+  finite-state assumption.%
+    }
+    \field{number}{6}
+    \field{pages}{462\bibrangedash 480}
+    \field{title}{Decision Processes in Memory}
+    \field{volume}{74}
+    \field{journaltitle}{Psychological Review}
+    \field{year}{1967}
   \endentry
 
   \entry{Bonnel2003}{article}{}
@@ -508,6 +586,86 @@
     \field{journaltitle}{Journal of Experimental Psychology: Learning, Memory
   and Cognition}
     \field{year}{2007}
+  \endentry
+
+  \entry{Egan1958}{article}{}
+    \name{author}{1}{}{%
+      {{hash=EJP}{%
+         family={Egan},
+         familyi={E\bibinitperiod},
+         given={James\bibnamedelima P.},
+         giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{EJP1}
+    \strng{fullhash}{EJP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1958}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \field{abstract}{%
+    NA%
+    }
+    \field{number}{32}
+    \field{pages}{51\bibrangedash 58}
+    \field{title}{Recognition Memory and the Operating Characteristic}
+    \field{volume}{2}
+    \field{journaltitle}{Journal of Acoustical Society of America}
+    \field{year}{1958}
+  \endentry
+
+  \entry{Egan1959}{article}{}
+    \name{author}{3}{}{%
+      {{hash=EJP}{%
+         family={Egan},
+         familyi={E\bibinitperiod},
+         given={James\bibnamedelima P.},
+         giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=SAI}{%
+         family={Schulman},
+         familyi={S\bibinitperiod},
+         given={Arthur\bibnamedelima I.},
+         giveni={A\bibinitperiod\bibinitdelim I\bibinitperiod},
+      }}%
+      {{hash=GGZ}{%
+         family={Greenberg},
+         familyi={G\bibinitperiod},
+         given={Gordon\bibnamedelima Z.},
+         giveni={G\bibinitperiod\bibinitdelim Z\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{EJPSAIGGZ1}
+    \strng{fullhash}{EJPSAIGGZ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1959}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \field{abstract}{%
+    With the theory of signald etectabilitya s a framework,t wo
+  psychophysicaelx perimentsw ere conducted in which each observation interval
+  was well defined for the listener. Each interval contained noise, and it
+  either did or did not (p-0.5) contain a signal (1000 cps,0 .5 seci n
+  duration). In separates essionosf the first experimente, ither the listenerg
+  ave a yes-nod ecisiono r he respondedw ith a rating (1-4) after each
+  observationin terval. Operatingc haracteristicws ere obtainedw ith E/No equal
+  to 15.8. It is clear from the data that the trained listenerc an perform as
+  well when he adoptst he multiple criteria necessaryfo r the rating methoda sw
+  henh e adoptst he singlec riterionr equiredb y the binary-decisiopnr
+  ocedureI.n the second experiment, only the rating method was used to
+  determine the relation between d' and E/No. The resulting function,f or d'_<3
+  .0, approximatesa straightl ine whichp assesth rought he origina nd whichh
+  asn early the same slope as that obtained in other laboratories.%
+    }
+    \field{number}{6}
+    \field{pages}{768\bibrangedash 773}
+    \field{title}{Operating Characteristics Determined by Binary Decisions and
+  by Ratings}
+    \field{volume}{31}
+    \field{journaltitle}{Journal of Acoustical Society of America}
+    \field{year}{1959}
   \endentry
 
   \entry{Fechner}{book}{}
@@ -1393,6 +1551,88 @@
     \field{year}{1993}
   \endentry
 
+  \entry{Kintsch1967}{article}{}
+    \name{author}{1}{}{%
+      {{hash=KW}{%
+         family={Kintsch},
+         familyi={K\bibinitperiod},
+         given={Walter},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KW1}
+    \strng{fullhash}{KW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1967}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{abstract}{%
+    Recognition learning may be described as a discrete state process involving
+  transitions between an initial state, a temporary memory state, and a
+  learning state. It is assumed that Ss judge the familiarity of learning items
+  on an essentially continuous scale, but that decision criteria are
+  established which divide this scale into separate regions corresponding to
+  the states of the model. With the assumption of an underlying continuous
+  familiarity scale the learning model can account for confidence judgments
+  during recognition learning. Memory-operating characteristics derived from
+  the model were found to be in general agreement with experimental data. The
+  learning, forgetting, and decision assumptions of the model were discussed
+  with respect to relevant empirical evidence.%
+    }
+    \field{number}{6}
+    \field{pages}{496\bibrangedash 504}
+    \field{title}{Memory and Decision Aspects of Recognition Learning}
+    \field{volume}{74}
+    \field{journaltitle}{Psychological Review}
+    \field{year}{1967}
+  \endentry
+
+  \entry{KintschCarlson1967}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KW}{%
+         family={Kintsch},
+         familyi={K\bibinitperiod},
+         given={Walter},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=CWJ}{%
+         family={Carlson},
+         familyi={C\bibinitperiod},
+         given={Warren\bibnamedelima J.},
+         giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KWCWJ1}
+    \strng{fullhash}{KWCWJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1965}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{abstract}{%
+    Four Ss learned to recognize 30 lists of paired associates. Confidence
+  judgments were obtained with all responses. The learning data were in
+  agreement with a Markov model which requires a constant error probability in
+  the initial state. The The confidence judgments were used to construct
+  memory-operating characteristics. The MOC based upon all scores of the first
+  test trial is smooth and symmetric and indicates good discrimination. MOCs
+  were also constructed from scores of the first test trial which were followed
+  by an error on some later trial, and from all scores before the last error.
+  These two MOCs overlapped and were in between the MOC based upon all
+  first-trial scores and the chance line. It is concluded that on trials before
+  the last error Ss possess some information about the learning material but
+  that the amount of information does not increase during those trials.%
+    }
+    \field{number}{6}
+    \field{pages}{891\bibrangedash 896}
+    \field{title}{Changes in the Memory Operating Characteristic during
+  Recognition Learning}
+    \field{volume}{6}
+    \field{journaltitle}{Journal of Verbal Learning and Verbal Behavior}
+    \field{year}{1965}
+  \endentry
+
   \entry{Kucera1967}{book}{}
     \name{author}{2}{}{%
       {{hash=KH}{%
@@ -1644,6 +1884,40 @@
     \field{year}{1996}
   \endentry
 
+  \entry{Marks1964}{article}{}
+    \name{author}{2}{}{%
+      {{hash=MLE}{%
+         family={Marks},
+         familyi={M\bibinitperiod},
+         given={Lawrence\bibnamedelima E.},
+         giveni={L\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=MGA}{%
+         family={Miller},
+         familyi={M\bibinitperiod},
+         given={George\bibnamedelima A.},
+         giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MLEMGA1}
+    \strng{fullhash}{MLEMGA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1964}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    No Abstract%
+    }
+    \field{number}{1}
+    \field{pages}{1\bibrangedash 5}
+    \field{title}{The Role of Semantic and Syntactic Constraints in the
+  Memorization of English Sentences}
+    \field{volume}{3}
+    \field{journaltitle}{Journal of Verbal Learning and Verbal Behavior}
+    \field{year}{1964}
+  \endentry
+
   \entry{Massaro1971}{article}{}
     \name{author}{2}{}{%
       {{hash=MDW}{%
@@ -1773,6 +2047,42 @@
       {"Oxford"}%
     }
     \field{year}{2005}
+  \endentry
+
+  \entry{Murdock1965}{article}{}
+    \name{author}{1}{}{%
+      {{hash=MBB}{%
+         family={Murdock},
+         familyi={M\bibinitperiod},
+         given={Bennet\bibnamedelima B.},
+         giveni={B\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MBB1}
+    \strng{fullhash}{MBB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1965}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    This study attempted to apply signal-detection theory to short-term memory
+  by testing the high-threshold concept of associative strength. On each trial
+  a list of 6 A-B pairs was presented once, then 1 of these 6 pairs was tested
+  for recognition. On the recognition test either A-B (a proper pair) or A-X
+  (an improper pair) was presented; S had to make a binary (yes-no) decision
+  plus a confidence rating. From these data ROC curves were plotted, and they
+  resembled the curvilinear functions of signal-detection theory more than the
+  linear function required by the high-threshold concept. These results call
+  into question the use of a high-threshold concept to explain findings from
+  studies of 1-trial learning.%
+    }
+    \field{number}{5}
+    \field{pages}{443\bibrangedash 447}
+    \field{title}{Signal-Detection Theory and Short-Term Memory}
+    \field{volume}{70}
+    \field{journaltitle}{Journal of Experimental Psychology}
+    \field{year}{1965}
   \endentry
 
   \entry{Murdock1998}{article}{}
@@ -1905,6 +2215,52 @@
     \field{year}{1969}
   \endentry
 
+  \entry{Norman1965}{article}{}
+    \name{author}{2}{}{%
+      {{hash=NDA}{%
+         family={Norman},
+         familyi={N\bibinitperiod},
+         given={Donald\bibnamedelima A.},
+         giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=WWA}{%
+         family={Wickelgreen},
+         familyi={W\bibinitperiod},
+         given={Wayne\bibnamedelima A.},
+         giveni={W\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{NDAWWA1}
+    \strng{fullhash}{NDAWWA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1965}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{abstract}{%
+    The operating characteristic is used to examine the relation between the
+  recognition of a single item and the recognition of a pair of items. 29 Ss
+  listened to a sequence of S digits, then copied a sequence of 8 digits, and
+  then were given a test of recognition memory for i or 2 digits from the
+  original sequence. The operating characteristic for single digits is a smooth
+  function that is symmetrical about the major diagonal, whereas the curve for
+  pairs is highly asymmetrical. False-recognitionrates for test pairs
+  containing 1 digit from the original sequence are only slightly greater than
+  false-recognition rates for completely new pairs. Recognition of a pair does
+  not appear to result from independent recognition of each digit. A
+  mathematical model is developed in which the strength of the memory trace has
+  a continuous distribution which is incremented in a probabilistic fashion
+  upon presentation of an item or pair%
+    }
+    \field{number}{5}
+    \field{pages}{479\bibrangedash 489}
+    \field{title}{Short-term Recognition Memory for Single Digits and Pairs of
+  Digits}
+    \field{volume}{70}
+    \field{journaltitle}{Journal of Experimental Psychology}
+    \field{year}{1965}
+  \endentry
+
   \entry{Nuechterlein1983}{article}{}
     \name{author}{1}{}{%
       {{hash=NKH}{%
@@ -1943,6 +2299,44 @@
     \field{volume}{92}
     \field{journaltitle}{Journal of Abnormal Psychology}
     \field{year}{1983}
+  \endentry
+
+  \entry{Parks1966}{article}{}
+    \name{author}{1}{}{%
+      {{hash=PTE}{%
+         family={Parks},
+         familyi={P\bibinitperiod},
+         given={Theodore\bibnamedelima E.},
+         giveni={T\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PTE1}
+    \strng{fullhash}{PTE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1966}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{abstract}{%
+    Psychophysical signal-detection theory is applied to recognition-memory
+  performance. Old items in the test list are considered to be analogous to
+  "signals" while new items are analogous to "noise only." The resulting
+  fundamental assumptions describe the covert responses which mediate
+  recognition-memory performance as varying continuously in strength. Covert
+  responses to both old and new items are normally distributed with the
+  distance between distributions representing learning and retention. The overt
+  response to an item depends on whether or not S's covert response exceeds an
+  arbitrary criterion. The available evidence suggests that S's criterion will
+  be set such that he will most probably choose a number of items approximately
+  equal to the number of old items in the test.%
+    }
+    \field{number}{1}
+    \field{pages}{44\bibrangedash 58}
+    \field{title}{Signal-detectability Theory of Recognition Memory
+  Performance}
+    \field{volume}{73}
+    \field{journaltitle}{Psychological Review}
+    \field{year}{1966}
   \endentry
 
   \entry{Pessoa2005}{article}{}
@@ -2261,6 +2655,37 @@
     \field{journaltitle}{Journal of Experimental Psychology: Human Perception
   and Performance}
     \field{year}{2001}
+  \endentry
+
+  \entry{Schulman1967}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SAI}{%
+         family={Schulman},
+         familyi={S\bibinitperiod},
+         given={Arthur\bibnamedelima I.},
+         giveni={A\bibinitperiod\bibinitdelim I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SAI1}
+    \strng{fullhash}{SAI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1967}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    Operating characteristics were used to assess the importance of
+  word-frequency and word-length in recognition memory. It was much easier for
+  Ss to distinguish between old and new rare words than between old and new
+  common words. Rare (but not common) words were easier to recognize when they
+  were polysyllabic than when they were not.%
+    }
+    \field{number}{4}
+    \field{pages}{211\bibrangedash 212}
+    \field{title}{Word length and rarity in recognition memory}
+    \field{volume}{9}
+    \field{journaltitle}{Psychonomic Science}
+    \field{year}{1967}
   \endentry
 
   \entry{Stainslaw1999}{article}{}
@@ -2585,6 +3010,99 @@
     \field{journaltitle}{Journal of Behavior Therapy and Experimental
   Psychiatry}
     \field{year}{2010}
+  \endentry
+
+  \entry{White1999}{article}{}
+    \name{author}{2}{}{%
+      {{hash=WKG}{%
+         family={White},
+         familyi={W\bibinitperiod},
+         given={K.\bibnamedelima Geoffrey},
+         giveni={K\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=WJT}{%
+         family={Wixted},
+         familyi={W\bibinitperiod},
+         given={John\bibnamedelima T.},
+         giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WKGWJT1}
+    \strng{fullhash}{WKGWJT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1999}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{abstract}{%
+    We present a new model of remembering in the context of conditional
+  discrimination. For procedures such as delayed matching to sample, the effect
+  of the sample stimuli at the time of remembering is represented by a pair of
+  Thurstonian (normal) distributions of effective stimulus values. The critical
+  assumption of the model is that, based on prior experience, each effective
+  stimulus value is associated with a ratio of reinforcers obtained for
+  previous correct choices of the comparison stimuli. That ratio determines the
+  choice that is made on the basis of the matching law. The standard deviations
+  of the distributions are assumed to increase with increasing
+  retention-interval duration, and the distance between their means is assumed
+  to be a function of other factors that influence overall difficulty of the
+  discrimination. It is a behavioral model in that choice is determined by its
+  reinforcement history. The model predicts that the biasing effects of the
+  reinforcer differential increase with decreasing discriminability and with
+  increasing retention-interval duration. Data from several conditions using a
+  delayed matching-to-sample procedure with pigeons support the predictions.%
+    }
+    \field{number}{1}
+    \field{pages}{91\bibrangedash 113}
+    \field{title}{Psychophysics of Remembering}
+    \field{volume}{71}
+    \field{journaltitle}{Journal of the Experimental Analysis of Behavior}
+    \field{year}{1999}
+  \endentry
+
+  \entry{Wickelgren1966}{article}{}
+    \name{author}{2}{}{%
+      {{hash=WWA}{%
+         family={Wickelgren},
+         familyi={W\bibinitperiod},
+         given={Wayne\bibnamedelima A.},
+         giveni={W\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=NDA}{%
+         family={Norman},
+         familyi={N\bibinitperiod},
+         given={Donald\bibnamedelima A.},
+         giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WWANDA1}
+    \strng{fullhash}{WWANDA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1966}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{abstract}{%
+    A number of continuous strength models for memory are developed for and
+  tested by an experimental study of recognition memory for three-digit numbers
+  at all serial positions in lists of length two through seven. Empirical
+  estimates of trace strength in different conditions, independent of response
+  bias, are obtained by means of the operating characteristic. The principal
+  theoretical findings are: (a) strength in short-term memory (STM) appears to
+  decay exponentially with the number of subsequent items; (b) subjects report
+  that they recognize an item if and only if strength in memory exceeds a
+  criterion; (c) the first item of a list is remembered better than subsequent
+  items because it receives a greater increment in strength in STM upon
+  presentation, not because it decays more slowly in STM or because it acquires
+  some strength in a longterm memory.%
+    }
+    \field{number}{2}
+    \field{pages}{316\bibrangedash 347}
+    \field{title}{Strength Models and Serial Position in Short-Term Recognition
+  Memory}
+    \field{volume}{3}
+    \field{journaltitle}{Journal of Mathematical Psychology}
+    \field{year}{1966}
   \endentry
 
   \entry{Wixted1992}{article}{}
