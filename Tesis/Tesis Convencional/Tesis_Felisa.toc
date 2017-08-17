@@ -13,10 +13,10 @@
 \contentsline {subsection}{\numberline {2.1.4}Tareas de detecci\IeC {\'o}n}{27}{subsection.34}
 \contentsline {section}{\numberline {2.2}Teor\IeC {\'\i }a de Detecci\IeC {\'o}n de Se\IeC {\~n}ales en Memoria}{31}{section.36}
 \contentsline {subsection}{\numberline {2.2.1} Memoria de Reconocimiento}{33}{subsection.41}
-\contentsline {subsection}{\numberline {2.2.2}Implicaciones y conflictos}{34}{subsection.44}
-\contentsline {section}{\numberline {2.3}El Efecto Espejo}{35}{section.45}
-\contentsline {subsection}{\numberline {2.3.1}Evidencia recolectada}{37}{subsection.47}
-\contentsline {subsection}{\numberline {2.3.2}Relevancia, implicaciones e interpretaciones}{43}{subsection.50}
+\contentsline {subsection}{\numberline {2.2.2}Implicaciones y conflictos}{35}{subsection.44}
+\contentsline {section}{\numberline {2.3}El Efecto Espejo}{36}{section.45}
+\contentsline {subsection}{\numberline {2.3.1}Evidencia recolectada}{38}{subsection.47}
+\contentsline {subsection}{\numberline {2.3.2}Relevancia, implicaciones e interpretaciones}{44}{subsection.50}
 \contentsline {section}{\numberline {2.4}Planteamiento del problema}{48}{section.57}
 \contentsline {chapter}{\numberline {3}M\IeC {\'e}todo}{51}{chapter.58}
 \contentsline {section}{\numberline {3.1}Planteamiento general}{51}{section.59}
