@@ -371,42 +371,6 @@
     \field{year}{1994}
   \endentry
 
-  \entry{Brown1977}{article}{}
-    \name{author}{3}{}{%
-      {{hash=BJ}{%
-         family={Brown},
-         familyi={B\bibinitperiod},
-         given={J.},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=LVJ}{%
-         family={Lewis},
-         familyi={L\bibinitperiod},
-         given={V.\bibnamedelima J.},
-         giveni={V\bibinitperiod\bibinitdelim J\bibinitperiod},
-      }}%
-      {{hash=MAF}{%
-         family={Monk},
-         familyi={M\bibinitperiod},
-         given={A.\bibnamedelima F.},
-         giveni={A\bibinitperiod\bibinitdelim F\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{BJLVJMAF1}
-    \strng{fullhash}{BJLVJMAF1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{1977}
-    \field{sortinit}{B}
-    \field{sortinithash}{B}
-    \field{number}{3}
-    \field{pages}{461\bibrangedash 473}
-    \field{title}{Memorability, Word Frequency and Negative Recognition}
-    \field{volume}{29}
-    \field{journaltitle}{Quarterly Journal of Experimental Psychology}
-    \field{year}{1977}
-  \endentry
-
   \entry{Centor1985}{article}{}
     \name{author}{2}{}{%
       {{hash=CRM}{%
@@ -668,6 +632,42 @@
     \field{year}{1959}
   \endentry
 
+  \entry{Eich1985}{article}{}
+    \name{author}{1}{}{%
+      {{hash=EJM}{%
+         family={Eich},
+         familyi={E\bibinitperiod},
+         given={Janet\bibnamedelima Metcalfe},
+         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{EJM1}
+    \strng{fullhash}{EJM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1985}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \field{abstract}{%
+    A model of cued recall called CHARM (composite holographic associative
+  recall model) is applied to several findings that have been investigated
+  within the depthof-processing framework. It is shown that, given some
+  straightforward, empiricallytestable assumptions about the representations of
+  the to-be-remembered items themselves, CHARM can account for the main effect
+  of depth of processing, the problem of the negatives, encoding-specificity
+  interactions, and effects—both facilitative and inhibitory—of
+  elaboration. The CHARM model is extended to encompass some
+  depth-of-processing effects found in recognition memory.%
+    }
+    \field{number}{1}
+    \field{pages}{1\bibrangedash 38}
+    \field{title}{Levels of Processing, Encoding Specifity, Elaboration and
+  CHARM}
+    \field{volume}{92}
+    \field{journaltitle}{Psychological Review}
+    \field{year}{1985}
+  \endentry
+
   \entry{Fechner}{book}{}
     \name{author}{1}{}{%
       {{hash=FGT}{%
@@ -846,6 +846,47 @@
     \field{title}{"Psychophysics: The Fundamentals"}
     \field{year}{2013}
     \field{origyear}{1975}
+  \endentry
+
+  \entry{Gillund1984}{article}{}
+    \name{author}{2}{}{%
+      {{hash=GG}{%
+         family={Gillund},
+         familyi={G\bibinitperiod},
+         given={Gary},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=SRM}{%
+         family={Shiffrin},
+         familyi={S\bibinitperiod},
+         given={Richard\bibnamedelima M.},
+         giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GGSRM1}
+    \strng{fullhash}{GGSRM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1984}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    The Search of Associative Memory (SAM) model for recall (Raaijmakers &
+  Shiffrin, 1981b) is extended by assuming that a familiarity process is used
+  for recognition. The recall model posits cue-dependent probabilistic sampling
+  and recovery from an associative network. Our recognition model is closely
+  related to the recall model because the total episodic activation due to the
+  context and item cues is used in recall as a basis for sampling and in
+  recognition to make a decision. The model, formalized in a computer
+  simulation program, correctly predicts a number of findings in the literature
+  as well as the results from a new experiment on the wordfrequency effect.%
+    }
+    \field{number}{1}
+    \field{pages}{1\bibrangedash 67}
+    \field{title}{A Retrieval Model for Both Recognition and Recall}
+    \field{volume}{91}
+    \field{journaltitle}{Psychological Review}
+    \field{year}{1984}
   \endentry
 
   \entry{Girgus1972}{article}{}
@@ -1723,6 +1764,51 @@
     \field{year}{1994}
   \endentry
 
+  \entry{Lockhart1970}{article}{}
+    \name{author}{2}{}{%
+      {{hash=LRS}{%
+         family={Lockhart},
+         familyi={L\bibinitperiod},
+         given={Robert\bibnamedelima S.},
+         giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=MBB}{%
+         family={Murdock},
+         familyi={M\bibinitperiod},
+         given={Bennet\bibnamedelima B.},
+         giveni={B\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LRSMBB1}
+    \strng{fullhash}{LRSMBB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1970}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{abstract}{%
+    The use of signal detection theory as a model of the decision process in
+  memory is discussed in terms of the problems of identification and testing.
+  Identification refers to the matching of elements of the formal theory with
+  constructs constituting a theory of memory. A number of issues are raised
+  concerning the identification of the sensory continuum, the decision axis,
+  and the distinction between signal and noise. The use of detection theory is
+  not a theoretically neutral method of dealing with response bias; the
+  validity of its use and the manner of its application depend heavily on
+  certain assumptions about the memory system. The form of the operating
+  characteristic can be used to test a number of these assumptions but such
+  tests are relatively insensitive. The use of detection theory in the analysis
+  of cued-recall data poses additional problems and is meaningful in the
+  context of some, but not all, theories of recall.%
+    }
+    \field{number}{2}
+    \field{pages}{100\bibrangedash 109}
+    \field{title}{Memory and the Theory of Signal Detection}
+    \field{volume}{74}
+    \field{journaltitle}{Psychological Bulletin}
+    \field{year}{1970}
+  \endentry
+
   \entry{WeijiMa2009}{article}{}
     \name{author}{1}{}{%
       {{hash=MWJ}{%
@@ -2082,6 +2168,45 @@
     \field{volume}{70}
     \field{journaltitle}{Journal of Experimental Psychology}
     \field{year}{1965}
+  \endentry
+
+  \entry{Murdock1982}{article}{}
+    \name{author}{1}{}{%
+      {{hash=MBB}{%
+         family={Murdock},
+         familyi={M\bibinitperiod},
+         given={Bennet\bibnamedelima B.},
+         giveni={B\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MBB1}
+    \strng{fullhash}{MBB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1982}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    TA theory for the storage and retrieval of item and associative information
+  is presented. In the theory, items or events are represented as random
+  vectors. Convolution is used as the storage operation, and correlation is
+  used as the retrieval operation. A distributed-memory system is assumed; all
+  information is stored in a common memory vector. The theory applies to both
+  recognition and recall and covers both accuracy and latency. Noise in the
+  decision stag necessitates a two-criterion decision system, and over time the
+  criteria converge until a decision is reached. Performance is predicted from
+  the moments (expectation and variance) of the similarity distributions, and
+  these can be derived from the theory. Several alternative models with varying
+  degrees of distributed memory are considered, and expressions for
+  signal-to-noise ratio and relative efficiency are derived.%
+    }
+    \field{number}{6}
+    \field{pages}{609\bibrangedash 626}
+    \field{title}{A Theory for the Storage and Retrieval of Item and
+  Associative Information}
+    \field{volume}{89}
+    \field{journaltitle}{Psychological Review}
+    \field{year}{1982}
   \endentry
 
   \entry{Murdock1998}{article}{}
