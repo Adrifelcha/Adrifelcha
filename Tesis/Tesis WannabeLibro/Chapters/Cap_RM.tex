@@ -1,0 +1,106 @@
+% Chapter Template
+
+\chapter{El Efecto Espejo en Memoria de Reconocimiento} % Main chapter title
+
+\label{Cap_RM} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
+
+%----------------------------------------------------------------------------------------
+%	SECTION 1
+%----------------------------------------------------------------------------------------
+En este capítulo se revisará 
+
+\section{Panorama general del estudio de Memoria de Reconocimiento}
+
+\subsection{Teoría del Umbral}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies lacinia euismod. Nam tempus risus in dolor rhoncus in interdum enim tincidunt. Donec vel nunc neque. In condimentum ullamcorper quam non consequat. Fusce sagittis tempor feugiat. Fusce magna erat, molestie eu convallis ut, tempus sed arcu. Quisque molestie, ante a tincidunt ullamcorper, sapien enim dignissim lacus, in semper nibh erat lobortis purus. Integer dapibus ligula ac risus convallis pellentesque.
+
+%-----------------------------------
+%	SUBSECTION 1
+%-----------------------------------
+\subsection{Teoría del Procesamiento Dual}
+
+La Teoría del Procesamiento Dual (TPD; o PDT por sus siglas en inglés) sostiene que existen dos procesos fundamentales involucrados en todo juicio de reconocimiento: la recolección y el análisis de familiaridad. El primero corresponde a la extracción de rasgos y detalles específicos del estímulo a evaluar, (i.e. el estímulo que queremos determinar si se ha visto antes, o no), un proceso que requiere cierto tiempo; el segundo, es entendido como un fenómeno más o menos automático y casi instantáneo donde el sistema identifica el estímulo como 'familiar' y decide que lo ha reconocido de alguna experiencia previa. 
+
+%-----------------------------------
+%	SUBSECTION 2
+%-----------------------------------
+
+\section{Teoría de Detección de Señales en Memoria de Reconocimiento}
+Aplicar la TDS al estudio de la Memoria de Reconocimiento implica asumir que existe tal cosa como una 'fuerza de memoria' ('memory strength', en inglés) que refleja el grado en que un estímulo cualquiera es percibido como 'familiar' para el sistema que busca emitir un juicio de detección. La fuerza de memoria evocada por cada estímulo se compara con un criterio de elección para que el sistema pueda decidir si lo reconoce, o no, como 'elemento antes visto'.\\ 
+
+\begin{figure}[th]
+\centering
+\includegraphics[width=0.60\textwidth]{Figures/RM_SDT_1} 
+\decoRule
+\caption[SDT en Memoria de Reconocimiento]{Modelo de Detección de Señales aplicado al estudio de Memoria de Reconocimiento}
+\label{fig:RM_SDT_1}
+\end{figure}
+
+La Figura~\ref{fig:RM_SDT_1} ilustra la forma en que los supuestos de la TDS, expuestos a detalle en el Capítulo 1, se aplican al estudio de la Memoria de Reconocimiento. Las idea central se mantiene en escencia y simplemente sustituimos algunos conceptos: al tratarse de una tarea de reconocimiento, decimos que la 'señal' a detectar es cualquier estímulo antes visto (i.e. 'estímulos viejos', como suelen identificarse en la literatura); el 'ruido' son los estímulos nuevos, que podrían -o no- confundirse con los primeros; el 'eje de decisión' a lo largo del cual se sitúan las dos distribuciones de ruido y señal, se convierte en un 'eje de familiaridad' que va a representar distintos grados de lo que parece ser una 'fuerza de memoria'. También se mantienen las ideas centrales propuestas por el modelo: los estímulos ya antes vistos tendrán valores más altos de 'familiaridad' que aquellos nunca antes vistos, admitiendo sin embargo la posibilidad de que éstos últimos puedan llegar a confundirse con los estímulos viejos, por ejemplo, si comparten algun rasgo en particular; una vez más, dicha variabilidad en la presentación y lectura de los estímulos a evaluar se refleja en la idea de que existen distintos rangos de familiaridad que pueden ser producidos por los estímulos viejos o conocidos, con cierta distribución de probabilidad. Y de la misma forma, la emisión de un juicio se entiende como resultado de comparar la 'familiaridad' de cada estímulo a evaluar con un criterio de elección particular, donde sólo si éste se rebasa, se juzga el estímulo como 'ya antes visto'.\\
+
+Como se mencionó en el Capítulo 1, la TDS en su forma típica define las distribuciones de ruido y señal como distribuciones Gaussianas con varianzas iguales (i.e. con una misma desviación estándar). A propósito de ello, podemos hablar de una particularidad que tiene la aplicaicón de la TDS a estudios de memoria de reconocimiento, que ha sido constante y consistentemente demostrada con los datos: la distribución de Estímulos Viejos suele mostrar mayor desviación estándar que la distribución de Ruido, justo como se muestra en la Figura~\ref{fig:RM_SDT_2}.\\
+
+
+\begin{figure}[th]
+\centering
+\includegraphics[width=0.60\textwidth]{Figures/RM_SDT_2} 
+\decoRule
+\caption[SDT en Memoria de Reconocimiento (Varianzas Desiguales)]{Modelo de Detección de Señales con varianzas desiguales aplicado al estudio de Memoria de Reconocimiento}
+\label{fig:RM_SDT_2}
+\end{figure}
+
+
+\subsection{Implicaciones y conflictos}
+
+Me permitiré, por un momento, salirme del molde académico y hablar un poco de todo el proceso que hubo detrás de la realización del presente trabajo. Cuando comencé a revisar literatura para decidir cuál podría ser mi proyecto de tesis, descubrí la maravilla de la Teoría de Detección de Señales. 
+
+Sin embargo, pese a la flexibilidad de la que dispone la TDS para aplicarse a, aparentemente, cualquier tarea de decisión binaria, donde se admita el papel de la incertidumbre en la emisión de un juicio de detección, su aplicación al campo de la Memoria de Reconocimiento no ha estado excenta de críticas.
+
+Conceptualmente, es fácil pensar en una tarea de reconocimiento en términos del modelo de detección de señales. Sin embargo, cuando se revisan las implicaciones teóricas que conllevaría aceptar que la memoria de Reconocimiento funciona como un procedimiento cualquiera de detección de señales, no son del todo claras. 
+
+\section{El Efecto Espejo}
+
+“is usually interpreted in terms of (unequal variance) signal detection theory (SD) in which case it implies that the order of the underlying old item distributions mirrors the order of the new item distributions” (DeCarlo, L.,  2007)\\
+Teoría de Atención /Verosimilitud: Un modelo de marcaje de rasgos, determinado por un muestreo diferencial dada la condición (H-frequency, L-frequency)\\
+Teoría de Atención / Verosimilitud; demasiado complicada, sus supuestos no son necesarios (Decarlo, 2007; Hintzman, 1994; Murdock, 1998) Intercambio de papers Hintzman-Glanzer\\
+‘The mixture model’ (DeCarlo, 2007) – Extensión de la SDT, una extensión mezclada.\\
+Between vs Within condition discussion (Listas separadas o mezcladas)\\
+Between condition: Problemas (1) No se puede descartar la posibilidad de que el criterio de respuesta difiera a lo largo de las condiciones. Y (2) las distribuciones subyacentes no necesariamente están escaladas de la misma forma a lo largo de las dos condiciones.\\
+“one cannot compare the values of d’ across the two conditions without further assuming that the variance of the reference distributions (LN and HN) are the same, which does not appear to be the case. (DeCarlo,2007)  
+
+%----------------------------------------------------------------------------------------
+%	SECTION 1
+%----------------------------------------------------------------------------------------
+
+\subsection{Evidencia recolectada}
+
+Teóricamente, este procedimiento nos permitiría inferir no uno, sino seis sub-criterios de elección que estarían permeando a partir de cuánta evidencia el participante se siente más, o menos seguro, de si los estímulos evaluados contienen la señal o sólo ruido. De encontrarse evidencia del Efecto Espejo en los experimentos realizados, se esperaría encontrar el mismo patrón en el promedio de los puntajes de confianza asignados a cada una de las cuatro categorías de estímulos (formadas por la combinación Condición (A o B) x Tipo de ensayo (S o R)) reportados en la literatura en Memoria de Reconocimiento \parencite{Glanzer1990, Glanzer1993}. \\
+
+La Figura~\ref{fig:Ejem_Crit} 
+
+\begin{figure}[th]
+\centering
+\includegraphics[width=0.55\textwidth]{Figures/Ejem_Criterios}
+%\decoRule
+\caption[Representación gráfica de los sub-Criterios para la emisión de puntajes de confianza ]{}
+\label{fig:Ejem_Crit}
+\end{figure}
+
+
+
+\subsection{Relevancia e implicaciones}
+A primera vista el patrón de respuestas identificado como Efecto Espejo podría parecer trivial: Si sabemos que lo que distingue a las condiciones de estímulos 
+
+%-----------------------------------
+%	SUBSECTION 1
+%-----------------------------------
+\subsection{Algunos modelos desarrollados para dar cuenta del Efecto Espejo}
+
+\begin{itemize} 
+\item
+\item
+\end{itemize}
+
+
+
