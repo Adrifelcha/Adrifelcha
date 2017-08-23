@@ -1729,6 +1729,47 @@
     \field{year}{2016-2017}
   \endentry
 
+  \entry{Lee2011}{article}{}
+    \name{author}{1}{}{%
+      {{hash=LMD}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Michael\bibnamedelima D.},
+         giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LMD1}
+    \strng{fullhash}{LMD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2011}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{abstract}{%
+    Hierarchical Bayesian modeling provides a flexible and interpretable way of
+  extending simple models of cognitive processes. To introduce this special
+  issue, we discuss four of the most important potential hierarchical Bayesian
+  contributions. The first involves the development of more complete theories,
+  including accounting for variation coming from sources like individual
+  differences in cognition. The second involves the capability to account for
+  observed behavior in terms of the combination of multiple different cognitive
+  processes. The third involves using a few key psychological variables to
+  explain behavior on a wide range of cognitive tasks. The fourth involves the
+  conceptual unification and integration of disparate cognitive models. For all
+  of these potential contributions, we outline an appropriate general
+  hierarchical Bayesian modeling structure. We also highlight current models
+  that already use the hierarchical Bayesian approach, as well as identifying
+  research areas that could benefit from its adoption.%
+    }
+    \field{number}{1}
+    \field{pages}{1\bibrangedash 7}
+    \field{title}{How cognitive modeling can benefit from hierarchical Bayesian
+  models}
+    \field{volume}{55}
+    \field{journaltitle}{Journal of Mathematical Psychology}
+    \field{year}{2011}
+  \endentry
+
   \entry{Link1994}{article}{}
     \name{author}{1}{}{%
       {{hash=LSW}{%
