@@ -1770,6 +1770,41 @@
     \field{year}{2011}
   \endentry
 
+  \entry{LeeBook}{book}{}
+    \name{author}{2}{}{%
+      {{hash=LMD}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Michael\bibnamedelima D.},
+         giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=WEJ}{%
+         family={Wagenmakers},
+         familyi={W\bibinitperiod},
+         given={Eric-Jan},
+         giveni={E\bibinitperiod-J\bibinitperiod},
+      }}%
+    }
+    \name{editor}{1}{}{%
+      {{hash=PCU}{%
+         family={Press"},
+         familyi={P\bibinitperiod},
+         given={"Cambridge\bibnamedelima University},
+         giveni={C\bibinitperiod\bibinitdelim U\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LMDWEJ1}
+    \strng{fullhash}{LMDWEJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2013}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{edition}{1st Edition}
+    \field{title}{"Bayesian Cognitive Modeling: A practical course"}
+    \field{year}{2013}
+  \endentry
+
   \entry{Link1994}{article}{}
     \name{author}{1}{}{%
       {{hash=LSW}{%

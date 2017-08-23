@@ -244,7 +244,7 @@ Las gráficas correspondientes al desempeño de cada uno de los participantes en
 
 \section{Análisis estadísticos}
 
-En cada una de las tareas contenidas en los experimentos realizados (la tarea de detección binaria y el procedimiento de escala de confianza), los patrones de respuesta identificados como parte del Efecto Espejo se presentaron en al menos tres cuartas partes de los participantes. De los veinte participantes en el Experimento 1, diecisiete ($85\%$) mostraron el patrón de respuesta esperado en la tarea binaria y dieciocho ($90\%$) en la escala de confianza. A su vez, en el Experimento 2, diecinueve de los veintiun participantes ($90\%$) presentaron el mismo patrón en ambas tareas. Estas proporciones resultan estadísticamente significativas al compararlas contra el azar con una prueba binomial ($p=0.0025$ y $p=0.0004$ en el caso de las proporciones reportadas en el Experimento 1, respectivamente, y $p=0.0002$ para lo reportado en el Experimento 2).\\
+En cada una de las tareas contenidas en los experimentos realizados (la tarea de detección binaria y el procedimiento de escala de confianza), los patrones de respuesta identificados como parte del Efecto Espejo se presentaron en al menos tres cuartas partes de los participantes. De los veinte participantes en el Experimento 1, diecisiete ($85\%$) mostraron el patrón de respuesta esperado en la tarea binaria y dieciocho ($90\%$) en la escala de confianza. A su vez, en el Experimento 2, dieciocho de los veinte participantes incluidos en la muestra ($90\%$) presentaron el mismo patrón en ambas tareas. Estas proporciones resultan estadísticamente significativas al compararlas contra el azar con una prueba binomial ($p=0.0025$ y $p=0.0004$ en el caso de las proporciones reportadas en el Experimento 1, respectivamente, y $p=0.0004$ para lo reportado en el Experimento 2).\\
 
 Tomando en cuenta que el diseño de las clases de estímulos a comparar se realizó de manera exploratoria y que los experimentos realizados estuvieron compuestos por una tarea de detección que se presentó en términos de dos sub-tareas, el análisis de los datos recabados se llevó a cabo en el siguiente orden:\\
 
@@ -344,47 +344,86 @@ La Figura~\ref{fig:Diff_D} presenta de manera gráfica la comparación entre los
 
 A continuación se presentan los análisis realizados para determinar si las discrepancias que parecieran ser evidentes en la Figura~\ref{fig:Diff_D}, son estadísticamente significativas.\\
 
-\textbf{Análisis 1: Prueba T para comparar las medias de $d'$ de cada condición}
+\textbf{Análisis Frecuentista: Prueba T para comparar las medias de $d'$ por nivel de dificultad}\\
+
+Tal y como se reporta en la literatura, se realizó una prueba T para comparar la precisión con que los participantes podían discriminar los estímulos con Señal y los estímulos con Ruido en cada una de las clases de estímulos construidas. Para ello, se computaron los valores de $d'$ correspondientes al desempeño de los participantes en cada nivel de dificultad y se comparó la diferencia entre los promedios de los valores obtenidos.\\
+
+La Tabla~\ref{Tabla_t-HitsyFA} presenta el promedio de las $d'$ computadas por cada nivel de dificultad en cada uno de los experimentos realizados, la diferencia en estas y un indicador sobre su significancia estadística. Como se puede apreciar, la diferencia entre las medias de $d'$ estimadas es significativa en ambos experimentos.\\
 
 \begin{table}
-\caption[Prueba T para evaluar diferencias en las medias de d' entre las condiciones]{Diferencias en d'}
+\caption[Prueba T para evaluar las diferencias entre las medias de $d'$ por nivel de dificultad]{Prueba T para evaluar las diferencias entre las medias de $d'$ computadas por nivel de dificultad}
 \label{Tabla_t-HitsyFA}
 \centering
 \begin{tabular}{l | c c c c}
 \toprule
 %\tabhead{Groups} & \tabhead{Treatment X} & \tabhead{Treatment Y} \\
-\textbf{Experimento} & \textbf{$\mu$ A} & \textbf{$\mu$ B} & \textbf{T}  & \textbf{P value}\\
+\textbf{Experimento} & \textbf{$\mu d'(A)$} & \textbf{$\mu d'(B)$} & \textbf{T}  & \textbf{P value}\\
 \midrule
-Experiment 1 & 3.240 & 2.448 & -3.0587 & 0.0020 \\
-Experiment 2 & 1.950 & 1.022 & -3.4972 & 0.0005 \\
+Experimento 1 & 3.240 & 2.448 & -3.0587 & 0.0020 \\
+Experimento 2 & 1.981 & 1.038 & -3.4131 & 0.0007 \\
 \bottomrule
 \end{tabular}
 \end{table}
 
 
-\textbf{Análisis 2: Modelo jerárquico bayesiano: Modelo Delta para diferencias en d'}
+\textbf{Análisis Bayesiano: Modelo jerárquico bayesiano para evaluar las diferencias en $d'$}\\
 
-Se desarrolló un modelo jerárquico bayesiano que asume que las d' y los sesgos C estimados por cada participante en cada una de las condiciones provienen de una distribución normal. El modelo incorpora un parámetro $\delta$ que representa las diferencias entre las medias de las d' estimadas por concidión.
+Partiendo del modelo bayesiano estándar que describe los supuestos realizados por la TDS, \parencite{LeeBook}, se desarrolló un modelo jerárquico bayesiano que asume que tanto los valores de $d'$, como el sesgo $c$ estimado por cada nivel de dificultad se distribuyen de acuerdo a una distribución normal, de donde se extraen los valores computados por cada participante. Bajo este supuesto, el modelo utiliza las inferencias realizadas sobre los valores de $d'$ y $c$ que subyacen al desempeño de cada sujeto para estimar los parámetros que definen la distribución normal de donde se asume que éstos son extraidos (la media ($\mu$) y la desviación estándar $\sigma$). Finalmente, el modelo incorpora un parámetro $\delta$ que computa la diferencias entre las medias de las $d'$ estimadas por concidión.\\
 
-El modelo desarrollado puede verse en la Figura~\ref{fig:Mod_Delta}, estando compuesto por los siguientes elementos:
+El modelo gráfico que presenta los parámetros y relaciones definidas en el modelo desarrollado se presenta en la Figura~\ref{fig:Mod_Delta} y está compuesto por los siguientes elementos:\\
 
 \begin{itemize}
-\item \textbf{Los datos: la materia prima que se señala con nodos sombreados.}
-Dado el diseño experimental, conocemos el número total de ensayos con ruido (n) y señal (s). Adicionalmente, por cada participante sabemos cuál es el número total de Hits y Falsas Alarmas cometidos durante el experimento ($H_ij$ y $Fa_ij$, respectivamente). En el modelo, los datos se contienen en nodos cuadrados porque son variables discretas (Nodos circulares indican variables contínuas).\\
+\item \textbf{Nodos sombreados que representan los datos.}\\
 
-\item \textbf{Las tasas como una probabilidad oculta.} 
-En la literatura clásica en TDS las tasas de hits y falsas alarmas se interpretan directamente como la proporción de las distribuciones de señal y ruido que caen por encima del criterio ($REFERENCIAS$), respectivamente. Sin embargo, el modelamiento bayesiano nos permite asumir que el número de Hits y Falsas Alarmas observado en cada participante es el resultado de una probabilidad oculta, como parte de un proceso biniomial. Es decir, se asume que el número de Hits y Falsas alarmas
+En los modelos gráficos, los nodos representan las variables que el modelo a representar asume tienen una influencia sobre el proceso cognitivo de interés. Dependiendo cómo estén dibujados, los nodos proporcionan información sobre la naturaleza de dichas variables en torno a tres grandes puntos: 1) la variable adopta valores contínuos (nodo circular) o discretos (nodo cuadrado); 2) el valor de la variable es conocido (nodo sombreado) o necesita ser inferido a partir de los datos (nodo claro), y 3) la variable es probabilística (nodo simple) si está determinada por el valor inferido de otras variables (doble nodo), \parencite{LeeBook}.\\
 
-\item \textbf{Sesgo y Discriminabilidad}
-De acuerdo con la TDS, las tasas 
+En el caso de nuestros experimentos, los datos registrados de manera directa -a partir de los cuales se desarrolla todo el análisis- son el número de ensayos con Ruido ($n$) y Señal ($s$), y los resultados obtenidos en la tarea: el número total de Hits ($H_ij$) y Falsas Alarmas (($Fa_ij$) cometidos por cada participante ($i$) en cada condición ($j$).\\
 
-\item \textbf{Plato de participantes} 
+\item \textbf{Las tasas de Hits y Falsas Alarmas como una probabilidad oculta.}\\ 
 
-\item \textbf{Estructura jerárquica:}
+Mientras que en la literatura clásica en TDS las tasas registradas de Hits y Falsas Alarmas son interpretadas como reflejo directo del área de las distribuciones de Señal y Ruido que caen por encima del criterio de elección, \parencite{Wickens, Gescheider, Stainslaw1999}, bajoe el marco del modelamiento bayesiano, el total registrado de Hits y Falsas Alarmas ($H_ij$ y $Fa_ij$) se toma una instancia de un conteo de casos específicos encontrados dentro de un conjunto de observaciones ($s$ y $n$, respectivamente) con cierta probabilidad ($\theta^H_{ij}$ y $\theta^F_{ij}$).\\
 
-\item \textbf{Plato de Condición}
+En otras palabras, el modelo bayesiano propuesto asume que $H_ij$ y $Fa_ij$ representan un "número de éxitos" extraídos con una probabilidad oculta de un conjunto definido de observaciones, de acuerdo a una distribución binomial con parámetros $p=$ ($\theta^H_{ij}$ o $\theta^F_{ij}$) y $n=$ ($s$ o $n$). Es decir:\\
 
-\item \textbf{Parámetro Delta}
+\begin{center}
+$H_{ij}\sim \mathrm{Binomial}\bigl(\theta^H_{ij}, s)$
+y
+$F_{ij}\sim \mathrm{Binomial}\bigl(\theta^F_{ij}, n)$\\
+\end{center}
+
+%Mientras que en la literatura clásica en TDS las tasas registradas de Hits y Falsas Alarmas son interpretadas como reflejo directo del área de las distribuciones de Señal y Ruido que caen por encima del criterio de elección, \parencite{Wickens, Gescheider, Stainslaw1999}, bajo el marco del modelamiento bayesiano, el total registrado de Hits y Falsas Alarmas ($H_ij$ y $Fa_ij$) se toma como una instancia de un conteo de casos -o bien, el "número de éxitos"- extraidos de un conjunto definido de observaciones con una probabilidad oculta. Es decir, los Hits y Falsas Alarmas son extraídos de acuerdo a una distribución binomial con parámetros $p= \theta^H_{ij} o \theta^F_{ij}$ y $n= s o n$.\\
+
+\item \textbf{Sesgo y Discriminabilidad}\\
+
+De acuerdo con la TDS, la probabilidad que determina las tasas registradas de Hits y Falsas Alarmas ($\theta^H_{ij}$ y $\theta^F_{ij}$) representan el área de las distribuciones de Señal y Ruido que caen por encima de los criterios de elección utilizados por los participantes. Es decir, que dicha probabilidad está definida como la función de densidad acumulada (CDF, por sus siglas en inglés, típicamente representada con el parámetro $\phi$) en una distribución normal estándar para la ubicación de $x$ que corresponde a la diferencia entre $\frac{1}{2}D_{ij}$ (en el caso de los Hits) o $\frac{1}{2}D_{ij}$ (en el caso de las Falsas Alarmas), y la medida de sesgo $C_{ij}$. Es decir:\\
+
+\begin{center}
+$\theta^H_{ij}\gets \phi (\frac{1}{2}D_{ij}-C_{ij})$
+y
+$\theta^F_{ij}\gets \phi (-\frac{1}{2}D_{ij}-C_{ij})$\\
+\end{center}
+
+\CONSIDERAR \AGREGAR \UNA \FIGURA \ILUSTRATIVA
+
+\item \textbf{Plato de participantes}\\
+
+En los modelos gráficos bayesianos se utilizan platos para representar lo que en cualquier lenguaje de programación se conoce como \textit{ciclo for}. En otras palabras, los platos indican un \textit{loop} que los valores contenidos dentro de sí, se van a computar  
+
+En el caso del modelo desarrollado, el primer plato nos indica que el cómputo de las probabilidades ocultas tras la emisión de cierta cantidad de Hits y Falsas Alarmas ($\theta^H_{ij}$ y $\theta^F_{ij}$), así como de los valores de los parámetros $D_{ij}$ y $C_{ij}$ que mejor describen dichas probabilidades de acuerdo a la estructura de las distribuciones normales, se va a repetir por cada uno de los participantes incluidos en el experimento ($i participantes$).\\
+
+\item \textbf{Estructura jerárquica: Distribuciones normales que describen los datos individuales}\\
+
+
+
+
+\item \textbf{Plato de Condición}\\
+
+
+
+\item \textbf{Parámetro Delta}\\
+
+
+
 \end{itemize} 
 
 \begin{figure}[th]
@@ -398,12 +437,7 @@ De acuerdo con la TDS, las tasas
 
 
 
-
-
-
-
-
-\section{Diferencias en las Tasas de Hits y Falsas Alarmas}
+\subsection{Diferencias en las Tasas de Hits y Falsas Alarmas}
 
 
 
@@ -431,7 +465,7 @@ La Figura~\ref{fig:MirrorRate_E2_P4} muestra la frecuencia absoluta de Hits y Fa
 \end{figure}
 
 
-\subsection{Análisis 1: Prueba T}
+\textbf{Análisis 1: Prueba T}
 
 
 
@@ -452,8 +486,7 @@ Exp 2 & FA & 0.268 & 0.336 & 1.769 & 0.0425 \\
 \end{tabular}
 \end{table}
 
-
-\subsection{Modelo bayesiano}
+\textbf{Modelo bayesiano}
 
 
 \begin{figure}[th]
@@ -477,7 +510,7 @@ Exp 2 & FA & 0.268 & 0.336 & 1.769 & 0.0425 \\
 
 
 
-\section{Diferencias en la asignación de Puntajes de Confianza}
+\subsection{Diferencias en la asignación de Puntajes de Confianza}
 
 
 La Figura~\ref{fig:MirrorRating_E1_P10} muestra el promedio de los puntajes de confianza asignados por el Participante 10 del Experimento 1 a los estímulos pertenecientes a cada una de las condiciones de dificultad construidas, separando para cada caso los ensayos con ruido y señal. En la figura puede apreciarse con claridad una tendencia ascendente que coincide con el patrón reportado en estudios de Memoria de Reconocimiento.\\
@@ -496,7 +529,7 @@ La Figura~\ref{fig:MirrorRating_E1_P10} muestra el promedio de los puntajes de c
 
 
 
-\subsection{Análisis 1: }
+\textbf{Análisis 1: }
 
 \begin{table}
 \caption[Prueba T para evaluar diferencias en las medias de los puntajes de confianza asigandos entre condiciones]{}
@@ -516,6 +549,7 @@ Exp 2 & Noise & 2.386 & 2.752 & -1.809 & 0.0391 \\
 \end{table}
 
 
+\textbf{Análisis Bayesiano: Prueba T bayesiana }
 
 
 
@@ -526,7 +560,8 @@ Exp 2 & Noise & 2.386 & 2.752 & -1.809 & 0.0391 \\
 
 
 
-\section{Réplica de controles reportados en la literatura}
+
+\subsection{Réplica de controles reportados en la literatura}
 
 
 
