@@ -3,12 +3,12 @@ rm(list=ls())
 dir()
 
 #Archivo que contiene nuestros datos
-archive <-'Ex_2Ebb_TODOS-.csv'
+archive <-'Ex_2Ebb_TODOS_No1.csv'
 datos <- read.csv(archive)
 
 ################## PRE PRUEBAS
 ### Binomial para probar la evidencia recolectada contra el azar
-Mirror_Rates<- binom.test(17, 20, p = 0.5) 
+Mirror_Rates<- binom.test(18, 20, p = 0.5) 
 Mirror_Rates#La probabilidad de obtener #Casos con Mirror Effect, si dependiera del azar.
 Mirror_Confidence <- binom.test(18,20,p=0.5)
 Mirror_Confidence

@@ -1,4 +1,4 @@
-setwd("C:/Users/Adriana/Desktop/Felisa/Tesis/CSVs")
+setwd("C:/Users/Alejandro/Desktop/Felisa/Tesis/CSVs")
 rm(list=ls())
 dir()
 
@@ -22,7 +22,7 @@ d_Dificil <- datos$d_B
 d_AyB<- data.frame(cbind(d_Facil, d_Dificil))
 dprimas <- stack(d_AyB)
 #Corremos la T
-t.test(values~ind,data=dprimas,alternative = c("greater"))
+t.test(values~ind,data=dprimas,alternative = c("less"))
 
 
 ############## MIRROR EFFECT
