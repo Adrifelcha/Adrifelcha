@@ -407,24 +407,36 @@ $\theta^F_{ij}\gets \phi (-\frac{1}{2}D_{ij}-C_{ij})$\\
 
 \item \textbf{Plato de participantes}\\
 
-En los modelos gráficos bayesianos se utilizan platos para representar lo que en cualquier lenguaje de programación se conoce como \textit{ciclo for}. En otras palabras, los platos indican un \textit{loop} que los valores contenidos dentro de sí, se van a computar  
+En los modelos gráficos bayesianos se utilizan platos para representar lo que en cualquier lenguaje de programación se conoce como un \textit{ciclo for}, \parencite{LeeBook}. Es decir, los platos delimitan conjuntos de parámetros cuyo cómputo se realizará tantas veces como casos -o conjuntos de datos- represente el plato. Por ejemplo, un plato $a$ que contiene los parámetros $p_1, p_2... p_n$ indica que el cómputo de estos se realizará por cada caso contenido en $a$.\\
 
-En el caso del modelo desarrollado, el primer plato nos indica que el cómputo de las probabilidades ocultas tras la emisión de cierta cantidad de Hits y Falsas Alarmas ($\theta^H_{ij}$ y $\theta^F_{ij}$), así como de los valores de los parámetros $D_{ij}$ y $C_{ij}$ que mejor describen dichas probabilidades de acuerdo a la estructura de las distribuciones normales, se va a repetir por cada uno de los participantes incluidos en el experimento ($i participantes$).\\
+En el caso del modelo desarrollado, el primer plato ($i participantes$) señala que el cómputo de las probabilidades ocultas tras la emisión de cada par de Hits y Falsas Alarmas registrado ($\theta^H_{ij}$ y $\theta^F_{ij}$) y la estimación del valor de los parámetros $D_{ij}$ y $C_{ij}$ que mejor permitan dar cuenta de dichas probabilidades a partir de la CDF de un par de distribuciones normales, se va a repetir y realizar por cada uno de los participantes ($i$) incluidos en el experimento -es decir, por cada par de Hits y Falsas Alarmas recolectado-.\\
+
+No hay necesidad de incluir los parámetros $n$ y $s$, que representan el total de ensayos con Ruido y Señal contenidos en el experimento, ya que estos permanecen constantes para todos los participantes ($i$) y para todas las clases de estímulos ($j$).\\
 
 \item \textbf{Estructura jerárquica: Distribuciones normales que describen los datos individuales}\\
 
+Como ya se mencionó, la cualidad esencial del modelo desarrollado es que asume que los parámetros $D_{j}$ y $C_{j}$ computados por cada sujeto $i$ son extraídos de distribuciones normales que describen la discriminabilidad ($d'$) y el sesgo ($c$) asociado a cada clase de estímulos $j$. Dichas distribuciones están definidas por los parámetros $\mu^D_{j}$, $\mu^C_{j}$ y $\sigma^D_{j}$, $\sigma^C_{j}$. Es decir:\\
 
-
+\begin{center}
+$D_{ij}\sim \mathrm{Gaussian}\bigl(\mu^D_{j},\lambda^D_{j})$
+y
+$C_{ij}\sim \mathrm{Gaussian}\bigl(\mu^C_{j},\lambda^C_{j})$\\
+\end{center}
 
 \item \textbf{Plato de Condición}\\
 
-
+Un segundo plato ($j condiciones$) señala que
 
 \item \textbf{Parámetro Delta}\\
 
+Finalmente, se incluye un parámetro Delta que va a computar de manera determinista la diferencia entre los valores estimados para las medias de $d'$ de cada nivel de dificultad, ($\mu^D_{A}$ y $\mu^D_{B}$). Es decir:\\
 
+\begin{center}
+$\delta \gets \mu^D_{A}-\mu^D_{B}$\\
+\end{center}
 
 \end{itemize} 
+
 
 \begin{figure}[th]
 \centering
