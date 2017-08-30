@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.25)  29 AUG 2017 20:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.25)  30 AUG 2017 14:58
 entering extended mode
 **./Tesis_Felisa.tex
 (Tesis_Felisa.tex
@@ -2858,7 +2858,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 54.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 54.
-[7] <Figures/Signal_Perception.pdf, id=556, 794.97pt x 614.295pt>
+[7] <Figures/Signal_Perception.pdf, id=557, 794.97pt x 614.295pt>
 File: Figures/Signal_Perception.pdf Graphic file (type pdf)
 
 <use Figures/Signal_Perception.pdf>
@@ -2867,7 +2867,7 @@ Package pdftex.def Info: Figures/Signal_Perception.pdf used on input line 58.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.95> on input line 60.
 
-<Figures/Signal_Presentation.pdf, id=557, 794.97pt x 614.295pt>
+<Figures/Signal_Presentation.pdf, id=558, 794.97pt x 614.295pt>
 File: Figures/Signal_Presentation.pdf Graphic file (type pdf)
 
 <use Figures/Signal_Presentation.pdf>
@@ -2910,7 +2910,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 82.
 [8 <./Figures/Signal_Perception.pdf>]
-<Figures/Noise.pdf, id=575, 794.97pt x 614.295pt>
+<Figures/Noise.pdf, id=576, 794.97pt x 614.295pt>
 File: Figures/Noise.pdf Graphic file (type pdf)
  <use Figures/Noise.pdf>
 Package pdftex.def Info: Figures/Noise.pdf used on input line 85.
@@ -2940,14 +2940,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 93--94
 
  []
 
-<Figures/Overlap_Small.pdf, id=587, 794.97pt x 614.295pt>
+<Figures/Overlap_Small.pdf, id=588, 794.97pt x 614.295pt>
 File: Figures/Overlap_Small.pdf Graphic file (type pdf)
 
 <use Figures/Overlap_Small.pdf>
 Package pdftex.def Info: Figures/Overlap_Small.pdf used on input line 97.
 (pdftex.def)             Requested size: 222.21722pt x 171.71085pt.
 
-<Figures/Overlap_Big.pdf, id=588, 794.97pt x 614.295pt>
+<Figures/Overlap_Big.pdf, id=589, 794.97pt x 614.295pt>
 File: Figures/Overlap_Big.pdf Graphic file (type pdf)
 
 <use Figures/Overlap_Big.pdf>
@@ -3028,7 +3028,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 115.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 115.
-[12] <Figures/Matriz_Outputs.png, id=621, 542.77782pt x 340.27126pt>
+[12] <Figures/Matriz_Outputs.png, id=622, 542.77782pt x 340.27126pt>
 File: Figures/Matriz_Outputs.png Graphic file (type png)
 
 <use Figures/Matriz_Outputs.png>
@@ -3039,7 +3039,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 124--125
 
  []
 
-<Figures/Graficador_Tasas.png, id=626, 427.5975pt x 281.55188pt>
+<Figures/Graficador_Tasas.png, id=627, 427.5975pt x 281.55188pt>
 File: Figures/Graficador_Tasas.png Graphic file (type png)
 
 <use Figures/Graficador_Tasas.png>
@@ -3106,7 +3106,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 146.
 [14 <./Figures/Graficador_Tasas.png>]
-<Figures/Matriz_Pagos.png, id=639, 595.47469pt x 402.00188pt>
+<Figures/Matriz_Pagos.png, id=640, 595.47469pt x 402.00188pt>
 File: Figures/Matriz_Pagos.png Graphic file (type png)
 
 <use Figures/Matriz_Pagos.png>
@@ -3319,7 +3319,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 208--209
 
  []
 
-<Figures/Graficador_Criterio.png, id=692, 441.90094pt x 316.18124pt>
+<Figures/Graficador_Criterio.png, id=693, 441.90094pt x 316.18124pt>
 File: Figures/Graficador_Criterio.png Graphic file (type png)
 
 <use Figures/Graficador_Criterio.png>
@@ -3366,7 +3366,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 230--231
 
  []
 
-<Figures/Graficador_Discriminabilidad.png, id=703, 459.96844pt x 441.14813pt>
+<Figures/Graficador_Discriminabilidad.png, id=704, 459.96844pt x 441.14813pt>
 File: Figures/Graficador_Discriminabilidad.png Graphic file (type png)
 
 <use Figures/Graficador_Discriminabilidad.png>
@@ -3563,7 +3563,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 321--322
 
  []
 
-<Figures/Graficador_Sesgo_Liberal.png, id=736, 680.5425pt x 386.94562pt>
+<Figures/Graficador_Sesgo_Liberal.png, id=737, 680.5425pt x 386.94562pt>
 File: Figures/Graficador_Sesgo_Liberal.png Graphic file (type png)
 
 <use Figures/Graficador_Sesgo_Liberal.png>
@@ -3571,7 +3571,7 @@ Package pdftex.def Info: Figures/Graficador_Sesgo_Liberal.png used on input lin
 e 325.
 (pdftex.def)             Requested size: 242.4199pt x 137.83604pt.
 
-<Figures/Graficador_Sesgo_Neutro.png, id=738, 728.7225pt x 402.75468pt>
+<Figures/Graficador_Sesgo_Neutro.png, id=739, 728.7225pt x 402.75468pt>
 File: Figures/Graficador_Sesgo_Neutro.png Graphic file (type png)
 
 <use Figures/Graficador_Sesgo_Neutro.png>
@@ -3579,7 +3579,7 @@ Package pdftex.def Info: Figures/Graficador_Sesgo_Neutro.png used on input line
  326.
 (pdftex.def)             Requested size: 242.4199pt x 133.97878pt.
 
-<Figures/Graficador_Sesgo_Conservador.png, id=739, 688.82344pt x 387.69844pt>
+<Figures/Graficador_Sesgo_Conservador.png, id=740, 688.82344pt x 387.69844pt>
 File: Figures/Graficador_Sesgo_Conservador.png Graphic file (type png)
 
 <use Figures/Graficador_Sesgo_Conservador.png>
@@ -3640,7 +3640,7 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 341.
 [25 <./Figures/Graficador_Sesgo_Liberal.png> <./Figures/Graficador_Sesgo_Neutro
 .png> <./Figures/Graficador_Sesgo_Conservador.png>]
-<Figures/Graficador_ROC12.png, id=759, 967.36406pt x 343.2825pt>
+<Figures/Graficador_ROC12.png, id=760, 967.36406pt x 343.2825pt>
 File: Figures/Graficador_ROC12.png Graphic file (type png)
 
 <use Figures/Graficador_ROC12.png>
@@ -3798,7 +3798,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 388.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 388.
-[29] <Figures/Puntajes_Criterios.png, id=816, 1181.91562pt x 274.77657pt>
+[29] <Figures/Puntajes_Criterios.png, id=817, 1181.91562pt x 274.77657pt>
 File: Figures/Puntajes_Criterios.png Graphic file (type png)
 
 <use Figures/Puntajes_Criterios.png>
@@ -3806,7 +3806,7 @@ Package pdftex.def Info: Figures/Puntajes_Criterios.png used on input line 391.
 
 (pdftex.def)             Requested size: 323.22449pt x 75.14241pt.
 
-<Figures/ConfidenceRating.pdf, id=817, 814.04124pt x 655.44875pt>
+<Figures/ConfidenceRating.pdf, id=818, 814.04124pt x 655.44875pt>
 File: Figures/ConfidenceRating.pdf Graphic file (type pdf)
 
 <use Figures/ConfidenceRating.pdf>
@@ -4032,7 +4032,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 468.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 468.
-[34] <Figures/RM_SDT_1.pdf, id=912, 608.2725pt x 439.6425pt>
+[34] <Figures/RM_SDT_1.pdf, id=913, 608.2725pt x 439.6425pt>
 File: Figures/RM_SDT_1.pdf Graphic file (type pdf)
 
 <use Figures/RM_SDT_1.pdf>
@@ -4069,7 +4069,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 482.
 [35 <./Figures/RM_SDT_1.pdf>]
-<Figures/RM_SDT_2.pdf, id=932, 608.2725pt x 439.6425pt>
+<Figures/RM_SDT_2.pdf, id=933, 608.2725pt x 439.6425pt>
 File: Figures/RM_SDT_2.pdf Graphic file (type pdf)
 
 <use Figures/RM_SDT_2.pdf>
@@ -4112,7 +4112,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 508--509
 
  []
 
-<Figures/EfectoEspejo.pdf, id=949, 814.04124pt x 655.44875pt>
+<Figures/EfectoEspejo.pdf, id=950, 814.04124pt x 655.44875pt>
 File: Figures/EfectoEspejo.pdf Graphic file (type pdf)
 
 <use Figures/EfectoEspejo.pdf>
@@ -4205,7 +4205,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 553--554
 
  []
 
-<Figures/EfectoEspejo_YesNo.pdf, id=976, 814.04124pt x 655.44875pt>
+<Figures/EfectoEspejo_YesNo.pdf, id=977, 814.04124pt x 655.44875pt>
 File: Figures/EfectoEspejo_YesNo.pdf Graphic file (type pdf)
 
 <use Figures/EfectoEspejo_YesNo.pdf>
@@ -4247,7 +4247,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 576--577
 
  []
 
-<Figures/EfectoEspejo_Puntajes.pdf, id=986, 814.04124pt x 655.44875pt>
+<Figures/EfectoEspejo_Puntajes.pdf, id=987, 814.04124pt x 655.44875pt>
 File: Figures/EfectoEspejo_Puntajes.pdf Graphic file (type pdf)
 
 <use Figures/EfectoEspejo_Puntajes.pdf>
@@ -4831,7 +4831,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--40
 
  []
 
-<Figures/Ebbinghaus.png, id=1109, 672.5928pt x 411.4572pt>
+<Figures/Ebbinghaus.png, id=1110, 672.5928pt x 411.4572pt>
 File: Figures/Ebbinghaus.png Graphic file (type png)
 
 <use Figures/Ebbinghaus.png>
@@ -4857,7 +4857,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 60.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 60.
-[52] <Figures/Ebb_Variables.png, id=1125, 538.26094pt x 498.36188pt>
+[52] <Figures/Ebb_Variables.png, id=1126, 538.26094pt x 498.36188pt>
 File: Figures/Ebb_Variables.png Graphic file (type png)
 
 <use Figures/Ebb_Variables.png>
@@ -5112,7 +5112,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 148--149
 
  []
 
-<Figures/Ejemplo_EnsayoYN_1.png, id=1157, 767.11594pt x 525.46312pt>
+<Figures/Ejemplo_EnsayoYN_1.png, id=1158, 767.11594pt x 525.46312pt>
 File: Figures/Ejemplo_EnsayoYN_1.png Graphic file (type png)
 
 <use Figures/Ejemplo_EnsayoYN_1.png>
@@ -5120,7 +5120,7 @@ Package pdftex.def Info: Figures/Ejemplo_EnsayoYN_1.png used on input line 152.
 
 (pdftex.def)             Requested size: 181.81184pt x 124.5342pt.
 
-<Figures/Ejemplo_EnsayoYN_2.png, id=1158, 767.11594pt x 555.57562pt>
+<Figures/Ejemplo_EnsayoYN_2.png, id=1159, 767.11594pt x 555.57562pt>
 File: Figures/Ejemplo_EnsayoYN_2.png Graphic file (type png)
 
 <use Figures/Ejemplo_EnsayoYN_2.png>
@@ -5128,7 +5128,7 @@ Package pdftex.def Info: Figures/Ejemplo_EnsayoYN_2.png used on input line 152.
 
 (pdftex.def)             Requested size: 181.81184pt x 131.67082pt.
 
-<Figures/Ejemplo_EnsayoYN_4.png, id=1159, 767.11594pt x 555.57562pt>
+<Figures/Ejemplo_EnsayoYN_4.png, id=1160, 767.11594pt x 555.57562pt>
 File: Figures/Ejemplo_EnsayoYN_4.png Graphic file (type png)
 
 <use Figures/Ejemplo_EnsayoYN_4.png>
@@ -5136,7 +5136,7 @@ Package pdftex.def Info: Figures/Ejemplo_EnsayoYN_4.png used on input line 153.
 
 (pdftex.def)             Requested size: 181.81184pt x 131.67082pt.
 
-<Figures/Ejemplo_EnsayoYN_3.png, id=1160, 767.11594pt x 555.57562pt>
+<Figures/Ejemplo_EnsayoYN_3.png, id=1161, 767.11594pt x 555.57562pt>
 File: Figures/Ejemplo_EnsayoYN_3.png Graphic file (type png)
 
 <use Figures/Ejemplo_EnsayoYN_3.png>
@@ -5261,7 +5261,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 186--187
 
  []
 
-<Figures/Ejemplo_Escala.png, id=1172, 527.72156pt x 340.27126pt>
+<Figures/Ejemplo_Escala.png, id=1173, 527.72156pt x 340.27126pt>
 File: Figures/Ejemplo_Escala.png Graphic file (type png)
 
 <use Figures/Ejemplo_Escala.png>
@@ -5313,7 +5313,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 206--207
 
  []
 
-<Figures/Estimulos_Experimento1.pdf, id=1177, 433.62pt x 578.16pt>
+<Figures/Estimulos_Experimento1.pdf, id=1178, 433.62pt x 578.16pt>
 File: Figures/Estimulos_Experimento1.pdf Graphic file (type pdf)
 
 <use Figures/Estimulos_Experimento1.pdf>
@@ -5324,7 +5324,7 @@ Package pdftex.def Info: Figures/Estimulos_Experimento1.pdf used on input line
 
 LaTeX Warning: Float too large for page by 86.29854pt on input line 214.
 
-<Figures/Estimulos_Experimento2.pdf, id=1178, 686.565pt x 578.16pt>
+<Figures/Estimulos_Experimento2.pdf, id=1179, 686.565pt x 578.16pt>
 File: Figures/Estimulos_Experimento2.pdf Graphic file (type pdf)
 
 <use Figures/Estimulos_Experimento2.pdf>
@@ -5528,7 +5528,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--64
 
  []
 
-<Figures/Response_Exp2_P1.pdf, id=1236, 708.6475pt x 440.64626pt>
+<Figures/Response_Exp2_P1.pdf, id=1237, 708.6475pt x 440.64626pt>
 File: Figures/Response_Exp2_P1.pdf Graphic file (type pdf)
 
 <use Figures/Response_Exp2_P1.pdf>
@@ -5563,7 +5563,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 80.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 80.
-[67] <Figures/BiasResp_Exp2_P1.pdf, id=1242, 708.6475pt x 440.64626pt>
+[67] <Figures/BiasResp_Exp2_P1.pdf, id=1243, 708.6475pt x 440.64626pt>
 File: Figures/BiasResp_Exp2_P1.pdf Graphic file (type pdf)
 
 <use Figures/BiasResp_Exp2_P1.pdf>
@@ -5594,7 +5594,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 95--96
 
  []
 
-<Figures/Rating_Exp2_P15.pdf, id=1254, 708.6475pt x 440.64626pt>
+<Figures/Rating_Exp2_P15.pdf, id=1255, 708.6475pt x 440.64626pt>
 File: Figures/Rating_Exp2_P15.pdf Graphic file (type pdf)
 
 <use Figures/Rating_Exp2_P15.pdf>
@@ -5642,7 +5642,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 127--128
 
  []
 
-<Figures/Success_Exp2_P14.pdf, id=1267, 708.6475pt x 440.64626pt>
+<Figures/Success_Exp2_P14.pdf, id=1268, 708.6475pt x 440.64626pt>
 File: Figures/Success_Exp2_P14.pdf Graphic file (type pdf)
 
 <use Figures/Success_Exp2_P14.pdf>
@@ -5669,7 +5669,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 143.
 [70 <./Figures/Rating_Exp2_P15.pdf>]
-<Figures/Outcome_Exp2_P14.pdf, id=1279, 708.6475pt x 440.64626pt>
+<Figures/Outcome_Exp2_P14.pdf, id=1280, 708.6475pt x 440.64626pt>
 File: Figures/Outcome_Exp2_P14.pdf Graphic file (type pdf)
 
 <use Figures/Outcome_Exp2_P14.pdf>
@@ -5723,7 +5723,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 174--175
 
  []
 
-<Figures/Color_Exp1_P14.pdf, id=1297, 708.6475pt x 440.64626pt>
+<Figures/Color_Exp1_P14.pdf, id=1298, 708.6475pt x 440.64626pt>
 File: Figures/Color_Exp1_P14.pdf Graphic file (type pdf)
 
 <use Figures/Color_Exp1_P14.pdf>
@@ -5759,7 +5759,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 192--193
 
  []
 
-<Figures/BiasColor_Exp1_P13.pdf, id=1310, 708.6475pt x 440.64626pt>
+<Figures/BiasColor_Exp1_P13.pdf, id=1311, 708.6475pt x 440.64626pt>
 File: Figures/BiasColor_Exp1_P13.pdf Graphic file (type pdf)
 
 <use Figures/BiasColor_Exp1_P13.pdf>
@@ -5982,7 +5982,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 335--336
 
  []
 
-<Figures/Diff_D_E1yE2.pdf, id=1342, 638.385pt x 408.52625pt>
+<Figures/Diff_D_E1yE2.pdf, id=1343, 638.385pt x 408.52625pt>
 File: Figures/Diff_D_E1yE2.pdf Graphic file (type pdf)
 
 <use Figures/Diff_D_E1yE2.pdf>
@@ -6169,6 +6169,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 414--415
  []
 
 
+Overfull \hbox (67.92445pt too wide) in paragraph at lines 416--417
+[]$[]$ 
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 416--417
 
  []
@@ -6218,7 +6223,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 439.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 439.
-[81] <Figures/Model_Delta_Diff_D.pdf, id=1382, 758.835pt x 505.89pt>
+[81] <Figures/Model_Delta_Diff_D.pdf, id=1383, 758.835pt x 505.89pt>
 File: Figures/Model_Delta_Diff_D.pdf Graphic file (type pdf)
 
 <use Figures/Model_Delta_Diff_D.pdf>
@@ -6235,14 +6240,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 450--451
 
  []
 
-<Figures/MDelta_Joint_E1.pdf, id=1384, 638.385pt x 408.52625pt>
+<Figures/MDelta_Joint_E1.pdf, id=1385, 638.385pt x 408.52625pt>
 File: Figures/MDelta_Joint_E1.pdf Graphic file (type pdf)
 
 <use Figures/MDelta_Joint_E1.pdf>
 Package pdftex.def Info: Figures/MDelta_Joint_E1.pdf used on input line 454.
 (pdftex.def)             Requested size: 282.81912pt x 180.98636pt.
 
-<Figures/MDelta_Joint_E2.pdf, id=1385, 638.385pt x 408.52625pt>
+<Figures/MDelta_Joint_E2.pdf, id=1386, 638.385pt x 408.52625pt>
 File: Figures/MDelta_Joint_E2.pdf Graphic file (type pdf)
 
 <use Figures/MDelta_Joint_E2.pdf>
@@ -6293,14 +6298,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 465--466
 
  []
 
-<Figures/MDelta_Dprima_E1.pdf, id=1429, 638.385pt x 408.52625pt>
+<Figures/MDelta_Dprima_E1.pdf, id=1430, 638.385pt x 408.52625pt>
 File: Figures/MDelta_Dprima_E1.pdf Graphic file (type pdf)
 
 <use Figures/MDelta_Dprima_E1.pdf>
 Package pdftex.def Info: Figures/MDelta_Dprima_E1.pdf used on input line 469.
 (pdftex.def)             Requested size: 242.4199pt x 155.12938pt.
 
-<Figures/MDelta_Dprima_E2.pdf, id=1430, 638.385pt x 408.52625pt>
+<Figures/MDelta_Dprima_E2.pdf, id=1431, 638.385pt x 408.52625pt>
 File: Figures/MDelta_Dprima_E2.pdf Graphic file (type pdf)
 
 <use Figures/MDelta_Dprima_E2.pdf>
@@ -6327,14 +6332,14 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 477.
 [84 <./Figures/MDelta_Dprima_E1.pdf> <./Figures/MDelta_Dprima_E2.pdf>]
-<Figures/MDelta_Cbias_E1.pdf, id=1448, 638.385pt x 408.52625pt>
+<Figures/MDelta_Cbias_E1.pdf, id=1449, 638.385pt x 408.52625pt>
 File: Figures/MDelta_Cbias_E1.pdf Graphic file (type pdf)
 
 <use Figures/MDelta_Cbias_E1.pdf>
 Package pdftex.def Info: Figures/MDelta_Cbias_E1.pdf used on input line 480.
 (pdftex.def)             Requested size: 242.4199pt x 155.12938pt.
 
-<Figures/MDelta_Cbias_E2.pdf, id=1449, 638.385pt x 408.52625pt>
+<Figures/MDelta_Cbias_E2.pdf, id=1450, 638.385pt x 408.52625pt>
 File: Figures/MDelta_Cbias_E2.pdf Graphic file (type pdf)
 
 <use Figures/MDelta_Cbias_E2.pdf>
@@ -6366,7 +6371,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 490.
 [85 <./Figures/MDelta_Cbias_E1.pdf> <./Figures/MDelta_Cbias_E2.pdf>]
-<Figures/MDelta_DensidadDelta_E1.pdf, id=1468, 638.385pt x 408.52625pt>
+<Figures/MDelta_DensidadDelta_E1.pdf, id=1469, 638.385pt x 408.52625pt>
 File: Figures/MDelta_DensidadDelta_E1.pdf Graphic file (type pdf)
 
 <use Figures/MDelta_DensidadDelta_E1.pdf>
@@ -6374,7 +6379,7 @@ Package pdftex.def Info: Figures/MDelta_DensidadDelta_E1.pdf used on input line
  493.
 (pdftex.def)             Requested size: 242.4199pt x 155.12938pt.
 
-<Figures/MDelta_DensidadDelta_E2.pdf, id=1469, 638.385pt x 408.52625pt>
+<Figures/MDelta_DensidadDelta_E2.pdf, id=1470, 638.385pt x 408.52625pt>
 File: Figures/MDelta_DensidadDelta_E2.pdf Graphic file (type pdf)
 
 <use Figures/MDelta_DensidadDelta_E2.pdf>
@@ -6435,7 +6440,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 528--529
 
  []
 
-<Figures/MirrorRate_Exp2_P4.pdf, id=1488, 708.6475pt x 440.64626pt>
+<Figures/MirrorRate_Exp2_P4.pdf, id=1489, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRate_Exp2_P4.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRate_Exp2_P4.pdf>
@@ -6452,19 +6457,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 540--541
 
  []
 
-<Figures/Diff_Rate_E1.pdf, id=1490, 708.6475pt x 440.64626pt>
+<Figures/Diff_Rate_E1.pdf, id=1491, 708.6475pt x 440.64626pt>
 File: Figures/Diff_Rate_E1.pdf Graphic file (type pdf)
 
 <use Figures/Diff_Rate_E1.pdf>
 Package pdftex.def Info: Figures/Diff_Rate_E1.pdf used on input line 544.
-(pdftex.def)             Requested size: 323.22449pt x 200.98518pt.
+(pdftex.def)             Requested size: 262.61642pt x 163.29878pt.
 
-<Figures/Diff_Rate_E2.pdf, id=1491, 638.385pt x 408.52625pt>
+<Figures/Diff_Rate_E2.pdf, id=1492, 638.385pt x 408.52625pt>
 File: Figures/Diff_Rate_E2.pdf Graphic file (type pdf)
 
 <use Figures/Diff_Rate_E2.pdf>
 Package pdftex.def Info: Figures/Diff_Rate_E2.pdf used on input line 545.
-(pdftex.def)             Requested size: 323.22449pt x 206.84332pt.
+(pdftex.def)             Requested size: 262.61642pt x 168.05786pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 551--552
 
@@ -6496,79 +6501,133 @@ Underfull \hbox (badness 10000) in paragraph at lines 555--556
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 557--558
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 559--560
 
  []
 
 
-Overfull \hbox (57.25824pt too wide) in paragraph at lines 566--577
+Overfull \hbox (16.99844pt too wide) in paragraph at lines 565--576
  [][] 
  []
 
-<Figures/Model_Tau_Diff_Tetas.pdf, id=1498, 758.835pt x 505.89pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 578--579
+
+ []
+
+LaTeX Info: Redefining \sptext on input line 580.
+LaTeX Info: Redefining \. on input line 580.
+LaTeX Info: Redefining \% on input line 580.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 580.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 580.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 580.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 580.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 580.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 580.
+[88 <./Figures/MirrorRate_Exp2_P4.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 580--581
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 582--583
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 584--585
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 586--587
+
+ []
+
+LaTeX Info: Redefining \sptext on input line 587.
+LaTeX Info: Redefining \. on input line 587.
+LaTeX Info: Redefining \% on input line 587.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 587.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 587.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 587.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 587.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 587.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 587.
+[89 <./Figures/Diff_Rate_E1.pdf> <./Figures/Diff_Rate_E2.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 588--589
+
+ []
+
+
+Overfull \hbox (16.73387pt too wide) in paragraph at lines 593--594
+[]$[]$ 
+ []
+
+<Figures/Model_Tau_Diff_Tetas.pdf, id=1531, 758.835pt x 505.89pt>
 File: Figures/Model_Tau_Diff_Tetas.pdf Graphic file (type pdf)
 
 <use Figures/Model_Tau_Diff_Tetas.pdf>
-Package pdftex.def Info: Figures/Model_Tau_Diff_Tetas.pdf used on input line 58
-4.
+Package pdftex.def Info: Figures/Model_Tau_Diff_Tetas.pdf used on input line 59
+8.
 (pdftex.def)             Requested size: 444.43445pt x 296.29567pt.
 
-Overfull \hbox (40.40536pt too wide) in paragraph at lines 584--586
+Overfull \hbox (40.40536pt too wide) in paragraph at lines 598--600
  [][] 
  []
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 603.
+(babel)             in language  on input line 616.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 603.
+(babel)             in language  on input line 616.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 603.
+(babel)             in language  on input line 616.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 603.
+(babel)             in language  on input line 616.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 603.
+(babel)             in language  on input line 616.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 603.
+(babel)             in language  on input line 616.
 
-Underfull \hbox (badness 10000) in paragraph at lines 606--607
+Underfull \hbox (badness 10000) in paragraph at lines 618--619
 
  []
 
-LaTeX Info: Redefining \sptext on input line 607.
-LaTeX Info: Redefining \. on input line 607.
-LaTeX Info: Redefining \% on input line 607.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 607.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 607.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 607.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 607.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 607.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 607.
-[88 <./Figures/MirrorRate_Exp2_P4.pdf>]
-<Figures/MirrorRating_Exp1_P10.pdf, id=1511, 708.6475pt x 440.64626pt>
+<Figures/MirrorRating_Exp1_P10.pdf, id=1533, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRating_Exp1_P10.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRating_Exp1_P10.pdf>
 Package pdftex.def Info: Figures/MirrorRating_Exp1_P10.pdf used on input line 6
-10.
+22.
 (pdftex.def)             Requested size: 242.4199pt x 150.73889pt.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 654.
+(babel)             in language  on input line 664.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 654.
+(babel)             in language  on input line 664.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 654.
+(babel)             in language  on input line 664.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 654.
+(babel)             in language  on input line 664.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 654.
+(babel)             in language  on input line 664.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 654.
+(babel)             in language  on input line 664.
 )
 LaTeX Info: Redefining \sptext on input line 347.
 LaTeX Info: Redefining \. on input line 347.
@@ -6585,7 +6644,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 347.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 347.
- [89]
+ [90]
 LaTeX Info: Redefining \sptext on input line 347.
 LaTeX Info: Redefining \. on input line 347.
 LaTeX Info: Redefining \% on input line 347.
@@ -6601,7 +6660,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 347.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 347.
- [90 <./Figures/Diff_Rate_E1.pdf> <./Figures/Diff_Rate_E2.pdf>]
+ [91 <./Figures/Model_Tau_Diff_Tetas.pdf>]
 LaTeX Info: Redefining \sptext on input line 347.
 LaTeX Info: Redefining \. on input line 347.
 LaTeX Info: Redefining \% on input line 347.
@@ -6617,28 +6676,10 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 347.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 347.
- [91 <./Figures/Model_Tau_Diff_Tetas.pdf> <./Figures/MirrorRating_Exp1_P10.pdf>
-]
+ [92 <./Figures/MirrorRating_Exp1_P10.pdf>]
 \openout2 = `Chapters/Cap_Disc.aux'.
 
  (Chapters/Cap_Disc.tex
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 3.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 3.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 3.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 3.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 3.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 3.
- [92
-
-
-
-]
 Cap\'{\i }tulo 5.
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 3.
@@ -6690,7 +6731,11 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 348.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 348.
-[93]
+[93
+
+
+
+]
 \openout2 = `Appendices/Felisa_Consentimiento.aux'.
 
 
@@ -6735,7 +6780,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
-<Figures/csv.png, id=1569, 1438.6247pt x 274.02374pt>
+<Figures/csv.png, id=1574, 1438.6247pt x 274.02374pt>
 File: Figures/csv.png Graphic file (type png)
  <use Figures/csv.png>
 Package pdftex.def Info: Figures/csv.png used on input line 11.
@@ -6818,140 +6863,140 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 3.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 3.
-<Figures/Response_Exp1_P1.pdf, id=1580, 708.6475pt x 440.64626pt>
+<Figures/Response_Exp1_P1.pdf, id=1585, 708.6475pt x 440.64626pt>
 File: Figures/Response_Exp1_P1.pdf Graphic file (type pdf)
 
 <use Figures/Response_Exp1_P1.pdf>
 Package pdftex.def Info: Figures/Response_Exp1_P1.pdf used on input line 9.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Response_Exp1_P2.pdf, id=1581, 708.6475pt x 440.64626pt>
+<Figures/Response_Exp1_P2.pdf, id=1586, 708.6475pt x 440.64626pt>
 File: Figures/Response_Exp1_P2.pdf Graphic file (type pdf)
 
 <use Figures/Response_Exp1_P2.pdf>
 Package pdftex.def Info: Figures/Response_Exp1_P2.pdf used on input line 9.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Response_Exp1_P3.pdf, id=1582, 708.6475pt x 440.64626pt>
+<Figures/Response_Exp1_P3.pdf, id=1587, 708.6475pt x 440.64626pt>
 File: Figures/Response_Exp1_P3.pdf Graphic file (type pdf)
 
 <use Figures/Response_Exp1_P3.pdf>
 Package pdftex.def Info: Figures/Response_Exp1_P3.pdf used on input line 9.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Response_Exp1_P4.pdf, id=1583, 708.6475pt x 440.64626pt>
+<Figures/Response_Exp1_P4.pdf, id=1588, 708.6475pt x 440.64626pt>
 File: Figures/Response_Exp1_P4.pdf Graphic file (type pdf)
 
 <use Figures/Response_Exp1_P4.pdf>
 Package pdftex.def Info: Figures/Response_Exp1_P4.pdf used on input line 10.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Response_Exp1_P5.pdf, id=1584, 708.6475pt x 440.64626pt>
+<Figures/Response_Exp1_P5.pdf, id=1589, 708.6475pt x 440.64626pt>
 File: Figures/Response_Exp1_P5.pdf Graphic file (type pdf)
 
 <use Figures/Response_Exp1_P5.pdf>
 Package pdftex.def Info: Figures/Response_Exp1_P5.pdf used on input line 10.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Response_Exp1_P6.pdf, id=1585, 708.6475pt x 440.64626pt>
+<Figures/Response_Exp1_P6.pdf, id=1590, 708.6475pt x 440.64626pt>
 File: Figures/Response_Exp1_P6.pdf Graphic file (type pdf)
 
 <use Figures/Response_Exp1_P6.pdf>
 Package pdftex.def Info: Figures/Response_Exp1_P6.pdf used on input line 10.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Response_Exp1_P7.pdf, id=1586, 708.6475pt x 440.64626pt>
+<Figures/Response_Exp1_P7.pdf, id=1591, 708.6475pt x 440.64626pt>
 File: Figures/Response_Exp1_P7.pdf Graphic file (type pdf)
 
 <use Figures/Response_Exp1_P7.pdf>
 Package pdftex.def Info: Figures/Response_Exp1_P7.pdf used on input line 11.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Response_Exp1_P8.pdf, id=1587, 708.6475pt x 440.64626pt>
+<Figures/Response_Exp1_P8.pdf, id=1592, 708.6475pt x 440.64626pt>
 File: Figures/Response_Exp1_P8.pdf Graphic file (type pdf)
 
 <use Figures/Response_Exp1_P8.pdf>
 Package pdftex.def Info: Figures/Response_Exp1_P8.pdf used on input line 11.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Response_Exp1_P9.pdf, id=1588, 708.6475pt x 440.64626pt>
+<Figures/Response_Exp1_P9.pdf, id=1593, 708.6475pt x 440.64626pt>
 File: Figures/Response_Exp1_P9.pdf Graphic file (type pdf)
 
 <use Figures/Response_Exp1_P9.pdf>
 Package pdftex.def Info: Figures/Response_Exp1_P9.pdf used on input line 11.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Response_Exp1_P10.pdf, id=1589, 708.6475pt x 440.64626pt>
+<Figures/Response_Exp1_P10.pdf, id=1594, 708.6475pt x 440.64626pt>
 File: Figures/Response_Exp1_P10.pdf Graphic file (type pdf)
 
 <use Figures/Response_Exp1_P10.pdf>
 Package pdftex.def Info: Figures/Response_Exp1_P10.pdf used on input line 12.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Response_Exp1_P11.pdf, id=1590, 708.6475pt x 440.64626pt>
+<Figures/Response_Exp1_P11.pdf, id=1595, 708.6475pt x 440.64626pt>
 File: Figures/Response_Exp1_P11.pdf Graphic file (type pdf)
 
 <use Figures/Response_Exp1_P11.pdf>
 Package pdftex.def Info: Figures/Response_Exp1_P11.pdf used on input line 12.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Response_Exp1_P12.pdf, id=1591, 708.6475pt x 440.64626pt>
+<Figures/Response_Exp1_P12.pdf, id=1596, 708.6475pt x 440.64626pt>
 File: Figures/Response_Exp1_P12.pdf Graphic file (type pdf)
 
 <use Figures/Response_Exp1_P12.pdf>
 Package pdftex.def Info: Figures/Response_Exp1_P12.pdf used on input line 12.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Response_Exp1_P13.pdf, id=1592, 708.6475pt x 440.64626pt>
+<Figures/Response_Exp1_P13.pdf, id=1597, 708.6475pt x 440.64626pt>
 File: Figures/Response_Exp1_P13.pdf Graphic file (type pdf)
 
 <use Figures/Response_Exp1_P13.pdf>
 Package pdftex.def Info: Figures/Response_Exp1_P13.pdf used on input line 13.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Response_Exp1_P14.pdf, id=1593, 708.6475pt x 440.64626pt>
+<Figures/Response_Exp1_P14.pdf, id=1598, 708.6475pt x 440.64626pt>
 File: Figures/Response_Exp1_P14.pdf Graphic file (type pdf)
 
 <use Figures/Response_Exp1_P14.pdf>
 Package pdftex.def Info: Figures/Response_Exp1_P14.pdf used on input line 13.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Response_Exp1_P15.pdf, id=1594, 708.6475pt x 440.64626pt>
+<Figures/Response_Exp1_P15.pdf, id=1599, 708.6475pt x 440.64626pt>
 File: Figures/Response_Exp1_P15.pdf Graphic file (type pdf)
 
 <use Figures/Response_Exp1_P15.pdf>
 Package pdftex.def Info: Figures/Response_Exp1_P15.pdf used on input line 13.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Response_Exp1_P16.pdf, id=1595, 708.6475pt x 440.64626pt>
+<Figures/Response_Exp1_P16.pdf, id=1600, 708.6475pt x 440.64626pt>
 File: Figures/Response_Exp1_P16.pdf Graphic file (type pdf)
 
 <use Figures/Response_Exp1_P16.pdf>
 Package pdftex.def Info: Figures/Response_Exp1_P16.pdf used on input line 14.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Response_Exp1_P17.pdf, id=1596, 708.6475pt x 440.64626pt>
+<Figures/Response_Exp1_P17.pdf, id=1601, 708.6475pt x 440.64626pt>
 File: Figures/Response_Exp1_P17.pdf Graphic file (type pdf)
 
 <use Figures/Response_Exp1_P17.pdf>
 Package pdftex.def Info: Figures/Response_Exp1_P17.pdf used on input line 14.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Response_Exp1_P18.pdf, id=1597, 708.6475pt x 440.64626pt>
+<Figures/Response_Exp1_P18.pdf, id=1602, 708.6475pt x 440.64626pt>
 File: Figures/Response_Exp1_P18.pdf Graphic file (type pdf)
 
 <use Figures/Response_Exp1_P18.pdf>
 Package pdftex.def Info: Figures/Response_Exp1_P18.pdf used on input line 14.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Response_Exp1_P19.pdf, id=1598, 708.6475pt x 440.64626pt>
+<Figures/Response_Exp1_P19.pdf, id=1603, 708.6475pt x 440.64626pt>
 File: Figures/Response_Exp1_P19.pdf Graphic file (type pdf)
 
 <use Figures/Response_Exp1_P19.pdf>
 Package pdftex.def Info: Figures/Response_Exp1_P19.pdf used on input line 15.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Response_Exp1_P20.pdf, id=1599, 708.6475pt x 440.64626pt>
+<Figures/Response_Exp1_P20.pdf, id=1604, 708.6475pt x 440.64626pt>
 File: Figures/Response_Exp1_P20.pdf Graphic file (type pdf)
 
 <use Figures/Response_Exp1_P20.pdf>
@@ -6962,280 +7007,280 @@ File: Figures/Response_Exp2_P1.pdf Graphic file (type pdf)
 Package pdftex.def Info: Figures/Response_Exp2_P1.pdf used on input line 23.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Response_Exp2_P2.pdf, id=1600, 708.6475pt x 440.64626pt>
+<Figures/Response_Exp2_P2.pdf, id=1605, 708.6475pt x 440.64626pt>
 File: Figures/Response_Exp2_P2.pdf Graphic file (type pdf)
 
 <use Figures/Response_Exp2_P2.pdf>
 Package pdftex.def Info: Figures/Response_Exp2_P2.pdf used on input line 23.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Response_Exp2_P3.pdf, id=1601, 708.6475pt x 440.64626pt>
+<Figures/Response_Exp2_P3.pdf, id=1606, 708.6475pt x 440.64626pt>
 File: Figures/Response_Exp2_P3.pdf Graphic file (type pdf)
 
 <use Figures/Response_Exp2_P3.pdf>
 Package pdftex.def Info: Figures/Response_Exp2_P3.pdf used on input line 23.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Response_Exp2_P4.pdf, id=1602, 708.6475pt x 440.64626pt>
+<Figures/Response_Exp2_P4.pdf, id=1607, 708.6475pt x 440.64626pt>
 File: Figures/Response_Exp2_P4.pdf Graphic file (type pdf)
 
 <use Figures/Response_Exp2_P4.pdf>
 Package pdftex.def Info: Figures/Response_Exp2_P4.pdf used on input line 24.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Response_Exp2_P5.pdf, id=1603, 708.6475pt x 440.64626pt>
+<Figures/Response_Exp2_P5.pdf, id=1608, 708.6475pt x 440.64626pt>
 File: Figures/Response_Exp2_P5.pdf Graphic file (type pdf)
 
 <use Figures/Response_Exp2_P5.pdf>
 Package pdftex.def Info: Figures/Response_Exp2_P5.pdf used on input line 24.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Response_Exp2_P6.pdf, id=1604, 708.6475pt x 440.64626pt>
+<Figures/Response_Exp2_P6.pdf, id=1609, 708.6475pt x 440.64626pt>
 File: Figures/Response_Exp2_P6.pdf Graphic file (type pdf)
 
 <use Figures/Response_Exp2_P6.pdf>
 Package pdftex.def Info: Figures/Response_Exp2_P6.pdf used on input line 24.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Response_Exp2_P7.pdf, id=1605, 708.6475pt x 440.64626pt>
+<Figures/Response_Exp2_P7.pdf, id=1610, 708.6475pt x 440.64626pt>
 File: Figures/Response_Exp2_P7.pdf Graphic file (type pdf)
 
 <use Figures/Response_Exp2_P7.pdf>
 Package pdftex.def Info: Figures/Response_Exp2_P7.pdf used on input line 25.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Response_Exp2_P8.pdf, id=1606, 708.6475pt x 440.64626pt>
+<Figures/Response_Exp2_P8.pdf, id=1611, 708.6475pt x 440.64626pt>
 File: Figures/Response_Exp2_P8.pdf Graphic file (type pdf)
 
 <use Figures/Response_Exp2_P8.pdf>
 Package pdftex.def Info: Figures/Response_Exp2_P8.pdf used on input line 25.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Response_Exp2_P9.pdf, id=1607, 708.6475pt x 440.64626pt>
+<Figures/Response_Exp2_P9.pdf, id=1612, 708.6475pt x 440.64626pt>
 File: Figures/Response_Exp2_P9.pdf Graphic file (type pdf)
 
 <use Figures/Response_Exp2_P9.pdf>
 Package pdftex.def Info: Figures/Response_Exp2_P9.pdf used on input line 25.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Response_Exp2_P10.pdf, id=1608, 708.6475pt x 440.64626pt>
+<Figures/Response_Exp2_P10.pdf, id=1613, 708.6475pt x 440.64626pt>
 File: Figures/Response_Exp2_P10.pdf Graphic file (type pdf)
 
 <use Figures/Response_Exp2_P10.pdf>
 Package pdftex.def Info: Figures/Response_Exp2_P10.pdf used on input line 26.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Response_Exp2_P11.pdf, id=1609, 708.6475pt x 440.64626pt>
+<Figures/Response_Exp2_P11.pdf, id=1614, 708.6475pt x 440.64626pt>
 File: Figures/Response_Exp2_P11.pdf Graphic file (type pdf)
 
 <use Figures/Response_Exp2_P11.pdf>
 Package pdftex.def Info: Figures/Response_Exp2_P11.pdf used on input line 26.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Response_Exp2_P12.pdf, id=1610, 708.6475pt x 440.64626pt>
+<Figures/Response_Exp2_P12.pdf, id=1615, 708.6475pt x 440.64626pt>
 File: Figures/Response_Exp2_P12.pdf Graphic file (type pdf)
 
 <use Figures/Response_Exp2_P12.pdf>
 Package pdftex.def Info: Figures/Response_Exp2_P12.pdf used on input line 26.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Response_Exp2_P13.pdf, id=1611, 708.6475pt x 440.64626pt>
+<Figures/Response_Exp2_P13.pdf, id=1616, 708.6475pt x 440.64626pt>
 File: Figures/Response_Exp2_P13.pdf Graphic file (type pdf)
 
 <use Figures/Response_Exp2_P13.pdf>
 Package pdftex.def Info: Figures/Response_Exp2_P13.pdf used on input line 27.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Response_Exp2_P14.pdf, id=1612, 708.6475pt x 440.64626pt>
+<Figures/Response_Exp2_P14.pdf, id=1617, 708.6475pt x 440.64626pt>
 File: Figures/Response_Exp2_P14.pdf Graphic file (type pdf)
 
 <use Figures/Response_Exp2_P14.pdf>
 Package pdftex.def Info: Figures/Response_Exp2_P14.pdf used on input line 27.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Response_Exp2_P15.pdf, id=1613, 708.6475pt x 440.64626pt>
+<Figures/Response_Exp2_P15.pdf, id=1618, 708.6475pt x 440.64626pt>
 File: Figures/Response_Exp2_P15.pdf Graphic file (type pdf)
 
 <use Figures/Response_Exp2_P15.pdf>
 Package pdftex.def Info: Figures/Response_Exp2_P15.pdf used on input line 27.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Response_Exp2_P16.pdf, id=1614, 708.6475pt x 440.64626pt>
+<Figures/Response_Exp2_P16.pdf, id=1619, 708.6475pt x 440.64626pt>
 File: Figures/Response_Exp2_P16.pdf Graphic file (type pdf)
 
 <use Figures/Response_Exp2_P16.pdf>
 Package pdftex.def Info: Figures/Response_Exp2_P16.pdf used on input line 28.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Response_Exp2_P17.pdf, id=1615, 708.6475pt x 440.64626pt>
+<Figures/Response_Exp2_P17.pdf, id=1620, 708.6475pt x 440.64626pt>
 File: Figures/Response_Exp2_P17.pdf Graphic file (type pdf)
 
 <use Figures/Response_Exp2_P17.pdf>
 Package pdftex.def Info: Figures/Response_Exp2_P17.pdf used on input line 28.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Response_Exp2_P18.pdf, id=1616, 708.6475pt x 440.64626pt>
+<Figures/Response_Exp2_P18.pdf, id=1621, 708.6475pt x 440.64626pt>
 File: Figures/Response_Exp2_P18.pdf Graphic file (type pdf)
 
 <use Figures/Response_Exp2_P18.pdf>
 Package pdftex.def Info: Figures/Response_Exp2_P18.pdf used on input line 28.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Response_Exp2_P19.pdf, id=1617, 708.6475pt x 440.64626pt>
+<Figures/Response_Exp2_P19.pdf, id=1622, 708.6475pt x 440.64626pt>
 File: Figures/Response_Exp2_P19.pdf Graphic file (type pdf)
 
 <use Figures/Response_Exp2_P19.pdf>
 Package pdftex.def Info: Figures/Response_Exp2_P19.pdf used on input line 29.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Response_Exp2_P20.pdf, id=1618, 708.6475pt x 440.64626pt>
+<Figures/Response_Exp2_P20.pdf, id=1623, 708.6475pt x 440.64626pt>
 File: Figures/Response_Exp2_P20.pdf Graphic file (type pdf)
 
 <use Figures/Response_Exp2_P20.pdf>
 Package pdftex.def Info: Figures/Response_Exp2_P20.pdf used on input line 29.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Response_Exp2_P21.pdf, id=1619, 708.6475pt x 440.64626pt>
+<Figures/Response_Exp2_P21.pdf, id=1624, 708.6475pt x 440.64626pt>
 File: Figures/Response_Exp2_P21.pdf Graphic file (type pdf)
 
 <use Figures/Response_Exp2_P21.pdf>
 Package pdftex.def Info: Figures/Response_Exp2_P21.pdf used on input line 29.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasResp_Exp1_P1.pdf, id=1620, 708.6475pt x 440.64626pt>
+<Figures/BiasResp_Exp1_P1.pdf, id=1625, 708.6475pt x 440.64626pt>
 File: Figures/BiasResp_Exp1_P1.pdf Graphic file (type pdf)
 
 <use Figures/BiasResp_Exp1_P1.pdf>
 Package pdftex.def Info: Figures/BiasResp_Exp1_P1.pdf used on input line 37.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasResp_Exp1_P2.pdf, id=1621, 708.6475pt x 440.64626pt>
+<Figures/BiasResp_Exp1_P2.pdf, id=1626, 708.6475pt x 440.64626pt>
 File: Figures/BiasResp_Exp1_P2.pdf Graphic file (type pdf)
 
 <use Figures/BiasResp_Exp1_P2.pdf>
 Package pdftex.def Info: Figures/BiasResp_Exp1_P2.pdf used on input line 37.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasResp_Exp1_P3.pdf, id=1622, 708.6475pt x 440.64626pt>
+<Figures/BiasResp_Exp1_P3.pdf, id=1627, 708.6475pt x 440.64626pt>
 File: Figures/BiasResp_Exp1_P3.pdf Graphic file (type pdf)
 
 <use Figures/BiasResp_Exp1_P3.pdf>
 Package pdftex.def Info: Figures/BiasResp_Exp1_P3.pdf used on input line 37.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasResp_Exp1_P4.pdf, id=1623, 708.6475pt x 440.64626pt>
+<Figures/BiasResp_Exp1_P4.pdf, id=1628, 708.6475pt x 440.64626pt>
 File: Figures/BiasResp_Exp1_P4.pdf Graphic file (type pdf)
 
 <use Figures/BiasResp_Exp1_P4.pdf>
 Package pdftex.def Info: Figures/BiasResp_Exp1_P4.pdf used on input line 38.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasResp_Exp1_P5.pdf, id=1624, 708.6475pt x 440.64626pt>
+<Figures/BiasResp_Exp1_P5.pdf, id=1629, 708.6475pt x 440.64626pt>
 File: Figures/BiasResp_Exp1_P5.pdf Graphic file (type pdf)
 
 <use Figures/BiasResp_Exp1_P5.pdf>
 Package pdftex.def Info: Figures/BiasResp_Exp1_P5.pdf used on input line 38.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasResp_Exp1_P6.pdf, id=1625, 708.6475pt x 440.64626pt>
+<Figures/BiasResp_Exp1_P6.pdf, id=1630, 708.6475pt x 440.64626pt>
 File: Figures/BiasResp_Exp1_P6.pdf Graphic file (type pdf)
 
 <use Figures/BiasResp_Exp1_P6.pdf>
 Package pdftex.def Info: Figures/BiasResp_Exp1_P6.pdf used on input line 38.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasResp_Exp1_P7.pdf, id=1626, 708.6475pt x 440.64626pt>
+<Figures/BiasResp_Exp1_P7.pdf, id=1631, 708.6475pt x 440.64626pt>
 File: Figures/BiasResp_Exp1_P7.pdf Graphic file (type pdf)
 
 <use Figures/BiasResp_Exp1_P7.pdf>
 Package pdftex.def Info: Figures/BiasResp_Exp1_P7.pdf used on input line 39.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasResp_Exp1_P8.pdf, id=1627, 708.6475pt x 440.64626pt>
+<Figures/BiasResp_Exp1_P8.pdf, id=1632, 708.6475pt x 440.64626pt>
 File: Figures/BiasResp_Exp1_P8.pdf Graphic file (type pdf)
 
 <use Figures/BiasResp_Exp1_P8.pdf>
 Package pdftex.def Info: Figures/BiasResp_Exp1_P8.pdf used on input line 39.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasResp_Exp1_P9.pdf, id=1628, 708.6475pt x 440.64626pt>
+<Figures/BiasResp_Exp1_P9.pdf, id=1633, 708.6475pt x 440.64626pt>
 File: Figures/BiasResp_Exp1_P9.pdf Graphic file (type pdf)
 
 <use Figures/BiasResp_Exp1_P9.pdf>
 Package pdftex.def Info: Figures/BiasResp_Exp1_P9.pdf used on input line 39.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasResp_Exp1_P10.pdf, id=1629, 708.6475pt x 440.64626pt>
+<Figures/BiasResp_Exp1_P10.pdf, id=1634, 708.6475pt x 440.64626pt>
 File: Figures/BiasResp_Exp1_P10.pdf Graphic file (type pdf)
 
 <use Figures/BiasResp_Exp1_P10.pdf>
 Package pdftex.def Info: Figures/BiasResp_Exp1_P10.pdf used on input line 40.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasResp_Exp1_P11.pdf, id=1630, 708.6475pt x 440.64626pt>
+<Figures/BiasResp_Exp1_P11.pdf, id=1635, 708.6475pt x 440.64626pt>
 File: Figures/BiasResp_Exp1_P11.pdf Graphic file (type pdf)
 
 <use Figures/BiasResp_Exp1_P11.pdf>
 Package pdftex.def Info: Figures/BiasResp_Exp1_P11.pdf used on input line 40.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasResp_Exp1_P12.pdf, id=1631, 708.6475pt x 440.64626pt>
+<Figures/BiasResp_Exp1_P12.pdf, id=1636, 708.6475pt x 440.64626pt>
 File: Figures/BiasResp_Exp1_P12.pdf Graphic file (type pdf)
 
 <use Figures/BiasResp_Exp1_P12.pdf>
 Package pdftex.def Info: Figures/BiasResp_Exp1_P12.pdf used on input line 40.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasResp_Exp1_P13.pdf, id=1632, 708.6475pt x 440.64626pt>
+<Figures/BiasResp_Exp1_P13.pdf, id=1637, 708.6475pt x 440.64626pt>
 File: Figures/BiasResp_Exp1_P13.pdf Graphic file (type pdf)
 
 <use Figures/BiasResp_Exp1_P13.pdf>
 Package pdftex.def Info: Figures/BiasResp_Exp1_P13.pdf used on input line 41.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasResp_Exp1_P14.pdf, id=1633, 708.6475pt x 440.64626pt>
+<Figures/BiasResp_Exp1_P14.pdf, id=1638, 708.6475pt x 440.64626pt>
 File: Figures/BiasResp_Exp1_P14.pdf Graphic file (type pdf)
 
 <use Figures/BiasResp_Exp1_P14.pdf>
 Package pdftex.def Info: Figures/BiasResp_Exp1_P14.pdf used on input line 41.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasResp_Exp1_P15.pdf, id=1634, 708.6475pt x 440.64626pt>
+<Figures/BiasResp_Exp1_P15.pdf, id=1639, 708.6475pt x 440.64626pt>
 File: Figures/BiasResp_Exp1_P15.pdf Graphic file (type pdf)
 
 <use Figures/BiasResp_Exp1_P15.pdf>
 Package pdftex.def Info: Figures/BiasResp_Exp1_P15.pdf used on input line 41.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasResp_Exp1_P16.pdf, id=1635, 708.6475pt x 440.64626pt>
+<Figures/BiasResp_Exp1_P16.pdf, id=1640, 708.6475pt x 440.64626pt>
 File: Figures/BiasResp_Exp1_P16.pdf Graphic file (type pdf)
 
 <use Figures/BiasResp_Exp1_P16.pdf>
 Package pdftex.def Info: Figures/BiasResp_Exp1_P16.pdf used on input line 42.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasResp_Exp1_P17.pdf, id=1636, 708.6475pt x 440.64626pt>
+<Figures/BiasResp_Exp1_P17.pdf, id=1641, 708.6475pt x 440.64626pt>
 File: Figures/BiasResp_Exp1_P17.pdf Graphic file (type pdf)
 
 <use Figures/BiasResp_Exp1_P17.pdf>
 Package pdftex.def Info: Figures/BiasResp_Exp1_P17.pdf used on input line 42.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasResp_Exp1_P18.pdf, id=1637, 708.6475pt x 440.64626pt>
+<Figures/BiasResp_Exp1_P18.pdf, id=1642, 708.6475pt x 440.64626pt>
 File: Figures/BiasResp_Exp1_P18.pdf Graphic file (type pdf)
 
 <use Figures/BiasResp_Exp1_P18.pdf>
 Package pdftex.def Info: Figures/BiasResp_Exp1_P18.pdf used on input line 42.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasResp_Exp1_P19.pdf, id=1638, 708.6475pt x 440.64626pt>
+<Figures/BiasResp_Exp1_P19.pdf, id=1643, 708.6475pt x 440.64626pt>
 File: Figures/BiasResp_Exp1_P19.pdf Graphic file (type pdf)
 
 <use Figures/BiasResp_Exp1_P19.pdf>
 Package pdftex.def Info: Figures/BiasResp_Exp1_P19.pdf used on input line 43.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasResp_Exp1_P20.pdf, id=1639, 708.6475pt x 440.64626pt>
+<Figures/BiasResp_Exp1_P20.pdf, id=1644, 708.6475pt x 440.64626pt>
 File: Figures/BiasResp_Exp1_P20.pdf Graphic file (type pdf)
 
 <use Figures/BiasResp_Exp1_P20.pdf>
@@ -7246,378 +7291,378 @@ File: Figures/BiasResp_Exp2_P1.pdf Graphic file (type pdf)
 Package pdftex.def Info: Figures/BiasResp_Exp2_P1.pdf used on input line 51.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasResp_Exp2_P2.pdf, id=1640, 708.6475pt x 440.64626pt>
+<Figures/BiasResp_Exp2_P2.pdf, id=1645, 708.6475pt x 440.64626pt>
 File: Figures/BiasResp_Exp2_P2.pdf Graphic file (type pdf)
 
 <use Figures/BiasResp_Exp2_P2.pdf>
 Package pdftex.def Info: Figures/BiasResp_Exp2_P2.pdf used on input line 51.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasResp_Exp2_P3.pdf, id=1641, 708.6475pt x 440.64626pt>
+<Figures/BiasResp_Exp2_P3.pdf, id=1646, 708.6475pt x 440.64626pt>
 File: Figures/BiasResp_Exp2_P3.pdf Graphic file (type pdf)
 
 <use Figures/BiasResp_Exp2_P3.pdf>
 Package pdftex.def Info: Figures/BiasResp_Exp2_P3.pdf used on input line 51.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasResp_Exp2_P4.pdf, id=1642, 708.6475pt x 440.64626pt>
+<Figures/BiasResp_Exp2_P4.pdf, id=1647, 708.6475pt x 440.64626pt>
 File: Figures/BiasResp_Exp2_P4.pdf Graphic file (type pdf)
 
 <use Figures/BiasResp_Exp2_P4.pdf>
 Package pdftex.def Info: Figures/BiasResp_Exp2_P4.pdf used on input line 52.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasResp_Exp2_P5.pdf, id=1643, 708.6475pt x 440.64626pt>
+<Figures/BiasResp_Exp2_P5.pdf, id=1648, 708.6475pt x 440.64626pt>
 File: Figures/BiasResp_Exp2_P5.pdf Graphic file (type pdf)
 
 <use Figures/BiasResp_Exp2_P5.pdf>
 Package pdftex.def Info: Figures/BiasResp_Exp2_P5.pdf used on input line 52.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasResp_Exp2_P6.pdf, id=1644, 708.6475pt x 440.64626pt>
+<Figures/BiasResp_Exp2_P6.pdf, id=1649, 708.6475pt x 440.64626pt>
 File: Figures/BiasResp_Exp2_P6.pdf Graphic file (type pdf)
 
 <use Figures/BiasResp_Exp2_P6.pdf>
 Package pdftex.def Info: Figures/BiasResp_Exp2_P6.pdf used on input line 52.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasResp_Exp2_P7.pdf, id=1645, 708.6475pt x 440.64626pt>
+<Figures/BiasResp_Exp2_P7.pdf, id=1650, 708.6475pt x 440.64626pt>
 File: Figures/BiasResp_Exp2_P7.pdf Graphic file (type pdf)
 
 <use Figures/BiasResp_Exp2_P7.pdf>
 Package pdftex.def Info: Figures/BiasResp_Exp2_P7.pdf used on input line 53.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasResp_Exp2_P8.pdf, id=1646, 708.6475pt x 440.64626pt>
+<Figures/BiasResp_Exp2_P8.pdf, id=1651, 708.6475pt x 440.64626pt>
 File: Figures/BiasResp_Exp2_P8.pdf Graphic file (type pdf)
 
 <use Figures/BiasResp_Exp2_P8.pdf>
 Package pdftex.def Info: Figures/BiasResp_Exp2_P8.pdf used on input line 53.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasResp_Exp2_P9.pdf, id=1647, 708.6475pt x 440.64626pt>
+<Figures/BiasResp_Exp2_P9.pdf, id=1652, 708.6475pt x 440.64626pt>
 File: Figures/BiasResp_Exp2_P9.pdf Graphic file (type pdf)
 
 <use Figures/BiasResp_Exp2_P9.pdf>
 Package pdftex.def Info: Figures/BiasResp_Exp2_P9.pdf used on input line 53.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasResp_Exp2_P10.pdf, id=1648, 708.6475pt x 440.64626pt>
+<Figures/BiasResp_Exp2_P10.pdf, id=1653, 708.6475pt x 440.64626pt>
 File: Figures/BiasResp_Exp2_P10.pdf Graphic file (type pdf)
 
 <use Figures/BiasResp_Exp2_P10.pdf>
 Package pdftex.def Info: Figures/BiasResp_Exp2_P10.pdf used on input line 54.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasResp_Exp2_P11.pdf, id=1649, 708.6475pt x 440.64626pt>
+<Figures/BiasResp_Exp2_P11.pdf, id=1654, 708.6475pt x 440.64626pt>
 File: Figures/BiasResp_Exp2_P11.pdf Graphic file (type pdf)
 
 <use Figures/BiasResp_Exp2_P11.pdf>
 Package pdftex.def Info: Figures/BiasResp_Exp2_P11.pdf used on input line 54.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasResp_Exp2_P12.pdf, id=1650, 708.6475pt x 440.64626pt>
+<Figures/BiasResp_Exp2_P12.pdf, id=1655, 708.6475pt x 440.64626pt>
 File: Figures/BiasResp_Exp2_P12.pdf Graphic file (type pdf)
 
 <use Figures/BiasResp_Exp2_P12.pdf>
 Package pdftex.def Info: Figures/BiasResp_Exp2_P12.pdf used on input line 54.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasResp_Exp2_P13.pdf, id=1651, 708.6475pt x 440.64626pt>
+<Figures/BiasResp_Exp2_P13.pdf, id=1656, 708.6475pt x 440.64626pt>
 File: Figures/BiasResp_Exp2_P13.pdf Graphic file (type pdf)
 
 <use Figures/BiasResp_Exp2_P13.pdf>
 Package pdftex.def Info: Figures/BiasResp_Exp2_P13.pdf used on input line 55.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasResp_Exp2_P14.pdf, id=1652, 708.6475pt x 440.64626pt>
+<Figures/BiasResp_Exp2_P14.pdf, id=1657, 708.6475pt x 440.64626pt>
 File: Figures/BiasResp_Exp2_P14.pdf Graphic file (type pdf)
 
 <use Figures/BiasResp_Exp2_P14.pdf>
 Package pdftex.def Info: Figures/BiasResp_Exp2_P14.pdf used on input line 55.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasResp_Exp2_P15.pdf, id=1653, 708.6475pt x 440.64626pt>
+<Figures/BiasResp_Exp2_P15.pdf, id=1658, 708.6475pt x 440.64626pt>
 File: Figures/BiasResp_Exp2_P15.pdf Graphic file (type pdf)
 
 <use Figures/BiasResp_Exp2_P15.pdf>
 Package pdftex.def Info: Figures/BiasResp_Exp2_P15.pdf used on input line 55.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasResp_Exp2_P16.pdf, id=1654, 708.6475pt x 440.64626pt>
+<Figures/BiasResp_Exp2_P16.pdf, id=1659, 708.6475pt x 440.64626pt>
 File: Figures/BiasResp_Exp2_P16.pdf Graphic file (type pdf)
 
 <use Figures/BiasResp_Exp2_P16.pdf>
 Package pdftex.def Info: Figures/BiasResp_Exp2_P16.pdf used on input line 56.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasResp_Exp2_P17.pdf, id=1655, 708.6475pt x 440.64626pt>
+<Figures/BiasResp_Exp2_P17.pdf, id=1660, 708.6475pt x 440.64626pt>
 File: Figures/BiasResp_Exp2_P17.pdf Graphic file (type pdf)
 
 <use Figures/BiasResp_Exp2_P17.pdf>
 Package pdftex.def Info: Figures/BiasResp_Exp2_P17.pdf used on input line 56.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasResp_Exp2_P18.pdf, id=1656, 708.6475pt x 440.64626pt>
+<Figures/BiasResp_Exp2_P18.pdf, id=1661, 708.6475pt x 440.64626pt>
 File: Figures/BiasResp_Exp2_P18.pdf Graphic file (type pdf)
 
 <use Figures/BiasResp_Exp2_P18.pdf>
 Package pdftex.def Info: Figures/BiasResp_Exp2_P18.pdf used on input line 56.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasResp_Exp2_P19.pdf, id=1657, 708.6475pt x 440.64626pt>
+<Figures/BiasResp_Exp2_P19.pdf, id=1662, 708.6475pt x 440.64626pt>
 File: Figures/BiasResp_Exp2_P19.pdf Graphic file (type pdf)
 
 <use Figures/BiasResp_Exp2_P19.pdf>
 Package pdftex.def Info: Figures/BiasResp_Exp2_P19.pdf used on input line 57.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasResp_Exp2_P20.pdf, id=1658, 708.6475pt x 440.64626pt>
+<Figures/BiasResp_Exp2_P20.pdf, id=1663, 708.6475pt x 440.64626pt>
 File: Figures/BiasResp_Exp2_P20.pdf Graphic file (type pdf)
 
 <use Figures/BiasResp_Exp2_P20.pdf>
 Package pdftex.def Info: Figures/BiasResp_Exp2_P20.pdf used on input line 57.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasResp_Exp2_P21.pdf, id=1659, 708.6475pt x 440.64626pt>
+<Figures/BiasResp_Exp2_P21.pdf, id=1664, 708.6475pt x 440.64626pt>
 File: Figures/BiasResp_Exp2_P21.pdf Graphic file (type pdf)
 
 <use Figures/BiasResp_Exp2_P21.pdf>
 Package pdftex.def Info: Figures/BiasResp_Exp2_P21.pdf used on input line 57.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Rating_Exp1_P1.pdf, id=1660, 708.6475pt x 440.64626pt>
+<Figures/Rating_Exp1_P1.pdf, id=1665, 708.6475pt x 440.64626pt>
 File: Figures/Rating_Exp1_P1.pdf Graphic file (type pdf)
 
 <use Figures/Rating_Exp1_P1.pdf>
 Package pdftex.def Info: Figures/Rating_Exp1_P1.pdf used on input line 65.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Rating_Exp1_P2.pdf, id=1661, 708.6475pt x 440.64626pt>
+<Figures/Rating_Exp1_P2.pdf, id=1666, 708.6475pt x 440.64626pt>
 File: Figures/Rating_Exp1_P2.pdf Graphic file (type pdf)
 
 <use Figures/Rating_Exp1_P2.pdf>
 Package pdftex.def Info: Figures/Rating_Exp1_P2.pdf used on input line 65.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Rating_Exp1_P3.pdf, id=1662, 708.6475pt x 440.64626pt>
+<Figures/Rating_Exp1_P3.pdf, id=1667, 708.6475pt x 440.64626pt>
 File: Figures/Rating_Exp1_P3.pdf Graphic file (type pdf)
 
 <use Figures/Rating_Exp1_P3.pdf>
 Package pdftex.def Info: Figures/Rating_Exp1_P3.pdf used on input line 65.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Rating_Exp1_P4.pdf, id=1663, 708.6475pt x 440.64626pt>
+<Figures/Rating_Exp1_P4.pdf, id=1668, 708.6475pt x 440.64626pt>
 File: Figures/Rating_Exp1_P4.pdf Graphic file (type pdf)
 
 <use Figures/Rating_Exp1_P4.pdf>
 Package pdftex.def Info: Figures/Rating_Exp1_P4.pdf used on input line 66.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Rating_Exp1_P5.pdf, id=1664, 708.6475pt x 440.64626pt>
+<Figures/Rating_Exp1_P5.pdf, id=1669, 708.6475pt x 440.64626pt>
 File: Figures/Rating_Exp1_P5.pdf Graphic file (type pdf)
 
 <use Figures/Rating_Exp1_P5.pdf>
 Package pdftex.def Info: Figures/Rating_Exp1_P5.pdf used on input line 66.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Rating_Exp1_P6.pdf, id=1665, 708.6475pt x 440.64626pt>
+<Figures/Rating_Exp1_P6.pdf, id=1670, 708.6475pt x 440.64626pt>
 File: Figures/Rating_Exp1_P6.pdf Graphic file (type pdf)
 
 <use Figures/Rating_Exp1_P6.pdf>
 Package pdftex.def Info: Figures/Rating_Exp1_P6.pdf used on input line 66.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Rating_Exp1_P7.pdf, id=1666, 708.6475pt x 440.64626pt>
+<Figures/Rating_Exp1_P7.pdf, id=1671, 708.6475pt x 440.64626pt>
 File: Figures/Rating_Exp1_P7.pdf Graphic file (type pdf)
 
 <use Figures/Rating_Exp1_P7.pdf>
 Package pdftex.def Info: Figures/Rating_Exp1_P7.pdf used on input line 67.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Rating_Exp1_P8.pdf, id=1667, 708.6475pt x 440.64626pt>
+<Figures/Rating_Exp1_P8.pdf, id=1672, 708.6475pt x 440.64626pt>
 File: Figures/Rating_Exp1_P8.pdf Graphic file (type pdf)
 
 <use Figures/Rating_Exp1_P8.pdf>
 Package pdftex.def Info: Figures/Rating_Exp1_P8.pdf used on input line 67.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Rating_Exp1_P9.pdf, id=1668, 708.6475pt x 440.64626pt>
+<Figures/Rating_Exp1_P9.pdf, id=1673, 708.6475pt x 440.64626pt>
 File: Figures/Rating_Exp1_P9.pdf Graphic file (type pdf)
 
 <use Figures/Rating_Exp1_P9.pdf>
 Package pdftex.def Info: Figures/Rating_Exp1_P9.pdf used on input line 67.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Rating_Exp1_P10.pdf, id=1669, 708.6475pt x 440.64626pt>
+<Figures/Rating_Exp1_P10.pdf, id=1674, 708.6475pt x 440.64626pt>
 File: Figures/Rating_Exp1_P10.pdf Graphic file (type pdf)
 
 <use Figures/Rating_Exp1_P10.pdf>
 Package pdftex.def Info: Figures/Rating_Exp1_P10.pdf used on input line 68.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Rating_Exp1_P11.pdf, id=1670, 708.6475pt x 440.64626pt>
+<Figures/Rating_Exp1_P11.pdf, id=1675, 708.6475pt x 440.64626pt>
 File: Figures/Rating_Exp1_P11.pdf Graphic file (type pdf)
 
 <use Figures/Rating_Exp1_P11.pdf>
 Package pdftex.def Info: Figures/Rating_Exp1_P11.pdf used on input line 68.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Rating_Exp1_P12.pdf, id=1671, 708.6475pt x 440.64626pt>
+<Figures/Rating_Exp1_P12.pdf, id=1676, 708.6475pt x 440.64626pt>
 File: Figures/Rating_Exp1_P12.pdf Graphic file (type pdf)
 
 <use Figures/Rating_Exp1_P12.pdf>
 Package pdftex.def Info: Figures/Rating_Exp1_P12.pdf used on input line 68.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Rating_Exp1_P13.pdf, id=1672, 708.6475pt x 440.64626pt>
+<Figures/Rating_Exp1_P13.pdf, id=1677, 708.6475pt x 440.64626pt>
 File: Figures/Rating_Exp1_P13.pdf Graphic file (type pdf)
 
 <use Figures/Rating_Exp1_P13.pdf>
 Package pdftex.def Info: Figures/Rating_Exp1_P13.pdf used on input line 69.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Rating_Exp1_P14.pdf, id=1673, 708.6475pt x 440.64626pt>
+<Figures/Rating_Exp1_P14.pdf, id=1678, 708.6475pt x 440.64626pt>
 File: Figures/Rating_Exp1_P14.pdf Graphic file (type pdf)
 
 <use Figures/Rating_Exp1_P14.pdf>
 Package pdftex.def Info: Figures/Rating_Exp1_P14.pdf used on input line 69.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Rating_Exp1_P15.pdf, id=1674, 708.6475pt x 440.64626pt>
+<Figures/Rating_Exp1_P15.pdf, id=1679, 708.6475pt x 440.64626pt>
 File: Figures/Rating_Exp1_P15.pdf Graphic file (type pdf)
 
 <use Figures/Rating_Exp1_P15.pdf>
 Package pdftex.def Info: Figures/Rating_Exp1_P15.pdf used on input line 69.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Rating_Exp1_P16.pdf, id=1675, 708.6475pt x 440.64626pt>
+<Figures/Rating_Exp1_P16.pdf, id=1680, 708.6475pt x 440.64626pt>
 File: Figures/Rating_Exp1_P16.pdf Graphic file (type pdf)
 
 <use Figures/Rating_Exp1_P16.pdf>
 Package pdftex.def Info: Figures/Rating_Exp1_P16.pdf used on input line 70.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Rating_Exp1_P17.pdf, id=1676, 708.6475pt x 440.64626pt>
+<Figures/Rating_Exp1_P17.pdf, id=1681, 708.6475pt x 440.64626pt>
 File: Figures/Rating_Exp1_P17.pdf Graphic file (type pdf)
 
 <use Figures/Rating_Exp1_P17.pdf>
 Package pdftex.def Info: Figures/Rating_Exp1_P17.pdf used on input line 70.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Rating_Exp1_P18.pdf, id=1677, 708.6475pt x 440.64626pt>
+<Figures/Rating_Exp1_P18.pdf, id=1682, 708.6475pt x 440.64626pt>
 File: Figures/Rating_Exp1_P18.pdf Graphic file (type pdf)
 
 <use Figures/Rating_Exp1_P18.pdf>
 Package pdftex.def Info: Figures/Rating_Exp1_P18.pdf used on input line 70.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Rating_Exp1_P19.pdf, id=1678, 708.6475pt x 440.64626pt>
+<Figures/Rating_Exp1_P19.pdf, id=1683, 708.6475pt x 440.64626pt>
 File: Figures/Rating_Exp1_P19.pdf Graphic file (type pdf)
 
 <use Figures/Rating_Exp1_P19.pdf>
 Package pdftex.def Info: Figures/Rating_Exp1_P19.pdf used on input line 71.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Rating_Exp1_P20.pdf, id=1679, 708.6475pt x 440.64626pt>
+<Figures/Rating_Exp1_P20.pdf, id=1684, 708.6475pt x 440.64626pt>
 File: Figures/Rating_Exp1_P20.pdf Graphic file (type pdf)
 
 <use Figures/Rating_Exp1_P20.pdf>
 Package pdftex.def Info: Figures/Rating_Exp1_P20.pdf used on input line 71.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Rating_Exp2_P1.pdf, id=1680, 708.6475pt x 440.64626pt>
+<Figures/Rating_Exp2_P1.pdf, id=1685, 708.6475pt x 440.64626pt>
 File: Figures/Rating_Exp2_P1.pdf Graphic file (type pdf)
 
 <use Figures/Rating_Exp2_P1.pdf>
 Package pdftex.def Info: Figures/Rating_Exp2_P1.pdf used on input line 79.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Rating_Exp2_P2.pdf, id=1681, 708.6475pt x 440.64626pt>
+<Figures/Rating_Exp2_P2.pdf, id=1686, 708.6475pt x 440.64626pt>
 File: Figures/Rating_Exp2_P2.pdf Graphic file (type pdf)
 
 <use Figures/Rating_Exp2_P2.pdf>
 Package pdftex.def Info: Figures/Rating_Exp2_P2.pdf used on input line 79.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Rating_Exp2_P3.pdf, id=1682, 708.6475pt x 440.64626pt>
+<Figures/Rating_Exp2_P3.pdf, id=1687, 708.6475pt x 440.64626pt>
 File: Figures/Rating_Exp2_P3.pdf Graphic file (type pdf)
 
 <use Figures/Rating_Exp2_P3.pdf>
 Package pdftex.def Info: Figures/Rating_Exp2_P3.pdf used on input line 79.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Rating_Exp2_P4.pdf, id=1683, 708.6475pt x 440.64626pt>
+<Figures/Rating_Exp2_P4.pdf, id=1688, 708.6475pt x 440.64626pt>
 File: Figures/Rating_Exp2_P4.pdf Graphic file (type pdf)
 
 <use Figures/Rating_Exp2_P4.pdf>
 Package pdftex.def Info: Figures/Rating_Exp2_P4.pdf used on input line 80.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Rating_Exp2_P5.pdf, id=1684, 708.6475pt x 440.64626pt>
+<Figures/Rating_Exp2_P5.pdf, id=1689, 708.6475pt x 440.64626pt>
 File: Figures/Rating_Exp2_P5.pdf Graphic file (type pdf)
 
 <use Figures/Rating_Exp2_P5.pdf>
 Package pdftex.def Info: Figures/Rating_Exp2_P5.pdf used on input line 80.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Rating_Exp2_P6.pdf, id=1685, 708.6475pt x 440.64626pt>
+<Figures/Rating_Exp2_P6.pdf, id=1690, 708.6475pt x 440.64626pt>
 File: Figures/Rating_Exp2_P6.pdf Graphic file (type pdf)
 
 <use Figures/Rating_Exp2_P6.pdf>
 Package pdftex.def Info: Figures/Rating_Exp2_P6.pdf used on input line 80.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Rating_Exp2_P7.pdf, id=1686, 708.6475pt x 440.64626pt>
+<Figures/Rating_Exp2_P7.pdf, id=1691, 708.6475pt x 440.64626pt>
 File: Figures/Rating_Exp2_P7.pdf Graphic file (type pdf)
 
 <use Figures/Rating_Exp2_P7.pdf>
 Package pdftex.def Info: Figures/Rating_Exp2_P7.pdf used on input line 81.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Rating_Exp2_P8.pdf, id=1687, 708.6475pt x 440.64626pt>
+<Figures/Rating_Exp2_P8.pdf, id=1692, 708.6475pt x 440.64626pt>
 File: Figures/Rating_Exp2_P8.pdf Graphic file (type pdf)
 
 <use Figures/Rating_Exp2_P8.pdf>
 Package pdftex.def Info: Figures/Rating_Exp2_P8.pdf used on input line 81.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Rating_Exp2_P9.pdf, id=1688, 708.6475pt x 440.64626pt>
+<Figures/Rating_Exp2_P9.pdf, id=1693, 708.6475pt x 440.64626pt>
 File: Figures/Rating_Exp2_P9.pdf Graphic file (type pdf)
 
 <use Figures/Rating_Exp2_P9.pdf>
 Package pdftex.def Info: Figures/Rating_Exp2_P9.pdf used on input line 81.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Rating_Exp2_P10.pdf, id=1689, 708.6475pt x 440.64626pt>
+<Figures/Rating_Exp2_P10.pdf, id=1694, 708.6475pt x 440.64626pt>
 File: Figures/Rating_Exp2_P10.pdf Graphic file (type pdf)
 
 <use Figures/Rating_Exp2_P10.pdf>
 Package pdftex.def Info: Figures/Rating_Exp2_P10.pdf used on input line 82.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Rating_Exp2_P11.pdf, id=1690, 708.6475pt x 440.64626pt>
+<Figures/Rating_Exp2_P11.pdf, id=1695, 708.6475pt x 440.64626pt>
 File: Figures/Rating_Exp2_P11.pdf Graphic file (type pdf)
 
 <use Figures/Rating_Exp2_P11.pdf>
 Package pdftex.def Info: Figures/Rating_Exp2_P11.pdf used on input line 82.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Rating_Exp2_P12.pdf, id=1691, 708.6475pt x 440.64626pt>
+<Figures/Rating_Exp2_P12.pdf, id=1696, 708.6475pt x 440.64626pt>
 File: Figures/Rating_Exp2_P12.pdf Graphic file (type pdf)
 
 <use Figures/Rating_Exp2_P12.pdf>
 Package pdftex.def Info: Figures/Rating_Exp2_P12.pdf used on input line 82.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Rating_Exp2_P13.pdf, id=1692, 708.6475pt x 440.64626pt>
+<Figures/Rating_Exp2_P13.pdf, id=1697, 708.6475pt x 440.64626pt>
 File: Figures/Rating_Exp2_P13.pdf Graphic file (type pdf)
 
 <use Figures/Rating_Exp2_P13.pdf>
 Package pdftex.def Info: Figures/Rating_Exp2_P13.pdf used on input line 83.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Rating_Exp2_P14.pdf, id=1693, 708.6475pt x 440.64626pt>
+<Figures/Rating_Exp2_P14.pdf, id=1698, 708.6475pt x 440.64626pt>
 File: Figures/Rating_Exp2_P14.pdf Graphic file (type pdf)
 
 <use Figures/Rating_Exp2_P14.pdf>
@@ -7628,273 +7673,273 @@ File: Figures/Rating_Exp2_P15.pdf Graphic file (type pdf)
 Package pdftex.def Info: Figures/Rating_Exp2_P15.pdf used on input line 83.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Rating_Exp2_P16.pdf, id=1694, 708.6475pt x 440.64626pt>
+<Figures/Rating_Exp2_P16.pdf, id=1699, 708.6475pt x 440.64626pt>
 File: Figures/Rating_Exp2_P16.pdf Graphic file (type pdf)
 
 <use Figures/Rating_Exp2_P16.pdf>
 Package pdftex.def Info: Figures/Rating_Exp2_P16.pdf used on input line 84.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Rating_Exp2_P17.pdf, id=1695, 708.6475pt x 440.64626pt>
+<Figures/Rating_Exp2_P17.pdf, id=1700, 708.6475pt x 440.64626pt>
 File: Figures/Rating_Exp2_P17.pdf Graphic file (type pdf)
 
 <use Figures/Rating_Exp2_P17.pdf>
 Package pdftex.def Info: Figures/Rating_Exp2_P17.pdf used on input line 84.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Rating_Exp2_P18.pdf, id=1696, 708.6475pt x 440.64626pt>
+<Figures/Rating_Exp2_P18.pdf, id=1701, 708.6475pt x 440.64626pt>
 File: Figures/Rating_Exp2_P18.pdf Graphic file (type pdf)
 
 <use Figures/Rating_Exp2_P18.pdf>
 Package pdftex.def Info: Figures/Rating_Exp2_P18.pdf used on input line 84.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Rating_Exp2_P19.pdf, id=1697, 708.6475pt x 440.64626pt>
+<Figures/Rating_Exp2_P19.pdf, id=1702, 708.6475pt x 440.64626pt>
 File: Figures/Rating_Exp2_P19.pdf Graphic file (type pdf)
 
 <use Figures/Rating_Exp2_P19.pdf>
 Package pdftex.def Info: Figures/Rating_Exp2_P19.pdf used on input line 85.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Rating_Exp2_P20.pdf, id=1698, 708.6475pt x 440.64626pt>
+<Figures/Rating_Exp2_P20.pdf, id=1703, 708.6475pt x 440.64626pt>
 File: Figures/Rating_Exp2_P20.pdf Graphic file (type pdf)
 
 <use Figures/Rating_Exp2_P20.pdf>
 Package pdftex.def Info: Figures/Rating_Exp2_P20.pdf used on input line 85.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Rating_Exp2_P21.pdf, id=1699, 708.6475pt x 440.64626pt>
+<Figures/Rating_Exp2_P21.pdf, id=1704, 708.6475pt x 440.64626pt>
 File: Figures/Rating_Exp2_P21.pdf Graphic file (type pdf)
 
 <use Figures/Rating_Exp2_P21.pdf>
 Package pdftex.def Info: Figures/Rating_Exp2_P21.pdf used on input line 85.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Success_Exp1_P1.pdf, id=1700, 708.6475pt x 440.64626pt>
+<Figures/Success_Exp1_P1.pdf, id=1705, 708.6475pt x 440.64626pt>
 File: Figures/Success_Exp1_P1.pdf Graphic file (type pdf)
 
 <use Figures/Success_Exp1_P1.pdf>
 Package pdftex.def Info: Figures/Success_Exp1_P1.pdf used on input line 103.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Success_Exp1_P2.pdf, id=1701, 708.6475pt x 440.64626pt>
+<Figures/Success_Exp1_P2.pdf, id=1706, 708.6475pt x 440.64626pt>
 File: Figures/Success_Exp1_P2.pdf Graphic file (type pdf)
 
 <use Figures/Success_Exp1_P2.pdf>
 Package pdftex.def Info: Figures/Success_Exp1_P2.pdf used on input line 103.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Success_Exp1_P3.pdf, id=1702, 708.6475pt x 440.64626pt>
+<Figures/Success_Exp1_P3.pdf, id=1707, 708.6475pt x 440.64626pt>
 File: Figures/Success_Exp1_P3.pdf Graphic file (type pdf)
 
 <use Figures/Success_Exp1_P3.pdf>
 Package pdftex.def Info: Figures/Success_Exp1_P3.pdf used on input line 103.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Success_Exp1_P4.pdf, id=1703, 708.6475pt x 440.64626pt>
+<Figures/Success_Exp1_P4.pdf, id=1708, 708.6475pt x 440.64626pt>
 File: Figures/Success_Exp1_P4.pdf Graphic file (type pdf)
 
 <use Figures/Success_Exp1_P4.pdf>
 Package pdftex.def Info: Figures/Success_Exp1_P4.pdf used on input line 104.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Success_Exp1_P5.pdf, id=1704, 708.6475pt x 440.64626pt>
+<Figures/Success_Exp1_P5.pdf, id=1709, 708.6475pt x 440.64626pt>
 File: Figures/Success_Exp1_P5.pdf Graphic file (type pdf)
 
 <use Figures/Success_Exp1_P5.pdf>
 Package pdftex.def Info: Figures/Success_Exp1_P5.pdf used on input line 104.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Success_Exp1_P6.pdf, id=1705, 708.6475pt x 440.64626pt>
+<Figures/Success_Exp1_P6.pdf, id=1710, 708.6475pt x 440.64626pt>
 File: Figures/Success_Exp1_P6.pdf Graphic file (type pdf)
 
 <use Figures/Success_Exp1_P6.pdf>
 Package pdftex.def Info: Figures/Success_Exp1_P6.pdf used on input line 104.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Success_Exp1_P7.pdf, id=1706, 708.6475pt x 440.64626pt>
+<Figures/Success_Exp1_P7.pdf, id=1711, 708.6475pt x 440.64626pt>
 File: Figures/Success_Exp1_P7.pdf Graphic file (type pdf)
 
 <use Figures/Success_Exp1_P7.pdf>
 Package pdftex.def Info: Figures/Success_Exp1_P7.pdf used on input line 105.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Success_Exp1_P8.pdf, id=1707, 708.6475pt x 440.64626pt>
+<Figures/Success_Exp1_P8.pdf, id=1712, 708.6475pt x 440.64626pt>
 File: Figures/Success_Exp1_P8.pdf Graphic file (type pdf)
 
 <use Figures/Success_Exp1_P8.pdf>
 Package pdftex.def Info: Figures/Success_Exp1_P8.pdf used on input line 105.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Success_Exp1_P9.pdf, id=1708, 708.6475pt x 440.64626pt>
+<Figures/Success_Exp1_P9.pdf, id=1713, 708.6475pt x 440.64626pt>
 File: Figures/Success_Exp1_P9.pdf Graphic file (type pdf)
 
 <use Figures/Success_Exp1_P9.pdf>
 Package pdftex.def Info: Figures/Success_Exp1_P9.pdf used on input line 105.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Success_Exp1_P10.pdf, id=1709, 708.6475pt x 440.64626pt>
+<Figures/Success_Exp1_P10.pdf, id=1714, 708.6475pt x 440.64626pt>
 File: Figures/Success_Exp1_P10.pdf Graphic file (type pdf)
 
 <use Figures/Success_Exp1_P10.pdf>
 Package pdftex.def Info: Figures/Success_Exp1_P10.pdf used on input line 106.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Success_Exp1_P11.pdf, id=1710, 708.6475pt x 440.64626pt>
+<Figures/Success_Exp1_P11.pdf, id=1715, 708.6475pt x 440.64626pt>
 File: Figures/Success_Exp1_P11.pdf Graphic file (type pdf)
 
 <use Figures/Success_Exp1_P11.pdf>
 Package pdftex.def Info: Figures/Success_Exp1_P11.pdf used on input line 106.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Success_Exp1_P12.pdf, id=1711, 708.6475pt x 440.64626pt>
+<Figures/Success_Exp1_P12.pdf, id=1716, 708.6475pt x 440.64626pt>
 File: Figures/Success_Exp1_P12.pdf Graphic file (type pdf)
 
 <use Figures/Success_Exp1_P12.pdf>
 Package pdftex.def Info: Figures/Success_Exp1_P12.pdf used on input line 106.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Success_Exp1_P13.pdf, id=1712, 708.6475pt x 440.64626pt>
+<Figures/Success_Exp1_P13.pdf, id=1717, 708.6475pt x 440.64626pt>
 File: Figures/Success_Exp1_P13.pdf Graphic file (type pdf)
 
 <use Figures/Success_Exp1_P13.pdf>
 Package pdftex.def Info: Figures/Success_Exp1_P13.pdf used on input line 107.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Success_Exp1_P14.pdf, id=1713, 708.6475pt x 440.64626pt>
+<Figures/Success_Exp1_P14.pdf, id=1718, 708.6475pt x 440.64626pt>
 File: Figures/Success_Exp1_P14.pdf Graphic file (type pdf)
 
 <use Figures/Success_Exp1_P14.pdf>
 Package pdftex.def Info: Figures/Success_Exp1_P14.pdf used on input line 107.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Success_Exp1_P15.pdf, id=1714, 708.6475pt x 440.64626pt>
+<Figures/Success_Exp1_P15.pdf, id=1719, 708.6475pt x 440.64626pt>
 File: Figures/Success_Exp1_P15.pdf Graphic file (type pdf)
 
 <use Figures/Success_Exp1_P15.pdf>
 Package pdftex.def Info: Figures/Success_Exp1_P15.pdf used on input line 107.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Success_Exp1_P16.pdf, id=1715, 708.6475pt x 440.64626pt>
+<Figures/Success_Exp1_P16.pdf, id=1720, 708.6475pt x 440.64626pt>
 File: Figures/Success_Exp1_P16.pdf Graphic file (type pdf)
 
 <use Figures/Success_Exp1_P16.pdf>
 Package pdftex.def Info: Figures/Success_Exp1_P16.pdf used on input line 108.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Success_Exp1_P17.pdf, id=1716, 708.6475pt x 440.64626pt>
+<Figures/Success_Exp1_P17.pdf, id=1721, 708.6475pt x 440.64626pt>
 File: Figures/Success_Exp1_P17.pdf Graphic file (type pdf)
 
 <use Figures/Success_Exp1_P17.pdf>
 Package pdftex.def Info: Figures/Success_Exp1_P17.pdf used on input line 108.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Success_Exp1_P18.pdf, id=1717, 708.6475pt x 440.64626pt>
+<Figures/Success_Exp1_P18.pdf, id=1722, 708.6475pt x 440.64626pt>
 File: Figures/Success_Exp1_P18.pdf Graphic file (type pdf)
 
 <use Figures/Success_Exp1_P18.pdf>
 Package pdftex.def Info: Figures/Success_Exp1_P18.pdf used on input line 108.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Success_Exp1_P19.pdf, id=1718, 708.6475pt x 440.64626pt>
+<Figures/Success_Exp1_P19.pdf, id=1723, 708.6475pt x 440.64626pt>
 File: Figures/Success_Exp1_P19.pdf Graphic file (type pdf)
 
 <use Figures/Success_Exp1_P19.pdf>
 Package pdftex.def Info: Figures/Success_Exp1_P19.pdf used on input line 109.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Success_Exp1_P20.pdf, id=1719, 708.6475pt x 440.64626pt>
+<Figures/Success_Exp1_P20.pdf, id=1724, 708.6475pt x 440.64626pt>
 File: Figures/Success_Exp1_P20.pdf Graphic file (type pdf)
 
 <use Figures/Success_Exp1_P20.pdf>
 Package pdftex.def Info: Figures/Success_Exp1_P20.pdf used on input line 109.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Success_Exp2_P1.pdf, id=1720, 708.6475pt x 440.64626pt>
+<Figures/Success_Exp2_P1.pdf, id=1725, 708.6475pt x 440.64626pt>
 File: Figures/Success_Exp2_P1.pdf Graphic file (type pdf)
 
 <use Figures/Success_Exp2_P1.pdf>
 Package pdftex.def Info: Figures/Success_Exp2_P1.pdf used on input line 117.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Success_Exp2_P2.pdf, id=1721, 708.6475pt x 440.64626pt>
+<Figures/Success_Exp2_P2.pdf, id=1726, 708.6475pt x 440.64626pt>
 File: Figures/Success_Exp2_P2.pdf Graphic file (type pdf)
 
 <use Figures/Success_Exp2_P2.pdf>
 Package pdftex.def Info: Figures/Success_Exp2_P2.pdf used on input line 117.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Success_Exp2_P3.pdf, id=1722, 708.6475pt x 440.64626pt>
+<Figures/Success_Exp2_P3.pdf, id=1727, 708.6475pt x 440.64626pt>
 File: Figures/Success_Exp2_P3.pdf Graphic file (type pdf)
 
 <use Figures/Success_Exp2_P3.pdf>
 Package pdftex.def Info: Figures/Success_Exp2_P3.pdf used on input line 117.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Success_Exp2_P4.pdf, id=1723, 708.6475pt x 440.64626pt>
+<Figures/Success_Exp2_P4.pdf, id=1728, 708.6475pt x 440.64626pt>
 File: Figures/Success_Exp2_P4.pdf Graphic file (type pdf)
 
 <use Figures/Success_Exp2_P4.pdf>
 Package pdftex.def Info: Figures/Success_Exp2_P4.pdf used on input line 118.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Success_Exp2_P5.pdf, id=1724, 708.6475pt x 440.64626pt>
+<Figures/Success_Exp2_P5.pdf, id=1729, 708.6475pt x 440.64626pt>
 File: Figures/Success_Exp2_P5.pdf Graphic file (type pdf)
 
 <use Figures/Success_Exp2_P5.pdf>
 Package pdftex.def Info: Figures/Success_Exp2_P5.pdf used on input line 118.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Success_Exp2_P6.pdf, id=1725, 708.6475pt x 440.64626pt>
+<Figures/Success_Exp2_P6.pdf, id=1730, 708.6475pt x 440.64626pt>
 File: Figures/Success_Exp2_P6.pdf Graphic file (type pdf)
 
 <use Figures/Success_Exp2_P6.pdf>
 Package pdftex.def Info: Figures/Success_Exp2_P6.pdf used on input line 118.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Success_Exp2_P7.pdf, id=1726, 708.6475pt x 440.64626pt>
+<Figures/Success_Exp2_P7.pdf, id=1731, 708.6475pt x 440.64626pt>
 File: Figures/Success_Exp2_P7.pdf Graphic file (type pdf)
 
 <use Figures/Success_Exp2_P7.pdf>
 Package pdftex.def Info: Figures/Success_Exp2_P7.pdf used on input line 119.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Success_Exp2_P8.pdf, id=1727, 708.6475pt x 440.64626pt>
+<Figures/Success_Exp2_P8.pdf, id=1732, 708.6475pt x 440.64626pt>
 File: Figures/Success_Exp2_P8.pdf Graphic file (type pdf)
 
 <use Figures/Success_Exp2_P8.pdf>
 Package pdftex.def Info: Figures/Success_Exp2_P8.pdf used on input line 119.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Success_Exp2_P9.pdf, id=1728, 708.6475pt x 440.64626pt>
+<Figures/Success_Exp2_P9.pdf, id=1733, 708.6475pt x 440.64626pt>
 File: Figures/Success_Exp2_P9.pdf Graphic file (type pdf)
 
 <use Figures/Success_Exp2_P9.pdf>
 Package pdftex.def Info: Figures/Success_Exp2_P9.pdf used on input line 119.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Success_Exp2_P10.pdf, id=1729, 708.6475pt x 440.64626pt>
+<Figures/Success_Exp2_P10.pdf, id=1734, 708.6475pt x 440.64626pt>
 File: Figures/Success_Exp2_P10.pdf Graphic file (type pdf)
 
 <use Figures/Success_Exp2_P10.pdf>
 Package pdftex.def Info: Figures/Success_Exp2_P10.pdf used on input line 120.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Success_Exp2_P11.pdf, id=1730, 708.6475pt x 440.64626pt>
+<Figures/Success_Exp2_P11.pdf, id=1735, 708.6475pt x 440.64626pt>
 File: Figures/Success_Exp2_P11.pdf Graphic file (type pdf)
 
 <use Figures/Success_Exp2_P11.pdf>
 Package pdftex.def Info: Figures/Success_Exp2_P11.pdf used on input line 120.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Success_Exp2_P12.pdf, id=1731, 708.6475pt x 440.64626pt>
+<Figures/Success_Exp2_P12.pdf, id=1736, 708.6475pt x 440.64626pt>
 File: Figures/Success_Exp2_P12.pdf Graphic file (type pdf)
 
 <use Figures/Success_Exp2_P12.pdf>
 Package pdftex.def Info: Figures/Success_Exp2_P12.pdf used on input line 120.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Success_Exp2_P13.pdf, id=1732, 708.6475pt x 440.64626pt>
+<Figures/Success_Exp2_P13.pdf, id=1737, 708.6475pt x 440.64626pt>
 File: Figures/Success_Exp2_P13.pdf Graphic file (type pdf)
 
 <use Figures/Success_Exp2_P13.pdf>
@@ -7905,280 +7950,280 @@ File: Figures/Success_Exp2_P14.pdf Graphic file (type pdf)
 Package pdftex.def Info: Figures/Success_Exp2_P14.pdf used on input line 121.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Success_Exp2_P15.pdf, id=1733, 708.6475pt x 440.64626pt>
+<Figures/Success_Exp2_P15.pdf, id=1738, 708.6475pt x 440.64626pt>
 File: Figures/Success_Exp2_P15.pdf Graphic file (type pdf)
 
 <use Figures/Success_Exp2_P15.pdf>
 Package pdftex.def Info: Figures/Success_Exp2_P15.pdf used on input line 121.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Success_Exp2_P16.pdf, id=1734, 708.6475pt x 440.64626pt>
+<Figures/Success_Exp2_P16.pdf, id=1739, 708.6475pt x 440.64626pt>
 File: Figures/Success_Exp2_P16.pdf Graphic file (type pdf)
 
 <use Figures/Success_Exp2_P16.pdf>
 Package pdftex.def Info: Figures/Success_Exp2_P16.pdf used on input line 122.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Success_Exp2_P17.pdf, id=1735, 708.6475pt x 440.64626pt>
+<Figures/Success_Exp2_P17.pdf, id=1740, 708.6475pt x 440.64626pt>
 File: Figures/Success_Exp2_P17.pdf Graphic file (type pdf)
 
 <use Figures/Success_Exp2_P17.pdf>
 Package pdftex.def Info: Figures/Success_Exp2_P17.pdf used on input line 122.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Success_Exp2_P18.pdf, id=1736, 708.6475pt x 440.64626pt>
+<Figures/Success_Exp2_P18.pdf, id=1741, 708.6475pt x 440.64626pt>
 File: Figures/Success_Exp2_P18.pdf Graphic file (type pdf)
 
 <use Figures/Success_Exp2_P18.pdf>
 Package pdftex.def Info: Figures/Success_Exp2_P18.pdf used on input line 122.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Success_Exp2_P19.pdf, id=1737, 708.6475pt x 440.64626pt>
+<Figures/Success_Exp2_P19.pdf, id=1742, 708.6475pt x 440.64626pt>
 File: Figures/Success_Exp2_P19.pdf Graphic file (type pdf)
 
 <use Figures/Success_Exp2_P19.pdf>
 Package pdftex.def Info: Figures/Success_Exp2_P19.pdf used on input line 123.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Success_Exp2_P20.pdf, id=1738, 708.6475pt x 440.64626pt>
+<Figures/Success_Exp2_P20.pdf, id=1743, 708.6475pt x 440.64626pt>
 File: Figures/Success_Exp2_P20.pdf Graphic file (type pdf)
 
 <use Figures/Success_Exp2_P20.pdf>
 Package pdftex.def Info: Figures/Success_Exp2_P20.pdf used on input line 123.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Success_Exp2_P21.pdf, id=1739, 708.6475pt x 440.64626pt>
+<Figures/Success_Exp2_P21.pdf, id=1744, 708.6475pt x 440.64626pt>
 File: Figures/Success_Exp2_P21.pdf Graphic file (type pdf)
 
 <use Figures/Success_Exp2_P21.pdf>
 Package pdftex.def Info: Figures/Success_Exp2_P21.pdf used on input line 123.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Outcome_Exp1_P1.pdf, id=1740, 708.6475pt x 440.64626pt>
+<Figures/Outcome_Exp1_P1.pdf, id=1745, 708.6475pt x 440.64626pt>
 File: Figures/Outcome_Exp1_P1.pdf Graphic file (type pdf)
 
 <use Figures/Outcome_Exp1_P1.pdf>
 Package pdftex.def Info: Figures/Outcome_Exp1_P1.pdf used on input line 131.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Outcome_Exp1_P2.pdf, id=1741, 708.6475pt x 440.64626pt>
+<Figures/Outcome_Exp1_P2.pdf, id=1746, 708.6475pt x 440.64626pt>
 File: Figures/Outcome_Exp1_P2.pdf Graphic file (type pdf)
 
 <use Figures/Outcome_Exp1_P2.pdf>
 Package pdftex.def Info: Figures/Outcome_Exp1_P2.pdf used on input line 131.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Outcome_Exp1_P3.pdf, id=1742, 708.6475pt x 440.64626pt>
+<Figures/Outcome_Exp1_P3.pdf, id=1747, 708.6475pt x 440.64626pt>
 File: Figures/Outcome_Exp1_P3.pdf Graphic file (type pdf)
 
 <use Figures/Outcome_Exp1_P3.pdf>
 Package pdftex.def Info: Figures/Outcome_Exp1_P3.pdf used on input line 131.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Outcome_Exp1_P4.pdf, id=1743, 708.6475pt x 440.64626pt>
+<Figures/Outcome_Exp1_P4.pdf, id=1748, 708.6475pt x 440.64626pt>
 File: Figures/Outcome_Exp1_P4.pdf Graphic file (type pdf)
 
 <use Figures/Outcome_Exp1_P4.pdf>
 Package pdftex.def Info: Figures/Outcome_Exp1_P4.pdf used on input line 132.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Outcome_Exp1_P5.pdf, id=1744, 708.6475pt x 440.64626pt>
+<Figures/Outcome_Exp1_P5.pdf, id=1749, 708.6475pt x 440.64626pt>
 File: Figures/Outcome_Exp1_P5.pdf Graphic file (type pdf)
 
 <use Figures/Outcome_Exp1_P5.pdf>
 Package pdftex.def Info: Figures/Outcome_Exp1_P5.pdf used on input line 132.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Outcome_Exp1_P6.pdf, id=1745, 708.6475pt x 440.64626pt>
+<Figures/Outcome_Exp1_P6.pdf, id=1750, 708.6475pt x 440.64626pt>
 File: Figures/Outcome_Exp1_P6.pdf Graphic file (type pdf)
 
 <use Figures/Outcome_Exp1_P6.pdf>
 Package pdftex.def Info: Figures/Outcome_Exp1_P6.pdf used on input line 132.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Outcome_Exp1_P7.pdf, id=1746, 708.6475pt x 440.64626pt>
+<Figures/Outcome_Exp1_P7.pdf, id=1751, 708.6475pt x 440.64626pt>
 File: Figures/Outcome_Exp1_P7.pdf Graphic file (type pdf)
 
 <use Figures/Outcome_Exp1_P7.pdf>
 Package pdftex.def Info: Figures/Outcome_Exp1_P7.pdf used on input line 133.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Outcome_Exp1_P8.pdf, id=1747, 708.6475pt x 440.64626pt>
+<Figures/Outcome_Exp1_P8.pdf, id=1752, 708.6475pt x 440.64626pt>
 File: Figures/Outcome_Exp1_P8.pdf Graphic file (type pdf)
 
 <use Figures/Outcome_Exp1_P8.pdf>
 Package pdftex.def Info: Figures/Outcome_Exp1_P8.pdf used on input line 133.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Outcome_Exp1_P9.pdf, id=1748, 708.6475pt x 440.64626pt>
+<Figures/Outcome_Exp1_P9.pdf, id=1753, 708.6475pt x 440.64626pt>
 File: Figures/Outcome_Exp1_P9.pdf Graphic file (type pdf)
 
 <use Figures/Outcome_Exp1_P9.pdf>
 Package pdftex.def Info: Figures/Outcome_Exp1_P9.pdf used on input line 133.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Outcome_Exp1_P10.pdf, id=1749, 708.6475pt x 440.64626pt>
+<Figures/Outcome_Exp1_P10.pdf, id=1754, 708.6475pt x 440.64626pt>
 File: Figures/Outcome_Exp1_P10.pdf Graphic file (type pdf)
 
 <use Figures/Outcome_Exp1_P10.pdf>
 Package pdftex.def Info: Figures/Outcome_Exp1_P10.pdf used on input line 134.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Outcome_Exp1_P11.pdf, id=1750, 708.6475pt x 440.64626pt>
+<Figures/Outcome_Exp1_P11.pdf, id=1755, 708.6475pt x 440.64626pt>
 File: Figures/Outcome_Exp1_P11.pdf Graphic file (type pdf)
 
 <use Figures/Outcome_Exp1_P11.pdf>
 Package pdftex.def Info: Figures/Outcome_Exp1_P11.pdf used on input line 134.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Outcome_Exp1_P12.pdf, id=1751, 708.6475pt x 440.64626pt>
+<Figures/Outcome_Exp1_P12.pdf, id=1756, 708.6475pt x 440.64626pt>
 File: Figures/Outcome_Exp1_P12.pdf Graphic file (type pdf)
 
 <use Figures/Outcome_Exp1_P12.pdf>
 Package pdftex.def Info: Figures/Outcome_Exp1_P12.pdf used on input line 134.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Outcome_Exp1_P13.pdf, id=1752, 708.6475pt x 440.64626pt>
+<Figures/Outcome_Exp1_P13.pdf, id=1757, 708.6475pt x 440.64626pt>
 File: Figures/Outcome_Exp1_P13.pdf Graphic file (type pdf)
 
 <use Figures/Outcome_Exp1_P13.pdf>
 Package pdftex.def Info: Figures/Outcome_Exp1_P13.pdf used on input line 135.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Outcome_Exp1_P14.pdf, id=1753, 708.6475pt x 440.64626pt>
+<Figures/Outcome_Exp1_P14.pdf, id=1758, 708.6475pt x 440.64626pt>
 File: Figures/Outcome_Exp1_P14.pdf Graphic file (type pdf)
 
 <use Figures/Outcome_Exp1_P14.pdf>
 Package pdftex.def Info: Figures/Outcome_Exp1_P14.pdf used on input line 135.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Outcome_Exp1_P15.pdf, id=1754, 708.6475pt x 440.64626pt>
+<Figures/Outcome_Exp1_P15.pdf, id=1759, 708.6475pt x 440.64626pt>
 File: Figures/Outcome_Exp1_P15.pdf Graphic file (type pdf)
 
 <use Figures/Outcome_Exp1_P15.pdf>
 Package pdftex.def Info: Figures/Outcome_Exp1_P15.pdf used on input line 135.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Outcome_Exp1_P16.pdf, id=1755, 708.6475pt x 440.64626pt>
+<Figures/Outcome_Exp1_P16.pdf, id=1760, 708.6475pt x 440.64626pt>
 File: Figures/Outcome_Exp1_P16.pdf Graphic file (type pdf)
 
 <use Figures/Outcome_Exp1_P16.pdf>
 Package pdftex.def Info: Figures/Outcome_Exp1_P16.pdf used on input line 136.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Outcome_Exp1_P17.pdf, id=1756, 708.6475pt x 440.64626pt>
+<Figures/Outcome_Exp1_P17.pdf, id=1761, 708.6475pt x 440.64626pt>
 File: Figures/Outcome_Exp1_P17.pdf Graphic file (type pdf)
 
 <use Figures/Outcome_Exp1_P17.pdf>
 Package pdftex.def Info: Figures/Outcome_Exp1_P17.pdf used on input line 136.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Outcome_Exp1_P18.pdf, id=1757, 708.6475pt x 440.64626pt>
+<Figures/Outcome_Exp1_P18.pdf, id=1762, 708.6475pt x 440.64626pt>
 File: Figures/Outcome_Exp1_P18.pdf Graphic file (type pdf)
 
 <use Figures/Outcome_Exp1_P18.pdf>
 Package pdftex.def Info: Figures/Outcome_Exp1_P18.pdf used on input line 136.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Outcome_Exp1_P19.pdf, id=1758, 708.6475pt x 440.64626pt>
+<Figures/Outcome_Exp1_P19.pdf, id=1763, 708.6475pt x 440.64626pt>
 File: Figures/Outcome_Exp1_P19.pdf Graphic file (type pdf)
 
 <use Figures/Outcome_Exp1_P19.pdf>
 Package pdftex.def Info: Figures/Outcome_Exp1_P19.pdf used on input line 137.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Outcome_Exp1_P20.pdf, id=1759, 708.6475pt x 440.64626pt>
+<Figures/Outcome_Exp1_P20.pdf, id=1764, 708.6475pt x 440.64626pt>
 File: Figures/Outcome_Exp1_P20.pdf Graphic file (type pdf)
 
 <use Figures/Outcome_Exp1_P20.pdf>
 Package pdftex.def Info: Figures/Outcome_Exp1_P20.pdf used on input line 137.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Outcome_Exp2_P1.pdf, id=1760, 708.6475pt x 440.64626pt>
+<Figures/Outcome_Exp2_P1.pdf, id=1765, 708.6475pt x 440.64626pt>
 File: Figures/Outcome_Exp2_P1.pdf Graphic file (type pdf)
 
 <use Figures/Outcome_Exp2_P1.pdf>
 Package pdftex.def Info: Figures/Outcome_Exp2_P1.pdf used on input line 145.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Outcome_Exp2_P2.pdf, id=1761, 708.6475pt x 440.64626pt>
+<Figures/Outcome_Exp2_P2.pdf, id=1766, 708.6475pt x 440.64626pt>
 File: Figures/Outcome_Exp2_P2.pdf Graphic file (type pdf)
 
 <use Figures/Outcome_Exp2_P2.pdf>
 Package pdftex.def Info: Figures/Outcome_Exp2_P2.pdf used on input line 145.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Outcome_Exp2_P3.pdf, id=1762, 708.6475pt x 440.64626pt>
+<Figures/Outcome_Exp2_P3.pdf, id=1767, 708.6475pt x 440.64626pt>
 File: Figures/Outcome_Exp2_P3.pdf Graphic file (type pdf)
 
 <use Figures/Outcome_Exp2_P3.pdf>
 Package pdftex.def Info: Figures/Outcome_Exp2_P3.pdf used on input line 145.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Outcome_Exp2_P4.pdf, id=1763, 708.6475pt x 440.64626pt>
+<Figures/Outcome_Exp2_P4.pdf, id=1768, 708.6475pt x 440.64626pt>
 File: Figures/Outcome_Exp2_P4.pdf Graphic file (type pdf)
 
 <use Figures/Outcome_Exp2_P4.pdf>
 Package pdftex.def Info: Figures/Outcome_Exp2_P4.pdf used on input line 146.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Outcome_Exp2_P5.pdf, id=1764, 708.6475pt x 440.64626pt>
+<Figures/Outcome_Exp2_P5.pdf, id=1769, 708.6475pt x 440.64626pt>
 File: Figures/Outcome_Exp2_P5.pdf Graphic file (type pdf)
 
 <use Figures/Outcome_Exp2_P5.pdf>
 Package pdftex.def Info: Figures/Outcome_Exp2_P5.pdf used on input line 146.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Outcome_Exp2_P6.pdf, id=1765, 708.6475pt x 440.64626pt>
+<Figures/Outcome_Exp2_P6.pdf, id=1770, 708.6475pt x 440.64626pt>
 File: Figures/Outcome_Exp2_P6.pdf Graphic file (type pdf)
 
 <use Figures/Outcome_Exp2_P6.pdf>
 Package pdftex.def Info: Figures/Outcome_Exp2_P6.pdf used on input line 146.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Outcome_Exp2_P7.pdf, id=1766, 708.6475pt x 440.64626pt>
+<Figures/Outcome_Exp2_P7.pdf, id=1771, 708.6475pt x 440.64626pt>
 File: Figures/Outcome_Exp2_P7.pdf Graphic file (type pdf)
 
 <use Figures/Outcome_Exp2_P7.pdf>
 Package pdftex.def Info: Figures/Outcome_Exp2_P7.pdf used on input line 147.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Outcome_Exp2_P8.pdf, id=1767, 708.6475pt x 440.64626pt>
+<Figures/Outcome_Exp2_P8.pdf, id=1772, 708.6475pt x 440.64626pt>
 File: Figures/Outcome_Exp2_P8.pdf Graphic file (type pdf)
 
 <use Figures/Outcome_Exp2_P8.pdf>
 Package pdftex.def Info: Figures/Outcome_Exp2_P8.pdf used on input line 147.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Outcome_Exp2_P9.pdf, id=1768, 708.6475pt x 440.64626pt>
+<Figures/Outcome_Exp2_P9.pdf, id=1773, 708.6475pt x 440.64626pt>
 File: Figures/Outcome_Exp2_P9.pdf Graphic file (type pdf)
 
 <use Figures/Outcome_Exp2_P9.pdf>
 Package pdftex.def Info: Figures/Outcome_Exp2_P9.pdf used on input line 147.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Outcome_Exp2_P10.pdf, id=1769, 708.6475pt x 440.64626pt>
+<Figures/Outcome_Exp2_P10.pdf, id=1774, 708.6475pt x 440.64626pt>
 File: Figures/Outcome_Exp2_P10.pdf Graphic file (type pdf)
 
 <use Figures/Outcome_Exp2_P10.pdf>
 Package pdftex.def Info: Figures/Outcome_Exp2_P10.pdf used on input line 148.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Outcome_Exp2_P11.pdf, id=1770, 708.6475pt x 440.64626pt>
+<Figures/Outcome_Exp2_P11.pdf, id=1775, 708.6475pt x 440.64626pt>
 File: Figures/Outcome_Exp2_P11.pdf Graphic file (type pdf)
 
 <use Figures/Outcome_Exp2_P11.pdf>
 Package pdftex.def Info: Figures/Outcome_Exp2_P11.pdf used on input line 148.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Outcome_Exp2_P12.pdf, id=1771, 708.6475pt x 440.64626pt>
+<Figures/Outcome_Exp2_P12.pdf, id=1776, 708.6475pt x 440.64626pt>
 File: Figures/Outcome_Exp2_P12.pdf Graphic file (type pdf)
 
 <use Figures/Outcome_Exp2_P12.pdf>
 Package pdftex.def Info: Figures/Outcome_Exp2_P12.pdf used on input line 148.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Outcome_Exp2_P13.pdf, id=1772, 708.6475pt x 440.64626pt>
+<Figures/Outcome_Exp2_P13.pdf, id=1777, 708.6475pt x 440.64626pt>
 File: Figures/Outcome_Exp2_P13.pdf Graphic file (type pdf)
 
 <use Figures/Outcome_Exp2_P13.pdf>
@@ -8189,140 +8234,140 @@ File: Figures/Outcome_Exp2_P14.pdf Graphic file (type pdf)
 Package pdftex.def Info: Figures/Outcome_Exp2_P14.pdf used on input line 149.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Outcome_Exp2_P15.pdf, id=1773, 708.6475pt x 440.64626pt>
+<Figures/Outcome_Exp2_P15.pdf, id=1778, 708.6475pt x 440.64626pt>
 File: Figures/Outcome_Exp2_P15.pdf Graphic file (type pdf)
 
 <use Figures/Outcome_Exp2_P15.pdf>
 Package pdftex.def Info: Figures/Outcome_Exp2_P15.pdf used on input line 149.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Outcome_Exp2_P16.pdf, id=1774, 708.6475pt x 440.64626pt>
+<Figures/Outcome_Exp2_P16.pdf, id=1779, 708.6475pt x 440.64626pt>
 File: Figures/Outcome_Exp2_P16.pdf Graphic file (type pdf)
 
 <use Figures/Outcome_Exp2_P16.pdf>
 Package pdftex.def Info: Figures/Outcome_Exp2_P16.pdf used on input line 150.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Outcome_Exp2_P17.pdf, id=1775, 708.6475pt x 440.64626pt>
+<Figures/Outcome_Exp2_P17.pdf, id=1780, 708.6475pt x 440.64626pt>
 File: Figures/Outcome_Exp2_P17.pdf Graphic file (type pdf)
 
 <use Figures/Outcome_Exp2_P17.pdf>
 Package pdftex.def Info: Figures/Outcome_Exp2_P17.pdf used on input line 150.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Outcome_Exp2_P18.pdf, id=1776, 708.6475pt x 440.64626pt>
+<Figures/Outcome_Exp2_P18.pdf, id=1781, 708.6475pt x 440.64626pt>
 File: Figures/Outcome_Exp2_P18.pdf Graphic file (type pdf)
 
 <use Figures/Outcome_Exp2_P18.pdf>
 Package pdftex.def Info: Figures/Outcome_Exp2_P18.pdf used on input line 150.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Outcome_Exp2_P19.pdf, id=1777, 708.6475pt x 440.64626pt>
+<Figures/Outcome_Exp2_P19.pdf, id=1782, 708.6475pt x 440.64626pt>
 File: Figures/Outcome_Exp2_P19.pdf Graphic file (type pdf)
 
 <use Figures/Outcome_Exp2_P19.pdf>
 Package pdftex.def Info: Figures/Outcome_Exp2_P19.pdf used on input line 151.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Outcome_Exp2_P20.pdf, id=1778, 708.6475pt x 440.64626pt>
+<Figures/Outcome_Exp2_P20.pdf, id=1783, 708.6475pt x 440.64626pt>
 File: Figures/Outcome_Exp2_P20.pdf Graphic file (type pdf)
 
 <use Figures/Outcome_Exp2_P20.pdf>
 Package pdftex.def Info: Figures/Outcome_Exp2_P20.pdf used on input line 151.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Outcome_Exp2_P21.pdf, id=1779, 708.6475pt x 440.64626pt>
+<Figures/Outcome_Exp2_P21.pdf, id=1784, 708.6475pt x 440.64626pt>
 File: Figures/Outcome_Exp2_P21.pdf Graphic file (type pdf)
 
 <use Figures/Outcome_Exp2_P21.pdf>
 Package pdftex.def Info: Figures/Outcome_Exp2_P21.pdf used on input line 151.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Color_Exp1_P1.pdf, id=1780, 708.6475pt x 440.64626pt>
+<Figures/Color_Exp1_P1.pdf, id=1785, 708.6475pt x 440.64626pt>
 File: Figures/Color_Exp1_P1.pdf Graphic file (type pdf)
 
 <use Figures/Color_Exp1_P1.pdf>
 Package pdftex.def Info: Figures/Color_Exp1_P1.pdf used on input line 169.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Color_Exp1_P2.pdf, id=1781, 708.6475pt x 440.64626pt>
+<Figures/Color_Exp1_P2.pdf, id=1786, 708.6475pt x 440.64626pt>
 File: Figures/Color_Exp1_P2.pdf Graphic file (type pdf)
 
 <use Figures/Color_Exp1_P2.pdf>
 Package pdftex.def Info: Figures/Color_Exp1_P2.pdf used on input line 169.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Color_Exp1_P3.pdf, id=1782, 708.6475pt x 440.64626pt>
+<Figures/Color_Exp1_P3.pdf, id=1787, 708.6475pt x 440.64626pt>
 File: Figures/Color_Exp1_P3.pdf Graphic file (type pdf)
 
 <use Figures/Color_Exp1_P3.pdf>
 Package pdftex.def Info: Figures/Color_Exp1_P3.pdf used on input line 169.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Color_Exp1_P4.pdf, id=1783, 708.6475pt x 440.64626pt>
+<Figures/Color_Exp1_P4.pdf, id=1788, 708.6475pt x 440.64626pt>
 File: Figures/Color_Exp1_P4.pdf Graphic file (type pdf)
 
 <use Figures/Color_Exp1_P4.pdf>
 Package pdftex.def Info: Figures/Color_Exp1_P4.pdf used on input line 170.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Color_Exp1_P5.pdf, id=1784, 708.6475pt x 440.64626pt>
+<Figures/Color_Exp1_P5.pdf, id=1789, 708.6475pt x 440.64626pt>
 File: Figures/Color_Exp1_P5.pdf Graphic file (type pdf)
 
 <use Figures/Color_Exp1_P5.pdf>
 Package pdftex.def Info: Figures/Color_Exp1_P5.pdf used on input line 170.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Color_Exp1_P6.pdf, id=1785, 708.6475pt x 440.64626pt>
+<Figures/Color_Exp1_P6.pdf, id=1790, 708.6475pt x 440.64626pt>
 File: Figures/Color_Exp1_P6.pdf Graphic file (type pdf)
 
 <use Figures/Color_Exp1_P6.pdf>
 Package pdftex.def Info: Figures/Color_Exp1_P6.pdf used on input line 170.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Color_Exp1_P7.pdf, id=1786, 708.6475pt x 440.64626pt>
+<Figures/Color_Exp1_P7.pdf, id=1791, 708.6475pt x 440.64626pt>
 File: Figures/Color_Exp1_P7.pdf Graphic file (type pdf)
 
 <use Figures/Color_Exp1_P7.pdf>
 Package pdftex.def Info: Figures/Color_Exp1_P7.pdf used on input line 171.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Color_Exp1_P8.pdf, id=1787, 708.6475pt x 440.64626pt>
+<Figures/Color_Exp1_P8.pdf, id=1792, 708.6475pt x 440.64626pt>
 File: Figures/Color_Exp1_P8.pdf Graphic file (type pdf)
 
 <use Figures/Color_Exp1_P8.pdf>
 Package pdftex.def Info: Figures/Color_Exp1_P8.pdf used on input line 171.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Color_Exp1_P9.pdf, id=1788, 708.6475pt x 440.64626pt>
+<Figures/Color_Exp1_P9.pdf, id=1793, 708.6475pt x 440.64626pt>
 File: Figures/Color_Exp1_P9.pdf Graphic file (type pdf)
 
 <use Figures/Color_Exp1_P9.pdf>
 Package pdftex.def Info: Figures/Color_Exp1_P9.pdf used on input line 171.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Color_Exp1_P10.pdf, id=1789, 708.6475pt x 440.64626pt>
+<Figures/Color_Exp1_P10.pdf, id=1794, 708.6475pt x 440.64626pt>
 File: Figures/Color_Exp1_P10.pdf Graphic file (type pdf)
 
 <use Figures/Color_Exp1_P10.pdf>
 Package pdftex.def Info: Figures/Color_Exp1_P10.pdf used on input line 172.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Color_Exp1_P11.pdf, id=1790, 708.6475pt x 440.64626pt>
+<Figures/Color_Exp1_P11.pdf, id=1795, 708.6475pt x 440.64626pt>
 File: Figures/Color_Exp1_P11.pdf Graphic file (type pdf)
 
 <use Figures/Color_Exp1_P11.pdf>
 Package pdftex.def Info: Figures/Color_Exp1_P11.pdf used on input line 172.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Color_Exp1_P12.pdf, id=1791, 708.6475pt x 440.64626pt>
+<Figures/Color_Exp1_P12.pdf, id=1796, 708.6475pt x 440.64626pt>
 File: Figures/Color_Exp1_P12.pdf Graphic file (type pdf)
 
 <use Figures/Color_Exp1_P12.pdf>
 Package pdftex.def Info: Figures/Color_Exp1_P12.pdf used on input line 172.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Color_Exp1_P13.pdf, id=1792, 708.6475pt x 440.64626pt>
+<Figures/Color_Exp1_P13.pdf, id=1797, 708.6475pt x 440.64626pt>
 File: Figures/Color_Exp1_P13.pdf Graphic file (type pdf)
 
 <use Figures/Color_Exp1_P13.pdf>
@@ -8333,259 +8378,259 @@ File: Figures/Color_Exp1_P14.pdf Graphic file (type pdf)
 Package pdftex.def Info: Figures/Color_Exp1_P14.pdf used on input line 173.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Color_Exp1_P15.pdf, id=1793, 708.6475pt x 440.64626pt>
+<Figures/Color_Exp1_P15.pdf, id=1798, 708.6475pt x 440.64626pt>
 File: Figures/Color_Exp1_P15.pdf Graphic file (type pdf)
 
 <use Figures/Color_Exp1_P15.pdf>
 Package pdftex.def Info: Figures/Color_Exp1_P15.pdf used on input line 173.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Color_Exp1_P16.pdf, id=1794, 708.6475pt x 440.64626pt>
+<Figures/Color_Exp1_P16.pdf, id=1799, 708.6475pt x 440.64626pt>
 File: Figures/Color_Exp1_P16.pdf Graphic file (type pdf)
 
 <use Figures/Color_Exp1_P16.pdf>
 Package pdftex.def Info: Figures/Color_Exp1_P16.pdf used on input line 174.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Color_Exp1_P17.pdf, id=1795, 708.6475pt x 440.64626pt>
+<Figures/Color_Exp1_P17.pdf, id=1800, 708.6475pt x 440.64626pt>
 File: Figures/Color_Exp1_P17.pdf Graphic file (type pdf)
 
 <use Figures/Color_Exp1_P17.pdf>
 Package pdftex.def Info: Figures/Color_Exp1_P17.pdf used on input line 174.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Color_Exp1_P18.pdf, id=1796, 708.6475pt x 440.64626pt>
+<Figures/Color_Exp1_P18.pdf, id=1801, 708.6475pt x 440.64626pt>
 File: Figures/Color_Exp1_P18.pdf Graphic file (type pdf)
 
 <use Figures/Color_Exp1_P18.pdf>
 Package pdftex.def Info: Figures/Color_Exp1_P18.pdf used on input line 174.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Color_Exp1_P19.pdf, id=1797, 708.6475pt x 440.64626pt>
+<Figures/Color_Exp1_P19.pdf, id=1802, 708.6475pt x 440.64626pt>
 File: Figures/Color_Exp1_P19.pdf Graphic file (type pdf)
 
 <use Figures/Color_Exp1_P19.pdf>
 Package pdftex.def Info: Figures/Color_Exp1_P19.pdf used on input line 175.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Color_Exp1_P20.pdf, id=1798, 708.6475pt x 440.64626pt>
+<Figures/Color_Exp1_P20.pdf, id=1803, 708.6475pt x 440.64626pt>
 File: Figures/Color_Exp1_P20.pdf Graphic file (type pdf)
 
 <use Figures/Color_Exp1_P20.pdf>
 Package pdftex.def Info: Figures/Color_Exp1_P20.pdf used on input line 175.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Color_Exp2_P1.pdf, id=1799, 708.6475pt x 440.64626pt>
+<Figures/Color_Exp2_P1.pdf, id=1804, 708.6475pt x 440.64626pt>
 File: Figures/Color_Exp2_P1.pdf Graphic file (type pdf)
 
 <use Figures/Color_Exp2_P1.pdf>
 Package pdftex.def Info: Figures/Color_Exp2_P1.pdf used on input line 183.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Color_Exp2_P2.pdf, id=1800, 708.6475pt x 440.64626pt>
+<Figures/Color_Exp2_P2.pdf, id=1805, 708.6475pt x 440.64626pt>
 File: Figures/Color_Exp2_P2.pdf Graphic file (type pdf)
 
 <use Figures/Color_Exp2_P2.pdf>
 Package pdftex.def Info: Figures/Color_Exp2_P2.pdf used on input line 183.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Color_Exp2_P3.pdf, id=1801, 708.6475pt x 440.64626pt>
+<Figures/Color_Exp2_P3.pdf, id=1806, 708.6475pt x 440.64626pt>
 File: Figures/Color_Exp2_P3.pdf Graphic file (type pdf)
 
 <use Figures/Color_Exp2_P3.pdf>
 Package pdftex.def Info: Figures/Color_Exp2_P3.pdf used on input line 183.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Color_Exp2_P4.pdf, id=1802, 708.6475pt x 440.64626pt>
+<Figures/Color_Exp2_P4.pdf, id=1807, 708.6475pt x 440.64626pt>
 File: Figures/Color_Exp2_P4.pdf Graphic file (type pdf)
 
 <use Figures/Color_Exp2_P4.pdf>
 Package pdftex.def Info: Figures/Color_Exp2_P4.pdf used on input line 184.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Color_Exp2_P5.pdf, id=1803, 708.6475pt x 440.64626pt>
+<Figures/Color_Exp2_P5.pdf, id=1808, 708.6475pt x 440.64626pt>
 File: Figures/Color_Exp2_P5.pdf Graphic file (type pdf)
 
 <use Figures/Color_Exp2_P5.pdf>
 Package pdftex.def Info: Figures/Color_Exp2_P5.pdf used on input line 184.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Color_Exp2_P6.pdf, id=1804, 708.6475pt x 440.64626pt>
+<Figures/Color_Exp2_P6.pdf, id=1809, 708.6475pt x 440.64626pt>
 File: Figures/Color_Exp2_P6.pdf Graphic file (type pdf)
 
 <use Figures/Color_Exp2_P6.pdf>
 Package pdftex.def Info: Figures/Color_Exp2_P6.pdf used on input line 184.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Color_Exp2_P7.pdf, id=1805, 708.6475pt x 440.64626pt>
+<Figures/Color_Exp2_P7.pdf, id=1810, 708.6475pt x 440.64626pt>
 File: Figures/Color_Exp2_P7.pdf Graphic file (type pdf)
 
 <use Figures/Color_Exp2_P7.pdf>
 Package pdftex.def Info: Figures/Color_Exp2_P7.pdf used on input line 185.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Color_Exp2_P8.pdf, id=1806, 708.6475pt x 440.64626pt>
+<Figures/Color_Exp2_P8.pdf, id=1811, 708.6475pt x 440.64626pt>
 File: Figures/Color_Exp2_P8.pdf Graphic file (type pdf)
 
 <use Figures/Color_Exp2_P8.pdf>
 Package pdftex.def Info: Figures/Color_Exp2_P8.pdf used on input line 185.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Color_Exp2_P9.pdf, id=1807, 708.6475pt x 440.64626pt>
+<Figures/Color_Exp2_P9.pdf, id=1812, 708.6475pt x 440.64626pt>
 File: Figures/Color_Exp2_P9.pdf Graphic file (type pdf)
 
 <use Figures/Color_Exp2_P9.pdf>
 Package pdftex.def Info: Figures/Color_Exp2_P9.pdf used on input line 185.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Color_Exp2_P10.pdf, id=1808, 708.6475pt x 440.64626pt>
+<Figures/Color_Exp2_P10.pdf, id=1813, 708.6475pt x 440.64626pt>
 File: Figures/Color_Exp2_P10.pdf Graphic file (type pdf)
 
 <use Figures/Color_Exp2_P10.pdf>
 Package pdftex.def Info: Figures/Color_Exp2_P10.pdf used on input line 186.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Color_Exp2_P11.pdf, id=1809, 708.6475pt x 440.64626pt>
+<Figures/Color_Exp2_P11.pdf, id=1814, 708.6475pt x 440.64626pt>
 File: Figures/Color_Exp2_P11.pdf Graphic file (type pdf)
 
 <use Figures/Color_Exp2_P11.pdf>
 Package pdftex.def Info: Figures/Color_Exp2_P11.pdf used on input line 186.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Color_Exp2_P12.pdf, id=1810, 708.6475pt x 440.64626pt>
+<Figures/Color_Exp2_P12.pdf, id=1815, 708.6475pt x 440.64626pt>
 File: Figures/Color_Exp2_P12.pdf Graphic file (type pdf)
 
 <use Figures/Color_Exp2_P12.pdf>
 Package pdftex.def Info: Figures/Color_Exp2_P12.pdf used on input line 186.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Color_Exp2_P13.pdf, id=1811, 708.6475pt x 440.64626pt>
+<Figures/Color_Exp2_P13.pdf, id=1816, 708.6475pt x 440.64626pt>
 File: Figures/Color_Exp2_P13.pdf Graphic file (type pdf)
 
 <use Figures/Color_Exp2_P13.pdf>
 Package pdftex.def Info: Figures/Color_Exp2_P13.pdf used on input line 187.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Color_Exp2_P14.pdf, id=1812, 708.6475pt x 440.64626pt>
+<Figures/Color_Exp2_P14.pdf, id=1817, 708.6475pt x 440.64626pt>
 File: Figures/Color_Exp2_P14.pdf Graphic file (type pdf)
 
 <use Figures/Color_Exp2_P14.pdf>
 Package pdftex.def Info: Figures/Color_Exp2_P14.pdf used on input line 187.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Color_Exp2_P15.pdf, id=1813, 708.6475pt x 440.64626pt>
+<Figures/Color_Exp2_P15.pdf, id=1818, 708.6475pt x 440.64626pt>
 File: Figures/Color_Exp2_P15.pdf Graphic file (type pdf)
 
 <use Figures/Color_Exp2_P15.pdf>
 Package pdftex.def Info: Figures/Color_Exp2_P15.pdf used on input line 187.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Color_Exp2_P16.pdf, id=1814, 708.6475pt x 440.64626pt>
+<Figures/Color_Exp2_P16.pdf, id=1819, 708.6475pt x 440.64626pt>
 File: Figures/Color_Exp2_P16.pdf Graphic file (type pdf)
 
 <use Figures/Color_Exp2_P16.pdf>
 Package pdftex.def Info: Figures/Color_Exp2_P16.pdf used on input line 188.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Color_Exp2_P17.pdf, id=1815, 708.6475pt x 440.64626pt>
+<Figures/Color_Exp2_P17.pdf, id=1820, 708.6475pt x 440.64626pt>
 File: Figures/Color_Exp2_P17.pdf Graphic file (type pdf)
 
 <use Figures/Color_Exp2_P17.pdf>
 Package pdftex.def Info: Figures/Color_Exp2_P17.pdf used on input line 188.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Color_Exp2_P18.pdf, id=1816, 708.6475pt x 440.64626pt>
+<Figures/Color_Exp2_P18.pdf, id=1821, 708.6475pt x 440.64626pt>
 File: Figures/Color_Exp2_P18.pdf Graphic file (type pdf)
 
 <use Figures/Color_Exp2_P18.pdf>
 Package pdftex.def Info: Figures/Color_Exp2_P18.pdf used on input line 188.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Color_Exp2_P19.pdf, id=1817, 708.6475pt x 440.64626pt>
+<Figures/Color_Exp2_P19.pdf, id=1822, 708.6475pt x 440.64626pt>
 File: Figures/Color_Exp2_P19.pdf Graphic file (type pdf)
 
 <use Figures/Color_Exp2_P19.pdf>
 Package pdftex.def Info: Figures/Color_Exp2_P19.pdf used on input line 189.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Color_Exp2_P20.pdf, id=1818, 708.6475pt x 440.64626pt>
+<Figures/Color_Exp2_P20.pdf, id=1823, 708.6475pt x 440.64626pt>
 File: Figures/Color_Exp2_P20.pdf Graphic file (type pdf)
 
 <use Figures/Color_Exp2_P20.pdf>
 Package pdftex.def Info: Figures/Color_Exp2_P20.pdf used on input line 189.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/Color_Exp2_P21.pdf, id=1819, 708.6475pt x 440.64626pt>
+<Figures/Color_Exp2_P21.pdf, id=1824, 708.6475pt x 440.64626pt>
 File: Figures/Color_Exp2_P21.pdf Graphic file (type pdf)
 
 <use Figures/Color_Exp2_P21.pdf>
 Package pdftex.def Info: Figures/Color_Exp2_P21.pdf used on input line 189.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasColor_Exp1_P1.pdf, id=1820, 708.6475pt x 440.64626pt>
+<Figures/BiasColor_Exp1_P1.pdf, id=1825, 708.6475pt x 440.64626pt>
 File: Figures/BiasColor_Exp1_P1.pdf Graphic file (type pdf)
 
 <use Figures/BiasColor_Exp1_P1.pdf>
 Package pdftex.def Info: Figures/BiasColor_Exp1_P1.pdf used on input line 197.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasColor_Exp1_P2.pdf, id=1821, 708.6475pt x 440.64626pt>
+<Figures/BiasColor_Exp1_P2.pdf, id=1826, 708.6475pt x 440.64626pt>
 File: Figures/BiasColor_Exp1_P2.pdf Graphic file (type pdf)
 
 <use Figures/BiasColor_Exp1_P2.pdf>
 Package pdftex.def Info: Figures/BiasColor_Exp1_P2.pdf used on input line 197.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasColor_Exp1_P3.pdf, id=1822, 708.6475pt x 440.64626pt>
+<Figures/BiasColor_Exp1_P3.pdf, id=1827, 708.6475pt x 440.64626pt>
 File: Figures/BiasColor_Exp1_P3.pdf Graphic file (type pdf)
 
 <use Figures/BiasColor_Exp1_P3.pdf>
 Package pdftex.def Info: Figures/BiasColor_Exp1_P3.pdf used on input line 197.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasColor_Exp1_P4.pdf, id=1823, 708.6475pt x 440.64626pt>
+<Figures/BiasColor_Exp1_P4.pdf, id=1828, 708.6475pt x 440.64626pt>
 File: Figures/BiasColor_Exp1_P4.pdf Graphic file (type pdf)
 
 <use Figures/BiasColor_Exp1_P4.pdf>
 Package pdftex.def Info: Figures/BiasColor_Exp1_P4.pdf used on input line 198.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasColor_Exp1_P5.pdf, id=1824, 708.6475pt x 440.64626pt>
+<Figures/BiasColor_Exp1_P5.pdf, id=1829, 708.6475pt x 440.64626pt>
 File: Figures/BiasColor_Exp1_P5.pdf Graphic file (type pdf)
 
 <use Figures/BiasColor_Exp1_P5.pdf>
 Package pdftex.def Info: Figures/BiasColor_Exp1_P5.pdf used on input line 198.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasColor_Exp1_P6.pdf, id=1825, 708.6475pt x 440.64626pt>
+<Figures/BiasColor_Exp1_P6.pdf, id=1830, 708.6475pt x 440.64626pt>
 File: Figures/BiasColor_Exp1_P6.pdf Graphic file (type pdf)
 
 <use Figures/BiasColor_Exp1_P6.pdf>
 Package pdftex.def Info: Figures/BiasColor_Exp1_P6.pdf used on input line 198.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasColor_Exp1_P7.pdf, id=1826, 708.6475pt x 440.64626pt>
+<Figures/BiasColor_Exp1_P7.pdf, id=1831, 708.6475pt x 440.64626pt>
 File: Figures/BiasColor_Exp1_P7.pdf Graphic file (type pdf)
 
 <use Figures/BiasColor_Exp1_P7.pdf>
 Package pdftex.def Info: Figures/BiasColor_Exp1_P7.pdf used on input line 199.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasColor_Exp1_P8.pdf, id=1827, 708.6475pt x 440.64626pt>
+<Figures/BiasColor_Exp1_P8.pdf, id=1832, 708.6475pt x 440.64626pt>
 File: Figures/BiasColor_Exp1_P8.pdf Graphic file (type pdf)
 
 <use Figures/BiasColor_Exp1_P8.pdf>
 Package pdftex.def Info: Figures/BiasColor_Exp1_P8.pdf used on input line 199.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasColor_Exp1_P9.pdf, id=1828, 708.6475pt x 440.64626pt>
+<Figures/BiasColor_Exp1_P9.pdf, id=1833, 708.6475pt x 440.64626pt>
 File: Figures/BiasColor_Exp1_P9.pdf Graphic file (type pdf)
 
 <use Figures/BiasColor_Exp1_P9.pdf>
 Package pdftex.def Info: Figures/BiasColor_Exp1_P9.pdf used on input line 199.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasColor_Exp1_P10.pdf, id=1829, 708.6475pt x 440.64626pt>
+<Figures/BiasColor_Exp1_P10.pdf, id=1834, 708.6475pt x 440.64626pt>
 File: Figures/BiasColor_Exp1_P10.pdf Graphic file (type pdf)
 
 <use Figures/BiasColor_Exp1_P10.pdf>
@@ -8593,7 +8638,7 @@ Package pdftex.def Info: Figures/BiasColor_Exp1_P10.pdf used on input line 200.
 
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasColor_Exp1_P11.pdf, id=1830, 708.6475pt x 440.64626pt>
+<Figures/BiasColor_Exp1_P11.pdf, id=1835, 708.6475pt x 440.64626pt>
 File: Figures/BiasColor_Exp1_P11.pdf Graphic file (type pdf)
 
 <use Figures/BiasColor_Exp1_P11.pdf>
@@ -8601,7 +8646,7 @@ Package pdftex.def Info: Figures/BiasColor_Exp1_P11.pdf used on input line 200.
 
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasColor_Exp1_P12.pdf, id=1831, 708.6475pt x 440.64626pt>
+<Figures/BiasColor_Exp1_P12.pdf, id=1836, 708.6475pt x 440.64626pt>
 File: Figures/BiasColor_Exp1_P12.pdf Graphic file (type pdf)
 
 <use Figures/BiasColor_Exp1_P12.pdf>
@@ -8614,7 +8659,7 @@ Package pdftex.def Info: Figures/BiasColor_Exp1_P13.pdf used on input line 201.
 
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasColor_Exp1_P14.pdf, id=1832, 708.6475pt x 440.64626pt>
+<Figures/BiasColor_Exp1_P14.pdf, id=1837, 708.6475pt x 440.64626pt>
 File: Figures/BiasColor_Exp1_P14.pdf Graphic file (type pdf)
 
 <use Figures/BiasColor_Exp1_P14.pdf>
@@ -8622,7 +8667,7 @@ Package pdftex.def Info: Figures/BiasColor_Exp1_P14.pdf used on input line 201.
 
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasColor_Exp1_P15.pdf, id=1833, 708.6475pt x 440.64626pt>
+<Figures/BiasColor_Exp1_P15.pdf, id=1838, 708.6475pt x 440.64626pt>
 File: Figures/BiasColor_Exp1_P15.pdf Graphic file (type pdf)
 
 <use Figures/BiasColor_Exp1_P15.pdf>
@@ -8630,7 +8675,7 @@ Package pdftex.def Info: Figures/BiasColor_Exp1_P15.pdf used on input line 201.
 
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasColor_Exp1_P16.pdf, id=1834, 708.6475pt x 440.64626pt>
+<Figures/BiasColor_Exp1_P16.pdf, id=1839, 708.6475pt x 440.64626pt>
 File: Figures/BiasColor_Exp1_P16.pdf Graphic file (type pdf)
 
 <use Figures/BiasColor_Exp1_P16.pdf>
@@ -8638,7 +8683,7 @@ Package pdftex.def Info: Figures/BiasColor_Exp1_P16.pdf used on input line 202.
 
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasColor_Exp1_P17.pdf, id=1835, 708.6475pt x 440.64626pt>
+<Figures/BiasColor_Exp1_P17.pdf, id=1840, 708.6475pt x 440.64626pt>
 File: Figures/BiasColor_Exp1_P17.pdf Graphic file (type pdf)
 
 <use Figures/BiasColor_Exp1_P17.pdf>
@@ -8646,7 +8691,7 @@ Package pdftex.def Info: Figures/BiasColor_Exp1_P17.pdf used on input line 202.
 
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasColor_Exp1_P18.pdf, id=1836, 708.6475pt x 440.64626pt>
+<Figures/BiasColor_Exp1_P18.pdf, id=1841, 708.6475pt x 440.64626pt>
 File: Figures/BiasColor_Exp1_P18.pdf Graphic file (type pdf)
 
 <use Figures/BiasColor_Exp1_P18.pdf>
@@ -8654,7 +8699,7 @@ Package pdftex.def Info: Figures/BiasColor_Exp1_P18.pdf used on input line 202.
 
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasColor_Exp1_P19.pdf, id=1837, 708.6475pt x 440.64626pt>
+<Figures/BiasColor_Exp1_P19.pdf, id=1842, 708.6475pt x 440.64626pt>
 File: Figures/BiasColor_Exp1_P19.pdf Graphic file (type pdf)
 
 <use Figures/BiasColor_Exp1_P19.pdf>
@@ -8662,7 +8707,7 @@ Package pdftex.def Info: Figures/BiasColor_Exp1_P19.pdf used on input line 203.
 
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasColor_Exp1_P20.pdf, id=1838, 708.6475pt x 440.64626pt>
+<Figures/BiasColor_Exp1_P20.pdf, id=1843, 708.6475pt x 440.64626pt>
 File: Figures/BiasColor_Exp1_P20.pdf Graphic file (type pdf)
 
 <use Figures/BiasColor_Exp1_P20.pdf>
@@ -8670,70 +8715,70 @@ Package pdftex.def Info: Figures/BiasColor_Exp1_P20.pdf used on input line 203.
 
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasColor_Exp2_P1.pdf, id=1839, 708.6475pt x 440.64626pt>
+<Figures/BiasColor_Exp2_P1.pdf, id=1844, 708.6475pt x 440.64626pt>
 File: Figures/BiasColor_Exp2_P1.pdf Graphic file (type pdf)
 
 <use Figures/BiasColor_Exp2_P1.pdf>
 Package pdftex.def Info: Figures/BiasColor_Exp2_P1.pdf used on input line 211.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasColor_Exp2_P2.pdf, id=1840, 708.6475pt x 440.64626pt>
+<Figures/BiasColor_Exp2_P2.pdf, id=1845, 708.6475pt x 440.64626pt>
 File: Figures/BiasColor_Exp2_P2.pdf Graphic file (type pdf)
 
 <use Figures/BiasColor_Exp2_P2.pdf>
 Package pdftex.def Info: Figures/BiasColor_Exp2_P2.pdf used on input line 211.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasColor_Exp2_P3.pdf, id=1841, 708.6475pt x 440.64626pt>
+<Figures/BiasColor_Exp2_P3.pdf, id=1846, 708.6475pt x 440.64626pt>
 File: Figures/BiasColor_Exp2_P3.pdf Graphic file (type pdf)
 
 <use Figures/BiasColor_Exp2_P3.pdf>
 Package pdftex.def Info: Figures/BiasColor_Exp2_P3.pdf used on input line 211.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasColor_Exp2_P4.pdf, id=1842, 708.6475pt x 440.64626pt>
+<Figures/BiasColor_Exp2_P4.pdf, id=1847, 708.6475pt x 440.64626pt>
 File: Figures/BiasColor_Exp2_P4.pdf Graphic file (type pdf)
 
 <use Figures/BiasColor_Exp2_P4.pdf>
 Package pdftex.def Info: Figures/BiasColor_Exp2_P4.pdf used on input line 212.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasColor_Exp2_P5.pdf, id=1843, 708.6475pt x 440.64626pt>
+<Figures/BiasColor_Exp2_P5.pdf, id=1848, 708.6475pt x 440.64626pt>
 File: Figures/BiasColor_Exp2_P5.pdf Graphic file (type pdf)
 
 <use Figures/BiasColor_Exp2_P5.pdf>
 Package pdftex.def Info: Figures/BiasColor_Exp2_P5.pdf used on input line 212.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasColor_Exp2_P6.pdf, id=1844, 708.6475pt x 440.64626pt>
+<Figures/BiasColor_Exp2_P6.pdf, id=1849, 708.6475pt x 440.64626pt>
 File: Figures/BiasColor_Exp2_P6.pdf Graphic file (type pdf)
 
 <use Figures/BiasColor_Exp2_P6.pdf>
 Package pdftex.def Info: Figures/BiasColor_Exp2_P6.pdf used on input line 212.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasColor_Exp2_P7.pdf, id=1845, 708.6475pt x 440.64626pt>
+<Figures/BiasColor_Exp2_P7.pdf, id=1850, 708.6475pt x 440.64626pt>
 File: Figures/BiasColor_Exp2_P7.pdf Graphic file (type pdf)
 
 <use Figures/BiasColor_Exp2_P7.pdf>
 Package pdftex.def Info: Figures/BiasColor_Exp2_P7.pdf used on input line 213.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasColor_Exp2_P8.pdf, id=1846, 708.6475pt x 440.64626pt>
+<Figures/BiasColor_Exp2_P8.pdf, id=1851, 708.6475pt x 440.64626pt>
 File: Figures/BiasColor_Exp2_P8.pdf Graphic file (type pdf)
 
 <use Figures/BiasColor_Exp2_P8.pdf>
 Package pdftex.def Info: Figures/BiasColor_Exp2_P8.pdf used on input line 213.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasColor_Exp2_P9.pdf, id=1847, 708.6475pt x 440.64626pt>
+<Figures/BiasColor_Exp2_P9.pdf, id=1852, 708.6475pt x 440.64626pt>
 File: Figures/BiasColor_Exp2_P9.pdf Graphic file (type pdf)
 
 <use Figures/BiasColor_Exp2_P9.pdf>
 Package pdftex.def Info: Figures/BiasColor_Exp2_P9.pdf used on input line 213.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasColor_Exp2_P10.pdf, id=1848, 708.6475pt x 440.64626pt>
+<Figures/BiasColor_Exp2_P10.pdf, id=1853, 708.6475pt x 440.64626pt>
 File: Figures/BiasColor_Exp2_P10.pdf Graphic file (type pdf)
 
 <use Figures/BiasColor_Exp2_P10.pdf>
@@ -8741,7 +8786,7 @@ Package pdftex.def Info: Figures/BiasColor_Exp2_P10.pdf used on input line 214.
 
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasColor_Exp2_P11.pdf, id=1849, 708.6475pt x 440.64626pt>
+<Figures/BiasColor_Exp2_P11.pdf, id=1854, 708.6475pt x 440.64626pt>
 File: Figures/BiasColor_Exp2_P11.pdf Graphic file (type pdf)
 
 <use Figures/BiasColor_Exp2_P11.pdf>
@@ -8749,7 +8794,7 @@ Package pdftex.def Info: Figures/BiasColor_Exp2_P11.pdf used on input line 214.
 
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasColor_Exp2_P12.pdf, id=1850, 708.6475pt x 440.64626pt>
+<Figures/BiasColor_Exp2_P12.pdf, id=1855, 708.6475pt x 440.64626pt>
 File: Figures/BiasColor_Exp2_P12.pdf Graphic file (type pdf)
 
 <use Figures/BiasColor_Exp2_P12.pdf>
@@ -8757,7 +8802,7 @@ Package pdftex.def Info: Figures/BiasColor_Exp2_P12.pdf used on input line 214.
 
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasColor_Exp2_P13.pdf, id=1851, 708.6475pt x 440.64626pt>
+<Figures/BiasColor_Exp2_P13.pdf, id=1856, 708.6475pt x 440.64626pt>
 File: Figures/BiasColor_Exp2_P13.pdf Graphic file (type pdf)
 
 <use Figures/BiasColor_Exp2_P13.pdf>
@@ -8765,7 +8810,7 @@ Package pdftex.def Info: Figures/BiasColor_Exp2_P13.pdf used on input line 215.
 
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasColor_Exp2_P14.pdf, id=1852, 708.6475pt x 440.64626pt>
+<Figures/BiasColor_Exp2_P14.pdf, id=1857, 708.6475pt x 440.64626pt>
 File: Figures/BiasColor_Exp2_P14.pdf Graphic file (type pdf)
 
 <use Figures/BiasColor_Exp2_P14.pdf>
@@ -8773,7 +8818,7 @@ Package pdftex.def Info: Figures/BiasColor_Exp2_P14.pdf used on input line 215.
 
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasColor_Exp2_P15.pdf, id=1853, 708.6475pt x 440.64626pt>
+<Figures/BiasColor_Exp2_P15.pdf, id=1858, 708.6475pt x 440.64626pt>
 File: Figures/BiasColor_Exp2_P15.pdf Graphic file (type pdf)
 
 <use Figures/BiasColor_Exp2_P15.pdf>
@@ -8781,7 +8826,7 @@ Package pdftex.def Info: Figures/BiasColor_Exp2_P15.pdf used on input line 215.
 
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasColor_Exp2_P16.pdf, id=1854, 708.6475pt x 440.64626pt>
+<Figures/BiasColor_Exp2_P16.pdf, id=1859, 708.6475pt x 440.64626pt>
 File: Figures/BiasColor_Exp2_P16.pdf Graphic file (type pdf)
 
 <use Figures/BiasColor_Exp2_P16.pdf>
@@ -8789,7 +8834,7 @@ Package pdftex.def Info: Figures/BiasColor_Exp2_P16.pdf used on input line 216.
 
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasColor_Exp2_P17.pdf, id=1855, 708.6475pt x 440.64626pt>
+<Figures/BiasColor_Exp2_P17.pdf, id=1860, 708.6475pt x 440.64626pt>
 File: Figures/BiasColor_Exp2_P17.pdf Graphic file (type pdf)
 
 <use Figures/BiasColor_Exp2_P17.pdf>
@@ -8797,7 +8842,7 @@ Package pdftex.def Info: Figures/BiasColor_Exp2_P17.pdf used on input line 216.
 
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasColor_Exp2_P18.pdf, id=1856, 708.6475pt x 440.64626pt>
+<Figures/BiasColor_Exp2_P18.pdf, id=1861, 708.6475pt x 440.64626pt>
 File: Figures/BiasColor_Exp2_P18.pdf Graphic file (type pdf)
 
 <use Figures/BiasColor_Exp2_P18.pdf>
@@ -8805,7 +8850,7 @@ Package pdftex.def Info: Figures/BiasColor_Exp2_P18.pdf used on input line 216.
 
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasColor_Exp2_P19.pdf, id=1857, 708.6475pt x 440.64626pt>
+<Figures/BiasColor_Exp2_P19.pdf, id=1862, 708.6475pt x 440.64626pt>
 File: Figures/BiasColor_Exp2_P19.pdf Graphic file (type pdf)
 
 <use Figures/BiasColor_Exp2_P19.pdf>
@@ -8813,7 +8858,7 @@ Package pdftex.def Info: Figures/BiasColor_Exp2_P19.pdf used on input line 217.
 
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasColor_Exp2_P20.pdf, id=1858, 708.6475pt x 440.64626pt>
+<Figures/BiasColor_Exp2_P20.pdf, id=1863, 708.6475pt x 440.64626pt>
 File: Figures/BiasColor_Exp2_P20.pdf Graphic file (type pdf)
 
 <use Figures/BiasColor_Exp2_P20.pdf>
@@ -8821,7 +8866,7 @@ Package pdftex.def Info: Figures/BiasColor_Exp2_P20.pdf used on input line 217.
 
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/BiasColor_Exp2_P21.pdf, id=1859, 708.6475pt x 440.64626pt>
+<Figures/BiasColor_Exp2_P21.pdf, id=1864, 708.6475pt x 440.64626pt>
 File: Figures/BiasColor_Exp2_P21.pdf Graphic file (type pdf)
 
 <use Figures/BiasColor_Exp2_P21.pdf>
@@ -8834,7 +8879,7 @@ Underfull \hbox (badness 1173) in paragraph at lines 219--219
 -tiun par-ti-ci-pan-tes 
  []
 
-<Figures/MirrorRate_Exp1_P1.pdf, id=1860, 708.6475pt x 440.64626pt>
+<Figures/MirrorRate_Exp1_P1.pdf, id=1865, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRate_Exp1_P1.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRate_Exp1_P1.pdf>
@@ -8842,7 +8887,7 @@ Package pdftex.def Info: Figures/MirrorRate_Exp1_P1.pdf used on input line 231.
 
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRate_Exp1_P2.pdf, id=1861, 708.6475pt x 440.64626pt>
+<Figures/MirrorRate_Exp1_P2.pdf, id=1866, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRate_Exp1_P2.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRate_Exp1_P2.pdf>
@@ -8850,7 +8895,7 @@ Package pdftex.def Info: Figures/MirrorRate_Exp1_P2.pdf used on input line 231.
 
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRate_Exp1_P3.pdf, id=1862, 708.6475pt x 440.64626pt>
+<Figures/MirrorRate_Exp1_P3.pdf, id=1867, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRate_Exp1_P3.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRate_Exp1_P3.pdf>
@@ -8858,7 +8903,7 @@ Package pdftex.def Info: Figures/MirrorRate_Exp1_P3.pdf used on input line 231.
 
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRate_Exp1_P4.pdf, id=1863, 708.6475pt x 440.64626pt>
+<Figures/MirrorRate_Exp1_P4.pdf, id=1868, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRate_Exp1_P4.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRate_Exp1_P4.pdf>
@@ -8866,7 +8911,7 @@ Package pdftex.def Info: Figures/MirrorRate_Exp1_P4.pdf used on input line 232.
 
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRate_Exp1_P5.pdf, id=1864, 708.6475pt x 440.64626pt>
+<Figures/MirrorRate_Exp1_P5.pdf, id=1869, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRate_Exp1_P5.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRate_Exp1_P5.pdf>
@@ -8874,7 +8919,7 @@ Package pdftex.def Info: Figures/MirrorRate_Exp1_P5.pdf used on input line 232.
 
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRate_Exp1_P6.pdf, id=1865, 708.6475pt x 440.64626pt>
+<Figures/MirrorRate_Exp1_P6.pdf, id=1870, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRate_Exp1_P6.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRate_Exp1_P6.pdf>
@@ -8882,7 +8927,7 @@ Package pdftex.def Info: Figures/MirrorRate_Exp1_P6.pdf used on input line 232.
 
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRate_Exp1_P7.pdf, id=1866, 708.6475pt x 440.64626pt>
+<Figures/MirrorRate_Exp1_P7.pdf, id=1871, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRate_Exp1_P7.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRate_Exp1_P7.pdf>
@@ -8890,7 +8935,7 @@ Package pdftex.def Info: Figures/MirrorRate_Exp1_P7.pdf used on input line 233.
 
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRate_Exp1_P8.pdf, id=1867, 708.6475pt x 440.64626pt>
+<Figures/MirrorRate_Exp1_P8.pdf, id=1872, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRate_Exp1_P8.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRate_Exp1_P8.pdf>
@@ -8898,7 +8943,7 @@ Package pdftex.def Info: Figures/MirrorRate_Exp1_P8.pdf used on input line 233.
 
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRate_Exp1_P9.pdf, id=1868, 708.6475pt x 440.64626pt>
+<Figures/MirrorRate_Exp1_P9.pdf, id=1873, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRate_Exp1_P9.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRate_Exp1_P9.pdf>
@@ -8906,7 +8951,7 @@ Package pdftex.def Info: Figures/MirrorRate_Exp1_P9.pdf used on input line 233.
 
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRate_Exp1_P10.pdf, id=1869, 708.6475pt x 440.64626pt>
+<Figures/MirrorRate_Exp1_P10.pdf, id=1874, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRate_Exp1_P10.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRate_Exp1_P10.pdf>
@@ -8914,7 +8959,7 @@ Package pdftex.def Info: Figures/MirrorRate_Exp1_P10.pdf used on input line 234
 .
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRate_Exp1_P11.pdf, id=1870, 708.6475pt x 440.64626pt>
+<Figures/MirrorRate_Exp1_P11.pdf, id=1875, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRate_Exp1_P11.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRate_Exp1_P11.pdf>
@@ -8922,7 +8967,7 @@ Package pdftex.def Info: Figures/MirrorRate_Exp1_P11.pdf used on input line 234
 .
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRate_Exp1_P12.pdf, id=1871, 708.6475pt x 440.64626pt>
+<Figures/MirrorRate_Exp1_P12.pdf, id=1876, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRate_Exp1_P12.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRate_Exp1_P12.pdf>
@@ -8930,7 +8975,7 @@ Package pdftex.def Info: Figures/MirrorRate_Exp1_P12.pdf used on input line 234
 .
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRate_Exp1_P13.pdf, id=1872, 708.6475pt x 440.64626pt>
+<Figures/MirrorRate_Exp1_P13.pdf, id=1877, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRate_Exp1_P13.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRate_Exp1_P13.pdf>
@@ -8938,7 +8983,7 @@ Package pdftex.def Info: Figures/MirrorRate_Exp1_P13.pdf used on input line 235
 .
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRate_Exp1_P14.pdf, id=1873, 708.6475pt x 440.64626pt>
+<Figures/MirrorRate_Exp1_P14.pdf, id=1878, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRate_Exp1_P14.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRate_Exp1_P14.pdf>
@@ -8946,7 +8991,7 @@ Package pdftex.def Info: Figures/MirrorRate_Exp1_P14.pdf used on input line 235
 .
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRate_Exp1_P15.pdf, id=1874, 708.6475pt x 440.64626pt>
+<Figures/MirrorRate_Exp1_P15.pdf, id=1879, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRate_Exp1_P15.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRate_Exp1_P15.pdf>
@@ -8954,7 +8999,7 @@ Package pdftex.def Info: Figures/MirrorRate_Exp1_P15.pdf used on input line 235
 .
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRate_Exp1_P16.pdf, id=1875, 708.6475pt x 440.64626pt>
+<Figures/MirrorRate_Exp1_P16.pdf, id=1880, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRate_Exp1_P16.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRate_Exp1_P16.pdf>
@@ -8962,7 +9007,7 @@ Package pdftex.def Info: Figures/MirrorRate_Exp1_P16.pdf used on input line 236
 .
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRate_Exp1_P17.pdf, id=1876, 708.6475pt x 440.64626pt>
+<Figures/MirrorRate_Exp1_P17.pdf, id=1881, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRate_Exp1_P17.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRate_Exp1_P17.pdf>
@@ -8970,7 +9015,7 @@ Package pdftex.def Info: Figures/MirrorRate_Exp1_P17.pdf used on input line 236
 .
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRate_Exp1_P18.pdf, id=1877, 708.6475pt x 440.64626pt>
+<Figures/MirrorRate_Exp1_P18.pdf, id=1882, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRate_Exp1_P18.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRate_Exp1_P18.pdf>
@@ -8978,7 +9023,7 @@ Package pdftex.def Info: Figures/MirrorRate_Exp1_P18.pdf used on input line 236
 .
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRate_Exp1_P19.pdf, id=1878, 708.6475pt x 440.64626pt>
+<Figures/MirrorRate_Exp1_P19.pdf, id=1883, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRate_Exp1_P19.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRate_Exp1_P19.pdf>
@@ -8986,7 +9031,7 @@ Package pdftex.def Info: Figures/MirrorRate_Exp1_P19.pdf used on input line 237
 .
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRate_Exp1_P20.pdf, id=1879, 708.6475pt x 440.64626pt>
+<Figures/MirrorRate_Exp1_P20.pdf, id=1884, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRate_Exp1_P20.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRate_Exp1_P20.pdf>
@@ -8994,7 +9039,7 @@ Package pdftex.def Info: Figures/MirrorRate_Exp1_P20.pdf used on input line 237
 .
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRate_Exp2_P1.pdf, id=1880, 708.6475pt x 440.64626pt>
+<Figures/MirrorRate_Exp2_P1.pdf, id=1885, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRate_Exp2_P1.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRate_Exp2_P1.pdf>
@@ -9002,7 +9047,7 @@ Package pdftex.def Info: Figures/MirrorRate_Exp2_P1.pdf used on input line 245.
 
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRate_Exp2_P2.pdf, id=1881, 708.6475pt x 440.64626pt>
+<Figures/MirrorRate_Exp2_P2.pdf, id=1886, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRate_Exp2_P2.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRate_Exp2_P2.pdf>
@@ -9010,7 +9055,7 @@ Package pdftex.def Info: Figures/MirrorRate_Exp2_P2.pdf used on input line 245.
 
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRate_Exp2_P3.pdf, id=1882, 708.6475pt x 440.64626pt>
+<Figures/MirrorRate_Exp2_P3.pdf, id=1887, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRate_Exp2_P3.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRate_Exp2_P3.pdf>
@@ -9023,7 +9068,7 @@ Package pdftex.def Info: Figures/MirrorRate_Exp2_P4.pdf used on input line 246.
 
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRate_Exp2_P5.pdf, id=1883, 708.6475pt x 440.64626pt>
+<Figures/MirrorRate_Exp2_P5.pdf, id=1888, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRate_Exp2_P5.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRate_Exp2_P5.pdf>
@@ -9031,7 +9076,7 @@ Package pdftex.def Info: Figures/MirrorRate_Exp2_P5.pdf used on input line 246.
 
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRate_Exp2_P6.pdf, id=1884, 708.6475pt x 440.64626pt>
+<Figures/MirrorRate_Exp2_P6.pdf, id=1889, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRate_Exp2_P6.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRate_Exp2_P6.pdf>
@@ -9039,7 +9084,7 @@ Package pdftex.def Info: Figures/MirrorRate_Exp2_P6.pdf used on input line 246.
 
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRate_Exp2_P7.pdf, id=1885, 708.6475pt x 440.64626pt>
+<Figures/MirrorRate_Exp2_P7.pdf, id=1890, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRate_Exp2_P7.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRate_Exp2_P7.pdf>
@@ -9047,7 +9092,7 @@ Package pdftex.def Info: Figures/MirrorRate_Exp2_P7.pdf used on input line 247.
 
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRate_Exp2_P8.pdf, id=1886, 708.6475pt x 440.64626pt>
+<Figures/MirrorRate_Exp2_P8.pdf, id=1891, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRate_Exp2_P8.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRate_Exp2_P8.pdf>
@@ -9055,7 +9100,7 @@ Package pdftex.def Info: Figures/MirrorRate_Exp2_P8.pdf used on input line 247.
 
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRate_Exp2_P9.pdf, id=1887, 708.6475pt x 440.64626pt>
+<Figures/MirrorRate_Exp2_P9.pdf, id=1892, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRate_Exp2_P9.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRate_Exp2_P9.pdf>
@@ -9063,7 +9108,7 @@ Package pdftex.def Info: Figures/MirrorRate_Exp2_P9.pdf used on input line 247.
 
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRate_Exp2_P10.pdf, id=1888, 708.6475pt x 440.64626pt>
+<Figures/MirrorRate_Exp2_P10.pdf, id=1893, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRate_Exp2_P10.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRate_Exp2_P10.pdf>
@@ -9071,7 +9116,7 @@ Package pdftex.def Info: Figures/MirrorRate_Exp2_P10.pdf used on input line 248
 .
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRate_Exp2_P11.pdf, id=1889, 708.6475pt x 440.64626pt>
+<Figures/MirrorRate_Exp2_P11.pdf, id=1894, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRate_Exp2_P11.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRate_Exp2_P11.pdf>
@@ -9079,7 +9124,7 @@ Package pdftex.def Info: Figures/MirrorRate_Exp2_P11.pdf used on input line 248
 .
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRate_Exp2_P12.pdf, id=1890, 708.6475pt x 440.64626pt>
+<Figures/MirrorRate_Exp2_P12.pdf, id=1895, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRate_Exp2_P12.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRate_Exp2_P12.pdf>
@@ -9087,7 +9132,7 @@ Package pdftex.def Info: Figures/MirrorRate_Exp2_P12.pdf used on input line 248
 .
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRate_Exp2_P13.pdf, id=1891, 708.6475pt x 440.64626pt>
+<Figures/MirrorRate_Exp2_P13.pdf, id=1896, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRate_Exp2_P13.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRate_Exp2_P13.pdf>
@@ -9095,7 +9140,7 @@ Package pdftex.def Info: Figures/MirrorRate_Exp2_P13.pdf used on input line 249
 .
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRate_Exp2_P14.pdf, id=1892, 708.6475pt x 440.64626pt>
+<Figures/MirrorRate_Exp2_P14.pdf, id=1897, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRate_Exp2_P14.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRate_Exp2_P14.pdf>
@@ -9103,7 +9148,7 @@ Package pdftex.def Info: Figures/MirrorRate_Exp2_P14.pdf used on input line 249
 .
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRate_Exp2_P15.pdf, id=1893, 708.6475pt x 440.64626pt>
+<Figures/MirrorRate_Exp2_P15.pdf, id=1898, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRate_Exp2_P15.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRate_Exp2_P15.pdf>
@@ -9111,7 +9156,7 @@ Package pdftex.def Info: Figures/MirrorRate_Exp2_P15.pdf used on input line 249
 .
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRate_Exp2_P16.pdf, id=1894, 708.6475pt x 440.64626pt>
+<Figures/MirrorRate_Exp2_P16.pdf, id=1899, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRate_Exp2_P16.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRate_Exp2_P16.pdf>
@@ -9119,7 +9164,7 @@ Package pdftex.def Info: Figures/MirrorRate_Exp2_P16.pdf used on input line 250
 .
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRate_Exp2_P17.pdf, id=1895, 708.6475pt x 440.64626pt>
+<Figures/MirrorRate_Exp2_P17.pdf, id=1900, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRate_Exp2_P17.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRate_Exp2_P17.pdf>
@@ -9127,7 +9172,7 @@ Package pdftex.def Info: Figures/MirrorRate_Exp2_P17.pdf used on input line 250
 .
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRate_Exp2_P18.pdf, id=1896, 708.6475pt x 440.64626pt>
+<Figures/MirrorRate_Exp2_P18.pdf, id=1901, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRate_Exp2_P18.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRate_Exp2_P18.pdf>
@@ -9135,7 +9180,7 @@ Package pdftex.def Info: Figures/MirrorRate_Exp2_P18.pdf used on input line 250
 .
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRate_Exp2_P19.pdf, id=1897, 708.6475pt x 440.64626pt>
+<Figures/MirrorRate_Exp2_P19.pdf, id=1902, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRate_Exp2_P19.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRate_Exp2_P19.pdf>
@@ -9143,7 +9188,7 @@ Package pdftex.def Info: Figures/MirrorRate_Exp2_P19.pdf used on input line 251
 .
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRate_Exp2_P20.pdf, id=1898, 708.6475pt x 440.64626pt>
+<Figures/MirrorRate_Exp2_P20.pdf, id=1903, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRate_Exp2_P20.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRate_Exp2_P20.pdf>
@@ -9151,7 +9196,7 @@ Package pdftex.def Info: Figures/MirrorRate_Exp2_P20.pdf used on input line 251
 .
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRate_Exp2_P21.pdf, id=1899, 708.6475pt x 440.64626pt>
+<Figures/MirrorRate_Exp2_P21.pdf, id=1904, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRate_Exp2_P21.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRate_Exp2_P21.pdf>
@@ -9159,7 +9204,7 @@ Package pdftex.def Info: Figures/MirrorRate_Exp2_P21.pdf used on input line 251
 .
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRating_Exp1_P1.pdf, id=1900, 708.6475pt x 440.64626pt>
+<Figures/MirrorRating_Exp1_P1.pdf, id=1905, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRating_Exp1_P1.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRating_Exp1_P1.pdf>
@@ -9167,7 +9212,7 @@ Package pdftex.def Info: Figures/MirrorRating_Exp1_P1.pdf used on input line 25
 9.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRating_Exp1_P2.pdf, id=1901, 708.6475pt x 440.64626pt>
+<Figures/MirrorRating_Exp1_P2.pdf, id=1906, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRating_Exp1_P2.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRating_Exp1_P2.pdf>
@@ -9175,7 +9220,7 @@ Package pdftex.def Info: Figures/MirrorRating_Exp1_P2.pdf used on input line 25
 9.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRating_Exp1_P3.pdf, id=1902, 708.6475pt x 440.64626pt>
+<Figures/MirrorRating_Exp1_P3.pdf, id=1907, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRating_Exp1_P3.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRating_Exp1_P3.pdf>
@@ -9183,7 +9228,7 @@ Package pdftex.def Info: Figures/MirrorRating_Exp1_P3.pdf used on input line 25
 9.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRating_Exp1_P4.pdf, id=1903, 708.6475pt x 440.64626pt>
+<Figures/MirrorRating_Exp1_P4.pdf, id=1908, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRating_Exp1_P4.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRating_Exp1_P4.pdf>
@@ -9191,7 +9236,7 @@ Package pdftex.def Info: Figures/MirrorRating_Exp1_P4.pdf used on input line 26
 0.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRating_Exp1_P5.pdf, id=1904, 708.6475pt x 440.64626pt>
+<Figures/MirrorRating_Exp1_P5.pdf, id=1909, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRating_Exp1_P5.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRating_Exp1_P5.pdf>
@@ -9199,7 +9244,7 @@ Package pdftex.def Info: Figures/MirrorRating_Exp1_P5.pdf used on input line 26
 0.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRating_Exp1_P6.pdf, id=1905, 708.6475pt x 440.64626pt>
+<Figures/MirrorRating_Exp1_P6.pdf, id=1910, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRating_Exp1_P6.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRating_Exp1_P6.pdf>
@@ -9207,7 +9252,7 @@ Package pdftex.def Info: Figures/MirrorRating_Exp1_P6.pdf used on input line 26
 0.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRating_Exp1_P7.pdf, id=1906, 708.6475pt x 440.64626pt>
+<Figures/MirrorRating_Exp1_P7.pdf, id=1911, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRating_Exp1_P7.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRating_Exp1_P7.pdf>
@@ -9215,7 +9260,7 @@ Package pdftex.def Info: Figures/MirrorRating_Exp1_P7.pdf used on input line 26
 1.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRating_Exp1_P8.pdf, id=1907, 708.6475pt x 440.64626pt>
+<Figures/MirrorRating_Exp1_P8.pdf, id=1912, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRating_Exp1_P8.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRating_Exp1_P8.pdf>
@@ -9223,7 +9268,7 @@ Package pdftex.def Info: Figures/MirrorRating_Exp1_P8.pdf used on input line 26
 1.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRating_Exp1_P9.pdf, id=1908, 578.16pt x 439.6425pt>
+<Figures/MirrorRating_Exp1_P9.pdf, id=1913, 578.16pt x 439.6425pt>
 File: Figures/MirrorRating_Exp1_P9.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRating_Exp1_P9.pdf>
@@ -9236,7 +9281,7 @@ Package pdftex.def Info: Figures/MirrorRating_Exp1_P10.pdf used on input line 2
 62.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRating_Exp1_P11.pdf, id=1909, 708.6475pt x 440.64626pt>
+<Figures/MirrorRating_Exp1_P11.pdf, id=1914, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRating_Exp1_P11.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRating_Exp1_P11.pdf>
@@ -9244,7 +9289,7 @@ Package pdftex.def Info: Figures/MirrorRating_Exp1_P11.pdf used on input line 2
 62.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRating_Exp1_P12.pdf, id=1910, 708.6475pt x 440.64626pt>
+<Figures/MirrorRating_Exp1_P12.pdf, id=1915, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRating_Exp1_P12.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRating_Exp1_P12.pdf>
@@ -9252,7 +9297,7 @@ Package pdftex.def Info: Figures/MirrorRating_Exp1_P12.pdf used on input line 2
 62.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRating_Exp1_P13.pdf, id=1911, 708.6475pt x 440.64626pt>
+<Figures/MirrorRating_Exp1_P13.pdf, id=1916, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRating_Exp1_P13.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRating_Exp1_P13.pdf>
@@ -9260,7 +9305,7 @@ Package pdftex.def Info: Figures/MirrorRating_Exp1_P13.pdf used on input line 2
 63.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRating_Exp1_P14.pdf, id=1912, 708.6475pt x 440.64626pt>
+<Figures/MirrorRating_Exp1_P14.pdf, id=1917, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRating_Exp1_P14.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRating_Exp1_P14.pdf>
@@ -9268,7 +9313,7 @@ Package pdftex.def Info: Figures/MirrorRating_Exp1_P14.pdf used on input line 2
 63.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRating_Exp1_P15.pdf, id=1913, 708.6475pt x 440.64626pt>
+<Figures/MirrorRating_Exp1_P15.pdf, id=1918, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRating_Exp1_P15.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRating_Exp1_P15.pdf>
@@ -9276,7 +9321,7 @@ Package pdftex.def Info: Figures/MirrorRating_Exp1_P15.pdf used on input line 2
 63.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRating_Exp1_P16.pdf, id=1914, 708.6475pt x 440.64626pt>
+<Figures/MirrorRating_Exp1_P16.pdf, id=1919, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRating_Exp1_P16.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRating_Exp1_P16.pdf>
@@ -9284,7 +9329,7 @@ Package pdftex.def Info: Figures/MirrorRating_Exp1_P16.pdf used on input line 2
 64.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRating_Exp1_P17.pdf, id=1915, 708.6475pt x 440.64626pt>
+<Figures/MirrorRating_Exp1_P17.pdf, id=1920, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRating_Exp1_P17.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRating_Exp1_P17.pdf>
@@ -9292,7 +9337,7 @@ Package pdftex.def Info: Figures/MirrorRating_Exp1_P17.pdf used on input line 2
 64.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRating_Exp1_P18.pdf, id=1916, 708.6475pt x 440.64626pt>
+<Figures/MirrorRating_Exp1_P18.pdf, id=1921, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRating_Exp1_P18.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRating_Exp1_P18.pdf>
@@ -9300,7 +9345,7 @@ Package pdftex.def Info: Figures/MirrorRating_Exp1_P18.pdf used on input line 2
 64.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRating_Exp1_P19.pdf, id=1917, 708.6475pt x 440.64626pt>
+<Figures/MirrorRating_Exp1_P19.pdf, id=1922, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRating_Exp1_P19.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRating_Exp1_P19.pdf>
@@ -9308,7 +9353,7 @@ Package pdftex.def Info: Figures/MirrorRating_Exp1_P19.pdf used on input line 2
 65.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRating_Exp1_P20.pdf, id=1918, 708.6475pt x 440.64626pt>
+<Figures/MirrorRating_Exp1_P20.pdf, id=1923, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRating_Exp1_P20.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRating_Exp1_P20.pdf>
@@ -9316,7 +9361,7 @@ Package pdftex.def Info: Figures/MirrorRating_Exp1_P20.pdf used on input line 2
 65.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRating_Exp2_P1.pdf, id=1919, 708.6475pt x 440.64626pt>
+<Figures/MirrorRating_Exp2_P1.pdf, id=1924, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRating_Exp2_P1.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRating_Exp2_P1.pdf>
@@ -9324,7 +9369,7 @@ Package pdftex.def Info: Figures/MirrorRating_Exp2_P1.pdf used on input line 27
 3.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRating_Exp2_P2.pdf, id=1920, 708.6475pt x 440.64626pt>
+<Figures/MirrorRating_Exp2_P2.pdf, id=1925, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRating_Exp2_P2.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRating_Exp2_P2.pdf>
@@ -9332,7 +9377,7 @@ Package pdftex.def Info: Figures/MirrorRating_Exp2_P2.pdf used on input line 27
 3.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRating_Exp2_P3.pdf, id=1921, 708.6475pt x 440.64626pt>
+<Figures/MirrorRating_Exp2_P3.pdf, id=1926, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRating_Exp2_P3.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRating_Exp2_P3.pdf>
@@ -9340,7 +9385,7 @@ Package pdftex.def Info: Figures/MirrorRating_Exp2_P3.pdf used on input line 27
 3.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRating_Exp2_P4.pdf, id=1922, 708.6475pt x 440.64626pt>
+<Figures/MirrorRating_Exp2_P4.pdf, id=1927, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRating_Exp2_P4.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRating_Exp2_P4.pdf>
@@ -9348,7 +9393,7 @@ Package pdftex.def Info: Figures/MirrorRating_Exp2_P4.pdf used on input line 27
 4.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRating_Exp2_P5.pdf, id=1923, 708.6475pt x 440.64626pt>
+<Figures/MirrorRating_Exp2_P5.pdf, id=1928, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRating_Exp2_P5.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRating_Exp2_P5.pdf>
@@ -9356,7 +9401,7 @@ Package pdftex.def Info: Figures/MirrorRating_Exp2_P5.pdf used on input line 27
 4.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRating_Exp2_P6.pdf, id=1924, 708.6475pt x 440.64626pt>
+<Figures/MirrorRating_Exp2_P6.pdf, id=1929, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRating_Exp2_P6.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRating_Exp2_P6.pdf>
@@ -9364,7 +9409,7 @@ Package pdftex.def Info: Figures/MirrorRating_Exp2_P6.pdf used on input line 27
 4.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRating_Exp2_P7.pdf, id=1925, 708.6475pt x 440.64626pt>
+<Figures/MirrorRating_Exp2_P7.pdf, id=1930, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRating_Exp2_P7.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRating_Exp2_P7.pdf>
@@ -9372,7 +9417,7 @@ Package pdftex.def Info: Figures/MirrorRating_Exp2_P7.pdf used on input line 27
 5.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRating_Exp2_P8.pdf, id=1926, 708.6475pt x 440.64626pt>
+<Figures/MirrorRating_Exp2_P8.pdf, id=1931, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRating_Exp2_P8.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRating_Exp2_P8.pdf>
@@ -9380,7 +9425,7 @@ Package pdftex.def Info: Figures/MirrorRating_Exp2_P8.pdf used on input line 27
 5.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRating_Exp2_P9.pdf, id=1927, 708.6475pt x 440.64626pt>
+<Figures/MirrorRating_Exp2_P9.pdf, id=1932, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRating_Exp2_P9.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRating_Exp2_P9.pdf>
@@ -9388,7 +9433,7 @@ Package pdftex.def Info: Figures/MirrorRating_Exp2_P9.pdf used on input line 27
 5.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRating_Exp2_P10.pdf, id=1928, 708.6475pt x 440.64626pt>
+<Figures/MirrorRating_Exp2_P10.pdf, id=1933, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRating_Exp2_P10.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRating_Exp2_P10.pdf>
@@ -9396,7 +9441,7 @@ Package pdftex.def Info: Figures/MirrorRating_Exp2_P10.pdf used on input line 2
 76.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRating_Exp2_P11.pdf, id=1929, 708.6475pt x 440.64626pt>
+<Figures/MirrorRating_Exp2_P11.pdf, id=1934, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRating_Exp2_P11.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRating_Exp2_P11.pdf>
@@ -9404,7 +9449,7 @@ Package pdftex.def Info: Figures/MirrorRating_Exp2_P11.pdf used on input line 2
 76.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRating_Exp2_P12.pdf, id=1930, 708.6475pt x 440.64626pt>
+<Figures/MirrorRating_Exp2_P12.pdf, id=1935, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRating_Exp2_P12.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRating_Exp2_P12.pdf>
@@ -9412,7 +9457,7 @@ Package pdftex.def Info: Figures/MirrorRating_Exp2_P12.pdf used on input line 2
 76.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRating_Exp2_P13.pdf, id=1931, 708.6475pt x 440.64626pt>
+<Figures/MirrorRating_Exp2_P13.pdf, id=1936, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRating_Exp2_P13.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRating_Exp2_P13.pdf>
@@ -9420,7 +9465,7 @@ Package pdftex.def Info: Figures/MirrorRating_Exp2_P13.pdf used on input line 2
 77.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRating_Exp2_P14.pdf, id=1932, 708.6475pt x 440.64626pt>
+<Figures/MirrorRating_Exp2_P14.pdf, id=1937, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRating_Exp2_P14.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRating_Exp2_P14.pdf>
@@ -9428,7 +9473,7 @@ Package pdftex.def Info: Figures/MirrorRating_Exp2_P14.pdf used on input line 2
 77.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRating_Exp2_P15.pdf, id=1933, 708.6475pt x 440.64626pt>
+<Figures/MirrorRating_Exp2_P15.pdf, id=1938, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRating_Exp2_P15.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRating_Exp2_P15.pdf>
@@ -9436,7 +9481,7 @@ Package pdftex.def Info: Figures/MirrorRating_Exp2_P15.pdf used on input line 2
 77.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRating_Exp2_P16.pdf, id=1934, 708.6475pt x 440.64626pt>
+<Figures/MirrorRating_Exp2_P16.pdf, id=1939, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRating_Exp2_P16.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRating_Exp2_P16.pdf>
@@ -9444,7 +9489,7 @@ Package pdftex.def Info: Figures/MirrorRating_Exp2_P16.pdf used on input line 2
 78.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRating_Exp2_P17.pdf, id=1935, 708.6475pt x 440.64626pt>
+<Figures/MirrorRating_Exp2_P17.pdf, id=1940, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRating_Exp2_P17.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRating_Exp2_P17.pdf>
@@ -9452,7 +9497,7 @@ Package pdftex.def Info: Figures/MirrorRating_Exp2_P17.pdf used on input line 2
 78.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRating_Exp2_P18.pdf, id=1936, 708.6475pt x 440.64626pt>
+<Figures/MirrorRating_Exp2_P18.pdf, id=1941, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRating_Exp2_P18.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRating_Exp2_P18.pdf>
@@ -9460,7 +9505,7 @@ Package pdftex.def Info: Figures/MirrorRating_Exp2_P18.pdf used on input line 2
 78.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRating_Exp2_P19.pdf, id=1937, 708.6475pt x 440.64626pt>
+<Figures/MirrorRating_Exp2_P19.pdf, id=1942, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRating_Exp2_P19.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRating_Exp2_P19.pdf>
@@ -9468,7 +9513,7 @@ Package pdftex.def Info: Figures/MirrorRating_Exp2_P19.pdf used on input line 2
 79.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRating_Exp2_P20.pdf, id=1938, 708.6475pt x 440.64626pt>
+<Figures/MirrorRating_Exp2_P20.pdf, id=1943, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRating_Exp2_P20.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRating_Exp2_P20.pdf>
@@ -9476,7 +9521,7 @@ Package pdftex.def Info: Figures/MirrorRating_Exp2_P20.pdf used on input line 2
 79.
 (pdftex.def)             Requested size: 121.20995pt x 75.36607pt.
 
-<Figures/MirrorRating_Exp2_P21.pdf, id=1939, 708.6475pt x 440.64626pt>
+<Figures/MirrorRating_Exp2_P21.pdf, id=1944, 708.6475pt x 440.64626pt>
 File: Figures/MirrorRating_Exp2_P21.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRating_Exp2_P21.pdf>
@@ -10177,10 +10222,10 @@ Package logreq Info: Writing requests to 'Tesis_Felisa.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 35522 strings out of 493334
- 737235 string characters out of 3139239
- 1001181 words of memory out of 3000000
- 37905 multiletter control sequences out of 15000+200000
+ 35523 strings out of 493334
+ 737247 string characters out of 3139239
+ 1001293 words of memory out of 3000000
+ 37906 multiletter control sequences out of 15000+200000
  50574 words of font info for 84 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,21n,82p,10387b,2897s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -10198,9 +10243,9 @@ es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX
 1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino
 /uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C
 :/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Tesis_Felisa.pdf (142 pages, 23872197 bytes).
+Output written on Tesis_Felisa.pdf (142 pages, 23876613 bytes).
 PDF statistics:
- 4452 PDF objects out of 5155 (max. 8388607)
+ 4457 PDF objects out of 5155 (max. 8388607)
  367 named destinations out of 1000 (max. 500000)
  2386 words of extra memory for PDF output out of 10000 (max. 10000000)
 

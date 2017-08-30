@@ -42,9 +42,9 @@
 \contentsline {figure}{\numberline {4.12}{\ignorespaces Modelo Delta: Distribuciones posteriores conjuntas para las medias de $d'$ y $c$ en cada clase de est\IeC {\'\i }mulo}}{85}{figure.caption.97}
 \contentsline {figure}{\numberline {4.13}{\ignorespaces Modelo Delta: Densidad de probabilidad posterior para el valor del par\IeC {\'a}metro Delta}}{86}{figure.caption.98}
 \contentsline {figure}{\numberline {4.14}{\ignorespaces Diferencias entre Hits y Falsas Alarmas por Condici\IeC {\'o}n; Participante ejemplar}}{88}{figure.caption.100}
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Diferencias entre las Tasas de Hits y Falsas Alarmas registradas en cada clase de est\IeC {\'\i }mulos}}{90}{figure.caption.101}
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Modelo Tau: Modelo Bayesiano para evaluar las diferencias entre las tasas de hits y falsas alarmas}}{91}{figure.caption.103}
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Comparaci\IeC {\'o}n entre Puntajes de Confianza asignados por Condici\IeC {\'o}n; Ejemplo}}{91}{figure.caption.105}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Diferencias entre las Tasas de Hits y Falsas Alarmas registradas en cada clase de est\IeC {\'\i }mulos}}{89}{figure.caption.101}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Modelo Tau: Modelo Bayesiano para evaluar las diferencias entre las tasas de Hits y Falsas Alarmas obtenidas por cada clase de est\IeC {\'\i }mulos}}{91}{figure.caption.103}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Comparaci\IeC {\'o}n entre Puntajes de Confianza asignados por Condici\IeC {\'o}n; Ejemplo}}{92}{figure.caption.105}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {A.1}{\ignorespaces Csv muestra}}{95}{figure.caption.112}

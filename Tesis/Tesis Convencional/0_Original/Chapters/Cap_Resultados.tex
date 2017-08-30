@@ -375,13 +375,13 @@ Partiendo del modelo bayesiano estándar que describe los supuestos realizados p
 El modelo gráfico que presenta los parámetros y relaciones definidas en el modelo desarrollado se presenta en la Figura~\ref{fig:Mod_Delta} y está compuesto por los siguientes elementos:\\
 
 \begin{itemize}
-\item \textbf{Nodos sombreados que representan los datos.}\\
+\item \underline{Nodos sombreados que representan los datos.}\\
 
 En los modelos gráficos, los nodos representan las variables que el modelo a representar asume tienen una influencia sobre el proceso cognitivo de interés. Dependiendo cómo estén dibujados, los nodos proporcionan información sobre la naturaleza de dichas variables en torno a tres grandes puntos: 1) la variable adopta valores contínuos (nodo circular) o discretos (nodo cuadrado); 2) el valor de la variable es conocido (nodo sombreado) o necesita ser inferido a partir de los datos (nodo claro), y 3) la variable es probabilística (nodo simple) si está determinada por el valor inferido de otras variables (doble nodo), \parencite{LeeBook}.\\
 
 En el caso de nuestros experimentos, los datos registrados de manera directa -a partir de los cuales se desarrolla todo el análisis- son el número de ensayos con Ruido ($n$) y Señal ($s$), y los resultados obtenidos en la tarea: el número total de Hits ($H_ij$) y Falsas Alarmas (($Fa_ij$) cometidos por cada participante ($i$) en cada condición ($j$).\\
 
-\item \textbf{Las tasas de Hits y Falsas Alarmas como una probabilidad oculta.}\\ 
+\item \underline{Las tasas de Hits y Falsas Alarmas como una probabilidad oculta.}\\ 
 
 Mientras que en la literatura clásica en TDS las tasas registradas de Hits y Falsas Alarmas son interpretadas como reflejo directo del área de las distribuciones de Señal y Ruido que caen por encima del criterio de elección, \parencite{Wickens, Gescheider, Stainslaw1999}, bajoe el marco del modelamiento bayesiano, el total registrado de Hits y Falsas Alarmas ($H_ij$ y $Fa_ij$) se toma una instancia de un conteo de casos específicos encontrados dentro de un conjunto de observaciones ($s$ y $n$, respectivamente) con cierta probabilidad ($\theta^H_{ij}$ y $\theta^F_{ij}$).\\
 
@@ -393,7 +393,7 @@ y
 $F_{ij}\sim \mathrm{Binomial}\bigl(\theta^F_{ij}, n)$\\
 \end{center}
 
-\item \textbf{Sesgo y Discriminabilidad}\\
+\item \underline{Sesgo y Discriminabilidad}\\
 
 De acuerdo con la TDS, la probabilidad que determina las tasas registradas de Hits y Falsas Alarmas ($\theta^H_{ij}$ y $\theta^F_{ij}$) representan el área de las distribuciones de Señal y Ruido que caen por encima de los criterios de elección utilizados por los participantes. Es decir, que dicha probabilidad está definida como la función de densidad acumulada (CDF, por sus siglas en inglés, típicamente representada con el parámetro $\phi$) en una distribución normal estándar para la ubicación de $x$ que corresponde a la diferencia entre $\frac{1}{2}D_{ij}$ (en el caso de los Hits) o $\frac{1}{2}D_{ij}$ (en el caso de las Falsas Alarmas), y la medida de sesgo $C_{ij}$. Es decir:\\
 
@@ -405,7 +405,7 @@ $\theta^F_{ij}\gets \phi (-\frac{1}{2}D_{ij}-C_{ij})$\\
 
 \CONSIDERAR \AGREGAR \UNA \FIGURA \ILUSTRATIVA
 
-\item \textbf{Plato de participantes}\\
+\item \underline{Plato de participantes}\\
 
 En los modelos gráficos bayesianos se utilizan platos para representar lo que en cualquier lenguaje de programación se conoce como un \textit{ciclo for}, \parencite{LeeBook}. Es decir, los platos delimitan conjuntos de parámetros cuyo cómputo se realizará tantas veces como casos -o conjuntos de datos- represente el plato. Por ejemplo, un plato $a$ que contiene los parámetros $p_1, p_2... p_n$ indica que el cómputo de estos se realizará por cada caso contenido en $a$.\\
 
@@ -413,7 +413,7 @@ En el caso del modelo desarrollado, el primer plato ($i$ $participantes$) señal
 
 No hay necesidad de incluir los parámetros $n$ y $s$, que representan el total de ensayos con Ruido y Señal contenidos en el experimento, ya que estos permanecen constantes para todos los participantes ($i$) y para todas las clases de estímulos ($j$).\\
 
-\item \textbf{Estructura jerárquica: Distribuciones normales que describen los datos individuales}\\
+\item \underline{Estructura jerárquica: Distribuciones normales que describen los datos individuales}\\
 
 Como ya se mencionó, la cualidad esencial del modelo desarrollado es que asume que los parámetros $D_{j}$ y $C_{j}$ computados por cada sujeto $i$ provienen de distribuciones normales que describen la discriminabilidad ($d'$) y el sesgo en las respuestas ($c$) asociado a cada clase de estímulos $j$. Dichas distribuciones están definidas por los parámetros $\mu^D_{j}$, $\mu^C_{j}$ y $\sigma^D_{j}$, $\sigma^C_{j}$, que el modelo infiere a partir de los datos ($H_ij$ y $Fa_ij$). Es decir:\\
 
@@ -423,11 +423,11 @@ y\\
 $C_{ij}\sim \mathrm{Gaussian}\bigl(\mu^C_{j},\lambda^C_{j})$\\
 \end{center}
 
-\item \textbf{Plato de Condición}\\
+\item \underline{Plato de Condición}\\
 
 Un segundo plato ($j$ $condiciones$) señala que el cómputo de los parámetros que definen las distribuciones normales asociadas al sesgo y la discriminabilidad, se va a realizar de manera independiente para cada clase de estímulo, a partir del par de Hits y Falsas Alarmas registrado para cada uno por cada participante ($plato$ $i$ $participantes$).\\
 
-\item \textbf{Parámetro Delta}\\
+\item \underline{Parámetro Delta}\\
 
 Finalmente, se incluye un parámetro Delta ($\delta$) que computa directamente la diferencia entre las inferencias realizadas acerca del valor de las medias de $d'$ por cada nivel de dificultad, ($\mu^D_{A}$ y $\mu^D_{B}$). Es decir:\\
 
@@ -541,8 +541,8 @@ La comparación global entre las tasas de Hits y Falsas Alarmas registradas por 
 
 \begin{figure}[th]
 \centering
-\includegraphics[width=0.80\textwidth]{Figures/Diff_Rate_E1}\\ 
-\includegraphics[width=0.80\textwidth]{Figures/Diff_Rate_E2}
+\includegraphics[width=0.65\textwidth]{Figures/Diff_Rate_E1}\\ 
+\includegraphics[width=0.65\textwidth]{Figures/Diff_Rate_E2}\\
 %\decoRule
 \caption[Diferencias entre las Tasas de Hits y Falsas Alarmas registradas en cada clase de estímulos]{Se presenta la comparación, participante a participante, entre las tasas de Hits y Falsas Alarmas registradas para cada clase de estímulo, (paneles izquierdos y derechos, respectivamente). El panel superior muestra las comparaciones correspondientes al Experimento 1 y el panel inferior, al Experimento 2.}
 \label{fig:Diff_Rate}
@@ -550,23 +550,22 @@ La comparación global entre las tasas de Hits y Falsas Alarmas registradas por 
 
 A continuación se presentan los análisis realizados para determinar si los Hits y las Falsas Alarmas registrados por cada clase de estímulos son estadísticamente diferentes.\\
 
-\textbf{Análisis 1: Pruebas T para comparar las tasas de Hits y Falsas Alarmas registradas por cada clase de estímulos}\\
+\textbf{Análisis Frecuentista: Pruebas T para comparar las tasas de Hits y Falsas Alarmas registradas por cada clase de estímulos}\\
 
 De acuerdo con la literatura, la manera más apropiada de evaluar la significancia estadística del patrón de respuestas reportado como Efecto Espejo en Tareas de respuesta binaria "Sí/No", es mediante la realización de dos pruebas-T que evalúen de manera independiente las diferencias entre las medias de las tasas de Hits reportadas por cada clase de estímulo y entre las tasas de Falsas Alarmas, \parencite{Glanzer1990}.\\
 
-Sin embargo, debido que los datos a comparar entre las clases de estímulos presentados son tasas, sólo pueden adoptar valores entre $0$ y $1$ 
+Además, para prevenir el efecto de suelo y techo causado por el hecho de que los datos a comparar éstán restringidos dentro de un rango entre $0$ y $1$, en la literatura se recomienda hacer una transformación arcoseno de las tasas registradas de Hits y Falsas Alarmas por cada clase de estímulos, \parencite{Glanzer1990}.\\ 
 
-a Tabla~\ref{Tabla_t-HitsyFA}\\
-
+En la Tabla~\ref{Tabla_t-HitsyFA} se presentan los resultados obtenidos en la prueba-T de muestras independientes realizada para evaluar las diferencias entre las medias de las tasas de Hits y Falsas Alarmas obtenidas entre cada clase de estímulo, por cada Experimento realizado. En la tabla se muestra tanto la media de las tasas crudas registradas, como de su transformación arcoseno.\\
 
 \begin{table}
-\caption[Prueba T para evaluar diferencias en las medias de las tasas de ejecución (Hits y F. Alarmas) entre condiciones]{Diferencias en Hits y Falsas Alarmas entre los tipos de estímulos (Experimento 1 y 2)}
+\caption[Prueba T para evaluar diferencias entre las tasas de ejecución (Hits y F. Alarmas) promedio registradas por cada condición]{Se presetan los resultados de las pruebas T de una muestra para la comparación de las medias de las tasas crudas registradas por cada clase de estímulo y de su transformación arcoseno, para los Experimentos 1 y 2.}
 \label{Tabla_t-HitsyFA}
 \centering
 \begin{tabular}{l l | c c c c c c}
 \toprule
 %\tabhead{Groups} & \tabhead{Treatment X} & \tabhead{Treatment Y} \\
-\textbf{Experimento} & \textbf{Tasa} & \textbf{$\mu(A)$} & \textbf{$arcsin(\mu(B))$} & \textbf{$\mu(A)$} & \textbf{$arcsin(\mu(B))$} &\textbf{T} & \textbf{P value}\\
+\textbf{} & \textbf{Tasa} & \textbf{$\mu(A)$} & \textbf{$arcsin(\mu(B))$} & \textbf{$\mu(A)$} & \textbf{$arcsin(\mu(B))$} &\textbf{T} & \textbf{P value}\\
 \midrule
 Exp 1 & Hits & 0.922 & 1.314 & 0.860 & 1.209 & -2.4348 & 0.0098 \\
 Exp 1 & FA & 0.08 & 0.247 & 0.143 & 0.353 & 1.872 & 0.0345 \\
@@ -576,14 +575,29 @@ Exp 2 & FA & 0.266 & 0.524 & 0.336 & 0.611 & 1.7223 & 0.0468 \\
 \end{tabular}
 \end{table}
 
-\textbf{Modelo bayesiano}
+De acuerdo con los resultados de las pruebas T presentadas en la Tabla~\ref{Tabla_t-HitsyFA}, las diferencias entre el promedio de las transformaciones arcoseno de las tasas de Hits y Falsas Alarmas registradas por cada clase de estímulo, son estadísticamente significativas en ambos experimentos.\\
 
+\textbf{Análisis Bayesiano: Modelo bayesiano desarrollados para comparar las tasas de Hits y Falsas Alarmas entre clases de estímulos}\\
+
+Cuando las mismas pruebas T para muestras independientes presentadas en la Tabla~\ref{Tabla_t-HitsyFA} se realizan sin la transformación arcoseno de los datos, las diferencias entre las Tasas de Falsas Alarmas no resultan significativas en ningún experimento ($t=1.6536$, $p=0.0533>0.05$ para el Experimento 1 y $t=1.6577$, $p=0.0534>0.05$, para el Experimento 2).\\
+
+Pese a que la transformación arcoseno se realiza de manera justificada, como una forma de prevenir el efecto de suelo y techo que pudiera afectar la evaluación de diferencias entre datos que se encuentren en la cercanía de los límites superior e inferior, la discrepancia entre las conclusiones sugeridas por las pruebas t realizadas con o sin dicha transformación puede llegar a generar dudas acerca de su confiabilidad.\\
+
+El desarrollo de un modelo bayesiano para evaluar las diferencias entre los Hits y las Falsas Alarmas registradas por cada clase de estímulo, presenta como ventaja principal que no se requiere de manipular los datos en forma alguna, en tanto que la estimación paramétrica se hace a partir de inferencias probabilísticas que definen los valores de cada parámetro que, en conjunto, podrían dar cuenta de los datos registrados con mayor probabilidad. Para ello, se desarrolló un modelo bayesiano (identificado en el presente trabajo como Modelo Tau), que incorpora un par de parámetros Tau ($\tau$) que computan las diferencias entre las estimaciones realizadas por cada clase de estímulos ($j$) acerca de las probabilidades ocultas tras la emisión de los Hits y Falsas Alarmas obtenidos por cada participante ($i$).\\ 
+
+En la Figura~\ref{fig:Mod_Tau} se presenta el modelo gráfico coorrespondiente al Modelo Tau desarrollado para evaluar la evidencia del Efecto Espejo encontrada en los experimentos realizados. El modelo cuenta con los mismos elementos que el Modelo Delta desarrollado para comparar las medias de $d'$ por cada clase de estímulo, con las siguientes excepciones:\\
+
+\begin{itemize}
+\item \underline{El modelo Tau \textbf{no} asume una estructura jerárquica}
+
+\item \underline{Parámetros Tau}
+\end{itemize}
 
 \begin{figure}[th]
 \centering
 \includegraphics[width=1.1\textwidth]{Figures/Model_Tau_Diff_Tetas}
 %\decoRule
-\caption[Modelo Tau: Modelo Bayesiano para evaluar las diferencias entre las tasas de hits y falsas alarmas]{Comparación intrasujeto de}
+\caption[Modelo Tau: Modelo Bayesiano para evaluar las diferencias entre las tasas de Hits y Falsas Alarmas obtenidas por cada clase de estímulos]{Modelo bayesiano desarrollado para evaluar las diferencias entre }
 \label{fig:Mod_Tau}
 \end{figure}
 
@@ -599,9 +613,7 @@ Exp 2 & FA & 0.266 & 0.524 & 0.336 & 0.611 & 1.7223 & 0.0468 \\
 
 
 
-
 \subsection{Diferencias en la asignación de Puntajes de Confianza}
-
 
 La Figura~\ref{fig:MirrorRating_E1_P10} muestra el promedio de los puntajes de confianza asignados por el Participante 10 del Experimento 1 a los estímulos pertenecientes a cada una de las condiciones de dificultad construidas, separando para cada caso los ensayos con ruido y señal. En la figura puede apreciarse con claridad una tendencia ascendente que coincide con el patrón reportado en estudios de Memoria de Reconocimiento.\\
 
@@ -614,8 +626,6 @@ La Figura~\ref{fig:MirrorRating_E1_P10} muestra el promedio de los puntajes de c
 \end{figure}
 
 %La comparación entre los puntajes de confianza asignados a cada grupo de estímulos por el resto de los participantes en los Experimentos 1 y 2, se presentan en las Figuras~\ref{fig:MERating_E1} y ~\ref{fig:MERating_E2}.\\
-
-
 
 
 
