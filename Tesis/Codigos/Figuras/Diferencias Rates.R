@@ -46,17 +46,17 @@ axis(2,at=c(0.0,0.1,0.2,0.3,0.4,0.5),labels=c("0","0.1","0.2","0.3","0.4","0.5")
 ###############################################
 #Experimento2
 #Archivo que contiene los datos
-archivo <-'Ex_2Ebb_TODOS-.csv'
+archivo <-'Ex_2Ebb_TODOS_No1.csv'
 data <- read.csv(archivo)
 layout(matrix(1:2,ncol=2, byrow=TRUE))
 
 #Datos que vamos a plotear
 H_Facil <- data$Hr_A
 H_Dificil <- data$Hr_B
-H_mtx<-matrix(data=c(H_Facil,H_Dificil), nrow=2, ncol=21, byrow=TRUE)
+H_mtx<-matrix(data=c(H_Facil,H_Dificil), nrow=2, ncol=20, byrow=TRUE)
 Fa_Facil <- data$FaR_A
 Fa_Dificil <- data$FaR_B
-Fa_mtx<-matrix(data=c(Fa_Facil,Fa_Dificil), nrow=2, ncol=21, byrow=TRUE)
+Fa_mtx<-matrix(data=c(Fa_Facil,Fa_Dificil), nrow=2, ncol=20, byrow=TRUE)
 
 #Plot
 matplot(H_mtx, type="b", lty=1, lwd=3, pch=21, col=c("olivedrab3"),

@@ -32,12 +32,12 @@
 \contentsline {subsection}{\numberline {4.1.3}Control 3: \IeC {\textquestiondown }El dise\IeC {\~n}o de los est\IeC {\'\i }mulos afectaron el desempe\IeC {\~n}o de los participantes?}{71}{subsection.83}
 \contentsline {section}{\numberline {4.2}An\IeC {\'a}lisis estad\IeC {\'\i }sticos}{74}{section.86}
 \contentsline {subsection}{\numberline {4.2.1}Evaluaci\IeC {\'o}n de las diferencias entre las clases de est\IeC {\'\i }mulos propuestas}{77}{subsection.91}
-\contentsline {subsection}{\numberline {4.2.2}Diferencias en las Tasas de Hits y Falsas Alarmas}{81}{subsection.95}
-\contentsline {subsection}{\numberline {4.2.3}Diferencias en la asignaci\IeC {\'o}n de Puntajes de Confianza}{82}{subsection.100}
-\contentsline {subsection}{\numberline {4.2.4}R\IeC {\'e}plica de controles reportados en la literatura}{83}{subsection.103}
-\contentsline {chapter}{\numberline {5}Discusi\IeC {\'o}n y Conclusiones}{85}{chapter.104}
-\contentsline {section}{\numberline {5.1}Recapitulando}{85}{section.105}
-\contentsline {subsection}{\numberline {5.1.1}Construcci\IeC {\'o}n de la Tarea}{85}{subsection.106}
-\contentsline {chapter}{\numberline {A}Registro de respuesta}{87}{appendix.107}
-\contentsline {chapter}{\numberline {B}Datos (Extensi\IeC {\'o}n)}{89}{appendix.109}
-\contentsline {chapter}{Bibliograf\'{\i }a}{109}{appendix*.128}
+\contentsline {subsection}{\numberline {4.2.2}Diferencias en las Tasas de Hits y Falsas Alarmas}{87}{subsection.99}
+\contentsline {subsection}{\numberline {4.2.3}Diferencias en la asignaci\IeC {\'o}n de Puntajes de Confianza}{89}{subsection.104}
+\contentsline {subsection}{\numberline {4.2.4}R\IeC {\'e}plica de controles reportados en la literatura}{89}{subsection.107}
+\contentsline {chapter}{\numberline {5}Discusi\IeC {\'o}n y Conclusiones}{93}{chapter.108}
+\contentsline {section}{\numberline {5.1}Recapitulando}{93}{section.109}
+\contentsline {subsection}{\numberline {5.1.1}Construcci\IeC {\'o}n de la Tarea}{93}{subsection.110}
+\contentsline {chapter}{\numberline {A}Registro de respuesta}{95}{appendix.111}
+\contentsline {chapter}{\numberline {B}Datos (Extensi\IeC {\'o}n)}{97}{appendix.113}
+\contentsline {chapter}{Bibliograf\'{\i }a}{117}{appendix*.132}

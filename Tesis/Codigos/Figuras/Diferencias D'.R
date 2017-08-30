@@ -33,13 +33,13 @@ axis(2,at=c(0.0,0.5,1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5),labels=c("0","0.5",
 ###############################################
 #Experimento2
 #Archivo que contiene los datos
-archivo <-'Ex_2Ebb_TODOS-.csv'
+archivo <-'Ex_2Ebb_TODOS_No1.csv'
 data <- read.csv(archivo)
 
 #Datos que vamos a plotear
 D_Facil <- data$d_A
 D_Dificil <- data$d_B
-D_mtx<-matrix(data=c(D_Facil,D_Dificil), nrow=2, ncol=21, byrow=TRUE)
+D_mtx<-matrix(data=c(D_Facil,D_Dificil), nrow=2, ncol=20, byrow=TRUE)
 
 #Plot
 matplot(D_mtx, type="b", lty=1, lwd=3, pch=21, col=c("lightsalmon3"),
