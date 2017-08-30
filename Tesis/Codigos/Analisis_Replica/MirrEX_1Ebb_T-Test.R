@@ -29,10 +29,10 @@ t.test(values~ind,data=dprimas,alternative = c("two.sided", "less", "greater"))
 ####  Diferencia en Rates (Patron principal)
 #LLamamos los datos 
 #Transformamos las Proporciones a ArcSins
-FA_Facil <- asin(sqrt(datos$FaR_A)) 
-FA_Dificil <- asin(sqrt(datos$FaR_B))
-H_Dificil <- asin(sqrt(datos$Hr_B))
-H_Facil <- asin(sqrt(datos$Hr_A))
+FA_Facil <- datos$FaR_A 
+FA_Dificil <- datos$FaR_B
+H_Dificil <- datos$Hr_B
+H_Facil <- datos$Hr_A
 #Ordenamos los datos
 Combined_Rates <- data.frame(cbind(FA_Facil,FA_Dificil,H_Dificil,H_Facil))
 FA_Rates <- data.frame(cbind(FA_Facil,FA_Dificil))
