@@ -6,7 +6,8 @@ library(R2jags)
 ##############################################################
 #Diferencias en D'
 ##############################################################
-#Modelo 2 :  Diferencia en el promedio de D' (parametro Delta)
+#Modelo 2b :  Diferencia en el promedio de D' (parametro Delta)
+#Sólo d' es jerárquico
 ##############################################################
 
 
