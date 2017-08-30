@@ -30,13 +30,13 @@ if (experimento == 1)    #Una Figura de Ebbinghaus
 
 if (experimento == 2)   # Dos Figuras de Ebbinghaus
 {
-  archive <-'Ex_2Ebb_TODOS-.csv'  #El archivo que contiene los datos
+  archive <-'Ex_2Ebb_TODOS_No1.csv'  #El archivo que contiene los datos
   datos <- read.csv(archive)          #Jalamos los datos
   Hits_Facil <- datos$A_H      #Hits(A)
   Hits_Dificil <- datos$B_H    #Hits(B)
   FA_Facil <- datos$A_FA       #FA(A)
   FA_Dificil <- datos$B_FA     #FA(B)
-  k <- 21                      #Participantes
+  k <- 20                      #Participantes
   data <- matrix(c(FA_Facil, FA_Dificil, Hits_Dificil, Hits_Facil), nrow=k, ncol=4)  #Acomodamos datos en matriz
 }
 
@@ -103,13 +103,13 @@ samples <- jags(data, inits=myinits, parameters,
   # Las posteriores de los parámetros INDVIDUALES estimados (D'y C; ThetaH y ThetaFA)
   ###################################################################################
   
-layout(matrix(1:2,ncol=1))  #Dos paneles
+layout(matrix(1,ncol=1))  #Dos paneles
 #layout(matrix(c(1,2,3,4), 2, 2, byrow = TRUE))  #Cuatro paneles
 
 
 if (experimento ==1)
 {
-  par(cex.main = 1.5, mar = c(5, 6, 4, 5) + 0.1, mgp = c(3.5, 1, 0), cex.lab = 1.5, font.lab = 2, cex.axis = 1.3, bty = "n", las=1)
+  #par(cex.main = 1.5, mar = c(5, 6, 4, 5) + 0.1, mgp = c(3.5, 1, 0), cex.lab = 1.5, font.lab = 2, cex.axis = 1.3, bty = "n", las=1)
   soporte_d <- c(0,3)      
   soporte_c <- c(0,6)
   soporte_h <- c(0,70)
@@ -122,8 +122,8 @@ if (experimento ==1)
     lines(density(d_b[,a]), lwd=2, col="darkorchid3", lty=1)
     axis(1)
     axis(2, labels=F, at=c(0,24))
-    mtext("Probability Density", side=2, line = 2, cex=1, las=0)
-    mtext("D-primes", side=1, line = 2.5, cex=1, font=2)}
+    mtext("Densidad de Probabilidad", side=2, line = 2, cex=1.5, las=0)
+    mtext("D-prima", side=1, line = 2.5, cex=1, font=2)}
 
   # SESGO (C):   
   plot(soporte_c, main="", ylab="", xlab="", col='white', xlim=c(-1,1), axes=F)
@@ -132,34 +132,38 @@ if (experimento ==1)
   axis(2, labels=F, at=c(0,24))
   lines(density(c_a[,a]), lwd=2, col="deepskyblue3")
   lines(density(c_b[,a]), lwd=2, col="darkorchid3", lty=1)
-  mtext("Probability Density", side=2, line = 2, cex=1, las=0)
-  mtext("C (Bias)", side=1, line = 2.5, cex=1, font=2)}
+  mtext("Densidad de Probabilidad", side=2, line = 2, cex=1.5, las=0)
+  mtext("Sesgo - C", side=1, line = 2.5, cex=1, font=2)}
   
  ###############################
   
   # THETA HITS:    
-  plot(soporte_h, col="white", main="", ylab="", xlab="", xlim=c(0.3,1), axes=F)
+  plot(soporte_h, col="white", main="Experimento 1", cex.main=3, ylab="", xlab="", xlim=c(0.3,1), axes=F)
   for(a in 1:k){
   axis(1)
   axis(2, labels=F, at=c(0,94))
   lines(density(tetaH_a[,a]), lwd=2, col="deepskyblue3")
   lines(density(tetaH_b[,a]), lwd=2, col="darkorchid3", lty=1)
-  lines(c(0.35, 0.4),c(40,40), lwd=2, lty=1, col="deepskyblue3")
-  lines(c(0.35, 0.4),c(30,30), lwd=2, lty=1, col="darkorchid3")
-  text(0.45, 40, labels="A Condition", offset=0, cex = 0.8, pos=4)
-  text(0.45, 30, labels="B Condition", offset=0, cex = 0.8, pos=4)
-  mtext("Probability Density", side=2, line = 2, cex=1, las=0)
-  mtext("Hit Rate", side=1, line = 2.5, cex=1, font=2)}
+  lines(c(0.35, 0.4),c(60,60), lwd=3, lty=1, col="deepskyblue3")
+  lines(c(0.35, 0.4),c(50,50), lwd=3, lty=1, col="darkorchid3")
+  text(0.45, 60, labels="Estímulos A", offset=0, cex = 1.8, pos=4)
+  text(0.45, 50, labels="Estímulos B", offset=0, cex = 1.8, pos=4)
+  mtext("Densidad de Probabilidad", side=2, line = 2, cex=2, las=0)
+  mtext(expression(paste(theta, "H")), side=1, line = 2.7, cex=2, font=2)}
   
   # THETA F.A:
-  plot(soporte_f, col="white", main="", ylab="", xlab="", xlim=c(0,0.7), axes=F)
+  plot(soporte_f, col="white", main="Experimento 1", cex.main=3, ylab="", xlab="", xlim=c(0,0.7), axes=F)
   for(a in 1:k){
   lines(density(tetaFA_a[,a]), lwd=2, col="deepskyblue3")
   lines(density(tetaFA_b[,a]), lwd=2, col="darkorchid3", lty=1)
+  text(0.45, 55, labels="Estímulos A", offset=0, cex = 1.8, pos=4)
+  text(0.45, 45, labels="Estímulos B", offset=0, cex = 1.8, pos=4)
+  lines(c(0.35, 0.4),c(55,55), lwd=3, lty=1, col="deepskyblue3")
+  lines(c(0.35, 0.4),c(45,45), lwd=3, lty=1, col="darkorchid3")
   axis(1)
   axis(2, labels=F, at=c(0,94))
-  mtext("Probability Density", side=2, line = 2, cex=1, las=0)
-  mtext("False-Alarm Rate", side=1, line = 2.5, cex=1, font=2)}
+  mtext("Densidad de Probabilidad", side=2, line = 2, cex=2, las=0)
+  mtext(expression(paste(theta, "F")), side=1, line = 2.5, cex=2, font=2)}
   }
 
 
@@ -193,28 +197,32 @@ if (experimento ==2)
     mtext("C (Bias)", side=1, line = 2.5, cex=1, font=2)}
   
   # Theta HITS:    
-  plot(soporte_h, col="white", main="", ylab="", xlab="", xlim=c(0.18,1), axes=F)
+  plot(soporte_h, col="white", main="Experimento 2", cex.main=3,  ylab="", xlab="", xlim=c(0.18,1), axes=F)
   for(a in 1:k){
     axis(1)
     axis(2, labels=F, at=c(0,94))
     lines(density(tetaH_a[,a]), lwd=2, col="deepskyblue3")
     lines(density(tetaH_b[,a]), lwd=2, col="darkorchid3", lty=1)
-    lines(c(0.35, 0.4),c(40,40), lwd=2, lty=1, col="deepskyblue3")
-    lines(c(0.35, 0.4),c(30,30), lwd=2, lty=1, col="darkorchid3")
-    text(0.45, 40, labels="A Condition", offset=0, cex = 0.8, pos=4)
-    text(0.45, 30, labels="B Condition", offset=0, cex = 0.8, pos=4)
-    mtext("Probability Density", side=2, line = 2, cex=1, las=0)
-    mtext("Hit Rate", side=1, line = 2.5, cex=1, font=2)}
+    lines(c(0.25, 0.3),c(55,55), lwd=3, lty=1, col="deepskyblue3")
+    lines(c(0.25, 0.3),c(45,45), lwd=3, lty=1, col="darkorchid3")
+    text(0.35, 55, labels="Estímulos A", offset=0, cex = 1.8, pos=4)
+    text(0.35, 45, labels="Estímulos B", offset=0, cex = 1.8, pos=4)
+    mtext("Densidad de Probabilidad", side=2, line = 2, cex=2, las=0)
+    mtext(expression(paste(theta, "H")), side=1, line = 2.5, cex=2, font=2)}
   
   # Theta F.A.:    
-  plot(soporte_f, col="white", main="", ylab="", xlab="", xlim=c(0,0.7), axes=F)
+  plot(soporte_f, col="white", main="Experimento 2", cex.main=3,  ylab="", xlab="", xlim=c(0,0.7), axes=F)
   for(a in 1:k){
     lines(density(tetaFA_a[,a]), lwd=2, col="deepskyblue3")
     lines(density(tetaFA_b[,a]), lwd=2, col="darkorchid3", lty=1)
+    lines(c(0.35, 0.4),c(20,20), lwd=3, lty=1, col="deepskyblue3")
+    lines(c(0.35, 0.4),c(15,15), lwd=3, lty=1, col="darkorchid3")
+    text(0.45, 20, labels="Estímulos A", offset=0, cex = 1.8, pos=4)
+    text(0.45, 15, labels="Estímulos B", offset=0, cex = 1.8, pos=4)
     axis(1)
     axis(2, labels=F, at=c(0,94))
-    mtext("Probability Density", side=2, line = 2, cex=1, las=0)
-    mtext("False-Alarm Rate", side=1, line = 2.5, cex=1, font=2)}
+    mtext("Densidad de Probabilidad", side=2, line = 2, cex=2, las=0)
+    mtext(expression(paste(theta, "F")), side=1, line = 2.5, cex=2, font=2)}
   }
   
   ###################################################################################
@@ -371,18 +379,18 @@ taucolh <- c('darkgreen','forestgreen','chartreuse3', 'darkgreen','forestgreen',
 if (experimento ==1)
 { soporte_t <- c(0,35)
   par(cex.main = 1.5, mar = c(5, 6, 4, 5) + 0.1, mgp = c(3.5, 1, 0), cex.lab = 1.5,
-      font.lab = 2, cex.axis = 1.3, bty = "n", las=1)
+      font.lab = 2, cex.axis = 1.3, bty = "n", las=1, cex.main=3)
   
   plot(soporte_t, axes=F, main="", ylab="", xlab="", xlim=c(-0.15,0.3), col='white')
   for(a in 1:k){
-  title("Experiment 1", line=2.5)
+  title("Experimento 1", line=2.2)
   lines(density(tauH[,a]), lwd=2.5, col=taucolh[a], ylab="", xlab="", xlim=c(-0.5,0.5), axes=F)}
   axis(1)
   abline(v=0, col='black', lty=2, lwd=3)
   #axis(2, labels=F, at=c(0,24))
   #mtext("Density", side=2, line = 0, cex=1, las=0)
-  mtext("Differences on Hit Rates", side=3, line = 0.2, cex=1.2, font=1)
-  mtext("Tau-H", side=1, line = 3, cex=1.5, font=2)
+  mtext("Diferencias en Tasas de Hits", side=3, line = 0.2, cex=1.5, font=1)
+  mtext("Tau-H", side=1, line = 3, cex=2, font=2)
 
   
   plot(soporte_t, axes=F, main="", ylab="", xlab="", xlim=c(-0.1,0.35), col='white')
@@ -393,19 +401,19 @@ if (experimento ==1)
   abline(v=0, col='black', lty=2, lwd=3)
   #axis(2, labels=F, at=c(0,24))
   #mtext("Density", side=2, line = 2, cex=1, las=0)
-  mtext("Tau-F", side=1, line = 3, cex=1.5, font=2)
-  mtext("Differences on FA Rates", side=3, line = 0.2, cex=1.2, font=1)
+  mtext("Tau-F", side=1, line = 3, cex=2, font=2)
+  mtext("Diferencias en Tasas de F.A.", side=3, line = 0.2, cex=1.5, font=1)
 }
 
 if (experimento ==2)
 {
   soporte_t <- c(0,35)
   par(cex.main = 1.5, mar = c(5, 6, 4, 5) + 0.1, mgp = c(3.5, 1, 0), cex.lab = 1.5,
-      font.lab = 2, cex.axis = 1.3, bty = "n", las=1)
+      font.lab = 2, cex.axis = 1.3, bty = "n", las=1, cex.main=3)
   
   plot(soporte_t, axes=F, main="", ylab="", xlab="", xlim=c(-0.1,0.55), col='white')
   for(a in 1:k){
-    title("Experiment 2", line=2.5)
+    title("Experimento 2", line=2.2)
     lines(density(tauH[,a]), lwd=2.5, col=taucolh[a], ylab="", xlab="", 
           xlim=c(-0.5,0.5), axes=F)
   }
@@ -413,8 +421,8 @@ if (experimento ==2)
   abline(v=0, col='black', lty=2, lwd=3)
   #axis(2, labels=F, at=c(0,24))
   #mtext("Density", side=2, line = 2, cex=1, las=0)
-  mtext("Differences on Hit Rates", side=3, line = 0.2, cex=1.2, font=1)
-  mtext("Tau-H", side=1, line = 3, cex=1.5, font=2)
+  mtext("Diferencias entre Tasas de Hits", side=3, line = 0.2, cex=1.5, font=1)
+  mtext("Tau-H", side=1, line = 3, cex=2, font=2)
 
   
   plot(soporte_t, axes=F, main="", ylab="", xlab="", xlim=c(-0.15,0.35), col='white')
@@ -424,6 +432,6 @@ if (experimento ==2)
   axis(1) 
   abline(v=0, col='black', lty=2, lwd=3)
   #axis(2, labels=F, at=c(0,24))
-  mtext("Tau-F", side=1, line = 3, cex=1.5, font=2)
-  mtext("Differences on FA Rates", side=3, line = 0.2, cex=1.2, font=1)
+  mtext("Tau-F", side=1, line = 3, cex=2, font=2)
+  mtext("Diferencias entre Tasas de F.A.", side=3, line = 0.2, cex=1.5, font=1)
 }
