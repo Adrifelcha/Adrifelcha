@@ -525,17 +525,17 @@ donde $FA$ y $H$ señalan las tasas de Hits y Falsas Alarmas observadas durante 
 
 Para comprobar que esta misma relación se presentara en los datos obtenidos en el presente estudio, se comparó el número de Hits y Falsas Alarmas cometidos en cada una de las clases de estímulos construidas por cada participante.\\
 
-Una forma sencilla de explorar dicha relación fue mediante la realización de gráficas de barras que presentaran las diferencias en los resultados obtenidos por los participantes para los distintos tipos de estímulos presentados. Como un caso ejemplar, en la Figura~\ref{fig:MirrorRate_E2_P4} se muestra la frecuencia absoluta de Hits y Falsas Alarmas obtenidas por el Participante 4 en el Experimento 2, por cada clase de estímulos construido, distinguiendo la clase fácil A en color azul y la clase difícil B, en púrpura. Como se puede apreciar, dicho participante presentó el patrón de respuestas identificado como Efecto Espejo.\\
+Una forma sencilla de explorar dicha relación fue mediante la realización de gráficas de barras que presentaran las diferencias en los resultados obtenidos por los participantes para los distintos tipos de estímulos presentados. Como un caso ejemplar, en la Figura~\ref{fig:MirrorRate_E2_P4} se muestra la frecuencia absoluta de Hits y Falsas Alarmas obtenidas por el Participante 4 en el Experimento 2, por cada clase de estímulos construido, distinguiendo la clase fácil A en color azul y la clase difícil B, en púrpura; presentando el patrón de respuestas identificado como Efecto Espejo. Las gráficas correspondientes al desempeño del resto de los participantes en los Experimentos 1 y 2, pueden consultarse en los Apéndices.\\
+\\
 
 \begin{figure}[th]
 \centering
 \includegraphics[width=0.60\textwidth]{Figures/MirrorRate_Exp2_P4}
 %\decoRule
-\caption[Diferencias entre Hits y Falsas Alarmas por Condición; Participante ejemplar]{Se muestra el desempeño del Participante 14 del Experimento 2 en relación al color de los estímulos. En el panel izquierdo se muestra la relación entre el número de Hits obtenidos y el color de los estímulos, mientras que en el panel derecho se muestra la misma relación para las Falsas alarmas.}
+\caption[Diferencias entre Hits y Falsas Alarmas por Condición; Participante ejemplar]{Gráfica de barras que presenta el número de Hits y Falsas Alarmas cometidos por el Participante 4 del Experimento 2 en cada clase de estímulo, (clase fácil A en azul y clase difícil B en púrpura). Los resultados se presentan de acuerdo al órden ascendente entre los resultados reportados en el Efecto Espejo.}
 \label{fig:MirrorRate_E2_P4}
 \end{figure}
 
-Las gráficas correspondientes al desempeño del resto de los participantes en los Experimentos 1 y 2, pueden consultarse en los Apéndices.\\
 
 La comparación global entre las tasas de Hits y Falsas Alarmas registradas por cada participante de los Experimentos 1 y 2 en cada tipo de estímulo se presenta en la Figura~\ref{fig:Diff_Rate}. De acuerdo con el patrón de respuestas reportado como parte del Efecto Espejo, se espera observar una pendiente descendente para la comparación de las tasas de Hits registradas por cada condición (paneles izquierdos) y una pendiente ascendente en el registro de tasas de Falsas Alarmas (paneles derechos). Como se puede observar, parece ser que dichas tendencias se aparecen en la mayoría de los participantes, presentándose de manera más evidente en los datos registrados en el Experimento 1. Sin embargo, resulta poco claro si las diferencias entre las tasas registradas en una y otra clase de estímulos son lo suficientemente grandes como para considerarse estadísticamente significativas.\\
 
@@ -590,6 +590,8 @@ En la Figura~\ref{fig:Mod_Tau} se presenta el modelo gráfico coorrespondiente a
 \begin{itemize}
 \item \underline{El modelo Tau \textbf{no} asume una estructura jerárquica}
 
+
+
 \item \underline{Parámetros Tau}
 \end{itemize}
 
@@ -601,10 +603,35 @@ En la Figura~\ref{fig:Mod_Tau} se presenta el modelo gráfico coorrespondiente a
 \label{fig:Mod_Tau}
 \end{figure}
 
+En las Figuras~\ref{fig:Tau_Hits} y \ref{fig:Tau_FA}
 
+\begin{figure}[th]
+\centering
+\includegraphics[width=0.6\textwidth]{Figures/MTau_Hits_E1}\\
+\includegraphics[width=0.6\textwidth]{Figures/MTau_Hits_E2}\\
+%\decoRule
+\caption[Modelo Delta: Distribuciones posteriores conjuntas para las medias de $d'$ y $c$ en cada clase de estímulo]{}
+\label{fig:Tau_Hits}
+\end{figure}
 
+\begin{figure}[th]
+\centering
+\includegraphics[width=0.6\textwidth]{Figures/MTau_FA_E1}\\
+\includegraphics[width=0.6\textwidth]{Figures/MTau_FA_E2}\\
+%\decoRule
+\caption[Modelo Delta: Distribuciones posteriores conjuntas para las medias de $d'$ y $c$ en cada clase de estímulo]{}
+\label{fig:Tau_FA}
+\end{figure}
 
+Finalmente, en la Figura~\ref{fig:Tau}
 
+\begin{figure}[th]
+\centering
+\includegraphics[width=0.7\textwidth]{Figures/MTau_DensidadTau_E1} \& \includegraphics[width=0.7\textwidth]{Figures/MTau_DensidadTau_E1}\\
+%\decoRule
+\caption[Modelo Delta: Densidad de probabilidad posterior para el valor del parámetro Delta]{Modelo jerárquico bayesiano desarrollado a partir del supuesto de que los valores de $d'$ y sesgo $c$ computados por cada participante en cada clase provienen de su propia distribución normal. El modelo incorpora un parámetro ($\delta$) que estima la diferencia entre las medias de $d'$ estimadas por cada condición. El modelo tiene priors no informativas.}
+\label{fig:Tau}
+\end{figure}
 
 
 
