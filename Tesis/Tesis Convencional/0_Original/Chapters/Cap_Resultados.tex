@@ -244,7 +244,25 @@ Las gráficas correspondientes al desempeño de cada uno de los participantes en
 
 \section{Análisis estadísticos}
 
-En cada una de las tareas contenidas en los experimentos realizados (la tarea de detección binaria y el procedimiento de escala de confianza), los patrones de respuesta identificados como parte del Efecto Espejo se presentaron en al menos tres cuartas partes de los participantes. De los veinte participantes en el Experimento 1, diecisiete ($85\%$) mostraron el patrón de respuesta esperado en la tarea binaria y dieciocho ($90\%$) en la escala de confianza. A su vez, en el Experimento 2, dieciocho de los veinte participantes incluidos en la muestra ($90\%$) presentaron el mismo patrón en ambas tareas. Estas proporciones resultan estadísticamente significativas al compararlas contra el azar con una prueba binomial ($p=0.0025$ y $p=0.0004$ en el caso de las proporciones reportadas en el Experimento 1, respectivamente, y $p=0.0004$ para lo reportado en el Experimento 2).\\
+En cada una de las tareas contenidas en los experimentos realizados (la tarea de detección binaria y el procedimiento de escala de confianza), los patrones de respuesta identificados como parte del Efecto Espejo se presentaron en al menos tres cuartas partes de los participantes. De los veinte participantes en el Experimento 1, diecisiete ($85\%$) mostraron el patrón de respuesta esperado en la tarea binaria y dieciocho ($90\%$) en la escala de confianza. A su vez, en el Experimento 2, dieciocho de los veinte participantes incluidos en la muestra ($90\%$) presentaron el mismo patrón en ambas tareas. Estas proporciones resultan estadísticamente significativas al compararlas contra el azar con una prueba binomial (ver Tabla~\ref{Tabla_Binom}).\\
+
+\begin{table}
+\caption[Pruebas Binomiales que comparan la proporción de casos encontrados con el Efecto Espejo]{Se presetan los resultados de las pruebas T de una muestra para la comparación de las medias de las tasas crudas registradas por cada clase de estímulo y de su transformación arcoseno, para los Experimentos 1 y 2.}
+\label{Tabla_Binom}
+\centering
+\begin{tabular}{l l | c c c}
+\toprule
+%\tabhead{Groups} & \tabhead{Treatment X} & \tabhead{Treatment Y} \\
+\textbf{} & \textbf{Tarea} & \textbf{Casos} & \textbf{Proporción} & \textbf{P value}\\
+\midrule
+Exp 1 & Sí/No & 17 & 0.85 & 0.0025 \\
+Exp 1 & Escala & 18 & 0.90 & 0.0004\\
+Exp 2 & Sì/No & 18 & 0.90 & 0.0004\\
+Exp 2 & Escala & 18 & 0.90 & 0.0004\\
+\bottomrule
+\end{tabular}
+\end{table}
+
 
 Tomando en cuenta que el diseño de las clases de estímulos a comparar se realizó de manera exploratoria y que los experimentos realizados estuvieron compuestos por una tarea de detección que se presentó en términos de dos sub-tareas, el análisis de los datos recabados se llevó a cabo en el siguiente orden:\\
 
@@ -514,7 +532,7 @@ Una vez comprobada la relación $d'(A) > d'(B)$, se prosiguió a evaluar la pres
 
 \subsection{Diferencias en las Tasas de Hits y Falsas Alarmas}
 
-Como se recordará de la revisión presentada en el Capítulo 1 acerca del fenómeno identificado como Efecto Espejo en Memoria de Reconocimiento, la evidencia en favor del mismo se presenta en Tareas de respuesta binaria "Sí/No" a partir de la siguiente relación:\\
+Como se recordará de la revisión presentada en el Capítulo 1 acerca del fenómeno identificado como Efecto Espejo en Memoria de Reconocimiento, la evidencia en favor del mismo se presenta en Tareas de respuesta binaria "Sí/No" a partir del siguiente patrón de respuestas:\\
  
 \begin{center}
 $FA(A) < FA(B) < H(B) < H(A)$\\
@@ -523,7 +541,7 @@ $FA(A) < FA(B) < H(B) < H(A)$\\
 donde $FA$ y $H$ señalan las tasas de Hits y Falsas Alarmas observadas durante la tarea en cada clase, \parencite{Glanzer1993}.\\
 \end{center}
 
-Para comprobar que esta misma relación se presentara en los datos obtenidos en el presente estudio, se comparó el número de Hits y Falsas Alarmas cometidos en cada una de las clases de estímulos construidas por cada participante.\\
+Para evaluar la presentación de dicho patrón en los datos obtenidos en el presente estudio, se comparó el número de Hits y Falsas Alarmas cometidos en cada una de las clases de estímulos construidas por cada participante.\\
 
 Una forma sencilla de explorar dicha relación fue mediante la realización de gráficas de barras que presentaran las diferencias en los resultados obtenidos por los participantes para los distintos tipos de estímulos presentados. Como un caso ejemplar, en la Figura~\ref{fig:MirrorRate_E2_P4} se muestra la frecuencia absoluta de Hits y Falsas Alarmas obtenidas por el Participante 4 en el Experimento 2, por cada clase de estímulos construido, distinguiendo la clase fácil A en color azul y la clase difícil B, en púrpura; presentando el patrón de respuestas identificado como Efecto Espejo. Las gráficas correspondientes al desempeño del resto de los participantes en los Experimentos 1 y 2, pueden consultarse en los Apéndices.\\
 \\
@@ -579,38 +597,45 @@ De acuerdo con los resultados de las pruebas T presentadas en la Tabla~\ref{Tabl
 
 \textbf{Análisis Bayesiano: Modelo bayesiano desarrollados para comparar las tasas de Hits y Falsas Alarmas entre clases de estímulos}\\
 
-Cuando las mismas pruebas T para muestras independientes presentadas en la Tabla~\ref{Tabla_t-HitsyFA} se realizan sin la transformación arcoseno de los datos, las diferencias entre las Tasas de Falsas Alarmas no resultan significativas en ningún experimento ($t=1.6536$, $p=0.0533>0.05$ para el Experimento 1 y $t=1.6577$, $p=0.0534>0.05$, para el Experimento 2).\\
+Cuando las mismas pruebas T presentadas en la Tabla~\ref{Tabla_t-HitsyFA} se realizan sin la transformación arcoseno de los datos, las diferencias entre las Tasas de Falsas Alarmas no resultan significativas en ningún experimento ($t=1.6536$, $p=0.0533>0.05$ para el Experimento 1 y $t=1.6577$, $p=0.0534>0.05$, para el Experimento 2). Esta discrepancia entre las conclusiones sugeridas por las pruebas t realizadas puede llegar a generar dudas acerca de su confiabilidad, aún cuando la transformación arcoseno se realiza de manera justificada, como una forma de prevenir el efecto de suelo y techo que pudiera afectar la evaluación de diferencias entre datos que se encuentren en la cercanía de los límites superior e inferior.\\
 
-Pese a que la transformación arcoseno se realiza de manera justificada, como una forma de prevenir el efecto de suelo y techo que pudiera afectar la evaluación de diferencias entre datos que se encuentren en la cercanía de los límites superior e inferior, la discrepancia entre las conclusiones sugeridas por las pruebas t realizadas con o sin dicha transformación puede llegar a generar dudas acerca de su confiabilidad.\\
-
-El desarrollo de un modelo bayesiano para evaluar las diferencias entre los Hits y las Falsas Alarmas registradas por cada clase de estímulo, presenta como ventaja principal que no se requiere de manipular los datos en forma alguna, en tanto que la estimación paramétrica se hace a partir de inferencias probabilísticas que definen los valores de cada parámetro que, en conjunto, podrían dar cuenta de los datos registrados con mayor probabilidad. Para ello, se desarrolló un modelo bayesiano (identificado en el presente trabajo como Modelo Tau), que incorpora un par de parámetros Tau ($\tau$) que computan las diferencias entre las estimaciones realizadas por cada clase de estímulos ($j$) acerca de las probabilidades ocultas tras la emisión de los Hits y Falsas Alarmas obtenidos por cada participante ($i$).\\ 
+El desarrollo de un modelo bayesiano para evaluar las diferencias entre los Hits y las Falsas Alarmas registradas por cada clase de estímulo, presenta como ventaja principal que no requiere manipular los datos en forma alguna, en tanto que la estimación paramétrica se hace a partir de inferencias probabilísticas que evalúan qué valores de cada parámetro podrían dar cuenta de los datos registrados en conjunto con el resto de los paràmetros, con mayor probabilidad. Para ello, se desarrolló un modelo bayesiano (identificado en el presente trabajo como Modelo Tau), que incorpora un par de parámetros Tau ($\tau$) que computan las diferencias entre las estimaciones realizadas por cada clase de estímulos ($j$) acerca de las probabilidades ocultas tras la emisión de los Hits y Falsas Alarmas obtenidos por cada participante ($i$).\\ 
 
 En la Figura~\ref{fig:Mod_Tau} se presenta el modelo gráfico coorrespondiente al Modelo Tau desarrollado para evaluar la evidencia del Efecto Espejo encontrada en los experimentos realizados. El modelo cuenta con los mismos elementos que el Modelo Delta desarrollado para comparar las medias de $d'$ por cada clase de estímulo, con las siguientes excepciones:\\
 
 \begin{itemize}
-\item \underline{El modelo Tau \textbf{no} asume una estructura jerárquica}
+\item \underline{El modelo Tau \textbf{no} asume una estructura jerárquica}\\
 
+El Modelo Tau evalúa la diferencia entre las probabilidades ocultas tras la emisión de Hits y Falsas Alarmas en las clases A y B, por cada individuo. Este modelo no requiere de una estructura jerárquica porque tiene su énfasis en el cómputo determinista de las diferencias entre dos parámetros (las probabilidades ocultas tras los Hits y Falsas Alarmas de cada clase $\theta^H_{ij}$ y $\theta^F_{ij}$) que son a su vez definidos de manera determinista por la interacción de $D_{ij}$ y $C_{ij}$.\\
 
+\item \underline{Parámetros Tau}\\
 
-\item \underline{Parámetros Tau}
+De la misma forma en que el Modelo Delta incorporaba un parámetro $\delta$ que computaba las diferencias entre las medias estimadas de $d'$ por cada clase de estímulo, el Modelo Tau recibe su nombre tras la inclusión de un par de parámetros Tau (\tau^H_{i} y \tau^F_{i}) que determinan cuál es la diferencia entre las probabilidades ocultas tras la emisión de Hits y Falsas Alarmas por cada clase de estímulos:\\
+
+\begin{center}
+$\tau^H_{i}\gets \theta^H_{iA}-\theta^H_{iB}$\\
+y\\
+$\tau^F_{i}\gets \theta^F_{iB}-\theta^F_{iA}$\\
+\end{center}
+
 \end{itemize}
 
 \begin{figure}[th]
 \centering
 \includegraphics[width=1.1\textwidth]{Figures/Model_Tau_Diff_Tetas}
 %\decoRule
-\caption[Modelo Tau: Modelo Bayesiano para evaluar las diferencias entre las tasas de Hits y Falsas Alarmas obtenidas por cada clase de estímulos]{Modelo bayesiano desarrollado para evaluar las diferencias entre }
+\caption[Modelo Tau: Modelo Bayesiano para evaluar las diferencias entre las tasas de Hits y Falsas Alarmas obtenidas por cada clase de estímulos]{Modelo bayesiano desarrollado para evaluar las diferencias entre las probabilidades ocultas tras la emisión de Hits y Falsas Alarmas para cada clase de estímulos}
 \label{fig:Mod_Tau}
 \end{figure}
 
-En las Figuras~\ref{fig:Tau_Hits} y \ref{fig:Tau_FA}
+En las Figuras~\ref{fig:Tau_Hits} y \ref{fig:Tau_FA} se presentan las inferencias realizadas por el Modelo Tau acerca de las probabilidades ocultas tras la producción de Hits y Falsas Alarmas de cada individuo, por cada clase de estímulos, en los Experimentos 1 y 2. \\
 
 \begin{figure}[th]
 \centering
 \includegraphics[width=0.6\textwidth]{Figures/MTau_Hits_E1}\\
 \includegraphics[width=0.6\textwidth]{Figures/MTau_Hits_E2}\\
 %\decoRule
-\caption[Modelo Delta: Distribuciones posteriores conjuntas para las medias de $d'$ y $c$ en cada clase de estímulo]{}
+\caption[Modelo Tau: Inferencias individuales acerca de las probabilidades ocultas tras la emisión de Hits por clase de estímulos; Experimentos 1 y 2]{Se presentan las densidades de probabilidad posterior obtenidas individualmente para las probabilidades ocultas tras la emisión de Hits por cada clase de estímulos (clase fácil A en azul y clase difícil B, en púrpura).}
 \label{fig:Tau_Hits}
 \end{figure}
 
@@ -619,26 +644,29 @@ En las Figuras~\ref{fig:Tau_Hits} y \ref{fig:Tau_FA}
 \includegraphics[width=0.6\textwidth]{Figures/MTau_FA_E1}\\
 \includegraphics[width=0.6\textwidth]{Figures/MTau_FA_E2}\\
 %\decoRule
-\caption[Modelo Delta: Distribuciones posteriores conjuntas para las medias de $d'$ y $c$ en cada clase de estímulo]{}
+\caption[Modelo Delta: Inferencias individuales acerca de las probabilidades ocultas tras la emisión de Falsas Alarmas por clase de estímulos; Experimentos 1 y 2]{Se presentan las estimaciones individuales acerca de las probabilidades ocultas tras la emisión de Falsas Alarmas ante cada clase de estímulo (clase fácil A en azul y clase difícil B en púrpura).}
 \label{fig:Tau_FA}
 \end{figure}
 
-Finalmente, en la Figura~\ref{fig:Tau}
+Finalmente, en la Figura~\ref{fig:Tau} se presentan las densidades de probabilidad posterior para los valores de Tau ($\tau^H_{i}$ en tonalidades verdes y $\tau^F_{i}$ en tonos rojizos) computados por cada individuo en cada Experimento realizado. Cada panel incluído en esta Figura contiene una línea punteada que señala $\tau = 0$,  . Como se puede apreciar en la figura, las densidades de probabilidad estimadas para $\tau^H_{i}$ caen por encima del punto de "no diferencias" para la mayoría de los participantes, en tanto que en el caso de las densidades de $\tau^F_{i}$ parece haber una mayor dispersión en el rango de valores estimados por cada participante y una mayor concentración de los mismos cae cerca del punto de "no diferencias".\\
 
 \begin{figure}[th]
 \centering
-\includegraphics[width=0.7\textwidth]{Figures/MTau_DensidadTau_E1} \& \includegraphics[width=0.7\textwidth]{Figures/MTau_DensidadTau_E1}\\
+\includegraphics[width=0.6\textwidth]{Figures/MTau_DensidadTau_E1} \& \includegraphics[width=0.6\textwidth]{Figures/MTau_DensidadTau_E2}\\
 %\decoRule
-\caption[Modelo Delta: Densidad de probabilidad posterior para el valor del parámetro Delta]{Modelo jerárquico bayesiano desarrollado a partir del supuesto de que los valores de $d'$ y sesgo $c$ computados por cada participante en cada clase provienen de su propia distribución normal. El modelo incorpora un parámetro ($\delta$) que estima la diferencia entre las medias de $d'$ estimadas por cada condición. El modelo tiene priors no informativas.}
+\caption[Modelo Tau: Densidades de probabilidad posterior para los valores de los parámetros Tau; Experimentos 1 y 2]{Se presentan las densidades de probabilidad posterior para las inferencias realizadas por el Modelo Tau acerca de las diferencias entre las probabilidades ocultas tras la emisión de Hits (Tau-Hits) y Falsas Alarmas (Tau-Falsas Alarmas) por cada clase de estímulos.}
 \label{fig:Tau}
 \end{figure}
 
+Los resultados arrojados por el Modelo Tau confirman los hallazgos reportados con las pruebas t: la diferencia en el desempeño de los participantes ante cada clase de estímulos parece clara cuando se trata de comparar los Hits, pero no lo es tanto cuando se evalúan las Falsas Alarmas.\\
 
+En el caso de las pruebas t realizadas para el análisis frecuentista, las tasas de Hits y Falsas Alarmas registradas son interpretadas directamente como un reflejo del área de las distribuciones de Ruido y Señal que caen por encima del criterio de elección \parencite{Stainslaw1990} y la transformación arcoseno de las mismas aparece como un "mal necesario" que, aún implicando una manipulación de los datos, compensa el impacto de los efectos de suelo y techo sobre la evaluación de las diferencias entre las tasas registradas \parencite{Glanzer1990}. \\ 
 
+Por su parte, el modelamiento bayesiano de detección de señales permite una mayor flexibilidad en la interpretación de la ejecución de los participantes, pues el número de Hits y Falsas Alarmas son interpretadas como extracciones realizadas bajo la influencia de una probabilidad oculta, \parencite{LeeBook}. Por ello, los datos recopilados sobre la ejecución de los participantes no son tratados de manera determinista, sino probabilística, como el número de casos observados en un proceso binomial y no es necesario llevar a cabo ninguna manipulación adicional sobre los mismos para compensar la rigidez de su interpretación.\\
 
+En cuanto al análisis de datos conducido en el presente estudio para evaluar la evidencia del Efecto Espejo encontrada en los experimentos realizados, resaltan diferencias importantes: De acuerdo con la significancia estadística sugerida por las pruebas t realizadas tras la trasnformación arcoseno de los datos, los datos obtenidos en el presente estudio presentan evidencia sólida sobre el Efecto Espejo en tareas de detección perceptual; sin embargo, de acuerdo a las inferencias realizadas a partir de los datos crudos con el modelo bayesiano desarrollado, parece poco claro si el patrón de respuestas identificado como Efecto Espejo se presenta con suficiente claridad y consistencia, sobre todo en términos de la comparación de las Falsas Alarmas.\\
 
-
-
+En cualquier caso, con independencia de si los Hits y las Falsas Alarmas registrados por cada clase de estímulo resultan significativamente diferentes o no, resulta claro que el patrón de respuestas del Efecto Espejo (el orden de los resultados obtenidos por cada participante) aparece en una proporción significativa de los participantes, (ver Tabla~\ref{Tabla_Binom}).\\ 
 
 \subsection{Diferencias en la asignación de Puntajes de Confianza}
 
@@ -656,11 +684,11 @@ La Figura~\ref{fig:MirrorRating_E1_P10} muestra el promedio de los puntajes de c
 
 
 
-\textbf{Análisis 1: }
+\textbf{Análisis Frecuentista: Pruebas t para cokmparar la emisión de puntajes de confianza por cada clase de estímulo.}\\
 
 \begin{table}
 \caption[Prueba T para evaluar diferencias en las medias de los puntajes de confianza asigandos entre condiciones]{}
-\label{Tabla_t-HitsyFA}
+\label{Tabla_t-Confidence}
 \centering
 \begin{tabular}{l l |  c c c c}
 \toprule
@@ -676,7 +704,7 @@ Exp 2 & Noise & 2.386 & 2.752 & -1.809 & 0.0391 \\
 \end{table}
 
 
-\textbf{Análisis Bayesiano: Prueba T bayesiana }
+\textbf{Análisis Bayesiano: Prueba t bayesiana para comparar la emisión de puntajes de confianza entre clases de estímulos.}\\
 
 
 
