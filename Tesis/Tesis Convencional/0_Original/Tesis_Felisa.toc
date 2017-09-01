@@ -33,11 +33,11 @@
 \contentsline {section}{\numberline {4.2}An\IeC {\'a}lisis estad\IeC {\'\i }sticos}{74}{section.86}
 \contentsline {subsection}{\numberline {4.2.1}Evaluaci\IeC {\'o}n de las diferencias entre las clases de est\IeC {\'\i }mulos propuestas}{77}{subsection.92}
 \contentsline {subsection}{\numberline {4.2.2}Diferencias en las Tasas de Hits y Falsas Alarmas}{86}{subsection.100}
-\contentsline {subsection}{\numberline {4.2.3}Diferencias en la asignaci\IeC {\'o}n de Puntajes de Confianza}{94}{subsection.108}
-\contentsline {subsection}{\numberline {4.2.4}R\IeC {\'e}plica de controles reportados en la literatura}{95}{subsection.111}
-\contentsline {chapter}{\numberline {5}Discusi\IeC {\'o}n y Conclusiones}{97}{chapter.112}
-\contentsline {section}{\numberline {5.1}Recapitulando}{97}{section.113}
-\contentsline {subsection}{\numberline {5.1.1}Construcci\IeC {\'o}n de la Tarea}{97}{subsection.114}
-\contentsline {chapter}{\numberline {A}Registro de respuesta}{99}{appendix.115}
-\contentsline {chapter}{\numberline {B}Datos (Extensi\IeC {\'o}n)}{101}{appendix.117}
-\contentsline {chapter}{Bibliograf\'{\i }a}{121}{appendix*.136}
+\contentsline {subsection}{\numberline {4.2.3}Diferencias en la asignaci\IeC {\'o}n de Puntajes de Confianza}{95}{subsection.108}
+\contentsline {subsection}{\numberline {4.2.4}R\IeC {\'e}plica de controles reportados en la literatura}{96}{subsection.112}
+\contentsline {chapter}{\numberline {5}Discusi\IeC {\'o}n y Conclusiones}{99}{chapter.113}
+\contentsline {section}{\numberline {5.1}Recapitulando}{99}{section.114}
+\contentsline {subsection}{\numberline {5.1.1}Construcci\IeC {\'o}n de la Tarea}{99}{subsection.115}
+\contentsline {chapter}{\numberline {A}Registro de respuesta}{101}{appendix.116}
+\contentsline {chapter}{\numberline {B}Datos (Extensi\IeC {\'o}n)}{103}{appendix.118}
+\contentsline {chapter}{Bibliograf\'{\i }a}{123}{appendix*.137}

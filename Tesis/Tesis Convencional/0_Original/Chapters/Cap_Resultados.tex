@@ -253,12 +253,12 @@ En cada una de las tareas contenidas en los experimentos realizados (la tarea de
 \begin{tabular}{l l | c c c}
 \toprule
 %\tabhead{Groups} & \tabhead{Treatment X} & \tabhead{Treatment Y} \\
-\textbf{} & \textbf{Tarea} & \textbf{Casos} & \textbf{Proporción} & \textbf{P value}\\
+\textbf{} & \textbf{Tarea} & \textbf{Proporción} & \textbf{P value}\\
 \midrule
-Exp 1 & Sí/No & 17 & 0.85 & 0.0025 \\
-Exp 1 & Escala & 18 & 0.90 & 0.0004\\
-Exp 2 & Sì/No & 18 & 0.90 & 0.0004\\
-Exp 2 & Escala & 18 & 0.90 & 0.0004\\
+Exp 1 & Sí/No & 17/20 & 0.0025 \\
+Exp 1 & Escala & 18/20 & 0.0004\\
+Exp 2 & Sì/No & 18/20 & 0.0004\\
+Exp 2 & Escala & 18/20 & 0.0004\\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -668,9 +668,38 @@ En cuanto al análisis de datos conducido en el presente estudio para evaluar la
 
 En cualquier caso, con independencia de si los Hits y las Falsas Alarmas registrados por cada clase de estímulo resultan significativamente diferentes o no, resulta claro que el patrón de respuestas del Efecto Espejo (el orden de los resultados obtenidos por cada participante) aparece en una proporción significativa de los participantes, (ver Tabla~\ref{Tabla_Binom}).\\ 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 \subsection{Diferencias en la asignación de Puntajes de Confianza}
 
-La Figura~\ref{fig:MirrorRating_E1_P10} muestra el promedio de los puntajes de confianza asignados por el Participante 10 del Experimento 1 a los estímulos pertenecientes a cada una de las condiciones de dificultad construidas, separando para cada caso los ensayos con ruido y señal. En la figura puede apreciarse con claridad una tendencia ascendente que coincide con el patrón reportado en estudios de Memoria de Reconocimiento.\\
+Como se recordará de la revisión presentada en el Capítulo 1 acerca del fenómeno identificado como Efecto Espejo en Memoria de Reconocimiento, la evidencia en favor del mismo se presenta en Tareas de respuesta binaria "Sí/No" a partir del siguiente patrón de respuestas:\\
+ 
+\begin{center}
+$P(NuevoA) < P(NuevoB) < P(ViejoB) < P(ViejoA)$\\
+\end{center}
+\begin{center}
+donde $P$ es el puntaje promedio asignado a los estímulos Nuevos y Viejos de cada clase de estímulo $A y B$, dentro de una Escala de Confianza donde los valores más altos señalan una mayor confianza en el juicio "Viejo" y los valores más bajos, en "Nuevo", \parencite{Glanzer1993}.\\
+\end{center}
+
+
+Para evaluar la presentación de dicho patrón en los datos obtenidos en el presente estudio, se comparó el puntaje de confianza asignado en promedio a los estímulos con Ruido y Señal de cada clase.\\
+
+Una forma sencilla de explorar dicha relación fue mediante la realización de gráficas de barras que presentaran las diferencias en los resultados obtenidos por los participantes para los distintos tipos de estímulos presentados. Como un caso ejemplar, en La Figura~\ref{fig:MirrorRating_E1_P10} muestra el promedio de los puntajes de confianza asignados por el Participante 10 del Experimento 1 a los estímulos pertenecientes a cada una de las condiciones de dificultad construidas, separando para cada caso los ensayos con ruido y señal. En la figura puede apreciarse con claridad una tendencia ascendente que coincide con el patrón reportado en estudios de Memoria de Reconocimiento.\\
+
+Las gráficas correspondientes al desempeño del resto de los participantes en los Experimentos 1 y 2, pueden consultarse en los Apéndices.\\
+
 
 \begin{figure}[th]
 \centering
@@ -679,6 +708,22 @@ La Figura~\ref{fig:MirrorRating_E1_P10} muestra el promedio de los puntajes de c
 \caption[Comparación entre Puntajes de Confianza asignados por Condición; Ejemplo]{Se muestra el desempeño del Participante 14 del Experimento 1 en relación al color de los estímulos. En el panel izquierdo se muestra la relación entre el número de Hits obtenidos y el color de los estímulos, mientras que en el panel derecho se muestra la misma relación para las Falsas alarmas.}
 \label{fig:MirrorRating_E1_P10}
 \end{figure}
+
+La comparación global entre las tasas de Hits y Falsas Alarmas registradas por cada participante de los Experimentos 1 y 2 en cada tipo de estímulo se presenta en la Figura~\ref{fig:Diff_Rate}. De acuerdo con el patrón de respuestas reportado como parte del Efecto Espejo, se espera observar una pendiente descendente para la comparación de las tasas de Hits registradas por cada condición (paneles izquierdos) y una pendiente ascendente en el registro de tasas de Falsas Alarmas (paneles derechos). Como se puede observar, parece ser que dichas tendencias se aparecen en la mayoría de los participantes, presentándose de manera más evidente en los datos registrados en el Experimento 1. Sin embargo, resulta poco claro si las diferencias entre las tasas registradas en una y otra clase de estímulos son lo suficientemente grandes como para considerarse estadísticamente significativas.\\
+
+\begin{figure}[th]
+\centering
+\includegraphics[width=0.65\textwidth]{Figures/Diff_Rate_E1}\\ 
+\includegraphics[width=0.65\textwidth]{Figures/Diff_Rate_E2}\\
+%\decoRule
+\caption[Diferencias entre las Tasas de Hits y Falsas Alarmas registradas en cada clase de estímulos]{Se presenta la comparación, participante a participante, entre las tasas de Hits y Falsas Alarmas registradas para cada clase de estímulo, (paneles izquierdos y derechos, respectivamente). El panel superior muestra las comparaciones correspondientes al Experimento 1 y el panel inferior, al Experimento 2.}
+\label{fig:Diff_Rate}
+\end{figure}
+
+A continuación se presentan los análisis realizados para determinar si los Hits y las Falsas Alarmas registrados por cada clase de estímulos son estadísticamente diferentes.\\
+
+
+
 
 %La comparación entre los puntajes de confianza asignados a cada grupo de estímulos por el resto de los participantes en los Experimentos 1 y 2, se presentan en las Figuras~\ref{fig:MERating_E1} y ~\ref{fig:MERating_E2}.\\
 
