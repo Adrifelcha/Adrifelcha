@@ -169,8 +169,8 @@ if (experimento ==1)
 
 if (experimento ==2)
 {
-  par(cex.main = 1.5, mar = c(5, 6, 4, 5) + 0.1, mgp = c(3.5, 1, 0), cex.lab = 1.5,
-      font.lab = 2, cex.axis = 1.3, bty = "n", las=1)
+  #par(cex.main = 1.5, mar = c(5, 6, 4, 5) + 0.1, mgp = c(3.5, 1, 0), cex.lab = 1.5,
+  #    font.lab = 2, cex.axis = 1.3, bty = "n", las=1)
   soporte_d <- c(0,3)
   soporte_c <- c(0,6)
   soporte_h <- c(0,62)
@@ -204,7 +204,7 @@ if (experimento ==2)
     lines(density(tetaH_a[,a]), lwd=2, col="deepskyblue3")
     lines(density(tetaH_b[,a]), lwd=2, col="darkorchid3", lty=1)
     lines(c(0.25, 0.3),c(55,55), lwd=3, lty=1, col="deepskyblue3")
-    lines(c(0.25, 0.3),c(45,45), lwd=3, cd ..lty=1, col="darkorchid3")
+    lines(c(0.25, 0.3),c(45,45), lwd=3, lty=1, col="darkorchid3")
     text(0.35, 55, labels="Estímulos A", offset=0, cex = 1.8, pos=4)
     text(0.35, 45, labels="Estímulos B", offset=0, cex = 1.8, pos=4)
     mtext("Densidad de Probabilidad", side=2, line = 2, cex=2, las=0)

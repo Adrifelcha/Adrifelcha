@@ -14,7 +14,7 @@ library(R2jags)
 
 ######################################################
 #Especificamos el Experimento y los Datos a analizar
-experimento <- 1
+experimento <- 2
 #####################################################
 
 if (experimento == 1) 
