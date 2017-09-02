@@ -684,7 +684,7 @@ En cualquier caso, con independencia de si los Hits y las Falsas Alarmas registr
 
 \subsection{Diferencias en la asignación de Puntajes de Confianza}
 
-Como se recordará de la revisión presentada en el Capítulo 1 acerca del fenómeno identificado como Efecto Espejo en Memoria de Reconocimiento, la evidencia en favor del mismo se presenta en Tareas de respuesta binaria "Sí/No" a partir del siguiente patrón de respuestas:\\
+La evidencia del Efecto Espejo presentada en la tarea con Escala de Confianza se evaluó en función a la prevalencia y significancia del patrón de respuestas identificado en la literatura en Memoria de Reconocimiento:\\
  
 \begin{center}
 $P(NuevoA) < P(NuevoB) < P(ViejoB) < P(ViejoA)$\\
@@ -693,19 +693,13 @@ $P(NuevoA) < P(NuevoB) < P(ViejoB) < P(ViejoA)$\\
 donde $P$ es el puntaje promedio asignado a los estímulos Nuevos y Viejos de cada clase de estímulo $A y B$, dentro de una Escala de Confianza donde los valores más altos señalan una mayor confianza en el juicio "Viejo" y los valores más bajos, en "Nuevo", \parencite{Glanzer1993}.\\
 \end{center}
 
-
-Para evaluar la presentación de dicho patrón en los datos obtenidos en el presente estudio, se comparó el puntaje de confianza asignado en promedio a los estímulos con Ruido y Señal de cada clase.\\
-
-Una forma sencilla de explorar dicha relación fue mediante la realización de gráficas de barras que presentaran las diferencias en los resultados obtenidos por los participantes para los distintos tipos de estímulos presentados. Como un caso ejemplar, en La Figura~\ref{fig:MirrorRating_E1_P10} muestra el promedio de los puntajes de confianza asignados por el Participante 10 del Experimento 1 a los estímulos pertenecientes a cada una de las condiciones de dificultad construidas, separando para cada caso los ensayos con ruido y señal. En la figura puede apreciarse con claridad una tendencia ascendente que coincide con el patrón reportado en estudios de Memoria de Reconocimiento.\\
-
-Las gráficas correspondientes al desempeño del resto de los participantes en los Experimentos 1 y 2, pueden consultarse en los Apéndices.\\
-
+Para evaluar el Efecto Espejo en los datos obtenidos en los Experimentos realizados, se compararon los puntajes de confianza asignados en promedio a los estímulos con Ruido y Señal de cada clase. La Figura~\ref{fig:MirrorRating_E1_P10} presenta una ejemplo de la exploración visual de dicha relación al mostrar el promedio de los puntajes de confianza asignados por el Participante 10 del Experimento 1 a los estímulos pertenecientes a cada una de las condiciones de dificultad construidas, separando para cada caso los ensayos con ruido y señal. En la figura puede apreciarse con claridad una tendencia ascendente que coincide con el patrón reportado en estudios de Memoria de Reconocimiento. Las gráficas correspondientes al desempeño del resto de los participantes en los Experimentos 1 y 2, pueden consultarse en los Apéndices.\\
 
 \begin{figure}[th]
 \centering
 \includegraphics[width=0.60\textwidth]{Figures/MirrorRating_Exp1_P10}
 %\decoRule
-\caption[Comparación entre Puntajes de Confianza asignados por Condición; Ejemplo]{Se muestra el desempeño del Participante 14 del Experimento 1 en relación al color de los estímulos. En el panel izquierdo se muestra la relación entre el número de Hits obtenidos y el color de los estímulos, mientras que en el panel derecho se muestra la misma relación para las Falsas alarmas.}
+\caption[Comparación entre Puntajes de Confianza asignados por Condición; Ejemplo]{Se muestra el promedio de los Puntajes de Confianza asignados por el Participante 10 del Experimento 1 a los estímulos con Señal y Ruido de cada clase.}
 \label{fig:MirrorRating_E1_P10}
 \end{figure}
 
@@ -713,11 +707,11 @@ La comparación global entre las tasas de Hits y Falsas Alarmas registradas por 
 
 \begin{figure}[th]
 \centering
-\includegraphics[width=0.65\textwidth]{Figures/Diff_Rate_E1}\\ 
-\includegraphics[width=0.65\textwidth]{Figures/Diff_Rate_E2}\\
+\includegraphics[width=0.65\textwidth]{Figures/Diff_Rating_E1}\\ 
+\includegraphics[width=0.65\textwidth]{Figures/Diff_Rating_E2}\\
 %\decoRule
 \caption[Diferencias entre las Tasas de Hits y Falsas Alarmas registradas en cada clase de estímulos]{Se presenta la comparación, participante a participante, entre las tasas de Hits y Falsas Alarmas registradas para cada clase de estímulo, (paneles izquierdos y derechos, respectivamente). El panel superior muestra las comparaciones correspondientes al Experimento 1 y el panel inferior, al Experimento 2.}
-\label{fig:Diff_Rate}
+\label{fig:Diff_Ratings}
 \end{figure}
 
 A continuación se presentan los análisis realizados para determinar si los Hits y las Falsas Alarmas registrados por cada clase de estímulos son estadísticamente diferentes.\\
@@ -729,7 +723,7 @@ A continuación se presentan los análisis realizados para determinar si los Hit
 
 
 
-\textbf{Análisis Frecuentista: Pruebas t para cokmparar la emisión de puntajes de confianza por cada clase de estímulo.}\\
+\textbf{Análisis Frecuentista: Pruebas t para comparar la emisión de puntajes de confianza por cada clase de estímulo.}\\
 
 \begin{table}
 \caption[Prueba T para evaluar diferencias en las medias de los puntajes de confianza asigandos entre condiciones]{}
@@ -738,12 +732,12 @@ A continuación se presentan los análisis realizados para determinar si los Hit
 \begin{tabular}{l l |  c c c c}
 \toprule
 %\tabhead{Groups} & \tabhead{Treatment X} & \tabhead{Treatment Y} \\
-\textbf{Experimento} & \textbf{Ensayo} & \textbf{$\mu$ A} & \textbf{$\mu$ B} & \textbf{T} & \textbf{P value}\\
+\textbf{Experimento} & \textbf{Ensayo} & \textbf{$\mu$P(A)} & \textbf{$\mu$P(B)} & \textbf{T} & \textbf{P value}\\
 \midrule
-Exp 1 & Signal & 5.445 & 5.212 & -1.7778, & 0.0418 \\
-Exp 1 & Noise & 1.542 & 1.883 & -1.7208 & 0.0472 \\
-Exp 2 & Signal & 5.183 & 4.342  & -3.6752, & 0.0004 \\
-Exp 2 & Noise & 2.386 & 2.752 & -1.809 & 0.0391 \\
+Exp 1 & Signal & 5.4453 & 5.2128 & -1.7778, & 0.0418 \\
+Exp 1 & Noise & 1.5428 & 1.8834 & -1.7208 & 0.0472 \\
+Exp 2 & Signal & 5.2009 & 4.3618  & -3.5126, & 0.0006 \\
+Exp 2 & Noise & 2.3853 & 2.7578 & -1.7544 & 0.0432 \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -753,7 +747,42 @@ Exp 2 & Noise & 2.386 & 2.752 & -1.809 & 0.0391 \\
 
 
 
+\begin{table}
+\caption[Prueba T bayesiana para evaluar diferencias en las medias de los puntajes de confianza asigandos entre condiciones]{}
+\label{Tabla_t-Confidence}
+\centering
+\begin{tabular}{l l |  c c c c}
+\toprule
+%\tabhead{Groups} & \tabhead{Treatment X} & \tabhead{Treatment Y} \\
+\textbf{Experimento} & \textbf{Ensayo} & \textbf{$\mu$P(A)} & \textbf{$\mu$P(B)} & \textbf{$BF_{10}$} \\
+\midrule
+Exp 1 & Signal & 5.445 & 5.213 & 1.989 \\
+Exp 1 & Noise & 1.543 & 1.883 & 1.832 \\
+Exp 2 & Signal & 5.201 & 4.362  & 54.983 \\
+Exp 2 & Noise & 2.385 & 2.758 & 1.923 \\
+\bottomrule
+\end{tabular}
+\end{table}
 
+
+\begin{figure}[th]
+\centering
+\includegraphics[width=0.85\textwidth]{Figures/JASP_MeanRatings}\\ 
+%\decoRule
+\caption[Diferencias entre las Tasas de Hits y Falsas Alarmas registradas en cada clase de estímulos]{Se presenta la comparación, participante a participante, entre las tasas de Hits y Falsas Alarmas registradas para cada clase de estímulo, (paneles izquierdos y derechos, respectivamente). El panel superior muestra las comparaciones correspondientes al Experimento 1 y el panel inferior, al Experimento 2.}
+\label{fig:JASP_MeanRatings}
+\end{figure}
+
+
+
+\begin{figure}[th]
+\centering
+\includegraphics[width=0.7\textwidth]{Figures/JASP_Tbayesian_Signals}\\ 
+\includegraphics[width=0.7\textwidth]{Figures/JASP_Tbayesian_Noise}\\ 
+%\decoRule
+\caption[Diferencias entre las Tasas de Hits y Falsas Alarmas registradas en cada clase de estímulos]{Se presenta la comparación, participante a participante, entre las tasas de Hits y Falsas Alarmas registradas para cada clase de estímulo, (paneles izquierdos y derechos, respectivamente). El panel superior muestra las comparaciones correspondientes al Experimento 1 y el panel inferior, al Experimento 2.}
+\label{fig:JASP_Tbayesian}
+\end{figure}
 
 
 
@@ -764,4 +793,104 @@ Exp 2 & Noise & 2.386 & 2.752 & -1.809 & 0.0391 \\
 \subsection{Réplica de controles reportados en la literatura}
 
 
+%RT1  A vs B
+\begin{table}
+\caption[Tiempo de Respuesta a la tarea Sí/No por clase de estímulo]{Prueba t para comparar el Tiempo de Respuesta a la Tarea binaria "Sí/No" entre clases de estímulos}
+\label{Tabla_t-Confidence}
+\centering
+\begin{tabular}{l |  c c c c}
+\toprule
+%\tabhead{Groups} & \tabhead{Treatment X} & \tabhead{Treatment Y} \\
+\textbf{Experimento} & \textbf{$\mu$RT(A)} & \textbf{$\mu$RT(B)} & \textbf{T} & \textbf{P value}\\
+\midrule
+Exp 1 & 1.0462 & 1.1175 & -0.4618 & 0.6468 \\
+Exp 2 & 0.7262 & 0.7871 & -0.6315 & 0.5315 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%RT1  AS vs AN
+\begin{table}
+\caption[Tiempo de Respuesta a la tarea Sí/No para la clase A (Señal vs Ruido)]{Prueba t para comparar el Tiempo de Respuesta a la Tarea binaria "Sí/No" a los estímulos con Señal y Ruido de la clase A}
+\label{Tabla_t-Confidence}
+\centering
+\begin{tabular}{l |  c c c c}
+\toprule
+%\tabhead{Groups} & \tabhead{Treatment X} & \tabhead{Treatment Y} \\
+\textbf{Experimento} & \textbf{$\mu$RT(AS)} & \textbf{$\mu$RT(AN)} & \textbf{T} & \textbf{P value}\\
+\midrule
+Exp 1 & 0.7964 & 0.6573 & -1.4808 & 0.1469 \\
+Exp 2 & 1.1025 & 3.7078 & 1 & 0.3299 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%RT1  BS vs BN
+\begin{table}
+\caption[Tiempo de Respuesta a la tarea Sí/No para la clase A (Señal vs Ruido)]{Prueba t para comparar el Tiempo de Respuesta a la Tarea binaria "Sí/No" a los estímulos con Señal y Ruido de la clase B}
+\label{Tabla_t-Confidence}
+\centering
+\begin{tabular}{l |  c c c c}
+\toprule
+%\tabhead{Groups} & \tabhead{Treatment X} & \tabhead{Treatment Y} \\
+\textbf{Experimento} & \textbf{$\mu$RT(BS)} & \textbf{$\mu$RT(BN)} & \textbf{T} & \textbf{P value}\\
+\midrule
+Exp 1 & 0.8334 & 0.7214 & -0.9483 & 0.3498 \\
+Exp 2 & 1.2142 & 1.0203 & -1.2342 & 0.225  \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+
+
+
+
+%RT2  A vs B
+\begin{table}
+\caption[Tiempo de Respuesta a la Escala de Confianza por clase de estímulo]{Prueba t para comparar el Tiempo de Respuesta a la Tarea con Escala de Confianza entre clases de estímulos}
+\label{Tabla_t-Confidence}
+\centering
+\begin{tabular}{l |  c c c c}
+\toprule
+%\tabhead{Groups} & \tabhead{Treatment X} & \tabhead{Treatment Y} \\
+\textbf{Experimento} & \textbf{$\mu$RT(A)} & \textbf{$\mu$RT(B)} & \textbf{T} & \textbf{P value}\\
+\midrule
+Exp 1 & 0.7893 & 0.8341 & -0.3535 & 0.7257 \\
+Exp 2 & 0.7636 & 0.7680 & -0.0532 & 0.9578 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%RT2  AS vs AN
+\begin{table}
+\caption[Tiempo de Respuesta a la tarea Sí/No para la clase A (Señal vs Ruido)]{Prueba t para comparar el Tiempo de Respuesta a la Tarea con Escala de Confianza los estímulos con Señal y Ruido de la clase A}
+\label{Tabla_t-Confidence}
+\centering
+\begin{tabular}{l | c c c c}
+\toprule
+%\tabhead{Groups} & \tabhead{Treatment X} & \tabhead{Treatment Y} \\
+\textbf{Experimento} & \textbf{$\mu$RT(AS)} & \textbf{$\mu$RT(AN)} & \textbf{T} & \textbf{P value}\\
+\midrule
+Exp 1 & 0.7724 & 0.8019 & 0.2409 & 0.810 \\
+Exp 2 & 0.7598 & 0.7676 & 0.0915 & 0.9275  \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%RT2  BS vs BN
+\begin{table}
+\caption[Tiempo de Respuesta a la tarea Sí/No para la clase A (Señal vs Ruido)]{Prueba t para comparar el Tiempo de Respuesta a la Tarea con Escala de Confianza los estímulos con Señal y Ruido de la clase B}
+\label{Tabla_t-Confidence}
+\centering
+\begin{tabular}{l |  c c c c}
+\toprule
+%\tabhead{Groups} & \tabhead{Treatment X} & \tabhead{Treatment Y} \\
+\textbf{Experimento} & \textbf{$\mu$RT(BS)} & \textbf{$\mu$RT(BN)} & \textbf{T} & \textbf{P value}\\
+\midrule
+Exp 1 & 0.8010 & 0.8672 & 0.4916 & 0.625 \\
+Exp 2 & 0.7458 & 0.7758 & 0.3576 & 0.7226  \\
+\bottomrule
+\end{tabular}
+\end{table}
 
