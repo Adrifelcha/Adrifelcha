@@ -132,9 +132,9 @@ AB_RT3 <- stack(Comp_AB_3)
 A_RT3 <- stack(Comp_A3)
 B_RT3 <- stack(Comp_B3)
 
-t.test(values~ind,data=AB_RT1,alternative = c("two.sided", "less", "greater"))
-t.test(values~ind,data=A_RT1,alternative = c("two.sided", "less", "greater"))
-t.test(values~ind,data=B_RT1,alternative = c("two.sided", "less", "greater"))
+#t.test(values~ind,data=AB_RT1,alternative = c("two.sided", "less", "greater"))
+#t.test(values~ind,data=A_RT1,alternative = c("two.sided", "less", "greater"))
+#t.test(values~ind,data=B_RT1,alternative = c("two.sided", "less", "greater"))
 
 t.test(values~ind,data=AB_RT2,alternative = c("two.sided", "less", "greater"))
 t.test(values~ind,data=A_RT2,alternative = c("two.sided", "less", "greater"))
