@@ -1770,6 +1770,27 @@
     \field{year}{2011}
   \endentry
 
+  \entry{Lee2016}{unpublished}{}
+    \name{author}{1}{}{%
+      {{hash=LMD}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Michael\bibnamedelima D.},
+         giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LMD1}
+    \strng{fullhash}{LMD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{note}{unpublished chapter}
+    \field{title}{"Bayesian methods in cognitive modeling"}
+    \field{year}{2016}
+  \endentry
+
   \entry{LeeBook}{book}{}
     \name{author}{2}{}{%
       {{hash=LMD}{%
