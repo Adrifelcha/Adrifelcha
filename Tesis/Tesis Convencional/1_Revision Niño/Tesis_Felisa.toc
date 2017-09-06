@@ -33,10 +33,11 @@
 \contentsline {section}{\numberline {4.2}An\IeC {\'a}lisis estad\IeC {\'\i }sticos}{75}{section.88}
 \contentsline {subsection}{\numberline {4.2.1}Evaluaci\IeC {\'o}n de las diferencias entre las clases de est\IeC {\'\i }mulos propuestas}{78}{subsection.94}
 \contentsline {subsection}{\numberline {4.2.2}Diferencias en las Tasas de Hits y Falsas Alarmas}{87}{subsection.102}
-\contentsline {subsection}{\numberline {4.2.3}Diferencias en la asignaci\IeC {\'o}n de Puntajes de Confianza}{95}{subsection.110}
+\contentsline {subsection}{\numberline {4.2.3}Diferencias en la asignaci\IeC {\'o}n de Puntajes de Confianza}{94}{subsection.110}
 \contentsline {subsection}{\numberline {4.2.4}R\IeC {\'e}plica de controles reportados en la literatura}{101}{subsection.117}
 \contentsline {chapter}{\numberline {5}Discusi\IeC {\'o}n}{105}{chapter.124}
 \contentsline {chapter}{\numberline {6}Conclusi\IeC {\'o}n}{111}{chapter.127}
-\contentsline {chapter}{\numberline {A}Registro de respuesta}{113}{appendix.128}
-\contentsline {chapter}{\numberline {B}Datos (Extensi\IeC {\'o}n)}{115}{appendix.130}
-\contentsline {chapter}{Bibliograf\'{\i }a}{135}{appendix*.149}
+\contentsline {chapter}{\numberline {A}Instrucciones}{113}{appendix.128}
+\contentsline {chapter}{\numberline {B}Registro de respuesta}{115}{appendix.129}
+\contentsline {chapter}{\numberline {C}Datos (Extensi\IeC {\'o}n)}{117}{appendix.131}
+\contentsline {chapter}{Bibliograf\'{\i }a}{137}{appendix*.150}

@@ -248,7 +248,7 @@ Las gráficas correspondientes al desempeño de cada uno de los participantes en
 En cada una de las tareas contenidas en los experimentos realizados (la tarea de detección binaria y el procedimiento de escala de confianza), los patrones de respuesta identificados como parte del Efecto Espejo se presentaron en al menos tres cuartas partes de los participantes. De los veinte participantes en el Experimento 1, diecisiete ($85\%$) mostraron el patrón de respuesta esperado en la tarea binaria y dieciocho ($90\%$) en la escala de confianza. A su vez, en el Experimento 2, dieciocho de los veinte participantes incluidos en la muestra ($90\%$) presentaron el mismo patrón en ambas tareas. Estas proporciones resultan estadísticamente significativas al compararlas contra el azar con una prueba binomial (ver Tabla~\ref{Tabla_Binom}).\\
 
 \begin{table}
-\caption[Pruebas Binomiales que comparan la proporción de casos encontrados con el Efecto Espejo]{Se presetan los resultados de las pruebas T de una muestra para la comparación de las medias de las tasas crudas registradas por cada clase de estímulo y de su transformación arcoseno, para los Experimentos 1 y 2.}
+\caption[Pruebas Binomiales que comparan la proporción de casos encontrados con el Efecto Espejo]{Se presetan los resultados de la comparación entre la proporción de casos con el Efecto Espejo encontrados en cada experimento y el azar ($p=0.5$), de acuerdo con pruebas binomiales.}
 \label{Tabla_Binom}
 \centering
 \begin{tabular}{l l | c c c}
@@ -282,8 +282,8 @@ Dado que los niveles de dificultad propuestos fueron construidos con base en la 
 Una vez corroborada la diferencia entre las clases de estímulos construidas, se evaluó que las diferencias entre la discriminabilidad asociada a cada clase de estímulos se reflejaran tanto en el número de aciertos como en el número de errores cometidos en la tarea de respuestas binarias, como se reporta en la literatura en Memoria de Reconocimiento a partir del siguiente patrón de respuesta:\\
 
 \begin{center}
-$H(A) > H(B)$\\
-$FA(B) > FA(A)$\\
+$H(B) < H(A)$\\
+$FA(A) < FA(B)$\\
 donde $H$ y $FA$ representan las tasas de Hits y Falsas Alarmas obtenidas en cada clase de estímulo a evaluar. Es decir:\\
 $FA(A) < FA(B) < H(B) < H(A)$\\
 \end{center}
@@ -299,10 +299,10 @@ $P(A) > P(B)$\\
 donde $P$ refiere al promedio de los puntajes de confianza asignados a las respuestas emitidas por los participantes durante la tarea binaria, por cada condición de dificultad.\\
 \end{center}
 
-Después, tomando en cuenta que los experimentos fueron programados de tal manera que los puntajes registrados por los participantes -para indicar qué tan seguros se sentían respecto de la respuesta emitida en ese mismo ensayo a la tarea de detección binomial- fueran "transformados" a valores dentro de una escala mayor que distingue entre la confianza en las respuestas negativas y la confianza en las respuestas afirmativas, se espera encontrar la misma relación reportada en Memoria de Reconocimiento entre los promedios de los puntajes de confianza asignados por cada tipo y clase de estímulos:\\
+Después, tomando en cuenta que los experimentos fueron programados de tal manera que los puntajes registrados por los participantes -para indicar qué tan seguros se sentían respecto de la respuesta emitida en ese mismo ensayo a la tarea de detección binomial- fueran \textit{transformados} a valores dentro de una escala mayor que distingue entre la confianza en las respuestas negativas y la confianza en las respuestas afirmativas, se espera encontrar la misma relación reportada en Memoria de Reconocimiento entre los promedios de los puntajes de confianza asignados por cada tipo y clase de estímulos:\\
 
 \begin{center}
-$P(AS) > P(BS)$\\
+$P(BS) < P(AS)$\\
 $P(AN) < P(BN)$\\
 donde nuevamente $P$ refiere al promedio de los puntajes de confianza asignados a cada tipo de ensayo por cada clase de estímulo. Es decir:\\
 $P(AN) < P(BN) < P(BS) < P(AS)$\\
@@ -357,7 +357,7 @@ Para evaluar la eficacia del diseño de las clases de estímulos propuestas, com
 \centering
 \includegraphics[width=0.90\textwidth]{Figures/Diff_D_E1yE2}
 %\decoRule
-\caption[Diferencias entre las $d'$ de los niveles de dificultad propuestos]{Por cada uno de los experimentos realizados se muestra la relación entre las d' de cada condición de acuerdo a la ejecución de cada uno de los sujetos. En ambos experimentos, se observa una tendencia sistemática a tener mayores niveles de d' en la condición con pocos círculos en las figuras de Ebbinghaus.}
+\caption[Diferencias entre las $d'$ de los niveles de dificultad propuestos]{Por cada uno de los experimentos realizados se muestra la relación entre las $d'$ estimadas de acuerdo a la ejecución de cada participante. En ambos experimentos, se observa una tendencia sistemática a obtener niveles mayores de $d'$ en la clase A (la condición con pocos círculos en las figuras de Ebbinghaus).}
 \label{fig:Diff_D}
 \end{figure}
 
@@ -372,7 +372,7 @@ Tal y como se reporta en la literatura, se realizó una prueba T para comparar l
 La Tabla~\ref{Tabla_t-Dprimas} presenta el promedio de las $d'$ computadas por cada nivel de dificultad en cada uno de los experimentos realizados, la diferencia en estas y un indicador sobre su significancia estadística. Como se puede apreciar, la diferencia entre las medias de $d'$ estimadas es significativa en ambos experimentos.\\
 
 \begin{table}
-\caption[Prueba T para evaluar las diferencias entre las medias de $d'$ por nivel de dificultad]{Prueba T para evaluar las diferencias entre las medias de $d'$ computadas por nivel de dificultad}
+\caption[Prueba T para evaluar las diferencias entre las medias de $d'$ por nivel de dificultad]{Pruebas t para evaluar las diferencias entre las medias de $d'$ computadas por nivel de dificultad}
 \label{Tabla_t-Dprimas}
 \centering
 \begin{tabular}{l | c c c c}
@@ -391,7 +391,15 @@ Experimento 2 & 1.981 & 1.038 & -3.4131 & 0.0007 \\
 
 Partiendo del modelo bayesiano estándar que describe los supuestos realizados por la SDT, \parencite{LeeBook}, se desarrolló un modelo jerárquico bayesiano (identificado dentro del presente trabajo como Modelo Delta), que asume que tanto los valores de $d'$, como el sesgo $c$ estimado por cada nivel de dificultad se distribuyen de acuerdo a una distribución normal, de donde se extraen los valores computados por cada participante. Bajo este supuesto, el modelo utiliza las inferencias realizadas sobre los valores de $d'$ y $c$ que subyacen al desempeño de cada sujeto para estimar los parámetros que definen la distribución normal de donde se asume que éstos son extraidos (la media ($\mu$) y la desviación estándar $\sigma$). Finalmente, el modelo incorpora un parámetro $\delta$ que computa la diferencias entre las medias de las $d'$ estimadas por concidión.\\
 
-El modelo gráfico que presenta los parámetros y relaciones definidas en el modelo desarrollado se presenta en la Figura~\ref{fig:Mod_Delta} y está compuesto por los siguientes elementos:\\
+\begin{figure}[th]
+\centering
+\includegraphics[width=1.1\textwidth]{Figures/Model_Delta_Diff_D}
+%\decoRule
+\caption[Modelo Delta: Modelo jerárquico bayesiano para revisar las diferencias en $d'$ entre clases de estímulos]{Modelo jerárquico bayesiano que asume que la $d'$ y la medida de sesgo $c$ computada por cada participante en cada clase de estímulo proviene de una distribución normal. El modelo incorpora un parámetro ($\delta$) que estima la diferencia entre las medias de $d'$ estimadas por cada condición. El modelo tiene priors no informativas.}
+\label{fig:Mod_Delta}
+\end{figure}
+
+La Figura~\ref{fig:Mod_Delta} ilustra las relaciones y parámetros definidos en el modelo desarrollado. A este tipo de representaciones, se les conoce como \textit{Modelos Gráficos} y en el caso del Modelo Delta aquí presentado, se presentan los siguientes elementos:\\
 
 \begin{itemize}
 \item \underline{Nodos sombreados que representan los datos.}\\
@@ -457,15 +465,6 @@ $\delta \gets \mu^D_{A}-\mu^D_{B}$\\
 El parámetro $\delta$ está representado con un doble nodo para señalar que es un parámetro determinado por los valores estimados para otras variables ($\mu^D_{A}$ y $\mu^D_{B}$) de manera directa -no probabilística-.\\
 \end{itemize} 
 
-
-\begin{figure}[th]
-\centering
-\includegraphics[width=1.1\textwidth]{Figures/Model_Delta_Diff_D}
-%\decoRule
-\caption[Modelo Delta: Modelo jerárquico bayesiano para revisar las diferencias en $d'$ entre clases de estímulos]{Modelo jerárquico bayesiano que asume que la $d'$ y la medida de sesgo $c$ computada por cada participante en cada clase de estímulo proviene de una distribución normal. El modelo incorpora un parámetro ($\delta$) que estima la diferencia entre las medias de $d'$ estimadas por cada condición. El modelo tiene priors no informativas.}
-\label{fig:Mod_Delta}
-\end{figure}
-
 En la Figura~\ref{fig:Delta_Joints} se presentan las densidades de probabilidad posterior marginales y conjunta, para las inferencias realizadas en cuanto al valor de las medias de las distribuciones de $d'$ y $c$ por cada condición, en cada uno de los Experimentos llevados a cabo, (Experimento 1 en el panel superior y Experimento 2 en el inferior). En los extremos de cada gráfica se presenta la densidad de probabilidad marginal computada para la media de cada parámetro a lo largo de distintos valores, distinguiendo con colores las clases de estímulos diseñadas (en azul se presenta la clase fácil A y en púrpura, la clase difícil B). El panel central presenta las densidades de probabilidad posterior conjuntas entre distintos pares de valores para $\mu d'$ y $\mu c$. Los colores empleados en estos gráficos serán utilizados recurrentemente durante la presentación de los resultados y su análisis para diferenciar la clases A y B.\\ 
 
 \begin{figure}[th]
@@ -473,13 +472,14 @@ En la Figura~\ref{fig:Delta_Joints} se presentan las densidades de probabilidad 
 \includegraphics[width=0.7\textwidth]{Figures/MDelta_Joint_E1}\\
 \includegraphics[width=0.7\textwidth]{Figures/MDelta_Joint_E2}\\
 %\decoRule
-\caption[Modelo Delta: Distribuciones posteriores marginales y conjuntas para las medias de $d'$ y $c$ en cada clase de estímulo]{}
+\caption[Modelo Delta: Distribuciones posteriores marginales y conjuntas para $\mu d'$ y $\mu c$ por cada clase de estímulo]{Se presenta la densidad posterior conjunta y marginal computada por el Modelo Delta para las medias de $d'$ y $c$ de cada clase, por cada experimento realizado.}
 \label{fig:Delta_Joints}
 \end{figure}
 
 De acuerdo con la Figura~\ref{fig:Delta_Joints} parece ser que, en general, los valores estimados por el modelo para las medias de $d'$ en cada clase de estímulo son de hecho diferentes. Esto se puede observar tanto en las distribuciones de densidad marginal trazadas por cada clase de estímulo, que se sobrelapan sobre un rango pequeño de valores y con baja probabilidad, como en la distribución de los puntos trazados por cada pareja de valores inferidos de $d'$ y $c$ por cada clase de estímulo, donde se puede distinguir con facilidad dos aglomeraciones de puntos estimados: las inferencias realizadas para la clase A, que tiende a tener valores más bajos de $\mu d'$ y las inferencias sobre la clase B, con valores $\mu d'$ más altos. La distancia entre los valores de $\mu d'(A)$ y $\mu d'(B)$ estimados es mayor en el Experimento 1, donde sólo se presentó una ilusión de Ebbinghaus por ensayo.\\
 
-También es interesante señalar que de acuerdo con las inferencias presentaas en la Figura~\ref{fig:Delta_Joints}, no parece haber diferencias entre los promedios del sesgo $c$ con que los participantes responden a cada clase de estímulos. En particular, en el Experimento 1 se puede observar que los valores estimados para $\mu c$ por cada clase de estímulo se despliegan en un mismo rango de valores, siendo que las distribuciones marginales de densidad posterior se presentan completamente sobrelapadas. Por otro lado, aunque en el Experimento 2 las distribuciones marginales de densidad postrior para $\mu c$ por cada clase de estímulo no se presentan tan iguales como en el Experimento 1, los valores estimados para los estímulos A o B siguen compartiendo un rango de valores relativamente amplio, tomando en cuenta la estrechez de dichas distribuciones.\\
+
+Es interesante señalar que, de acuerdo con las inferencias presentadas en la Figura~\ref{fig:Delta_Joints}, los valores estimados para $\mu c$ por cada clase de estímulo se despliegan en un mismo rango de valores, siendo que las densidades posteriores marginales se encuentran completamente sobrelapadas. Más interesante aún es notar que, de acuerdo con las estimaciones del modelo, los participantes en el Experimento 1 no mostraron sesgo alguno al responder a los estímulos de la tarea. Por otro lado, en el Experimento 2 se aprecian diferencias en el sesgo promedio estimado para cada clase de estímulos, siendo que para la clase A presenta un sesgo liberal, mientras que para la clase B se sugiere un sesgo neutro -tal y como se reportó en el Experimento 1-.\\
 
 Para evaluar la variabilidad de los valores de $d'$ y $c$ computados por cada participante para cada clase de estímulo, las Figuras~\ref{fig:Delta_Dprima} y \ref{fig:Delta_Cbias} presentan las densidades de probabilidad posterior computadas por cada par de Hits y Falsas Alarmas registrado en cada una de las clases de estímulos. En estas Figuras se presenta además, con una línea más gruesa, la densidad de probabilidad de los valores estimados para las medias de cada parámetro para las clases A y B.\\
 
@@ -488,7 +488,7 @@ Para evaluar la variabilidad de los valores de $d'$ y $c$ computados por cada pa
 \includegraphics[width=0.6\textwidth]{Figures/MDelta_Dprima_E1}\\
 \includegraphics[width=0.6\textwidth]{Figures/MDelta_Dprima_E2}\\
 %\decoRule
-\caption[Modelo Delta: Distribuciones posteriores conjuntas para las medias de $d'$ y $c$ en cada clase de estímulo]{}
+\caption[Modelo Delta: Densidades posteriores de los valores de $d'$ estimados individualmente y en promedio, por experimento]{Densidades posteriores de los valores de $d'$ y estimados por el Modelo Delta por cada clase de estímulo (azul A, purpura B), individualmente (líneas delgadas) y en promedio (líneas gruesas)}
 \label{fig:Delta_Dprima}
 \end{figure}
 
@@ -499,7 +499,7 @@ En la Figura~\ref{fig:Delta_Dprima} se presentan las estimaciones realizadas por
 \includegraphics[width=0.6\textwidth]{Figures/MDelta_Cbias_E1}\\
 \includegraphics[width=0.6\textwidth]{Figures/MDelta_Cbias_E2}\\
 %\decoRule
-\caption[Modelo Delta: Distribuciones posteriores conjuntas para las medias de $d'$ y $c$ en cada clase de estímulo]{}
+\caption[Modelo Delta: Densidades posteriores de los valores de $c$ estimados individualmente y en promedio, por experimento]{Densidades posteriores de los valores de $c$ y estimados por el Modelo Delta por cada clase de estímulo (azul A, purpura B), individualmente (líneas delgadas) y en promedio (líneas gruesas)}
 \label{fig:Delta_Cbias}
 \end{figure}
 
@@ -512,7 +512,7 @@ Finalmente, la Figura~\ref{fig:Delta} presenta la densidad de probabilidad poste
 \includegraphics[width=0.6\textwidth]{Figures/MDelta_DensidadDelta_E1}\\
 \includegraphics[width=0.6\textwidth]{Figures/MDelta_DensidadDelta_E2}\\
 %\decoRule
-\caption[Modelo Delta: Densidad de probabilidad posterior para el valor del parámetro Delta]{Modelo jerárquico bayesiano desarrollado a partir del supuesto de que los valores de $d'$ y sesgo $c$ computados por cada participante en cada clase provienen de su propia distribución normal. El modelo incorpora un parámetro ($\delta$) que estima la diferencia entre las medias de $d'$ estimadas por cada condición. El modelo tiene priors no informativas.}
+\caption[Modelo Delta: Densidad posterior de los valores estimados para el parámetro Delta en cada Experimento]{Densidad posterior computada en cada experimento respecto de los valores de Delta, que refiere a la diferencia entre las medias estimadas de $d'$ por cada clase de estímulos.}
 \label{fig:Delta}
 \end{figure}
 
@@ -578,7 +578,7 @@ Además, para prevenir el efecto de suelo y techo causado por el hecho de que lo
 En la Tabla~\ref{Tabla_t-HitsyFA} se presentan los resultados obtenidos en la prueba-T de muestras independientes realizada para evaluar las diferencias entre las medias de las tasas de Hits y Falsas Alarmas obtenidas entre cada clase de estímulo, por cada Experimento realizado. En la tabla se muestra tanto la media de las tasas crudas registradas, como de su transformación arcoseno.\\
 
 \begin{table}
-\caption[Prueba T para evaluar diferencias entre las tasas de ejecución (Hits y F. Alarmas) promedio registradas por cada condición]{Se presetan los resultados de las pruebas T de una muestra para la comparación de las medias de las tasas crudas registradas por cada clase de estímulo y de su transformación arcoseno, para los Experimentos 1 y 2.}
+\caption[Prueba T para evaluar diferencias entre las tasas de ejecución (Hits y F. Alarmas) promedio registradas por cada condición]{Se presetan los resultados de las pruebas t de una muestra realizadas para la comparación del promedios de las transformaciones arcoseno de las tasas registradas por cada clase de estímulos, en los Experimentos 1 y 2.}
 \label{Tabla_t-HitsyFA}
 \centering
 \begin{tabular}{l l | c c c c c c}
@@ -724,7 +724,7 @@ Para evaluar las diferencias encontradas entre los promedios de los Puntajes de 
 En la Tabla~\ref{Tabla_t-Confidence} se presentan los Puntajes de Confianza promedio asignados a cada clase de estímulos con Señal y Ruido y los resultados obtenidos en las pruebas-t de muestras independientes realizadas para su comparación. De acuerdo con este análisis, las diferencias son signifivativas ($p<0.05$) en ambos Experimentos tanto para los Puntajes emitidos  en los ensayos con Señal como en los ensayos con Ruido. Sin embargo, con excepción de las diferencias observadas en el Experimento 2 en los estímulos con Señal, las diferencias reportadas obtienen valores $p$ apenas por debajo del nivel de significancia estadística estándar ($p=0.05$).\\
 
 \begin{table}
-\caption[Prueba T para evaluar diferencias en las medias de los puntajes de confianza asigandos entre condiciones]{}
+\caption[Prueba T para evaluar diferencias en las medias de los puntajes de confianza asigandos entre condiciones]{Se presentan los resultados de las pruebas t de muestras independientes realizadas para comparar el promedio de los puntajes de confianza asignados por los participantes a los estímulos con ruido y señal de cada clase de estímulo, en los Experimentos 1 y 2.}
 \label{Tabla_t-Confidence}
 \centering
 \begin{tabular}{l l |  c c c c}
@@ -752,14 +752,14 @@ El software JASP permite visualizar los datos ingresados para su análisis media
 \centering
 \includegraphics[width=0.85\textwidth]{Figures/JASP_MeanRatings}\\ 
 %\decoRule
-\caption[Diferencias entre las Tasas de Hits y Falsas Alarmas registradas en cada clase de estímulos]{Se presenta la comparación, participante a participante, entre las tasas de Hits y Falsas Alarmas registradas para cada clase de estímulo, (paneles izquierdos y derechos, respectivamente). El panel superior muestra las comparaciones correspondientes al Experimento 1 y el panel inferior, al Experimento 2.}
+\caption[Dispersión en las Tasas de Hits y Falsas Alarmas registradas en cada clase de estímulos]{Se presentan los promedios y dispersión de los puntajes de confianza asignados a los estímulos con Señal (parte superior) y Ruido (parte inferior) de cada clase de estímulo, en los Experimentos 1 y 2 (paneles izquierdos y derechos, respectivamente). Este gráfico fue generado por el software JASP.}
 \label{fig:JASP_MeanRatings}
 \end{figure}
 
 En cuanto a los resultados obtenidos tras la realización de las pruebas-t bayesianas, en la Tabla~\ref{Tabla_t-Bayesian} se presentan nuevamente los Puntajes de Confianza promedio asignados por cada clase de estímulo en los ensayos con Señal y Ruido, y el Factor de Bayes computado para cada comparación. Como se puede observar, los Factores de Bayes computados son bastante cercanos para la mayoría de las comparaciones realizadas, con la excepción de los puntajes promedios registrados para las diversas clases de estímulos con Señal.\\
 
 \begin{table}
-\caption[Prueba T bayesiana para evaluar diferencias en las medias de los puntajes de confianza asigandos entre condiciones]{}
+\caption[Prueba T bayesiana para evaluar diferencias en las medias de los puntajes de confianza asigandos entre condiciones]{Se muestra el Factor de Bayes computado a partir de las diferencias entre los puntajes de confianza asignados a los estímulos con Ruido y Señal de cada clase, de acuerdo con pruebas t bayesianas de muestras independientes.}
 \label{Tabla_t-Bayesian}
 \centering
 \begin{tabular}{l l |  c c c c}
@@ -803,11 +803,11 @@ Por su parte, las gráficas presentadas en los páneles derechos permiten interp
 \includegraphics[width=0.7\textwidth]{Figures/JASP_Tbayesian_Signals}\\ 
 \includegraphics[width=0.7\textwidth]{Figures/JASP_Tbayesian_Noise}\\ 
 %\decoRule
-\caption[Diferencias entre las Tasas de Hits y Falsas Alarmas registradas en cada clase de estímulos]{Se presenta la comparación, participante a participante, entre las tasas de Hits y Falsas Alarmas registradas para cada clase de estímulo, (paneles izquierdos y derechos, respectivamente). El panel superior muestra las comparaciones correspondientes al Experimento 1 y el panel inferior, al Experimento 2.}
+\caption[Diferencias entre las Tasas de Hits y Falsas Alarmas registradas en cada clase de estímulos]{Se presenta la comparación entre las densidades de probabilidad prior y posterior (paneles izquierdos) en el punto de \textit{no diferencia} ($\delta = 0$) que subyace al cómputo de cada Factor de Bayes, y la evaluación de este (paneles derechos) en términos de la robustez de la evidencia presentada (paneles derechos), para las comparaciones hechas entre los estímulos con Señal (panel superior) y Ruido (panel inferior) por cada experimento. Estos gráficos fueron elaborados con el sofware JASP.}
 \label{fig:JASP_Tbayesian}
 \end{figure}
 
-Como se puede observar en la Figura~\ref{fig:JASP_Tbayesian}, cuando se comparan las densidades de probabilidad prior y posterior, consistentemente se encuentra que la densidad posterior cae por debajo de la prior en el punto de "no diferencias". Esto sugiere que en general, a la luz de los datos obtenidos es más probable que el valor de $\delta$ sea diferente de $0$, situando el punto de máxima densidad por encima de este (en el caso de los Estímulos con Señal) o por debajo (Estímulos con Ruido). Sin embargo, de acuerdo con la evaluación de la robustez de los Factores de Bayes, parece ser que la evidencia en favor de la diferencia entre las muestras sólo es sólida para los datos obtenidos acerca de Estímulos con Señal del Experimento 2; el resto de las comparaciones arrojan sólo evidencia Anecdótica.\\
+Como se puede observar en la Figura~\ref{fig:JASP_Tbayesian}, cuando se comparan las densidades de probabilidad prior y posterior, consistentemente se encuentra que la densidad posterior cae por debajo de la prior en el punto de \textit{no diferencias}. Esto sugiere que en general, a la luz de los datos obtenidos es más probable que el valor de $\delta$ sea diferente de $0$, situando el punto de máxima densidad por encima de este (en el caso de los Estímulos con Señal) o por debajo (Estímulos con Ruido). Sin embargo, de acuerdo con la evaluación de la robustez de los Factores de Bayes, parece ser que la evidencia en favor de la diferencia entre las muestras sólo es sólida para los datos obtenidos acerca de Estímulos con Señal del Experimento 2; el resto de las comparaciones arrojan sólo evidencia Anecdótica.\\
 
 
 
@@ -830,7 +830,7 @@ Finalmente, en el presente trabajo se replicó uno de los análisis de control s
 En los Experimentos realizados y presentados en la presente Tesis se registraron dos Tiempos de Respuesta por ensayo:\\
 
 \begin{itemize}
-\item \textbf{RT1:} \textit{Tiempo de Respuesta a la Tarea Binaria.}  Contabilizado desde la presentación de las figuras de Ebbinghaus en pantalla, hasta la emisión de una respuesta a la tarea "Sí/No" por el participante, con independencia de si la figura seguía presentándose en pantalla o no.\\
+\item \textbf{RT1:} \textit{Tiempo de Respuesta a la Tarea Binaria.}  Contabilizado desde la presentación de las figuras de Ebbinghaus en pantalla, hasta la emisión de una respuesta a la tarea Sí/No por el participante, con independencia de si la figura seguía presentándose en pantalla o no.\\
 
 \item \textbf{RT2:} \textit{Tiempo de Respuesta a la Escala de Confianza.} Contabilizado desde la aparición de la Escala de Confianza hasta que el participante hubiera registrado una respuesta.\\
 \end{itemize}
@@ -845,7 +845,7 @@ Las Tablas~\ref{Tabla_RT1_A} y ~\ref{Tabla_RT2_A} presentan las pruebas t de mue
 
 %RT1  A vs B
 \begin{table}
-\caption[Tiempo de Respuesta a la tarea Sí/No por clase de estímulo]{Prueba t para comparar el Tiempo de Respuesta a la Tarea binaria "Sí/No" entre clases de estímulos}
+\caption[Tiempo de Respuesta a la tarea Sí/No por clase de estímulo]{Prueba t para comparar el Tiempo de Respuesta a la Tarea Sí/No entre clases de estímulos.}
 \label{Tabla_RT1_AB}
 \centering
 \begin{tabular}{l |  c c c c}
@@ -877,7 +877,7 @@ Exp 2 & 0.7636 & 0.7680 & -0.0532 & 0.9578 \\
 
 %RT1  AS vs AN
 \begin{table}
-\caption[Tiempo de Respuesta a la tarea Sí/No para la clase A (Señal vs Ruido)]{Prueba t para comparar el Tiempo de Respuesta a la Tarea binaria "Sí/No" a los estímulos con Señal y Ruido de la clase A}
+\caption[Tiempo de Respuesta a la tarea Sí/No para la clase A (Señal vs Ruido)]{Prueba t para comparar el Tiempo de Respuesta a la Tarea Sí/No entre los estímulos con Señal y Ruido de la clase A}
 \label{Tabla_RT1_A}
 \centering
 \begin{tabular}{l |  c c c c}
@@ -893,7 +893,7 @@ Exp 2 & 1.1025 & 3.7078 & 1 & 0.3299 \\
 
 %RT2  AS vs AN
 \begin{table}
-\caption[Tiempo de Respuesta a la tarea Sí/No para la clase A (Señal vs Ruido)]{Prueba t para comparar el Tiempo de Respuesta a la Tarea con Escala de Confianza los estímulos con Señal y Ruido de la clase A}
+\caption[Tiempo de Respuesta a la tarea Sí/No para la clase A (Señal vs Ruido)]{Prueba t para comparar el Tiempo de Respuesta a la Tarea con Escala de Confianza entre los estímulos con Señal y Ruido de la clase A}
 \label{Tabla_RT2_A}
 \centering
 \begin{tabular}{l | c c c c}
@@ -910,7 +910,7 @@ Exp 2 & 0.7598 & 0.7676 & 0.0915 & 0.9275  \\
 
 %RT1  BS vs BN
 \begin{table}
-\caption[Tiempo de Respuesta a la tarea Sí/No para la clase A (Señal vs Ruido)]{Prueba t para comparar el Tiempo de Respuesta a la Tarea binaria "Sí/No" a los estímulos con Señal y Ruido de la clase B}
+\caption[Tiempo de Respuesta a la tarea Sí/No para la clase A (Señal vs Ruido)]{Prueba t para comparar el Tiempo de Respuesta a la Tarea Sí/No entre los estímulos con Señal y Ruido de la clase B}
 \label{Tabla_RT1_B}
 \centering
 \begin{tabular}{l |  c c c c}
@@ -926,7 +926,7 @@ Exp 2 & 1.2142 & 1.0203 & -1.2342 & 0.225  \\
 
 %RT2  BS vs BN
 \begin{table}
-\caption[Tiempo de Respuesta a la tarea Sí/No para la clase A (Señal vs Ruido)]{Prueba t para comparar el Tiempo de Respuesta a la Tarea con Escala de Confianza los estímulos con Señal y Ruido de la clase B}
+\caption[Tiempo de Respuesta a la tarea Sí/No para la clase A (Señal vs Ruido)]{Prueba t para comparar el Tiempo de Respuesta a la Tarea con Escala de Confianza entre los estímulos con Señal y Ruido de la clase B}
 \label{Tabla_RT2_B}
 \centering
 \begin{tabular}{l |  c c c c}
