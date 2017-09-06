@@ -21,56 +21,56 @@
 \contentsline {figure}{\numberline {2.16}{\ignorespaces Representaci\IeC {\'o}n gr\IeC {\'a}fica del Efecto Espejo de acuerdo a los datos obtenidos en Tareas S\IeC {\'\i }/No}}{40}{figure.caption.47}
 \contentsline {figure}{\numberline {2.17}{\ignorespaces Representaci\IeC {\'o}n gr\IeC {\'a}fica del Efecto Espejo, de acuerdo con el patr\IeC {\'o}n de respuestas registrado en tareas con Escala de Confianza}}{41}{figure.caption.48}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Ilusi\IeC {\'o}n de Ebbinghaus: Ejemplos}}{53}{figure.caption.61}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Efecto del N\IeC {\'u}mero y Tama\IeC {\~n}o de los c\IeC {\'\i }rculos externos en la intensidad de la Ilusi\IeC {\'o}n de Ebbinghaus}}{54}{figure.caption.62}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Presentaci\IeC {\'o}n de ensayos con tarea de detecci\IeC {\'o}n binaria}}{60}{figure.caption.67}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Presentaci\IeC {\'o}n de la escala de confianza}}{62}{figure.caption.68}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Dise\IeC {\~n}o de Est\IeC {\'\i }mulos en el Experimento 1}}{63}{figure.caption.69}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Dise\IeC {\~n}o de Est\IeC {\'\i }mulos en el Experimento 2}}{64}{figure.caption.70}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Ilusi\IeC {\'o}n de Ebbinghaus: Ejemplos}}{53}{figure.caption.63}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Efecto del N\IeC {\'u}mero y Tama\IeC {\~n}o de los c\IeC {\'\i }rculos externos en la intensidad de la Ilusi\IeC {\'o}n de Ebbinghaus}}{54}{figure.caption.64}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Presentaci\IeC {\'o}n de ensayos con tarea de detecci\IeC {\'o}n binaria}}{60}{figure.caption.69}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Presentaci\IeC {\'o}n de la escala de confianza}}{62}{figure.caption.70}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Dise\IeC {\~n}o de Est\IeC {\'\i }mulos en el Experimento 1}}{63}{figure.caption.71}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Dise\IeC {\~n}o de Est\IeC {\'\i }mulos en el Experimento 2}}{64}{figure.caption.72}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Respuesta emitida por ensayo: Ejemplo de participante sesgado}}{68}{figure.caption.77}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Respuesta por Tipo de Est\IeC {\'\i }mulo; ejemplo de participante sesgado}}{69}{figure.caption.78}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Asignaci\IeC {\'o}n Puntaje de confianza: Ejemplo}}{70}{figure.caption.79}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Aciertos y errores a lo largo del tiempo: Participante ejemplar}}{71}{figure.caption.81}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Resultado obtenido a lo largo del tiempo: Ejemplo}}{71}{figure.caption.82}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Hits y Falsas Alarmas por Color; Ejemplo}}{72}{figure.caption.84}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Proporci\IeC {\'o}n de Respuestas "S\IeC {\'\i }/No" por color; Ejemplo}}{73}{figure.caption.85}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Diferencias entre las $d'$ de los niveles de dificultad propuestos}}{78}{figure.caption.93}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Modelo Delta: Modelo jer\IeC {\'a}rquico bayesiano para revisar las diferencias en $d'$ entre clases de est\IeC {\'\i }mulos}}{83}{figure.caption.95}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Modelo Delta: Distribuciones posteriores marginales y conjuntas para las medias de $d'$ y $c$ en cada clase de est\IeC {\'\i }mulo}}{84}{figure.caption.96}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Modelo Delta: Distribuciones posteriores conjuntas para las medias de $d'$ y $c$ en cada clase de est\IeC {\'\i }mulo}}{85}{figure.caption.97}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Modelo Delta: Distribuciones posteriores conjuntas para las medias de $d'$ y $c$ en cada clase de est\IeC {\'\i }mulo}}{86}{figure.caption.98}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Modelo Delta: Densidad de probabilidad posterior para el valor del par\IeC {\'a}metro Delta}}{87}{figure.caption.99}
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Diferencias entre Hits y Falsas Alarmas por Condici\IeC {\'o}n; Participante ejemplar}}{88}{figure.caption.101}
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Diferencias entre las Tasas de Hits y Falsas Alarmas registradas en cada clase de est\IeC {\'\i }mulos}}{89}{figure.caption.102}
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Modelo Tau: Modelo Bayesiano para evaluar las diferencias entre las tasas de Hits y Falsas Alarmas obtenidas por cada clase de est\IeC {\'\i }mulos}}{91}{figure.caption.104}
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Modelo Tau: Inferencias individuales acerca de las probabilidades ocultas tras la emisi\IeC {\'o}n de Hits por clase de est\IeC {\'\i }mulos; Experimentos 1 y 2}}{92}{figure.caption.105}
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Modelo Delta: Inferencias individuales acerca de las probabilidades ocultas tras la emisi\IeC {\'o}n de Falsas Alarmas por clase de est\IeC {\'\i }mulos; Experimentos 1 y 2}}{93}{figure.caption.106}
-\contentsline {figure}{\numberline {4.19}{\ignorespaces Modelo Tau: Densidades de probabilidad posterior para los valores de los par\IeC {\'a}metros Tau; Experimentos 1 y 2}}{94}{figure.caption.107}
-\contentsline {figure}{\numberline {4.20}{\ignorespaces Comparaci\IeC {\'o}n entre Puntajes de Confianza asignados por Clase; Ejemplo}}{95}{figure.caption.109}
-\contentsline {figure}{\numberline {4.21}{\ignorespaces Diferencias entre los Puntajes de Confianza promedio asignados a los est\IeC {\'\i }mulos con Se\IeC {\~n}al y Ruido de cada clase}}{96}{figure.caption.110}
-\contentsline {figure}{\numberline {4.22}{\ignorespaces Diferencias entre las Tasas de Hits y Falsas Alarmas registradas en cada clase de est\IeC {\'\i }mulos}}{98}{figure.caption.112}
-\contentsline {figure}{\numberline {4.23}{\ignorespaces Diferencias entre las Tasas de Hits y Falsas Alarmas registradas en cada clase de est\IeC {\'\i }mulos}}{103}{figure.caption.114}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Respuesta emitida por ensayo: Ejemplo de participante sesgado}}{68}{figure.caption.79}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Respuesta por Tipo de Est\IeC {\'\i }mulo; ejemplo de participante sesgado}}{69}{figure.caption.80}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Asignaci\IeC {\'o}n Puntaje de confianza: Ejemplo}}{70}{figure.caption.81}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Aciertos y errores a lo largo del tiempo: Participante ejemplar}}{71}{figure.caption.83}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Resultado obtenido a lo largo del tiempo: Ejemplo}}{72}{figure.caption.84}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Hits y Falsas Alarmas por Color; Ejemplo}}{73}{figure.caption.86}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Proporci\IeC {\'o}n de Respuestas "S\IeC {\'\i }/No" por color; Ejemplo}}{74}{figure.caption.87}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Diferencias entre las $d'$ de los niveles de dificultad propuestos}}{79}{figure.caption.95}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Modelo Delta: Modelo jer\IeC {\'a}rquico bayesiano para revisar las diferencias en $d'$ entre clases de est\IeC {\'\i }mulos}}{83}{figure.caption.97}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Modelo Delta: Distribuciones posteriores marginales y conjuntas para las medias de $d'$ y $c$ en cada clase de est\IeC {\'\i }mulo}}{84}{figure.caption.98}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Modelo Delta: Distribuciones posteriores conjuntas para las medias de $d'$ y $c$ en cada clase de est\IeC {\'\i }mulo}}{86}{figure.caption.99}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Modelo Delta: Distribuciones posteriores conjuntas para las medias de $d'$ y $c$ en cada clase de est\IeC {\'\i }mulo}}{87}{figure.caption.100}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Modelo Delta: Densidad de probabilidad posterior para el valor del par\IeC {\'a}metro Delta}}{88}{figure.caption.101}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Diferencias entre Hits y Falsas Alarmas por Condici\IeC {\'o}n; Participante ejemplar}}{89}{figure.caption.103}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Diferencias entre las Tasas de Hits y Falsas Alarmas registradas en cada clase de est\IeC {\'\i }mulos}}{90}{figure.caption.104}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Modelo Tau: Modelo Bayesiano para evaluar las diferencias entre las tasas de Hits y Falsas Alarmas obtenidas por cada clase de est\IeC {\'\i }mulos}}{92}{figure.caption.106}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Modelo Tau: Inferencias individuales acerca de las probabilidades ocultas tras la emisi\IeC {\'o}n de Hits por clase de est\IeC {\'\i }mulos; Experimentos 1 y 2}}{93}{figure.caption.107}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Modelo Delta: Inferencias individuales acerca de las probabilidades ocultas tras la emisi\IeC {\'o}n de Falsas Alarmas por clase de est\IeC {\'\i }mulos; Experimentos 1 y 2}}{94}{figure.caption.108}
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Modelo Tau: Densidades de probabilidad posterior para los valores de los par\IeC {\'a}metros Tau; Experimentos 1 y 2}}{95}{figure.caption.109}
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Comparaci\IeC {\'o}n entre Puntajes de Confianza asignados por Clase; Ejemplo}}{96}{figure.caption.111}
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Diferencias entre los Puntajes de Confianza promedio asignados a los est\IeC {\'\i }mulos con Se\IeC {\~n}al y Ruido de cada clase}}{97}{figure.caption.112}
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Diferencias entre las Tasas de Hits y Falsas Alarmas registradas en cada clase de est\IeC {\'\i }mulos}}{99}{figure.caption.114}
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Diferencias entre las Tasas de Hits y Falsas Alarmas registradas en cada clase de est\IeC {\'\i }mulos}}{104}{figure.caption.116}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Csv muestra}}{113}{figure.caption.127}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces CSV muestra}}{113}{figure.caption.129}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Respuesta binaria registrada ensayo a ensayo; Experimento 1}}{116}{figure.caption.129}
-\contentsline {figure}{\numberline {B.2}{\ignorespaces Respuesta binaria registrada ensayo a ensayo; Experimento 2}}{117}{figure.caption.130}
-\contentsline {figure}{\numberline {B.3}{\ignorespaces Respuesta binaria registrada ensayo a ensayo en relaci\IeC {\'o}n con el tipo de est\IeC {\'\i }mulo a evaluar; Experimento 1}}{118}{figure.caption.131}
-\contentsline {figure}{\numberline {B.4}{\ignorespaces Respuesta binaria registrada ensayo a ensayo en relaci\IeC {\'o}n con el tipo de est\IeC {\'\i }mulo a evaluar; Experimento 2}}{119}{figure.caption.132}
-\contentsline {figure}{\numberline {B.5}{\ignorespaces Puntajes de Confianza asignados ensayo a ensayo; Experimento 1}}{120}{figure.caption.133}
-\contentsline {figure}{\numberline {B.6}{\ignorespaces Puntajes de Confianza asignados ensayo a ensayo; Experimento 2}}{121}{figure.caption.134}
-\contentsline {figure}{\numberline {B.7}{\ignorespaces Aciertos y Errores a lo largo del tiempo; Experimento 1}}{122}{figure.caption.135}
-\contentsline {figure}{\numberline {B.8}{\ignorespaces Aciertos y Errores a lo largo del tiempo; Experimento 2}}{123}{figure.caption.136}
-\contentsline {figure}{\numberline {B.9}{\ignorespaces Resultados obtenidos por ensayo; Experimento 1}}{124}{figure.caption.137}
-\contentsline {figure}{\numberline {B.10}{\ignorespaces Resultados obtenidos por ensayo; Experimento 2}}{125}{figure.caption.138}
-\contentsline {figure}{\numberline {B.11}{\ignorespaces Hits y Falsas Alarmas obtenidos por Color; Experimento 1}}{126}{figure.caption.139}
-\contentsline {figure}{\numberline {B.12}{\ignorespaces Hits y Falsas Alarmas obtenidos por Color; Experimento 2}}{127}{figure.caption.140}
-\contentsline {figure}{\numberline {B.13}{\ignorespaces Proporci\IeC {\'o}n de Respuestas S\IeC {\'\i }/No por Color; Experimento 1}}{128}{figure.caption.141}
-\contentsline {figure}{\numberline {B.14}{\ignorespaces Proporci\IeC {\'o}n de Respuestas S\IeC {\'\i }/No por Color; Experimento 2}}{129}{figure.caption.142}
-\contentsline {figure}{\numberline {B.15}{\ignorespaces Hits y Falsas Alarmas entre condiciones; Experimento 1}}{130}{figure.caption.143}
-\contentsline {figure}{\numberline {B.16}{\ignorespaces Hits y Falsas Alarmas entre condiciones; Experimento 2}}{131}{figure.caption.144}
-\contentsline {figure}{\numberline {B.17}{\ignorespaces Puntaje de confianza promedio por tipo de est\IeC {\'\i }mulo (A-B) y tipo de ensayo (S-N); Experimento 1}}{132}{figure.caption.145}
-\contentsline {figure}{\numberline {B.18}{\ignorespaces Puntaje de confianza promedio por tipo de est\IeC {\'\i }mulo (A-B) y tipo de ensayo (S-N); Experimento 2}}{133}{figure.caption.146}
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Respuesta binaria registrada ensayo a ensayo; Experimento 1}}{116}{figure.caption.131}
+\contentsline {figure}{\numberline {B.2}{\ignorespaces Respuesta binaria registrada ensayo a ensayo; Experimento 2}}{117}{figure.caption.132}
+\contentsline {figure}{\numberline {B.3}{\ignorespaces Respuesta binaria registrada ensayo a ensayo con indicadores de las caracter\IeC {\'\i }sticas de los est\IeC {\'\i }mulos presentados; Experimento 1}}{118}{figure.caption.133}
+\contentsline {figure}{\numberline {B.4}{\ignorespaces Respuesta binaria registrada ensayo a ensayo con indicadores de las caracter\IeC {\'\i }sticas de los est\IeC {\'\i }mulos presentados; Experimento 2}}{119}{figure.caption.134}
+\contentsline {figure}{\numberline {B.5}{\ignorespaces Puntajes de Confianza asignados ensayo a ensayo; Experimento 1}}{120}{figure.caption.135}
+\contentsline {figure}{\numberline {B.6}{\ignorespaces Puntajes de Confianza asignados ensayo a ensayo; Experimento 2}}{121}{figure.caption.136}
+\contentsline {figure}{\numberline {B.7}{\ignorespaces Aciertos y Errores a lo largo del tiempo; Experimento 1}}{122}{figure.caption.137}
+\contentsline {figure}{\numberline {B.8}{\ignorespaces Aciertos y Errores a lo largo del tiempo; Experimento 2}}{123}{figure.caption.138}
+\contentsline {figure}{\numberline {B.9}{\ignorespaces Resultados obtenidos por ensayo; Experimento 1}}{124}{figure.caption.139}
+\contentsline {figure}{\numberline {B.10}{\ignorespaces Resultados obtenidos por ensayo; Experimento 2}}{125}{figure.caption.140}
+\contentsline {figure}{\numberline {B.11}{\ignorespaces Hits y Falsas Alarmas obtenidos por Color; Experimento 1}}{126}{figure.caption.141}
+\contentsline {figure}{\numberline {B.12}{\ignorespaces Hits y Falsas Alarmas obtenidos por Color; Experimento 2}}{127}{figure.caption.142}
+\contentsline {figure}{\numberline {B.13}{\ignorespaces Proporci\IeC {\'o}n de Respuestas S\IeC {\'\i }/No por Color; Experimento 1}}{128}{figure.caption.143}
+\contentsline {figure}{\numberline {B.14}{\ignorespaces Proporci\IeC {\'o}n de Respuestas S\IeC {\'\i }/No por Color; Experimento 2}}{129}{figure.caption.144}
+\contentsline {figure}{\numberline {B.15}{\ignorespaces Hits y Falsas Alarmas entre condiciones; Experimento 1}}{130}{figure.caption.145}
+\contentsline {figure}{\numberline {B.16}{\ignorespaces Hits y Falsas Alarmas entre condiciones; Experimento 2}}{131}{figure.caption.146}
+\contentsline {figure}{\numberline {B.17}{\ignorespaces Puntaje de confianza promedio por tipo de est\IeC {\'\i }mulo (A-B) y tipo de ensayo (S-N); Experimento 1}}{132}{figure.caption.147}
+\contentsline {figure}{\numberline {B.18}{\ignorespaces Puntaje de confianza promedio por tipo de est\IeC {\'\i }mulo (A-B) y tipo de ensayo (S-N); Experimento 2}}{133}{figure.caption.148}
