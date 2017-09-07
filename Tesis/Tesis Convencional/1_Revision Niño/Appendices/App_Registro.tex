@@ -1,10 +1,12 @@
 % Appendix Template
 
-\chapter{Registro de respuesta} % Main appendix title
+\chapter{Registro de datos por participante} % Main appendix title
 
 \label{App_Registro} % Change X to a consecutive letter; for referencing this appendix elsewhere, use \ref{AppendixX}
 
-El experimento fue programado de manera tal que los datos obtenidos sobre la ejecución de cada participante se registraran en un archivo en formato CSV, indicando en el título del mismo el número e iniciales del participante y la fecha y el experimento en que participó.\\
+El experimento fue programado de manera que los datos obtenidos sobre la ejecución de cada participante fueran registraran en un archivo CSV, creado bajo un título que le asignara un número e indicara sus iniciales y la fecha y experimento en que participó.\\
+
+La Figura~\ref{fig:csv} presenta parte de un CSV creado a partir de la ejecución de uno de los participantes del Experimento 2, (se muestran los primeros seis ensayos).\\
 
 \begin{figure}[th]
 \centering
@@ -15,5 +17,4 @@ El experimento fue programado de manera tal que los datos obtenidos sobre la eje
 \end{figure}
 \end{itemize}
 
-En la Figura se muestra como ejemplo los primeros seis ensayos registrados en uno de los csv's obtenido tras la realización de nuestro experimento. El csv se fue escribiendo por nuestro programa conforme van avanzando los ensayos, indicándonos cuál de los estímulos diseñados (Estímulo) fue seleccionado aleatoriamente para aparecer en cada ocasión (Ensayo); para señalar el estímulo presentado en cada ensayo se utilizaron números arbitrariamente asignados a cada una de las combinaciones generadas para la elaboración de las figuras de Ebbinghaus (ver~\ref{Cap_Exp}). La respuesta del participante se registra (Respuesta) y se clasifica como Correcta o no (se escribe 'True' o 'False' en la columna 'Correcto') de acuerdo a su correspondencia con el estímulo que apareció en pantalla. A continuación, se presentan dos columnas que van registrando la frecuencia acumulada con que el participante acierta y se equivoca a lo largo del experimento (Aciertos y Errores, respectivamente). Además de indicar si se trata de una respuesta acertada, o no, el programa identifica la respuesta emitida por el participante en función a qué tipo de acierto puede ser (Hit o Rechazo) y a qué tipo de error (Falsa alarma u Omision), llevando un contador para cada uno de estos casos que muestra la frecuencia acumulada con que el participante emite una respuesta de cada tipo (ContadorH, para los Hits; ContadorR, para los Rechazos correctos; ContadorF, para las Falsas Alarmas; ContadorM, para las omisiones). En cuanto a la segunda fase de cada ensayo, se registra el puntaje obtenido al aplicar la conversión previamente detallada al número elegido por el participante a la escala de confianza en su respuesta presentada (Confidence). Por último se muestran los Tiempos de Respuesta registrados por cada ensayo: RTime1, corresponde al tiempo de respuesta transcurrido a partir de la aparición del estímulo en pantalla; RTime1b muestra el tiempo transcurrido desde la desaparición del estímulo en pantalla y la emisión de la respuesta del participante; RTime2 presenta el tiempo de respuesta a la segunda fase de cada ensayo.\\ 
-
+Por cada uno de los 640 ensayos realizados, el programa registró información acerca de: 1) cuál de los estímulos diseñados -ver~\ref{Cap_Exp}- fue presentado (\textit{Estímulo}); 2) qué respuesta emitió el participante (\textit{Respuesta}); 3) si ésta fue correcta o no (\textit{Correcto}); 4) el total de aciertos acumulados hasta entonces (\textit{Aciertos}); 5) el total de errores acumulados (\textit{Errores}); 6) qué tipo de resultado se obtuvo (\textit{Hits, Rechazos, Falsas alarmas, Omisiones}); 7) un contador con el número acumulado de cada resultado (\textit{ContadorH, ContadorF, ContadorR, ContadorM}); 7) el puntaje de confianza registrado de acuerdo con la Escala completa (\textit{Confidence}); 8) el tiempo de respuesta entre la presentación del estímulo y la emisión de una respuesta Sí/No (\textit{RTime1}) y 9) el tiempo de respuesta entre la aparición de la Escala de Confianza y la emisión de un puntaje (\textit{RTime2}).\\

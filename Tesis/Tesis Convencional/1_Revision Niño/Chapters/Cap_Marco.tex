@@ -156,7 +156,7 @@ La figura~\ref{fig:Mat_Pagos} presenta lo que en los modelos clásicos de decisi
 Los organismos involucrados en cualquier tarea de detección tienen alguna expectativa respecto de la probabilidad con que las señales de interés ocurren en el mundo. Es decir, ya sea como resultado de su experiencia directa o porque es información que les ha sido proporcionada de manera externa, \parencite{Nevin1969} los agentes detectores tienen alguna idea o conocimiento sobre la estructura probabilística de la tarea, en dos sentidos: 
 
 \begin{itemize}
-\item \textsl{Un estimado prior.} Con independencia de cuál sea la evidencia evaluada de manera inmediata,\textit{¿Qué tan probable es encontrar la señal en esta situación particular?}\\
+\item \textsl{Un estimado prior.} Con independencia de cuál sea la evidencia evaluada de manera inmediata, \textit{¿Qué tan probable es encontrar la señal en esta situación particular?}\\
 
 Si los organismos se encuentran en un entorno donde saben que es prácticamente imposible encontrar la señal, es muy probable que decidan descartar la evidencia que se les presente aún si esta correlaciona con lo que se esperaría de una señal. Recordemos el ejemplo planteado con anterioridad sobre querer determinar la edad de una persona al hablar con ella por teléfono: si la llamada fue hecha a un despacho de abogados -o cualquier otro escenario donde se piense que es muy poco probable encontrar a un niño-, aún si la persona al otro lado del teléfono tiene una voz muy aguda, es muy poco probable que su interlocutor piense \textit{'Oh, estoy hablando con un niño'}.\\
 
@@ -384,8 +384,6 @@ En términos del procedimiento, las tareas de detección binarias y con Escala d
 
 Existen varias formas en que puede presentarse la Escala de Confianza, \parencite{McNicol2}. Por ejemplo, una de ellas podría ser solicitando que se responda de acuerdo a la confianza que se tendría en asignar cada estímulo evaluado a la categoria Señal (donde los valores más altos serían asignados a los estímulos que se encuentren más hacia la derecha en el eje de las evidencia y los valores bajos a los estímulos más a la izquierda, que podrían haber ser identificados como Ruido); una segunda forma, sería distinguiendo entre la certeza que se tiene sobre que el estímulo evaluado sea una Señal o Ruido, (los valores más altos reflejan la confianza que se tiene en que se trate de una Señal y los valores más bajos, a la certeza de que se trate de Ruido). Como se presenta en la tabla incluída en la parte superior de la Figura~\ref{fig:Conf_Rat}, ambas formas de presentar la Escala proporcionan -en teoría- la misma información y, en general, la elección de una u otra depende del experimentador.\\
 
-El supuesto detras de la interpretación de los puntajes de confianza registrados, es que los participantes fijan un criterio sobre el eje de evidencia por cada opción de respuesta en la Escala de Confianza que va a determinar cuál de estos puntajes es emitido, dependiendo de cuál sea el último criterio de elección que la evidencia juzgada rebasa, \parencite{McNicol2}. La Figura~\ref{fig:Conf_Rat} ilustra esta idea: en la parte superior se presenta una Escala de Confianza de 6 elementos (se ejemplifican las dos formas -previamente expuestas- en que puede ser presentada), y en la parte inferior, la representación gráfica del modelo de detección de señales.\\
-
 \begin{figure}[th]
 \centering
 \includegraphics[width=0.80\textwidth]{Figures/Puntajes_Criterios}\\
@@ -394,6 +392,8 @@ El supuesto detras de la interpretación de los puntajes de confianza registrado
 \caption[Representación gráfica de la interpretación de las tareas de detección con Escala de Confianza]{Representación gráfica de la interpretación de las tareas de detección con Escala de Confianza bajo el marco de la SDT. En la parte superior se presenta una Escala de Confianza de seis elementos con sus dos posibles direcciones: unidireccional (el puntaje refleja la confianza en una sola respuesta) o bidireccional (el puntaje distingue entre la confianza en cada respuesta). La gráfica de abajo ilustra la idea de que por cada puntaje se computa la localización de un sub-criterio sobre el eje de evidencia, a partir del número de Hits y Falsas Alarmas que se obtendrían de haber utilizado dicho puntaje como una respuesta afirmativa en una tarea binaria.}
 \label{fig:Conf_Rat}
 \end{figure}
+
+El supuesto detras de la interpretación de los puntajes de confianza registrados, es que los participantes fijan un criterio sobre el eje de evidencia por cada opción de respuesta en la Escala de Confianza que va a determinar cuál de estos puntajes es emitido, dependiendo de cuál sea el último criterio de elección que la evidencia juzgada rebasa, \parencite{McNicol2}. La Figura~\ref{fig:Conf_Rat} ilustra esta idea: en la parte superior se presenta una Escala de Confianza de 6 elementos (se ejemplifican las dos formas -previamente expuestas- en que puede ser presentada), y en la parte inferior, la representación gráfica del modelo de detección de señales.\\
 
 El protocolo de Escala de Confianza permite -en un mismo experimento- recoger datos que representen el uso de criterios múltiples -tantos como opciones de respuesta se incluyan en la Escala- por parte del sistema detector en una misma tarea de detección, permitiendo asumir que la discriminabilidad se mantiene constante. Por ello, el uso de Escala de Confianzas con $n$ opciones de respuesta, representa una forma sencilla y directa de obtener datos suficientes para trazar puntos ($n - 1$) que permitan trazar la curva ROC que represente la sensibilidad del sistema, \parencite{Stainslaw1999, McNicol2, McNicol5}.\\ 
 
@@ -531,7 +531,7 @@ Como se mencionó previamente, la evidencia del Efecto Espejo en tareas de Memor
 \begin{itemize}
 \item \underline{Efecto Espejo en Tareas Sí/No}\\
 
-En el caso de las tareas Sí/No, donde durante la fase de reconocimiento se presenta a los participantes aleatoriamente estímulos Nuevos y Viejos de las clases A y B para que emitan una respuesta Sí/No, con la cual señalen si les reconocen como parte de la fase de estudio (la Señal: \textit{'Sí, es un estímulo Viejo'}), o no (el Ruido: \textit{'No, es un estímulos Nuevo'}), se reporta el siguiente patrón de respuestas:\\
+En el caso de las tareas Sí/No, donde durante la fase de reconocimiento se presenta a los participantes aleatoriamente estímulos Nuevos y Viejos de las clases A y B para que emitan una respuesta Sí/No, con la cual señalen si les reconocen como parte de la fase de estudio (la Señal: \textit{'Sí, es un estímulo Viejo'}), o no (el Ruido: \textit{'No, es un estímulo Nuevo'}), se reporta el siguiente patrón de respuestas:\\
 
 \begin{center}
 $p[Si(NuevoA)] < p[Si(NuevoB)] < p[Si(ViejoB)] < p[Si(ViejoA)]$\\
