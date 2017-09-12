@@ -1,0 +1,222 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Classicthesis-Styled CV
+% LaTeX Template
+% Version 1.0 (22/2/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{scrartcl}
+
+\reversemarginpar % Move the margin to the left of the page 
+\newcommand{\MarginText}[1]{\marginpar{\raggedleft\itshape\small#1}} % New command defining the margin text style
+
+\usepackage[nochapters]{classicthesis} % Use the classicthesis style for the style of the document
+\usepackage[LabelsAligned]{currvita} % Use the currvita style for the layout of the document
+\usepackage[spanish]{babel}
+\selectlanguage{spanish}
+\usepackage[utf8]{inputenc}
+\renewcommand{\cvheadingfont}{\LARGE\color{Violet}} % Font color of your name at the top
+\usepackage{hyperref} % Required for adding links	and customizing them
+\hypersetup{colorlinks, breaklinks, urlcolor=Plum, linkcolor=Plum} % Set link colors
+
+\newlength{\datebox}\settowidth{\datebox}{September 2017} % Set the width of the date box in each block
+\newcommand{\NewEntry}[3]{\noindent\hangindent=2em\hangafter=0 \parbox{\datebox}{\small \textit{#1}}\hspace{1.5em} #2 #3 % D\\\\\\efine a command for each new block - change spacing and font sizes here: #1 is the left margin, #2 is the italic date field and #3 is the position/employer/location field
+\vspace{0.5em}} % Add some white space after each new entry
+\newcommand{\Description}[1]{\hangindent=2em\hangafter=0\noindent\raggedright\footnotesize{#1}\par\normalsize\vspace{1em}} % Define a command for descriptions of each entry - change spacing and font sizes here
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\thispagestyle{empty} % Stop the page count at the bottom of the first page
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+%\noindent
+%\vspace{1em}
+
+\begin{cv}{\textbf{\spacedallcaps{Adriana Felisa Chávez De la Peña}}}\vspace{1.5em} % Your name
+
+\hrule{}\vspace{1.5em}
+
+\noindent\spacedsmallallcaps{\textbf{PERSONAL INFORMATION}}\vspace{0.1em}\\ % Personal information heading
+
+\NewEntry{Born in}{\textit{Mexico,}}{7 March 1993}\\ % Birthplace and date
+\NewEntry{email}{\href{mailto:adrifelcha@gmail.com}{adrifelcha@gmail.com}}\\ % Email address
+\NewEntry{github}{\href{https://github.com/Adrifelcha}{https://github.com/Adrifelcha}}\\ % Personal website
+\NewEntry{phone (H)}{01 52 - 5686 3442}\\ %\ \ $\cdotp$\ \ (M) 015255 32051765} % Phone number(s)
+\NewEntry{phone (M)}{01 52 - 55 3205 1765}\\%\vspace{1.5em}\\ %\ \ $\cdotp$\ \ (M) 015255 32051765} % Phone number(s)
+
+\hrule{}\vspace{1.5em}
+
+\noindent\spacedsmallallcaps{\textbf{ABOUT}}\vspace{0.1em}\\ % Personal information heading
+
+\Description{Undergrad experimental psychologist interested in the study of Perception and Cognitive processes.}\vspace{1em} % Goal text
+
+\hrule{}\vspace{1.5em}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+
+\textbf{\spacedsmallallcaps{EDUCATION}}\vspace{1em}
+
+\NewEntry{2012-2016}{National Autonomous University of Mexico}
+
+\Description{\MarginText{Bachelor of Psychology}GPA: 9.79/10.0\ \ $\cdotp$\ \ \textit{Degree pending}\ \ $\cdotp$\ \ School: Faculty of Psychology\newline 
+Thesis: \textit{Estudios en Detección de Señales (Studies on Signal Detection )}\newline
+Description: This thesis explored the extension of a phenomenom reported within Recognition Memory studies where Signal Detection Theory is applied to describe subjects' performance, to a perceptual detection task.\newline
+Advisors: Dr.~Arturo \textsc{Bouzas Riaño} \& Rev. Dr.~Germán \textsc{Palafox Palafox}}
+
+\vspace{1em} % Extra space between major sections
+
+
+%----------------------------------------------------------------------------------------
+%	SCHOLARSHIPS
+%----------------------------------------------------------------------------------------
+
+\textbf{\spacedsmallallcaps{FULL-SCHOLARSHIPS}}\vspace{1em}
+
+\NewEntry{Oct-Dec, 2014}{Exchange Abroad Program student at \textsc{University of California, Santa Barbara}}
+
+\Description{\MarginText{University of California,\newline Santa Barbara} As part of an Exchange Abroad Program, I studied one quarter at the UCSB, where I took three courses which I finished with scores of A+, A and B+ This opportunity was given to me by both, my home university (UNAM) and by an external sponsor which supported me as a consequence of my GPA (BANAMEX Group).}
+
+\vspace{1em} % Extra space between major sections
+
+%----------------------------------------------------------------------------------------
+%	ACADEMIC EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\textbf{\spacedsmallallcaps{ACADEMIC EXPERIENCE}}\vspace{1em}
+
+%\NewEntry{2015--2017}{1\textsuperscript{st} English teacher, \textsc{Instituto Mexicano Norteamericano de Cultura}}
+%\Description{\MarginText{IMNAC} \\ Reference: John \textsc{McDonald}\ \ $\cdotp$\ \ +1 (000) 111 1111\ \ $\cdotp$\ \ \href{mailto:john@lehman.com}{john@lehman.com}}
+
+\NewEntry{2014 - 2016}{\textsc{Student Council}}
+
+\Description{\MarginText{UNAM: \newline Faculty of Psychology} I was elected by the students of the Faculty of Psychology to represent them within the period of May, 2014 to May 2016.}
+
+\NewEntry{2015--Present}{Member of Lab25, with \textsc{Dr. Arturo Bouzas}}
+
+\Description{\MarginText{UNAM: \newline Faculty of Psychology}I have participated within the following projects\newline $\cdotp$ \underline{\textit{PAPIIT IN307214}}.\newline Project name: \textit{Adaptative Learning in Dynamic Environments} \newline $\cdotp$ \underline{\textit{PAPIME PE310016}}\newline Project name: \textit{Development of virtual tools for teaching cognitive and behavioral sciences.}}
+
+\vspace{1em} % Extra space between major sections
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\textbf{\spacedsmallallcaps{WORK EXPERIENCE}}\vspace{1em}
+
+\NewEntry{Jun-Jul 2017}{\textsc{El Buen Socio} --- Veracruz, México}
+
+\Description{\MarginText{El Buen Socio}Developed spreadsheets for risk analysis on exotic derivatives on a wide array of commodities (ags, oils, precious and base metals), managed blotter and secondary trades on structured notes, liaised with Middle Office, Sales and Structuring for bookkeeping. \\ Reference: Javier \textsc{Alfaro}\ \ $\cdotp$\ \ +152 (55) 5401 6575\ \ $\cdotp$\ \ \href{mailto:javieralfa@gmail.com}{javieralfa@gmail.com}}
+
+\vspace{1em} % Extra space between major sections
+
+%----------------------------------------------------------------------------------------
+%	TEACHING EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\textbf{\spacedsmallallcaps{TEACHING EXPERIENCE}}\vspace{1em}
+
+\NewEntry{2015--2017}{English teacher, \textsc{Instituto Mexicano Norteamericano de Cultura}}
+
+\Description{\MarginText{IMNAC} \\ Reference: John \textsc{McDonald}\ \ $\cdotp$\ \ +1 (000) 111 1111\ \ $\cdotp$\ \ \href{mailto:john@lehman.com}{john@lehman.com}}
+
+\NewEntry{2017}{\textsc{Courses} --- Faculty of Psychology UNAM}
+
+\Description{\MarginText{UNAM:\newline Faculty of Psychology}\underline{June 2017:} Summer session\newline $\cdotp$ Introducción al Pensamiento Estadístico (\textit{Introduction to statistic thinking}).\newline A one-week course; 4 hours a day \newline $\cdotp$ Introducción al Modelamiento Bayesiano (\textit{Introduction to Bayesian modeling}).\newline A one-week course; 4 hours a day  \newline $\cdotp$ Un laboratorio en Python para Ciencias del Comportamiento (\textit{A virtual laboratory on Python for Behavioral Sciences})\newline A one-week course; 4 hours a day .}
+
+\vspace{1em} % Extra space between major sections
+
+%----------------------------------------------------------------------------------------
+
+%\spacedlowsmallcaps{Publications}\vspace{1em}
+
+%\NewEntry{January 2013}{Publication Title}
+%\Description{\MarginText{Full Journal Name}Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nisl tellus, sodales non pulvinar in, adipiscing sit amet purus. Suspendisse sed facilisis diam. Sed ornare sem nec justo adipiscing nec venenatis lectus commodo. Mauris non neque ligula. Pellentesque sed quam eu felis iaculis iaculis ac a leo. Suspendisse neque neque, placerat id adipiscing et, elementum eu sem.\\ Authors: John \textsc{Smith}, ~James \textsc{Smith}}
+
+%\vspace{1em} % Extra space between major sections
+
+%------------------------------------------------
+
+%------------------------------------------------
+
+
+\spacedsmallallcaps{\textbf{POSTER PRESENTATIONS}}\vspace{1em}
+
+\NewEntry{November 2015}{La Sensibilidad como fuente de Sesgo en una tarea de detección de señales usando la ilusión de Ebbinghaus}
+
+\Description{\MarginText{Simposium International of Behavior and its Applications V}Signal Detection Theory distinguishes between the influence of two big factors in the formation of detection judgements: discriminability ($d'$) between the stimuli involved and the system's bias ($\beta$). According to the work of Lynn and Feldman (2014) there might be a direct influence between these factors that wasn't admitted in the original asumptions of the theory. We present an experiment where the information gathered from the literature on Optical Illusions were used to construct two levels of discriminability, so the correlation between $d'$ and $\beta$ could be explored. \\ Authors: Adriana F. \textsc{Chávez De la Peña}}
+
+\NewEntry{Nov, 2016}{The Mirror Effect within Perception: Not another Recognition Memory study}
+
+\Description{\MarginText{Object, Perception, Attention and Memory meeting}Within recognition memory studies where Signal Detection Theory has been applied to describe subjects’ performance, a pattern of responses known as the Mirror Effect has shown that when comparing subjects’ performance between classes of stimuli that are differentially recognized, this difference appears both for the identification of known and new items. However, the extensiveness of this pattern to other fields has not been explored yet. By using what is known about the Ebbinghaus illusion to design two levels of discriminability, evidence of the Mirror Effect in a detection task, confidence ratings included, that involves perception only is shown.\\ Authors: Adriana F. \textsc{Chávez De la Peña}}
+
+\vspace{1em} % Extra space between major sections
+
+%------------------------------------------------
+
+\textbf{\spacedsmallallcaps{CONFERENCES AND SYMPOSIA}}\vspace{1em}
+
+\NewEntry{Nov, 2017}{El Efecto Espejo en Percepción: No es otro estudio de Memoria de Reconocimiento}
+
+\Description{\MarginText{Simposium International of Behavior and its Applications VI}Within recognition memory studies where Signal Detection Theory has been applied to describe subjects’ performance, a pattern of responses known as the Mirror Effect has shown that when comparing subjects’ performance between classes of stimuli that are differentially recognized, this difference appears both for the identification of known and new items. However, the extensiveness of this pattern to other fields has not been explored yet. By using what is known about the Ebbinghaus illusion to design two levels of discriminability, evidence of the Mirror Effect in a detection task, confidence ratings included, that involves perception only is shown. The results obtained in this study were evaluated both through the replication of the analyses conducted in the literature (t test and ANOVAS) and with the development of bayesian models.\\ Authors: Adriana F. \textsc{Chávez De la Peña}}
+
+\vspace{1em} % Extra space between major sections
+
+%----------------------------------------------------------------------------------------
+
+\textbf{\spacedsmallallcaps{SKILLS}}\vspace{1em}
+
+\spacedsmallallcaps{COMPUTER SKILLS}}\vspace{1em}
+
+\Description{\MarginText{Basic}\textsc{Arduino}}
+\Description{\MarginText{Intermediate}\textsc{python}, \textsc{R}, \LaTeX, OpenOffice, Microsoft Windows}
+\vspace{1em} % Extra space between major sections
+
+%------------------------------------------------
+
+\textbf{\spacedsmallallcaps{Other Information}}\vspace{1em}
+
+\Description{\MarginText{\textbf{Awards}}2012\ \ $\cdotp$\ \ Grade perfection for a full year}
+\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+%\Description{2010\ \ $\cdotp$\ \ Top Achiever Award -- Commerce}
+%\vspace{1em}
+\Description{\MarginText{\textbf{Communication Skills}}2010\ \ $\cdotp$\ \ Oral Presentation at the California Business Conference}
+\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+\Description{2009\ \ $\cdotp$\ \ Poster at the Annual Business Conference in Oregon}
+\vspace{1em}
+\newlength{\langbox} % Create a new length for the length of languages to keep them equally spaced
+\settowidth{\langbox}{English} % Length equals the length of "English" - if you have a longer language in your list put it here
+\Description{\MarginText{\textbf{Languages}}\parbox{\langbox}{\textsc{Spanish}}\ \ $\cdotp$\ \ \ Mothertongue}
+\vspace{-0.5em} % Negative vertical space to counteract the vertical space between every \Description command
+\Description{\parbox{\langbox}{\textsc{English}}\ \ $\cdotp$\ \ \ Advanced}
+\vspace{1em} % Negative vertical space to counteract the vertical space between every \Description command
+%\Description{\parbox{\langbox}{\textsc{Dutch}}\ \ $\cdotp$\ \ \ Basic (simple words and phrases only)}
+%\vspace{1em} % Negative vertical space to counteract the vertical space between every \Description command
+
+%------------------------------------------------
+
+\Description{\MarginText{\textbf{Interests}}Cognitive and Experimental Psychology\ \ $\cdotp$\ \ Psychophysics\ \ $\cdotp$\ \ Decission Making\ \ $\cdotp$\ \ Cognitive Development\ \ $\cdotp$\ \ Evolutionary Psychology}
+
+%----------------------------------------------------------------------------------------
+
+\end{cv}
+
+\end{document}
