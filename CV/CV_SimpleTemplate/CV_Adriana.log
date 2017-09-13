@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=latex 2017.9.12)  12 SEP 2017 21:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.6.3)  12 SEP 2017 21:31
 entering extended mode
 **./CV_Adriana.tex
 (CV_Adriana.tex
@@ -94,7 +94,7 @@ Class scrartcl Info: Redefining `\numberline' on input line 5233.
 \bibindent=\dimen102
 )
 
-! LaTeX Error: File `classicthesis.sty' not found.
+! LaTeX Error: File `currvita.sty' not found.
 
 Type X to quit or <RETURN> to proceed,
 or enter new name. (Default extension: sty)
@@ -103,17 +103,17 @@ Enter file name:
 ! Emergency stop.
 <read *> 
          
-l.27 \usepackage
-                [LabelsAligned]{currvita} % Use the currvita style for the l...
+l.28 \usepackage
+                [spanish]{babel}
 End of file on the terminal!
 
  
 Here is how much of TeX's memory you used:
- 2018 strings out of 493329
- 38427 string characters out of 3139144
- 185469 words of memory out of 3000000
+ 2018 strings out of 493328
+ 38397 string characters out of 3139119
+ 185472 words of memory out of 3000000
  5621 multiletter control sequences out of 15000+200000
  3940 words of font info for 15 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,1n,51p,8823b,137s stack positions out of 5000i,500n,10000p,200000b,50000s
-No pages of output.
+!  ==> Fatal error occurred, no output PDF file produced!
