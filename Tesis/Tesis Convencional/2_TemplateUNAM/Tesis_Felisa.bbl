@@ -1,0 +1,3802 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.8 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\sortlist[entry]{nyt/global/}
+  \entry{Allen1968}{article}{}
+    \name{author}{2}{}{%
+      {{hash=ALR}{%
+         family={Allen},
+         familyi={A\bibinitperiod},
+         given={L.\bibnamedelima R.},
+         giveni={L\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=GRF}{%
+         family={Garton},
+         familyi={G\bibinitperiod},
+         given={R.\bibnamedelima F.},
+         giveni={R\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ALRGRF1}
+    \strng{fullhash}{ALRGRF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1968}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{abstract}{%
+    This experiment was conducted in an attempt to separate the effects of
+  word-frequency and word-knowledge in recognition memory. Operating
+  characteristics supported previous findings that it was easier for Ss to
+  distinguish between old and new words having a low-frequency word count than
+  between old and new common words. A knowledge of the meaning of a rare word
+  was found to facilitate the discrimination of old from new low-frequency
+  words.%
+    }
+    \field{number}{10}
+    \field{pages}{401\bibrangedash 402}
+    \field{title}{The influence of word-knowledge on the word-frequency effect
+  in recognition memory}
+    \field{volume}{12}
+    \field{journaltitle}{Psychonomic Science}
+    \field{year}{1968}
+  \endentry
+
+  \entry{Wickens}{incollection}{}
+    \name{author}{2}{}{%
+      {{hash=AFG}{%
+         family={Ashby},
+         familyi={A\bibinitperiod},
+         given={F.\bibnamedelima Gregory},
+         giveni={F\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=SFA}{%
+         family={Soto},
+         familyi={S\bibinitperiod},
+         given={Fabian\bibnamedelima A.},
+         giveni={F\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {"Oxford University Press"}%
+    }
+    \strng{namehash}{AFGSFA1}
+    \strng{fullhash}{AFGSFA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2005}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{booktitle}{"Handbook of computational and mathematical psychology"}
+    \field{chapter}{2}
+    \field{pages}{"13\bibrangedash 31"}
+    \field{title}{Multidimensional Signal Detection Theory}
+    \list{location}{1}{%
+      {"Oxford"}%
+    }
+    \field{year}{2005}
+  \endentry
+
+  \entry{Banks1970}{article}{}
+    \name{author}{1}{}{%
+      {{hash=BWP}{%
+         family={Banks},
+         familyi={B\bibinitperiod},
+         given={William\bibnamedelima P.},
+         giveni={W\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BWP1}
+    \strng{fullhash}{BWP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1970}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    Some applications of SDT in the study of memorail processes are critically
+  reviewed in four categories: 1) uses of SDT to scale memory strenght, 2) use
+  of SDT in criterial interpretations of data that seem to indicate forgetting,
+  3) attempts using SDT to determine the form of trace storage and to settle
+  the question of all-or-none learning and 4) extensions of SDT to scale
+  memory-based discriminability in finer analyses of retention. The techniques
+  that SDT offers the student of memory are explained, their limitations and
+  past misapplications are discussed, their advantages in various situations
+  are enumerated, and future applications are suggested%
+    }
+    \field{number}{2}
+    \field{pages}{81\bibrangedash 99}
+    \field{title}{Sigal Detectio Theory and Human Memory}
+    \field{volume}{74}
+    \field{journaltitle}{Psychological Bulletin}
+    \field{year}{1970}
+  \endentry
+
+  \entry{Bernbach1967}{article}{}
+    \name{author}{1}{}{%
+      {{hash=BHA}{%
+         family={Bernbach},
+         familyi={B\bibinitperiod},
+         given={Harley\bibnamedelima A.},
+         giveni={H\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BHA1}
+    \strng{fullhash}{BHA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1967}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    Several current theories of the response process in recognition memory, or
+  in confidence rating in recall, have postulated a continuous decision process
+  as in the theory of signal detectability. This assumption, however, does not
+  rule out assuming that the process by which information is stored and
+  retained in memory is a discrete one. In the finite-state decision theory
+  presented here, the continuous decision process is combined with a
+  representation of the memory trace as a tag that is either available or not
+  available at the time of test. In its predictions for recognition memory
+  experiments, this theory is at least the equal of theories based on
+  traditional habit strength assumptions. Furthermore, data from studies of
+  confidence ratings in recall provide considerable support for the
+  finite-state assumption.%
+    }
+    \field{number}{6}
+    \field{pages}{462\bibrangedash 480}
+    \field{title}{Decision Processes in Memory}
+    \field{volume}{74}
+    \field{journaltitle}{Psychological Review}
+    \field{year}{1967}
+  \endentry
+
+  \entry{Bonnel2003}{article}{}
+    \name{author}{6}{}{%
+      {{hash=BA}{%
+         family={Bonnel},
+         familyi={B\bibinitperiod},
+         given={Anna},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=ML}{%
+         family={Mottron},
+         familyi={M\bibinitperiod},
+         given={Laurent},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=PI}{%
+         family={Peretz},
+         familyi={P\bibinitperiod},
+         given={Isabelle},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=TM}{%
+         family={Trudel},
+         familyi={T\bibinitperiod},
+         given={Manon},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=GE}{%
+         family={Gallum},
+         familyi={G\bibinitperiod},
+         given={Erick},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=BAM}{%
+         family={Bonnel},
+         familyi={B\bibinitperiod},
+         given={Anne-Marie},
+         giveni={A\bibinitperiod-M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BA+1}
+    \strng{fullhash}{BAMLPITMGEBAM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2002}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{number}{2}
+    \field{pages}{226\bibrangedash 235}
+    \field{title}{Enhanced pitch sensitivity in individuals with autism: A
+  Signal detection analysis}
+    \field{volume}{15}
+    \field{journaltitle}{Journal of Cognitive Neuroscience}
+    \field{year}{2002}
+  \endentry
+
+  \entry{Boutis2010}{article}{}
+    \name{author}{4}{}{%
+      {{hash=BK}{%
+         family={Boutis},
+         familyi={B\bibinitperiod},
+         given={Kathy},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=PM}{%
+         family={Pecaric},
+         familyi={P\bibinitperiod},
+         given={Martin},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=SB}{%
+         family={Seeto},
+         familyi={S\bibinitperiod},
+         given={Brian},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=PM}{%
+         family={Pusic},
+         familyi={P\bibinitperiod},
+         given={Martin},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BK+1}
+    \strng{fullhash}{BKPMSBPM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2010}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    SDT parameters can describe a learner's ability to discriminate normal from
+  abnormal and the learner's criterion to under or overcall abnormalities. To
+  examine the serial changes in SDT parameters with serial exposure to
+  radiological cases...%
+    }
+    \field{pages}{647\bibrangedash 658}
+    \field{title}{Using signal detection theory to model changes in serial
+  learning of radiological image interpretation}
+    \field{volume}{15}
+    \field{journaltitle}{Adv in Health Sci Educ}
+    \field{year}{2010}
+  \endentry
+
+  \entry{Bowles1983}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BNL}{%
+         family={Bowles},
+         familyi={B\bibinitperiod},
+         given={Nancy\bibnamedelima L.},
+         giveni={N\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Glanzer},
+         familyi={G\bibinitperiod},
+         given={Murray},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BNLGM1}
+    \strng{fullhash}{BNLGM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1983}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    A stimulus-sampling model of recognition memory is presented that predicts
+  both proactive and retroactive interference. To test the predictions of the
+  model, a recognition memory experiment was carried out using a standard
+  proactive-retroactive design with a forced-choice task. Both accuracy and
+  latency were measured. The data showed, as predicted, equal proactive and
+  retroactive effects on accuracy, providing solid support for the model. The
+  interference effects are interpreted in terms of the model as arising from an
+  increase in indirect marking, the marking of shared stimulus elements in
+  words other than the study word. The model has two parameters representing
+  the rate of indirect marking for high-frequency and low-frequency words and
+  two parameters reflecting the efficiency of direct marking. The latency
+  results completely paralleled the accuracy findings, showing proactive and
+  retroactive effects. A possible extension of the model to handle latencies is
+  considered.%
+    }
+    \field{number}{3}
+    \field{pages}{307\bibrangedash 315}
+    \field{title}{An analysis of interference in recognition memory}
+    \field{volume}{11}
+    \field{journaltitle}{Memory & Cognition}
+    \field{year}{1983}
+  \endentry
+
+  \entry{Brown1994}{article}{}
+    \name{author}{5}{}{%
+      {{hash=BHD}{%
+         family={Brown},
+         familyi={B\bibinitperiod},
+         given={Halle\bibnamedelima D.},
+         giveni={H\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=KSM}{%
+         family={Kosslyn},
+         familyi={K\bibinitperiod},
+         given={Stephen\bibnamedelima M.},
+         giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=BHC}{%
+         family={Breiter},
+         familyi={B\bibinitperiod},
+         given={Hans\bibnamedelima C.},
+         giveni={H\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=BL}{%
+         family={Baer},
+         familyi={B\bibinitperiod},
+         given={Lee},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=JMA}{%
+         family={Jenike},
+         familyi={J\bibinitperiod},
+         given={Michael\bibnamedelima A.},
+         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BHD+1}
+    \strng{fullhash}{BHDKSMBHCBLJMA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1994}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    Signal detection analysis was used to test three hypotheses for repetitive
+  thoughts and behaviors characteristic of obsessive-compulsive disorder (OCD).
+  PAtients might have (a) low sensitivity for the difference between having
+  seen something or having imagined seeing it, (b) a high criterion for this
+  discrimination, or (c) difficulty associatuing context with information in
+  memory.%
+    }
+    \field{number}{3}
+    \field{pages}{445\bibrangedash 454}
+    \field{title}{Can Patients with Obsessive-Compulsive Disorder discriminate
+  between percepts and mental images? A Signal Detection Analysis}
+    \field{volume}{103}
+    \field{journaltitle}{Journal of Abnormal Psychology}
+    \field{year}{1994}
+  \endentry
+
+  \entry{Centor1985}{article}{}
+    \name{author}{2}{}{%
+      {{hash=CRM}{%
+         family={Centor},
+         familyi={C\bibinitperiod},
+         given={Robert\bibnamedelima M.},
+         giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=SJS}{%
+         family={Schwartz},
+         familyi={S\bibinitperiod},
+         given={J.\bibnamedelima Sanford},
+         giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CRMSJS1}
+    \strng{fullhash}{CRMSJS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1985}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{abstract}{%
+    The AUC ROC serves as one means for evaluating the performance of
+  diagnostic and predictive test systems. The most commonly used method for
+  estimating the area under an ROC curve utilizes the
+  maximum-likelihood.estimation technique, and a nonparametric method to
+  calculate the area under an ROC curve was recently described. We compared the
+  performance of these two methods. The results for the area under the ROC and
+  the standar error of the estimate as calculated by each of the two methods
+  exhibited hight correlation (...)%
+    }
+    \field{number}{2}
+    \field{title}{"An Evaluation of Methods for Estimating the Area Under the
+  Receiver Operating Characteristic (ROC) Curve"}
+    \field{volume}{5}
+    \field{journaltitle}{Psychological Review}
+    \field{year}{1985}
+  \endentry
+
+  \entry{Coren1971}{article}{}
+    \name{author}{1}{}{%
+      {{hash=CS}{%
+         family={Coren},
+         familyi={C\bibinitperiod},
+         given={Stanley},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CS1}
+    \strng{fullhash}{CS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1971}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{abstract}{%
+    A stereogram of equally sized circles produced a size-contrast illusion in
+  11 of 12 observers, providing evidence that the illusion is of central origin
+  and occurs sometime after the operation of the constancy mechanism%
+    }
+    \field{number}{4}
+    \field{pages}{565\bibrangedash 566}
+    \field{title}{A Size-contrast illusion without physical Size differences}
+    \field{volume}{84}
+    \field{journaltitle}{American Journal of Psychology}
+    \field{year}{1971}
+  \endentry
+
+  \entry{Coren1974}{article}{}
+    \name{author}{2}{}{%
+      {{hash=CS}{%
+         family={Coren},
+         familyi={C\bibinitperiod},
+         given={Stanley},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=MJ}{%
+         family={Miller},
+         familyi={M\bibinitperiod},
+         given={Joel},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CSMJ1}
+    \strng{fullhash}{CSMJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1974}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{abstract}{%
+    Size contrast occurs in numerous configurations where a test figure appears
+  apparently larger when surrounded by small elements and apparently smaller
+  when surrounded by large elements. Using the Ebbinghaus illusion, the
+  magnitude of this effect is shown to vary as a function of apparent
+  similarity between test and inducing element%
+    }
+    \field{number}{2}
+    \field{pages}{355\bibrangedash 357}
+    \field{title}{Size contrast as a function of figural similarity}
+    \field{volume}{16}
+    \field{journaltitle}{Perception & Psychophysics}
+    \field{year}{1974}
+  \endentry
+
+  \entry{DeCarlo2002}{article}{}
+    \name{author}{1}{}{%
+      {{hash=DLT}{%
+         family={DeCarlo},
+         familyi={D\bibinitperiod},
+         given={Lawrence\bibnamedelima T.},
+         giveni={L\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DLT1}
+    \strng{fullhash}{DLT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2002}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{abstract}{%
+    An extension of signal detection theory (SDT) that incorporates mixtures of
+  the underlying distributions is presented. The mixtures can be motivated by
+  the idea that a presentation fo a signal shifts the location of anunderlying
+  distribution only if the observer is attending to the signal; otherwise, the
+  distribution is not shifted or is only partially shifted. Thus, trials with a
+  signal presentation consist of a mixture of 2 (or more) latent classes of
+  trials. Mixture SDT provides a general theoretical framework that offers a
+  new perspective on a number of findings. For example, mixture SDT offers an
+  alternative to the unequal variance signal detection model; it can also
+  account for nonlinear normal receiver operating characteristic curves, as
+  found in recent research.%
+    }
+    \field{number}{4}
+    \field{pages}{710\bibrangedash 721}
+    \field{title}{Signal Detection Theory with Finite Mixture Distributions:
+  Theoretical Developments with applications to Recognition Memory}
+    \field{volume}{109}
+    \field{journaltitle}{Psychological Review}
+    \field{year}{2002}
+  \endentry
+
+  \entry{DeCarlo2007}{article}{}
+    \name{author}{1}{}{%
+      {{hash=DLT}{%
+         family={DeCarlo},
+         familyi={D\bibinitperiod},
+         given={Lawrence\bibnamedelima T.},
+         giveni={L\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DLT1}
+    \strng{fullhash}{DLT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2007}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{abstract}{%
+    The mirror effect for word frequency refers to the finding that
+  low-frequency words have higher hit rates and lower false alarm rates that
+  high-frequency words. This result is typically interpreted in terms of
+  conventional signa detection theory (SDT), in which case it indicates that
+  the order of the underlying old item distributions mirrors the order of the
+  new item distributions. However, when viewed in terms of a mixture revision
+  of SDT, the order of hits and false alarms does not neccesarily imply the
+  same order in the underlying distributions because of possible effects of
+  mixing. A reversal in underlying distributions did not appear for fits of
+  mixture SDT models to data from 4 experiments.%
+    }
+    \field{number}{1}
+    \field{pages}{18\bibrangedash 33}
+    \field{title}{The Mirror Effect and Mixture Signal Detection Theory}
+    \field{volume}{33}
+    \field{journaltitle}{Journal of Experimental Psychology: Learning, Memory
+  and Cognition}
+    \field{year}{2007}
+  \endentry
+
+  \entry{Egan1958}{article}{}
+    \name{author}{1}{}{%
+      {{hash=EJP}{%
+         family={Egan},
+         familyi={E\bibinitperiod},
+         given={James\bibnamedelima P.},
+         giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{EJP1}
+    \strng{fullhash}{EJP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1958}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \field{abstract}{%
+    NA%
+    }
+    \field{number}{32}
+    \field{pages}{51\bibrangedash 58}
+    \field{title}{Recognition Memory and the Operating Characteristic}
+    \field{volume}{2}
+    \field{journaltitle}{Journal of Acoustical Society of America}
+    \field{year}{1958}
+  \endentry
+
+  \entry{Egan1959}{article}{}
+    \name{author}{3}{}{%
+      {{hash=EJP}{%
+         family={Egan},
+         familyi={E\bibinitperiod},
+         given={James\bibnamedelima P.},
+         giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=SAI}{%
+         family={Schulman},
+         familyi={S\bibinitperiod},
+         given={Arthur\bibnamedelima I.},
+         giveni={A\bibinitperiod\bibinitdelim I\bibinitperiod},
+      }}%
+      {{hash=GGZ}{%
+         family={Greenberg},
+         familyi={G\bibinitperiod},
+         given={Gordon\bibnamedelima Z.},
+         giveni={G\bibinitperiod\bibinitdelim Z\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{EJPSAIGGZ1}
+    \strng{fullhash}{EJPSAIGGZ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1959}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \field{abstract}{%
+    With the theory of signald etectabilitya s a framework,t wo
+  psychophysicaelx perimentsw ere conducted in which each observation interval
+  was well defined for the listener. Each interval contained noise, and it
+  either did or did not (p-0.5) contain a signal (1000 cps,0 .5 seci n
+  duration). In separates essionosf the first experimente, ither the listenerg
+  ave a yes-nod ecisiono r he respondedw ith a rating (1-4) after each
+  observationin terval. Operatingc haracteristicws ere obtainedw ith E/No equal
+  to 15.8. It is clear from the data that the trained listenerc an perform as
+  well when he adoptst he multiple criteria necessaryfo r the rating methoda sw
+  henh e adoptst he singlec riterionr equiredb y the binary-decisiopnr
+  ocedureI.n the second experiment, only the rating method was used to
+  determine the relation between d' and E/No. The resulting function,f or d'_<3
+  .0, approximatesa straightl ine whichp assesth rought he origina nd whichh
+  asn early the same slope as that obtained in other laboratories.%
+    }
+    \field{number}{6}
+    \field{pages}{768\bibrangedash 773}
+    \field{title}{Operating Characteristics Determined by Binary Decisions and
+  by Ratings}
+    \field{volume}{31}
+    \field{journaltitle}{Journal of Acoustical Society of America}
+    \field{year}{1959}
+  \endentry
+
+  \entry{Eich1985}{article}{}
+    \name{author}{1}{}{%
+      {{hash=EJM}{%
+         family={Eich},
+         familyi={E\bibinitperiod},
+         given={Janet\bibnamedelima Metcalfe},
+         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{EJM1}
+    \strng{fullhash}{EJM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1985}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \field{abstract}{%
+    A model of cued recall called CHARM (composite holographic associative
+  recall model) is applied to several findings that have been investigated
+  within the depthof-processing framework. It is shown that, given some
+  straightforward, empiricallytestable assumptions about the representations of
+  the to-be-remembered items themselves, CHARM can account for the main effect
+  of depth of processing, the problem of the negatives, encoding-specificity
+  interactions, and effects—both facilitative and inhibitory—of
+  elaboration. The CHARM model is extended to encompass some
+  depth-of-processing effects found in recognition memory.%
+    }
+    \field{number}{1}
+    \field{pages}{1\bibrangedash 38}
+    \field{title}{Levels of Processing, Encoding Specifity, Elaboration and
+  CHARM}
+    \field{volume}{92}
+    \field{journaltitle}{Psychological Review}
+    \field{year}{1985}
+  \endentry
+
+  \entry{Fechner}{book}{}
+    \name{author}{1}{}{%
+      {{hash=FGT}{%
+         family={Fechner},
+         familyi={F\bibinitperiod},
+         given={G.\bibnamedelima T.},
+         giveni={G\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+    }
+    \name{editor}{2}{}{%
+      {{hash=BEG}{%
+         family={Boring},
+         familyi={B\bibinitperiod},
+         given={"E.\bibnamedelima G.},
+         giveni={E\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=HDH}{%
+         family={Howes"},
+         familyi={H\bibinitperiod},
+         given={D.\bibnamedelima H.},
+         giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \name{translator}{1}{}{%
+      {{hash=AHE}{%
+         family={Adler},
+         familyi={A\bibinitperiod},
+         given={H.\bibnamedelima E.},
+         giveni={H\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {"New York : Holt, Rinehart \& Winston"}%
+    }
+    \strng{namehash}{FGT1}
+    \strng{fullhash}{FGT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1966}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{title}{"Elements of psychophysics"}
+    \field{volume}{1}
+    \list{location}{1}{%
+      {"New York"}%
+    }
+    \field{year}{1966}
+    \field{origyear}{1860}
+  \endentry
+
+  \entry{Fockert2007}{article}{}
+    \name{author}{5}{}{%
+      {{hash=dFJ}{%
+         prefix={de},
+         prefixi={d\bibinitperiod},
+         family={Fockert},
+         familyi={F\bibinitperiod},
+         given={Jan},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=DJ}{%
+         family={Davidoff},
+         familyi={D\bibinitperiod},
+         given={Jules},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=FJ}{%
+         family={Fagot},
+         familyi={F\bibinitperiod},
+         given={Joel},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=PC}{%
+         family={PArron},
+         familyi={P\bibinitperiod},
+         given={Carole},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=GJ}{%
+         family={Goldstein},
+         familyi={G\bibinitperiod},
+         given={Julie},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FJd+1}
+    \strng{fullhash}{FJdDJFJPCGJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2007}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{abstract}{%
+    The Ebbinghaus illusion was examined in a remote culture with no words for
+  geometric shapes. The illusion was experienced less strongly by Himba
+  compared with English participants, leading to more accurat size contrast
+  judgements in the Himba The study included two conditions of inducing
+  stimuli. The illusion was weaker when the inducing stimuli were dissimilar
+  (diamonds) to the target (circle) compared with when the were similar
+  (circles). The illusion was weakened to the same extent in both cultures. It
+  is argued that the more accurate size judgemnts of the Himba derive from
+  their tendency to prioritize the analysis of local details in visual
+  processing of multiple objets and not from their impoverished naming.%
+    }
+    \field{number}{3}
+    \field{pages}{738\bibrangedash 742}
+    \field{title}{More accurate size contrast judgments in the Ebbinghaus
+  illusion in a Remote culture}
+    \field{volume}{33}
+    \field{journaltitle}{Journal of Experimental Psychology: Human Perception
+  and Performance}
+    \field{year}{2007}
+  \endentry
+
+  \entry{Gauss}{book}{}
+    \name{author}{1}{}{%
+      {{hash=GCF}{%
+         family={Gauss},
+         familyi={G\bibinitperiod},
+         given={C.\bibnamedelima F.},
+         giveni={C\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+    }
+    \name{translator}{1}{}{%
+      {{hash=DC}{%
+         family={Davis},
+         familyi={D\bibinitperiod},
+         given={C.H.},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {"New York : Dover"}%
+    }
+    \strng{namehash}{GCF1}
+    \strng{fullhash}{GCF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1963}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{title}{"Theory of motion of the heavenly bodies moving about the sun
+  in conic sections"}
+    \list{location}{1}{%
+      {"New York"}%
+    }
+    \field{year}{1963}
+    \field{origyear}{1809}
+  \endentry
+
+  \entry{Gescheider}{book}{}
+    \name{author}{1}{}{%
+      {{hash=GGA}{%
+         family={Gescheider},
+         familyi={G\bibinitperiod},
+         given={George\bibnamedelima A.},
+         giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \name{editor}{1}{}{%
+      {{hash=PP}{%
+         family={"Psychology\bibnamedelima Press},
+         familyi={P\bibinitperiod\bibinitdelim P\bibinitperiod},
+         given={2013"},
+         giveni={\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GGA1}
+    \strng{fullhash}{GGA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2013}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{edition}{3rd Edition}
+    \field{title}{"Psychophysics: The Fundamentals"}
+    \field{year}{2013}
+    \field{origyear}{1975}
+  \endentry
+
+  \entry{Gillund1984}{article}{}
+    \name{author}{2}{}{%
+      {{hash=GG}{%
+         family={Gillund},
+         familyi={G\bibinitperiod},
+         given={Gary},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=SRM}{%
+         family={Shiffrin},
+         familyi={S\bibinitperiod},
+         given={Richard\bibnamedelima M.},
+         giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GGSRM1}
+    \strng{fullhash}{GGSRM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1984}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    The Search of Associative Memory (SAM) model for recall (Raaijmakers &
+  Shiffrin, 1981b) is extended by assuming that a familiarity process is used
+  for recognition. The recall model posits cue-dependent probabilistic sampling
+  and recovery from an associative network. Our recognition model is closely
+  related to the recall model because the total episodic activation due to the
+  context and item cues is used in recall as a basis for sampling and in
+  recognition to make a decision. The model, formalized in a computer
+  simulation program, correctly predicts a number of findings in the literature
+  as well as the results from a new experiment on the wordfrequency effect.%
+    }
+    \field{number}{1}
+    \field{pages}{1\bibrangedash 67}
+    \field{title}{A Retrieval Model for Both Recognition and Recall}
+    \field{volume}{91}
+    \field{journaltitle}{Psychological Review}
+    \field{year}{1984}
+  \endentry
+
+  \entry{Girgus1972}{article}{}
+    \name{author}{3}{}{%
+      {{hash=GJS}{%
+         family={Girgus},
+         familyi={G\bibinitperiod},
+         given={Joan\bibnamedelima S.},
+         giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=CS}{%
+         family={Coren},
+         familyi={C\bibinitperiod},
+         given={Stanley},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=AM}{%
+         family={Agdern},
+         familyi={A\bibinitperiod},
+         given={Myra},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GJSCSAM1}
+    \strng{fullhash}{GJSCSAM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1972}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    Variation of the size of the context circles in the Ebbinghaus illusion
+  results in a systematic variation of the apparent size of the central test
+  figure that is in accord with a comparative judgmental model of this
+  illusion. However, increasing the distance of the context figures results in
+  a decrease in the apparent size of the test figure regardless of the size of
+  the context circles. This result is not predicted by a judgmental model and
+  indicates a similarity between the Ebbinghaus and Delboeuf illusions%
+    }
+    \field{number}{2}
+    \field{pages}{453\bibrangedash 455}
+    \field{title}{The interrelationship between the Ebbinghaus and Delboeuf
+  illusions}
+    \field{volume}{95}
+    \field{journaltitle}{Journal of Experimental Psychology}
+    \field{year}{1972}
+  \endentry
+
+  \entry{Glanzer1990}{article}{}
+    \name{author}{2}{}{%
+      {{hash=GM}{%
+         family={Glanzer},
+         familyi={G\bibinitperiod},
+         given={Murray},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=AJK}{%
+         family={Adams},
+         familyi={A\bibinitperiod},
+         given={John\bibnamedelima K.},
+         giveni={J\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GMAJK1}
+    \strng{fullhash}{GMAJK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1990}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    The mirror effect is a regularity in recognition memory that requires
+  reexamination of current views of memory. Five experiments that further
+  support and extend the generality of the mirror effect are reported. The
+  first two experiments vary word frequency. The third and fourth vary both
+  word frequency and concreteness. The fifth experiment varies word frequenc,
+  concreteness and the subject's operations on the words. The experiments
+  furnish data on the stability of the effect, its relation to response times,
+  its extension to multiple mirror effects, and its extension beyond stimulus
+  variables to operation variables. A theory of the effect and predictions that
+  derive from the theory are presented%
+    }
+    \field{number}{1}
+    \field{pages}{5\bibrangedash 16}
+    \field{title}{The Mirror Effect in Recognition Memory: Data and Theory}
+    \field{volume}{16}
+    \field{journaltitle}{Journal of Experimental Psychology}
+    \field{year}{1990}
+  \endentry
+
+  \entry{Glanzer1991}{article}{}
+    \name{author}{3}{}{%
+      {{hash=GM}{%
+         family={Glanzer},
+         familyi={G\bibinitperiod},
+         given={Murray},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=AJK}{%
+         family={Adams},
+         familyi={A\bibinitperiod},
+         given={John\bibnamedelima K.},
+         giveni={J\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=IG}{%
+         family={Iverson},
+         familyi={I\bibinitperiod},
+         given={Geoffrey},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GMAJKIG1}
+    \strng{fullhash}{GMAJKIG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1991}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    The mirror effect is a strong regularity in recognition memory: If there
+  are two conditions, A and B, with A giving higher recognition accuracy, then
+  old items in A are recognized as old better than old items in B, and also new
+  items in A are recognized as new better than new items in B. The mirror
+  effect is explained by attention/likelihood theory, which also makes several
+  new, counterintuitive predictions. One is that any variable, such as
+  forgetting, that affects recognition changes the responses to new as well as
+  old stimuli. In terms of underlying distributions, forgetting produces
+  concentering, the bilateral movement of distributions, both new (noise) and
+  old (signal), toward a midpoint. Data from two forced-choice experiments are
+  reported that support the prediction of concentering and other predictions
+  drawn from the theory. It is argued that current theories of memory': which
+  are strength theories, cannot handle these regularities.%
+    }
+    \field{number}{1}
+    \field{pages}{81\bibrangedash 93}
+    \field{title}{Forgetting and the Mirror Effect in Recognition Memory:
+  Concentering of Underlying Distributions}
+    \field{volume}{17}
+    \field{journaltitle}{Journal of Experimental Psychology: Learning, Memory
+  and Cognition}
+    \field{year}{1991}
+  \endentry
+
+  \entry{Glanzer1976}{article}{}
+    \name{author}{2}{}{%
+      {{hash=GM}{%
+         family={Glanzer},
+         familyi={G\bibinitperiod},
+         given={Murray},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BN}{%
+         family={Bowles},
+         familyi={B\bibinitperiod},
+         given={Nancy},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GMBN1}
+    \strng{fullhash}{GMBN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1976}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    A general decision-theory analysis of the word-frequency effect in
+  recognition memory is carried out. On the basis of the analysis and data from
+  a forced-choice experiment two distinct causes of the frequency effect are
+  defined. A more specific theory based oon the ideas of encoding and sampling
+  is then presented and evaluated. Several implications of the theory are
+  considered including implications for the resolution of the
+  recognition-recall frequency paradox.%
+    }
+    \field{number}{1}
+    \field{pages}{21\bibrangedash 31}
+    \field{title}{Analysis of the Word-Frequency Effect in Recognition Memory}
+    \field{volume}{12}
+    \field{journaltitle}{Journal of the Experimental Analysis of Behavior:
+  Human Learning and Memory}
+    \field{year}{1976}
+  \endentry
+
+  \entry{Glanzer2009}{article}{}
+    \name{author}{3}{}{%
+      {{hash=GM}{%
+         family={Glanzer},
+         familyi={G\bibinitperiod},
+         given={Murray},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=HA}{%
+         family={Hilford},
+         familyi={H\bibinitperiod},
+         given={Andrew},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MLT}{%
+         family={Maloney},
+         familyi={M\bibinitperiod},
+         given={Laurence\bibnamedelima T.},
+         giveni={L\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GMHAMLT1}
+    \strng{fullhash}{GMHAMLT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2009}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    We analyze four general signal detection models for recognition memory that
+  differ in their distributional assumptions. Our analyses show that a basic
+  assumption of signal detection theory, the likelihood ratio decision axis,
+  implies three regularities in recognition memory: (1) the mirror effect, (2)
+  the variance effect, and (3) the z-ROC length effect. For each model, we
+  present the equations that produce the three regularities and show, in
+  computed examples, how they do so. We then show that the regularities appear
+  in data from a range of recognition studies. The analyses and data in our
+  study support the following generalization: Individuals make efficient
+  recognition decisions on the basis of likelihood ratios.%
+    }
+    \field{number}{3}
+    \field{pages}{431\bibrangedash 455}
+    \field{title}{Likelihood ratio decisions in memory: Three implied
+  regularities}
+    \field{volume}{16}
+    \field{journaltitle}{Psychonomic Bulletin \& Review}
+    \field{year}{2009}
+  \endentry
+
+  \entry{Glanzer1998}{article}{}
+    \name{author}{3}{}{%
+      {{hash=GM}{%
+         family={Glanzer},
+         familyi={G\bibinitperiod},
+         given={Murray},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=KK}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={Kisok},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=AJK}{%
+         family={Adams},
+         familyi={A\bibinitperiod},
+         given={John\bibnamedelima K.},
+         giveni={J\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GMKKAJK1}
+    \strng{fullhash}{GMKKAJK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1998}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    Response distribution has recently been proposed as an explanation of the
+  mirror effect in recognition memory. According to the proposal, participants
+  presented with distinctive sets of items (e.g., low- and high-frequency
+  words) vary their responses to give an equal number of positive responses
+  (e.g., the sum of hits and false alarms) to each set. Four experiments tested
+  this proposal. Two experiments showed that the mirror effect is present in
+  the absence of distinctive sets of items. Two experiments showed that the
+  mirror effect is present in the absence of response equalization. Wherever
+  the response distribution hypothesis can be tested, it fails.%
+    }
+    \field{number}{3}
+    \field{pages}{633\bibrangedash 644}
+    \field{title}{Response Distribution as an Explanation of the Mirror Effect}
+    \field{volume}{24}
+    \field{journaltitle}{Journal of Experimental Psychology: Learning, Memory
+  and Cognition}
+    \field{year}{1998}
+  \endentry
+
+  \entry{Glanzer1993}{article}{}
+    \name{author}{4}{}{%
+      {{hash=GM}{%
+         family={Glanzer},
+         familyi={G\bibinitperiod},
+         given={Murray},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=AJK}{%
+         family={Adams},
+         familyi={A\bibinitperiod},
+         given={John\bibnamedelima K.},
+         giveni={J\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=IGJ}{%
+         family={Iverson},
+         familyi={I\bibinitperiod},
+         given={Geoffrey\bibnamedelima J.},
+         giveni={G\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=KK}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={Kisok},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GM+1}
+    \strng{fullhash}{GMAJKIGJKK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1993}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    Three regularities in recognitionmemory are described with supporting data:
+  the mirror effect, the order of receiver operating characteristic slopes, and
+  the symmetry of movement of underlying distributions. The derivation of these
+  regularities from attention/likelihood theory is demosntrated. The theory's
+  central concept, which distinguishes it from other theories, is the
+  following: Ss make recognition decisions by combining information about new
+  and old items, the combination made in the form of likelihood ratios. The
+  central role of the likelihood rations extends the implications of signal
+  detection theory for recognition memory. Attention/likelihood theory is
+  fitted to data of 2 series of experiments. One series involves yes-no tests
+  and confidence ratings, the other forced-choice experiments. It is argued
+  that the regularities require a revision of most current theories of
+  recognition memory%
+    }
+    \field{number}{3}
+    \field{pages}{546\bibrangedash 567}
+    \field{title}{The Regularities of Recognition Memory}
+    \field{volume}{100}
+    \field{journaltitle}{Psychological Review}
+    \field{year}{1993}
+  \endentry
+
+  \entry{Gordon1974}{article}{}
+    \name{author}{2}{}{%
+      {{hash=GSK}{%
+         family={Gordon},
+         familyi={G\bibinitperiod},
+         given={Susan\bibnamedelima K.},
+         giveni={S\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=CWC}{%
+         family={Clark},
+         familyi={C\bibinitperiod},
+         given={W.\bibnamedelima Crawford},
+         giveni={W\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GSKCWC1}
+    \strng{fullhash}{GSKCWC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1974}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{number}{1}
+    \field{pages}{64\bibrangedash 72}
+    \field{title}{Application of Signal Detection Theory to Prose Recall and
+  Recogintion in Elderly and Young Adults}
+    \field{volume}{29}
+    \field{journaltitle}{Journal of Gerontology}
+    \field{year}{1974}
+  \endentry
+
+  \entry{Greene1996}{article}{}
+    \name{author}{1}{}{%
+      {{hash=GRL}{%
+         family={Greene},
+         familyi={G\bibinitperiod},
+         given={Robert\bibnamedelima L.},
+         giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GRL1}
+    \strng{fullhash}{GRL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1996}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    Classes of stimuli that are relatively easy to classify in recognition as
+  old when old also appear to be relatively easy to classify as new when new.
+  Five experiments are reported that extend this mirror effect to tests
+  requiring retention of order and associative information. These experiments
+  tested memory for words and nonwords; across experiments, the mirror effect
+  was found on both yes-no and forced-choice tests. In addition, a new account
+  of the mirror effect is proposed, one which suggests that this pattern
+  results from participants' attempts to distribute responses equally across
+  stimulus classes on tests. Support from this account came from additional
+  experiments in which the mirror effect was eliminated when participants were
+  asked to refrain from using positive responses as guesses.%
+    }
+    \field{number}{3}
+    \field{pages}{687\bibrangedash 695}
+    \field{title}{Mirror Effect in Order and Associative Information: Role of
+  Response Strategies}
+    \field{volume}{22}
+    \field{journaltitle}{Journal of Experimental Psychology: Learning, Memory
+  and Cognition}
+    \field{year}{1996}
+  \endentry
+
+  \entry{Gronlund2014}{article}{}
+    \name{author}{3}{}{%
+      {{hash=GSD}{%
+         family={Gronlund},
+         familyi={G\bibinitperiod},
+         given={Scott\bibnamedelima D.},
+         giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=WJT}{%
+         family={Wixted},
+         familyi={W\bibinitperiod},
+         given={John\bibnamedelima T.},
+         giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=ML}{%
+         family={Mickes},
+         familyi={M\bibinitperiod},
+         given={Laura},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GSDWJTML1}
+    \strng{fullhash}{GSDWJTML1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2014}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{number}{1}
+    \field{pages}{3\bibrangedash 10}
+    \field{title}{Evaluating Eyewitness Identification Procedures Using
+  Receiver Operating Characteristic Analysis}
+    \field{volume}{23}
+    \field{journaltitle}{Association for Psychological Science}
+    \field{year}{2014}
+  \endentry
+
+  \entry{Grossberg1978}{article}{}
+    \name{author}{2}{}{%
+      {{hash=GJM}{%
+         family={Grossberg},
+         familyi={G\bibinitperiod},
+         given={John\bibnamedelima M.},
+         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=GBF}{%
+         family={Grant},
+         familyi={G\bibinitperiod},
+         given={Bridget\bibnamedelima F.},
+         giveni={B\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GJMGBF1}
+    \strng{fullhash}{GJMGBF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1978}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    Recent developments in psychophysics termed statistical decision theory
+  (SDT) and magnitude estimation are being applied to an increasing variety of
+  previously recalcitrant problems in clinical psychology and medical decision
+  making....%
+    }
+    \field{number}{5}
+    \field{pages}{1154\bibrangedash 1176}
+    \field{title}{Clinical Psychophysics: Applications of Ratio Scaling and
+  Signal Detection Methods to Research on Pain, Fear, Drugs and Medical
+  Decision Making}
+    \field{volume}{85}
+    \field{journaltitle}{Psychological Bulletin}
+    \field{year}{1978}
+  \endentry
+
+  \entry{Hilford2015}{article}{}
+    \name{author}{4}{}{%
+      {{hash=HA}{%
+         family={Hilford},
+         familyi={H\bibinitperiod},
+         given={Andrew},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MLT}{%
+         family={Maloney},
+         familyi={M\bibinitperiod},
+         given={Laurence\bibnamedelima T.},
+         giveni={L\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Glanzer},
+         familyi={G\bibinitperiod},
+         given={Murray},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=KK}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={Kisok},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HA+1}
+    \strng{fullhash}{HAMLTGMKK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2015}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{abstract}{%
+    A basic assumption of Signal Detection Theory is that decisions are made on
+  the basis of likelihood ratios. In a preceding paper, Glanzer, Hilfor, and
+  Maloney /psychonomic Bulletin & Review, 16, 431-455, 2009) showed that the
+  likelihood ratio assumption implies that three regularities will occur in
+  recognition memory: (1) the Mirror Effect, (2) the Variance Effect, (3) the
+  normalized Receiver Operating Characteristic (z-ROC) Length Effect. The paper
+  offered formal proofs and computational demosntrations that decisions based
+  on likelihood ratios produce the three regularities. A survey of data ased on
+  group ROCs from 36 studies validated the likelihood ratio assumption by
+  showing that its three implied regularities are ubiquituous. The study noted,
+  however, that bias, another basis factor in Signal Detection Theory, can
+  obscure the Mirror Effect. In this paper we examine how bias affects the
+  regularities at the theoretical leve. The theoretical analysis shows: (1) how
+  bias obscures the Mirror Effect, not the other two reguarities, and (2) four
+  ways to counter that obscuring. We then report the results of five
+  experiments that support the theoretical analysis. The analyses and the
+  experimental results also demonstrate: (1) that the three regularities govern
+  individual, as well as group, performance, (2) alternative explanations of
+  the regularities are ruled oyt, and (3) tat Signal Detection Theory,
+  correctly applied, gives a simple and unified explanation of recognition
+  memory data.%
+    }
+    \field{pages}{1646\bibrangedash 1664}
+    \field{title}{Three regularities of recognition memory: the role of bias}
+    \field{journaltitle}{Psychonomic Bulletin Review}
+    \field{month}{05}
+    \field{year}{2015}
+  \endentry
+
+  \entry{Hintzman1994}{article}{}
+    \name{author}{1}{}{%
+      {{hash=HDL}{%
+         family={Hintzman},
+         familyi={H\bibinitperiod},
+         given={Douglas\bibnamedelima L.},
+         giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HDL1}
+    \strng{fullhash}{HDL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1994}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{abstract}{%
+    Two points are made in relation to the recent article by K. Kim and M.
+  Glanzer (1993). First, the attention-likelihood model is more complex than
+  these authors and others suggest. In particular, 2 kinds of quantities—(a)
+  parameters representing the true state of the subject's memory and (b) the
+  subject's estimates of those parameters—have been referred to using the
+  same symbols. This obscures the essential role of metamemory in the model's
+  predictions. Second, log-likelihood rescaling is not needed to explain the
+  mirror effect. An alternative rescaling scheme is described, which can be
+  added to a variety of memory models. This new rescaling method estimates a
+  test item's learnability by learning it. Simulations show that the method is
+  consistent with Kim and Glanzer's experimental results.%
+    }
+    \field{number}{1}
+    \field{pages}{201\bibrangedash 205}
+    \field{title}{On explaining the Mirror Effect}
+    \field{volume}{20}
+    \field{journaltitle}{Journal of Experimental Psychology: Learning, Memory
+  and Cognition}
+    \field{year}{1994}
+  \endentry
+
+  \entry{Harvey1992}{article}{}
+    \name{author}{4}{}{%
+      {{hash=JLOH}{%
+         family={Jr.},
+         familyi={J\bibinitperiod},
+         given={Lewis O.\bibnamedelima Harvey},
+         giveni={L\bibinitperiod\bibinitdelim O\bibinitperiod\bibinitdelim
+  H\bibinitperiod},
+      }}%
+      {{hash=HKR}{%
+         family={Hammond},
+         familyi={H\bibinitperiod},
+         given={Kenneth\bibnamedelima R.},
+         giveni={K\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=LCM}{%
+         family={Lusk},
+         familyi={L\bibinitperiod},
+         given={Cynthia\bibnamedelima M.},
+         giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=MEF}{%
+         family={Mross},
+         familyi={M\bibinitperiod},
+         given={Ernest\bibnamedelima F.},
+         giveni={E\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{JLOH+1}
+    \strng{fullhash}{JLOHHKRLCMMEF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1992}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{abstract}{%
+    A variety of measures are used to judge the skill and accuracy with which
+  forecasters predict the weather and to verify forecasts. Such measures can
+  confound accurcy with decision strategy and sometimes give conflicting
+  indications of performance. Signal detection theory (SDT) provides a
+  theoretical framework for describing forecasting behavior and minimizing
+  these problems. We illustrate the utility of signal detection theory in this
+  context, showing how it can be used to understand the effects of time
+  pressure created by frequent weather activity on forecasting judgments and
+  illustrate how to achieve a specific social policy%
+    }
+    \field{pages}{863\bibrangedash 883}
+    \field{title}{The application of Signal Detection Theory to weather
+  forecasting behavior}
+    \field{volume}{103}
+    \field{journaltitle}{American Metereological Society}
+    \field{year}{1992}
+  \endentry
+
+  \entry{Killeen2014}{article}{}
+    \name{author}{1}{}{%
+      {{hash=KPR}{%
+         family={Killeen},
+         familyi={K\bibinitperiod},
+         given={Peter\bibnamedelima R.},
+         giveni={P\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KPR1}
+    \strng{fullhash}{KPR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2014}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{title}{Signal Detection Theory}
+    \field{journaltitle}{Enclyclopedia of Theory in Psychology}
+    \field{year}{2014}
+  \endentry
+
+  \entry{Kim1993}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KK}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={Kisok},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Glanzer},
+         familyi={G\bibinitperiod},
+         given={Murray},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KKGM1}
+    \strng{fullhash}{KKGM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1993}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{abstract}{%
+    Attention/likelihood theory is a model of recognition memory designed to
+  explain the mirror effect (Glanzer & Adams, 1985, 1990). The theory and the
+  effect were studied using speed versus accuracy instructions and short versus
+  long exposure of stimuli. Speed versus accuracy instructions during test and
+  short versus long exposure of stimuli during study were used to vary the
+  number of features sampled from stimuli. When the number of features sampled
+  was reduced either by speed instructions or by shorter exposure, recognition
+  performance was impaired. The theory predicts that in such cases, all
+  distances between underlying distributions will contract. That means,
+  moreover, that when recognition accuracy is decreased for old stimuli, it is
+  also decreased for new stimuli. These predictions were supported by the data
+  from three experiments.%
+    }
+    \field{pages}{638\bibrangedash 652}
+    \field{title}{Speed versus Accuracy instructions, Study time, and the
+  Mirror Effect}
+    \field{volume}{19}
+    \field{journaltitle}{Journal of Experimental Psychology: Learning, Memory
+  and Cognition}
+    \field{month}{03}
+    \field{year}{1993}
+  \endentry
+
+  \entry{Kintsch1967}{article}{}
+    \name{author}{1}{}{%
+      {{hash=KW}{%
+         family={Kintsch},
+         familyi={K\bibinitperiod},
+         given={Walter},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KW1}
+    \strng{fullhash}{KW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1967}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{abstract}{%
+    Recognition learning may be described as a discrete state process involving
+  transitions between an initial state, a temporary memory state, and a
+  learning state. It is assumed that Ss judge the familiarity of learning items
+  on an essentially continuous scale, but that decision criteria are
+  established which divide this scale into separate regions corresponding to
+  the states of the model. With the assumption of an underlying continuous
+  familiarity scale the learning model can account for confidence judgments
+  during recognition learning. Memory-operating characteristics derived from
+  the model were found to be in general agreement with experimental data. The
+  learning, forgetting, and decision assumptions of the model were discussed
+  with respect to relevant empirical evidence.%
+    }
+    \field{number}{6}
+    \field{pages}{496\bibrangedash 504}
+    \field{title}{Memory and Decision Aspects of Recognition Learning}
+    \field{volume}{74}
+    \field{journaltitle}{Psychological Review}
+    \field{year}{1967}
+  \endentry
+
+  \entry{KintschCarlson1967}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KW}{%
+         family={Kintsch},
+         familyi={K\bibinitperiod},
+         given={Walter},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=CWJ}{%
+         family={Carlson},
+         familyi={C\bibinitperiod},
+         given={Warren\bibnamedelima J.},
+         giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KWCWJ1}
+    \strng{fullhash}{KWCWJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1965}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{abstract}{%
+    Four Ss learned to recognize 30 lists of paired associates. Confidence
+  judgments were obtained with all responses. The learning data were in
+  agreement with a Markov model which requires a constant error probability in
+  the initial state. The The confidence judgments were used to construct
+  memory-operating characteristics. The MOC based upon all scores of the first
+  test trial is smooth and symmetric and indicates good discrimination. MOCs
+  were also constructed from scores of the first test trial which were followed
+  by an error on some later trial, and from all scores before the last error.
+  These two MOCs overlapped and were in between the MOC based upon all
+  first-trial scores and the chance line. It is concluded that on trials before
+  the last error Ss possess some information about the learning material but
+  that the amount of information does not increase during those trials.%
+    }
+    \field{number}{6}
+    \field{pages}{891\bibrangedash 896}
+    \field{title}{Changes in the Memory Operating Characteristic during
+  Recognition Learning}
+    \field{volume}{6}
+    \field{journaltitle}{Journal of Verbal Learning and Verbal Behavior}
+    \field{year}{1965}
+  \endentry
+
+  \entry{Kucera1967}{book}{}
+    \name{author}{2}{}{%
+      {{hash=KH}{%
+         family={Kučera},
+         familyi={K\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=FWN}{%
+         family={Francis},
+         familyi={F\bibinitperiod},
+         given={&\bibnamedelima W.\bibnamedelima N.},
+         giveni={\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim
+  N\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {"Dartmouth Publishing Group"}%
+    }
+    \strng{namehash}{KHFWN1}
+    \strng{fullhash}{KHFWN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1967}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{title}{"Computational analysis of present-day American English"}
+    \field{year}{1967}
+  \endentry
+
+  \entry{PAPIME}{online}{}
+    \name{author}{1}{}{%
+      {{hash=LPPP}{%
+         family={Laboratorio\bibnamedelima 25},
+         familyi={L\bibinitperiod\bibinitdelim \bibinitperiod},
+         given={Proyecto PAPIME\bibnamedelima PE310016},
+         giveni={P\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim
+  P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LPPP1}
+    \strng{fullhash}{LPPP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016-2017}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{title}{Desarrollo de herramientas virtuales para la enseñanza de
+  ciencias cognitivas y del comportamiento}
+    \verb{url}
+    \verb https://github.com/Lab25UNAM/PAPIME2016
+    \endverb
+    \field{year}{2016-2017}
+  \endentry
+
+  \entry{Lee2011}{article}{}
+    \name{author}{1}{}{%
+      {{hash=LMD}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Michael\bibnamedelima D.},
+         giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LMD1}
+    \strng{fullhash}{LMD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2011}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{abstract}{%
+    Hierarchical Bayesian modeling provides a flexible and interpretable way of
+  extending simple models of cognitive processes. To introduce this special
+  issue, we discuss four of the most important potential hierarchical Bayesian
+  contributions. The first involves the development of more complete theories,
+  including accounting for variation coming from sources like individual
+  differences in cognition. The second involves the capability to account for
+  observed behavior in terms of the combination of multiple different cognitive
+  processes. The third involves using a few key psychological variables to
+  explain behavior on a wide range of cognitive tasks. The fourth involves the
+  conceptual unification and integration of disparate cognitive models. For all
+  of these potential contributions, we outline an appropriate general
+  hierarchical Bayesian modeling structure. We also highlight current models
+  that already use the hierarchical Bayesian approach, as well as identifying
+  research areas that could benefit from its adoption.%
+    }
+    \field{number}{1}
+    \field{pages}{1\bibrangedash 7}
+    \field{title}{How cognitive modeling can benefit from hierarchical Bayesian
+  models}
+    \field{volume}{55}
+    \field{journaltitle}{Journal of Mathematical Psychology}
+    \field{year}{2011}
+  \endentry
+
+  \entry{Lee2016}{unpublished}{}
+    \name{author}{1}{}{%
+      {{hash=LMD}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Michael\bibnamedelima D.},
+         giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LMD1}
+    \strng{fullhash}{LMD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{note}{unpublished chapter}
+    \field{title}{"Bayesian methods in cognitive modeling"}
+    \field{year}{2016}
+  \endentry
+
+  \entry{LeeBook}{book}{}
+    \name{author}{2}{}{%
+      {{hash=LMD}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Michael\bibnamedelima D.},
+         giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=WEJ}{%
+         family={Wagenmakers},
+         familyi={W\bibinitperiod},
+         given={Eric-Jan},
+         giveni={E\bibinitperiod-J\bibinitperiod},
+      }}%
+    }
+    \name{editor}{1}{}{%
+      {{hash=PCU}{%
+         family={Press"},
+         familyi={P\bibinitperiod},
+         given={"Cambridge\bibnamedelima University},
+         giveni={C\bibinitperiod\bibinitdelim U\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LMDWEJ1}
+    \strng{fullhash}{LMDWEJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2013}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{edition}{1st Edition}
+    \field{title}{"Bayesian Cognitive Modeling: A practical course"}
+    \field{year}{2013}
+  \endentry
+
+  \entry{Link1994}{article}{}
+    \name{author}{1}{}{%
+      {{hash=LSW}{%
+         family={Link},
+         familyi={L\bibinitperiod},
+         given={Stephen\bibnamedelima W.},
+         giveni={S\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LSW1}
+    \strng{fullhash}{LSW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1994}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{abstract}{%
+    The origins of experimental psychology are found in the theory of
+  discrimination created by Gustav Fechner. The theory advanced by Fechner was
+  the first theory of mental judgment that applied the ideas of Gaussian error
+  to human disrimination. Despite its powerful theoretical and empirical
+  results, the theory vanished. LAter embellishments, such as the addition of
+  re´ponse bias found in signal detection theory, gave such theoreties new
+  life, but Fechner never received the credit due to the founder of
+  psychological detection theory.%
+    }
+    \field{number}{6}
+    \field{pages}{335\bibrangedash 340}
+    \field{title}{Rediscovering the past: Gustav Fechner and Signal Detection
+  Theory}
+    \field{volume}{5}
+    \field{journaltitle}{Psychological Science}
+    \field{year}{1994}
+  \endentry
+
+  \entry{Lockhart1970}{article}{}
+    \name{author}{2}{}{%
+      {{hash=LRS}{%
+         family={Lockhart},
+         familyi={L\bibinitperiod},
+         given={Robert\bibnamedelima S.},
+         giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=MBB}{%
+         family={Murdock},
+         familyi={M\bibinitperiod},
+         given={Bennet\bibnamedelima B.},
+         giveni={B\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LRSMBB1}
+    \strng{fullhash}{LRSMBB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1970}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{abstract}{%
+    The use of signal detection theory as a model of the decision process in
+  memory is discussed in terms of the problems of identification and testing.
+  Identification refers to the matching of elements of the formal theory with
+  constructs constituting a theory of memory. A number of issues are raised
+  concerning the identification of the sensory continuum, the decision axis,
+  and the distinction between signal and noise. The use of detection theory is
+  not a theoretically neutral method of dealing with response bias; the
+  validity of its use and the manner of its application depend heavily on
+  certain assumptions about the memory system. The form of the operating
+  characteristic can be used to test a number of these assumptions but such
+  tests are relatively insensitive. The use of detection theory in the analysis
+  of cued-recall data poses additional problems and is meaningful in the
+  context of some, but not all, theories of recall.%
+    }
+    \field{number}{2}
+    \field{pages}{100\bibrangedash 109}
+    \field{title}{Memory and the Theory of Signal Detection}
+    \field{volume}{74}
+    \field{journaltitle}{Psychological Bulletin}
+    \field{year}{1970}
+  \endentry
+
+  \entry{WeijiMa2009}{article}{}
+    \name{author}{1}{}{%
+      {{hash=MWJ}{%
+         family={Ma},
+         familyi={M\bibinitperiod},
+         given={Wei\bibnamedelima Ji},
+         giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MWJ1}
+    \strng{fullhash}{MWJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2010}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    The juxtaposition of established signal detection theory models of
+  perception and more recent claims about the encoding of uncertainty in
+  perception is a rich source of confusion. Are the latter simpy a rehash of
+  the former? Here, we make ana ttempt to distinguish precisely between optimal
+  and probabilistic computation. In optimal computation, the observer minimizes
+  the expected cost under a posterior probability distribution. In
+  probabilistic computation, the observer uses higher moments of the likelihood
+  functon of the stimulus on a tria-by-trial basis. Computation can be optimal
+  without being probabilistic and vice-versa. Most signal detection theory
+  models describe optimal computation. Behavioral data only provide evidence
+  for a neural representation of uncertaity if they are best described by a
+  model of probabilistic computation. We argue that single-neuron activity
+  sometimes suffices for optimal computation, but never for probabilistic
+  computation. A population code is needed instead. Not every population code
+  is equally suitable, because nusance parameters have to be marginalized out.
+  This problem is solved by Poisson-like, but not by Gaussian bariability.
+  Finally we build a dictionary between signal detection theory quantities and
+  Poisson.like population quantities.%
+    }
+    \field{pages}{2308\bibrangedash 2319}
+    \field{title}{Signal detection theory, uncertainty, and Poisson-like
+  population codes}
+    \field{volume}{50}
+    \field{journaltitle}{Vision Research}
+    \field{month}{10}
+    \field{year}{2010}
+  \endentry
+
+  \entry{WeijiMa2012}{article}{}
+    \name{author}{1}{}{%
+      {{hash=MWJ}{%
+         family={Ma},
+         familyi={M\bibinitperiod},
+         given={Wei\bibnamedelima Ji},
+         giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MWJ1}
+    \strng{fullhash}{MWJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2012}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    Probability has played a central role in models of perception for more than
+  a century, but a look at probabilistic concepts in the literature raises many
+  questions. Is being Bayesian the same as being optimal? Are recent Bayesian
+  models fundamentally different from classic signal detection theory models?
+  Do findings of nearoptimal inference provide evidence that neurons compute
+  with probability distributions? This review aims to disentangle these
+  concepts and to classify empirical evidence accordingly%
+    }
+    \field{number}{10}
+    \field{pages}{511\bibrangedash 515}
+    \field{title}{Organizing probabilistic models of perception}
+    \field{volume}{16}
+    \field{journaltitle}{Cell Press}
+    \field{year}{2012}
+  \endentry
+
+  \entry{WeijiMa}{unpublished}{}
+    \name{author}{3}{}{%
+      {{hash=MWJ}{%
+         family={Ma},
+         familyi={M\bibinitperiod},
+         given={Wei\bibnamedelima Ji},
+         giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=KK}{%
+         family={Kording},
+         familyi={K\bibinitperiod},
+         given={Konrad},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=GD}{%
+         family={Goldreich},
+         familyi={G\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MWJKKGD1}
+    \strng{fullhash}{MWJKKGD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2012}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{note}{Working paper}
+    \field{title}{"Bayesian modeling of perception"}
+    \field{year}{2012}
+  \endentry
+
+  \entry{Macmillan1996}{article}{}
+    \name{author}{2}{}{%
+      {{hash=MNA}{%
+         family={Macmillan},
+         familyi={M\bibinitperiod},
+         given={Neil\bibnamedelima A.},
+         giveni={N\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=CCD}{%
+         family={Creelman},
+         familyi={C\bibinitperiod},
+         given={C.\bibnamedelima Douglas},
+         giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MNACCD1}
+    \strng{fullhash}{MNACCD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1996}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    Can accuracy and response bias in two-stimulus, two-response recognition or
+  detection experiments be measured nonparametrically? Pollack and Norman
+  (1964) answered this question affirmatively for sensitivity, Hodos (1970) for
+  bias: Both proposed measures based on triangular areas in receiver-operating
+  characteristic space. Their papers, and especially a paper by Grier (1971)
+  that provided computing formulas for the measures, continue to be heavily
+  cited in a wide range of content areas. In our sample of articles, most
+  authors described triangle-based measures as making fewer assumptions than
+  measures associated with detection theory. However, we show that statistics
+  based on products or ratios of right triangle areas, including recently
+  proposed bias index and not-yet-proposed but apparently plausible sensitivity
+  index, are consistent with a decision process based on logistic
+  distributions. Even the Pollack and Norman measure, which is based on
+  non-right triangles, is approximately logistic for low values of sensitivity.
+  Simple geometric models for sensitivity and bias are not nonparametric, even
+  if their implications are not acknowledged in the defining publications%
+    }
+    \field{number}{2}
+    \field{pages}{164\bibrangedash 170}
+    \field{title}{Triangles in ROC space: History and theory of "nonparametric"
+  measures of sensitivity and response bias}
+    \field{volume}{3}
+    \field{journaltitle}{Psychonomic: Bulletin & Review}
+    \field{year}{1996}
+  \endentry
+
+  \entry{Marks1964}{article}{}
+    \name{author}{2}{}{%
+      {{hash=MLE}{%
+         family={Marks},
+         familyi={M\bibinitperiod},
+         given={Lawrence\bibnamedelima E.},
+         giveni={L\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=MGA}{%
+         family={Miller},
+         familyi={M\bibinitperiod},
+         given={George\bibnamedelima A.},
+         giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MLEMGA1}
+    \strng{fullhash}{MLEMGA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1964}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    No Abstract%
+    }
+    \field{number}{1}
+    \field{pages}{1\bibrangedash 5}
+    \field{title}{The Role of Semantic and Syntactic Constraints in the
+  Memorization of English Sentences}
+    \field{volume}{3}
+    \field{journaltitle}{Journal of Verbal Learning and Verbal Behavior}
+    \field{year}{1964}
+  \endentry
+
+  \entry{Massaro1971}{article}{}
+    \name{author}{2}{}{%
+      {{hash=MDW}{%
+         family={Massaro},
+         familyi={M\bibinitperiod},
+         given={Dominic\bibnamedelima W.},
+         giveni={D\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=ANH}{%
+         family={Anderson},
+         familyi={A\bibinitperiod},
+         given={Norman\bibnamedelima H.},
+         giveni={N\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MDWANH1}
+    \strng{fullhash}{MDWANH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1971}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    Two experiments stuied the Ebbinghaus illusion as a function of four
+  stimulus variables: the size of the context circles, the number of context
+  circles, the distance between the context circles and the center circle, and
+  the size of the center circle. The results provided a quantitative test of a
+  judgmental moel that considers the Ebbinghaus illusion to be comparative in
+  nature. The context circles, then, serve as standards or yardsticks, and the
+  center circle is judged partly relative to them. The model provided a
+  reasonably good description of the magnitude of the illusion as a function of
+  the several stimulus variables%
+    }
+    \field{number}{1}
+    \field{pages}{147\bibrangedash 151}
+    \field{title}{Judgmental Model of the Ebbinghaus Illusion}
+    \field{volume}{89}
+    \field{journaltitle}{Journal of Experimental Psychology}
+    \field{year}{1971}
+  \endentry
+
+  \entry{McNicol5}{incollection}{}
+    \name{author}{1}{}{%
+      {{hash=MD}{%
+         family={McNicol},
+         familyi={M\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {"Oxford University Press"}%
+    }
+    \strng{namehash}{MD1}
+    \strng{fullhash}{MD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2005}
+    \field{extrayear}{1}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{booktitle}{"A Primer of Signal Detection Theory"}
+    \field{chapter}{5}
+    \field{pages}{"99\bibrangedash 130"}
+    \field{title}{Conducting a Rating Scale Experiment}
+    \list{location}{1}{%
+      {"Oxford"}%
+    }
+    \field{year}{2005}
+  \endentry
+
+  \entry{McNicol2}{incollection}{}
+    \name{author}{1}{}{%
+      {{hash=MD}{%
+         family={McNicol},
+         familyi={M\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {"Oxford University Press"}%
+    }
+    \strng{namehash}{MD1}
+    \strng{fullhash}{MD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2005}
+    \field{extrayear}{2}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{booktitle}{"A Primer of Signal Detection Theory"}
+    \field{chapter}{2}
+    \field{pages}{"18\bibrangedash 49"}
+    \field{title}{Non-parametric measures of sensitivity}
+    \list{location}{1}{%
+      {"Oxford"}%
+    }
+    \field{year}{2005}
+  \endentry
+
+  \entry{McNicol1}{incollection}{}
+    \name{author}{1}{}{%
+      {{hash=MD}{%
+         family={McNicol},
+         familyi={M\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {"Oxford University Press"}%
+    }
+    \strng{namehash}{MD1}
+    \strng{fullhash}{MD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2005}
+    \field{extrayear}{3}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{booktitle}{"A Primer of Signal Detection Theory"}
+    \field{chapter}{1}
+    \field{pages}{"1\bibrangedash 17"}
+    \field{title}{"What are statistical decisions?"}
+    \list{location}{1}{%
+      {"Oxford"}%
+    }
+    \field{year}{2005}
+  \endentry
+
+  \entry{Murdock1965}{article}{}
+    \name{author}{1}{}{%
+      {{hash=MBB}{%
+         family={Murdock},
+         familyi={M\bibinitperiod},
+         given={Bennet\bibnamedelima B.},
+         giveni={B\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MBB1}
+    \strng{fullhash}{MBB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1965}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    This study attempted to apply signal-detection theory to short-term memory
+  by testing the high-threshold concept of associative strength. On each trial
+  a list of 6 A-B pairs was presented once, then 1 of these 6 pairs was tested
+  for recognition. On the recognition test either A-B (a proper pair) or A-X
+  (an improper pair) was presented; S had to make a binary (yes-no) decision
+  plus a confidence rating. From these data ROC curves were plotted, and they
+  resembled the curvilinear functions of signal-detection theory more than the
+  linear function required by the high-threshold concept. These results call
+  into question the use of a high-threshold concept to explain findings from
+  studies of 1-trial learning.%
+    }
+    \field{number}{5}
+    \field{pages}{443\bibrangedash 447}
+    \field{title}{Signal-Detection Theory and Short-Term Memory}
+    \field{volume}{70}
+    \field{journaltitle}{Journal of Experimental Psychology}
+    \field{year}{1965}
+  \endentry
+
+  \entry{Murdock1982}{article}{}
+    \name{author}{1}{}{%
+      {{hash=MBB}{%
+         family={Murdock},
+         familyi={M\bibinitperiod},
+         given={Bennet\bibnamedelima B.},
+         giveni={B\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MBB1}
+    \strng{fullhash}{MBB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1982}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    TA theory for the storage and retrieval of item and associative information
+  is presented. In the theory, items or events are represented as random
+  vectors. Convolution is used as the storage operation, and correlation is
+  used as the retrieval operation. A distributed-memory system is assumed; all
+  information is stored in a common memory vector. The theory applies to both
+  recognition and recall and covers both accuracy and latency. Noise in the
+  decision stag necessitates a two-criterion decision system, and over time the
+  criteria converge until a decision is reached. Performance is predicted from
+  the moments (expectation and variance) of the similarity distributions, and
+  these can be derived from the theory. Several alternative models with varying
+  degrees of distributed memory are considered, and expressions for
+  signal-to-noise ratio and relative efficiency are derived.%
+    }
+    \field{number}{6}
+    \field{pages}{609\bibrangedash 626}
+    \field{title}{A Theory for the Storage and Retrieval of Item and
+  Associative Information}
+    \field{volume}{89}
+    \field{journaltitle}{Psychological Review}
+    \field{year}{1982}
+  \endentry
+
+  \entry{Murdock1998}{article}{}
+    \name{author}{1}{}{%
+      {{hash=MBB}{%
+         family={Murdock},
+         familyi={M\bibinitperiod},
+         given={Bennet\bibnamedelima B.},
+         giveni={B\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MBB1}
+    \strng{fullhash}{MBB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1998}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    The mirror effect refers to findings from studies of recognition memory
+  consistent with the idea that the underlying "strength" distributions are
+  symmetric around their midpoint separating studied and nonstudied items.
+  Attention-likelihood theory assumes underlying binomial distributions of
+  marked features and claims that old-item differences result from differential
+  attention across conditions during study. The symmetry arises because
+  subjects use the likelihood ratio as the basis for decision. The author
+  analyzes the model and argues that one of the main criticisms (the complexity
+  of the likelihood-ratio decision rule) is unwarranted. A further analysis
+  shows that other distributions (the Poisson and the hypergeometric) can also
+  produce a mirror effect. Even with the binomial distribution, a variety of
+  parameter values can produce a mirror effect, and with the right combination
+  of parameter values, differential attention across conditions is not
+  necessary for a mirror effect to occur.%
+    }
+    \field{number}{2}
+    \field{pages}{524\bibrangedash 534}
+    \field{title}{The Mirror Effect and Attention-Likelihood Theory: A
+  reflective Analysis}
+    \field{volume}{24}
+    \field{journaltitle}{Journal of Experimental Psychology: Learning, Memory
+  and Cognition}
+    \field{year}{1998}
+  \endentry
+
+  \entry{Naliboff1981}{article}{}
+    \name{author}{2}{}{%
+      {{hash=NBD}{%
+         family={Naliboff},
+         familyi={N\bibinitperiod},
+         given={Bruce\bibnamedelima D.},
+         giveni={B\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=CMJ}{%
+         family={Cohen},
+         familyi={C\bibinitperiod},
+         given={Michael\bibnamedelima J.},
+         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{NBDCMJ1}
+    \strng{fullhash}{NBDCMJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1981}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{abstract}{%
+    Three distinct subject populations consisting of 15 chronic low back pain
+  patients, 11 chronic respiratory patients, and 11 nonpatient controls were
+  studied using a standard radiant heat signal detection methodology. Following
+  determination by ascending limits of each subject's stimulus detection and
+  faint pain thresholds, 26 randomized trials at each of five stimulus levels
+  were administered. Subjects rated each stimulus on a 6-point subjective
+  rating scale ranging from no pain to severe pain. Results indicated that the
+  chronic low back pain patients and chronic respiratory patients had higher
+  radiant heat pain thresholds than the controls, and the chronic low back pain
+  patients had a discrimination deficit for midly painful stimuli. These
+  results fit the predictions of an adaptation model of pain perception in
+  chronic pain patients as opposed to a hypochondriasis model%
+    }
+    \field{number}{3}
+    \field{pages}{271\bibrangedash 274}
+    \field{title}{Signal Detection and Threshold Measures for Chronic back pain
+  patients, chronic illness patients, and cohort controls to radiant heat
+  stimuli}
+    \field{volume}{90}
+    \field{journaltitle}{Journal of Abnormal Psychology}
+    \field{year}{1981}
+  \endentry
+
+  \entry{Nevin1969}{article}{}
+    \name{author}{1}{}{%
+      {{hash=NJA}{%
+         family={Nevin},
+         familyi={N\bibinitperiod},
+         given={John\bibnamedelima A.},
+         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{NJA1}
+    \strng{fullhash}{NJA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1969}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{abstract}{%
+    A review of Signal Detection Theory and Psychophysics in the Journal of the
+  Experimental Analysis of Behavior is justified by the growing interest in
+  signal detection among many psychologist concerned with operant behavior. The
+  nteractions of wavelngth discrimination and reinforcement (Boneau, Holland
+  and Baker, 1965) have been examined within a detection-theory framework
+  (Nevin,1965), and a full-blown decision theory of animal discrimination
+  performance has been published (Bonea and Cole, 1967). Blough (1967) has used
+  signal-detection analysis to present wavelength generalization gradients in a
+  novel way, and Rilling and Mc Diarmid (1969) and Stubbs (1968) have extended
+  this analysis to the study of response-produced and temporal stimuli. Most
+  recently, Blough (1969) has considered signal detection theory as an
+  alternative to traditional formulatios of stimulus generalization. A
+  knowledge of signal detection theory is therefore important for its relevance
+  to perant research as well as for its central position in sensory
+  psychology.%
+    }
+    \field{number}{3}
+    \field{pages}{475\bibrangedash 480}
+    \field{title}{Signal Detection Theory and Operant Behavior}
+    \field{volume}{12}
+    \field{journaltitle}{Journal of the Experimental Analysis of Behavior}
+    \field{month}{05}
+    \field{year}{1969}
+  \endentry
+
+  \entry{Noldy1990}{article}{}
+    \name{author}{3}{}{%
+      {{hash=NNE}{%
+         family={Noldy},
+         familyi={N\bibinitperiod},
+         given={Nancy\bibnamedelima E.},
+         giveni={N\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=SRM}{%
+         family={Stelmack},
+         familyi={S\bibinitperiod},
+         given={Robert\bibnamedelima M.},
+         giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=CKB}{%
+         family={Campbell},
+         familyi={C\bibinitperiod},
+         given={Kenneth\bibnamedelima B.},
+         giveni={K\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{NNESRMCKB1}
+    \strng{fullhash}{NNESRMCKB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1990}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{abstract}{%
+    Event-related potentials were recorded under conditions of intentional or
+  incidental learning of pictures and words, and during the subsequent
+  recognition memory test for these stimuli. Intentionally learned pictures
+  were remembered better than incidentally learned pictures and intentionally
+  learned words, which, in turn, were remembered better than incidentally
+  learned words. In comparison to pictures that were ignored, the pictures that
+  were attended were characterized by greater positive amplitude frontally at
+  250 ms and centro-parietally at 350 ms and by greater negativity at 450 ms at
+  parietal and occipital sites. There were no effects of attention on the
+  waveforms elicited by words. These results support the view that processing
+  becomes automatic for words, whereas the processing of pictures involves
+  additional effort or allocation of attentional resources. The N450 amplitude
+  was greater for words than for pictures during both acquisition (intentional
+  items) and recognition phases (hit and correct rejection categories for
+  intentional items, hit category for incidental items). Because pictures are
+  better remembered than words, the greater late positive wave (600 ms)
+  elicited by the pictures than the words during the acquisition phase is also
+  consistent with the association between P300 and better memory that has been
+  reported.%
+    }
+    \field{number}{4}
+    \field{pages}{417\bibrangedash 428}
+    \field{title}{Event-Related Potentials and Recognition Memory for Pictures
+  and Words: The Effects of Intentional and Incidental Learning}
+    \field{volume}{27}
+    \field{journaltitle}{Psychophysiology}
+    \field{year}{1990}
+  \endentry
+
+  \entry{Norman1965}{article}{}
+    \name{author}{2}{}{%
+      {{hash=NDA}{%
+         family={Norman},
+         familyi={N\bibinitperiod},
+         given={Donald\bibnamedelima A.},
+         giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=WWA}{%
+         family={Wickelgreen},
+         familyi={W\bibinitperiod},
+         given={Wayne\bibnamedelima A.},
+         giveni={W\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{NDAWWA1}
+    \strng{fullhash}{NDAWWA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1965}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{abstract}{%
+    The operating characteristic is used to examine the relation between the
+  recognition of a single item and the recognition of a pair of items. 29 Ss
+  listened to a sequence of S digits, then copied a sequence of 8 digits, and
+  then were given a test of recognition memory for i or 2 digits from the
+  original sequence. The operating characteristic for single digits is a smooth
+  function that is symmetrical about the major diagonal, whereas the curve for
+  pairs is highly asymmetrical. False-recognitionrates for test pairs
+  containing 1 digit from the original sequence are only slightly greater than
+  false-recognition rates for completely new pairs. Recognition of a pair does
+  not appear to result from independent recognition of each digit. A
+  mathematical model is developed in which the strength of the memory trace has
+  a continuous distribution which is incremented in a probabilistic fashion
+  upon presentation of an item or pair%
+    }
+    \field{number}{5}
+    \field{pages}{479\bibrangedash 489}
+    \field{title}{Short-term Recognition Memory for Single Digits and Pairs of
+  Digits}
+    \field{volume}{70}
+    \field{journaltitle}{Journal of Experimental Psychology}
+    \field{year}{1965}
+  \endentry
+
+  \entry{Nuechterlein1983}{article}{}
+    \name{author}{1}{}{%
+      {{hash=NKH}{%
+         family={Nuechterlein},
+         familyi={N\bibinitperiod},
+         given={Keith\bibnamedelima H.},
+         giveni={K\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{NKH1}
+    \strng{fullhash}{NKH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1983}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{abstract}{%
+    This research examined the possibility that a subgroup of offspring of
+  schizophrenic mothers would display a deficit in signal detection during
+  vigilance that might index vulnerability to adult schizophrenia. Children of
+  schizophrenetic mothers, children of mothers with nonpsychotic psychiatric
+  disorders falling outside the schizophrenia spechtrum and hyperactive
+  childreen were examined relative to groups of individually matched comparison
+  children and to a representatively stratified group of normal children.
+  Children of schizophrenic mothers showed lower mean perceptual sensitivity
+  than matched and stratified normal children and included an excessive number
+  of extremely poor scorers, which was determined by a factor score summarizing
+  performance across five continuous performance test (CPT) conditions. Neither
+  hildren of mothers with nonpsychotic disorders nor hyperactive children
+  displayed a significant deficit in perceptual sensitivity...%
+    }
+    \field{number}{1}
+    \field{pages}{4\bibrangedash 28}
+    \field{title}{Signal Detection in vigilance tasks and behavioral attributes
+  among offspring of schizophrenic mothers and among hyperactive children}
+    \field{volume}{92}
+    \field{journaltitle}{Journal of Abnormal Psychology}
+    \field{year}{1983}
+  \endentry
+
+  \entry{Parks1966}{article}{}
+    \name{author}{1}{}{%
+      {{hash=PTE}{%
+         family={Parks},
+         familyi={P\bibinitperiod},
+         given={Theodore\bibnamedelima E.},
+         giveni={T\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PTE1}
+    \strng{fullhash}{PTE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1966}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{abstract}{%
+    Psychophysical signal-detection theory is applied to recognition-memory
+  performance. Old items in the test list are considered to be analogous to
+  "signals" while new items are analogous to "noise only." The resulting
+  fundamental assumptions describe the covert responses which mediate
+  recognition-memory performance as varying continuously in strength. Covert
+  responses to both old and new items are normally distributed with the
+  distance between distributions representing learning and retention. The overt
+  response to an item depends on whether or not S's covert response exceeds an
+  arbitrary criterion. The available evidence suggests that S's criterion will
+  be set such that he will most probably choose a number of items approximately
+  equal to the number of old items in the test.%
+    }
+    \field{number}{1}
+    \field{pages}{44\bibrangedash 58}
+    \field{title}{Signal-detectability Theory of Recognition Memory
+  Performance}
+    \field{volume}{73}
+    \field{journaltitle}{Psychological Review}
+    \field{year}{1966}
+  \endentry
+
+  \entry{Pessoa2005}{article}{}
+    \name{author}{3}{}{%
+      {{hash=PL}{%
+         family={Pessoa},
+         familyi={P\bibinitperiod},
+         given={Luiz},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=JS}{%
+         family={Japee},
+         familyi={J\bibinitperiod},
+         given={Shruti},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=ULG}{%
+         family={Ungerleider},
+         familyi={U\bibinitperiod},
+         given={Leslie\bibnamedelima G.},
+         giveni={L\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PLJSULG1}
+    \strng{fullhash}{PLJSULG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2005}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{number}{2}
+    \field{pages}{243\bibrangedash 247}
+    \field{title}{Visual Awareness and the Detection of Ferful Faces}
+    \field{volume}{5}
+    \field{journaltitle}{Emotion}
+    \field{year}{2005}
+  \endentry
+
+  \entry{Peterson1954}{article}{}
+    \name{author}{3}{}{%
+      {{hash=PWW}{%
+         family={Peterson},
+         familyi={P\bibinitperiod},
+         given={W.\bibnamedelima W.},
+         giveni={W\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=BTG}{%
+         family={Birdsall},
+         familyi={B\bibinitperiod},
+         given={T.\bibnamedelima G.},
+         giveni={T\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=FWC}{%
+         family={Fox},
+         familyi={F\bibinitperiod},
+         given={W.\bibnamedelima C.},
+         giveni={W\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PWWBTGFWC1}
+    \strng{fullhash}{PWWBTGFWC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1954}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{number}{4}
+    \field{pages}{171\bibrangedash 212}
+    \field{title}{The theory of Signal Detectability}
+    \field{volume}{12}
+    \field{journaltitle}{IRE Trans. on Information Theory}
+    \field{year}{1954}
+  \endentry
+
+  \entry{Pollack1964a}{article}{}
+    \name{author}{2}{}{%
+      {{hash=PI}{%
+         family={Pollack},
+         familyi={P\bibinitperiod},
+         given={Irwin},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=NDA}{%
+         family={Norman},
+         familyi={N\bibinitperiod},
+         given={Donald\bibnamedelima A.},
+         giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PINDA1}
+    \strng{fullhash}{PINDA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1964}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{abstract}{%
+    A non-parametric method for evaluating the results of recognition memory
+  experiments and psychophysical detection experiments is presented. The method
+  is based upon an ordinal analysis of recognition performance, which
+  transforms the results of recognition tests into equivalent results for a
+  forced-choice experiment%
+    }
+    \field{pages}{125\bibrangedash 126}
+    \field{title}{A non-parametric analysis of recognition experiments}
+    \field{volume}{1}
+    \field{journaltitle}{Psychonomic Science}
+    \field{year}{1964}
+  \endentry
+
+  \entry{Pollack1964b}{article}{}
+    \name{author}{3}{}{%
+      {{hash=PI}{%
+         family={Pollack},
+         familyi={P\bibinitperiod},
+         given={Irwin},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=NDA}{%
+         family={Norman},
+         familyi={N\bibinitperiod},
+         given={Donald\bibnamedelima A.},
+         giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=GE}{%
+         family={Galanter},
+         familyi={G\bibinitperiod},
+         given={Eugene},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PINDAGE1}
+    \strng{fullhash}{PINDAGE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1964}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{abstract}{%
+    A method for efficient evaluation of the results of recognition memory
+  experiments is illustrated. The method is based upon the area under the
+  iso-mnemonic curve relating correct and incorrect acceptances obtained by
+  means ratings%
+    }
+    \field{pages}{327\bibrangedash 328}
+    \field{title}{An efficient non-parametric analysis of recognition
+  experiments}
+    \field{volume}{1}
+    \field{journaltitle}{Psychonomic Science}
+    \field{year}{1964}
+  \endentry
+
+  \entry{Pouget2013}{article}{}
+    \name{author}{4}{}{%
+      {{hash=PA}{%
+         family={Pouget},
+         familyi={P\bibinitperiod},
+         given={Alexandre},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=BJM}{%
+         family={Beck},
+         familyi={B\bibinitperiod},
+         given={Jeffrey\bibnamedelima M},
+         giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=MWJ}{%
+         family={Ma},
+         familyi={M\bibinitperiod},
+         given={Wei\bibnamedelima Ji},
+         giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=LPE}{%
+         family={Latham},
+         familyi={L\bibinitperiod},
+         given={Peter\bibnamedelima E.},
+         giveni={P\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PA+1}
+    \strng{fullhash}{PABJMMWJLPE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2013}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{abstract}{%
+    There is a strong behavioral and physiological evidence that the brain both
+  represents probability distributions and performs probabilistic inference.
+  Computational neuroscientist have started to shed light on how these
+  probabilistic representations and computations might be implemented in neural
+  circuits. One particularly appealing aspect of these theories ins their
+  generality; they can be used to model a wide range fo tasks, from sensory
+  processing to high-level cognition. To date, however, these theories have
+  only been applied to very simple tasks. Here we discuss the challenges that
+  will emerge as researchers start focusing their efforts on real-life
+  computations, with a focus on probabilistic learning, structural learning and
+  approximate inference.%
+    }
+    \field{number}{9}
+    \field{pages}{1170\bibrangedash 1177}
+    \field{title}{Probabilistic brain: Knowns and unknowns}
+    \field{volume}{16}
+    \field{journaltitle}{Nature neuroscience}
+    \field{year}{2013}
+  \endentry
+
+  \entry{Rao1984}{article}{}
+    \name{author}{2}{}{%
+      {{hash=RKV}{%
+         family={Rao},
+         familyi={R\bibinitperiod},
+         given={K.\bibnamedelima Venkata},
+         giveni={K\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+      {{hash=PRW}{%
+         family={Proctor},
+         familyi={P\bibinitperiod},
+         given={Robert\bibnamedelima W.},
+         giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RKVPRW1}
+    \strng{fullhash}{RKVPRW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1984}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{abstract}{%
+    Accuracy on recognition-memory tests has been found to be an inverted
+  U-shaped function of linguistic frequency. The present experiments were
+  designed to provide insight into the basis for this relationship. Experiment
+  1 demonstrated that the inverted U-shaped function is obtained not only when
+  a semantic orienting task (in this case, a lexical-decision task) is
+  performed during the study phase but also when either a syllable-counting
+  task is performed or nondirected study is allowed. The advantage for
+  low-frequency words relative to high-frequency words was greater with the
+  lexical-decision orienting task than with either of the other orienting
+  tasks. Experiment 2 used self-paced presentation to show that study time is a
+  monotonically decreasing function of linguistic frequency. Thus, recognition
+  for high-frequency words may suffer, in part, from less processing than that
+  performed for low-frequency words. The poor recognition accuracy for very
+  low-frequency words, however, apparently is not due to a deficient amount of
+  processing but rather to limitations in the effectiveness of the processing
+  that is performed.%
+    }
+    \field{number}{3}
+    \field{pages}{386\bibrangedash 394}
+    \field{title}{Study-Phase processing and the Word Frequency effect in
+  Recognition Memory}
+    \field{volume}{10}
+    \field{journaltitle}{Journal of Experimental Psychology: Learning, Memory
+  and Cognition}
+    \field{year}{1984}
+  \endentry
+
+  \entry{Ratcliff1992}{article}{}
+    \name{author}{3}{}{%
+      {{hash=RR}{%
+         family={Ratcliff},
+         familyi={R\bibinitperiod},
+         given={Roger},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=CF}{%
+         family={Ching-FanSheu},
+         familyi={C\bibinitperiod-F\bibinitperiod},
+      }}%
+      {{hash=GSD}{%
+         family={Gronlund},
+         familyi={G\bibinitperiod},
+         given={Scott\bibnamedelima D.},
+         giveni={S\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RRCFGSD1}
+    \strng{fullhash}{RRCFGSD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1992}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{abstract}{%
+    Global memory models are evaluated by using data from recognition memory
+  experiments. For recognition, each of the models gives a value of familiarity
+  as the output from matching a test item against memory. The experiments
+  provide ROC (receiver operating characteristic) curves that give information
+  about the standard deviations of familiarity values for old and new test
+  items in the models. The experimental results are consistent with normal
+  distributions of familiarity (a prediction of the models). However, the
+  results also show that the new-item familiarity standard deviation is about
+  0.8 that of the old-item familiarity standard deviation and independent of
+  the strength of the old items (under the assumption of normality). The models
+  are inconsistent with these results because they predict either nearly equal
+  old and new standard deviations or increasing values of old standard
+  deviation with strength. Thus, the data provide the basis for revision of
+  current models or development of new models.%
+    }
+    \field{number}{3}
+    \field{pages}{518\bibrangedash 535}
+    \field{title}{Testing Global Memory Models using ROC Curves}
+    \field{volume}{99}
+    \field{journaltitle}{Psychological Review}
+    \field{year}{1992}
+  \endentry
+
+  \entry{Ratcliff1994}{article}{}
+    \name{author}{3}{}{%
+      {{hash=RR}{%
+         family={Ratcliff},
+         familyi={R\bibinitperiod},
+         given={Roger},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=MG}{%
+         family={McKoon},
+         familyi={M\bibinitperiod},
+         given={Gail},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=TM}{%
+         family={Tindall},
+         familyi={T\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RRMGTM1}
+    \strng{fullhash}{RRMGTM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1994}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{abstract}{%
+    The experiments presented in this article examined the slope of the z-ROC
+  (receiver-operating characteristic) function for recognition memory. The
+  slope was examined as a function of strength and the variables study time,
+  list length, word frequency, and category membership. For normal
+  distributions of familiarity, the slope of the z-ROC is the ratio of the
+  new-item to old-item standard deviations. R. Ratcliff, C.-F. Sheu, and S. D.
+  Gronlund (1992) found that the slope was constant within standard error as a
+  function of strength of encoding, which is inconsistent with the predictions
+  of the global memory models. The results presented here extend this finding:
+  The slope was constant as a function of strength of encoding, list length,
+  and the number of related items from a category in the study list. Word
+  frequency did affect the slope, but within a frequency class the slope was
+  constant as a function of strength. The implications of these data for the
+  global memory models, the attention likelihood model, and variants of these
+  models are discussed.%
+    }
+    \field{number}{4}
+    \field{pages}{763\bibrangedash 785}
+    \field{title}{Empirical Generality of Data From Recognition Memory
+  Receiver-Operating Characteristic Functions and Implications for the Global
+  Memory Models}
+    \field{volume}{20}
+    \field{journaltitle}{Journal of Experimental Psychology: Learning, Memory
+  and Cognition}
+    \field{year}{1994}
+  \endentry
+
+  \entry{Roberts2005}{article}{}
+    \name{author}{3}{}{%
+      {{hash=RB}{%
+         family={Roberts},
+         familyi={R\bibinitperiod},
+         given={Brian},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=HMG}{%
+         family={Harris},
+         familyi={H\bibinitperiod},
+         given={Mike\bibnamedelima G.},
+         giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=YTA}{%
+         family={Yates},
+         familyi={Y\bibinitperiod},
+         given={Tim\bibnamedelima A},
+         giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RBHMGYTA1}
+    \strng{fullhash}{RBHMGYTA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2005}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{pages}{847\bibrangedash 856}
+    \field{title}{The roles of inducer size and distance in the Ebbinghaus
+  illusion (Titchener Circles)}
+    \field{volume}{34}
+    \field{journaltitle}{Perception}
+    \field{year}{2005}
+  \endentry
+
+  \entry{Rosenholtz2001}{article}{}
+    \name{author}{1}{}{%
+      {{hash=RR}{%
+         family={Rosenholtz},
+         familyi={R\bibinitperiod},
+         given={Ruth},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RR1}
+    \strng{fullhash}{RR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2001}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{number}{4}
+    \field{pages}{985\bibrangedash 999}
+    \field{title}{Visual search for Orientation Among Heterogeneous
+  Distractors: Experimental Results and Implications for Sigmal-Detection
+  Theory Models of Search}
+    \field{volume}{27}
+    \field{journaltitle}{Journal of Experimental Psychology: Human Perception
+  and Performance}
+    \field{year}{2001}
+  \endentry
+
+  \entry{Schulman1967}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SAI}{%
+         family={Schulman},
+         familyi={S\bibinitperiod},
+         given={Arthur\bibnamedelima I.},
+         giveni={A\bibinitperiod\bibinitdelim I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SAI1}
+    \strng{fullhash}{SAI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1967}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    Operating characteristics were used to assess the importance of
+  word-frequency and word-length in recognition memory. It was much easier for
+  Ss to distinguish between old and new rare words than between old and new
+  common words. Rare (but not common) words were easier to recognize when they
+  were polysyllabic than when they were not.%
+    }
+    \field{number}{4}
+    \field{pages}{211\bibrangedash 212}
+    \field{title}{Word length and rarity in recognition memory}
+    \field{volume}{9}
+    \field{journaltitle}{Psychonomic Science}
+    \field{year}{1967}
+  \endentry
+
+  \entry{Stainslaw1999}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SH}{%
+         family={Stainslaw},
+         familyi={S\bibinitperiod},
+         given={Harold},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=TN}{%
+         family={Todorov},
+         familyi={T\bibinitperiod},
+         given={Natasha},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SHTN1}
+    \strng{fullhash}{SHTN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1999}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    SDT may be applied to any area of psychology in which two different types
+  of stimuli must be discriminated. We describe several of these areas and the
+  advantages that can be realizad through the application of SDT. Three of the
+  most popular tasks used to study discriminability are then discussed,
+  together with the measures that SDT prescribers for quantifying performance
+  in these tasks. Mathematical formulae for the measures are presented, as are
+  methods for calculating the measures with lookup tables, computer software
+  specifically developed for SDT applications, and general purpose computer
+  software (including spreadsheets and statistical analysis software)%
+    }
+    \field{number}{1}
+    \field{pages}{137\bibrangedash 149}
+    \field{title}{Calculation of signal detection theory measures}
+    \field{volume}{31}
+    \field{journaltitle}{Behavior Research Methods, Instruments and Computers}
+    \field{year}{1999}
+  \endentry
+
+  \entry{Swets1986}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SJA}{%
+         family={Swets},
+         familyi={S\bibinitperiod},
+         given={J.\bibnamedelima A.},
+         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SJA1}
+    \strng{fullhash}{SJA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1986}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    Presents a sample of empirical relative operating characteristics (ROCs),
+  drawn both from discrimination tasks in experimental psychology and from
+  diagnostic tasks in several practical fields. These illustrative ROCs are
+  seen to be fitted well by a straight line, of varying slope, on a binormal
+  graph. The form of empirical ROCs is consistent with one version of the
+  variable-criterion model provided by signal detection theory and inconsistent
+  both with other versions of that model and with the main threshold models.
+  That form supports the use of certain indices of discrimination accuracy
+  derived from detection theory and substantiates the potential unreliability
+  of others of that heritage and, more importantly, the unreliability of the
+  several accuracy indices in common use that can be shown to imply one or
+  another threshold model. The preferred detection-theory indices of accuracy
+  are ones that accommodate the varying slope of empirical ROCs. These indices
+  are effectively independent of the decision criterion, which can be indexed
+  separately. Measuring both accuracy and the decision criterion appropriately
+  enables the delineation of the dependent variables affected by independent
+  variables in psychological studies and the assessment of the efficacy and
+  accuracy of diagnostic systems. (43 ref) (PsycINFO Database Record (c) 2016
+  APA, all rights reserved)%
+    }
+    \field{number}{2}
+    \field{pages}{181\bibrangedash 198}
+    \field{title}{Form of empirical ROCs in discrimination and diagnostic
+  tasks: Implications for theory and measurement of performance}
+    \field{volume}{99}
+    \field{journaltitle}{Psychological Bulletin}
+    \field{year}{1986}
+  \endentry
+
+  \entry{Swets1973}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SJA}{%
+         family={Swets},
+         familyi={S\bibinitperiod},
+         given={John\bibnamedelima A.},
+         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SJA2}
+    \strng{fullhash}{SJA2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1973}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    NA%
+    }
+    \field{pages}{990\bibrangedash 1000}
+    \field{title}{The Relative Operating Characterstic in Psychology}
+    \field{volume}{182}
+    \field{journaltitle}{Science}
+    \field{month}{12}
+    \field{year}{1973}
+  \endentry
+
+  \entry{Swets2000}{article}{}
+    \name{author}{3}{}{%
+      {{hash=SJA}{%
+         family={Swets},
+         familyi={S\bibinitperiod},
+         given={John\bibnamedelima A.},
+         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=DRM}{%
+         family={Dawes},
+         familyi={D\bibinitperiod},
+         given={Robyn\bibnamedelima M.},
+         giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=MJ}{%
+         family={Monahan},
+         familyi={M\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SJADRMMJ1}
+    \strng{fullhash}{SJADRMMJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2000}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    NA%
+    }
+    \field{number}{1}
+    \field{pages}{1\bibrangedash 26}
+    \field{title}{Psychological Science can improve diagnostic decisions}
+    \field{volume}{1}
+    \field{journaltitle}{Psychological science in the public interest}
+    \field{year}{2000}
+  \endentry
+
+  \entry{Swets1961}{article}{}
+    \name{author}{3}{}{%
+      {{hash=SJA}{%
+         family={Swets},
+         familyi={S\bibinitperiod},
+         given={John\bibnamedelima A.},
+         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=TWP}{%
+         family={Tanner},
+         familyi={T\bibinitperiod},
+         given={Wilson\bibnamedelima P.},
+         giveni={W\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=BTG}{%
+         family={Birdsall},
+         familyi={B\bibinitperiod},
+         given={Theodore\bibnamedelima G.},
+         giveni={T\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SJATWPBTG1}
+    \strng{fullhash}{SJATWPBTG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1961}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    NA%
+    }
+    \field{number}{5}
+    \field{pages}{301\bibrangedash 340}
+    \field{title}{Decision processes in perception}
+    \field{volume}{68}
+    \field{journaltitle}{Psychological Review}
+    \field{year}{1961}
+  \endentry
+
+  \entry{Tanner1954}{article}{}
+    \name{author}{2}{}{%
+      {{hash=TWP}{%
+         family={Tanner},
+         familyi={T\bibinitperiod},
+         given={Wilson\bibnamedelima P.},
+         giveni={W\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=SJA}{%
+         family={Swets},
+         familyi={S\bibinitperiod},
+         given={John\bibnamedelima A.},
+         giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TWPSJA1}
+    \strng{fullhash}{TWPSJA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1954}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{abstract}{%
+    NA%
+    }
+    \field{number}{6}
+    \field{pages}{401\bibrangedash 409}
+    \field{title}{A Decision-Making theory of visual detection}
+    \field{volume}{61}
+    \field{journaltitle}{Psychological Review}
+    \field{year}{1954}
+  \endentry
+
+  \entry{Verghese2001}{article}{}
+    \name{author}{1}{}{%
+      {{hash=VP}{%
+         family={Verghese},
+         familyi={V\bibinitperiod},
+         given={Preeti},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{VP1}
+    \strng{fullhash}{VP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2001}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \field{number}{3}
+    \field{pages}{523\bibrangedash 535}
+    \field{title}{Visual Search and Attention: A Signal Detection Theory
+  Approach}
+    \field{volume}{31}
+    \field{journaltitle}{Neuron}
+    \field{year}{2001}
+  \endentry
+
+  \entry{Wallis2007}{article}{}
+    \name{author}{2}{}{%
+      {{hash=WTSA}{%
+         family={Wallis},
+         familyi={W\bibinitperiod},
+         given={Thomas S.\bibnamedelima A.},
+         giveni={T\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim
+  A\bibinitperiod},
+      }}%
+      {{hash=HMS}{%
+         family={Horswill},
+         familyi={H\bibinitperiod},
+         given={Mark\bibnamedelima S.},
+         giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WTSAHMS1}
+    \strng{fullhash}{WTSAHMS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2007}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{pages}{1177\bibrangedash 1185}
+    \field{title}{Using fuzzy signal detection theory to determine why
+  experienced and trained drivers respond faster than novices in a hazard
+  perception test}
+    \field{volume}{39}
+    \field{journaltitle}{Accident Analysis and Prevention}
+    \field{year}{2007}
+  \endentry
+
+  \entry{Westermann2010}{article}{}
+    \name{author}{2}{}{%
+      {{hash=WS}{%
+         family={Westermann},
+         familyi={W\bibinitperiod},
+         given={Stefan},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=LTM}{%
+         family={Lincoln},
+         familyi={L\bibinitperiod},
+         given={Tania\bibnamedelima M.},
+         giveni={T\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WSLTM1}
+    \strng{fullhash}{WSLTM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2010}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{abstract}{%
+    A novel experimental paradigm for measuring state paranoia by means of
+  signal detection theory was evaluated. A liberal response bias, indicating
+  the tendency to recognize facial expressions as threatening was expected to
+  reflect paranoia. Against theoretical expectations, heightened paranoia
+  questionnaire scores were associated with a non-liberal bias, which was not
+  affected by negative emotion per se. However, subsequent analyses revealed
+  that, if anxious participants with heightened paranoia adopted a
+  comparatively ore liberal response bias. These findings corroborate the
+  eminent role of anxiety in paranoia and demonstrate that state paranoia can
+  be captured with the present paradigm%
+    }
+    \field{pages}{96\bibrangedash 101}
+    \field{title}{Using signal detection theory to test the impact of negative
+  emotion on sub-clinical paranoia}
+    \field{journaltitle}{Journal of Behavior Therapy and Experimental
+  Psychiatry}
+    \field{year}{2010}
+  \endentry
+
+  \entry{White1999}{article}{}
+    \name{author}{2}{}{%
+      {{hash=WKG}{%
+         family={White},
+         familyi={W\bibinitperiod},
+         given={K.\bibnamedelima Geoffrey},
+         giveni={K\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=WJT}{%
+         family={Wixted},
+         familyi={W\bibinitperiod},
+         given={John\bibnamedelima T.},
+         giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WKGWJT1}
+    \strng{fullhash}{WKGWJT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1999}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{abstract}{%
+    We present a new model of remembering in the context of conditional
+  discrimination. For procedures such as delayed matching to sample, the effect
+  of the sample stimuli at the time of remembering is represented by a pair of
+  Thurstonian (normal) distributions of effective stimulus values. The critical
+  assumption of the model is that, based on prior experience, each effective
+  stimulus value is associated with a ratio of reinforcers obtained for
+  previous correct choices of the comparison stimuli. That ratio determines the
+  choice that is made on the basis of the matching law. The standard deviations
+  of the distributions are assumed to increase with increasing
+  retention-interval duration, and the distance between their means is assumed
+  to be a function of other factors that influence overall difficulty of the
+  discrimination. It is a behavioral model in that choice is determined by its
+  reinforcement history. The model predicts that the biasing effects of the
+  reinforcer differential increase with decreasing discriminability and with
+  increasing retention-interval duration. Data from several conditions using a
+  delayed matching-to-sample procedure with pigeons support the predictions.%
+    }
+    \field{number}{1}
+    \field{pages}{91\bibrangedash 113}
+    \field{title}{Psychophysics of Remembering}
+    \field{volume}{71}
+    \field{journaltitle}{Journal of the Experimental Analysis of Behavior}
+    \field{year}{1999}
+  \endentry
+
+  \entry{Wickelgren1966_Solo}{article}{}
+    \name{author}{1}{}{%
+      {{hash=WWA}{%
+         family={Wickelgren},
+         familyi={W\bibinitperiod},
+         given={Wayne\bibnamedelima A.},
+         giveni={W\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WWA1}
+    \strng{fullhash}{WWA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1966}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{abstract}{%
+    Copying 12 letters produces more retroactive interference in recognition
+  memory for a single letter when the interference letters possess a vowel
+  sound in common with the letter to be remembered than when they do not.
+  Compared to interference lists that do not include the presented letter,
+  inclusion in the interference list of the letter to be remembered improves
+  recognition memory when the other interference letters have no vowel sound in
+  common with the letter to be remembered, but not otherwise. False recognition
+  rates are greater when the test letter contains a vowel sound in common with
+  the presented letter than when the vowel sounds of these two letters are
+  different. The findings are in complete accord with analogous findings for
+  short-term recall and indicate that short-term recognition memory uses the
+  same phonemic-associative memory system as short-term recall.%
+    }
+    \field{number}{1}
+    \field{pages}{55\bibrangedash 62}
+    \field{title}{Short-term recognition memory for single letters and phonemic
+  similarity of retroactive interference}
+    \field{volume}{18}
+    \field{journaltitle}{Quarterly Journal of Experimental Psychology}
+    \field{year}{1966}
+  \endentry
+
+  \entry{Wickelgren1966}{article}{}
+    \name{author}{2}{}{%
+      {{hash=WWA}{%
+         family={Wickelgren},
+         familyi={W\bibinitperiod},
+         given={Wayne\bibnamedelima A.},
+         giveni={W\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=NDA}{%
+         family={Norman},
+         familyi={N\bibinitperiod},
+         given={Donald\bibnamedelima A.},
+         giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WWANDA1}
+    \strng{fullhash}{WWANDA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1966}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{abstract}{%
+    A number of continuous strength models for memory are developed for and
+  tested by an experimental study of recognition memory for three-digit numbers
+  at all serial positions in lists of length two through seven. Empirical
+  estimates of trace strength in different conditions, independent of response
+  bias, are obtained by means of the operating characteristic. The principal
+  theoretical findings are: (a) strength in short-term memory (STM) appears to
+  decay exponentially with the number of subsequent items; (b) subjects report
+  that they recognize an item if and only if strength in memory exceeds a
+  criterion; (c) the first item of a list is remembered better than subsequent
+  items because it receives a greater increment in strength in STM upon
+  presentation, not because it decays more slowly in STM or because it acquires
+  some strength in a longterm memory.%
+    }
+    \field{number}{2}
+    \field{pages}{316\bibrangedash 347}
+    \field{title}{Strength Models and Serial Position in Short-Term Recognition
+  Memory}
+    \field{volume}{3}
+    \field{journaltitle}{Journal of Mathematical Psychology}
+    \field{year}{1966}
+  \endentry
+
+  \entry{Wixted1992}{article}{}
+    \name{author}{1}{}{%
+      {{hash=WJT}{%
+         family={Wixted},
+         familyi={W\bibinitperiod},
+         given={John\bibnamedelima T.},
+         giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WJT1}
+    \strng{fullhash}{WJT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1992}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{abstract}{%
+    The mirror effect refers to the common finding that hit and false alarm
+  rates on a recognition test are inversely related. The present research
+  investigated the generality of the mirror effect (to rare words) and tested
+  whether the effect might be grounded in accurate estimates of word
+  memorability. The first 2 experiments showed that although high- and
+  low-frequency words exhibit a mirror effect, rare words do not. Furthermore,
+  contrary' to expectations. Ss consistently (and mistakenly) predicted that
+  memorability was directly correlated with frequency of usage. These findings
+  weigh against the idea that the mirror effect arises because of a S's ability
+  to reject low-frequency lures on the grounds that such words would have been
+  remembered had they appeared previously. Instead, the rejection of lures from
+  different frequency categories may be determined by their semantic or
+  phonemic overlap with list targets, and an analysis along these lines may
+  help to explain why rare words constitute an exception to the otherwise
+  ubiquitous mirror effect.%
+    }
+    \field{number}{4}
+    \field{pages}{681\bibrangedash 690}
+    \field{title}{Subjective Memorability and the Mirror Effect}
+    \field{volume}{18}
+    \field{journaltitle}{Journal of Experimental Psychology: Learning, Memory
+  and Cognition}
+    \field{year}{1992}
+  \endentry
+
+  \entry{Wixted2007}{article}{}
+    \name{author}{1}{}{%
+      {{hash=WJT}{%
+         family={Wixted},
+         familyi={W\bibinitperiod},
+         given={John\bibnamedelima T.},
+         giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WJT1}
+    \strng{fullhash}{WJT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2007}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{abstract}{%
+    Two influential models of recognition memory, the unequal variance
+  signal-detection model and a dual-process threshold/detection model
+  accurately describe the receiver operating characteristic, but only the
+  latter model can provide estimates of recollection and familiarity. Such
+  estimates often accord with those provided by the remember-know procedure,
+  and both methods are now widely used in the neuroscience literature to
+  identify the brain correlates of recollection and familiarity. However, in
+  recent years, a substantial literature has accumulated directly contrasting
+  the signal-detection model against the threshold/Detection-model, and that
+  litrature is almost unanimous in its endorsement of signal detection theory.
+  A dual process version of signal detection theory implies that individual
+  recgnition decisions are not process pure, and it suggest new ways to
+  investigate the brain correlates of recognition memory.%
+    }
+    \field{number}{1}
+    \field{pages}{152\bibrangedash 176}
+    \field{title}{Dual-Process Theory and Signal-Detection Theory of
+  Recognition Memory}
+    \field{volume}{114}
+    \field{journaltitle}{Psychological Review}
+    \field{year}{2007}
+  \endentry
+
+  \entry{Wixted2014}{article}{}
+    \name{author}{2}{}{%
+      {{hash=WJT}{%
+         family={Wixted},
+         familyi={W\bibinitperiod},
+         given={John\bibnamedelima T.},
+         giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=ML}{%
+         family={Mickes},
+         familyi={M\bibinitperiod},
+         given={Laura},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WJTML1}
+    \strng{fullhash}{WJTML1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2014}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{number}{2}
+    \field{pages}{262\bibrangedash 276}
+    \field{title}{A Signal-Detection-Based Diagnostic-Feature-Detection Model
+  of Eyewitness Identification}
+    \field{volume}{121}
+    \field{journaltitle}{Psychological Review}
+    \field{year}{2014}
+  \endentry
+
+  \entry{Wixted2016}{article}{}
+    \name{author}{5}{}{%
+      {{hash=WJT}{%
+         family={Wixted},
+         familyi={W\bibinitperiod},
+         given={John\bibnamedelima T.},
+         giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=ML}{%
+         family={Mickes},
+         familyi={M\bibinitperiod},
+         given={Laura},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=DJC}{%
+         family={Dunn},
+         familyi={D\bibinitperiod},
+         given={John\bibnamedelima C.},
+         giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=CSE}{%
+         family={Clark},
+         familyi={C\bibinitperiod},
+         given={Steven\bibnamedelima E.},
+         giveni={S\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=WW}{%
+         family={Wells},
+         familyi={W\bibinitperiod},
+         given={William},
+         giveni={W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WJT+1}
+    \strng{fullhash}{WJTMLDJCCSEWW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{number}{2}
+    \field{pages}{304\bibrangedash 309}
+    \field{title}{Estimating the reliability of eyewitness identifications from
+  police lineups}
+    \field{volume}{113}
+    \field{journaltitle}{Proceedings of the National Academy of Sciences of the
+  United States of America}
+    \field{year}{2016}
+  \endentry
+
+  \entry{Yonelinas1996}{article}{}
+    \name{author}{5}{}{%
+      {{hash=YAP}{%
+         family={Yonelinas},
+         familyi={Y\bibinitperiod},
+         given={Andrew\bibnamedelima P.},
+         giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=DI}{%
+         family={Dobbins},
+         familyi={D\bibinitperiod},
+         given={Ian},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=SMD}{%
+         family={Szymanski},
+         familyi={S\bibinitperiod},
+         given={Michael\bibnamedelima D.},
+         giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=DHS}{%
+         family={Dhaliwal},
+         familyi={D\bibinitperiod},
+         given={Harpreet\bibnamedelima S.},
+         giveni={H\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=KL}{%
+         family={King},
+         familyi={K\bibinitperiod},
+         given={Ling},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{YAP+1}
+    \strng{fullhash}{YAPDISMDDHSKL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1996}
+    \field{sortinit}{Y}
+    \field{sortinithash}{Y}
+    \field{abstract}{%
+    Threshold- and signal-detection-based models have dominated theorizing
+  about recognition memory. Building upon these theoretical frameworks, we have
+  argued for a dualprocess model in which conscious recollection (a threshold
+  process) and familiarity (a signal-detection process) contribute to memory
+  performance. In the current paper we assessed several memory models by
+  examining the effects of levels of processing and the number of presentations
+  on recognition memory receiver operating characteristics (ROCs). In general,
+  when the ROCs were plotted in probability space they exhibited an inverted U
+  shape; however, when they were plotted in z space they exhibited a U shape.
+  An examination of the ROCs showed that the dual-process model could account
+  for the observed ROCs, but that models based solely on either threshold or
+  signal-detection processes failed to provide a sufficient account of the
+  data. Furthermore, an examination of subjects’ introspective reports using
+  the remember/know procedure showed that subjects were aware of recollection
+  and familiarity and were able to consistently report on their occurrence. The
+  remember/know data were used to accurately predict the shapes of the ROCs,
+  and estimates of recollection and familiarity derived from the ROC data
+  mirrored the subjective reports of these processes.%
+    }
+    \field{number}{4}
+    \field{pages}{418\bibrangedash 441}
+    \field{title}{Signal-Detection, Threshold, and Dual-Process Models of
+  Recognition Memory: ROCs and Conscious Recollection}
+    \field{volume}{5}
+    \field{journaltitle}{Consciousness and Cognition}
+    \field{year}{1996}
+  \endentry
+
+  \entry{VanZ2000}{article}{}
+    \name{author}{1}{}{%
+      {{hash=ZTV}{%
+         family={Zandt},
+         familyi={Z\bibinitperiod},
+         given={Trisha\bibnamedelima Van},
+         giveni={T\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ZTV1}
+    \strng{fullhash}{ZTV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2000}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{abstract}{%
+    Most models of recognition memory rely on a strength/familiarity-based
+  signal detection account that assumes that the processes giving rise to a
+  confidence judgment are the same as those giving rise to an old-new decision.
+  Confidence is assumed to be scaled directly from the perceived familiarity of
+  a probe. This assumption was tested in 2 experiments that examine the shape
+  of confidence-based z receiver operating characteristic (zROC) curves under
+  different levels of response bias induced by changing stimulus probabilities
+  (Experiment 1) and payoffs (Experiment 2). Changes in the shape of the zRQC
+  curves with bias indicate that confidence is not scaled directly from
+  perceived familiarity or likelihood. A model of information accumulation in
+  recognition memory is proposed that can account for the observed effects.%
+    }
+    \field{number}{3}
+    \field{pages}{582\bibrangedash 600}
+    \field{title}{ROC Curves and Confidence Judgments in Recognition Memory}
+    \field{volume}{26}
+    \field{journaltitle}{Journal of Experimental Psychology: Learning, Memory
+  and Cognition}
+    \field{year}{2000}
+  \endentry
+\endsortlist
+\endinput

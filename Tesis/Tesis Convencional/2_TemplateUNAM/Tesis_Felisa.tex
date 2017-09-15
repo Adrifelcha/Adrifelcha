@@ -1,0 +1,415 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Masters/Doctoral Thesis 
+% LaTeX Template
+% Version 2.4 (22/11/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Version 2.x major modifications by:
+% Vel (vel@latextemplates.com)
+%
+% This template is based on a template by:
+% Steve Gunn (http://users.ecs.soton.ac.uk/srg/softwaretools/document/templates/)
+% Sunil Patel (http://www.sunilpatel.co.uk/thesis-template/)
+%
+% Template license:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+12pt, % The default document font size, options: 10pt, 11pt, 12pt
+%oneside, % Two side (alternating margins) for binding by default, uncomment to switch to one side
+spanish, % ngerman for German
+singlespacing, % Single line spacing, alternatives: onehalfspacing or doublespacing
+%draft, % Uncomment to enable draft mode (no pictures, no links, overfull hboxes indicated)
+%nolistspacing, % If the document is onehalfspacing or doublespacing, uncomment this to set spacing in lists to single
+%liststotoc, % Uncomment to add the list of figures/tables/etc to the table of contents
+%toctotoc, % Uncomment to add the main table of contents to the table of contents
+%parskip, % Uncomment to add space between paragraphs
+%nohyperref, % Uncomment to not load the hyperref package
+headsepline, % Uncomment to get a line under the header
+%chapterinoneline, % Uncomment to place the chapter title next to the number on one line
+%consistentlayout, % Uncomment to change the layout of the declaration, abstract and acknowledgements pages to match the default layout
+]{MastersDoctoralThesis} % The class file specifying the document structure
+
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+\usepackage{graphics}
+\usepackage{utopia} % Use the Palatino font by default
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+%\usepackage{arial}
+\usepackage[backend=bibtex,style=authoryear,natbib=true]{biblatex} % Use the bibtex backend with the authoryear citation style (which resembles APA)
+%\usepackage[natbibapa]{apacite}
+%\bibliographystyle{apacite}
+
+\addbibresource{Bib_Adrifelcha.bib} % The filename of the bibliography
+
+%\usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
+
+%----------------------------------------------------------------------------------------
+%	MARGIN SETTINGS
+%----------------------------------------------------------------------------------------
+
+\geometry{
+	paper=a4paper, % Change to letterpaper for US letter
+	inner=2.5cm, % Inner margin
+	outer=3.8cm, % Outer margin
+	bindingoffset=.5cm, % Binding offset
+	top=1.5cm, % Top margin
+	bottom=1.5cm, % Bottom margin
+	%showframe, % Uncomment to show how the type block is set on the page
+}
+
+%----------------------------------------------------------------------------------------
+%	THESIS INFORMATION
+%----------------------------------------------------------------------------------------
+
+\thesistitle{Estudios con Detección de Señales} % Your thesis title, this is used in the title and abstract, print it elsewhere with \ttitle
+\supervisor{Dr. Arturo Bouzas Riaño}%\textsc{Bouzas}} % Your supervisor's name, this is used in the title page, print it elsewhere with \supname
+\examiner{Dr. Germán Palafox Palafox}%\textsc{Palafox}} % Your examiner's name, this is not currently used anywhere in the template, print it elsewhere with \examname
+\degree{Licenciatura en Psicología} % Your degree name, this is used in the title page and abstract, print it elsewhere with \degreename
+\author{Adriana Felisa Chávez De la Peña}%\textsc{Chávez De la Peña}} % Your name, this is used in the title page and abstract, print it elsewhere with \authorname
+\addresses{} % Your address, this is not currently used anywhere in the template, print it elsewhere with \addressname
+
+\subject{Psicología} % Your subject area, this is not currently used anywhere in the template, print it elsewhere with \subjectname
+\keywords{Teoría de Detección de Señales, Memoria de Reconocimiento, Efecto Espejo, Ilusiones Ópticas, Modelamiento Bayesiano} % Keywords for your thesis, this is not currently used anywhere in the template, print it elsewhere with \keywordnames
+\university{\href{http://www.university.com}{Universidad Nacional Autónoma de México}} % Your university's name and URL, this is used in the title page and abstract, print it elsewhere with \univname
+\department{\href{http://department.university.com}{Facultad de Psicología}} % Your department's name and URL, this is used in the title page and abstract, print it elsewhere with \deptname
+\group{\href{http://researchgroup.university.com}{Laboratorio de Comportamiento Adaptable}} % Your research group's name and URL, this is used in the title page, print it elsewhere with \groupname
+\faculty{\href{http://faculty.university.com}{Facultad de Psicología}} % Your faculty's name and URL, this is used in the title page and abstract, print it elsewhere with \facname
+
+\sinodalA{Sinodal 1}
+\sinodalB{Sinodal 2}
+\sinodalC{Sinodal 3}
+
+\city{Ciudad de México}
+\degreemonth{Septiembre}
+\degreeyear{2017}
+
+\proyectopapime{PAPIME PE310016}
+\proyectopapiit{PAPIIT IN307214}
+
+\AtBeginDocument{
+\hypersetup{pdftitle=\ttitle} % Set the PDF's title to your title
+\hypersetup{pdfauthor=\authorname} % Set the PDF's author to your name
+\hypersetup{pdfkeywords=\keywordnames} % Set the PDF's keywords to your keywords
+}
+
+\begin{document}
+
+\frontmatter % Use roman page numbering style (i, ii, iii, iv...) for the pre-content pages
+
+\pagestyle{plain} % Default to the plain heading style until the thesis style is called for the body content
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{titlepage}
+
+\begin{minipage}[c][9in][s]{1in}
+\centering
+\hspace*{-0.2in} \includegraphics[width=1.1in]{Escudo-UNAM}\\[10pt]
+\hskip 2pt\vrule width 2pt height 6.7in
+\hskip 1mm\vrule width 1pt height 6.7in\\[10pt]
+\hspace*{-0.2in} \includegraphics[width=1.2in]{PSI}
+\end{minipage}\hskip 10pt
+% Right layout - Titles
+\begin{minipage}[c][\textheight][s]{5.125in}
+\centering
+% University, institute, department and title
+{\Large\scshape\univname}
+\vspace{3mm}\hrule height2pt
+\vspace{1mm}\hrule height1pt
+\vspace{3mm}
+%\@ifundefined{\facname}{\relax}{{\large\scshape\facname}\\[3pt]}
+{\scshape\facname}\par
+% Title
+\vfill\vfill
+{\def\baselinestretch{1}\LARGE\scshape\ttitle\par}
+\vfill\vfill
+% Degree, author, supervisor and date
+\makebox[8cm][s]{\Huge T E S I S}\\[8pt]
+QUE PARA OBTENER EL GRADO DE:\\[8pt]
+{\scshape\degreename}\\[16pt]
+{\huge P  R  E  S  E  N  T  A:}\\[8pt]
+{\large {\scshape\authorname}}\par
+\vfill
+{\small DIRECTOR DE TESIS:\\{\scshape\supname}}\par
+\vfill
+{\small REVISOR:\\{\scshape\examname}}\par
+\vfill
+{\small SINODALES:\\{\scshape\SinodalA}}\\{\scshape\SinodalB}}\\{\scshape\SinodalC}}\par
+\vfill
+{\small Con el apoyo de:\\Proyecto {\scshape\PAPIIT} y \\Proyecto {\scshape\PAPIME}}\par
+\vfill
+%{\today}
+{\hspace*{0.2in}\scshape\city\hfill\today}
+\end{minipage}
+\end{titlepage}
+\begin{titlepage}
+\centering\large
+{\def\baselinestretch{1.2}\Large\bfseries\ttitle\par}\\
+\vspace{15mm}
+por\par
+\vspace{15mm}
+{\Large\authorname}
+\vspace{40mm}
+\par
+Tesis presentada para obtener la\par
+\vspace{15mm}
+\degreename\par
+\vspace{15mm}
+en la\par 
+\vspace{15mm}
+\facname
+\par
+\vspace{15mm}
+{\Large\scshape\univname}
+\vspace{30mm}
+\par
+\city, \today
+\end{titlepage}}
+
+
+
+%----------------------------------------------------------------------------------------
+%	DECLARATION PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{declaration}
+\addchaptertocentry{\authorshipname} % Add the declaration to the table of contents
+\noindent Yo, \authorname, declaro que la tesis aquí presentada bajo el título \enquote{\ttitle}, es de mi entera autoría. Aclarando que:\\
+
+\begin{itemize} 
+\item La presente tesis fue trabajada en el Laboratorio 25 de la Facultad de Psicología de la Universidad Nacional Autónoma de México, bajo la tutela del Dr. Arturo Bouzas Riaño. 
+\item Ningún dato aquí presentado ha sido utilizado con anterioridad para recibir un grado académico ni en ésta ni en ninguna otra Universidad. 
+\item Las ideas cuya autoría no me corresponde retomadas en el texto, están clara y adecuadamente señaladas. Toda cita se señala y vincula a la fuente de donde se obtuvo. Con excepción de dichos fragmentos citados, todo lo aquí escrito es enteramente mi responsabilidad, producto de mi trabajo. 
+\item Todas las figuras aquí presentadas fueron elaboradas en RStudio (lenguaje R) y Spyder (lenguaje Python) por la autora de la presente tesis, a menos que se señale lo contrario.
+\item He señalado y dado crédito a todas las posibles fuentes de apoyo consultadas (lenguajes de programación, códigos base y manuales varios).
+%\item Cualquier porción del trabajo aquí expuesto que se haya realizado en colaboración directa o indirecta con un tercero, es señalada y presentada con claridad.
+\item El presente proyecto de investigación fue realizado con el apoyo de PAPIIT IN307214 y PAPIME PE310016.\\
+\end{itemize}
+ 
+\noindent Firma:\\
+\rule[0.5em]{25em}{0.5pt} % This prints a line for the signature
+ 
+\noindent Fecha:\\
+\rule[0.5em]{25em}{0.5pt} % This prints a line to write the date
+\end{declaration}
+
+\cleardoublepage
+
+%----------------------------------------------------------------------------------------
+%	QUOTATION PAGE
+%----------------------------------------------------------------------------------------
+
+\vspace*{0.2\textheight}
+
+\noindent\enquote{\itshape Research is what I'm doing when I don't know what I'm doing.}\bigbreak
+
+%My experiences with science led me to God. They challenge science to prove the existence of God. But must we really light a candle to see the sun?
+%1972
+
+%Read more at: https://www.brainyquote.com/quotes/authors/s/steven_pinker_2.html
+\hfill Wernher von Braun, 1957.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+
+
+\hfill(Apparently, I've been doing research my whole life\ldots)
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{abstract}
+\addchaptertocentry{\abstractname} % Add the abstract to the table of contents
+
+En estudios de Memoria de Reconocimiento donde se ha aplicado la Teoría de Detección de Señales para comparar el desempeño de los participantes entre clases de estímulos que se distinguen por la presición con que sus elementos se reconocen al ser presentados más de una vez -habiendo una clase que se reconoce con mayor facilidad (\textit{A}) que en la otra (\textit{B})-, se ha encontrado evidencia consistente de que dicha discrepancia se refleja simultáneamente en el número de Hits y Falsas Alarmas cometidas en cada una -$F.Alarmas(A) < F.Alarmas (B) < Hits(B) < Hits(A)$ - un patrón que sería identificado en la literatura como Efecto Espejo. Sin embargo, la extensión de este patrón a otras áreas no ha sido explorada todavía y su estudio e interpretación se ha restringido al dominio específico de las tareas de reconocimiento. En el presente trabajo se muestra evidencia del Efecto Espejo en una tarea de detección perceptual que incluye protocolos de respuesta binaria y de escala de confianza, donde los niveles de discriminabilidad a comparar fueron construidos con base en lo que se sabe sobre la Ilusión de Ebbinghaus. Los resultados obtenidos fueron evaluados tanto a partir de la replicación del análisis clásico (pruebas t y ANOVAS), como con la construcción de Modelos Bayesianos.\\
+
+\end{abstract}
+
+%\ldots
+%----------------------------------------------------------------------------------------
+%	ACKNOWLEDGEMENTS
+%----------------------------------------------------------------------------------------
+
+\begin{acknowledgements}
+\addchaptertocentry{\acknowledgementname} % Add the acknowledgements to the table of contents
+
+1. A mi familia\\
+
+%Las primeras personas en quienes pienso al leer la palabra \textit{Agradecimiento} son mis padres, Sandra Amada De la Peña Cortina y David Chávez Granados, ¡a ustedes les debo cuanto soy y tengo! Mamá, gracias por enseñarme a no conformarme nunca y a dar siempre un poquito más, porque sé que -aunque no siempre te lo diga- es gracias a ti que estoy donde estoy. Papá, ¡gracias por ser mi Superman!, gracias por siempre confiar en mí y por el eterno apoyo que me has dado... gracias infinitas por ser el mejor hombre que existe en la Tierra.\\
+
+%Gracias a mi hermana Angélica -¡'la Enana'!- por ser la mejor compañera de aventuras, cómplice y confidente que pude haber deseado desde su llegada al mundo. La vida sería una carga mucho más pesada sino tuviera a la enana pegada a su computadora esperando en nuestro cuarto, dispuesta a escuchar las patoaventuras y dilemas existenciales de su hermana mayor. ¡Te amo, enana!\\
+
+%Y gracias a Juan Pablo Aguayo Chávez -¡JUANCHO!- por ser mi hermano mayor... (\textit{Quiere una copia de la tesis y no le he escrito nada!})\\
+%%%%%%Gracias a la familia que me ha acompañado siempre. Gracias a mis abuelitos Lupe y Juan que siempre han estado al pendiente de a su nieta más distante; a mis padrinos, Grisel y Tomás, por cada muestra de amor y apoyo que me han obsequiado; a mis 'hermanos', JuanMa y Moni, que pese a la distancia y la brecha generacional me han hecho sentir su apoyo y cariño incondicional; a mi primo-hermano (literalmente) Juancho, con quien crecí y quien año con año cuando me hace admirarlo más cuando lo veo realizar sus sueños y proyectos; y a Peter por ser siempre un ejemplo a seguir, el hermano mayor que siempre quise tener.\\ 
+
+2. A Jaime\\
+
+%Muchísimas gracias a Jaime Osvaldo Islas Farias -mi amor, mi vida, mi compañero de equipo- por todo, absolutamente todo lo que hemos compartido. Las palabras que vienen a mi mente para expresar cuán en deuda estoy con la vida por permitirnos encontrarnos no hacen justicia a la emoción que siento, aún después de cuatro años juntos, cada vez que tomo tu mano.\\
+
+%Jaime, eres ante todo, mi compañero de vida. De todas las personas con quienes me he cruzado en esta vida eres a quien más admiro, mi mejor amigo, el colega más nutritivo, el desconocido más intrigante. En cuantas vidas viva, en todas te amaré.\\
+
+3. Al Lab25\\
+
+%Gracias a Manuel Villareal, José Luis Baroja y Melisa Chávez, por todo su apoyo. Gracias a Elena Villalobos e Itzel Laurel,\\  
+
+%En general, gracias a todo el Lab25-crew: Victoria Torres, Alfonso Medina, Yuznhio Sierra, Paulina Eckerle, Karina Ruíz, Álvaro Zacarías, Ángel Garduño, Itzel Laurel, Carlos Velázquez, Mauricio Hernández, Stéphane Lejars y Diana Álvarez.\\
+
+%Y con especial énfasis, gracias a José Manuel Niño y Uriel O. González Bravo. Sabemos que sin ustedes habría terminado la tesis más rápido... pero también es cierto que sin ustedes, mi vida seguiría cayendo en picada. Pocos saben que contar con sus sonrisas y atenciones día con día realmente marcaron un 'Antes' y un 'Después' para mí. Gracias por todas sus porras y apoyo. Porque entre broma y broma, la verdad es que nadie sabe lo que este proceso ha sido para mí como ustedes dos. ¡Los quiero mucho, amiguitos!\\
+
+%AQUI VA EL PARRAFO SUPER VERGAS DE NIÑO (Es sorpresa!).\\
+
+%Niño, eres alguien a quien admiro mucho. Dices que no reconoces la palabra 'mi amigo', 'mi amiga' en tu vocabulario, y sin embargo, haz hecho por mí más que mucha gente a quien yo he asignado esa etiqueta.
+
+
+%Niño, muchísimas gracias por las 16 horas que invertiste siendo mi primer revisor "no-oficial". Gracias por ser mi terapeuta personal. Eres alguien a quien estimo muchísimo y de quien admiro a sobremanera su enorme capacidad para adaptarse a cualquier entorno. Gracias por ser mi amigo Wikipedia; porque no importa qué te cuente o sobre qué tenga dudas... siempre es algo que tú hiciste primero (winky face).\\
+
+4. A mis amigos\\
+
+%... A Beto por cuidarme de mi peor enemiga: yo misma, por iluminar mi camino y por siempre, siempre, tener un abrazo y una palabra de aliento listos para mí. \\
+
+%Gracias a Alejandro Vázquez Calderón -¡Conejo!- por ser el primero en creer en mí a lo largo de estos años, y más recientemente, por todas las tardes de café en que aguantaste mi parlanchinería y me permitiste desahogar mis conflictos existenciales; por demostrarme que cuando se quiere a alguien, se hace todo por estar ahí, no importa cómo; y sobretodo, porque no hay abrazos que me hagan sentir tanta paz y seguridad como los tuyos.\\
+
+%Gracias a Sol Fernández Rodríguez -Solesiwi-, por regresarle el sentido a la expresión 'mejor amiga'. Gracias por tu infinita paciencia y empatía; por esa don casi mágico que tienes para aterrizar mis pies en la tierra y traducir mis tormentos en soluciones concretas; .\\
+
+%Gracias a todos quienes de una u otra forma me acompañaron a lo largo de la carrera y a quienes les tocó verme vagar sin sentido durante la realización de la presente tesis. Gracias a Javier Alfaro Vega -Javs- por siempre, siempre, hacerse un tiempo para verme cuando más necesité a alguien que me escuchara; a Andrea Chávez -Andy- por ser el epítome de la honestidad y la bondad; a Brandon Carmona por ser mi amigo en esta y todas las vidas que he vivido; a Avinash Mercado por siempre tener algo nuevo, interesante (y random) que enseñarme; a Maximiliano Hinojosa -Max- por ser el ser más enigmático de la galaxia y aún así, ser amigo de una persona tan ordinaria como yo; a Martin Hernández por toda su paciencia a lo largo de estos años; y a Edgar Vázquez, un ser humano realmente increíble a quien admiro mucho y cuyos constantes logros me motivan a esforzarme siempre un poquitito más.\\
+
+5. A los honorables académicos e investigadores que me apoyaron como sinodales.\\
+
+%Gracias al Doctor Germán Palafox Palafox\\
+
+%Gracias al Doctor\\
+
+%Gracias al Doctor\\
+
+6. AL DOC!!!!!! :D :D :D :D .\\
+
+%Y sobre todo, "last but not least", agradezco infinitamente al Dr. Arturo Bouzas por brindarme la oportunidad de trabajar bajo su guía, por permitirme el honor de llamarme su estudiante y por todas las oportunidades de crecimiento que puso a mi alcance. Sé que el tema que decidí trabajar no es precisamente 'su mero mole' y sin embargo, siempre me dio libertad de trabajar en lo que a mí me gustaba. Por éso y por la confianza que depositó en mí al permitirme colaborar en los diversos proyectos del laboratorio, es que siempre será para mí EL 'Doc'.\\
+
+%\ldots
+\end{acknowledgements}
+
+%----------------------------------------------------------------------------------------
+%	LIST OF CONTENTS/FIGURES/TABLES PAGES
+%----------------------------------------------------------------------------------------
+
+\tableofcontents % Prints the main table of contents
+
+\listoffigures % Prints the list of figures
+
+\listoftables % Prints the list of tables
+
+%----------------------------------------------------------------------------------------
+%	ABBREVIATIONS
+%----------------------------------------------------------------------------------------
+
+\begin{abbreviations}{ll} % Include a list of abbreviations (a table of two columns)
+
+\textbf{AUC} & \textbf{A}rea-\textbf{U}nder (the) \textbf{C}urve\\
+\textbf{CDF} & \textbf{C}umulative \textbf{D}ensity \textbf{F}unction\\
+\textbf{CSV} & \textbf{C}omma \textbf{S}eparated \textbf{V}alues\\
+\textbf{JASP} & \textbf{J}effrey's \textbf{A}mazing \textbf{S}tatistics \textbf{P}rogran\\
+\textbf{SDT} & \textbf{S}ignal \textbf{D}etection \textbf{T}heory\\
+\textbf{ROC} & \textbf{R}eceiver-\textbf{O}perating \textbf{C}haracteristic curve\\
+\textbf{RT} & \textbf{R}esponse \textbf{T}ime\\
+\textbf{MOC} & \textbf{M}emory-\textbf{O}perating \textbf{C}haracteristic curve\\
+
+\end{abbreviations}
+
+%----------------------------------------------------------------------------------------
+%	PHYSICAL CONSTANTS/OTHER DEFINITIONS
+%----------------------------------------------------------------------------------------
+
+%\begin{constants}{lr@{${}={}$}l} % The list of physical constants is a three column table
+
+% The \SI{}{} command is provided by the siunitx package, see its documentation for instructions on how to use it
+
+%Speed of Light & $c_{0}$ & \SI{2.99792458e8}{\meter\per\second} (exact)\\
+%Constant Name & $Symbol$ & $Constant Value$ with units\\
+
+%\end{constants}
+
+%----------------------------------------------------------------------------------------
+%	SYMBOLS
+%----------------------------------------------------------------------------------------
+
+%\begin{symbols}{lll} % Include a list of Symbols (a three column table)
+
+%$a$ & distance & \si{\meter} \\
+%$P$ & power & \si{\watt} (\si{\joule\per\second}) \\
+%Symbol & Name & Unit \\
+
+%\addlinespace % Gap to separate the Roman symbols from the Greek
+
+%$\omega$ & angular frequency & \si{\radian} \\
+
+%\end{symbols}
+
+%----------------------------------------------------------------------------------------
+%	DEDICATION
+%----------------------------------------------------------------------------------------
+
+\dedicatory{En memoria de María Eugenia Leticia De la Peña Cortina\ldots} 
+
+
+%\vspace*{0.2\textheight}
+
+%\noindent\enquote{\itshape Arriésgate, equivócate, cáete... pero vive.}\bigbreak
+
+%\hfill Mi tía Letty, \\Mayo del 2009.
+
+
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - CHAPTERS
+%----------------------------------------------------------------------------------------
+
+\mainmatter % Begin numeric (1,2,3...) page numbering
+
+\pagestyle{thesis} % Return the page headers back to the "thesis" style
+
+% Include the chapters of the thesis as separate files from the Chapters folder
+% Uncomment the lines as you write the chapters
+
+\include{Chapters/Cap_Intro}
+\include{Chapters/Cap_Marco} 
+\include{Chapters/Cap_Metodo} 
+\include{Chapters/Cap_Resultados} 
+\include{Chapters/Cap_Disc}
+\include{Chapters/Cap_Conclusion}
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - APPENDICES
+%----------------------------------------------------------------------------------------
+
+\appendix % Cue to tell LaTeX that the following "chapters" are Appendices
+
+% Include the appendices of the thesis as separate files from the Appendices folder
+% Uncomment the lines as you write the Appendices
+\include{Appendices/Felisa_Consentimiento}
+\include{Appendices/App_Inst}
+\include{Appendices/App_Registro}
+\include{Appendices/App_Data}
+%\include{Appendices/AppendixB}
+%\include{Appendices/AppendixC}
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+\printbibliography[heading=bibintoc]
+%\include{Bib_Adrifelcha.bib}
+
+%\bibliography{Bib_Adrifelcha}
+%----------------------------------------------------------------------------------------
+
+\end{document}  

@@ -1,0 +1,6 @@
+Para integrar la bibliografia
+
+pdflatex file-name.tex
+Bibtec file-name.aux
+pdflatex file-name.tex
+pdflatex file-name.tex
