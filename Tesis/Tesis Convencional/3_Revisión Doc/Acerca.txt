@@ -15,3 +15,4 @@ esta carpeta contiene una versión donde se modificó el siguiente contenido:
 1) Agradecimientos
 2) El formato de las figuras
 3) Incorpora las correcciones del doc
+4) Inclusion de phi inversa como metodo para estimar Z a partir de probabilidades
