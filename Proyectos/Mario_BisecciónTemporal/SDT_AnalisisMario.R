@@ -12,25 +12,36 @@
 
 
 #Cargamos los datos
-setwd("C:/Users/Adriana/Desktop/Felisa/Proyectos/Mario_BisecciónTemporal") # Directorio de trabajo
+setwd("C:/Users/Alejandro/Desktop/Felisa/Proyectos/Mario_BisecciónTemporal") # Directorio de trabajo
 rm(list=ls())  #Reseteamos la consola
 dir()          #Imprimimos los archivos del directorio     
-archive <-'Datos_Sujeto3'  # Archivo que contiene los datos a analizar
+archive <-'Datos_Sujeto3_Dummies.csv'  # Archivo que contiene los datos a analizar
 datos <- read.csv(archive)       # Extraemos los datos del archivo
 #Especificamos las variables
-Hit_rate <- datos$Hits    #Identificamos las columnas del archivo 'datos' a utilizar para el análisis
-FA_rate <- datos$FA       
-Signal <- 
-Noise <- 
+Sujeto <- datos$Sujeto
+Condicion <- datos$Grupo
+TipoSesion <- datos$Condicion
+Magnitudes <- c('1v4', '2v8', '3v12', '5v2')
+Dia<-datos$Día
+Hits <- datos$Corto_enCorto
+FA <- datos$Corto_enLargo
+CRej <- datos$Largo_enLargo
+Signal <- datos$EnsayosCortos #Deberia ser Hits+Misses
+Noise <- datos$EnsayosLargos
 
+Magnitudes <- unique(Condicion)
+
+FA_rate<-FA/Noise
+Hit_rate<-Hits/Signal
 
 ########################
 # Computo de parametros
 ########################
 
+#for(nce in sort(unique(Condicion))){
+
 #Dprima computada segun la formula presentada por Gesheider, (2013) y Stainslaw (1999)
 d<-qnorm(Hit_rate,0,1)-qnorm(FA_rate,0,1)
-
 
 #A-Dprima computada segun la formula de Stainslaw, (1999)
 
@@ -60,17 +71,21 @@ c<-k-(d/2)
 
 #################
 #Redondeamos los valores calculados a dos dígitos
-A_prima <- round(A,2)
-B_biprima <- round(B,2)
-Beta<-round(beta,2)
-D_prima <- round(d,2)
-Sesgo_C<-round(c,2)
-A_dprima <- round(Ad,2)
+A_prima <- round(A,3)
+B_biprima <- round(B,3)
+Beta<-round(beta,3)
+D_prima <- round(d,3)
+Sesgo_C<-round(c,3)
+A_dprima <- round(Ad,3)
+
+
 ################
 
 
 ################################
 #Imprimimos los valores computados
-valores<- data.frame(cbind(D_prima, A_dprima, A_prima, Beta, Sesgo_C, B_biprima))   #Acomodamos los valores en un arreglo
-print(valores)                                  #Mostramos el arreglo
+valores<- data.frame(cbind(Sujeto, Condicion, TipoSesion, Dia, D_prima, A_dprima, A_prima, Beta, Sesgo_C, B_biprima))   #Acomodamos los valores en un arreglo
+#Mostramos el arreglo
+print(valores)
+
 ################################
