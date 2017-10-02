@@ -6,13 +6,13 @@
 #Referencia 1: Stainslaw & Todorov (1999), Calculation of signal detection theory measures.
 #Referencia 2: Gescheider, George A. (2013). "Psychophysics: The Fundamentals". 
 # # # # # # # # 
-#Codigo hehco por: Adriana F. Chávez De la Peña
+#Codigo hecho por: Adriana F. Chávez De la Peña
 #Contacto: adrifelcha@gmail.com
 ##########################################################
 
 
 #Cargamos los datos
-setwd("C:/Users/Alejandro/Desktop/Felisa/Proyectos/Mario_BisecciónTemporal") # Directorio de trabajo
+setwd("C:/Users/Adriana/Desktop/Felisa/Proyectos/Mario_BisecciónTemporal") # Directorio de trabajo
 rm(list=ls())  #Reseteamos la consola
 dir()          #Imprimimos los archivos del directorio     
 archive <-'Datos_Sujeto3_Dummies.csv'  # Archivo que contiene los datos a analizar
@@ -30,18 +30,34 @@ Signal <- datos$EnsayosCortos #Deberia ser Hits+Misses
 Noise <- datos$EnsayosLargos
 
 Magnitudes <- unique(Condicion)
+d<- NULL
+Ad <- NULL
+A <- NULL
+k <- NULL
+B <- NULL 
+beta <- NULL
+c<- NULL
 
-FA_rate<-FA/Noise
-Hit_rate<-Hits/Signal
+
+if(FA==Noise){
+  FA_rate<-(FA-1)/Noise
+} else {
+  FA_rate<-FA/Noise
+}
+
+if(Hits==Signal){
+  Hit_rate<-(Hits-1)/Signal
+} else {
+  Hit_rate<-Hits/Signal
+}
+
 
 ########################
 # Computo de parametros
 ########################
 
-#for(nce in sort(unique(Condicion))){
-
 #Dprima computada segun la formula presentada por Gesheider, (2013) y Stainslaw (1999)
-d<-qnorm(Hit_rate,0,1)-qnorm(FA_rate,0,1)
+d<- qnorm(Hit_rate,0,1)-qnorm(FA_rate,0,1)
 
 #A-Dprima computada segun la formula de Stainslaw, (1999)
 
@@ -74,15 +90,23 @@ c<-k-(d/2)
 A_prima <- round(A,3)
 B_biprima <- round(B,3)
 Beta<-round(beta,3)
-D_prima <- round(d,3)
+D_prima <- round(d,2)
 Sesgo_C<-round(c,3)
 A_dprima <- round(Ad,3)
 
+for(a in sort(unique(datos$Sujeto))){
+  print('---------------------------------------------------')
+  print(c('Sujeto:', a))
+  print('---------------------------------------------------')
+  for(nce in sort(unique(Condicion))){
+    print(c('Magnitud:', nce,'=============='))
+    valores<- data.frame(cbind(TipoSesion[Condicion==nce], D_prima[Condicion==nce], A_dprima[Condicion==nce], A_prima[Condicion==nce], Beta[Condicion==nce], Sesgo_C[Condicion==nce], B_biprima[Condicion==nce]))   #Acomodamos los valores en un arreglo
+    colnames(valores) <- c("Sesion","D'","A_d'","A'","Beta","C","B''")
+    print(valores)
+}}
 
-################
 
 
-################################
 #Imprimimos los valores computados
 valores<- data.frame(cbind(Sujeto, Condicion, TipoSesion, Dia, D_prima, A_dprima, A_prima, Beta, Sesgo_C, B_biprima))   #Acomodamos los valores en un arreglo
 #Mostramos el arreglo

@@ -1,7 +1,7 @@
 
 
 #Cargamos los datos
-setwd("C:/Users/Alejandro/Desktop/Felisa/Proyectos/Mario_BisecciónTemporal") # Directorio de trabajo
+setwd("C:/Users/Adriana/Desktop/Felisa/Proyectos/Mario_BisecciónTemporal") # Directorio de trabajo
 rm(list=ls())  #Reseteamos la consola
 dir()          #Imprimimos los archivos del directorio     
 archive <-'Datos_Prueba.csv'  # Archivo que contiene los datos a analizar
@@ -34,26 +34,36 @@ X <- NULL
 W <- NULL
 
 for(nce in sort(unique(Condicion))){
-  Z <- append(Z, sum(datos$Corto_enCorto[datos$Grupo==nce]=='True'))
-  X <- append(X, sum(datos$Corto_enLargo[datos$Grupo==nce]=='True'))
-  W <- Z+W
+  Z <- append(Z, sum(Hits[Condicion==nce]))
+  X <- (FA[Condicion==nce]*2)
+  W <- Z/100
   output <- data.frame(cbind(Z,X,W))
-  print(c(nce,
-          'Suma:', W[length(W)],
-          'Hits:', Z[length(Z)],
-          'FA:', X[length(X)]))
-  print(output)
+  
+  W <- round(W,1)
+  
+  print(nce)
+  print(c('Suma:', W[length(W)]))
+  print(c('Hits:', Z[length(Z)]))
+  print(c('FA:', X))
 }
 
 
-#for(nce in sort(unique(Condicion))){
-valores<- data.frame(cbind(Sujeto, Condicion, TipoSesion, A, B))   #Acomodamos los valores en un arreglo
-#}
-#Mostramos el arreglo
-C<-mean(Hits)
+FA <-50
+Hits <- 60
+Noise <- 50
+Signal <- 60
 
 
-D<-mean(Hits)
-print(valores)
+if(FA==Noise){
+  FA_rate<-(FA-1)/Noise
+} else {
+  FA_rate<-FA/Noise
+}
+
+if(Hits==Signal){
+  Hit_rate<-(Hits-1)/Signal
+} else {
+  Hit_rate<-Hits/Signal
+}
 
 ################################
