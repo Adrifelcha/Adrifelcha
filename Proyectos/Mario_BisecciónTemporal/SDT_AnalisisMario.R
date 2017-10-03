@@ -36,7 +36,9 @@ CRej <- datos$Largo_enLargo
 Signal <- datos$EnsayosCortos 
 Noise <- datos$EnsayosLargos
 
-Magnitudes <- c('1v4', '2v8', '3v12', '5v2')
+TotalSujetos <- length(unique(Sujeto))
+Magnitudes <- c(rep('1v4', 20), rep('2v8', 20), rep('3v12', 20), rep('5v2', 20))
+Sesiones <- c(rep('LB',10), rep('M',10))
 # Preveemos una solución para los casos donde
 # FalsasAlarmas = NumeroTotalDeEnsayosConRuido  ó
 # Hits = NumeroTotalDeEnsayosConSeñal, 
@@ -143,7 +145,8 @@ A_dprima <- round(Ad,3)
 #OPCION 1:  TODOS LOS DATOS
 #Imprimimos TODOS los parámetros computados, distinguiendo con Variables Dummies 1) El sujeto a presentar;
 #2) La magnitud probada #3) El tipo de sesión (LB o M) y 4) El día
-valores<- data.frame(cbind(Sujeto, Condicion, TipoSesion, Dia, D_prima, A_dprima, A_prima, Beta, Sesgo_C, B_biprima))   #Acomodamos los valores en un arreglo
+valores<- data.frame(cbind(Sujeto, Magnitudes, Sesiones, Dia, D_prima, A_dprima, A_prima, Beta, Sesgo_C, B_biprima))   #Acomodamos los valores en un arreglo
+colnames(valores) <- c("Sujeto","Condicion", "Sesion", "Día","D'","A_d'","A'","Beta","C","B''")
 print(valores)
 
 
@@ -157,8 +160,8 @@ for(a in sort(unique(datos$Sujeto))){
   print(c('Sujeto:', a))
   print('---------------------------------------------------')
   for(nce in sort(unique(Condicion))){
-    print(c('Magnitud:', nce,'=============='))
-    valores<- data.frame(cbind(TipoSesion[Condicion==nce], D_prima[Condicion==nce], A_dprima[Condicion==nce], A_prima[Condicion==nce], Beta[Condicion==nce], Sesgo_C[Condicion==nce], B_biprima[Condicion==nce]))   #Acomodamos los valores en un arreglo
+    print(c('============================ > Magnitud:', nce))
+    valores<- data.frame(cbind(Sesiones, D_prima[Condicion==nce], A_dprima[Condicion==nce], A_prima[Condicion==nce], Beta[Condicion==nce], Sesgo_C[Condicion==nce], B_biprima[Condicion==nce]))   #Acomodamos los valores en un arreglo
     colnames(valores) <- c("Sesion","D'","A_d'","A'","Beta","C","B''")
     print(valores) }}
 
@@ -208,49 +211,4 @@ for(x in sort(unique(datos$Sujeto))){
       valoresTS<- data.frame(cbind(Sesion, Hit_rateTS, FA_rateTS, D_primaTS, A_dprimaTS, A_primaTS, Beta_TS, Sesgo_CTS, B_biprimaTS))   #Acomodamos los valores en un arreglo
       colnames(valoresTS) <- c("Sesion",'Hits', 'FA', "D'","A_d'","A'","Beta", "C", "B''")
       print(valoresTS)
-      
-      Barras <- c(A_primaTS, B_biprimaTS)
-      
-      barplot(Barras, main = "", xlab = "", ylab = "", font.lab=2, ylim = c(-1,1), axes = FALSE, col =c("dodgerblue4", "deeppink4"))
-      axis(1,at=c(0.72,1.9),labels=c("A'", "B''"), font=2)
-      axis(2,at=c(0, -1, 1),labels=c("0","-1","1"),las=1)
-      text(0.72,(A_primaTS/2),paste(A_primaTS),cex=.9,col='white',f=3)
-      text(1.9,(B_biprimaTS/2),paste(B_biprimaTS),cex=.9,col='white',f=3)
-      text(0.72,(A_primaTS/2)-.1,"A'",cex=1.2,col='white',f=3)
-      text(1.9,(B_biprimaTS/2)-.1,"B''",cex=1.2,col='white',f=3)
-      mtext(b,3,cex=2.5, line=1, f=2)
-      title(a, outer = TRUE, line = -2)
       }}}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-###########################################################################################################
-###########################################################################################################
-# # # # # # # #  Parte V
-# # # # # # # #  Graficamos los datos
-##########################################################################################################
-layout(matrix(1:2,ncol=1, byrow=TRUE))
-
-TotalDatos <- (length(unique(Condicion))*length(unique(TipoSesion)))*length(unique(Sujeto))
-
-for(barras in 1:(length(unique(Condicion))*length(unique(TipoSesion)))*length(unique(Sujeto))){
-  barplot(c(A_primaTS[barras], B_biprimaTS[barras]))}
