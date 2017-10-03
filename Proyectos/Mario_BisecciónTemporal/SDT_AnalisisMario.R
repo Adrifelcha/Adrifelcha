@@ -15,7 +15,7 @@
 # # # # # # # #  Parte I
 # # # # # # # #  Cargamos los datos
 ####################################
-setwd("C:/Users/Alejandro/Desktop/Felisa/Proyectos/Mario_BisecciónTemporal") # Directorio de trabajo
+setwd("C:/Users/Adriana/Desktop/Felisa/Proyectos/Mario_BisecciónTemporal") # Directorio de trabajo
 rm(list=ls())  #Reseteamos la consola
 dir()          #Imprimimos los archivos contenidos en el directorio en la consola
 archive <-'Datos_Sujeto3_Dummies.csv'  #Señalamos el archivo que contiene los datos a analizar
@@ -168,14 +168,15 @@ for(a in sort(unique(datos$Sujeto))){
 #Imprimimos los parámetros computados por cada sujeto, para cada una de las magnitudes probadas
 #Es decir, por cada sujeto, se mostrarán 4 arreglos de datos que presenten las estimaciones para
 #los ensayos en LB y Magnitud, de acuerdo a la ejecución promedio de los participantes.
+layout(matrix(1:2,ncol=2, byrow=TRUE))
 
 for(x in sort(unique(datos$Sujeto))){
   print('===================================================')
   print(c('Sujeto:', x))
   print('===================================================')
-  for(a in sort(unique(Condicion))){
+    for(a in sort(unique(Condicion))){
     print(c('========> Magnitud:', a))
-    for(b in sort(unique(TipoSesion))){
+      for(b in sort(unique(TipoSesion))){
       Sesion <- b
       Hits_TS <- sum(Hits[Condicion==a & TipoSesion==b])
       FA_TS <- sum(FA[Condicion==a & TipoSesion==b]) 
@@ -207,7 +208,20 @@ for(x in sort(unique(datos$Sujeto))){
       valoresTS<- data.frame(cbind(Sesion, Hit_rateTS, FA_rateTS, D_primaTS, A_dprimaTS, A_primaTS, Beta_TS, Sesgo_CTS, B_biprimaTS))   #Acomodamos los valores en un arreglo
       colnames(valoresTS) <- c("Sesion",'Hits', 'FA', "D'","A_d'","A'","Beta", "C", "B''")
       print(valoresTS)
-    }}}
+      
+      Barras <- c(A_primaTS, B_biprimaTS)
+      
+      barplot(Barras, main = "", xlab = "", ylab = "", font.lab=2, ylim = c(-1,1), axes = FALSE, col =c("dodgerblue4", "deeppink4"))
+      axis(1,at=c(0.72,1.9),labels=c("A'", "B''"), font=2)
+      axis(2,at=c(0, -1, 1),labels=c("0","-1","1"),las=1)
+      text(0.72,(A_primaTS/2),paste(A_primaTS),cex=.9,col='white',f=3)
+      text(1.9,(B_biprimaTS/2),paste(B_biprimaTS),cex=.9,col='white',f=3)
+      text(0.72,(A_primaTS/2)-.1,"A'",cex=1.2,col='white',f=3)
+      text(1.9,(B_biprimaTS/2)-.1,"B''",cex=1.2,col='white',f=3)
+      mtext(b,3,cex=2.5, line=1, f=2)
+      title(a, outer = TRUE, line = -2)
+      }}}
+
 
 
 
