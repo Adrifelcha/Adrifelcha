@@ -1,7 +1,7 @@
 
 
 #Cargamos los datos
-setwd("C:/Users/Adriana/Desktop/Felisa/Proyectos/Mario_BisecciónTemporal") # Directorio de trabajo
+setwd("C:/Users/Alejandro/Desktop/Felisa/Proyectos/Mario_BisecciónTemporal") # Directorio de trabajo
 rm(list=ls())  #Reseteamos la consola
 dir()          #Imprimimos los archivos del directorio     
 archive <-'Datos_Prueba.csv'  # Archivo que contiene los datos a analizar
@@ -48,22 +48,45 @@ for(nce in sort(unique(Condicion))){
 }
 
 
-FA <-50
-Hits <- 60
-Noise <- 50
-Signal <- 60
+for(x in sort(unique(datos$Sujeto))){
+  print('===================================================')
+  print(c('Sujeto:', x))
+  print('===================================================')
+  for(a in sort(unique(Condicion))){
+    print(c('========> Magnitud:', a))
+    for(b in sort(unique(TipoSesion))){
+      Sesion <- b
+      Hits_TS <- sum(Hits[Condicion==a & TipoSesion==b])
+      Signal_TS <- sum(Signal[Condicion==a & TipoSesion==b])
+      RateTS <- Hits_TS/Signal_TS
+      RateTS <- round(RateTS,2)
+      valoresTS<- data.frame(cbind(Hits_TS, RateTS, Sesion))   #Acomodamos los valores en un arreglo
+      print(valoresTS)
+    }}}
 
 
-if(FA==Noise){
-  FA_rate<-(FA-1)/Noise
-} else {
-  FA_rate<-FA/Noise
-}
+Ana <- c(7,10,5,6)
+Pepe <- c(10,7,8,2)
 
-if(Hits==Signal){
-  Hit_rate<-(Hits-1)/Signal
-} else {
-  Hit_rate<-Hits/Signal
-}
+R <- NULL
+Cas <- NULL
+
+for(i in 1:length(Ana)){
+if(Ana[i] <Pepe[i]){
+  R[i]<- 'Ana es menor que Pepe'
+  Cas[i] <- 2*3 }
+  else {
+  R[i]<- 'Ana es mayor que Pepe'
+  Cas[i]<- 3*3}
+  Promedio <- Cas*3
+  PAPA <-  Promedio-Cas}
+
+valores <- data.frame(cbind(R, Cas, Promedio, PAPA))
+print(valores)  
+
+layout(matrix(1:2,ncol=1, byrow=TRUE))
+for(u in 1:length(Cas)){
+barplot(c(Cas[u], Promedio[u]))}
+
 
 ################################
