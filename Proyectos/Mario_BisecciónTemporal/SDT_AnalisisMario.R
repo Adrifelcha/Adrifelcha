@@ -15,7 +15,7 @@
 # # # # # # # #  Parte I
 # # # # # # # #  Cargamos los datos
 ####################################
-setwd("C:/Users/Adriana/Desktop/Felisa/Proyectos/Mario_BisecciónTemporal") # Directorio de trabajo
+setwd("C:/Users/Alejandro/Desktop/Felisa/Proyectos/Mario_BisecciónTemporal") # Directorio de trabajo
 rm(list=ls())  #Reseteamos la consola
 dir()          #Imprimimos los archivos contenidos en el directorio en la consola
 archive <-'Datos_Sujeto3_Dummies.csv'  #Señalamos el archivo que contiene los datos a analizar
@@ -35,6 +35,24 @@ FA <- datos$Corto_enLargo
 CRej <- datos$Largo_enLargo
 Signal <- datos$EnsayosCortos 
 Noise <- datos$EnsayosLargos
+
+CortoEsSignal <- c(3)
+
+for(i in 1:length(Dia)){
+if(Sujeto==CortoEsSignal){
+  Hits <- datos$Corto_enCorto
+  FA <- datos$Corto_enLargo
+  CRej <- datos$Largo_enLargo
+  Signal <- datos$EnsayosCortos 
+  Noise <- datos$EnsayosLargos
+} else {
+  Hits <- datos$Largo_enLargo
+  FA <- datos$Largo_enCorto
+  CRej <- datos$Corto_enCorto
+  Miss <- datos$Corto_enLargo
+  Noise <- datos$EnsayosCortos 
+  Signal <- datos$EnsayosLargos}}
+
 
 TotalSujetos <- length(unique(Sujeto))
 Magnitudes <- c(rep('1v4', 20), rep('2v8', 20), rep('3v12', 20), rep('5v2', 20))
