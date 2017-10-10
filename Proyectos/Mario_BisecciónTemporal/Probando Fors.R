@@ -106,4 +106,10 @@ is.element('b', v)
 is.element('f', v)
 'f' %in% v
 
+Uno <- c(2,3)
+Dos <- c(4,5)
+
+Tres <- c(Uno,Dos)
+Tres_B <- c(rbind(Uno, Dos))
+
 ################################
