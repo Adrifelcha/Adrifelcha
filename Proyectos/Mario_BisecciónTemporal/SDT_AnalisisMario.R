@@ -15,7 +15,7 @@
 # # # # # # # #  Parte I
 # # # # # # # #  Cargamos los datos
 ####################################
-setwd("C:/Users/Alejandro/Desktop/Felisa/Proyectos/Mario_BisecciónTemporal") # Directorio de trabajo
+setwd("C:/Users/Adriana/Desktop/Felisa/Proyectos/Mario_BisecciónTemporal") # Directorio de trabajo
 rm(list=ls())  #Reseteamos la consola
 dir()          #Imprimimos los archivos contenidos en el directorio en la consola
 archive <-'Datos_Dummies_4sujetos.csv'  #Señalamos el archivo que contiene los datos a analizar
@@ -170,7 +170,8 @@ FA_rate <- round(FA_rate,3)
 #OPCION 1:  TODOS LOS DATOS 
 #Imprimimos TODOS los parámetros computados, distinguiendo con Variables Dummies 1) El sujeto a presentar;
 #2) La magnitud probada #3) El tipo de sesión (LB o M) y 4) El día
-valores<- data.frame(cbind(Sujeto, Magnitudes, Sesiones, Dia, D_prima, A_dprima, A_prima, Beta, Sesgo_C, B_biprima))   #Acomodamos los valores en un arreglo
+#valores<- data.frame(cbind(Sujeto, Magnitudes, Sesiones, Dia, D_prima, A_dprima, A_prima, Beta, Sesgo_C, B_biprima))   #Acomodamos los valores en un arreglo
+valores<- data.frame(cbind(Sujeto, Condicion, Sesiones, Dia, D_prima, A_dprima, A_prima, Beta, Sesgo_C, B_biprima))   #Acomodamos los valores en un arreglo
 colnames(valores) <- c("Sujeto","Condicion", "Sesion", "Día","D'","A_d'","A'","Beta","C","B''")
 options(max.print=10000000)
 print(valores)
@@ -187,9 +188,9 @@ for(a in sort(unique(datos$Sujeto))){
   print('---------------------------------------------------')
   for(nce in sort(unique(Condicion))){
     print(c('============================ > Magnitud:', nce))
-    valores<- data.frame(cbind(Sesiones, Hit_rate[Condicion==nce&Sujeto==a], FA_rate[Condicion==nce&Sujeto==a],D_prima[Condicion==nce&Sujeto==a], A_dprima[Condicion==nce&Sujeto==a], A_prima[Condicion==nce&Sujeto==a], Beta[Condicion==nce&Sujeto==a], Sesgo_C[Condicion==nce&Sujeto==a], B_biprima[Condicion==nce&Sujeto==a]))   #Acomodamos los valores en un arreglo
-    colnames(valores) <- c("Sesion","Hits","FA","D'","A_d'","A'","Beta","C","B''")
-    print(valores) }}
+    valor<- data.frame(cbind(Sesiones, Hit_rate[Sujeto==a&Condicion==nce], FA_rate[Sujeto==a&Condicion==nce], D_prima[Sujeto==a&Condicion==nce], A_dprima[Sujeto==a&Condicion==nce], A_prima[Sujeto==a&Condicion==nce], Beta[Sujeto==a&Condicion==nce], Sesgo_C[Sujeto==a&Condicion==nce], B_biprima[Sujeto==a&Condicion==nce]))   #Acomodamos los valores en un arreglo
+    colnames(valor) <- c("Sesion","Hits","FA","D'","A_d'","A'","Beta","C","B''")
+    print(valor) }}
 
 
 ########################################
