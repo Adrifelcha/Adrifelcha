@@ -89,4 +89,21 @@ for(u in 1:length(Cas)){
 barplot(c(Cas[u], Promedio[u]))}
 
 
+vctor <- c(1,2,3,4,5)
+valor <- c(9,10,2,3)
+Poo <- NULL 
+
+for(i in 1:length(valor)){
+  if(valor[i] %in% vctor == TRUE){
+    Poo[i]<- 'Holiii' 
+}else {
+    Poo[i]<- 'Ana es mayor que Pepe'}}
+
+is.element('b', v)
+'b' %in% v
+## both return TRUE
+
+is.element('f', v)
+'f' %in% v
+
 ################################

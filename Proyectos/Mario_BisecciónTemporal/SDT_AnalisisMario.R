@@ -18,7 +18,8 @@
 setwd("C:/Users/Alejandro/Desktop/Felisa/Proyectos/Mario_BisecciónTemporal") # Directorio de trabajo
 rm(list=ls())  #Reseteamos la consola
 dir()          #Imprimimos los archivos contenidos en el directorio en la consola
-archive <-'Datos_Sujeto3_Dummies.csv'  #Señalamos el archivo que contiene los datos a analizar
+archive <-'Datos_Dummies_4sujetos.csv'  #Señalamos el archivo que contiene los datos a analizar
+#archive <-'Datos_Sujeto3_Dummies.csv'  #Señalamos el archivo que contiene los datos a analizar
 datos <- read.csv(archive)             #Extraemos los datos del archivo
 
 
@@ -30,28 +31,30 @@ Sujeto <- datos$Sujeto         #Del archivo 'datos', identificamos los datos en 
 Condicion <- datos$Grupo       #Del archivo 'datos', identificamos los datos en la columna 'Grupo' como variable Condición
 TipoSesion <- datos$Condicion  #etc, etc, etc
 Dia<-datos$Día
-Hits <- datos$Corto_enCorto
-FA <- datos$Corto_enLargo
-CRej <- datos$Largo_enLargo
-Signal <- datos$EnsayosCortos 
-Noise <- datos$EnsayosLargos
+Hits <- NULL
+FA <- NULL
+CRej <- NULL
+Miss <- NULL
+Noise <- NULL
+Signal <- NULL
 
-CortoEsSignal <- c(3)
+LargoEsSignal <- c(3, 5, 20, 33)  #Especificamos cuáles Sujetos estuvieron en el grupo donde LARGO es Señal
 
 for(i in 1:length(Dia)){
-if(Sujeto==CortoEsSignal){
-  Hits <- datos$Corto_enCorto
-  FA <- datos$Corto_enLargo
-  CRej <- datos$Largo_enLargo
-  Signal <- datos$EnsayosCortos 
-  Noise <- datos$EnsayosLargos
+if(Sujeto[i] %in% LargoEsSignal == TRUE){
+#if(Sujeto[i] == 3|5|20|33){
+  Hits[i] <- datos$Largo_enLargo[i]
+  FA[i] <- datos$Largo_enCorto[i]
+  CRej[i] <- datos$Corto_enCorto[i]
+  Miss[i] <- datos$Corto_enLargo[i]
+  Noise[i] <- datos$EnsayosCortos[i] 
+  Signal[i] <- datos$EnsayosLargos[i]
 } else {
-  Hits <- datos$Largo_enLargo
-  FA <- datos$Largo_enCorto
-  CRej <- datos$Corto_enCorto
-  Miss <- datos$Corto_enLargo
-  Noise <- datos$EnsayosCortos 
-  Signal <- datos$EnsayosLargos}}
+  Hits[i] <- datos$Corto_enCorto[i]
+  FA[i] <- datos$Corto_enLargo[i]
+  CRej[i] <- datos$Largo_enLargo[i]
+  Signal[i] <- datos$EnsayosCortos[i] 
+  Noise[i] <- datos$EnsayosLargos[i]}}
 
 
 TotalSujetos <- length(unique(Sujeto))
@@ -69,13 +72,15 @@ A <- NULL
 B <- NULL
 
 for(i in 1:length(FA)){
-  if(FA[i]==Noise[i]){
-    FA_rate[i]<-(FA[i]-1)/Noise[i]
+  if(FA[i]==0){
+    FA_rate[i]<-.01
+    #FA_rate[i]<-(FA[i]+1)/Noise[i]
   } else {
     FA_rate[i]<-FA[i]/Noise[i]}
 
   if(Hits[i]==Signal[i]){
-    Hit_rate[i]<-(Hits[i]-1)/Signal[i]
+    Hit_rate[i]<-0.99
+    #Hit_rate[i]<-(Hits[i]-1)/Signal[i]
   } else {
     Hit_rate[i]<-Hits[i]/Signal[i]}
 
@@ -135,6 +140,8 @@ Beta<-round(beta,3)
 D_prima <- round(d,2)
 Sesgo_C<-round(c,3)
 A_dprima <- round(Ad,3)
+Hit_rate <- round(Hit_rate,3)
+FA_rate <- round(FA_rate,3)
 }
 
 
@@ -160,11 +167,12 @@ A_dprima <- round(Ad,3)
 ##########################################################################################################
 
 ############################
-#OPCION 1:  TODOS LOS DATOS
+#OPCION 1:  TODOS LOS DATOS 
 #Imprimimos TODOS los parámetros computados, distinguiendo con Variables Dummies 1) El sujeto a presentar;
 #2) La magnitud probada #3) El tipo de sesión (LB o M) y 4) El día
 valores<- data.frame(cbind(Sujeto, Magnitudes, Sesiones, Dia, D_prima, A_dprima, A_prima, Beta, Sesgo_C, B_biprima))   #Acomodamos los valores en un arreglo
 colnames(valores) <- c("Sujeto","Condicion", "Sesion", "Día","D'","A_d'","A'","Beta","C","B''")
+options(max.print=10000000)
 print(valores)
 
 
@@ -179,8 +187,8 @@ for(a in sort(unique(datos$Sujeto))){
   print('---------------------------------------------------')
   for(nce in sort(unique(Condicion))){
     print(c('============================ > Magnitud:', nce))
-    valores<- data.frame(cbind(Sesiones, D_prima[Condicion==nce], A_dprima[Condicion==nce], A_prima[Condicion==nce], Beta[Condicion==nce], Sesgo_C[Condicion==nce], B_biprima[Condicion==nce]))   #Acomodamos los valores en un arreglo
-    colnames(valores) <- c("Sesion","D'","A_d'","A'","Beta","C","B''")
+    valores<- data.frame(cbind(Sesiones, Hit_rate[Condicion==nce&Sujeto==a], FA_rate[Condicion==nce&Sujeto==a],D_prima[Condicion==nce&Sujeto==a], A_dprima[Condicion==nce&Sujeto==a], A_prima[Condicion==nce&Sujeto==a], Beta[Condicion==nce&Sujeto==a], Sesgo_C[Condicion==nce&Sujeto==a], B_biprima[Condicion==nce&Sujeto==a]))   #Acomodamos los valores en un arreglo
+    colnames(valores) <- c("Sesion","Hits","FA","D'","A_d'","A'","Beta","C","B''")
     print(valores) }}
 
 
@@ -199,10 +207,10 @@ for(x in sort(unique(datos$Sujeto))){
     print(c('========> Magnitud:', a))
       for(b in sort(unique(TipoSesion))){
       Sesion <- b
-      Hits_TS <- sum(Hits[Condicion==a & TipoSesion==b])
-      FA_TS <- sum(FA[Condicion==a & TipoSesion==b]) 
-      Signal_TS <- sum(Signal[Condicion==a & TipoSesion==b])
-      Noise_TS <- sum(Noise[Condicion==a & TipoSesion==b])
+      Hits_TS <- sum(Hits[Condicion==a & TipoSesion==b &Sujeto==x])
+      FA_TS <- sum(FA[Condicion==a & TipoSesion==b & Sujeto==x]) 
+      Signal_TS <- sum(Signal[Condicion==a & TipoSesion==b & Sujeto==x])
+      Noise_TS <- sum(Noise[Condicion==a & TipoSesion==b & Sujeto==x])
       Hit_rateTS <- Hits_TS/Signal_TS
       FA_rateTS <- FA_TS/Noise_TS
       d_TS<- qnorm(Hit_rateTS,0,1)-qnorm(FA_rateTS,0,1)

@@ -17,7 +17,7 @@
 setwd("C:/Users/Alejandro/Desktop/Felisa/Proyectos/Mario_BisecciónTemporal") # Directorio de trabajo
 rm(list=ls())  #Reseteamos la consola
 dir()          #Imprimimos los archivos contenidos en el directorio en la consola
-archive <-'Datos_Sujeto3_Dummies.csv'  #Señalamos el archivo que contiene los datos a analizar
+archive <-'Datos_Dummies_4sujetos.csv'  #Señalamos el archivo que contiene los datos a analizar
 datos <- read.csv(archive)             #Extraemos los datos del archivo
 ########################################
 # # # # # # # #  Especificamos variables
@@ -44,8 +44,9 @@ Sesiones <- c(rep('LB',10), rep('M',10))
 
 
 #########################################           GRAFICO 1
-##############################################           Grafica de Barras comparando A' y B'' en Linea Base vs Magnitud
-####################################################     por cada condición
+###################################           Grafica de Barras comparando A' y B'' 
+###################################           en Linea Base vs Magnitud, en cada condición
+###################################           por cada sujeto
 
 layout(matrix(1:2,ncol=2, byrow=TRUE))
 
@@ -56,14 +57,14 @@ for(x in sort(unique(datos$Sujeto))){
   for(a in sort(unique(Condicion))){
     print(c('========> Magnitud:', a))
       Sesion <- c('LB','M')
-      Hits_TS <- Hits[Condicion==a]
-      FA_TS <- FA[Condicion==a] 
+      Hits_TS <- Hits[Condicion==a&Sujeto==x]
+      FA_TS <- FA[Condicion==a&Sujeto==x] 
       Hits_LB <- sum(Hits_TS[1:10])
       FA_LB <- sum(FA_TS[1:10])
       Hits_M <- sum(Hits_TS[11:20])
       FA_M <- sum(FA_TS[11:20])
-      Signal_TS <- Signal[Condicion==a]
-      Noise_TS <- Noise[Condicion==a]
+      Signal_TS <- Signal[Condicion==a&Sujeto==x]
+      Noise_TS <- Noise[Condicion==a&Sujeto==x]
       N_LB <- sum(Noise_TS[1:10])
       S_LB <- sum(Signal_TS[1:10])
       N_M <- sum(Noise_TS[11:20])
@@ -126,5 +127,4 @@ for(x in sort(unique(datos$Sujeto))){
       text(1.9,(B_TS[2]/2),paste(B_TS[2]),cex=.9,col='white',f=2)
       mtext("B'",3,cex=3.5, line=1, f=2)
       mtext(a,4,cex=2.5, line=1, f=2)
-      #expression(paste(mu, "D"))
-      }}
+  }}
