@@ -171,8 +171,8 @@ FA_rate <- round(FA_rate,3)
 #Imprimimos TODOS los parámetros computados, distinguiendo con Variables Dummies 1) El sujeto a presentar;
 #2) La magnitud probada #3) El tipo de sesión (LB o M) y 4) El día
 #valores<- data.frame(cbind(Sujeto, Magnitudes, Sesiones, Dia, D_prima, A_dprima, A_prima, Beta, Sesgo_C, B_biprima))   #Acomodamos los valores en un arreglo
-valores<- data.frame(cbind(Sujeto, Condicion, Sesiones, Dia, D_prima, A_dprima, A_prima, Beta, Sesgo_C, B_biprima))   #Acomodamos los valores en un arreglo
-colnames(valores) <- c("Sujeto","Condicion", "Sesion", "Día","D'","A_d'","A'","Beta","C","B''")
+valores<- data.frame(cbind(Sujeto, Condicion, Sesiones, Dia, Hit_rate, FA_rate, D_prima, A_dprima, A_prima, Beta, Sesgo_C, B_biprima))   #Acomodamos los valores en un arreglo
+colnames(valores) <- c("Sujeto","Condicion", "Sesion", "Día","Tasa Hits","Tasa F.A.","D'","A_d'","A'","Beta","C","B''")
 options(max.print=10000000)
 print(valores)
 
@@ -239,3 +239,58 @@ for(x in sort(unique(datos$Sujeto))){
       colnames(valoresTS) <- c("Sesion",'Hits', 'FA', "D'","A_d'","A'","Beta", "C", "B''")
       print(valoresTS)
       }}}
+
+
+
+########################################
+# OPCION 4: Promedio de la ejecución registrada por cada magnitud,
+# para las sesiones en Linea Base vs Magnitud
+# (Promedio entre sujetos)
+
+layout(matrix(1:2,ncol=2, byrow=TRUE))
+
+Par_A_LB <- NULL
+Par_A_M <- NULL
+Par_B_LB <- NULL
+Par_B_M <- NULL
+
+for(a in sort(unique(Condicion))){
+  print(c('========> Magnitud:', a))
+  for(b in sort(unique(TipoSesion))){
+    Sesion <- b
+    Hits_ <- sum(Hits[Condicion==a&TipoSesion==b])
+    FA_ <- sum(FA[Condicion==a&TipoSesion==b]) 
+    Signal_ <- sum(Signal[Condicion==a&TipoSesion==b])
+    Noise_ <- sum(Noise[Condicion==a&TipoSesion==b])
+    H_rate <- Hits_/Signal_
+    FA_rate <- FA_/Noise_
+    d_<- qnorm(H_rate,0,1)-qnorm(FA_rate,0,1)
+    Ad_<-pnorm(d_/(sqrt(2)))
+    if(FA_rate > H_rate){
+      A_ <- 0.5- ( ((FA_rate-H_rate)*(1+FA_rate-H_rate)) / ((4*FA_rate)*(1-H_rate)) )
+    } else {
+      A_ <- 0.5+ ( ((H_rate-FA_rate)*(1+H_rate-FA_rate)) / ((4*H_rate)*(1-FA_rate)) )}
+    k_<-qnorm(1-FA_rate,0,1)               
+    beta_<-dnorm(k_,d_,1)/dnorm(k_,0,1)             
+    c_<-k_-(d_/2)
+    if(FA_rate > H_rate){
+      B_ <- (((FA_rate*(1-FA_rate))-(H_rate*(1-H_rate)))/((FA_rate*(1-FA_rate))+(H_rate*(1-H_rate))))
+    } else {
+      B_ <- (((H_rate*(1-H_rate))-(FA_rate*(1-FA_rate)))/((H_rate*(1-H_rate))+(FA_rate*(1-FA_rate))))}
+    
+    A_ <- round(A_,3)
+    B_ <- round(B_,3)
+    Beta_<-round(beta_,3)
+    D_ <- round(d_,2)
+    C_<- round(c_,3)
+    A_d_ <- round(Ad_,3)
+    H_rate <- round(H_rate,3)
+    FA_rate <- round(FA_rate,3)
+    
+    valores_P<- data.frame(cbind(b, H_rate, FA_rate, A_, B_))   #Acomodamos los valores en un arreglo
+    colnames(valores_P) <- c("Sesion",'Hits', 'FA', "A'", "B'") #, "D'","A_d'","A'","Beta", "C", "B''")
+    print(valores_P)
+    }}
+
+
+
