@@ -112,4 +112,25 @@ Dos <- c(4,5)
 Tres <- c(Uno,Dos)
 Tres_B <- c(rbind(Uno, Dos))
 
+
+
+Grupo_1<- c(1,3,6,8,10)
+Grupo_2 <- c(2,4,5,7,9)
+Sujetos <- c(1,2,3,4,5,6,7,8,9,10)
+
+x <- sum(Sujetos)
+Lola_ <- NULL
+
+Lola_L<- sum(Sujetos %in% Grupo_1)  
+Lola_C<- sum(Sujetos %in% Grupo_1== FALSE)
+
+
+
+print(Lola_L)
+print(Lola_C)
+
+
+
+
+
 ################################
