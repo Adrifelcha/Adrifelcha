@@ -18,7 +18,7 @@
 setwd("C:/Users/Alejandro/Desktop/Felisa/Proyectos/Mario_BisecciónTemporal") # Directorio de trabajo
 rm(list=ls())  #Reseteamos la consola
 dir()          #Imprimimos los archivos contenidos en el directorio en la consola
-archive <-'Datos_Dummies_4sujetos.csv'  #Señalamos el archivo que contiene los datos a analizar
+archive <-'Datos_Dummies_4sujetos_.csv'  #Señalamos el archivo que contiene los datos a analizar
 #archive <-'Datos_Sujeto3_Dummies.csv'  #Señalamos el archivo que contiene los datos a analizar
 datos <- read.csv(archive)             #Extraemos los datos del archivo
 
@@ -38,7 +38,9 @@ Miss <- NULL
 Noise <- NULL
 Signal <- NULL
 
-LargoEsSignal <- c(3, 5, 20, 33)  #Especificamos cuáles Sujetos estuvieron en el grupo donde LARGO es Señal
+Signal_Is <- NULL
+
+LargoEsSignal <- c(5, 20, 33)  #Especificamos cuáles Sujetos estuvieron en el grupo donde LARGO es Señal
 
 for(i in 1:length(Dia)){
 if(Sujeto[i] %in% LargoEsSignal == TRUE){
@@ -49,12 +51,14 @@ if(Sujeto[i] %in% LargoEsSignal == TRUE){
   Miss[i] <- datos$Corto_enLargo[i]
   Noise[i] <- datos$EnsayosCortos[i] 
   Signal[i] <- datos$EnsayosLargos[i]
+  Signal_Is[i] <- 'Largo'
 } else {
   Hits[i] <- datos$Corto_enCorto[i]
   FA[i] <- datos$Corto_enLargo[i]
   CRej[i] <- datos$Largo_enLargo[i]
   Signal[i] <- datos$EnsayosCortos[i] 
-  Noise[i] <- datos$EnsayosLargos[i]}}
+  Noise[i] <- datos$EnsayosLargos[i]
+  Signal_Is[i] <- 'Corto'}}
 
 
 TotalSujetos <- length(unique(Sujeto))
@@ -171,8 +175,8 @@ FA_rate <- round(FA_rate,3)
 #Imprimimos TODOS los parámetros computados, distinguiendo con Variables Dummies 1) El sujeto a presentar;
 #2) La magnitud probada #3) El tipo de sesión (LB o M) y 4) El día
 #valores<- data.frame(cbind(Sujeto, Magnitudes, Sesiones, Dia, D_prima, A_dprima, A_prima, Beta, Sesgo_C, B_biprima))   #Acomodamos los valores en un arreglo
-valores<- data.frame(cbind(Sujeto, Condicion, Sesiones, Dia, Hit_rate, FA_rate, D_prima, A_dprima, A_prima, Beta, Sesgo_C, B_biprima))   #Acomodamos los valores en un arreglo
-colnames(valores) <- c("Sujeto","Condicion", "Sesion", "Día","Tasa Hits","Tasa F.A.","D'","A_d'","A'","Beta","C","B''")
+valores<- data.frame(cbind(Sujeto, Signal_Is, Condicion, Sesiones, Dia, Hit_rate, FA_rate, D_prima, A_dprima, A_prima, Beta, Sesgo_C, B_biprima))   #Acomodamos los valores en un arreglo
+colnames(valores) <- c("Sujeto","Señal","Condicion", "Sesion", "Día","Tasa Hits","Tasa F.A.","D'","A_d'","A'","Beta","C","B''")
 options(max.print=10000000)
 print(valores)
 
@@ -184,7 +188,7 @@ print(valores)
 #los ensayos en LB y Magnitud, a lo largo de 10 días
 for(a in sort(unique(datos$Sujeto))){
   print('---------------------------------------------------')
-  print(c('Sujeto:', a))
+  print(c('Sujeto:', a, '==== La Señal es:', Signal_Is[Sujeto==a & Dia=='1' &Condicion=='1v4' & TipoSesion=='LB']))
   print('---------------------------------------------------')
   for(nce in sort(unique(Condicion))){
     print(c('============================ > Magnitud:', nce))
@@ -200,9 +204,20 @@ for(a in sort(unique(datos$Sujeto))){
 #los ensayos en LB y Magnitud, de acuerdo a la ejecución promedio de los participantes.
 layout(matrix(1:2,ncol=2, byrow=TRUE))
 
+A_primaTS <- NULL
+B_biprimaTS <- NULL
+Beta_TS<- NULL
+D_primaTS <- NULL
+Sesgo_CTS<- NULL
+A_dprimaTS <- NULL
+Hit_rTS <- NULL
+FA_rTS <- NULL
+
+Sesiones <- c('LB', 'M')
+
 for(x in sort(unique(datos$Sujeto))){
   print('===================================================')
-  print(c('Sujeto:', x))
+  print(c('Sujeto:', x, '==== La Señal es:', Signal_Is[Sujeto==x & Dia=='1' &Condicion=='1v4' & TipoSesion=='LB']))
   print('===================================================')
     for(a in sort(unique(Condicion))){
     print(c('========> Magnitud:', a))
@@ -227,18 +242,19 @@ for(x in sort(unique(datos$Sujeto))){
         B_TS <- (((FA_rateTS*(1-FA_rateTS))-(Hit_rateTS*(1-Hit_rateTS)))/((FA_rateTS*(1-FA_rateTS))+(Hit_rateTS*(1-Hit_rateTS))))
       } else {
         B_TS <- (((Hit_rateTS*(1-Hit_rateTS))-(FA_rateTS*(1-FA_rateTS)))/((Hit_rateTS*(1-Hit_rateTS))+(FA_rateTS*(1-FA_rateTS))))}
-      A_primaTS <- round(A_TS,3)
-      B_biprimaTS <- round(B_TS,3)
-      Beta_TS<-round(beta_TS,3)
-      D_primaTS <- round(d_TS,2)
-      Sesgo_CTS<-round(c_TS,3)
-      A_dprimaTS <- round(Ad_TS,3)
-      Hit_rateTS <- round(Hit_rateTS,3)
-      FA_rateTS <- round(FA_rateTS,3)
-      valoresTS<- data.frame(cbind(Sesion, Hit_rateTS, FA_rateTS, D_primaTS, A_dprimaTS, A_primaTS, Beta_TS, Sesgo_CTS, B_biprimaTS))   #Acomodamos los valores en un arreglo
+      A_primaTS[b] <- round(A_TS,3)
+      B_biprimaTS[b] <- round(B_TS,3)
+      Beta_TS[b] <-round(beta_TS,3)
+      D_primaTS[b] <- round(d_TS,2)
+      Sesgo_CTS[b] <-round(c_TS,3)
+      A_dprimaTS[b] <- round(Ad_TS,3)
+      Hit_rTS[b] <- round(Hit_rateTS,3)
+      FA_rTS[b] <- round(FA_rateTS,3)
+      }
+      
+      valoresTS<- data.frame(cbind(Sesiones, Hit_rTS, FA_rTS, D_primaTS, A_dprimaTS, A_primaTS, Beta_TS, Sesgo_CTS, B_biprimaTS))   #Acomodamos los valores en un arreglo
       colnames(valoresTS) <- c("Sesion",'Hits', 'FA', "D'","A_d'","A'","Beta", "C", "B''")
-      print(valoresTS)
-      }}}
+      print(valoresTS)}}
 
 
 
@@ -292,5 +308,118 @@ for(a in sort(unique(Condicion))){
     print(valores_P)
     }}
 
+
+
+
+
+
+
+########################################
+# OPCION 5: Promedio de la ejecución registrada por cada magnitud,
+# para las sesiones en Linea Base vs Magnitud
+# (Promedio entre sujetos; distinguiendo entre cuando la Señal es Corto y Largo)
+
+v_A_LS <- NULL
+v_B_LS <- NULL
+v_Beta_LS<- NULL
+v_D_LS <- NULL
+v_C_LS<- NULL
+v_A_d_LS <- NULL
+v_H_rate_LS <- NULL
+v_FA_rate_LS <- NULL
+
+v_A_CS <- NULL
+v_B_CS <- NULL
+v_Beta_CS<- NULL
+v_D_CS <- NULL
+v_C_CS<- NULL
+v_A_d_CS <- NULL
+v_H_rate_CS <- NULL
+v_FA_rate_CS <- NULL
+
+Sesion <- c("LB", "M")
+
+for(a in sort(unique(Condicion))){
+  print(c('==============================> Condición:', a))
+  for(b in sort(unique(TipoSesion))){
+    
+    
+    Hits_LS <- sum(Hits[Condicion==a&TipoSesion==b &Sujeto %in% LargoEsSignal ==TRUE])
+    FA_LS <- sum(FA[Condicion==a&TipoSesion==b & Sujeto %in% LargoEsSignal ==TRUE]) 
+    Signal_LS <- sum(Signal[Condicion==a&TipoSesion==b & Sujeto %in% LargoEsSignal ==TRUE])
+    Noise_LS <- sum(Noise[Condicion==a&TipoSesion==b & Sujeto %in% LargoEsSignal ==TRUE])
+    H_rate_LS <- Hits_LS/Signal_LS
+    FA_rate_LS <- FA_LS/Noise_LS
+    
+    Hits_CS <- sum(Hits[Condicion==a&TipoSesion==b &Sujeto %in% LargoEsSignal ==FALSE])
+    FA_CS <- sum(FA[Condicion==a&TipoSesion==b & Sujeto %in% LargoEsSignal ==FALSE]) 
+    Signal_CS <- sum(Signal[Condicion==a&TipoSesion==b & Sujeto %in% LargoEsSignal ==FALSE])
+    Noise_CS <- sum(Noise[Condicion==a&TipoSesion==b & Sujeto %in% LargoEsSignal ==FALSE])
+    H_rate_CS <- Hits_CS/Signal_CS
+    FA_rate_CS <- FA_CS/Noise_CS
+    
+    d_LS<- qnorm(H_rate_LS,0,1)-qnorm(FA_rate_LS,0,1)
+    Ad_LS<-pnorm(d_LS/(sqrt(2)))
+    d_CS<- qnorm(H_rate_CS,0,1)-qnorm(FA_rate_CS,0,1)
+    Ad_CS<-pnorm(d_CS/(sqrt(2)))
+    
+    
+    if(FA_rate_LS > H_rate_LS){
+      A_LS <- 0.5- ( ((FA_rate_LS-H_rate_LS)*(1+FA_rate_LS-H_rate_LS)) / ((4*FA_rate_LS)*(1-H_rate_LS)))
+    } else {
+      A_LS <- 0.5+ ( ((H_rate_LS-FA_rate_LS)*(1+H_rate_LS-FA_rate_LS)) / ((4*H_rate_LS)*(1-FA_rate_LS)))}
+    if(FA_rate_CS > H_rate_CS){
+      A_CS <- 0.5- ( ((FA_rate_CS-H_rate_CS)*(1+FA_rate_CS-H_rate_CS)) / ((4*FA_rate_CS)*(1-H_rate_CS)))
+    } else {
+      A_CS <- 0.5+ ( ((H_rate_CS-FA_rate_CS)*(1+H_rate_CS-FA_rate_CS)) / ((4*H_rate_CS)*(1-FA_rate_CS)))}
+    
+    k_LS<-qnorm(1-FA_rate_LS,0,1)               
+    beta_LS<-dnorm(k_LS,d_LS,1)/dnorm(k_LS,0,1)             
+    c_LS<-k_LS-(d_LS/2)
+    k_CS<-qnorm(1-FA_rate_CS,0,1)               
+    beta_CS<-dnorm(k_CS,d_CS,1)/dnorm(k_CS,0,1)             
+    c_CS<-k_CS-(d_CS/2)
+    
+    
+    if(FA_rate_LS > H_rate_LS){
+      B_LS <-(((FA_rate_LS*(1-FA_rate_LS))-(H_rate_LS*(1-H_rate_LS)))/((FA_rate_LS*(1-FA_rate_LS))+(H_rate_LS*(1-H_rate_LS))))
+    } else {
+      B_LS <-(((H_rate_LS*(1-H_rate_LS))-(FA_rate_LS*(1-FA_rate_LS)))/((H_rate_LS*(1-H_rate_LS))+(FA_rate_LS*(1-FA_rate_LS))))}
+    if(FA_rate_CS > H_rate_CS){
+      B_CS <-(((FA_rate_CS*(1-FA_rate_CS))-(H_rate_CS*(1-H_rate_CS)))/((FA_rate_CS*(1-FA_rate_CS))+(H_rate_CS*(1-H_rate_CS))))
+    } else {
+      B_CS <-(((H_rate_CS*(1-H_rate_CS))-(FA_rate_CS*(1-FA_rate_CS)))/((H_rate_CS*(1-H_rate_CS))+(FA_rate_CS*(1-FA_rate_CS))))}
+    
+    v_A_LS[b] <- round(A_LS,3)
+    v_B_LS[b] <- round(B_LS,3)
+    v_Beta_LS[b] <-round(beta_LS,3)
+    v_D_LS[b] <- round(d_LS,2)
+    v_C_LS[b] <- round(c_LS,3)
+    v_A_d_LS[b] <- round(Ad_LS,3)
+    v_H_rate_LS[b] <- round(H_rate_LS,3)
+    v_FA_rate_LS[b] <- round(FA_rate_LS,3)
+    
+    v_A_CS[b] <- round(A_CS,3)
+    v_B_CS[b] <- round(B_CS,3)
+    v_Beta_CS[b] <-round(beta_CS,3)
+    v_D_CS[b] <- round(d_CS,2)
+    v_C_CS[b] <- round(c_CS,3)
+    v_A_d_CS[b] <- round(Ad_CS,3)
+    v_H_rate_CS[b] <- round(H_rate_CS,3)
+    v_FA_rate_CS[b] <- round(FA_rate_CS,3)}
+  
+  Sesiones <- c('LB', 'M')
+  
+  valores_C<- data.frame(cbind(Sesiones, v_H_rate_CS, v_FA_rate_CS, v_A_CS, v_B_CS))   #Acomodamos los valores en un arreglo
+  colnames(valores_C) <- c("Sesion",'Hits', 'FA', "A'", "B'") #, "D'","A_d'","A'","Beta", "C", "B''")
+  
+  valores_L<- data.frame(cbind(Sesiones, v_H_rate_LS, v_FA_rate_LS, v_A_LS, v_B_LS))   #Acomodamos los valores en un arreglo
+  colnames(valores_L) <- c("Sesion",'Hits', 'FA', "A'", "B'") #, "D'","A_d'","A'","Beta", "C", "B''")
+  
+  print("========== > Largo es Señal")
+  print(valores_L)
+  print("========== > Corto es Señal")
+  print(valores_C)
+}
 
 
