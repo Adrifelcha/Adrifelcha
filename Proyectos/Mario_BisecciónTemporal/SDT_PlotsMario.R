@@ -365,100 +365,11 @@ for(a in sort(unique(Condicion))){
   text(2.5, 1, labels="Baseline", offset=0, cex = 0.9, pos=4)
   text(7.5, 1, labels="Magnitud", offset=0, cex = 0.9, pos=4)
   mtext("B'",3,cex=3.5, line=1, f=2)
-  mtext("Long is Signal - All subjects",4,cex=2, line=1, f=2)
+  mtext("ALL subjects (Long&Short)",4,cex=2, line=1, f=2)
 
   
   
-  
-  
-  
-##############           GRAFICO 4
-###################################           Grafica de Barras comparando A' y B'' 
-###################################           en Linea Base vs Magnitud, en cada condición
-###################################           PROMEDIANDO TODOS LOS SUJETOS
-###################################           Una Gráfica por Condición
-  
-  layout(matrix(1:8,ncol=4, byrow=TRUE))
-  
-  Par_A_LB <- NULL
-  Par_A_M <- NULL
-  Par_B_LB <- NULL
-  Par_B_M <- NULL
-  
-  for(a in sort(unique(Condicion))){
-    print(c('========> Magnitud:', a))
-    for(b in sort(unique(TipoSesion))){
-      Sesion <- b
-      Hits_ <- sum(Hits[Condicion==a&TipoSesion==b])
-      FA_ <- sum(FA[Condicion==a&TipoSesion==b]) 
-      Signal_ <- sum(Signal[Condicion==a&TipoSesion==b])
-      Noise_ <- sum(Noise[Condicion==a&TipoSesion==b])
-      H_rate <- Hits_/Signal_
-      FA_rate <- FA_/Noise_
-      d_<- qnorm(H_rate,0,1)-qnorm(FA_rate,0,1)
-      Ad_<-pnorm(d_/(sqrt(2)))
-      if(FA_rate > H_rate){
-        A_ <- 0.5- ( ((FA_rate-H_rate)*(1+FA_rate-H_rate)) / ((4*FA_rate)*(1-H_rate)) )
-      } else {
-        A_ <- 0.5+ ( ((H_rate-FA_rate)*(1+H_rate-FA_rate)) / ((4*H_rate)*(1-FA_rate)) )}
-      k_<-qnorm(1-FA_rate,0,1)               
-      beta_<-dnorm(k_,d_,1)/dnorm(k_,0,1)             
-      c_<-k_-(d_/2)
-      if(FA_rate > H_rate){
-        B_ <- (((FA_rate*(1-FA_rate))-(H_rate*(1-H_rate)))/((FA_rate*(1-FA_rate))+(H_rate*(1-H_rate))))
-      } else {
-        B_ <- (((H_rate*(1-H_rate))-(FA_rate*(1-FA_rate)))/((H_rate*(1-H_rate))+(FA_rate*(1-FA_rate))))}
-      
-      A_ <- round(A_,3)
-      B_ <- round(B_,3)
-      Beta_<-round(beta_,3)
-      D_ <- round(d_,2)
-      C_<- round(c_,3)
-      A_d_ <- round(Ad_,3)
-      H_rate <- round(H_rate,3)
-      FA_rate <- round(FA_rate,3)
-      
-      valores_P<- data.frame(cbind(b, H_rate, FA_rate, A_, B_))   #Acomodamos los valores en un arreglo
-      colnames(valores_P) <- c("Sesion",'Hits', 'FA', "A'", "B'") #, "D'","A_d'","A'","Beta", "C", "B''")
-      print(valores_P)
-      
-      
-      if(b=='LB'){
-        Par_A_LB <- A_
-        Par_B_LB <- B_
-      } else {
-        Par_A_M <- A_
-        Par_B_M <- B_
-      }}
-      
-      Parejas_A <- c(rbind(Par_A_LB, Par_A_M))
-      Parejas_B <- c(rbind(Par_B_LB, Par_B_M))
-      
-      barplot(Parejas_A, main = "", xlab = "", ylab = "", font.lab=2, ylim = c(0,1), axes = FALSE, col =c("cadetblue2", "deepskyblue4"))
-      axis(1,at=c(0.72,1.9),labels=c("Baseline", "Magnitud"), font=2)
-      axis(2,at=c(0, 0.25, 0.5, 0.75, 1),labels=c("0", "0.25", "0.5", "0.75", "1"),las=1)
-      text(0.72,(Parejas_A[1]/2),paste(Parejas_A[1]),cex=.9,col='black',f=2)
-      text(1.9,(Parejas_A[2]/2),paste(Parejas_A[2]),cex=.9,col='white',f=2)
-      mtext("A'",1,cex=1.3, line=3, f=2)
-      
-      barplot(Parejas_B, main = "", xlab = "", ylab = "", font.lab=2, ylim = c(-1,1), axes = FALSE, col =c("darkseagreen3", "darkseagreen4"))
-      axis(1,at=c(0.72,1.9),labels=c("Baseline", "Magnitud"), font=2)
-      axis(2,at=c(0, -0.5, 0.5, -1, 1),labels=c("0", "-0.5", "0.5", "-1","1"),las=1)
-      text(0.72,(Parejas_B[1]/2),paste(Parejas_B[1]),cex=.9,col='black',f=2)
-      text(1.9,(Parejas_B[2]/2),paste(Parejas_B[2]),cex=.9,col='white',f=2)
-      mtext("B''",1,cex=1.5, line=3, f=2)
-      mtext(a,4,cex=1.3, line=1, f=2)
-      title(paste("All Subjects"), outer = TRUE, line = -2)}
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  ######           GRAFICO 5   FUTURO REMPLAZO! (FALTA DISTINGUIR ENTRE GRUPOS DONDE SEÑAL ES CORTO Y LARGO)
+  ###           GRAFICO 4   
   ###################################           Grafica de Barras comparando A' y B'' 
   ###################################           en Linea Base vs Magnitud, en cada condición
   ###################################           PROMEDIANDO TODOS LOS SUJETOS
@@ -470,17 +381,18 @@ for(a in sort(unique(Condicion))){
   Par_B_LB_L <- NULL
   Par_A_LB_C <- NULL
   Par_B_LB_C <- NULL
+  
   Par_A_M_L <- NULL
   Par_B_M_L <- NULL
   Par_A_M_C <- NULL
   Par_B_M_C <- NULL
- 
+  
   Sesion <- c("LB", "M")
-
+  
   for(a in sort(unique(Condicion))){
     print(c('========> Magnitud:', a))
     for(b in sort(unique(TipoSesion))){
-
+      
       
       Hits_LS <- sum(Hits[Condicion==a&TipoSesion==b &Sujeto %in% LargoEsSignal ==TRUE])
       FA_LS <- sum(FA[Condicion==a&TipoSesion==b & Sujeto %in% LargoEsSignal ==TRUE]) 
@@ -574,36 +486,340 @@ for(a in sort(unique(Condicion))){
     Parejas_B_C <- c(rbind(Par_B_LB_C, Par_B_M_C))
   }
   
-  barplot(Parejas_A_L, main = "", xlab = "", ylab = "", font.lab=2, ylim = c(0,1), axes = FALSE, col =c("cadetblue2", "deepskyblue4"))
-  axis(1,at=c(0.72,1.9),labels=c("Baseline", "Magnitud"), font=2)
+  barplot(Parejas_A_L, main = "", xlab = "", ylab = "", font.lab=2, ylim = c(0,1.05), axes = FALSE, col =c("cadetblue2", "deepskyblue4"))
+  axis(1,at=c(1.3,3.7,6.1,8.5),labels=c("1vs4", "2vs8", "3vs12", "5vs2"), font=2)
   axis(2,at=c(0, 0.25, 0.5, 0.75, 1),labels=c("0", "0.25", "0.5", "0.75", "1"),las=1)
-  text(0.72,(Parejas_A_L[1]/2),paste(Parejas_A_L[1]),cex=.9,col='black',f=2)
-  text(1.9,(Parejas_A_L[2]/2),paste(Parejas_A_L[2]),cex=.9,col='white',f=2)
+  text(0.72,(Parejas_A_L[1]-.07),paste(Parejas_A_L[1]),cex=.9,col='black',f=2, srt=90)
+  text(1.9,(Parejas_A_L[2]-.07),paste(Parejas_A_L[2]),cex=.9,col='white',f=2, srt=90)
+  text(3.08,(Parejas_A_L[3]-.07),paste(Parejas_A_L[3]),cex=.9,col='black',f=2, srt=90)
+  text(4.26,(Parejas_A_L[4]-.07),paste(Parejas_A_L[4]),cex=.9,col='white',f=2, srt=90)
+  text(5.5,(Parejas_A_L[5]-.07),paste(Parejas_A_L[5]),cex=.9,col='black',f=2, srt=90)
+  text(6.67,(Parejas_A_L[6]-.07),paste(Parejas_A_L[6]),cex=.9,col='white',f=2, srt=90)
+  text(7.9,(Parejas_A_L[7]-.07),paste(Parejas_A_L[7]),cex=.9,col='black',f=2, srt=90)
+  text(9.1,(Parejas_A_L[8]-.07),paste(Parejas_A_L[8]),cex=.9,col='white',f=2, srt=90)
+  lines(c(5.7, 7.3),c(1,1), lwd=3, lty=1, col="deepskyblue4")
+  lines(c(0.7, 2.3),c(1,1), lwd=3, lty=1, col="cadetblue2")
+  text(2.5, 1, labels="Baseline", offset=0, cex = 0.9, pos=4)
+  text(7.5, 1, labels="Magnitud", offset=0, cex = 0.9, pos=4)
   mtext("A'",1,cex=1.3, line=3, f=2)
   
-  barplot(Parejas_B_L, main = "", xlab = "", ylab = "", font.lab=2, ylim = c(-1,1), axes = FALSE, col =c("darkseagreen3", "darkseagreen4"))
-  axis(1,at=c(0.72,1.9),labels=c("Baseline", "Magnitud"), font=2)
+  barplot(Parejas_B_L, main = "", xlab = "", ylab = "", font.lab=2, ylim = c(-1,1.05), axes = FALSE, col =c("darkseagreen3", "darkseagreen4"))
+  axis(1,at=c(1.3,3.7,6.1,8.5),labels=c("1vs4", "2vs8", "3vs12", "5vs2"), font=2)
   axis(2,at=c(0, -0.5, 0.5, -1, 1),labels=c("0", "-0.5", "0.5", "-1","1"),las=1)
-  text(0.72,(Parejas_B_L[1]/2),paste(Parejas_B_L[1]),cex=.9,col='black',f=2)
-  text(1.9,(Parejas_B_L[2]/2),paste(Parejas_B_L[2]),cex=.9,col='white',f=2)
+  text(0.72,0.5,paste(Parejas_B_L[1]),cex=.9,col='black',f=2, srt=90)
+  text(1.9,0.5,paste(Parejas_B_L[2]),cex=.9,col='black',f=2, srt=90)
+  text(3.08,0.5,paste(Parejas_B_L[3]),cex=.9,col='black',f=2, srt=90)
+  text(4.26,0.5,paste(Parejas_B_L[4]),cex=.9,col='black',f=2, srt=90)
+  text(5.5,0.5,paste(Parejas_B_L[5]),cex=.9,col='black',f=2, srt=90)
+  text(6.67,0.5,paste(Parejas_B_L[6]),cex=.9,col='black',f=2, srt=90)
+  text(7.9,0.5,paste(Parejas_B_L[7]),cex=.9,col='black',f=2, srt=90)
+  text(9.1,0.5,paste(Parejas_B_L[8]),cex=.9,col='black',f=2, srt=90)
+  lines(c(5.7, 7.3),c(1,1), lwd=3, lty=1, col="darkseagreen4")
+  lines(c(0.7, 2.3),c(1,1), lwd=3, lty=1, col="darkseagreen3")
+  text(2.5, 1, labels="Baseline", offset=0, cex = 0.9, pos=4)
+  text(7.5, 1, labels="Magnitud", offset=0, cex = 0.9, pos=4)
   mtext("B''",1,cex=1.5, line=3, f=2)
-  mtext("Largo es Señal",4,cex=1.3, line=1, f=2)
+  mtext("Long is considered Signal",4,cex=1.3, line=1, f=2)
   title(main=paste("All Subjects"), outer = TRUE, line = -2)
   
-  barplot(Parejas_A_C, main = "", xlab = "", ylab = "", font.lab=2, ylim = c(0,1), axes = FALSE, col =c("cadetblue2", "deepskyblue4"))
-  axis(1,at=c(0.72,1.9),labels=c("Baseline", "Magnitud"), font=2)
+  barplot(Parejas_A_C, main = "", xlab = "", ylab = "", font.lab=2, ylim = c(0,1.05), axes = FALSE, col =c("cadetblue2", "deepskyblue4"))
+  axis(1,at=c(1.3,3.7,6.1,8.5),labels=c("1vs4", "2vs8", "3vs12", "5vs2"), font=2)
   axis(2,at=c(0, 0.25, 0.5, 0.75, 1),labels=c("0", "0.25", "0.5", "0.75", "1"),las=1)
-  text(0.72,(Parejas_A_C[1]/2),paste(Parejas_A_C[1]),cex=.9,col='black',f=2)
-  text(1.9,(Parejas_A_C[2]/2),paste(Parejas_A_C[2]),cex=.9,col='white',f=2)
+  text(0.72,(Parejas_A_C[1]-.07),paste(Parejas_A_C[1]),cex=.9,col='black',f=2, srt=90)
+  text(1.9,(Parejas_A_C[2]-.07),paste(Parejas_A_C[2]),cex=.9,col='white',f=2, srt=90)
+  text(3.08,(Parejas_A_C[3]-.07),paste(Parejas_A_C[3]),cex=.9,col='black',f=2, srt=90)
+  text(4.26,(Parejas_A_C[4]-.07),paste(Parejas_A_C[4]),cex=.9,col='white',f=2, srt=90)
+  text(5.5,(Parejas_A_C[5]-.07),paste(Parejas_A_C[5]),cex=.9,col='black',f=2, srt=90)
+  text(6.67,(Parejas_A_C[6]-.07),paste(Parejas_A_C[6]),cex=.9,col='white',f=2, srt=90)
+  text(7.9,(Parejas_A_C[7]-.07),paste(Parejas_A_C[7]),cex=.9,col='black',f=2, srt=90)
+  text(9.1,(Parejas_A_C[8]-.07),paste(Parejas_A_C[8]),cex=.9,col='white',f=2, srt=90)
+  lines(c(5.7, 7.3),c(1,1), lwd=3, lty=1, col="deepskyblue4")
+  lines(c(0.7, 2.3),c(1,1), lwd=3, lty=1, col="cadetblue2")
+  text(2.5, 1, labels="Baseline", offset=0, cex = 0.9, pos=4)
+  text(7.5, 1, labels="Magnitud", offset=0, cex = 0.9, pos=4)
   mtext("A'",1,cex=1.3, line=3, f=2)
   
-  barplot(Parejas_B_C, main = "", xlab = "", ylab = "", font.lab=2, ylim = c(-1,1), axes = FALSE, col =c("darkseagreen3", "darkseagreen4"))
-  axis(1,at=c(0.72,1.9),labels=c("Baseline", "Magnitud"), font=2)
+  barplot(Parejas_B_C, main = "", xlab = "", ylab = "", font.lab=2, ylim = c(-1,1.05), axes = FALSE, col =c("darkseagreen3", "darkseagreen4"))
+  axis(1,at=c(1.3,3.7,6.1,8.5),labels=c("1vs4", "2vs8", "3vs12", "5vs2"), font=2)
   axis(2,at=c(0, -0.5, 0.5, -1, 1),labels=c("0", "-0.5", "0.5", "-1","1"),las=1)
-  text(0.72,(Parejas_B_C[1]/2),paste(Parejas_B_C[1]),cex=.9,col='black',f=2)
-  text(1.9,(Parejas_B_C[2]/2),paste(Parejas_B_C[2]),cex=.9,col='white',f=2)
+  text(0.72,0.5,paste(Parejas_B_C[1]),cex=.9,col='black',f=2, srt=90)
+  text(1.9,0.5,paste(Parejas_B_C[2]),cex=.9,col='black',f=2, srt=90)
+  text(3.08,0.5,paste(Parejas_B_C[3]),cex=.9,col='black',f=2, srt=90)
+  text(4.26,0.5,paste(Parejas_B_C[4]),cex=.9,col='black',f=2, srt=90)
+  text(5.5,0.5,paste(Parejas_B_C[5]),cex=.9,col='black',f=2, srt=90)
+  text(6.67,0.5,paste(Parejas_B_C[6]),cex=.9,col='black',f=2, srt=90)
+  text(7.9,0.5,paste(Parejas_B_C[7]),cex=.9,col='black',f=2, srt=90)
+  text(9.1,0.5,paste(Parejas_B_C[8]),cex=.9,col='black',f=2, srt=90)
+  lines(c(5.7, 7.3),c(1,1), lwd=3, lty=1, col="darkseagreen4")
+  lines(c(0.7, 2.3),c(1,1), lwd=3, lty=1, col="darkseagreen3")
+  text(2.5, 1, labels="Baseline", offset=0, cex = 0.9, pos=4)
+  text(7.5, 1, labels="Magnitud", offset=0, cex = 0.9, pos=4)
   mtext("B''",1,cex=1.5, line=3, f=2)
-  mtext("Corto es Señal",4,cex=1.3, line=1, f=2)
+  mtext("Short is considered Signal",4,cex=1.3, line=1, f=2)
   title(main=paste("All Subjects"), outer = TRUE, line = -2)
+  
+  
 
   
+  
+  
+##############           GRAFICO 5
+###################################           Grafica de Barras comparando A' y B'' 
+###################################           en Linea Base vs Magnitud, en cada condición
+###################################           PROMEDIANDO TODOS LOS SUJETOS
+###################################           Una Gráfica por Condición
+  
+  layout(matrix(1:8,ncol=4, byrow=TRUE))
+  
+  Par_A_LB <- NULL
+  Par_A_M <- NULL
+  Par_B_LB <- NULL
+  Par_B_M <- NULL
+  
+  for(a in sort(unique(Condicion))){
+    print(c('========> Magnitud:', a))
+    for(b in sort(unique(TipoSesion))){
+      Sesion <- b
+      Hits_ <- sum(Hits[Condicion==a&TipoSesion==b])
+      FA_ <- sum(FA[Condicion==a&TipoSesion==b]) 
+      Signal_ <- sum(Signal[Condicion==a&TipoSesion==b])
+      Noise_ <- sum(Noise[Condicion==a&TipoSesion==b])
+      H_rate <- Hits_/Signal_
+      FA_rate <- FA_/Noise_
+      d_<- qnorm(H_rate,0,1)-qnorm(FA_rate,0,1)
+      Ad_<-pnorm(d_/(sqrt(2)))
+      if(FA_rate > H_rate){
+        A_ <- 0.5- ( ((FA_rate-H_rate)*(1+FA_rate-H_rate)) / ((4*FA_rate)*(1-H_rate)) )
+      } else {
+        A_ <- 0.5+ ( ((H_rate-FA_rate)*(1+H_rate-FA_rate)) / ((4*H_rate)*(1-FA_rate)) )}
+      k_<-qnorm(1-FA_rate,0,1)               
+      beta_<-dnorm(k_,d_,1)/dnorm(k_,0,1)             
+      c_<-k_-(d_/2)
+      if(FA_rate > H_rate){
+        B_ <- (((FA_rate*(1-FA_rate))-(H_rate*(1-H_rate)))/((FA_rate*(1-FA_rate))+(H_rate*(1-H_rate))))
+      } else {
+        B_ <- (((H_rate*(1-H_rate))-(FA_rate*(1-FA_rate)))/((H_rate*(1-H_rate))+(FA_rate*(1-FA_rate))))}
+      
+      A_ <- round(A_,3)
+      B_ <- round(B_,3)
+      Beta_<-round(beta_,3)
+      D_ <- round(d_,2)
+      C_<- round(c_,3)
+      A_d_ <- round(Ad_,3)
+      H_rate <- round(H_rate,3)
+      FA_rate <- round(FA_rate,3)
+      
+      valores_P<- data.frame(cbind(b, H_rate, FA_rate, A_, B_))   #Acomodamos los valores en un arreglo
+      colnames(valores_P) <- c("Sesion",'Hits', 'FA', "A'", "B'") #, "D'","A_d'","A'","Beta", "C", "B''")
+      print(valores_P)
+      
+      
+      if(b=='LB'){
+        Par_A_LB <- A_
+        Par_B_LB <- B_
+      } else {
+        Par_A_M <- A_
+        Par_B_M <- B_
+      }}
+      
+      Parejas_A <- c(rbind(Par_A_LB, Par_A_M))
+      Parejas_B <- c(rbind(Par_B_LB, Par_B_M))
+      
+      barplot(Parejas_A, main = "", xlab = "", ylab = "", font.lab=2, ylim = c(0,1), axes = FALSE, col =c("cadetblue2", "deepskyblue4"))
+      axis(1,at=c(0.72,1.9),labels=c("Baseline", "Magnitud"), font=2)
+      axis(2,at=c(0, 0.25, 0.5, 0.75, 1),labels=c("0", "0.25", "0.5", "0.75", "1"),las=1)
+      text(0.72,(Parejas_A[1]/2),paste(Parejas_A[1]),cex=.9,col='black',f=2)
+      text(1.9,(Parejas_A[2]/2),paste(Parejas_A[2]),cex=.9,col='white',f=2)
+      mtext("A'",1,cex=1.3, line=3, f=2)
+      
+      barplot(Parejas_B, main = "", xlab = "", ylab = "", font.lab=2, ylim = c(-1,1), axes = FALSE, col =c("darkseagreen3", "darkseagreen4"))
+      axis(1,at=c(0.72,1.9),labels=c("Baseline", "Magnitud"), font=2)
+      axis(2,at=c(0, -0.5, 0.5, -1, 1),labels=c("0", "-0.5", "0.5", "-1","1"),las=1)
+      text(0.72,(Parejas_B[1]/2),paste(Parejas_B[1]),cex=.9,col='black',f=2)
+      text(1.9,(Parejas_B[2]/2),paste(Parejas_B[2]),cex=.9,col='white',f=2)
+      mtext("B''",1,cex=1.5, line=3, f=2)
+      mtext(a,4,cex=1.3, line=1, f=2)
+      title(paste("All Subjects"), outer = TRUE, line = -2)}
+  
+  
+  ##############           GRAFICO 6
+  ###################################           Grafica de Barras comparando A' y B'' 
+  ###################################           en Linea Base vs Magnitud, en cada condición
+  ###################################           PROMEDIANDO TODOS LOS SUJETOS
+  ###################################           Una Gráfica por Condición
+  ###################################          Distinguiendo entre ensayos con Señal
+  
+  layout(matrix(1:8,ncol=4, byrow=TRUE))
+  
+  Par_A_LB_L <- NULL
+  Par_B_LB_L <- NULL
+  Par_A_LB_C <- NULL
+  Par_B_LB_C <- NULL
+  
+  Par_A_M_L <- NULL
+  Par_B_M_L <- NULL
+  Par_A_M_C <- NULL
+  Par_B_M_C <- NULL
+  
+  v_A_LS <- NULL
+  v_B_LS <- NULL
+  v_Beta_LS<- NULL
+  v_D_LS <- NULL
+  v_C_LS<- NULL
+  v_A_d_LS <- NULL
+  v_H_rate_LS <- NULL
+  v_FA_rate_LS <- NULL
+  
+  v_A_CS <- NULL
+  v_B_CS <- NULL
+  v_Beta_CS<- NULL
+  v_D_CS <- NULL
+  v_C_CS<- NULL
+  v_A_d_CS <- NULL
+  v_H_rate_CS <- NULL
+  v_FA_rate_CS <- NULL
+  
+  
+  
+  Sesion <- c("LB", "M")
+  
+  for(a in sort(unique(Condicion))){
+    print(c('==============================> Condición:', a))
+    for(b in sort(unique(TipoSesion))){
+      
+      
+      Hits_LS <- sum(Hits[Condicion==a&TipoSesion==b &Sujeto %in% LargoEsSignal ==TRUE])
+      FA_LS <- sum(FA[Condicion==a&TipoSesion==b & Sujeto %in% LargoEsSignal ==TRUE]) 
+      Signal_LS <- sum(Signal[Condicion==a&TipoSesion==b & Sujeto %in% LargoEsSignal ==TRUE])
+      Noise_LS <- sum(Noise[Condicion==a&TipoSesion==b & Sujeto %in% LargoEsSignal ==TRUE])
+      H_rate_LS <- Hits_LS/Signal_LS
+      FA_rate_LS <- FA_LS/Noise_LS
+      
+      Hits_CS <- sum(Hits[Condicion==a&TipoSesion==b &Sujeto %in% LargoEsSignal ==FALSE])
+      FA_CS <- sum(FA[Condicion==a&TipoSesion==b & Sujeto %in% LargoEsSignal ==FALSE]) 
+      Signal_CS <- sum(Signal[Condicion==a&TipoSesion==b & Sujeto %in% LargoEsSignal ==FALSE])
+      Noise_CS <- sum(Noise[Condicion==a&TipoSesion==b & Sujeto %in% LargoEsSignal ==FALSE])
+      H_rate_CS <- Hits_CS/Signal_CS
+      FA_rate_CS <- FA_CS/Noise_CS
+      
+      d_LS<- qnorm(H_rate_LS,0,1)-qnorm(FA_rate_LS,0,1)
+      Ad_LS<-pnorm(d_LS/(sqrt(2)))
+      d_CS<- qnorm(H_rate_CS,0,1)-qnorm(FA_rate_CS,0,1)
+      Ad_CS<-pnorm(d_CS/(sqrt(2)))
+      
+      
+      if(FA_rate_LS > H_rate_LS){
+        A_LS <- 0.5- ( ((FA_rate_LS-H_rate_LS)*(1+FA_rate_LS-H_rate_LS)) / ((4*FA_rate_LS)*(1-H_rate_LS)))
+      } else {
+        A_LS <- 0.5+ ( ((H_rate_LS-FA_rate_LS)*(1+H_rate_LS-FA_rate_LS)) / ((4*H_rate_LS)*(1-FA_rate_LS)))}
+      if(FA_rate_CS > H_rate_CS){
+        A_CS <- 0.5- ( ((FA_rate_CS-H_rate_CS)*(1+FA_rate_CS-H_rate_CS)) / ((4*FA_rate_CS)*(1-H_rate_CS)))
+      } else {
+        A_CS <- 0.5+ ( ((H_rate_CS-FA_rate_CS)*(1+H_rate_CS-FA_rate_CS)) / ((4*H_rate_CS)*(1-FA_rate_CS)))}
+      
+      k_LS<-qnorm(1-FA_rate_LS,0,1)               
+      beta_LS<-dnorm(k_LS,d_LS,1)/dnorm(k_LS,0,1)             
+      c_LS<-k_LS-(d_LS/2)
+      k_CS<-qnorm(1-FA_rate_CS,0,1)               
+      beta_CS<-dnorm(k_CS,d_CS,1)/dnorm(k_CS,0,1)             
+      c_CS<-k_CS-(d_CS/2)
+      
+      
+      if(FA_rate_LS > H_rate_LS){
+        B_LS <-(((FA_rate_LS*(1-FA_rate_LS))-(H_rate_LS*(1-H_rate_LS)))/((FA_rate_LS*(1-FA_rate_LS))+(H_rate_LS*(1-H_rate_LS))))
+      } else {
+        B_LS <-(((H_rate_LS*(1-H_rate_LS))-(FA_rate_LS*(1-FA_rate_LS)))/((H_rate_LS*(1-H_rate_LS))+(FA_rate_LS*(1-FA_rate_LS))))}
+      if(FA_rate_CS > H_rate_CS){
+        B_CS <-(((FA_rate_CS*(1-FA_rate_CS))-(H_rate_CS*(1-H_rate_CS)))/((FA_rate_CS*(1-FA_rate_CS))+(H_rate_CS*(1-H_rate_CS))))
+      } else {
+        B_CS <-(((H_rate_CS*(1-H_rate_CS))-(FA_rate_CS*(1-FA_rate_CS)))/((H_rate_CS*(1-H_rate_CS))+(FA_rate_CS*(1-FA_rate_CS))))}
+      
+      v_A_LS[b] <- round(A_LS,3)
+      v_B_LS[b] <- round(B_LS,3)
+      v_Beta_LS[b] <-round(beta_LS,3)
+      v_D_LS[b] <- round(d_LS,2)
+      v_C_LS[b] <- round(c_LS,3)
+      v_A_d_LS[b] <- round(Ad_LS,3)
+      v_H_rate_LS[b] <- round(H_rate_LS,3)
+      v_FA_rate_LS[b] <- round(FA_rate_LS,3)
+      
+      v_A_CS[b] <- round(A_CS,3)
+      v_B_CS[b] <- round(B_CS,3)
+      v_Beta_CS[b] <-round(beta_CS,3)
+      v_D_CS[b] <- round(d_CS,2)
+      v_C_CS[b] <- round(c_CS,3)
+      v_A_d_CS[b] <- round(Ad_CS,3)
+      v_H_rate_CS[b] <- round(H_rate_CS,3)
+      v_FA_rate_CS[b] <- round(FA_rate_CS,3)
+      
+      if(b=='LB'){
+        Par_A_LB_L[a] <- v_A_LS
+        Par_B_LB_L[a] <- v_B_LS
+        Par_A_LB_C[a] <- v_A_CS
+        Par_B_LB_C[a] <- v_B_CS
+      } else {
+        Par_A_M_L[a] <- v_A_LS
+        Par_B_M_L[a] <- v_B_LS
+        Par_A_M_C[a] <- v_A_CS
+        Par_B_M_C[a] <- v_B_CS}}
+      
+      Sesiones <- c('LB', 'M')
+      
+      valores_C<- data.frame(cbind(Sesiones, v_H_rate_CS, v_FA_rate_CS, v_A_CS, v_B_CS))   #Acomodamos los valores en un arreglo
+      colnames(valores_C) <- c("Sesion",'Hits', 'FA', "A'", "B'") #, "D'","A_d'","A'","Beta", "C", "B''")
+      
+      valores_L<- data.frame(cbind(Sesiones, v_H_rate_LS, v_FA_rate_LS, v_A_LS, v_B_LS))   #Acomodamos los valores en un arreglo
+      colnames(valores_L) <- c("Sesion",'Hits', 'FA', "A'", "B'") #, "D'","A_d'","A'","Beta", "C", "B''")
+      
+      print("========== > Largo es Señal")
+      print(valores_L)
+      print("========== > Corto es Señal")
+      print(valores_C)
+    }
+  
+  
+  
+  for(d in c(1:4)){
+    Parejas_A_L <- c(rbind(Par_A_LB_L[d], Par_A_M_L[d]))
+    Parejas_B_L <- c(rbind(Par_B_LB_L[d], Par_B_M_L[d]))
+
+      barplot(Parejas_A_L, main = "", xlab = "", ylab = "", font.lab=2, ylim = c(0,1), axes = FALSE, col =c("cadetblue2", "deepskyblue4"))
+      axis(1,at=c(0.72,1.9),labels=c("Baseline", "Magnitud"), font=2)
+      axis(2,at=c(0, 0.25, 0.5, 0.75, 1),labels=c("0", "0.25", "0.5", "0.75", "1"),las=1)
+      text(0.72,(Parejas_A_L[1]/2),paste(Parejas_A_L[1]),cex=.9,col='black',f=2)
+      text(1.9,(Parejas_A_L[2]/2),paste(Parejas_A_L[2]),cex=.9,col='white',f=2)
+      mtext("A'",1,cex=1.3, line=3, f=2)
+      
+      barplot(Parejas_B_L, main = "", xlab = "", ylab = "", font.lab=2, ylim = c(-1,1), axes = FALSE, col =c("darkseagreen3", "darkseagreen4"))
+      axis(1,at=c(0.72,1.9),labels=c("Baseline", "Magnitud"), font=2)
+      axis(2,at=c(0, -0.5, 0.5, -1, 1),labels=c("0", "-0.5", "0.5", "-1","1"),las=1)
+      text(0.72,(Parejas_B_L[1]/2),paste(Parejas_B_L[1]),cex=.9,col='black',f=2)
+      text(1.9,(Parejas_B_L[2]/2),paste(Parejas_B_L[2]),cex=.9,col='white',f=2)
+      mtext("B''",1,cex=1.5, line=3, f=2)
+      mtext(sort(unique(Condicion))[d],4,cex=1.3, line=1, f=2)
+      title("All Subjects", sub="Long is Signal", outer = TRUE, line = -2)
+    }
+    
+  for(d in c(1:4)){
+    Parejas_A_C <- c(rbind(Par_A_LB_C[d], Par_A_M_C[d]))
+    Parejas_B_C <- c(rbind(Par_B_LB_C[d], Par_B_M_C[d])) 
+    
+    barplot(Parejas_A_C, main = "", xlab = "", ylab = "", font.lab=2, ylim = c(0,1), axes = FALSE, col =c("cadetblue2", "deepskyblue4"))
+    axis(1,at=c(0.72,1.9),labels=c("Baseline", "Magnitud"), font=2)
+    axis(2,at=c(0, 0.25, 0.5, 0.75, 1),labels=c("0", "0.25", "0.5", "0.75", "1"),las=1)
+    text(0.72,(Parejas_A_C[1]/2),paste(Parejas_A_C[1]),cex=.9,col='black',f=2)
+    text(1.9,(Parejas_A_C[2]/2),paste(Parejas_A_C[2]),cex=.9,col='white',f=2)
+    mtext("A'",1,cex=1.3, line=3, f=2)
+    
+    barplot(Parejas_B_C, main = "", xlab = "", ylab = "", font.lab=2, ylim = c(-1,1), axes = FALSE, col =c("darkseagreen3", "darkseagreen4"))
+    axis(1,at=c(0.72,1.9),labels=c("Baseline", "Magnitud"), font=2)
+    axis(2,at=c(0, -0.5, 0.5, -1, 1),labels=c("0", "-0.5", "0.5", "-1","1"),las=1)
+    text(0.72,(Parejas_B_C[1]/2),paste(Parejas_B_C[1]),cex=.9,col='black',f=2)
+    text(1.9,(Parejas_B_C[2]/2),paste(Parejas_B_C[2]),cex=.9,col='white',f=2)
+    mtext("B''",1,cex=1.5, line=3, f=2)
+    mtext(sort(unique(Condicion))[d],4,cex=1.3, line=1, f=2)
+    title("All Subjects", "Short is signal", outer = TRUE, line = -2)
+  }
+      
+    
+   
