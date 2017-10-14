@@ -17,7 +17,7 @@
 setwd("C:/Users/Alejandro/Desktop/Felisa/Proyectos/Mario_BisecciónTemporal") # Directorio de trabajo
 rm(list=ls())  #Reseteamos la consola
 dir()          #Imprimimos los archivos contenidos en el directorio en la consola
-archive <-'Datos_Dummies_4sujetos_.csv'  #Señalamos el archivo que contiene los datos a analizar
+archive <-'Datos_Mario_.csv'  #Señalamos el archivo que contiene los datos a analizar
 datos <- read.csv(archive)             #Extraemos los datos del archivo
 ########################################
 # # # # # # # #  Especificamos variables
@@ -56,6 +56,9 @@ TotalSujetos <- length(unique(Sujeto))
 Magnitudes <- c(rep('1v4', 20), rep('2v8', 20), rep('3v12', 20), rep('5v2', 20))
 Sesiones <- c(rep('LB',10), rep('M',10))
 # Preveemos una solución para los casos donde
+
+
+
 
 
 ########################################

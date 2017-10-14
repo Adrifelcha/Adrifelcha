@@ -1,5 +1,5 @@
 ##########################################################
-# Codigo base para el análisis de paty obtenidos en el experimento presentado por Cruz, Pérez et al (2017)
+# Codigo base para el análisis de datos obtenidos en el experimento presentado por Cruz, Pérez et al (2017)
 # con los parámetros y estadísticos expuestos por Stainslaw (1999) y Gescheider (2013)
 ##########################################################
 #Referencia 1: Stainslaw & Todorov (1999), Calculation of signal detection theory measures.
@@ -15,7 +15,7 @@
 # # # # # # # #  Parte I
 # # # # # # # #  Cargamos los paty
 ####################################
-setwd("C:/Users/Adriana/Desktop/Felisa/Proyectos/Mario_BisecciónTemporal") # Directorio de trabajo
+setwd("C:/Users/Alejandro/Desktop/Felisa/Proyectos/Mario_BisecciónTemporal") # Directorio de trabajo
 rm(list=ls())  #Reseteamos la consola
 dir()          #Imprimimos los archivos contenidos en el directorio en la consola
 archive <-'Datos_Paty.csv'  
@@ -351,7 +351,7 @@ Sesiones <- c(rep('LB',10), rep('M',10))
   text(2.5, 1, labels="Baseline", offset=0, cex = 0.9, pos=4)
   text(7.5, 1, labels="Pre-Fed", offset=0, cex = 0.9, pos=4)
   mtext("B'",3,cex=3.5, line=1, f=2)
-  mtext("ALL subjects",4,cex=2, line=1, f=2)
+  mtext("ALL subjects", 4,cex=2, line=1, f=2)
   
   
   ##############           GRAFICO 4

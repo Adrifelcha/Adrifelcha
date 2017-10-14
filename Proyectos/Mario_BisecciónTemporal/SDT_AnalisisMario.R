@@ -12,13 +12,13 @@
 
 
 ####################################
-# # # # # # # #  Parte I
-# # # # # # # #  Cargamos los datos
+# # # # # # # #  Parte I: Cargamos los datos
 ####################################
-setwd("C:/Users/Adriana/Desktop/Felisa/Proyectos/Mario_BisecciónTemporal") # Directorio de trabajo
+
+setwd("C:/Users/Alejandro/Desktop/Felisa/Proyectos/Mario_BisecciónTemporal") # Directorio de trabajo
 rm(list=ls())  #Reseteamos la consola
 dir()          #Imprimimos los archivos contenidos en el directorio en la consola
-archive <-'Datos_Dummies_4sujetos_.csv'  #Señalamos el archivo que contiene los datos a analizar
+archive <-'Datos_Mario_.csv'  #Señalamos el archivo que contiene los datos a analizar
 #archive <-'Datos_Sujeto3_Dummies.csv'  #Señalamos el archivo que contiene los datos a analizar
 datos <- read.csv(archive)             #Extraemos los datos del archivo
 
@@ -40,7 +40,7 @@ Signal <- NULL
 
 Signal_Is <- NULL
 
-LargoEsSignal <- c(5, 20, 33)  #Especificamos cuáles Sujetos estuvieron en el grupo donde LARGO es Señal
+LargoEsSignal <- c(3, 5, 20, 33)  #Especificamos cuáles Sujetos estuvieron en el grupo donde LARGO es Señal
 
 for(i in 1:length(Dia)){
 if(Sujeto[i] %in% LargoEsSignal == TRUE){
