@@ -15,7 +15,7 @@
 # # # # # # # #  Parte I
 # # # # # # # #  Cargamos los datos
 ####################################
-setwd("C:/Users/Alejandro/Desktop/Felisa/Proyectos/Mario_BisecciónTemporal") # Directorio de trabajo
+setwd("C:/Users/Adriana/Desktop/Felisa/Proyectos/Mario_BisecciónTemporal") # Directorio de trabajo
 rm(list=ls())  #Reseteamos la consola
 dir()          #Imprimimos los archivos contenidos en el directorio en la consola
 archive <-'Datos_Dummies_4sujetos_.csv'  #Señalamos el archivo que contiene los datos a analizar
