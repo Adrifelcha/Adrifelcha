@@ -16,7 +16,7 @@
 # # # # # # # #  Cargamos los mario
 ####################################
 rm(list=ls())  #Reseteamos la consola
-setwd("C:/Users/Alejandro/Desktop/Felisa/Proyectos/Mario_BisecciónTemporal") # Directorio de trabajo
+setwd("C:/Users/Adriana/Desktop/Felisa/Proyectos/Mario_BisecciónTemporal") # Directorio de trabajo
 dir()  #Comprobamos los archivos contenidos en el directorio
 
 #Datos de Mario
@@ -265,10 +265,10 @@ if(Paty_Signal=='Corto'){
 barplot(Parejas_B, main = "", border=NA, xlab = "", ylab = "", font.lab=2, ylim = c(-1,1.05), axes = FALSE, col =c("cadetblue2", "deepskyblue4", "white", "cadetblue2", "dodgerblue4"))
 axis(1,at=c(1.3,5),labels=c("Motivation", "Bias"), font=2)
 axis(2,at=c(0, -0.5, 0.5, -1, 1),labels=c("0", "-0.5", "0.5", "-1","1"),las=1)
-text(0.72,0.5,paste(Parejas_B[1]),cex=.9,col='black',f=2, srt=90)
-text(1.9,0.5,paste(Parejas_B[2]),cex=.9,col='black',f=2, srt=90)
-text(4.26,0.5,paste(Parejas_B[4]),cex=.9,col='black',f=2, srt=90)
-text(5.5,0.5,paste(Parejas_B[5]),cex=.9,col='black',f=2, srt=90)
+text(0.72,0.5,paste(Parejas_B[1]),cex=.9,col='black',f=2)
+text(1.9,0.5,paste(Parejas_B[2]),cex=.9,col='black',f=2)
+text(4.26,0.5,paste(Parejas_B[4]),cex=.9,col='black',f=2)
+text(5.5,0.5,paste(Parejas_B[5]),cex=.9,col='black',f=2)
 lines(c(2.5, 3),c(1,1), lwd=3, lty=1, col="deepskyblue4")
 lines(c(0.5, 1),c(1,1), lwd=3, lty=1, col="cadetblue2")
 lines(c(4.5, 5),c(1,1), lwd=3, lty=1, col="dodgerblue4")
