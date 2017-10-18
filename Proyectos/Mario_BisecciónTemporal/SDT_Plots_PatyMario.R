@@ -12,26 +12,30 @@
 
 
 ####################################
-# # # # # # # #  Parte I
-# # # # # # # #  Cargamos los mario
+# # # # # # # #  Parte I: Cargamos los datos
 ####################################
 rm(list=ls())  #Reseteamos la consola
 setwd("C:/Users/Adriana/Desktop/Felisa/Proyectos/Mario_BisecciónTemporal") # Directorio de trabajo
 dir()  #Comprobamos los archivos contenidos en el directorio
 
-archive_1 <-'Datos_Mario_.csv'  #Señalamos los archivos que contiene los mario a analizar
+archive_1 <-'Datos_Mario_.csv'  #Señalamos los archivos que contiene los datos
 archive_2 <-'Datos_Paty.csv'  
-mario <- read.csv(archive_1) #Extraemos los mario del archivo
+mario <- read.csv(archive_1) #Extraemos los datos
 paty <- read.csv(archive_2)
 
-
-
 ########################################
-# # # # # # # #  Especificamos variables
+# # # # # # # #  PARTE II: Especificamos variables
 ########################################
 Mario_LargoEsSignal <- c(3, 5, 20, 33)  #Especificamos cuáles Sujetos estuvieron en el grupo donde LARGO es Señal
 Mario_Intermedias <- c('1v4', '2v8')
 
+# # # # # # ¿En qué comparación estamos interesados?
+Paty_Signal <- 'Largo'  #OPCIONES: 'Corto' ó 'Largo' (con todo y comillas)
+#Dependiendo de si la Señal en los datos de Paty son los estímulos Cortos o Largos,
+# se hará la comparación con los datos de Mario correspondientes (cuando Largo o Corto eran reforzados)
+
+if(Paty_Signal=='Corto'){ 
+#Los datos de Mario:
 Sujeto_M <- mario$Sujeto[mario$Sujeto %in% Mario_LargoEsSignal == FALSE & mario$Grupo %in% Mario_Intermedias == TRUE]         #Del archivo 'datos', identificamos los datos en la columna 'Sujeto' como variable Sujeto
 Condicion_M <- mario$Grupo[mario$Sujeto %in% Mario_LargoEsSignal == FALSE & mario$Grupo %in% Mario_Intermedias == TRUE]       #Del archivo 'datos', identificamos los datos en la columna 'Grupo' como variable Condición
 TipoSesion_M <- mario$Condicion[mario$Sujeto %in% Mario_LargoEsSignal == FALSE & mario$Grupo %in% Mario_Intermedias == TRUE]  #etc, etc, etc
@@ -42,11 +46,10 @@ CRej_M <- mario$Largo_enLargo[mario$Sujeto %in% Mario_LargoEsSignal == FALSE & m
 Miss_M <- mario$Largo_enCorto[mario$Sujeto %in% Mario_LargoEsSignal == FALSE & mario$Grupo %in% Mario_Intermedias == TRUE]
 Noise_M <- mario$EnsayosLargos[mario$Sujeto %in% Mario_LargoEsSignal == FALSE & mario$Grupo %in% Mario_Intermedias == TRUE]
 Signal_M <- mario$EnsayosCortos[mario$Sujeto %in% Mario_LargoEsSignal == FALSE & mario$Grupo %in% Mario_Intermedias == TRUE]
-
-
-Sujeto_P <- paty$sujeto[paty$grupo %in% Mario_Intermedias == TRUE]         #Del archivo 'datos', identificamos los datos en la columna 'Sujeto' como variable Sujeto
-Condicion_P <- paty$grupo[paty$grupo %in% Mario_Intermedias == TRUE]       #Del archivo 'datos', identificamos los datos en la columna 'Grupo' como variable Condición
-TipoSesion_P <- paty$condición[paty$grupo %in% Mario_Intermedias == TRUE]  #etc, etc, etc
+#Los datos de Paty:
+Sujeto_P <- paty$sujeto[paty$grupo %in% Mario_Intermedias == TRUE]        
+Condicion_P <- paty$grupo[paty$grupo %in% Mario_Intermedias == TRUE]      
+TipoSesion_P <- paty$condición[paty$grupo %in% Mario_Intermedias == TRUE] 
 Dia_P <- paty$dia[paty$grupo %in% Mario_Intermedias == TRUE]
 Hits_P <- paty$hit[paty$grupo %in% Mario_Intermedias == TRUE]
 FA_P <- paty$fa[paty$grupo %in% Mario_Intermedias == TRUE]
@@ -54,16 +57,36 @@ CRej_P <- paty$rechazo[paty$grupo %in% Mario_Intermedias == TRUE]
 Miss_P <- paty$miss[paty$grupo %in% Mario_Intermedias == TRUE]
 Noise_P <- paty$ensayos_largo[paty$grupo %in% Mario_Intermedias == TRUE]
 Signal_P <- paty$ensayos_cortos[paty$grupo %in% Mario_Intermedias == TRUE]
-
+} else{
+#Los datos de Mario:
+Sujeto_M <- mario$Sujeto[mario$Sujeto %in% Mario_LargoEsSignal == TRUE & mario$Grupo %in% Mario_Intermedias == TRUE]         
+Condicion_M <- mario$Grupo[mario$Sujeto %in% Mario_LargoEsSignal == TRUE & mario$Grupo %in% Mario_Intermedias == TRUE]       
+TipoSesion_M <- mario$Condicion[mario$Sujeto %in% Mario_LargoEsSignal == TRUE & mario$Grupo %in% Mario_Intermedias == TRUE]  
+Dia_M <- mario$Día[mario$Sujeto %in% Mario_LargoEsSignal == TRUE & mario$Grupo %in% Mario_Intermedias == TRUE]
+Hits_M <- mario$Corto_enCorto[mario$Sujeto %in% Mario_LargoEsSignal == TRUE & mario$Grupo %in% Mario_Intermedias == TRUE]
+FA_M <- mario$Corto_enLargo[mario$Sujeto %in% Mario_LargoEsSignal == TRUE & mario$Grupo %in% Mario_Intermedias == TRUE]
+CRej_M <- mario$Largo_enLargo[mario$Sujeto %in% Mario_LargoEsSignal == TRUE & mario$Grupo %in% Mario_Intermedias == TRUE]
+Miss_M <- mario$Largo_enCorto[mario$Sujeto %in% Mario_LargoEsSignal == TRUE & mario$Grupo %in% Mario_Intermedias == TRUE]
+Noise_M <- mario$EnsayosLargos[mario$Sujeto %in% Mario_LargoEsSignal == TRUE & mario$Grupo %in% Mario_Intermedias == TRUE]
+Signal_M <- mario$EnsayosCortos[mario$Sujeto %in% Mario_LargoEsSignal == TRUE & mario$Grupo %in% Mario_Intermedias == TRUE]
+#Los datos de Paty:
+Sujeto_P <- paty$sujeto[paty$grupo %in% Mario_Intermedias == TRUE]         
+Condicion_P <- paty$grupo[paty$grupo %in% Mario_Intermedias == TRUE]       
+TipoSesion_P <- paty$condición[paty$grupo %in% Mario_Intermedias == TRUE]  
+Dia_P <- paty$dia[paty$grupo %in% Mario_Intermedias == TRUE]
+Hits_P <- paty$rechazo[paty$grupo %in% Mario_Intermedias == TRUE]
+FA_P <- paty$miss[paty$grupo %in% Mario_Intermedias == TRUE]
+CRej_P <- paty$hit[paty$grupo %in% Mario_Intermedias == TRUE]
+Miss_P <- paty$fa[paty$grupo %in% Mario_Intermedias == TRUE]
+Noise_P <- paty$ensayos_cortos[paty$grupo %in% Mario_Intermedias == TRUE]
+Signal_P <- paty$ensayos_largo[paty$grupo %in% Mario_Intermedias == TRUE]}
 TotalSujetos_M <- length(unique(Sujeto_M))
 TotalSujetos_P <- length(unique(Sujeto_P))
-
 Sesiones <- c(rep('LB',10), rep('M',10))
 
-
-
-
-
+########################################
+# # # # # # # #  PARTE III: Gráficas
+########################################
 
 
 ###################################           Grafica de Barras comparando A' y B'' 
@@ -163,10 +186,11 @@ for(z in 1){
 
 
 for(d in c(1:2)){
-  Parejas_A <- c(Par_A_LBP[d], Par_A_Pre[d],0.001, Par_A_LBM[d], Par_A_M[d])
-  Parejas_B <- c(Par_B_LBP[d], Par_B_Pre[d],0.000001, Par_B_LBM[d], Par_B_M[d])
+  Blank <- c(0.00001,0.00001)
+  Parejas_A <- c(cbind(Par_A_LBP[d], Par_A_Pre[d],Blank[d], Par_A_LBM[d], Par_A_M[d]))
+  Parejas_B <- c(cbind(Par_B_LBP[d], Par_B_Pre[d],Blank[d], Par_B_LBM[d], Par_B_M[d]))
 
-barplot(Parejas_A, border=NA, main = "", ylim = c(0,1.05), axes=FALSE, col =c("cadetblue2", "deepskyblue4", "white", "cadetblue2", "dodgerblue4"))
+barplot(Parejas_A, main = "", ylim = c(0,1.05), axes=FALSE, col =c("cadetblue2", "deepskyblue4", "white", "cadetblue2", "dodgerblue4"))
 axis(1,at=c(1.3,5),labels=c("Motivation", "Bias"), font=2)
 axis(2,at=c(0, 0.25, 0.5, 0.75, 1),labels=c("0", "0.25", "0.5", "0.75", "1"),las=1)
 text(0.72,(Parejas_A[1]-.1),paste(Parejas_A[1]),cex=.9,col='black',f=2, srt=90)
@@ -180,7 +204,11 @@ text(3.1, 1, labels="Pre-fed", offset=0, cex = 0.9, pos=4)
 text(1.1, 1, labels="Baseline", offset=0, cex = 0.9, pos=4)
 text(5.1, 1, labels="Magnitud", offset=0, cex = 0.9, pos=4)
 mtext("A'",1,cex=2, line=1, f=2)
-title("All Subjects", outer = TRUE, line = -2)
+if(Paty_Signal=='Corto'){
+  title("All Subjects", sub="Short is signal", outer = TRUE, line = -2)
+} else {
+  title("All Subjects", sub="Long is signal", outer = TRUE, line = -2)}
+
 
 barplot(Parejas_B, main = "", border=NA, xlab = "", ylab = "", font.lab=2, ylim = c(-1,1.05), axes = FALSE, col =c("cadetblue2", "deepskyblue4", "white", "cadetblue2", "dodgerblue4"))
 axis(1,at=c(1.3,5),labels=c("Motivation", "Bias"), font=2)
@@ -189,9 +217,6 @@ text(0.72,0.5,paste(Parejas_B[1]),cex=.9,col='black',f=2, srt=90)
 text(1.9,0.5,paste(Parejas_B[2]),cex=.9,col='black',f=2, srt=90)
 text(4.26,0.5,paste(Parejas_B[4]),cex=.9,col='black',f=2, srt=90)
 text(5.5,0.5,paste(Parejas_B[5]),cex=.9,col='black',f=2, srt=90)
-text(6.67,0.5,paste(Parejas_B[6]),cex=.9,col='black',f=2, srt=90)
-text(7.9,0.5,paste(Parejas_B[7]),cex=.9,col='black',f=2, srt=90)
-text(9.1,0.5,paste(Parejas_B[8]),cex=.9,col='black',f=2, srt=90)
 lines(c(2.5, 3),c(1,1), lwd=3, lty=1, col="deepskyblue4")
 lines(c(0.5, 1),c(1,1), lwd=3, lty=1, col="cadetblue2")
 lines(c(4.5, 5),c(1,1), lwd=3, lty=1, col="dodgerblue4")
