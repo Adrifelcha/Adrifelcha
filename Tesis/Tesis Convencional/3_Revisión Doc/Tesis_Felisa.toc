@@ -38,6 +38,6 @@
 \contentsline {chapter}{\numberline {5}Discusi\IeC {\'o}n}{109}{chapter.124}
 \contentsline {chapter}{\numberline {6}Conclusi\IeC {\'o}n}{115}{chapter.127}
 \contentsline {chapter}{\numberline {A}Instrucciones}{117}{appendix.128}
-\contentsline {chapter}{\numberline {B}Registro de datos por participante}{119}{appendix.129}
-\contentsline {chapter}{\numberline {C}Datos (Extensi\IeC {\'o}n)}{121}{appendix.131}
-\contentsline {chapter}{Bibliograf\'{\i }a}{141}{appendix*.150}
+\contentsline {chapter}{\numberline {B}Registro de datos por participante}{121}{appendix.135}
+\contentsline {chapter}{\numberline {C}Datos (Extensi\IeC {\'o}n)}{123}{appendix.137}
+\contentsline {chapter}{Bibliograf\'{\i }a}{143}{appendix*.156}
