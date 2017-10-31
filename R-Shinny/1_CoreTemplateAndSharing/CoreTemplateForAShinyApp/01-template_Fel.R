@@ -7,7 +7,8 @@ ui <- fluidPage("Adriana F Chavez - Lab25",
                 plotOutput(outputId="hist"))
 
 server <- function(input, output) {
-  output$hist <- renderPlot({hist(rnorm(input$num), main = "Just another Histogram")})
+  output$hist <- renderPlot({barplot(input$num, xlim=c(0,1.5), ylim=c(0,100), main = "Just a simple set of graphs", 
+                                     xlab='Variable', ylab='Slider')})
 }
 
 shinyApp(ui = ui, server = server)
