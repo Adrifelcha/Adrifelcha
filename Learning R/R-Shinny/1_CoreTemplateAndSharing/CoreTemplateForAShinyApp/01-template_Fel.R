@@ -1,20 +1,31 @@
-library(shiny)  
+  library(shiny)  
 
 
-ui <- fluidPage("Adriana F Chavez - Lab25",
-                sliderInput(inputId="num", 
-                            label = "Choose a number",
-                            value=25, min=1, max=100),
-                textInput(inputId = "titulo",
+ui <- fluidPage(
+                fluidRow(
+                  column(8, offset =6, tags$h1("Adriana F Chavez - Lab25"))),
+                tags$img(height=100, 
+                         width=100,
+                         src = "http://www.thinkgeek.com/images/products/additional/large/jgpo_poke_ball_serving_bowl_set_closed.jpg"),
+                tags$h3("Learning R Shiny"),
+                tags$p( "This is my very", tags$strong("FIRST"),"Shiny app"),
+                tags$a(href = "https://adrifelcha.github.io/", "My Github Page"),
+                tags$hr(),
+                actionButton(inputId="click", label ="Click me!"),
+                wellPanel(textInput(inputId = "titulo",
                           label = "Titulo", 
                           value = "Histograma"),
                 textInput(inputId = "evidence",
                           label = "Datos", 
                           value = "Variable"),
-                actionButton(inputId="click", label ="Click me!"),
-                actionButton(inputId="go", label ="Update Graph"),
-                plotOutput(outputId="hist"),
-                verbatimTextOutput("stats"))
+                sliderInput(inputId="num", 
+                            label = "Choose a number",
+                            value=25, min=1, max=100),
+                actionButton(inputId="go", label ="Update Graph")),
+                fluidRow(
+                  column(6, offset = 3, plotOutput(outputId="hist"))),
+                fluidRow(
+                  column(6, offset = 3, verbatimTextOutput("stats"))))
 
 server <- function(input, output) {
   data <- eventReactive(input$go, {rnorm(input$num)})
