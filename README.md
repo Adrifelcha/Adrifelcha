@@ -1,6 +1,5 @@
-# Adriana F. Ch�vez: Lab 25 #
+#Laboratorio Virtual 25
 
-Psychology undergrad student interested mainly in studying Perception and Decision Making. I'm also interested in Bayesian Modeling, Psychophysics, Game Theory and Cognitive Development.
+##Laboratorio virtual para las Ciencias del Comportamiento
 
-Contact:
-adrifelcha@gmail.com
+Materiales desarrollados por los estudiantes del Laboratorio 25 (Dr. Arturo Bouzas) de la Facultad de Psicología, UNAM, para facilitar la enseñanza y el aprendizaje de los principales modelos de la Psicolgía Experimental.
