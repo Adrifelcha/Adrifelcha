@@ -15,7 +15,7 @@
 # # # # # # # #  Parte I: Cargamos los datos
 ####################################
 
-setwd("C:/Users/Alejandro/Desktop") # Directorio de trabajo
+setwd("C:/Users/Alejandro/Desktop/Felisa/Proyectos/ManuZamora_Parametrico") # Directorio de trabajo
 rm(list=ls())  #Reseteamos la consola
 archive <-'Manuel.csv'  #Señalamos el archivo que contiene los datos a analizar
 datos <- read.csv(archive)             #Extraemos los datos del archivo
@@ -156,15 +156,15 @@ mtext(paste("Participante No.",Sujeto[i]),1,cex=1.3, line=3, f=2)
 }
 
 layout(matrix(1:2,ncol=1, byrow=TRUE))
-barplot(A_prima)
+barplot(A_prima, main = "", xlab = "", ylab = "", font.lab=2, ylim=c(0,1), axes=FALSE)
 axis(1,at=c(0.72,1.9),labels=c("Tasa Hits", "Tasa F.A"), font=2)
 axis(2,at=c(0, 0.25, 0.5, 0.75, 1),labels=c("0", "0.25", "0.5", "0.75", "1"),las=1)
-mtext(paste("Participante No.",Sujeto[i]),1,cex=1.3, line=3, f=2)
+mtext(paste("A'"),1,cex=1.3, line=3, f=2)
 
-barplot(B_biprima)
+barplot(B_biprima, main = "", xlab = "", ylab = "", font.lab=2, ylim=c(-1,1), axes=FALSE)
 axis(1,at=c(0.72,1.9),labels=c("Tasa Hits", "Tasa F.A"), font=2)
 axis(2,at=c(0, 0.25, 0.5, 0.75, 1),labels=c("0", "0.25", "0.5", "0.75", "1"),las=1)
-mtext(paste("Participante No.",Sujeto[i]),1,cex=1.3, line=3, f=2)
+mtext(paste("B''"),1,cex=1.3, line=3, f=2)
 
 
 
