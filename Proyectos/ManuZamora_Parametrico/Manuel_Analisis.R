@@ -149,21 +149,28 @@ layout(matrix(1:6,ncol=3, byrow=TRUE))
 for(i in 1:length(Sujeto)){
 barplot(c(Hits[i],FAlarmas[i]), main = "", xlab = "", ylab = "", font.lab=2, ylim = c(0,15), axes = FALSE, col =c("darkgreen", "darkred"))
 axis(1,at=c(0.72,1.9),labels=c("Tasa Hits", "Tasa F.A"), font=2)
-axis(2,at=c(0, 0.25, 0.5, 0.75, 1),labels=c("0", "0.25", "0.5", "0.75", "1"),las=1)
-#text(0.72,(A_TS[1]/2),paste(A_TS[1]),cex=1.2,col='black',f=2)
-#text(1.9,(A_TS[2]/2),paste(A_TS[2]),cex=1.2,col='white',f=2)
+axis(2,at=c(0, 5, 10, 15),labels=c("0", "5", "10", "15"),las=1)
+text(0.72,(Hits[i]/2),paste(Hits[i]),cex=1.2,col='white',f=2)
+text(1.9,(FAlarmas[i]/2),paste(FAlarmas[i]),cex=1.2,col='white',f=2)
 mtext(paste("Participante No.",Sujeto[i]),1,cex=1.3, line=3, f=2)
 }
 
-layout(matrix(1:2,ncol=1, byrow=TRUE))
-barplot(A_prima, main = "", xlab = "", ylab = "", font.lab=2, ylim=c(0,1), axes=FALSE)
-axis(1,at=c(0.72,1.9),labels=c("Tasa Hits", "Tasa F.A"), font=2)
-axis(2,at=c(0, 0.25, 0.5, 0.75, 1),labels=c("0", "0.25", "0.5", "0.75", "1"),las=1)
-mtext(paste("A'"),1,cex=1.3, line=3, f=2)
+eje_x <- c(0.7,1.9, 3.1, 4.3, 5.5, 6.7, 7.9, 9.1, 10.3, 11.5, 12.7, 13.9, 15.1)
 
-barplot(B_biprima, main = "", xlab = "", ylab = "", font.lab=2, ylim=c(-1,1), axes=FALSE)
-axis(1,at=c(0.72,1.9),labels=c("Tasa Hits", "Tasa F.A"), font=2)
+layout(matrix(1:2,ncol=1, byrow=TRUE))
+barplot(A_prima, main = "", xlab = "", ylab = "", font.lab=2, ylim=c(0,1), axes=FALSE, col="skyblue")
+axis(1,at=eje_x,labels=c("1", "2", "3", "4", "5", "6", "7","8","9", "10", "11", "12", "13"), font=2, line=5)
 axis(2,at=c(0, 0.25, 0.5, 0.75, 1),labels=c("0", "0.25", "0.5", "0.75", "1"),las=1)
+for(i in 1:length(eje_x)){
+  text(eje_x[i],0.5,paste(A_prima[i]),cex=0.9,col='white',f=2)}
+mtext(paste("A'"),3,cex=1.3, line=2, f=2)
+mtext(paste("Sujeto"),1,cex=1.2, line=3, f=2)
+
+barplot(B_biprima, main = "", xlab = "", ylab = "", font.lab=2, ylim=c(-1,1), axes=FALSE, col="darkgreen")
+#axis(1,at=c(0.7,1.9, 3.1, 4.3, 5.5, 6.7, 7.9, 9.1, 10.3, 11.5, 12.7, 13.9, 15.1),labels=c("1", "2", "3", "4", "5", "6", "7","8","9", "10", "11", "12", "13"), font=2)
+for(i in 1:length(eje_x)){
+  text(eje_x[i],-.9,paste(B_biprima[i]),cex=0.9,col='black',f=2)}
+axis(2,at=c(0, 0.25, 0.5, 0.75, 1, -0.25, -0.5, -0.75, -1),labels=c("0", "0.25", "0.5", "0.75", "1", "-0.25", "-0.5", "-0.75", "-1"),las=1)
 mtext(paste("B''"),1,cex=1.3, line=3, f=2)
 
 
@@ -176,7 +183,6 @@ mtext(paste("B''"),1,cex=1.3, line=3, f=2)
 promedios <- data.frame(cbind(round(mean(Hits),3), round(mean(Hit_rate),3), round(mean(FAlarmas),3), round(mean(FA_rate),3), round(mean(D_prima),3), round(mean(A_dprima),3), round(mean(A_prima),3), round(mean(Beta),3), round(mean(Sesgo_C),3), round(mean(B_biprima),3)))
 colnames(promedios) <- c("Hits", "Tasa Hits", "F.A.", "Tasa F.A.", "D'", "A_d'", "A'", "Beta", "C", "B''")
 print(promedios)
-
 
 ########################################
 # OPCION 3: Desempeño del Grupo (SUPER SUJETO)
@@ -219,3 +225,65 @@ S_FA_rate <- round(S_FA_rate,3)
 super<- data.frame(cbind(Super_Hits, S_Hit_rate, Super_FA, S_FA_rate, S_D_prima, S_A_dprima, S_A_prima, S_Beta, S_Sesgo_C, S_B_biprima))   #Acomodamos los valores en un arreglo
 colnames(super) <- c("Hits", "Tasa Hits", "F.A.", "Tasa F.A.","D'","A_d'","A'","Beta","C","B''")
 print(super)
+
+
+layout(matrix(1:4,ncol=2, byrow=FALSE))
+barplot(c(mean(Hit_rate),mean(FA_rate)), main = "", xlab = "", ylab = "", font.lab=2, ylim = c(0,1), axes = FALSE, col =c("darkgreen", "darkred"))
+axis(1,at=c(0.72,1.9),labels=c("Tasa Hits", "Tasa F.A"), font=2)
+axis(2,at=c(0, .25, .5, .75, 1),labels=c("0", ".25", ".5", ".75", "1"),las=1)
+text(0.72,(mean(Hits)/2),paste(Hits[i]),cex=1.2,col='white',f=2)
+text(1.9,(mean(FAlarmas)/2),paste(FAlarmas[i]),cex=1.2,col='white',f=2)
+mtext(paste("Promedio Bruto"),3,cex=1.3, line=1.5, f=2)
+
+barplot(c(mean(A_prima),mean(B_biprima)), main = "", xlab = "", ylab = "", font.lab=2, ylim = c(-1,1), axes = FALSE, col =c("darkgreen", "darkred"))
+axis(1,at=c(0.72,1.9),labels=c("Tasa Hits", "Tasa F.A"), font=2)
+axis(2,at=c(0, 0.25, 0.5, 0.75, 1, -0.25, -0.5, -0.75, -1),labels=c("0", "0.25", "0.5", "0.75", "1", "-0.25", "-0.5", "-0.75", "-1"),las=1)
+text(0.72,(Hits[i]/2),paste(Hits[i]),cex=1.2,col='white',f=2)
+text(1.9,(FAlarmas[i]/2),paste(FAlarmas[i]),cex=1.2,col='white',f=2)
+mtext(paste("Participante No.",Sujeto[i]),1,cex=1.3, line=3, f=2)
+
+barplot(c(S_Hit_rate,S_FA_rate), main = "", xlab = "", ylab = "", font.lab=2, ylim = c(0,1), axes = FALSE, col =c("darkgreen", "darkred"))
+axis(1,at=c(0.72,1.9),labels=c("Tasa Hits", "Tasa F.A"), font=2)
+axis(2,at=c(0, .25, .5, .75, 1),labels=c("0", ".25", ".5", ".75", "1"),las=1)
+text(0.72,(Hits[i]/2),paste(Hits[i]),cex=1.2,col='white',f=2)
+text(1.9,(FAlarmas[i]/2),paste(FAlarmas[i]),cex=1.2,col='white',f=2)
+mtext(paste("Super Participante"),3,cex=1.3, line=1.5, f=2)
+
+barplot(c(S_A_prima,S_B_biprima), main = "", xlab = "", ylab = "", font.lab=2, ylim = c(-1,1), axes = FALSE, col =c("darkgreen", "darkred"))
+axis(1,at=c(0.72,1.9),labels=c("Tasa Hits", "Tasa F.A"), font=2)
+axis(2,at=c(0, 0.25, 0.5, 0.75, 1, -0.25, -0.5, -0.75, -1),labels=c("0", "0.25", "0.5", "0.75", "1", "-0.25", "-0.5", "-0.75", "-1"),las=1)
+text(0.72,(Hits[i]/2),paste(Hits[i]),cex=1.2,col='white',f=2)
+text(1.9,(FAlarmas[i]/2),paste(FAlarmas[i]),cex=1.2,col='white',f=2)
+mtext(paste("Participante No.",Sujeto[i]),1,cex=1.3, line=3, f=2)
+
+
+##########
+
+layout(matrix(1:4,ncol=2, byrow=FALSE))
+barplot(c(mean(Hit_rate),S_Hit_rate), main = "", xlab = "", ylab = "", font.lab=2, ylim = c(0,1), axes = FALSE, col =c("darkgreen", "forestgreen"))
+axis(1,at=c(0.72,1.9),labels=c("Bruto", "Super Sujeto"), font=2)
+axis(2,at=c(0, .25, .5, .75, 1),labels=c("0", ".25", ".5", ".75", "1"),las=1)
+text(0.72,(mean(Hit_rate)/2),paste(round(mean(Hit_rate),3)),cex=1.2,col='white',f=2)
+text(1.9,(S_Hit_rate/2),paste(S_Hit_rate),cex=1.2,col='white',f=2)
+mtext(paste("Tasa de Hits"),3,cex=1.3, line=1.5, f=2)
+
+barplot(c(mean(A_prima),S_A_prima), main = "", xlab = "", ylab = "", font.lab=2, ylim = c(0,1), axes = FALSE, col =c("darkblue", "skyblue"))
+axis(1,at=c(0.72,1.9),labels=c("Bruto", "Super Sujeto"), font=2)
+axis(2,at=c(0, .25, .5, .75, 1),labels=c("0", ".25", ".5", ".75", "1"),las=1)
+text(0.72,(mean(A_prima)/2),paste(round(mean(A_prima),3)),cex=1.2,col='white',f=2)
+text(1.9,(S_A_prima/2),paste(S_A_prima),cex=1.2,col='white',f=2)
+mtext(paste("A' - Sensibilidad"),3,cex=1.3, line=1.5, f=2)
+
+barplot(c(mean(FA_rate),S_FA_rate), main = "", xlab = "", ylab = "", font.lab=2, ylim = c(0,1), axes = FALSE, col =c("firebrick1", "firebrick4"))
+axis(1,at=c(0.72,1.9),labels=c("Bruto", "Super Sujeto"), font=2)
+axis(2,at=c(0, .25, .5, .75, 1),labels=c("0", ".25", ".5", ".75", "1"),las=1)
+text(0.72,(mean(FA_rate)+.1),paste(round(mean(FA_rate),3)),cex=1.2,col='black',f=2)
+text(1.9,(S_FA_rate+.1),paste(S_FA_rate),cex=1.2,col='black',f=2)
+mtext(paste("Tasa F.A."),3,cex=1.3, line=1.5, f=2)
+
+barplot(c(mean(B_biprima),S_B_biprima), main = "", xlab = "", ylab = "", font.lab=2, ylim = c(-1,1), axes = FALSE, col =c("darkolivegreen4", "darkolivegreen2"))
+axis(1,at=c(0.72,1.9),labels=c("Bruto", "Super Sujeto"), font=2)
+axis(2,at=c(0, 0.25, 0.5, 0.75, 1, -0.25, -0.5, -0.75, -1),labels=c("0", "0.25", "0.5", "0.75", "1", "-0.25", "-0.5", "-0.75", "-1"),las=1)
+text(0.72,(mean(B_biprima)+.15),paste(round(mean(B_biprima),3)),cex=1.2,col='black',f=2)
+text(1.9,(S_B_biprima+.15),paste(S_B_biprima),cex=1.2,col='black',f=2)
+mtext(paste("B'' - Sesgo"),3,cex=1.3, line=1.5, f=2)
