@@ -9,7 +9,7 @@ ui <- fluidPage(
                          src = "http://www.thinkgeek.com/images/products/additional/large/jgpo_poke_ball_serving_bowl_set_closed.jpg"),
                 tags$h3("Learning R Shiny"),
                 tags$p( "This is my very", tags$strong("FIRST"),"Shiny app"),
-                tags$a(href = "https://adrifelcha.github.io/", "My Github Page"),
+                tags$a(href = "https://adrifelcha.github.io/", "My Github Page", target="_blank"),
                 tags$hr(),
                 actionButton(inputId="click", label ="Click me!"),
                 wellPanel(textInput(inputId = "titulo",
