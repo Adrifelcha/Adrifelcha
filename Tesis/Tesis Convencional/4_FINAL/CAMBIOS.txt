@@ -1,0 +1,12 @@
+Cambios
+
+Doc:
+
+Palafox:
+-Omitir la parte de la diferencia entre Detección y Discriminación. (Intro)
+
+Miguel Herrera:
+
+JL : ?
+
+Zamora: -
