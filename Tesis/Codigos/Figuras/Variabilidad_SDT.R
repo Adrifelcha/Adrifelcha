@@ -10,13 +10,13 @@ d_luz <- dnorm(soporte,10,0.9)   #Definimos la distribucion de Se??al, con media
 plot(soporte,type='l', xlim=c(5,13),ylim=c(0,0.5), 
      axes=F, ann = FALSE)             #Dibujamos la distribucion de ruido
 axis(2,at=c(0, 0.5),labels=c("0", "0.5"),las=1)
-axis(1,at=c(5,10,13), labels=c("","X", ""))
-lines(soporte,d_luz,type='l',col='blue') #Dibujamos la distribucion de Se??al
-abline(v=10,col='red', lty=5)                      #Dibujamos el criterio
+axis(1,at=c(5,10,13), labels=c("","X", ""), las=1, line=-.5)
+lines(soporte,d_luz,type='l',col='blue', lwd=3) #Dibujamos la distribucion de Se??al
+abline(v=10,col='red', lty=5, lwd=2.5)                      #Dibujamos el criterio
 text(8,0.4,"Estímulo", col="blue", font=1, cex=2)
 #text(7.3,0.35,"del estímulo", col="blue", font=1, cex=1.7)
 text(10.3,0.48,expression(mu), col="red", font=1, cex=2)
-mtext(side=1, text = "Intensidad percibida", line=2.9, cex=2.4)
+mtext(side=1, text = "Intensidad percibida", line=3, cex=2.4)
 mtext(side=2, text = "Probabilidad", line=1, cex=2.4)
 
 #####################################
@@ -35,9 +35,9 @@ d_luz <- dnorm(soporte,75,9)   #Definimos la distribucion de Se??al, con media e
 plot(soporte,type='l', xlim=c(1,110),ylim=c(0,0.05), 
      axes=F, ann = FALSE)             #Dibujamos la distribucion de ruido
 axis(2,at=c(0, 0.05),labels=c("0", "0.05"),las=1)
-axis(1,at=intensidad,labels=intensidad)
-lines(soporte,d_luz,type='l',col='blue') #Dibujamos la distribucion de Se??al
-abline(v=75,col='red', lty=2)                      #Dibujamos el criterio
+axis(1,at=intensidad,labels=intensidad, line=-0.5)
+lines(soporte,d_luz,type='l',col='blue', lwd=3) #Dibujamos la distribucion de Se??al
+abline(v=75,col='red', lty=2, lwd=2.5)                      #Dibujamos el criterio
 #abline(v=d/2,col='blue',lty=2)             #Se??alamos la localizacion Optima (sin sesgo) del criterio
 text(50,0.04,"Personas con", col="blue", font=1, cex=2) 
 text(50,0.035,"Depresión", col="blue", font=1, cex=2) 
@@ -61,12 +61,12 @@ d_luz <- dnorm(soporte,75,9)   #Definimos la distribucion de Se??al, con media e
 plot(soporte,type='l', xlim=c(1,110),ylim=c(0,0.05), 
      axes=F, ann = FALSE)             #Dibujamos la distribucion de ruido
 axis(2,at=c(0, 0.05),labels=c("0", "0.05"),las=1)
-axis(1,at=intensidad,labels=intensidad)
-lines(soporte,d_luz,type='l',col='blue') #Dibujamos la distribucion de Se??al
-lines(soporte,d_ruido,type='l',col='black') #Dibujamos la distribucion de Se??al
+axis(1,at=intensidad,labels=intensidad, line=-0.5)
+lines(soporte,d_luz,type='l',col='blue', lwd=3) #Dibujamos la distribucion de Se??al
+lines(soporte,d_ruido,type='l',col='black', lwd=3) #Dibujamos la distribucion de Se??al
 #abline(v=75,col='red', lty=2)                      #Dibujamos el criterio
 #abline(v=d/2,col='blue',lty=2)             #Se??alamos la localizacion Optima (sin sesgo) del criterio
-text(90,0.04,"Depresión", col="blue", font=1, cex=2) 
+text(92,0.04,"Depresión", col="blue", font=1, cex=2) 
 text(31,0.04,"No Depresión", col="black", font=1, cex=2) 
 mtext(side=1, text = "Puntaje obtenido", line=2.9, cex=2.4)
 mtext(side=2, text = "Probabilidad", line=1, cex=2.4)

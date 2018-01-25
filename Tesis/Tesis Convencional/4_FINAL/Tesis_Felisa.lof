@@ -8,14 +8,14 @@
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Matriz de contingencia con los posibles Resultados en una Tarea de Detecci\IeC {\'o}n}}{13}{figure.caption.18}
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Representaci\IeC {\'o}n gr\IeC {\'a}fica de los posibles Resultados en una Tarea de Detecci\IeC {\'o}n}}{14}{figure.caption.19}
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Ejemplo de Matriz de Pagos}}{15}{figure.caption.20}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Estimaci\IeC {\'o}n del criterio con base en las Falsas Alarmas}}{20}{figure.caption.26}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Estimaci\IeC {\'o}n del criterio con base en las Falsas Alarmas}}{19}{figure.caption.26}
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Estimaci\IeC {\'o}n de la discriminabilidad con base en las Tasas de Ejecuci\IeC {\'o}n}}{21}{figure.caption.27}
 \contentsline {figure}{\numberline {2.10}{\ignorespaces Estimaci\IeC {\'o}n del sesgo con base en el criterio}}{25}{figure.caption.31}
 \contentsline {figure}{\numberline {2.11}{\ignorespaces Ejemplo de Curva ROC}}{26}{figure.caption.33}
 \contentsline {figure}{\numberline {2.12}{\ignorespaces Representaci\IeC {\'o}n gr\IeC {\'a}fica de la interpretaci\IeC {\'o}n de las tareas de detecci\IeC {\'o}n con Escala de Confianza}}{30}{figure.caption.35}
 \contentsline {figure}{\numberline {2.13}{\ignorespaces SDT en Memoria de Reconocimiento}}{35}{figure.caption.42}
 \contentsline {figure}{\numberline {2.14}{\ignorespaces SDT en Memoria de Reconocimiento (Varianzas Desiguales)}}{36}{figure.caption.43}
-\contentsline {figure}{\numberline {2.15}{\ignorespaces Representaci\IeC {\'o}n gr\IeC {\'a}fica del Efecto Espejo}}{38}{figure.caption.45}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Representaci\IeC {\'o}n gr\IeC {\'a}fica del Efecto Espejo}}{37}{figure.caption.45}
 \contentsline {figure}{\numberline {2.16}{\ignorespaces Representaci\IeC {\'o}n gr\IeC {\'a}fica del Efecto Espejo de acuerdo a los datos obtenidos en Tareas S\IeC {\'\i }/No}}{40}{figure.caption.47}
 \contentsline {figure}{\numberline {2.17}{\ignorespaces Representaci\IeC {\'o}n gr\IeC {\'a}fica del Efecto Espejo, de acuerdo con el patr\IeC {\'o}n de respuestas registrado en tareas con Escala de Confianza}}{41}{figure.caption.48}
 \addvspace {10\p@ }
@@ -52,30 +52,11 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Pantalla de Bienvenida}}{115}{figure.caption.129}
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Instrucciones principales}}{116}{figure.caption.130}
-\contentsline {figure}{\numberline {A.3}{\ignorespaces Presentaci\IeC {\'o}n de ejemplo}}{116}{figure.caption.131}
-\contentsline {figure}{\numberline {A.4}{\ignorespaces Presentaci\IeC {\'o}n de la tarea con Escala de Confianza}}{117}{figure.caption.132}
-\contentsline {figure}{\numberline {A.5}{\ignorespaces Precisiones sobre la evaluaci\IeC {\'o}n de la ejecuci\IeC {\'o}n}}{117}{figure.caption.133}
-\contentsline {figure}{\numberline {A.6}{\ignorespaces Instrucciones finales}}{118}{figure.caption.134}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Pantalla de Bienvenida}}{113}{figure.caption.130}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Instrucciones principales}}{114}{figure.caption.131}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Presentaci\IeC {\'o}n de ejemplo}}{114}{figure.caption.132}
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Presentaci\IeC {\'o}n de la tarea con Escala de Confianza}}{115}{figure.caption.133}
+\contentsline {figure}{\numberline {A.5}{\ignorespaces Precisiones sobre la evaluaci\IeC {\'o}n de la ejecuci\IeC {\'o}n}}{115}{figure.caption.134}
+\contentsline {figure}{\numberline {A.6}{\ignorespaces Instrucciones finales}}{116}{figure.caption.135}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {B.1}{\ignorespaces CSV muestra}}{119}{figure.caption.136}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {C.1}{\ignorespaces Respuesta binaria registrada ensayo a ensayo; Experimento 1}}{122}{figure.caption.138}
-\contentsline {figure}{\numberline {C.2}{\ignorespaces Respuesta binaria registrada ensayo a ensayo; Experimento 2}}{123}{figure.caption.139}
-\contentsline {figure}{\numberline {C.3}{\ignorespaces Respuesta binaria registrada ensayo a ensayo con indicadores de las caracter\IeC {\'\i }sticas de los est\IeC {\'\i }mulos presentados; Experimento 1}}{124}{figure.caption.140}
-\contentsline {figure}{\numberline {C.4}{\ignorespaces Respuesta binaria registrada ensayo a ensayo con indicadores de las caracter\IeC {\'\i }sticas de los est\IeC {\'\i }mulos presentados; Experimento 2}}{125}{figure.caption.141}
-\contentsline {figure}{\numberline {C.5}{\ignorespaces Puntajes de Confianza asignados ensayo a ensayo; Experimento 1}}{126}{figure.caption.142}
-\contentsline {figure}{\numberline {C.6}{\ignorespaces Puntajes de Confianza asignados ensayo a ensayo; Experimento 2}}{127}{figure.caption.143}
-\contentsline {figure}{\numberline {C.7}{\ignorespaces Aciertos y Errores a lo largo del tiempo; Experimento 1}}{128}{figure.caption.144}
-\contentsline {figure}{\numberline {C.8}{\ignorespaces Aciertos y Errores a lo largo del tiempo; Experimento 2}}{129}{figure.caption.145}
-\contentsline {figure}{\numberline {C.9}{\ignorespaces Resultados obtenidos por ensayo; Experimento 1}}{130}{figure.caption.146}
-\contentsline {figure}{\numberline {C.10}{\ignorespaces Resultados obtenidos por ensayo; Experimento 2}}{131}{figure.caption.147}
-\contentsline {figure}{\numberline {C.11}{\ignorespaces Hits y Falsas Alarmas obtenidos por Color; Experimento 1}}{132}{figure.caption.148}
-\contentsline {figure}{\numberline {C.12}{\ignorespaces Hits y Falsas Alarmas obtenidos por Color; Experimento 2}}{133}{figure.caption.149}
-\contentsline {figure}{\numberline {C.13}{\ignorespaces Proporci\IeC {\'o}n de Respuestas S\IeC {\'\i }/No por Color; Experimento 1}}{134}{figure.caption.150}
-\contentsline {figure}{\numberline {C.14}{\ignorespaces Proporci\IeC {\'o}n de Respuestas S\IeC {\'\i }/No por Color; Experimento 2}}{135}{figure.caption.151}
-\contentsline {figure}{\numberline {C.15}{\ignorespaces Hits y Falsas Alarmas entre condiciones; Experimento 1}}{136}{figure.caption.152}
-\contentsline {figure}{\numberline {C.16}{\ignorespaces Hits y Falsas Alarmas entre condiciones; Experimento 2}}{137}{figure.caption.153}
-\contentsline {figure}{\numberline {C.17}{\ignorespaces Puntaje de confianza promedio por tipo de est\IeC {\'\i }mulo (A-B) y tipo de ensayo (S-N); Experimento 1}}{138}{figure.caption.154}
-\contentsline {figure}{\numberline {C.18}{\ignorespaces Puntaje de confianza promedio por tipo de est\IeC {\'\i }mulo (A-B) y tipo de ensayo (S-N); Experimento 2}}{139}{figure.caption.155}
+\contentsline {figure}{\numberline {B.1}{\ignorespaces CSV muestra}}{117}{figure.caption.137}

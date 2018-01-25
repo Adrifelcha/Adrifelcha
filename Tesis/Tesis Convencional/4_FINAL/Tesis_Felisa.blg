@@ -9,9 +9,9 @@ A level-1 auxiliary file: Chapters/Cap_Conclusion.aux
 A level-1 auxiliary file: Appendices/Felisa_Consentimiento.aux
 A level-1 auxiliary file: Appendices/App_Inst.aux
 A level-1 auxiliary file: Appendices/App_Registro.aux
-A level-1 auxiliary file: Appendices/App_Data.aux
 Database file #1: Bib_Adrifelcha.bib
 Warning--entry type for "PAPIME" isn't style-file defined
 --line 1085 of file Bib_Adrifelcha.bib
+Warning--I didn't find a database entry for ""
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
-(There was 1 warning)
+(There were 2 warnings)
