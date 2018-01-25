@@ -11,7 +11,8 @@ A level-1 auxiliary file: Appendices/App_Inst.aux
 A level-1 auxiliary file: Appendices/App_Registro.aux
 Database file #1: Bib_Adrifelcha.bib
 Warning--entry type for "PAPIME" isn't style-file defined
---line 1085 of file Bib_Adrifelcha.bib
+--line 1103 of file Bib_Adrifelcha.bib
+Warning--I didn't find a database entry for "McNicol2)"
 Warning--I didn't find a database entry for ""
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
-(There were 2 warnings)
+(There were 3 warnings)

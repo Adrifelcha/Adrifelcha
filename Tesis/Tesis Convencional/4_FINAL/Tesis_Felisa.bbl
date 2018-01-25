@@ -1404,29 +1404,6 @@ McNicol%
 }{%
 {\protect \APACyear {2005}}%
 {\protect \APACexlab {{\protect \BCnt {3}}}}}]{%
-McNicol}
-\APACinsertmetastar {%
-McNicol}%
-\begin{APACrefauthors}%
-McNicol, D.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYear{2005{\protect \BCnt {3}}}.
-\newblock
-\APACrefbtitle {A Primer of Signal Detection Theory} {A primer of signal
-  detection theory}.
-\newblock
-\APACaddressPublisher{Oxford}{Oxford University Press}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-McNicol%
-}{%
-McNicol%
-}{%
-{\protect \APACyear {2005}}%
-{\protect \APACexlab {{\protect \BCnt {4}}}}}]{%
 McNicol1}
 \APACinsertmetastar {%
 McNicol1}%
@@ -1435,7 +1412,7 @@ McNicol, D.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2005{\protect \BCnt {4}}}{}{}.
+\APACrefYearMonthDay{2005{\protect \BCnt {3}}}{}{}.
 \newblock
 {\BBOQ}\APACrefatitle {What are statistical decisions?} {What are statistical
   decisions?}{\BBCQ}
