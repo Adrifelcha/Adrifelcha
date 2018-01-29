@@ -1,15 +1,15 @@
 ####################################
 # Ploteo de Datos
-# EXPERIMENTO 1 (Una Ebbinghaus)
+# EXPERIMENTO 1 (Una Figura Ebbinghaus)
 ####################################
 
-setwd("C:/Users/Adriana/Desktop/Felisa/Tesis/CSVs/Datos_MirrExp_1Ebb")
+setwd("C:/Users/Alejandro/Desktop/Felisa/Tesis/CSVs/Datos_MirrExp_1Ebb")
 rm(list=ls())
 dir()
 
 #####################################
 #####################################
-#     Evaluando/ GRaficando         #
+#     Evaluando/ Graficando         #
 #        Mirror Effect              #
 #####################################
 #####################################
@@ -39,28 +39,17 @@ for(nce in sort(unique(jaime$tipo))){
           'Total:', total[length(total)]))
 }
 
-barplot(total, main = "", xlab = "", ylab = "Frecuencia absoluta", font.lab=2, ylim = c(0, 160), axes = FALSE, col =c("deepskyblue3", "darkorchid3", "darkorchid2", "deepskyblue2"))
+barplot(total, main = "", ann=F, xlab = "", ylab = "", font.lab=2, ylim = c(0, 160), axes = FALSE, col =c("deepskyblue3", "darkorchid3", "darkorchid2", "deepskyblue2"))
 axis(1,at=c(0.72,1.9,3.1,4.3),labels=c("Fa(AN)", "Fa(BN)", "H(BS)", "H(AS)"), font=2)
 axis(2,at=c(0, 20, 40, 60, 80, 100, 120, 140, 160),labels=c("0","20","40","60", "80", "100", "120", "140", "160"),las=1)
-text(0.72,total[1]+6,paste(total[1]),cex=.9,col='black',f=3)
-text(1.9,total[2]+6,paste(total[2]),cex=.9,col='black',f=3)
-text(3.1,total[3]+6,paste(total[3]),cex=.9,col='black',f=3)
-text(4.3,total[4]+6,paste(total[4]),cex=.9,col='black',f=3)
-text(1.35,100,paste('Hits & Falsas Alarmas'),cex=1,col='black',f=2)
-mtext(archive,3,cex=1.2, line=1, f=2)
+text(0.72,total[1]+6,paste(total[1]),cex=1.1,col='black',f=2)
+text(1.9,total[2]+6,paste(total[2]),cex=1.1,col='black',f=2)
+text(3.1,total[3]-6,paste(total[3]),cex=1.1,col='black',f=2)
+text(4.3,total[4]-6,paste(total[4]),cex=1.1,col='black',f=2)
+text(1.1, 100,paste('Hits & Falsas Alarmas'),cex=2,col='black',f=2)
+mtext(archive,3,cex=3, line=1, f=2)
+mtext(side=2, text = "Frecuencia Absoluta", line=2.2, cex=2)
 #title("Mirror Effect: Yes/No Responses", outer = TRUE, line = -2)  
-
-#RATES (Lineas)
-
-#plot(rate, main = "", type='o', pch=16, xlab = "", ylab = "Rate", font.lab=2, ylim = c(0, 1), axes = FALSE, col ='royalblue')
-#axis(1,at=1:4,labels=c("Fa(AN)", "Fa(BN)", "H(BS)", "H(AS)"), font=2)
-#axis(2,at=c(0, 0.15, 0.30, 0.45, 0.60, 0.75, 0.90, 1),labels=c("0",".15",".30",".45",".60", ".75", ".90", "1"),las=1)
-#text(1.1,rate[1]+.1,paste(rate[1]),cex=1,col='royalblue',f=2)
-#text(1.9,rate[2]+.1,paste(rate[2]),cex=1,col='royalblue',f=2)
-#text(3.1,rate[3]-.1,paste(rate[3]),cex=1,col='royalblue',f=2)
-#text(3.9,rate[4]-.1,paste(rate[4]),cex=1,col='royalblue',f=2)
-#text(1.5,.8,paste('Hits & F.A. rates'),cex=1,col='black',f=2)
-#mtext(archive,3,cex=1.2, line=1, f=2)
 }  
 
 
@@ -114,16 +103,15 @@ for(archive in dir()){
   #title("Confidence Rating", outer = TRUE, line = -2)
   #points(hits,type='o',pch=16,col='black')
   
-  plot(Confidence,type='o',pch=16,col='maroon2',ylim=c(0,6),axes=F , ylab="Puntaje de Confianza (Promedio)", xlab="", font.lab=2)
-  axis(1,at=1:4,labels=c("R(AN)", "R(BN)", "R(BS)", "R(AS)"), font=2)
+  barplot(Confidence, col=c('deeppink', 'deeppink1', 'deeppink2', 'deeppink3'),ylim=c(0,6),axes=F , ann=F,  ylab="", xlab="", font.lab=2)
+  axis(1,at=c(0.8,1.9,3.1,4.3),labels=c("R(AN)", "R(BN)", "R(BS)", "R(AS)"), font=2)
   axis(2,at=c(0, 1, 2, 3, 4, 5, 6),labels=c("0","1", "2","3","4","5","6"),las=1)
-  text(1.1,C_AN+.5,paste(C_AN),cex=1,col='violetred',f=2)
-  text(1.9,C_BN+.5,paste(C_BN),cex=1,col='violetred',f=2)
-  text(3.1,C_BS-.6,paste(C_BS),cex=1,col='violetred',f=2)
-  text(3.9,C_AS-.5,paste(C_AS),cex=1,col='violetred',f=2)
-#  text(1.5,5.5,paste('Puntaje de Confianza'),cex=1,col='violetred4',f=2)
-#  text(1.5,5.2,paste('(Promedios)'),cex=1,col='violetred4',f=2)
-  mtext(archive,3,cex=1.2,f=2)
+  text(0.8,C_AN+.5,paste(C_AN),cex=1,col='black',f=2)
+  text(1.9,C_BN+.5,paste(C_BN),cex=1,col='black',f=2)
+  text(3.1,C_BS-.6,paste(C_BS),cex=1,col='black',f=2)
+  text(4.3,C_AS-.5,paste(C_AS),cex=1,col='black',f=2)
+  mtext(archive,3,cex=3,f=2)
+  mtext(side=2, text = "Puntaje de Confianza promedio", line=2.2, cex=2)
 }
 
 
@@ -140,7 +128,8 @@ for(archive in dir()){
 ####            Aciertos y Errores Por Ensayo
 #############################################
 rm(list=ls())
-layout(matrix(1:3,ncol=1, byrow=TRUE))
+layout(matrix(1:2,ncol=1, byrow=TRUE))  #Sin Registro Acumulativo
+#layout(matrix(1:3,ncol=1, byrow=TRUE)) # Con Resgistro Acumulativo
 for(archive in dir()){
   
   jaime <- read.csv(archive)
@@ -152,26 +141,29 @@ for(archive in dir()){
   b <- c(1,30,60,90,120,150,180,210,240,270,300,330,360,390,420,450,480,510,540,570,600,630)
   
   
-  
-  plot(jaime$Aciertos,type='o',pch=16, col='green', lwd=.5, ylim=c(0,640),axes=F , ylab="Frecuencia acumulada", font.lab=2, line=2, xlab='Ensayo' )
-  axis(1,at=a,labels=a)
-  axis(2,at=b, labels=b, tck=0, line=-1.3, font=2)
-  points(jaime$Errores,type='o', lty=1, lwd=.5, pch=16, col='red')
-  mtext(archive,3,cex=1, f=2)
-  text(70,500,paste('Aciertos'),cex=1,col='chartreuse4',f=2)
-  text(70,400,paste('Errores'),cex=1,col='red',f=2)
+  #REGISTRO ACUMULATIVO
+  #plot(jaime$Aciertos,type='o',pch=16, col='green', lwd=.5, ylim=c(0,640),axes=F , ylab="Frecuencia acumulada", font.lab=2, line=2, xlab='Ensayo' )
+  #axis(1,at=a,labels=a)
+  #axis(2,at=b, labels=b, tck=0, line=-1.3, font=2)
+  #points(jaime$Errores,type='o', lty=1, lwd=.5, pch=16, col='red')
+  #mtext(archive,3,cex=1, f=2)
+  #text(70,500,paste('Aciertos'),cex=1,col='chartreuse4',f=2)
+  #text(70,400,paste('Errores'),cex=1,col='red',f=2)
   #title("Performance across time", outer = TRUE, line = -2)
   
   
   plot(jaime$Exito[1:320],type='o',pch=16, col='darkgreen',ylim=c(0,1),axes=F , ann = F )
   axis(1,at=1:320,labels=c(1:320))
   axis(2,at=c(0,1), labels=c('Error', 'Acierto'), font=2)
-  mtext('Ensayos 1-320',3,cex=.8, font=2)
+  mtext(side=1, text = "Ensayos 1-320", line=2.5, cex=2)
+  mtext(archive,3,cex=3, f=2, line=1)   #Comentar SI se incluye Registro Acumulativo
+  
   
   plot(jaime$Exito[321:640],type='o',pch=16, col='darkgreen',ylim=c(0,1),axes=F , ann = F )
   axis(1,at=1:320,labels=c(321:640))
   axis(2,at=c(0,1), labels=c('Error', 'Acierto'), font=2)
-  mtext('Ensayos 321-640',3,cex=.8, font=2)}
+  mtext(side=1, text = "Ensayos 321-640", line=2.5, cex=2)}
+
 
 ##################################
 ####            Output  Por Ensayo
@@ -187,22 +179,23 @@ for(archive in dir()){
   a <- c(1,20,40,60,80,100,120,140,160,180,200,220,240,260,280,300,320,340,360,380,400,420,440,460,480,500,520,540,560,580,600,620,640)
   
   
-  plot(jaime$ContadorH,type='o',pch=16, col='blue',ylim=c(0,320), xlab='Ensayo', ylab="", axes=F, font.lab=2)
+  plot(jaime$ContadorH,type='o',pch=16, col='blue',ylim=c(0,320), xlab='', ylab="", axes=F, font.lab=2)
   axis(1,at=a,labels=a)
   points(jaime$ContadorF,type='o', lty=3, pch=16, col='red')
   points(jaime$ContadorM,type='o', lty=3, pch=16, col='purple')
   points(jaime$ContadorR,type='o', lty=3, pch=16, col='green')
   text(646,jaime$ContadorF[639]+20,paste("FA"),cex=1,col='red',f=2)
-  axis(2,at=160, labels="Frecuencia acumulada", tck=0, line=-0.5, font=2)
   text(646,jaime$ContadorM[630]+20,paste("M"),cex=1,col='purple',f=2)
   text(646,jaime$ContadorR[639]+20,paste("R"),cex=1,col='green',f=2)
   text(646,jaime$ContadorH[639]+20,paste("H"),cex=1,col='blue',f=2)
   #title("Outcome per trial", line = 3)
-  mtext(archive, 3, line=1, col='black', cex=1.2, font=2)
+  mtext(archive, 3, line=1, col='black', cex=3, font=2)
+  mtext(side=2, text = "Frecuencia Acumulada", line=1, cex=2)
   
-  plot(jaime$outcome[1:640],type='o',pch=16, col='deepskyblue4',ylim=c(1,4),axes=F, ylab="", xlab="Ensayo", font.lab=2 )
+  plot(jaime$outcome[1:640],type='o',pch=16, col='deepskyblue4',ylim=c(1,4),axes=F, ylab="", xlab="", font.lab=2 )
   axis(1,at=a,labels=a)
   axis(2,at=c(1,2,3,4), labels=c('FA', 'O', 'R', 'H'), font=1.5)
+  mtext(side=1, text = "Ensayos", line=2.5, cex=2)
 }
 
 ############################################
@@ -310,7 +303,6 @@ for(archive in dir()){
 ###########################################
 
 rm(list=ls())
-layout(matrix(1:1,ncol=1))
 for(archive in dir()){
   
   jaime <- read.csv(archive)
@@ -321,7 +313,7 @@ for(archive in dir()){
   n <- c(1,10,20,30,40,50,60,70,80,90,100,110,120,130,140,150,160,170,180,190,200,210,220,230,240,250,260,270,280,290,300,310,320)
   o <- c(321,330,340,350,360,370,380,390,400,410,420,430,440,450,460,470,480,490,500,510,520,530,540,550,560,570,580,590,600,610,620,630,640)
   
-  
+  layout(matrix(1:1,ncol=1))
   plot(jaime$choice[1:640],type='o',pch=16, col='dodgerblue3',ylim=c(0,1),axes=F , ann=F,  ylab='', xlab='', font.lab=2 )
   axis(1,at=m,labels=m)
   axis(2,at=0:1,labels=c("No","Sí"))
@@ -330,11 +322,24 @@ for(archive in dir()){
   mtext(archive, 3, line=1, col='black', cex=3, font=2)
   mtext(side=1, text = "Ensayos 1 - 640", line=3, cex=2.4)
   mtext(side=2, text = "Respuesta", line=1, cex=2.4)
+  
+  
+  layout(matrix(1:2,ncol=1))
+  plot(jaime$choice[1:320],type='o',pch=16, col='dodgerblue3',ylim=c(0,1),axes=F , ann=F,  ylab='', xlab='', font.lab=2 )
+  axis(1,at=n,labels=n)
+  axis(2,at=0:1,labels=c("No","Sí"))
+  text(140,9.5,paste("1-160"),cex=1,col='darkorchid',f=2)
+  #title( "Response per Trial", line = 3)  
+  mtext(archive, 3, line=1, col='black', cex=3, font=2)
+  mtext(side=1, text = "Ensayos 1 - 320", line=3, cex=2.4)
+  mtext(side=2, text = "Respuesta", line=1, cex=2.4)
     
-  plot(jaime$choice[321:640],type='o',pch=16, col='dodgerblue3',ylim=c(0,1),axes=F , ylab='Respuesta', xlab='Ensayo 321-640', font.lab=2 )
+  plot(jaime$choice[321:640],type='o',pch=16, col='dodgerblue3',ylim=c(0,1),axes=F , ylab='', xlab='', font.lab=2 )
   axis(1,at=n,labels=o)
   axis(2,at=0:1,labels=c("No","Sí"))
   text(140,8.5,paste("321-480"),cex=1,col='darkorchid2',f=2)
+  mtext(side=1, text = "Ensayos 321 - 640", line=3, cex=2.4)
+  mtext(side=2, text = "Respuesta", line=1, cex=2.4)
 
 colp <- c('deepskyblue3','darkorchid3', 'green', 'red', 'orange', 'firebrick3')
 
@@ -342,7 +347,7 @@ colp <- c('deepskyblue3','darkorchid3', 'green', 'red', 'orange', 'firebrick3')
 
 layout(matrix(1:2,ncol=1))
 
-plot(jaime$choice[1:640],type='o',pch=16, col='black',ylim=c(0,1), xlim=c(0,700),axes=F , ylab='Respuesta', xlab='Ensayo', font.lab=2 )
+plot(jaime$choice[1:640],type='o',pch=16, col='black',ylim=c(0,1), xlim=c(0,700),axes=F , ann=F, ylab='', xlab='', font.lab=2 )
 axis(1,at=m,labels=m)
 axis(2,at=0:1,labels=c("No","Sí"))
 for (a in 1:640){
@@ -352,13 +357,14 @@ for (a in 1:640){
     points(a,jaime$choice[a],pch=16,col=colp[2])}}
 text(670,0.8,"Fácil",cex=1,col=colp[1],f=2)
 text(670,0.3,"Difícil",cex=1,col=colp[2],f=2)
-mtext("Respuesta Registrada por Condición",3,cex=0.8, f=3)
-mtext(archive, 3, line=2, cex=1.2, f=2)
-
+mtext("Respuesta por Clase",3,cex=1.5, f=3)
+mtext(archive, 3, line=2, cex=3, f=2)
+mtext(side=1, text = "Ensayos 1 - 640", line=3, cex=2.4)
+mtext(side=2, text = "Respuesta", line=1, cex=2.4)
 
 ##### Choice por SENAL
 
-plot(jaime$choice[1:640],type='o',pch=16, col='black',ylim=c(0,1), xlim=c(0,700),axes=F , ylab='Respuesta', xlab='Ensayo', font.lab=2 )
+plot(jaime$choice[1:640],type='o',pch=16, col='black',ylim=c(0,1), xlim=c(0,700),axes=F , ann=F, ylab='', xlab='', font.lab=2 )
 axis(1,at=m,labels=m)
 axis(2,at=0:1,labels=c("No","Sí"))
 for (a in 1:640){
@@ -369,8 +375,9 @@ for (a in 1:640){
 text(670,0.8,"Señal",cex=1,col='forestgreen',f=2)
 text(670,0.3,"Ruido",cex=1,col=colp[4],f=2)
 text(140,9.5,paste("1-160"),cex=1,col='darkorchid',f=2)
-mtext("Respuesta Registrada por Estímulo",3,cex=.8, f=3)
-
+mtext("Respuesta por Estímulo",3,cex=1.5, f=3)
+mtext(side=1, text = "Ensayos 1 - 640", line=3, cex=2.4)
+mtext(side=2, text = "Respuesta", line=1, cex=2.4)
 
 ##### Choice por COLOR
 
