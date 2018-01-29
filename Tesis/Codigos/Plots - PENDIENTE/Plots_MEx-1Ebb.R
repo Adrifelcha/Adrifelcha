@@ -310,7 +310,7 @@ for(archive in dir()){
 ###########################################
 
 rm(list=ls())
-layout(matrix(1:2,ncol=1))
+layout(matrix(1:1,ncol=1))
 for(archive in dir()){
   
   jaime <- read.csv(archive)
@@ -322,12 +322,14 @@ for(archive in dir()){
   o <- c(321,330,340,350,360,370,380,390,400,410,420,430,440,450,460,470,480,490,500,510,520,530,540,550,560,570,580,590,600,610,620,630,640)
   
   
-  plot(jaime$choice[1:320],type='o',pch=16, col='dodgerblue3',ylim=c(0,1),axes=F , ylab='Respuesta', xlab='Ensayo 1-320', font.lab=2 )
-  axis(1,at=n,labels=n)
+  plot(jaime$choice[1:640],type='o',pch=16, col='dodgerblue3',ylim=c(0,1),axes=F , ann=F,  ylab='', xlab='', font.lab=2 )
+  axis(1,at=m,labels=m)
   axis(2,at=0:1,labels=c("No","Sí"))
   text(140,9.5,paste("1-160"),cex=1,col='darkorchid',f=2)
   #title( "Response per Trial", line = 3)  
-  mtext(archive, 3, line=1, col='black', cex=1.2, font=2)
+  mtext(archive, 3, line=1, col='black', cex=3, font=2)
+  mtext(side=1, text = "Ensayos 1 - 640", line=3, cex=2.4)
+  mtext(side=2, text = "Respuesta", line=1, cex=2.4)
     
   plot(jaime$choice[321:640],type='o',pch=16, col='dodgerblue3',ylim=c(0,1),axes=F , ylab='Respuesta', xlab='Ensayo 321-640', font.lab=2 )
   axis(1,at=n,labels=o)
