@@ -3,7 +3,7 @@
 # EXPERIMENTO 1 (Una Figura Ebbinghaus)
 ####################################
 
-setwd("C:/Users/Alejandro/Desktop/Felisa/Tesis/CSVs/Datos_MirrExp_1Ebb")
+setwd("C:/Users/Adriana/Desktop/Felisa/Tesis/CSVs/Datos_MirrExp_1Ebb")
 rm(list=ls())
 dir()
 
@@ -49,7 +49,6 @@ text(4.3,total[4]-6,paste(total[4]),cex=1.1,col='black',f=2)
 text(1.1, 100,paste('Hits & Falsas Alarmas'),cex=2,col='black',f=2)
 mtext(archive,3,cex=3, line=1, f=2)
 mtext(side=2, text = "Frecuencia Absoluta", line=2.2, cex=2)
-#title("Mirror Effect: Yes/No Responses", outer = TRUE, line = -2)  
 }  
 
 
@@ -81,27 +80,6 @@ for(archive in dir()){
 
   print(c(archive))
   print(c(Confidence))
-  
-  #plot(Confidence,type='o',pch=16,col='white',ylim=c(0,6), yaxt='n', xaxt='n', ann=F)
-#  #axis(1,at=c(0,6),labels=c("AN","BN","BS","AS"), col='white')
-#  #axis(2,at=c(2.5,7.5),labels=c("Rate","No."),las=0)
-  #abline(3,c(0.1,0.1), col="black",lwd=1)
-  #abline(v=1.75,h=c(-10,15),col='black')
-  #abline(v=2.5,h=c(-10,15),col='black')
-  #abline(v=3.4,h=c(-10,15),col='black')
-  #text(1.3,1.5,paste(C_AN),cex=1,col='royalblue4')
-  #text(2.2,1.5,paste(C_BN),cex=1,col='royalblue4')
-  #text(2.9,1.5,paste(C_BS),cex=1,col='royalblue4')
-  #text(3.75,1.5,paste(C_AS),cex=1,col='royalblue4')
-  #text(1.3,4.5,paste('R(AN)'),cex=1,col='royalblue4')
-  #text(2.2,4.5,paste('R(BN)'),cex=1,col='royalblue4')
-  #text(2.9,4.5,paste('R(BS)'),cex=1,col='royalblue4')
-  #text(3.75,4.5,paste('R(AS)'),cex=1,col='royalblue4')
-  #mtext(archive,3,cex=1.2, f=2)
-  #text(1.5,.8,paste('Hits & F.A. rate'),cex=1,col='blue',f=2)
-  #mtext(archive,3,cex=.8)
-  #title("Confidence Rating", outer = TRUE, line = -2)
-  #points(hits,type='o',pch=16,col='black')
   
   barplot(Confidence, col=c('deeppink', 'deeppink1', 'deeppink2', 'deeppink3'),ylim=c(0,6),axes=F , ann=F,  ylab="", xlab="", font.lab=2)
   axis(1,at=c(0.8,1.9,3.1,4.3),labels=c("R(AN)", "R(BN)", "R(BS)", "R(AS)"), font=2)
@@ -273,28 +251,40 @@ for(archive in dir()){
 ###############################################
 
 rm(list=ls())
-layout(matrix(1:2,ncol=1))
 for(archive in dir()){
   
   a <- c(1,10,20,30,40,50,60,70,80,90,100,110,120,130,140,150,160,170,180,190,200,210,220,230,240,250,260,270,280,290,300,310,320)
   b <- c(321,330,340,350,360,370,380,390,400,410,420,430,440,450,460,470,480,490,500,510,520,530,540,550,560,570,580,590,600,610,620,630,640)
+  m <- c(1,20,40,60,80,100,120,140,160,180,200,220,240,260,280,300,320,340,360,380,400,420,440,460,480,500,520,540,560,580,600,620,640)
   
   jaime <- read.csv(archive)
   jaime$Ensayo <- as.character(jaime$Ensayo)
   cafe <- strsplit(as.character(jaime$Ensayo),split='-')
   
-  plot(jaime$Confidence[1:320],type='o',pch=16, col='darkorchid',ylim=c(1,6),axes=F , ylab='Puntaje', xlab='Ensayos 1-320', font.lab=2)
+  layout(matrix(1:1,ncol=1))
+  plot(jaime$Confidence[1:640],type='o',pch=16, col='darkorchid',ylim=c(1,6),axes=F , ylab='', xlab='', font.lab=2)
+  axis(1,at=m,labels=m)
+  axis(2,at=1:6,labels=c("1","2","3","4","5","6"))
+  text(140,9.5,paste("1-160"),cex=1,col='darkorchid',f=2)
+  mtext(archive, 3, line=1, col='black', cex=3, font=2)
+  mtext(side=1, text = "Ensayos 1 - 640", line=3, cex=2.4)
+  mtext(side=2, text = "Puntajes de Confianza", line=2, cex=2)
+  
+  layout(matrix(1:2,ncol=1))
+  plot(jaime$Confidence[1:320],type='o',pch=16, col='darkorchid',ylim=c(1,6),axes=F , ylab='', xlab='', font.lab=2)
   axis(1,at=a,labels=a)
   axis(2,at=1:6,labels=c("1","2","3","4","5","6"))
   text(140,9.5,paste("1-160"),cex=1,col='darkorchid',f=2)
-  #title( "Confidence Rating per Trial", line = 3)
-  mtext(archive, 3, line=1, col='black', cex=1.2, font=2)
+  mtext(archive, 3, line=1, col='black', cex=3, font=2)
+  mtext(side=1, text = "Ensayos 1 - 320", line=3, cex=2.4)
+  mtext(side=2, text = "Puntajes", line=2, cex=2)
     
-  plot(jaime$Confidence[321:640],type='o',pch=16, col='darkorchid2',ylim=c(1,6), ylab='Puntaje',xlab='Ensayos 321-640', axes=F, font.lab=2 )
+  plot(jaime$Confidence[321:640],type='o',pch=16, col='darkorchid2',ylim=c(1,6), ylab='',xlab='', axes=F, font.lab=2 )
   axis(1,at=a,labels=b)
   axis(2,at=1:6,labels=c("1","2","3","4","5","6"))
   text(140,8.5,paste("321-480"),cex=1,col='darkorchid2',f=2)
-
+  mtext(side=1, text = "Ensayos 321 - 640", line=3, cex=2.4)
+  mtext(side=2, text = "Puntajes", line=2, cex=2)
  
 }
 
@@ -438,16 +428,16 @@ for(archive in dir()){
   axis(2,at=c(0, 20, 40, 60, 80, 100),labels=c("0", "20", "40","60","80","100"),las=1)
   axis(1,at=c(0.7,1.9,3.1,4.3),labels=c("2","3", "7", "8"))
   mtext("Número de Círculos Externos", side = 1, line = 2.5, cex = 1, font = 2)
-  mtext("Hits", side = 2, line = 3, cex = 1, font = 2, las = 0)
+  mtext("Hits", side = 2, line = 2, cex = 2, font = 2, las = 0)
   mtext('Hits por Círculos Externos',3,cex=1.2, font=2)
+  mtext(archive, outer = TRUE, line = -2, cex=3, font=2)
 
   barplot(fa, main = "", xlab = "", ylab = " ", ylim = c(0, 100), axes = FALSE, col = c("firebrick1","firebrick2","firebrick3", "firebrick4"))
   axis(2,at=c(0, 20, 40, 60, 80, 100),labels=c("0", "20", "40","60","80","100"),las=1)
   axis(1,at=c(0.7,1.9,3.1,4.3),labels=c("2","3", "7", "8"))
   mtext("Número de Círculos Externos", side = 1, line = 2.5, cex = 1, font = 2)
-  mtext("Falsas Alarmas", side = 2, line = 3, cex = 1, font = 2, las = 0)
+  mtext("Falsas Alarmas", side = 2, line = 2, cex = 2, font = 2, las = 0)
   mtext('F. Alarmas por Círculos Externos',3,cex=1.2, font=2)
-  title(archive, outer = TRUE, line = -2)
   }
 
 #############################################
@@ -476,26 +466,26 @@ for(archive in dir()){
   barplot(hits, main = "", xlab = "", ylab = " ", ylim = c(0, 100), axes = FALSE, col = c("dodgerblue3","firebrick3", "chocolate3", "darkorchid4", "forestgreen"))
   axis(2,at=c(0, 20, 40, 60, 80, 100),labels=c("0", "20", "40","60","80","100"),las=1)
   axis(1,at=c(0.7,1.9,3.1,4.3,5.5),labels=c("Azul","Rojo", "Anaranjado", "Púrpura", "Verde"))
-  text(0.7,hits[1]+5,paste(hits[1]),cex=1,col='black',f=1)
-  text(1.9,hits[2]+5,paste(hits[2]),cex=1,col='black',f=1)
-  text(3.1,hits[3]+5,paste(hits[3]),cex=1,col='black',f=1)
-  text(4.3,hits[4]+5,paste(hits[4]),cex=1,col='black',f=1)
-  text(5.5,hits[5]+5,paste(hits[5]),cex=1,col='black',f=1)
+  text(0.7,hits[1]+5,paste(hits[1]),cex=1.2,col='black',f=2)
+  text(1.9,hits[2]+5,paste(hits[2]),cex=1.2,col='black',f=2)
+  text(3.1,hits[3]+5,paste(hits[3]),cex=1.2,col='black',f=2)
+  text(4.3,hits[4]+5,paste(hits[4]),cex=1.2,col='black',f=2)
+  text(5.5,hits[5]+5,paste(hits[5]),cex=1.2,col='black',f=2)
   mtext("Color", side = 1, line = 2.5, cex = 1, font = 2)
-  mtext("Hits", side = 2, line = 3, cex = 1, font = 2, las = 0)
+  mtext("Hits", side = 2, line = 2, cex = 2, font = 2, las = 0)
   mtext('Hits por color',3,cex=1.5, font=2)
-  title(archive, outer = TRUE, line = -2)
+  mtext(archive, outer = TRUE, line = -2, cex=3, font=2)
    
   barplot(fa, main = "", xlab = "", ylab = " ", ylim = c(0, 100), axes = FALSE, col =c("dodgerblue3","firebrick3", "chocolate3", "darkorchid4", "forestgreen"))
   axis(2,at=c(0, 20, 40, 60, 80, 100),labels=c("0", "20", "40","60","80","100"),las=1)
   axis(1,at=c(0.7,1.9,3.1,4.3,5.5),labels=c("Azul","Rojo", "Naranja", "Púrpura", "Verde"))
-  text(0.7,fa[1]+5,paste(fa[1]),cex=1,col='black',f=1)
-  text(1.9,fa[2]+5,paste(fa[2]),cex=1,col='black',f=1)
-  text(3.1,fa[3]+5,paste(fa[3]),cex=1,col='black',f=1)
-  text(4.3,fa[4]+5,paste(fa[4]),cex=1,col='black',f=1)
-  text(5.5, fa[5]+5,paste(fa[5]), cex=1,col='black',f=1)
+  text(0.7,fa[1]+5,paste(fa[1]),cex=1.5,col='black',f=2)
+  text(1.9,fa[2]+5,paste(fa[2]),cex=1.5,col='black',f=2)
+  text(3.1,fa[3]+5,paste(fa[3]),cex=1.5,col='black',f=2)
+  text(4.3,fa[4]+5,paste(fa[4]),cex=1.5,col='black',f=2)
+  text(5.5, fa[5]+5,paste(fa[5]), cex=1.5,col='black',f=2)
   mtext("Color", side = 1, line = 2.5, cex = 1, font = 2)
-  mtext("Falsas Alarmas", side = 2, line = 3, cex = 1, font = 2, las = 0)
+  mtext("Falsas Alarmas", side = 2, line = 2, cex = 2, font = 2, las = 0)
   mtext('F. Alarmas por Color',3,cex=1.5, font=2)
   }
 
@@ -539,10 +529,10 @@ for(archive in dir()){
   text(yes[5]+5,5.65,paste(no[5]),cex=1,col='black',f=2)
   text(yes[3]/2,3.1,'Sí',cex=3,col='black',f=3)
   text(yes[3]+no[3]/2,3.1,'No',cex=3,col='black',f=3)
-  mtext("Número de Respuestas", side = 1, line = 2.5, cex = 2, font = 2)
-  mtext("Color", side = 4, line=0.8, cex = 2, font = 1, las = 3)
+  mtext("Total de ensayos por color", side = 1, line = 2.5, cex = 2, font = 2)
+  mtext("Color", side = 4, line=0.8, cex = 2.2, font = 2, las = 3)
   #mtext('Sí por color',3,cex=1.5, font=2)
-  title(archive, outer = TRUE, line = -3.5)}
+  mtext(archive, outer = TRUE, line = -3.5, cex=3, font=2)}
 
 
 

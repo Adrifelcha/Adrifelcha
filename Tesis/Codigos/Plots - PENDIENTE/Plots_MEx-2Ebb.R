@@ -3,7 +3,7 @@
 # EXPERIMENTO 2 (Dos Ebbinghaus)
 ####################################
 
-setwd("C:/Users/Alejandro/Desktop/Felisa/Tesis/CSVs/Datos_MirrExp_2Ebb")
+setwd("C:/Users/Adriana/Desktop/Felisa/Tesis/CSVs/Datos_MirrExp_2Ebb")
 rm(list=ls())
 dir()
 
@@ -40,28 +40,16 @@ for(archive in dir()){
             rate[length(rate)],
             total[length(total)]))}
   
-  barplot(total, main = "", xlab = "", ylab = "Frecuencia absoluta", font.lab=2, ylim = c(0, 160), axes = FALSE, col =c("dodgerblue4", "deeppink4", "deeppink3", "dodgerblue3"))
+  barplot(total, main = "", xlab = "", ylab = "", font.lab=2, ylim = c(0, 160), axes = FALSE, col =c("dodgerblue4", "deeppink4", "deeppink3", "dodgerblue3"))
   axis(1,at=c(0.72,1.9,3.1,4.3),labels=c("Fa(AN)", "Fa(BN)", "H(BS)", "H(AS)"), font=2)
   axis(2,at=c(0, 20, 40, 60, 80, 100, 120, 140, 160),labels=c("0","20","40","60", "80", "100", "120", "140", "160"),las=1)
-  text(0.72,total[1]+6,paste(total[1]),cex=.9,col='black',f=3)
-  text(1.9,total[2]+6,paste(total[2]),cex=.9,col='black',f=3)
-  text(3.1,total[3]+3,paste(total[3]),cex=.9,col='black',f=3)
-  text(4.3,total[4]+3,paste(total[4]),cex=.9,col='black',f=3)
-  text(1.35,100,paste('Hits & Falsas Alarmas'),cex=1,col='black',f=2)
-  mtext(archive,3,cex=1.2, line=1, f=2)
-  #title("Mirror Effect: Yes/No Responses", outer = TRUE, line = -2)  
-  
-  #RATES (Lineas)
-  
-  #plot(rate, main = "", type='o', pch=16, xlab = "", ylab = "Rate", font.lab=2, ylim = c(0, 1), axes = FALSE, col ='royalblue')
-  #axis(1,at=1:4,labels=c("Fa(AN)", "Fa(BN)", "H(BS)", "H(AS)"), font=2)
-  #axis(2,at=c(0, 0.15, 0.30, 0.45, 0.60, 0.75, 0.90, 1),labels=c("0",".15",".30",".45",".60", ".75", ".90", "1"),las=1)
-  #text(1.1,rate[1]+.1,paste(rate[1]),cex=1,col='royalblue',f=2)
-  #text(1.9,rate[2]+.1,paste(rate[2]),cex=1,col='royalblue',f=2)
-  #text(3.1,rate[3]-.1,paste(rate[3]),cex=1,col='royalblue',f=2)
-  #text(3.9,rate[4]-.1,paste(rate[4]),cex=1,col='royalblue',f=2)
-  #text(1.5,.8,paste('Hits & F.A. rates'),cex=1,col='black',f=2)
-  #mtext(archive,3,cex=1.2, line=1, f=2)
+  text(0.72,total[1]+6,paste(total[1]),cex=1.1,col='black',f=2)
+  text(1.9,total[2]+6,paste(total[2]),cex=1.1,col='black',f=2)
+  text(3.1,total[3]-6,paste(total[3]),cex=1.1,col='black',f=2)
+  text(4.3,total[4]-6,paste(total[4]),cex=1.1,col='black',f=2)
+  text(1.1, 100,paste('Hits & Falsas Alarmas'),cex=2,col='black',f=2)
+  mtext(archive,3,cex=3, line=1, f=2)
+  mtext(side=2, text = "Frecuencia Absoluta", line=2.2, cex=2)
   }  
 
 #####################################
@@ -89,37 +77,15 @@ for(archive in dir()){
   print(c(archive))
   print(c(Confidence))
   
-  #plot(Confidence,type='o',pch=16,col='white',ylim=c(0,6), yaxt='n', xaxt='n', ann=F)
-  #  #axis(1,at=c(0,6),labels=c("AN","BN","BS","AS"), col='white')
-  #  #axis(2,at=c(2.5,7.5),labels=c("Rate","No."),las=0)
-  #abline(3,c(0.1,0.1), col="black",lwd=1)
-  #abline(v=1.75,h=c(-10,15),col='black')
-  #abline(v=2.5,h=c(-10,15),col='black')
-  #abline(v=3.4,h=c(-10,15),col='black')
-  #text(1.3,1.5,paste(C_AN),cex=1,col='royalblue4')
-  #text(2.2,1.5,paste(C_BN),cex=1,col='royalblue4')
-  #text(2.9,1.5,paste(C_BS),cex=1,col='royalblue4')
-  #text(3.75,1.5,paste(C_AS),cex=1,col='royalblue4')
-  #text(1.3,4.5,paste('R(AN)'),cex=1,col='royalblue4')
-  #text(2.2,4.5,paste('R(BN)'),cex=1,col='royalblue4')
-  #text(2.9,4.5,paste('R(BS)'),cex=1,col='royalblue4')
-  #text(3.75,4.5,paste('R(AS)'),cex=1,col='royalblue4')
-  #mtext(archive,3,cex=1.2, f=2)
-  #text(1.5,.8,paste('Hits & F.A. rate'),cex=1,col='blue',f=2)
-  #mtext(archive,3,cex=.8)
-  #title("Confidence Rating", outer = TRUE, line = -2)
-  #points(hits,type='o',pch=16,col='black')
-  
-  plot(Confidence,type='o',pch=16,col='darkorchid1',ylim=c(0,6),axes=F , ylab="Puntaje de Confianza (Promedio)", xlab="", font.lab=2)
-  axis(1,at=1:4,labels=c("R(AN)", "R(BN)", "R(BS)", "R(AS)"), font=2)
+  barplot(Confidence,type='o',pch=16,col=c('lightpink', 'lightpink1', 'lightpink2', 'lightpink3'),ylim=c(0,6),axes=F , ylab="", xlab="", font.lab=2)
+  axis(1,at=c(0.8, 1.9, 3.1, 4.3),labels=c("R(AN)", "R(BN)", "R(BS)", "R(AS)"), font=2)
   axis(2,at=c(0, 1, 2, 3, 4, 5, 6),labels=c("0","1", "2","3","4","5","6"),las=1)
-  text(1.1,C_AN+.5,paste(C_AN),cex=1,col='darkslateblue',f=2)
-  text(1.9,C_BN+.5,paste(C_BN),cex=1,col='darkslateblue',f=2)
-  text(3.1,C_BS-.6,paste(C_BS),cex=1,col='darkslateblue',f=2)
-  text(3.9,C_AS-.5,paste(C_AS),cex=1,col='darkslateblue',f=2)
-  #  text(1.5,5.5,paste('Puntaje de Confianza'),cex=1,col='violetred4',f=2)
-  #  text(1.5,5.2,paste('(Promedios)'),cex=1,col='violetred4',f=2)
-  mtext(archive,3,cex=1.2,f=2)
+  text(0.8,C_AN+.5,paste(C_AN),cex=1,col='black',f=2)
+  text(1.9,C_BN+.5,paste(C_BN),cex=1,col='black',f=2)
+  text(3.1,C_BS-.6,paste(C_BS),cex=1,col='black',f=2)
+  text(4.3,C_AS-.5,paste(C_AS),cex=1,col='black',f=2)
+  mtext(archive,3,cex=3,f=2)
+  mtext(side=2, text = "Puntaje de Confianza promedio", line=2.2, cex=2)
 }
 
 
