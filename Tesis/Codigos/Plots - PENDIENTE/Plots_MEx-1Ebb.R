@@ -3,7 +3,7 @@
 # EXPERIMENTO 1 (Una Figura Ebbinghaus)
 ####################################
 
-setwd("C:/Users/Adriana/Desktop/Felisa/Tesis/CSVs/Datos_MirrExp_1Ebb")
+setwd("C:/Users/Alejandro/Desktop/Felisa/Tesis/CSVs/Datos_MirrExp_1Ebb")
 rm(list=ls())
 dir()
 
@@ -162,11 +162,11 @@ for(archive in dir()){
   points(jaime$ContadorF,type='o', lty=3, pch=16, col='red')
   points(jaime$ContadorM,type='o', lty=3, pch=16, col='purple')
   points(jaime$ContadorR,type='o', lty=3, pch=16, col='green')
-  text(646,jaime$ContadorF[639]+20,paste("FA"),cex=1,col='red',f=2)
-  text(646,jaime$ContadorM[630]+20,paste("M"),cex=1,col='purple',f=2)
-  text(646,jaime$ContadorR[639]+20,paste("R"),cex=1,col='green',f=2)
-  text(646,jaime$ContadorH[639]+20,paste("H"),cex=1,col='blue',f=2)
-  #title("Outcome per trial", line = 3)
+  text(30,300,paste("F.A."),cex=1,col='red',f=2)
+  text(30,230,paste("Omisiones"),cex=1,col='purple',f=2)
+  axis(2,at=160, labels="Frecuencia Acumulada", tck=0, line=-0.5, font=2)
+  text(30,160,paste("Rechazos"),cex=1,col='green',f=2)
+  text(30,90,paste("Hits"),cex=1,col='blue',f=2)
   mtext(archive, 3, line=1, col='black', cex=3, font=2)
   mtext(side=2, text = "Frecuencia Acumulada", line=1, cex=2)
   
@@ -493,6 +493,7 @@ for(archive in dir()){
 #               Yes/No por Color
 ####################################################
 rm(list=ls())
+layout(matrix(1:1,ncol=1, byrow=TRUE))
 for(archive in dir()){
   
   jaime <- read.csv(archive)
