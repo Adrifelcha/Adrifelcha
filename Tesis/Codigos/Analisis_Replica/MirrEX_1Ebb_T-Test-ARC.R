@@ -40,7 +40,7 @@ Rates <-stack(Combined_Rates)
 FalsasAlarmas <- stack(FA_Rates)
 Hits <- stack(Hits_Rates)
 #Corremos las T's
-t.test(values~ind,data=FalsasAlarmas,alternative = c("greater"))
+t.test(values~ind,data=FalsasAlarmas,alternative = c("less"))
 t.test(values~ind,data=Hits,alternative = c("less"))
 
 ##### Diferencias en Confidence Rates
