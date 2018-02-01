@@ -10,3 +10,12 @@ Miguel Herrera:
 JL : ?
 
 Zamora: -
+
+
+
+
+FALTA:
+Tareas de detección (en Marco)
+Analisis estadísticos (en Resultados)
+
+Primer enunciado del apartado de Memoria de Reconocimiento. Faltan referencias

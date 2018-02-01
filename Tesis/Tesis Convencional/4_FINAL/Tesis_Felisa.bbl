@@ -354,30 +354,6 @@ de Fockert, J.%
 
 \bibitem [\protect \citeauthoryear {%
 Egan%
-}{%
-Egan%
-}{%
-{\protect \APACyear {1958}}%
-}]{%
-Egan1958}
-\APACinsertmetastar {%
-Egan1958}%
-\begin{APACrefauthors}%
-Egan, J\BPBI P.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{1958}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Recognition Memory and the Operating Characteristic}
-  {Recognition memory and the operating characteristic}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Journal of Acoustical Society of
-  America}{2}{32}{51-58}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Egan%
 , Schulman%
 \BCBL {}\ \BBA {} Greenberg%
 }{%
@@ -989,34 +965,6 @@ Kintsch, W.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Kintsch%
-\ \BBA {} Carlson%
-}{%
-Kintsch%
-\ \BBA {} Carlson%
-}{%
-{\protect \APACyear {1965}}%
-}]{%
-KintschCarlson1967}
-\APACinsertmetastar {%
-KintschCarlson1967}%
-\begin{APACrefauthors}%
-Kintsch, W.%
-\BCBT {}\ \BBA {} Carlson, W\BPBI J.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{1965}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Changes in the Memory Operating Characteristic during
-  Recognition Learning} {Changes in the memory operating characteristic during
-  recognition learning}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Journal of Verbal Learning and Verbal
-  Behavior}{6}{6}{891-896}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Kučera%
 \ \BBA {} Francis%
 }{%
@@ -1575,33 +1523,6 @@ Noldy, N\BPBI E.%
   effects of intentional and incidental learning}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Psychophysiology}{27}{4}{417-428}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Norman%
-\ \BBA {} Wickelgreen%
-}{%
-Norman%
-\ \BBA {} Wickelgreen%
-}{%
-{\protect \APACyear {1965}}%
-}]{%
-Norman1965}
-\APACinsertmetastar {%
-Norman1965}%
-\begin{APACrefauthors}%
-Norman, D\BPBI A.%
-\BCBT {}\ \BBA {} Wickelgreen, W\BPBI A.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{1965}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Short-term Recognition Memory for Single Digits and
-  Pairs of Digits} {Short-term recognition memory for single digits and pairs
-  of digits}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Journal of Experimental Psychology}{70}{5}{479-489}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -2269,33 +2190,6 @@ Wickelgren, W\BPBI A.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Wickelgren%
-\ \BBA {} Norman%
-}{%
-Wickelgren%
-\ \BBA {} Norman%
-}{%
-{\protect \APACyear {1966}}%
-}]{%
-Wickelgren1966}
-\APACinsertmetastar {%
-Wickelgren1966}%
-\begin{APACrefauthors}%
-Wickelgren, W\BPBI A.%
-\BCBT {}\ \BBA {} Norman, D\BPBI A.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{1966}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Strength Models and Serial Position in Short-Term
-  Recognition Memory} {Strength models and serial position in short-term
-  recognition memory}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Journal of Mathematical Psychology}{3}{2}{316-347}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Wickens%
 }{%
 Wickens%
@@ -2460,30 +2354,6 @@ Yonelinas, A\BPBI P.%
   recollection}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Consciousness and Cognition}{5}{4}{418-441}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Zandt%
-}{%
-Zandt%
-}{%
-{\protect \APACyear {2000}}%
-}]{%
-VanZ2000}
-\APACinsertmetastar {%
-VanZ2000}%
-\begin{APACrefauthors}%
-Zandt, T\BPBI V.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2000}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {ROC Curves and Confidence Judgments in Recognition
-  Memory} {Roc curves and confidence judgments in recognition memory}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Journal of Experimental Psychology: Learning, Memory
-  and Cognition}{26}{3}{582-600}.
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}

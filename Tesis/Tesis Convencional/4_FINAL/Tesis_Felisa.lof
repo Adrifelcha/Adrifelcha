@@ -13,11 +13,11 @@
 \contentsline {figure}{\numberline {2.10}{\ignorespaces Estimaci\IeC {\'o}n del sesgo con base en el criterio}}{25}{figure.caption.31}
 \contentsline {figure}{\numberline {2.11}{\ignorespaces Ejemplo de Curva ROC}}{26}{figure.caption.33}
 \contentsline {figure}{\numberline {2.12}{\ignorespaces Representaci\IeC {\'o}n gr\IeC {\'a}fica de la interpretaci\IeC {\'o}n de las tareas de detecci\IeC {\'o}n con Escala de Confianza}}{30}{figure.caption.35}
-\contentsline {figure}{\numberline {2.13}{\ignorespaces SDT en Memoria de Reconocimiento}}{35}{figure.caption.42}
-\contentsline {figure}{\numberline {2.14}{\ignorespaces SDT en Memoria de Reconocimiento (Varianzas Desiguales)}}{36}{figure.caption.43}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces SDT en Memoria de Reconocimiento}}{34}{figure.caption.42}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces SDT en Memoria de Reconocimiento (Varianzas Desiguales)}}{35}{figure.caption.43}
 \contentsline {figure}{\numberline {2.15}{\ignorespaces Representaci\IeC {\'o}n gr\IeC {\'a}fica del Efecto Espejo}}{37}{figure.caption.45}
-\contentsline {figure}{\numberline {2.16}{\ignorespaces Representaci\IeC {\'o}n gr\IeC {\'a}fica del Efecto Espejo de acuerdo a los datos obtenidos en Tareas S\IeC {\'\i }/No}}{40}{figure.caption.47}
-\contentsline {figure}{\numberline {2.17}{\ignorespaces Representaci\IeC {\'o}n gr\IeC {\'a}fica del Efecto Espejo, de acuerdo con el patr\IeC {\'o}n de respuestas registrado en tareas con Escala de Confianza}}{41}{figure.caption.48}
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Representaci\IeC {\'o}n gr\IeC {\'a}fica del Efecto Espejo de acuerdo a los datos obtenidos en Tareas S\IeC {\'\i }/No}}{39}{figure.caption.47}
+\contentsline {figure}{\numberline {2.17}{\ignorespaces Representaci\IeC {\'o}n gr\IeC {\'a}fica del Efecto Espejo, de acuerdo con el patr\IeC {\'o}n de respuestas registrado en tareas con Escala de Confianza}}{40}{figure.caption.48}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Ilusi\IeC {\'o}n de Ebbinghaus: Ejemplos}}{51}{figure.caption.63}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Efecto del N\IeC {\'u}mero y Tama\IeC {\~n}o de los c\IeC {\'\i }rculos externos en la intensidad de la Ilusi\IeC {\'o}n de Ebbinghaus}}{52}{figure.caption.64}
@@ -34,20 +34,20 @@
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Hits y Falsas Alarmas por Color; Ejemplo}}{72}{figure.caption.86}
 \contentsline {figure}{\numberline {4.7}{\ignorespaces Proporci\IeC {\'o}n de Respuestas S\IeC {\'\i }/No por color; Ejemplo}}{73}{figure.caption.87}
 \contentsline {figure}{\numberline {4.8}{\ignorespaces Diferencias entre las $d'$ de los niveles de dificultad propuestos}}{77}{figure.caption.95}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Modelo Delta: Modelo jer\IeC {\'a}rquico bayesiano para revisar las diferencias en $d'$ entre clases de est\IeC {\'\i }mulos}}{79}{figure.caption.97}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Modelo Delta: Distribuciones posteriores marginales y conjuntas para $\mu d'$ y $\mu c$ por cada clase de est\IeC {\'\i }mulo}}{83}{figure.caption.98}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Modelo Delta: Densidades posteriores de los valores de $d'$ estimados individualmente y en promedio, por experimento}}{84}{figure.caption.99}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Modelo Delta: Densidades posteriores de los valores de $c$ estimados individualmente y en promedio, por experimento}}{85}{figure.caption.100}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Modelo Delta: Densidad posterior de los valores estimados para el par\IeC {\'a}metro Delta en cada Experimento}}{86}{figure.caption.101}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Modelo Delta: Modelo jer\IeC {\'a}rquico bayesiano para revisar las diferencias en $d'$ entre clases de est\IeC {\'\i }mulos}}{78}{figure.caption.97}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Modelo Delta: Distribuciones posteriores marginales y conjuntas para $\mu d'$ y $\mu c$ por cada clase de est\IeC {\'\i }mulo}}{82}{figure.caption.98}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Modelo Delta: Densidades posteriores de los valores de $d'$ estimados individualmente y en promedio, por experimento}}{83}{figure.caption.99}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Modelo Delta: Densidades posteriores de los valores de $c$ estimados individualmente y en promedio, por experimento}}{84}{figure.caption.100}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Modelo Delta: Densidad posterior de los valores estimados para el par\IeC {\'a}metro Delta en cada Experimento}}{85}{figure.caption.101}
 \contentsline {figure}{\numberline {4.14}{\ignorespaces Diferencias entre Hits y Falsas Alarmas por Condici\IeC {\'o}n; Participante ejemplar}}{87}{figure.caption.103}
 \contentsline {figure}{\numberline {4.15}{\ignorespaces Diferencias entre las Tasas de Hits y Falsas Alarmas registradas en cada clase de est\IeC {\'\i }mulos}}{88}{figure.caption.104}
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Modelo Tau: Modelo Bayesiano para evaluar las diferencias entre las tasas de Hits y Falsas Alarmas obtenidas por cada clase de est\IeC {\'\i }mulos}}{91}{figure.caption.106}
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Modelo Tau: Inferencias individuales acerca de las probabilidades ocultas tras la emisi\IeC {\'o}n de Hits por clase de est\IeC {\'\i }mulos; Experimentos 1 y 2}}{92}{figure.caption.107}
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Modelo Delta: Inferencias individuales acerca de las probabilidades ocultas tras la emisi\IeC {\'o}n de Falsas Alarmas por clase de est\IeC {\'\i }mulos; Experimentos 1 y 2}}{93}{figure.caption.108}
-\contentsline {figure}{\numberline {4.19}{\ignorespaces Modelo Tau: Densidades de probabilidad posterior para los valores de los par\IeC {\'a}metros Tau; Experimentos 1 y 2}}{94}{figure.caption.109}
-\contentsline {figure}{\numberline {4.20}{\ignorespaces Comparaci\IeC {\'o}n entre Puntajes de Confianza asignados por Clase; Ejemplo}}{95}{figure.caption.111}
-\contentsline {figure}{\numberline {4.21}{\ignorespaces Diferencias entre los Puntajes de Confianza promedio asignados a los est\IeC {\'\i }mulos con Se\IeC {\~n}al y Ruido de cada clase}}{96}{figure.caption.112}
-\contentsline {figure}{\numberline {4.22}{\ignorespaces Dispersi\IeC {\'o}n en las Tasas de Hits y Falsas Alarmas registradas en cada clase de est\IeC {\'\i }mulos}}{98}{figure.caption.114}
-\contentsline {figure}{\numberline {4.23}{\ignorespaces Diferencias entre las Tasas de Hits y Falsas Alarmas registradas en cada clase de est\IeC {\'\i }mulos}}{103}{figure.caption.116}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Modelo Tau: Modelo Bayesiano para evaluar las diferencias entre las tasas de Hits y Falsas Alarmas obtenidas por cada clase de est\IeC {\'\i }mulos}}{90}{figure.caption.106}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Modelo Tau: Inferencias individuales acerca de las probabilidades ocultas tras la emisi\IeC {\'o}n de Hits por clase de est\IeC {\'\i }mulos; Experimentos 1 y 2}}{91}{figure.caption.107}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Modelo Delta: Inferencias individuales acerca de las probabilidades ocultas tras la emisi\IeC {\'o}n de Falsas Alarmas por clase de est\IeC {\'\i }mulos; Experimentos 1 y 2}}{92}{figure.caption.108}
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Modelo Tau: Densidades de probabilidad posterior para los valores de los par\IeC {\'a}metros Tau; Experimentos 1 y 2}}{93}{figure.caption.109}
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Comparaci\IeC {\'o}n entre Puntajes de Confianza asignados por Clase; Ejemplo}}{94}{figure.caption.111}
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Diferencias entre los Puntajes de Confianza promedio asignados a los est\IeC {\'\i }mulos con Se\IeC {\~n}al y Ruido de cada clase}}{95}{figure.caption.112}
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Dispersi\IeC {\'o}n en las Tasas de Hits y Falsas Alarmas registradas en cada clase de est\IeC {\'\i }mulos}}{97}{figure.caption.114}
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Diferencias entre las Tasas de Hits y Falsas Alarmas registradas en cada clase de est\IeC {\'\i }mulos}}{102}{figure.caption.116}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
