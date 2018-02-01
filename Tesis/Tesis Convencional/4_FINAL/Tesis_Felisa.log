@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.6.3)  1 FEB 2018 02:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300 64-bit) (preloaded format=pdflatex 2017.6.3)  1 FEB 2018 10:10
 entering extended mode
 **./Tesis_Felisa.tex
 (Tesis_Felisa.tex
@@ -2148,22 +2148,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 259--260
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 261--262
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 263--264
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 271--272
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 273--274
 
  []
 
@@ -2173,72 +2158,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 276--277
  []
 
 
-Overfull \hbox (1.74516pt too wide) in paragraph at lines 278--279
-[]\T1/put/m/n/12 Primero, gra-cias a los 'big guns' del Lab25 (\T1/put/b/n/12 M
-anuel Vi-lla-real\T1/put/m/n/12 , \T1/put/b/n/12 Me-li-sa Chá-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 280--281
-
- []
-
-
-Overfull \hbox (5.276pt too wide) in paragraph at lines 282--283
-\T1/put/b/n/12 to-ria To-rres, Al-fon-so Me-di-na, Yuzn-hio Sie-rra, Pau-li-na 
-Ec-ker-le, Ka-ri-na Ruíz,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 282--283
-
- []
-
-1: section
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 283.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 283.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 283.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 283.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 283.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 283.
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 284--285
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 286--287
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 288--289
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 290--291
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 292--293
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 294--295
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 296--297
 
  []
 
@@ -2248,53 +2168,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 299--300
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 301--302
-
- []
-
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 302.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 302.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 302.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 302.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 302.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 302.
-[10]
-! Extra }, or forgotten \endgroup.
-l.303 ...s al\textbf{} Dr. Ã“scar Zamora ArÃ©valo}
-                                                   por fungir como mi primer...
-
-? 
-
-Underfull \hbox (badness 10000) in paragraph at lines 303--304
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 305--306
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 307--308
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 309--310
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 311--312
-
- []
-
+1: section
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 320.
 Package babel Info: Redefining spanish shorthand >>
@@ -2307,7 +2185,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 320.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 320.
-[11]
+[9]
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 320.
 Package babel Info: Redefining spanish shorthand >>
@@ -2320,7 +2198,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 320.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 320.
- [12
+ [10
 
 ] (Tesis_Felisa.toc
 LaTeX Info: Redefining \. on input line 1.
@@ -2339,7 +2217,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 33.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 33.
-[13])
+[11])
 \tf@toc=\write4
 \openout4 = `Tesis_Felisa.toc'.
 
@@ -2355,7 +2233,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 322.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 322.
- [14] (Tesis_Felisa.lof
+ [12] (Tesis_Felisa.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 
@@ -2372,7 +2250,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 34.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 34.
-[15
+[13
 
 ]
 Overfull \hbox (0.54807pt too wide) in paragraph at lines 48--48
@@ -2401,7 +2279,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 324.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 324.
- [16] (Tesis_Felisa.lot
+ [14] (Tesis_Felisa.lot
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 
@@ -2452,7 +2330,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 330.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 330.
-[17
+[15
 
 ]
 Package babel Info: Redefining spanish shorthand <<
@@ -2467,7 +2345,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 330.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 330.
- [18
+ [16
 
 ]
 1: section
@@ -2483,7 +2361,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 353.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 353.
-[19]
+[17]
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 353.
 Package babel Info: Redefining spanish shorthand >>
@@ -2496,7 +2374,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 353.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 353.
- [20
+ [18
 
 ]
 --------------------
@@ -2545,7 +2423,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 367.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 367.
-[21]
+[19]
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 367.
 Package babel Info: Redefining spanish shorthand >>
@@ -2558,7 +2436,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 367.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 367.
- [22
+ [20
 
 ]
 1: section
@@ -2870,7 +2748,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
  []
 
-<Figures/Signal_Perception.pdf, id=568, 727.71875pt x 425.59pt>
+<Figures/Signal_Perception.pdf, id=560, 727.71875pt x 425.59pt>
 File: Figures/Signal_Perception.pdf Graphic file (type pdf)
 
 <use Figures/Signal_Perception.pdf>
@@ -2879,7 +2757,7 @@ Package pdftex.def Info: Figures/Signal_Perception.pdf used on input line 58.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.95> on input line 60.
 
-<Figures/Signal_Presentation.pdf, id=569, 727.71875pt x 425.59pt>
+<Figures/Signal_Presentation.pdf, id=561, 727.71875pt x 425.59pt>
 File: Figures/Signal_Presentation.pdf Graphic file (type pdf)
 
 <use Figures/Signal_Presentation.pdf>
@@ -2940,7 +2818,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 82.
 [8 <./Figures/Signal_Perception.pdf>]
-<Figures/Noise.pdf, id=598, 727.71875pt x 425.59pt>
+<Figures/Noise.pdf, id=589, 727.71875pt x 425.59pt>
 File: Figures/Noise.pdf Graphic file (type pdf)
  <use Figures/Noise.pdf>
 Package pdftex.def Info: Figures/Noise.pdf used on input line 85.
@@ -2976,14 +2854,14 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 94.
 [9 <./Figures/Signal_Presentation.pdf>]
-<Figures/Overlap_Small.pdf, id=610, 727.71875pt x 425.59pt>
+<Figures/Overlap_Small.pdf, id=602, 727.71875pt x 425.59pt>
 File: Figures/Overlap_Small.pdf Graphic file (type pdf)
 
 <use Figures/Overlap_Small.pdf>
 Package pdftex.def Info: Figures/Overlap_Small.pdf used on input line 97.
 (pdftex.def)             Requested size: 222.21722pt x 129.95735pt.
 
-<Figures/Overlap_Big.pdf, id=611, 727.71875pt x 425.59pt>
+<Figures/Overlap_Big.pdf, id=603, 727.71875pt x 425.59pt>
 File: Figures/Overlap_Big.pdf Graphic file (type pdf)
 
 <use Figures/Overlap_Big.pdf>
@@ -3047,7 +2925,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 114--115
 
  []
 
-<Figures/Matriz_Outputs.png, id=639, 542.77782pt x 340.27126pt>
+<Figures/Matriz_Outputs.png, id=631, 542.77782pt x 340.27126pt>
 File: Figures/Matriz_Outputs.png Graphic file (type png)
 
 <use Figures/Matriz_Outputs.png>
@@ -3058,7 +2936,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 124--125
 
  []
 
-<Figures/Graficador_Tasas.png, id=644, 427.5975pt x 281.55188pt>
+<Figures/Graficador_Tasas.png, id=636, 427.5975pt x 281.55188pt>
 File: Figures/Graficador_Tasas.png Graphic file (type png)
 
 <use Figures/Graficador_Tasas.png>
@@ -3118,7 +2996,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 143.
 [13 <./Figures/Matriz_Outputs.png>]
-<Figures/Matriz_Pagos.png, id=658, 595.47469pt x 402.00188pt>
+<Figures/Matriz_Pagos.png, id=649, 595.47469pt x 402.00188pt>
 File: Figures/Matriz_Pagos.png Graphic file (type png)
 
 <use Figures/Matriz_Pagos.png>
@@ -3349,7 +3227,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 208--209
 
  []
 
-<Figures/Graficador_Criterio.png, id=715, 441.90094pt x 316.18124pt>
+<Figures/Graficador_Criterio.png, id=707, 441.90094pt x 316.18124pt>
 File: Figures/Graficador_Criterio.png Graphic file (type png)
 
 <use Figures/Graficador_Criterio.png>
@@ -3390,7 +3268,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 228--229
 
  []
 
-<Figures/Graficador_Discriminabilidad.png, id=730, 459.96844pt x 441.14813pt>
+<Figures/Graficador_Discriminabilidad.png, id=721, 459.96844pt x 441.14813pt>
 File: Figures/Graficador_Discriminabilidad.png Graphic file (type png)
 
 <use Figures/Graficador_Discriminabilidad.png>
@@ -3594,7 +3472,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 325--326
 
  []
 
-<Figures/Graficador_Sesgo_Liberal.png, id=764, 680.5425pt x 386.94562pt>
+<Figures/Graficador_Sesgo_Liberal.png, id=755, 680.5425pt x 386.94562pt>
 File: Figures/Graficador_Sesgo_Liberal.png Graphic file (type png)
 
 <use Figures/Graficador_Sesgo_Liberal.png>
@@ -3602,7 +3480,7 @@ Package pdftex.def Info: Figures/Graficador_Sesgo_Liberal.png used on input lin
 e 329.
 (pdftex.def)             Requested size: 303.0218pt x 172.29358pt.
 
-<Figures/Graficador_Sesgo_Conservador.png, id=766, 688.82344pt x 387.69844pt>
+<Figures/Graficador_Sesgo_Conservador.png, id=757, 688.82344pt x 387.69844pt>
 File: Figures/Graficador_Sesgo_Conservador.png Graphic file (type png)
 
 <use Figures/Graficador_Sesgo_Conservador.png>
@@ -3645,7 +3523,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 344.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 344.
-[24] <Figures/Graficador_ROC12.png, id=785, 967.36406pt x 343.2825pt>
+[24] <Figures/Graficador_ROC12.png, id=776, 967.36406pt x 343.2825pt>
 File: Figures/Graficador_ROC12.png Graphic file (type png)
 
 <use Figures/Graficador_ROC12.png>
@@ -3799,7 +3677,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 388--389
 
  []
 
-<Figures/Puntajes_Criterios.png, id=840, 1181.91562pt x 274.77657pt>
+<Figures/Puntajes_Criterios.png, id=831, 1181.91562pt x 274.77657pt>
 File: Figures/Puntajes_Criterios.png Graphic file (type png)
 
 <use Figures/Puntajes_Criterios.png>
@@ -3807,7 +3685,7 @@ Package pdftex.def Info: Figures/Puntajes_Criterios.png used on input line 392.
 
 (pdftex.def)             Requested size: 323.22449pt x 75.14241pt.
 
-<Figures/ConfidenceRating.pdf, id=841, 814.04124pt x 655.44875pt>
+<Figures/ConfidenceRating.pdf, id=832, 814.04124pt x 655.44875pt>
 File: Figures/ConfidenceRating.pdf Graphic file (type pdf)
 
 <use Figures/ConfidenceRating.pdf>
@@ -4026,7 +3904,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 469--470
 
  []
 
-<Figures/RM_SDT_1.pdf, id=928, 608.2725pt x 439.6425pt>
+<Figures/RM_SDT_1.pdf, id=913, 608.2725pt x 439.6425pt>
 File: Figures/RM_SDT_1.pdf Graphic file (type pdf)
 
 <use Figures/RM_SDT_1.pdf>
@@ -4061,7 +3939,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 483--484
 
  []
 
-<Figures/RM_SDT_2.pdf, id=945, 608.2725pt x 439.6425pt>
+<Figures/RM_SDT_2.pdf, id=930, 608.2725pt x 439.6425pt>
 File: Figures/RM_SDT_2.pdf Graphic file (type pdf)
 
 <use Figures/RM_SDT_2.pdf>
@@ -4103,16 +3981,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 510--511
 
  []
 
-<Figures/EfectoEspejo.pdf, id=962, 814.04124pt x 655.44875pt>
+<Figures/EfectoEspejo.pdf, id=947, 814.04124pt x 655.44875pt>
 File: Figures/EfectoEspejo.pdf Graphic file (type pdf)
 
 <use Figures/EfectoEspejo.pdf>
 Package pdftex.def Info: Figures/EfectoEspejo.pdf used on input line 514.
 (pdftex.def)             Requested size: 282.81912pt x 227.72028pt.
 
-Overfull \hbox (10.46002pt too wide) in paragraph at lines 520--521
+Overfull \hbox (14.54004pt too wide) in paragraph at lines 520--521
 \T1/put/m/n/12 Es-ca-la de Con-fian-za y Elec-ción For-za-da de dos al-ter-na-t
-i-vas), [][]Glan-zer y Adams[][],
+i-vas), (Glan-zer y Adams,
  []
 
 
@@ -4200,7 +4078,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 555--556
 
  []
 
-<Figures/EfectoEspejo_YesNo.pdf, id=993, 814.04124pt x 655.44875pt>
+<Figures/EfectoEspejo_YesNo.pdf, id=974, 814.04124pt x 655.44875pt>
 File: Figures/EfectoEspejo_YesNo.pdf Graphic file (type pdf)
 
 <use Figures/EfectoEspejo_YesNo.pdf>
@@ -4255,7 +4133,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 578--579
 
  []
 
-<Figures/EfectoEspejo_Puntajes.pdf, id=1012, 814.04124pt x 655.44875pt>
+<Figures/EfectoEspejo_Puntajes.pdf, id=994, 814.04124pt x 655.44875pt>
 File: Figures/EfectoEspejo_Puntajes.pdf Graphic file (type pdf)
 
 <use Figures/EfectoEspejo_Puntajes.pdf>
@@ -4690,7 +4568,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--40
 
  []
 
-<Figures/Ebbinghaus.png, id=1120, 672.5928pt x 411.4572pt>
+<Figures/Ebbinghaus.png, id=1099, 672.5928pt x 411.4572pt>
 File: Figures/Ebbinghaus.png Graphic file (type png)
 
 <use Figures/Ebbinghaus.png>
@@ -4715,7 +4593,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 60.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 60.
-[50] <Figures/Ebb_Variables.png, id=1136, 538.26094pt x 498.36188pt>
+[50] <Figures/Ebb_Variables.png, id=1115, 538.26094pt x 498.36188pt>
 File: Figures/Ebb_Variables.png Graphic file (type png)
 
 <use Figures/Ebb_Variables.png>
@@ -4984,7 +4862,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 149.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 149.
-[57] <Figures/Ejemplo_EnsayoYN_1.png, id=1174, 767.11594pt x 525.46312pt>
+[57] <Figures/Ejemplo_EnsayoYN_1.png, id=1154, 767.11594pt x 525.46312pt>
 File: Figures/Ejemplo_EnsayoYN_1.png Graphic file (type png)
 
 <use Figures/Ejemplo_EnsayoYN_1.png>
@@ -4992,7 +4870,7 @@ Package pdftex.def Info: Figures/Ejemplo_EnsayoYN_1.png used on input line 152.
 
 (pdftex.def)             Requested size: 242.4199pt x 166.05093pt.
 
-<Figures/Ejemplo_EnsayoYN_2.png, id=1175, 767.11594pt x 555.57562pt>
+<Figures/Ejemplo_EnsayoYN_2.png, id=1155, 767.11594pt x 555.57562pt>
 File: Figures/Ejemplo_EnsayoYN_2.png Graphic file (type png)
 
 <use Figures/Ejemplo_EnsayoYN_2.png>
@@ -5126,7 +5004,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 186--187
 
  []
 
-<Figures/Ejemplo_Escala.png, id=1186, 527.72156pt x 340.27126pt>
+<Figures/Ejemplo_Escala.png, id=1166, 527.72156pt x 340.27126pt>
 File: Figures/Ejemplo_Escala.png Graphic file (type png)
 
 <use Figures/Ejemplo_Escala.png>
@@ -5177,7 +5055,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 206--207
 
  []
 
-<Figures/Estimulos_Experimento1.pdf, id=1191, 433.62pt x 578.16pt>
+<Figures/Estimulos_Experimento1.pdf, id=1171, 433.62pt x 578.16pt>
 File: Figures/Estimulos_Experimento1.pdf Graphic file (type pdf)
 
 <use Figures/Estimulos_Experimento1.pdf>
@@ -5185,7 +5063,7 @@ Package pdftex.def Info: Figures/Estimulos_Experimento1.pdf used on input line
 210.
 (pdftex.def)             Requested size: 363.6237pt x 484.8571pt.
 
-<Figures/Estimulos_Experimento2.pdf, id=1192, 686.565pt x 578.16pt>
+<Figures/Estimulos_Experimento2.pdf, id=1172, 686.565pt x 578.16pt>
 File: Figures/Estimulos_Experimento2.pdf Graphic file (type pdf)
 
 <use Figures/Estimulos_Experimento2.pdf>
@@ -5399,7 +5277,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
  []
 
-<Figures/Response_Exp2_P1.pdf, id=1255, 885.3075pt x 425.59pt>
+<Figures/Response_Exp2_P1.pdf, id=1235, 885.3075pt x 425.59pt>
 File: Figures/Response_Exp2_P1.pdf Graphic file (type pdf)
 
 <use Figures/Response_Exp2_P1.pdf>
@@ -5430,7 +5308,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 73.
 [67 <./Figures/Response_Exp2_P1.pdf>]
-<Figures/BiasResp_Exp2_P1.pdf, id=1269, 885.3075pt x 425.59pt>
+<Figures/BiasResp_Exp2_P1.pdf, id=1248, 885.3075pt x 425.59pt>
 File: Figures/BiasResp_Exp2_P1.pdf Graphic file (type pdf)
 
 <use Figures/BiasResp_Exp2_P1.pdf>
@@ -5461,7 +5339,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 89.
 [68 <./Figures/BiasResp_Exp2_P1.pdf>]
-<Figures/Rating_Exp2_P15.pdf, id=1282, 885.3075pt x 425.59pt>
+<Figures/Rating_Exp2_P15.pdf, id=1261, 885.3075pt x 425.59pt>
 File: Figures/Rating_Exp2_P15.pdf Graphic file (type pdf)
 
 <use Figures/Rating_Exp2_P15.pdf>
@@ -5509,7 +5387,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 121.
 [69 <./Figures/Rating_Exp2_P15.pdf>]
-<Figures/SuccessCumulative_Exp2_P14.pdf, id=1294, 638.385pt x 408.52625pt>
+<Figures/SuccessCumulative_Exp2_P14.pdf, id=1274, 638.385pt x 408.52625pt>
 File: Figures/SuccessCumulative_Exp2_P14.pdf Graphic file (type pdf)
 
 <use Figures/SuccessCumulative_Exp2_P14.pdf>
@@ -5517,7 +5395,7 @@ Package pdftex.def Info: Figures/SuccessCumulative_Exp2_P14.pdf used on input l
 ine 124.
 (pdftex.def)             Requested size: 242.4199pt x 155.12938pt.
 
-<Figures/Success_Exp2_P14.pdf, id=1295, 885.3075pt x 425.59pt>
+<Figures/Success_Exp2_P14.pdf, id=1275, 885.3075pt x 425.59pt>
 File: Figures/Success_Exp2_P14.pdf Graphic file (type pdf)
 
 <use Figures/Success_Exp2_P14.pdf>
@@ -5528,7 +5406,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 136--137
 
  []
 
-<Figures/Outcome_Exp2_P14.pdf, id=1297, 885.3075pt x 425.59pt>
+<Figures/Outcome_Exp2_P14.pdf, id=1277, 885.3075pt x 425.59pt>
 File: Figures/Outcome_Exp2_P14.pdf Graphic file (type pdf)
 
 <use Figures/Outcome_Exp2_P14.pdf>
@@ -5576,7 +5454,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 167--168
 
  []
 
-<Figures/Color_Exp1_P14.pdf, id=1314, 885.3075pt x 425.59pt>
+<Figures/Color_Exp1_P14.pdf, id=1294, 885.3075pt x 425.59pt>
 File: Figures/Color_Exp1_P14.pdf Graphic file (type pdf)
 
 <use Figures/Color_Exp1_P14.pdf>
@@ -5606,7 +5484,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 182--183
 
  []
 
-<Figures/BiasColor_Exp1_P13.pdf, id=1327, 885.3075pt x 425.59pt>
+<Figures/BiasColor_Exp1_P13.pdf, id=1307, 885.3075pt x 425.59pt>
 File: Figures/BiasColor_Exp1_P13.pdf Graphic file (type pdf)
 
 <use Figures/BiasColor_Exp1_P13.pdf>
@@ -5795,7 +5673,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 335--336
 
  []
 
-<Figures/Diff_D_E1yE2.pdf, id=1368, 638.385pt x 408.52625pt>
+<Figures/Diff_D_E1yE2.pdf, id=1348, 638.385pt x 408.52625pt>
 File: Figures/Diff_D_E1yE2.pdf Graphic file (type pdf)
 
 <use Figures/Diff_D_E1yE2.pdf>
@@ -5865,7 +5743,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 374.
 [77 <./Figures/Diff_D_E1yE2.pdf>]
-<Figures/Model_Delta_Diff_D.pdf, id=1389, 758.835pt x 505.89pt>
+<Figures/Model_Delta_Diff_D.pdf, id=1369, 758.835pt x 505.89pt>
 File: Figures/Model_Delta_Diff_D.pdf Graphic file (type pdf)
 
 <use Figures/Model_Delta_Diff_D.pdf>
@@ -6029,14 +5907,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 447--448
 
  []
 
-<Figures/MDelta_Joint_E1.pdf, id=1426, 638.385pt x 408.52625pt>
+<Figures/MDelta_Joint_E1.pdf, id=1405, 638.385pt x 408.52625pt>
 File: Figures/MDelta_Joint_E1.pdf Graphic file (type pdf)
 
 <use Figures/MDelta_Joint_E1.pdf>
 Package pdftex.def Info: Figures/MDelta_Joint_E1.pdf used on input line 451.
 (pdftex.def)             Requested size: 282.81912pt x 180.98636pt.
 
-<Figures/MDelta_Joint_E2.pdf, id=1427, 638.385pt x 408.52625pt>
+<Figures/MDelta_Joint_E2.pdf, id=1406, 638.385pt x 408.52625pt>
 File: Figures/MDelta_Joint_E2.pdf Graphic file (type pdf)
 
 <use Figures/MDelta_Joint_E2.pdf>
@@ -6085,14 +5963,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 463--464
 
  []
 
-<Figures/MDelta_Dprima_E1.pdf, id=1454, 638.385pt x 408.52625pt>
+<Figures/MDelta_Dprima_E1.pdf, id=1434, 638.385pt x 408.52625pt>
 File: Figures/MDelta_Dprima_E1.pdf Graphic file (type pdf)
 
 <use Figures/MDelta_Dprima_E1.pdf>
 Package pdftex.def Info: Figures/MDelta_Dprima_E1.pdf used on input line 467.
 (pdftex.def)             Requested size: 242.4199pt x 155.12938pt.
 
-<Figures/MDelta_Dprima_E2.pdf, id=1455, 638.385pt x 408.52625pt>
+<Figures/MDelta_Dprima_E2.pdf, id=1435, 638.385pt x 408.52625pt>
 File: Figures/MDelta_Dprima_E2.pdf Graphic file (type pdf)
 
 <use Figures/MDelta_Dprima_E2.pdf>
@@ -6118,14 +5996,14 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 475.
 [83 <./Figures/MDelta_Dprima_E1.pdf> <./Figures/MDelta_Dprima_E2.pdf>]
-<Figures/MDelta_Cbias_E1.pdf, id=1473, 638.385pt x 408.52625pt>
+<Figures/MDelta_Cbias_E1.pdf, id=1453, 638.385pt x 408.52625pt>
 File: Figures/MDelta_Cbias_E1.pdf Graphic file (type pdf)
 
 <use Figures/MDelta_Cbias_E1.pdf>
 Package pdftex.def Info: Figures/MDelta_Cbias_E1.pdf used on input line 478.
 (pdftex.def)             Requested size: 242.4199pt x 155.12938pt.
 
-<Figures/MDelta_Cbias_E2.pdf, id=1474, 638.385pt x 408.52625pt>
+<Figures/MDelta_Cbias_E2.pdf, id=1454, 638.385pt x 408.52625pt>
 File: Figures/MDelta_Cbias_E2.pdf Graphic file (type pdf)
 
 <use Figures/MDelta_Cbias_E2.pdf>
@@ -6155,7 +6033,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 487--488
 
  []
 
-<Figures/MDelta_DensidadDelta_E1.pdf, id=1493, 638.385pt x 408.52625pt>
+<Figures/MDelta_DensidadDelta_E1.pdf, id=1473, 638.385pt x 408.52625pt>
 File: Figures/MDelta_DensidadDelta_E1.pdf Graphic file (type pdf)
 
 <use Figures/MDelta_DensidadDelta_E1.pdf>
@@ -6163,7 +6041,7 @@ Package pdftex.def Info: Figures/MDelta_DensidadDelta_E1.pdf used on input line
  491.
 (pdftex.def)             Requested size: 242.4199pt x 155.12938pt.
 
-<Figures/MDelta_DensidadDelta_E2.pdf, id=1494, 638.385pt x 408.52625pt>
+<Figures/MDelta_DensidadDelta_E2.pdf, id=1474, 638.385pt x 408.52625pt>
 File: Figures/MDelta_DensidadDelta_E2.pdf Graphic file (type pdf)
 
 <use Figures/MDelta_DensidadDelta_E2.pdf>
@@ -6227,7 +6105,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 526--528
 
  []
 
-<Figures/MirrorRate_Exp2_P4.pdf, id=1514, 885.3075pt x 425.59pt>
+<Figures/MirrorRate_Exp2_P4.pdf, id=1493, 885.3075pt x 425.59pt>
 File: Figures/MirrorRate_Exp2_P4.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRate_Exp2_P4.pdf>
@@ -6253,14 +6131,14 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 539.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 539.
-[86] <Figures/Diff_Rate_E1.pdf, id=1520, 708.6475pt x 440.64626pt>
+[86] <Figures/Diff_Rate_E1.pdf, id=1499, 708.6475pt x 440.64626pt>
 File: Figures/Diff_Rate_E1.pdf Graphic file (type pdf)
 
 <use Figures/Diff_Rate_E1.pdf>
 Package pdftex.def Info: Figures/Diff_Rate_E1.pdf used on input line 542.
 (pdftex.def)             Requested size: 262.61642pt x 163.29878pt.
 
-<Figures/Diff_Rate_E2.pdf, id=1521, 638.385pt x 408.52625pt>
+<Figures/Diff_Rate_E2.pdf, id=1500, 638.385pt x 408.52625pt>
 File: Figures/Diff_Rate_E2.pdf Graphic file (type pdf)
 
 <use Figures/Diff_Rate_E2.pdf>
@@ -6383,7 +6261,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 599--600
 
  []
 
-<Figures/Model_Tau_Diff_Tetas.pdf, id=1558, 758.835pt x 505.89pt>
+<Figures/Model_Tau_Diff_Tetas.pdf, id=1538, 758.835pt x 505.89pt>
 File: Figures/Model_Tau_Diff_Tetas.pdf Graphic file (type pdf)
 
 <use Figures/Model_Tau_Diff_Tetas.pdf>
@@ -6400,28 +6278,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 617--618
 
  []
 
-<Figures/MTau_Hits_E1.pdf, id=1561, 638.385pt x 408.52625pt>
+<Figures/MTau_Hits_E1.pdf, id=1541, 638.385pt x 408.52625pt>
 File: Figures/MTau_Hits_E1.pdf Graphic file (type pdf)
 
 <use Figures/MTau_Hits_E1.pdf>
 Package pdftex.def Info: Figures/MTau_Hits_E1.pdf used on input line 621.
 (pdftex.def)             Requested size: 242.4199pt x 155.12938pt.
 
-<Figures/MTau_Hits_E2.pdf, id=1562, 638.385pt x 408.52625pt>
+<Figures/MTau_Hits_E2.pdf, id=1542, 638.385pt x 408.52625pt>
 File: Figures/MTau_Hits_E2.pdf Graphic file (type pdf)
 
 <use Figures/MTau_Hits_E2.pdf>
 Package pdftex.def Info: Figures/MTau_Hits_E2.pdf used on input line 622.
 (pdftex.def)             Requested size: 242.4199pt x 155.12938pt.
 
-<Figures/MTau_FA_E1.pdf, id=1563, 638.385pt x 408.52625pt>
+<Figures/MTau_FA_E1.pdf, id=1543, 638.385pt x 408.52625pt>
 File: Figures/MTau_FA_E1.pdf Graphic file (type pdf)
 
 <use Figures/MTau_FA_E1.pdf>
 Package pdftex.def Info: Figures/MTau_FA_E1.pdf used on input line 630.
 (pdftex.def)             Requested size: 242.4199pt x 155.12938pt.
 
-<Figures/MTau_FA_E2.pdf, id=1564, 638.385pt x 408.52625pt>
+<Figures/MTau_FA_E2.pdf, id=1544, 638.385pt x 408.52625pt>
 File: Figures/MTau_FA_E2.pdf Graphic file (type pdf)
 
 <use Figures/MTau_FA_E2.pdf>
@@ -6447,7 +6325,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 638.
 [90 <./Figures/Model_Tau_Diff_Tetas.pdf>]
-<Figures/MTau_DensidadTau_E1.pdf, id=1584, 638.385pt x 408.52625pt>
+<Figures/MTau_DensidadTau_E1.pdf, id=1564, 638.385pt x 408.52625pt>
 File: Figures/MTau_DensidadTau_E1.pdf Graphic file (type pdf)
 
 <use Figures/MTau_DensidadTau_E1.pdf>
@@ -6455,7 +6333,7 @@ Package pdftex.def Info: Figures/MTau_DensidadTau_E1.pdf used on input line 641
 .
 (pdftex.def)             Requested size: 242.4199pt x 155.12938pt.
 
-<Figures/MTau_DensidadTau_E2.pdf, id=1585, 638.385pt x 408.52625pt>
+<Figures/MTau_DensidadTau_E2.pdf, id=1565, 638.385pt x 408.52625pt>
 File: Figures/MTau_DensidadTau_E2.pdf Graphic file (type pdf)
 
 <use Figures/MTau_DensidadTau_E2.pdf>
@@ -6557,7 +6435,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 682--683
 
  []
 
-<Figures/MirrorRating_Exp1_P10.pdf, id=1645, 727.71875pt x 425.59pt>
+<Figures/MirrorRating_Exp1_P10.pdf, id=1625, 727.71875pt x 425.59pt>
 File: Figures/MirrorRating_Exp1_P10.pdf Graphic file (type pdf)
 
 <use Figures/MirrorRating_Exp1_P10.pdf>
@@ -6569,14 +6447,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 692--693
 
  []
 
-<Figures/Diff_Rating_E1.pdf, id=1647, 638.385pt x 408.52625pt>
+<Figures/Diff_Rating_E1.pdf, id=1627, 638.385pt x 408.52625pt>
 File: Figures/Diff_Rating_E1.pdf Graphic file (type pdf)
 
 <use Figures/Diff_Rating_E1.pdf>
 Package pdftex.def Info: Figures/Diff_Rating_E1.pdf used on input line 696.
 (pdftex.def)             Requested size: 262.61642pt x 168.05786pt.
 
-<Figures/Diff_Rating_E2.pdf, id=1648, 638.385pt x 408.52625pt>
+<Figures/Diff_Rating_E2.pdf, id=1628, 638.385pt x 408.52625pt>
 File: Figures/Diff_Rating_E2.pdf Graphic file (type pdf)
 
 <use Figures/Diff_Rating_E2.pdf>
@@ -6664,7 +6542,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 735.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 735.
-[96] <Figures/JASP_MeanRatings.png, id=1685, 721.19438pt x 749.80125pt>
+[96] <Figures/JASP_MeanRatings.png, id=1665, 721.19438pt x 749.80125pt>
 File: Figures/JASP_MeanRatings.png Graphic file (type png)
 
 <use Figures/JASP_MeanRatings.png>
@@ -6754,7 +6632,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 782--783
 
  []
 
-<Figures/JASP_Tbayesian_Signals.png, id=1699, 868.74562pt x 709.14937pt>
+<Figures/JASP_Tbayesian_Signals.png, id=1678, 868.74562pt x 709.14937pt>
 File: Figures/JASP_Tbayesian_Signals.png Graphic file (type png)
 
 <use Figures/JASP_Tbayesian_Signals.png>
@@ -6762,7 +6640,7 @@ Package pdftex.def Info: Figures/JASP_Tbayesian_Signals.png used on input line
 788.
 (pdftex.def)             Requested size: 282.81912pt x 230.86035pt.
 
-<Figures/JASP_Tbayesian_Noise.png, id=1700, 849.1725pt x 703.12688pt>
+<Figures/JASP_Tbayesian_Noise.png, id=1679, 849.1725pt x 703.12688pt>
 File: Figures/JASP_Tbayesian_Noise.png Graphic file (type png)
 
 <use Figures/JASP_Tbayesian_Noise.png>
@@ -7247,10 +7125,10 @@ Package rerunfilecheck Info: File `Tesis_Felisa.out' has not changed.
 (rerunfilecheck)             Checksum: B4514FDDF2CCC2AB5A655B4B3229AB98;7527.
  ) 
 Here is how much of TeX's memory you used:
- 29278 strings out of 493328
- 593776 string characters out of 3139119
+ 29274 strings out of 493328
+ 593730 string characters out of 3139119
  625149 words of memory out of 3000000
- 32090 multiletter control sequences out of 15000+200000
+ 32088 multiletter control sequences out of 15000+200000
  697254 words of font info for 88 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  54i,21n,77p,10387b,1239s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -7269,9 +7147,9 @@ s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX
 2.9/fonts/type1/adobe/utopia/putb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 1/adobe/utopia/putr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/adobe/utopia
 /putr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on Tesis_Felisa.pdf (138 pages, 3987551 bytes).
+Output written on Tesis_Felisa.pdf (136 pages, 3977062 bytes).
 PDF statistics:
- 1931 PDF objects out of 2073 (max. 8388607)
- 357 named destinations out of 1000 (max. 500000)
+ 1911 PDF objects out of 2073 (max. 8388607)
+ 355 named destinations out of 1000 (max. 500000)
  604 words of extra memory for PDF output out of 10000 (max. 10000000)
 
