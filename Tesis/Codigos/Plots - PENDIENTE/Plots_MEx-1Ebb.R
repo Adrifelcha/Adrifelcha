@@ -3,7 +3,7 @@
 # EXPERIMENTO 1 (Una Figura Ebbinghaus)
 ####################################
 
-setwd("C:/Users/Adriana/Desktop/Felisa/Tesis/Tesis - Base de datos/Mirror Experimento 2/Data/Datos_Exp2")
+setwd("C:/Users/Adriana/Desktop/Felisa/Tesis/Datos_CSVs/Datos_MirrExp_1Ebb")
 rm(list=ls())
 dir()
 
