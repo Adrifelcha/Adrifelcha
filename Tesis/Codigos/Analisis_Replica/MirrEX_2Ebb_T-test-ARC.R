@@ -1,10 +1,10 @@
 rm(list=ls())
-setwd("C:/Users/Alejandro/Desktop/Felisa/Tesis/CSVs")
+setwd("C:/Users/Adriana/Desktop/Felisa/Tesis/Datos_CSVs")
 rm(list=ls())
 dir()
 
 #Especificamos el archivo que contiene los datos
-archive <-'Ex_2Ebb_TODOS_No1.csv'
+archive <-'Ex_2Ebb_TODOS_Sin1.csv'
 datos <- read.csv(archive)
 
 ################ PRE PRUEBA
