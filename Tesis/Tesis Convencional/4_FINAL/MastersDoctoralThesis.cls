@@ -349,7 +349,7 @@ KOMA-script documentation for details.}]{fancyhdr}
 
 \DeclareDocumentCommand{\abstractauthorfont}{}{}
 \DeclareDocumentCommand{\abstracttitlefont}{}{}
-\newcommand{\byname}{by}
+\newcommand{\byname}{por}
 \newcommand{\abstractname}{Abstract}
 \providecaptionname{german,ngerman,austrian,naustrian}{\byname}{von}
 \providecaptionname{american,australian,british,canadian,english,newzealand,UKenglish,USenglish}{\byname}{by}
@@ -369,10 +369,11 @@ KOMA-script documentation for details.}]{fancyhdr}
 		#1%added to be able to have abstract more than one page long
 		\thispagestyle{plain}
 		\begin{center}
-			{\normalsize \MakeUppercase{\univname} \par} % University name in capitals
-			{\normalsize \facname \par} % Faculty name
-			{\normalsize \deptname \par} % Department name
-			\bigskip
+			%{\normalsize \MakeUppercase{\univname} \par}
+			 % University name in capitals
+			%{\normalsize \facname \par} % Faculty name
+			%{\normalsize \deptname \par} % Department name
+			%\bigskip
 			{\huge\textit{\abstractname} \par}
 			\bigskip
 
