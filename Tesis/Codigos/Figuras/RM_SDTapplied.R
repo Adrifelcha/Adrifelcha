@@ -19,9 +19,12 @@ beta<-dnorm(k,d,1)/dnorm(k,0,1)             #Calculamos el Sesgo Beta
 
 soporte <- seq(-4,8,.05)        #Especificamos el Soporte de nuestras distribuciones
 d_ruido <- dnorm(soporte,0,1)   #Definimos nuestra distribucion de Ruido de acuerdo a la teoria (Media=0 y DV=1)
-d_senal <- dnorm(soporte,d,1.4)   #Definimos la distribucion de Se??al, con media en d'
+d_senal <- dnorm(soporte,d,1)   #Definimos la distribucion de Se??al, con media en d'
 
-plot(soporte,d_ruido,type='l', xlim=c(-4,8),ylim=c(0,0.5), ylab="", xlab="Fuerza de Memoria", font.lab=2)             #Dibujamos la distribucion de ruido
+plot(soporte,d_ruido,type='l', xlim=c(-4,8),ylim=c(0,0.45), ylab="", xlab="", axes=F)
+axis(1,at=c(-4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7), labels=c(rep('', length(c(-4:7)))), font=2)
+mtext("Fuerza de Memoria",1,cex=2, line=1.5, f=2)
+#Dibujamos la distribucion de ruido
 lines(soporte,d_senal,type='l',col='blue') #Dibujamos la distribucion de Se??al
 abline(v=k,col='red')                      #Dibujamos el criterio
 #abline(v=d/2,col='blue',lty=2)             #Se??alamos la localizacion Optima (sin sesgo) del criterio
@@ -34,11 +37,13 @@ beta<-round(beta,4) #Redondeamos el valor del Sesgo Beta a 5 decimales para faci
 h_rate<-round(h_rate,4)
 fa_rate<-round(fa_rate,4)
 
-text(0.8,0.48,"Criterio", col="red")  #Imprimimos la localizacion del criterio 
-text(2.7,0.33,"Señal", col="blue", font=2) 
-text(4,.31,"Estímulos Conocidos", col="blue")
-text(-1,0.36,"Ruido", col="black", font=2) 
-text(-2.2,0.34,"Estímulos Nuevos", col="black")
-#text(6,0.19,paste("Tasa de Hits = ",h_rate))            #Especificamos la Tasa de Hits
-#text(6,0.15,paste("Tasa de F. Alarmas = ",fa_rate))   #Especificamos la Tasa de Falsas Alarmas
+text(2.1,0.44,"Criterio", col="red", cex=1.5)  #Imprimimos la localizacion del criterio 
+text(-1,0.4,"Ruido", col="black", font=2, cex=2) 
+text(-2.1,0.36,"Estímulos Nuevos", col="black", cex=1.5)
+#Señal con varianzas desiguales
+#text(2.7,0.315,"Señal", col="blue", font=2, cex=2) 
+#text(4.9,.28,"Estímulos Conocidos", col="blue", cex=1.5)
+#Señal con Varianzas iguales
+text(3.5,0.4,"Señal", col="blue", font=2, cex=2) 
+text(4.9,.36,"Estímulos Conocidos", col="blue", cex=1.5)
 

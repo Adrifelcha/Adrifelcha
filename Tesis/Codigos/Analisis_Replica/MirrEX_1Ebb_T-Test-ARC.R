@@ -21,8 +21,9 @@ d_Dificil <- datos$d_B
 #Ordenamos los datos
 d_AyB<- data.frame(cbind(d_Facil, d_Dificil))
 dprimas <- stack(d_AyB)
+Dprimas <- stack(data.frame(cbind(datos$d_A, datos$d_B)))
 #Corremos la T
-t.test(values~ind,data=dprimas,alternative = c("less"))
+t.test(values~ind,data=dprimas)
 
 
 ############## MIRROR EFFECT
