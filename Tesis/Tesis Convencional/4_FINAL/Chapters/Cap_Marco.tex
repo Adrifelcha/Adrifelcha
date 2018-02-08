@@ -205,7 +205,7 @@ Los parámetros contemplados por el modelo evalúan el desempeño de los partici
 \begin{itemize}
 \item \underline{Criterio ($k$)}\\
 
-La localización del criterio sobre el eje de decisión se puede computar de manera directa, tomando como referencia el valor asignado -arbitrariamente- a la media de la distribución de ruido ($0$), con base en las tasas de ejecución registradas. \\
+La localización del criterio sobre el eje de decisión se puede computar de manera directa a partir de la tasa de falsas alarmas registrada, tomando como referencia la media asignada a la distribución de ruido ($0$). \\
 
 \begin{figure}[th]
 \centering
@@ -215,9 +215,9 @@ La localización del criterio sobre el eje de decisión se puede computar de man
 \label{fig:Graf_Criterio}
 \end{figure}
 
-El parámetro $k$ representa la localización del criterio sobre el eje de decisión en unidades de \textit{desviación estándar} (Tanner y Swets, \citeyear{Tanner1954}). Su cómputo requiere interpretar la tasa de Falsas Alarmas como reflejo de la probabilidad acumulada -el área bajo la curva- de la distribución de Ruido por encima del criterio, siendo su complemento la tasa de Rechazos Correctos. Dado que la distribucion de ruido tiene media en 0 y desviación estándar de 1, la tasa de Rechazos Correctos puede transformarse en \textit{Puntajes Z} para obtener un estimado de la localización del criterio de elección sobre la distribución de ruido. Esto se realiza a partir del uso de las funciones matemáticas $\phi$ y $\phi^{-1}$ (\textit{'phi'} y \textit{'phi inversa'}, respectivamente), que permiten estimar la densidad de probabilidad acumulada por debajo de un puntaje Z particular en una distribución normal estandar y, en el sentido contrario, el puntaje Z que corresponde con el punto donde se ha acumulado cierta densidad de probabilidad en este mismo tipo de distribución, respectivamente (Stainslaw y Todorov, \citeyear{Stainslaw1999}).\\
+El parámetro $k$ representa la localización del criterio sobre el eje de evidencia en unidades de \textit{desviación estándar} (Tanner y Swets, \citeyear{Tanner1954}). Su cómputo requiere interpretar la tasa de Falsas Alarmas como reflejo de la probabilidad acumulada -el área bajo la curva- por encima del criterio en la distribución de Ruido, siendo la tasa de Rechazos Correctos su complemento. Dado que la distribucion de ruido tiene media en 0 y desviación estándar de 1, la tasa de Rechazos Correctos (ó $1 - Tasa$ $de$ $Falsas$ $Alarmas$) puede ser transformada en \textit{Puntajes Z} para conocer la localización del criterio de elección sobre la distribución de ruido (en unidades de \textit{desviación estándar}). Esto se realiza a partir del uso de la funcón matemática $\phi^{-1}$ (\textit{'phi inversa'}), que permite estimar conocer cuál es el puntaje Z que corresponde con el punto donde se ha acumulado cierta densidad de probabilidad en una distribución normal estándar, (Stainslaw y Todorov, \citeyear{Stainslaw1999}).\\
 
-La Figura~\ref{fig:Graf_Criterio} ilustra la estimación de $k$, presentando como ejemplo una tasa de Falsas Alarmas arbitraria y la tasa de Rechazos Correctos complementaria, que al ser transformada a puntajes Z permite estimar la ubicación del criterio respecto del 0 de referencia planteado por la media de la distribución de ruido (Stainslaw y Todorov, \citeyear{Stainslaw1999}). Es decir:\\
+La Figura~\ref{fig:Graf_Criterio} ilustra la estimación de $k$, presentando como ejemplo tasas arbitrarias de Falsas Alarmas y Rechazos Correctos. Al transformar esta última en Puntajes Z, se puede establecer la ubicación del criterio respecto del 0 de referencia planteado por la media de la distribución de ruido (Stainslaw y Todorov, \citeyear{Stainslaw1999}). Es decir:\\
 
 \begin{center}
 $k = PuntajeZ(Tasa$ $de$ $Rechazos$ $Correctos)$\\
@@ -225,13 +225,16 @@ $k = PuntajeZ(Tasa$ $de$ $Rechazos$ $Correctos)$\\
 
 \item \underline{Discriminabilidad ($d'$)}\\
 
-La discriminabilidad se evalúa con un parámetro $d'$ que define la distancia entre las medias de las distribuciones de ruido y señal, (Tanner y Swets, \citeyear{Tanner1954}). Dado que la distribución de ruido tiene su media en 0, también podemos pensar en $d'$ como el valor sobre el cual se localiza la media de la distribución de señal.\\ 
+La discriminabilidad se evalúa con un parámetro $d'$ que representa la distancia entre las medias de las distribuciones de ruido y señal, (Tanner y Swets, \citeyear{Tanner1954}). Dado que la distribución de ruido tiene media en 0, también podemos pensar en $d'$ como un reflejo directo de la ubicación de la media de la distribución de señal sobre el eje de evidencia.\\ 
 
-Una vez determinada la localización del criterio relativa a la media de la distribución de ruido, es sencillo concebir el cómputo de $d'$ como una extensión de dicho procedimiento, utilizando las tasas de Hits y Omisiones para establecer la localización de la distribución de Señal sobre el eje de evidencia.\\ 
+Una vez determinada la localización del criterio relativa a la media de la distribución de ruido, es sencillo concebir el cómputo de $d'$ como una extensión de dicho procedimiento, donde las tasas de Hits y Omisiones son utilizadas para establecer la localización de la distribución de Señal sobre el eje de evidencia, respecto del criterio.\\ 
 
 \begin{figure}[th]
 \centering
-\includegraphics[width=0.80\textwidth]{Figures/Graficador_Discriminabilidad} 
+%\includegraphics[width=0.80\textwidth]{Figures/Graficador_Discriminabilidad} 
+\includegraphics[width=0.60\textwidth]{Figures/dR_1}\\ 
+\includegraphics[width=0.60\textwidth]{Figures/dR_2}\\
+\includegraphics[width=0.60\textwidth]{Figures/dR_3}\\ 
 %\decoRule
 \caption[Estimación de la discriminabilidad con base en las Tasas de Ejecución]{Se ilustra la definición de la localización de la distribución de Señal en función a las tasas de Hits y Omisiones registradas, y la estimación subsecuente de la distancia entre las medias de ambas distribuciones.}
 \label{fig:Graf_Discrim}
@@ -240,29 +243,19 @@ Una vez determinada la localización del criterio relativa a la media de la dist
 La Figura~\ref{fig:Graf_Discrim} ilustra la secuencia lógica de pasos que guían el cómputo del valor de $d'$:\\
 
 \begin{enumerate}
-\item En el panel superior, la tasa de Falsas Alarmas (señalada en color púrpura) es convertida a Puntajes Z.\\
+\item En el panel superior, la tasa de Rechazos Correctos (señalada en color rojo) es convertida a Puntajes Z para conocer la distancia entre la media de la distribución de ruido y el criterio.\\
 
-Pese a que conceptualmente interpretamos la tasa de Falsas Alarmas como la probabilidad acumulada por encima del criterio y esperaríamos un Puntaje Z positivo, el valor obtenido es negativo porque la conversión se hace bajo el entendido de que la probabilidad se acumula de izquierda a derecha (y no al revés, como implica nuestra interpretación). Es decir, el Puntaje Z obtenido para la tasa de Falsas Alarmas es negativo porque al ser menor a 0.5, se le asigna un Puntaje Z que obtendríamos si invirtiéramos la distribución y la probabilidad acumulada registrada se situara por debajo de la media.\\
+\item En el panel intermedio, se computa el puntaje Z que corresponde a la tasa de Omisiones ($1- Tasa$ $de$ $Hits$; señalada en color púrpura). En este caso, como el criterio cruza la distribución de señal por debajo de su media, se obtiene un puntaje Z negativo.\\
 
-El primer panel ilustra la estimación de la distancia entre el criterio y la media de la distribución Ruido.\\
-
-\item El panel intermedio muestra el resultado de transformar la tasa de Hits (señalada en color verde) en puntajes Z.\\
-
-A pesar de que la tasa de Hits señala que el criterio cae por debajo de la media de la distribución de Señal, el puntaje Z obtenido es positivo porque -nuevamente- la tasa de Hits registrada \textit{se lee} como una probabilidad acumulada de izquierda a derecha y dado que suele ser mayor al azar ($> 0.5$), representa un área bajo la curva que rebasaría la media de la distribución si esta estuviera invertida.\\
-
-El segundo panel muestra el cómputo de la distancia entre el criterio y la media de la distribución Señal.\\
-
-\item El panel inferior presenta lo que propiamente sería el cómputo de $d'$: la suma de las distancias entre el criterio y las medias de cada una de las distribuciones. Es decir:\\
+\item Finalmente, en el panel se ilustra el cómputo de $d'$: la distancia entre el criterio y cada una de las medias de las distribuciones de ruido y señal se suman. Es decir:\\
 
 \begin{center}
-$d' = PuntajeZ(Tasa$ $de$ $Hits) - PuntajeZ(Tasa$ $de$ $Falsas Alarmas)$\\
+$d' = PuntajeZ(1 - Tasa$ $de$ $Falsas$ $Alarmas) - PuntajeZ(1 - Tasa$ $de$ $Hits)$\\
 \end{center}
 
 \end{enumerate}
 
-El parámetro $d’$ sólo puede tener valores positivos ya que la teoría asume que la distribución de señal siempre se sitúa a la derecha de la distribución de ruido, pues contiene más de la evidencia con base en la cual se hace el juicio de detección (Stainslaw y Todorov, \citeyear{Stainslaw1999}).\\
-
-El valor de $d'$ es un reflejo de la discriminabilidad en la tarea -la distancia entre las distribuciones-. Si $d' = 0$, querría decir que las distribuciones de Ruido y Señal están completamente sobrelapadas y es imposible distinguir entre ellas (\textit{'No hay discriminabilidad entre los estímulos'}). \\
+El parámetro $d’$ sólo puede tener valores positivos ya que la teoría asume que la distribución de señal siempre se sitúa a la derecha de la distribución de ruido, pues contiene más de la evidencia con base en la cual se hace el juicio de detección (Stainslaw y Todorov, \citeyear{Stainslaw1999}). El valor de $d'$ es un reflejo de la discriminabilidad en la tarea -la distancia entre las distribuciones-. Si $d' = 0$, querría decir que las distribuciones de Ruido y Señal están completamente sobrelapadas y es imposible distinguir entre ellas (\textit{'No hay discriminabilidad entre los estímulos'}). \\
 
 \item \underline{Sesgo ($\beta$ y $C$)}\\
 
@@ -299,17 +292,28 @@ El parámetro $\beta$ indica cuántas veces es más probable que la evidencia ob
 
 Por su parte, el valor absoluto del parámetro $C$ proporciona información sobre la magnitud del sesgo con que el agente detector está favoreciendo la emisión de cierto juicio sobre el otro. La dirección del sesgo se puede determinar, dependiendo de si $C$ tiene un valor positivo o negativo. Si $C$ es negativo, quiere decir que $k < \frac{d'}{2}$; es decir, que $k$ se sitúa a la izquierda del punto neutro y promueve por tanto una mayor cantidad de Hits y Falsas Alarmas al emitir más respuestas afirmativas. Si $C$ es positivo, quiere decir que $k > \frac{d'}{2}$ y se está promoviendo una tasa mayor de Rechazos Correctos y Omisiones.\\
 
-En función de la dirección en que se presente el sesgo, el sistema evaluado puede clasificarse en una de tres categorías:\\
+
+En la Figura~\ref{fig:Graf_Sesgo} se ilustra cada uno de los parámetros de sesgo descritos ($\beta$ en los paneles izquierdos y $C$ en los derechos), presentando en cada caso un ejemplo con sesgo liberal (en el panel superior) y con sesgo conservador (panel inferior). La diferencia entre ambos tipos de sesgos se desarrolla a continuación:\\
+
+\begin{figure}[th]
+\centering
+\includegraphics[width=0.8\textwidth]{Figures/Graficador_Sesgo_LiberalR}\\
+\includegraphics[width=0.8\textwidth]{Figures/Graficador_Sesgo_ConservadorR}\\
+%\decoRule
+\caption[Estimación del sesgo con base en el criterio]{Se ilustra el cómputo de los parámetros de sesgo $\beta$ (izquierda) y $C$ (derecha), en casos donde el sesgo del sistema es liberal (el criterio se ubica en niveles bajos de evidencia; panel superior) o conservador (el criterio se sitúa sobre niveles altos de evidencia; panel inferior).}
+\label{fig:Graf_Sesgo}
+\end{figure}
+\end{itemize}   %Terminan los parametros
 
 \begin{itemize}
-\item \textsl{Sesgo liberal}. Se muestra una tendencia hacia la emisión de respuestas afirmativas aún con niveles bajos de evidencia, pues el criterio se encuentra orientado a la izquierda del eje de evidencia. Es decir: \\
+\item \textsl{Sesgo liberal}. Implica una tendencia hacia la emisión de respuestas afirmativas aún con niveles bajos de evidencia, pues el criterio se encuentra orientado a la izquierda del eje de evidencia, (ver el panel superior de la Figura~\ref{fig:Graf_Sesgo}). Es decir: \\
 \begin{center}
 $C < 0$\\
 ó\\
 $0 < \beta < 1$\\
 \end{center}
 
-\item \textsl{Sesgo conservador}. Se presenta una tendencia hacia la emisión de respuestas negativas, pues el criterio se encuentra desplazado a la derecha del eje de evidencia, requiriendo una mayor cantidad de evidencia para la emisión de juicios afirmativos. Es decir: \\
+\item \textsl{Sesgo conservador}. Se presenta una tendencia hacia la emisión de respuestas negativas, pues el criterio se encuentra desplazado a la derecha del eje de evidencia, requiriendo una mayor cantidad de evidencia para la emisión de juicios afirmativos, (ver el panel inferior de la Figura~\ref{fig:Graf_Sesgo}). Es decir: \\
 \begin{center}
 $C > 0$\\
 ó\\
@@ -324,19 +328,7 @@ $\beta = 1$\\
 \end{center}
 \end{itemize}
 
-En la Figura~\ref{fig:Graf_Sesgo} se ilustra cada uno de los parámetros de sesgo descritos ($\beta$ en los paneles izquierdos y $C$ en los derechos), presentando en cada caso un ejemplo con sesgo liberal (en el panel superior) y con sesgo conservador (panel inferior).\\
-
-\begin{figure}[th]
-\centering
-\includegraphics[width=0.75\textwidth]{Figures/Graficador_Sesgo_Liberal}\\
-\includegraphics[width=0.75\textwidth]{Figures/Graficador_Sesgo_Conservador}\\
-%\decoRule
-\caption[Estimación del sesgo con base en el criterio]{Se ilustra el cómputo de los parámetros de sesgo $\beta$ (izquierda) y $C$ (derecha), en casos donde el sesgo del sistema es liberal (el criterio se ubica en niveles bajos de evidencia; panel superior) o conservador (el criterio se sitúa sobre niveles altos de evidencia; panel inferior).}
-\label{fig:Graf_Sesgo}
-\end{figure}
-\end{itemize}   %Terminan los parametros
-
-Para una exposición más detallada e interactiva de los parámetros descritos hasta ahora, se pueden consultar los graficadores y apps en línea desarrollados por la autora de la presente tesis en Python y R-Shiny, como parte de un proyecto PAPIME en el Laboratorio 25 (PAPIME PE310016, \citeyear{PAPIME}). Estos materiales se encuentran disponibles en \href{www.bouzaslab25.com/LabVirtual25}{http://www.bouzaslab25.com/LabVirtual25/}, un sitio web también diseñado por la autora de esta tesis para los estudiantes de los cursos impartidos por el Dr. Arturo Bouzas.\\
+Para una exposición más detallada e interactiva de los parámetros descritos hasta ahora, se pueden consultar los graficadores y apps en línea desarrollados por la autora de la presente tesis en Python y R-Shiny, como parte de un proyecto PAPIME en el Laboratorio 25 (\citeyear{PAPIME}). Estos materiales se encuentran disponibles en \href{http://www.bouzaslab25.com/LabVirtual25/}{bouzaslab25.com/LabVirtual25}, un sitio web también diseñado por la autora de esta tesis para los estudiantes de los cursos impartidos por el Dr. Arturo Bouzas.\\
 %----------------------------------------------------------------
 
 \subsection{Curvas ROC}

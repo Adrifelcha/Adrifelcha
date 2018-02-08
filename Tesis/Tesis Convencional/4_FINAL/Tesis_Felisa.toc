@@ -7,13 +7,13 @@
 \contentsline {section}{\numberline {2.1}Teor\IeC {\'\i }a de Detecci\IeC {\'o}n de Se\IeC {\~n}ales}{5}{section.12}
 \contentsline {subsection}{\numberline {2.1.1}Supuestos generales del modelo}{6}{subsection.13}
 \contentsline {subsection}{\numberline {2.1.2}Par\IeC {\'a}metros del modelo}{16}{subsection.21}
-\contentsline {subsection}{\numberline {2.1.3}Curvas ROC}{25}{subsection.32}
-\contentsline {subsection}{\numberline {2.1.4}Tareas de detecci\IeC {\'o}n}{27}{subsection.34}
-\contentsline {section}{\numberline {2.2}Teor\IeC {\'\i }a de Detecci\IeC {\'o}n de Se\IeC {\~n}ales en Memoria}{31}{section.36}
-\contentsline {subsection}{\numberline {2.2.1} Memoria de Reconocimiento}{33}{subsection.41}
-\contentsline {section}{\numberline {2.3}El Efecto Espejo}{35}{section.44}
+\contentsline {subsection}{\numberline {2.1.3}Curvas ROC}{24}{subsection.32}
+\contentsline {subsection}{\numberline {2.1.4}Tareas de detecci\IeC {\'o}n}{26}{subsection.34}
+\contentsline {section}{\numberline {2.2}Teor\IeC {\'\i }a de Detecci\IeC {\'o}n de Se\IeC {\~n}ales en Memoria}{30}{section.36}
+\contentsline {subsection}{\numberline {2.2.1} Memoria de Reconocimiento}{32}{subsection.41}
+\contentsline {section}{\numberline {2.3}El Efecto Espejo}{34}{section.44}
 \contentsline {subsection}{\numberline {2.3.1}Evidencia recolectada}{37}{subsection.46}
-\contentsline {subsection}{\numberline {2.3.2}Relevancia, implicaciones e interpretaciones}{41}{subsection.49}
+\contentsline {subsection}{\numberline {2.3.2}Relevancia, implicaciones e interpretaciones}{40}{subsection.49}
 \contentsline {section}{\numberline {2.4}Planteamiento del problema}{45}{section.58}
 \contentsline {chapter}{\numberline {3}M\IeC {\'e}todo}{47}{chapter.59}
 \contentsline {section}{\numberline {3.1}Planteamiento general}{47}{section.60}
@@ -30,8 +30,8 @@
 \contentsline {subsection}{\numberline {4.1.3}Control 3: \IeC {\textquestiondown }El dise\IeC {\~n}o de los est\IeC {\'\i }mulos afect\IeC {\'o} el desempe\IeC {\~n}o de los participantes?}{69}{subsection.85}
 \contentsline {section}{\numberline {4.2}An\IeC {\'a}lisis estad\IeC {\'\i }sticos}{71}{section.88}
 \contentsline {subsection}{\numberline {4.2.1}Evaluaci\IeC {\'o}n de las diferencias entre las clases de est\IeC {\'\i }mulos propuestas}{74}{subsection.94}
-\contentsline {subsection}{\numberline {4.2.2}Diferencias en las Tasas de Hits y Falsas Alarmas}{84}{subsection.102}
-\contentsline {subsection}{\numberline {4.2.3}Diferencias en la asignaci\IeC {\'o}n de Puntajes de Confianza}{91}{subsection.110}
+\contentsline {subsection}{\numberline {4.2.2}Diferencias en las Tasas de Hits y Falsas Alarmas}{83}{subsection.102}
+\contentsline {subsection}{\numberline {4.2.3}Diferencias en la asignaci\IeC {\'o}n de Puntajes de Confianza}{90}{subsection.110}
 \contentsline {subsection}{\numberline {4.2.4}R\IeC {\'e}plica de controles reportados en la literatura}{97}{subsection.117}
 \contentsline {chapter}{\numberline {5}Discusi\IeC {\'o}n}{101}{chapter.124}
 \contentsline {chapter}{\numberline {6}Conclusi\IeC {\'o}n}{105}{chapter.128}
