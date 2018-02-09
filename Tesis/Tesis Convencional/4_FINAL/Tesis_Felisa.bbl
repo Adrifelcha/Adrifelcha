@@ -1240,34 +1240,6 @@ Macmillan, N\BPBI A.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Marks%
-\ \BBA {} Miller%
-}{%
-Marks%
-\ \BBA {} Miller%
-}{%
-{\protect \APACyear {1964}}%
-}]{%
-Marks1964}
-\APACinsertmetastar {%
-Marks1964}%
-\begin{APACrefauthors}%
-Marks, L\BPBI E.%
-\BCBT {}\ \BBA {} Miller, G\BPBI A.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{1964}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {The Role of Semantic and Syntactic Constraints in the
-  Memorization of English Sentences} {The role of semantic and syntactic
-  constraints in the memorization of english sentences}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Journal of Verbal Learning and Verbal
-  Behavior}{3}{1}{1-5}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Massaro%
 \ \BBA {} Anderson%
 }{%
@@ -2161,32 +2133,6 @@ White, K\BPBI G.%
 \newblock
 \APACjournalVolNumPages{Journal of the Experimental Analysis of
   Behavior}{71}{1}{91-113}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Wickelgren%
-}{%
-Wickelgren%
-}{%
-{\protect \APACyear {1966}}%
-}]{%
-Wickelgren1966_Solo}
-\APACinsertmetastar {%
-Wickelgren1966_Solo}%
-\begin{APACrefauthors}%
-Wickelgren, W\BPBI A.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{1966}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Short-term recognition memory for single letters and
-  phonemic similarity of retroactive interference} {Short-term recognition
-  memory for single letters and phonemic similarity of retroactive
-  interference}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Quarterly Journal of Experimental
-  Psychology}{18}{1}{55-62}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

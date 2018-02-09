@@ -256,9 +256,10 @@
 %	COLOURS
 %----------------------------------------------------------------------------------------
 
-\usepackage{xcolor} % Required for specifying custom colours
+\usepackage[dvipsnames]{xcolor} % Required for specifying custom colours
 
 \colorlet{mdtRed}{red!50!black}
+
 
 %----------------------------------------------------------------------------------------
 %	MARGINS
@@ -534,9 +535,9 @@ bookmarksopen=true,
 bookmarksopenlevel=0,
 hypertexnames=false,
 colorlinks=true, % Set to false to disable coloring links
-citecolor=magenta, % The color of citations
-linkcolor=red, % The color of references to document elements (sections, figures, etc)
-urlcolor=mdtRed, % The color of hyperlinks (URLs)
+citecolor=MidnightBlue, % The color of citations
+linkcolor=RoyalBlue, % The color of references to document elements (sections, figures, etc)
+urlcolor=Violet, % The color of hyperlinks (URLs)
 pdfstartview={FitV},
 unicode,
 breaklinks=true,
