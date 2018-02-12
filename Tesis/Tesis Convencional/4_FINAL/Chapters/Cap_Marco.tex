@@ -57,7 +57,7 @@ En el marco de la SDT, la variabilidad se considera una propiedad intrínseca de
 \centering
 \includegraphics[width=0.75\textwidth]{Figures/Signal_Perception} 
 %\decoRule
-\caption[Variabilidad en la percepción de los estímulos]{La variabilidad en la percepción de los estímulos es ilustrada con una distribución de probabilidad normal: Si se presenta un mismo estímulo con intensidad x en repetidas ocasiones, es muy probable que el valor percibido se acerque a su valor real, (la media de la distribución, $\mu$) sin embargo, también habrán ocasiones en que sea percibido con mayor o menor intensidad.}
+\caption[Variabilidad en la percepción de los estímulos]{La variabilidad en la percepción de los estímulos es ilustrada con una distribución de probabilidad normal: al presentar un mismo estímulo con intensidad $x$ en repetidas ocasiones, es muy probable que el valor percibido se acerque a su valor real, (la media de la distribución, $\mu$) sin embargo, también habrán ocasiones en que sea percibido con mayor o menor intensidad.}
 \label{fig:Senal_percepcion}
 \end{figure}
 
@@ -84,7 +84,7 @@ Retomando el ejemplo ilustrado en la Figura~\ref{fig:Senal_presentacion} sobre l
 \centering
 \includegraphics[width=0.75\textwidth]{Figures/Noise} 
 %\decoRule
-\caption[Variabilidad en la señal y en el ruido]{Extensión del ejemplo sobre la variabilidad en los puntajes obtenidos en una prueba clínica por pacientes con depresión, donde además de la distribución asociada a la señal (en azul), se añade una distribución para representar el rango de puntajes observados en personas que no tienen depresión (el ruido; en negro). El sobrelape entre ambas distribuciones representa la incertidumbre contenida en la tarea de detección: existe un rango de puntajes que se puede esperar de una persona con, o sin depresión.}
+\caption[Variabilidad en la señal y en el ruido]{Extensión del ejemplo sobre la variabilidad en los puntajes obtenidos en una prueba clínica por pacientes con depresión, donde además de la distribución asociada a la señal (en azul), se añade una distribución que representa los puntajes registrados por personas que no tienen depresión (el ruido; en negro). El sobrelape entre ambas distribuciones ilustra la incertidumbre contenida en la tarea de detección: existe un rango de puntajes que pueden asociarse con personas con, o sin depresión.}
 \label{fig:Noise}
 \end{figure}
 
@@ -97,7 +97,7 @@ La Figura~\ref{fig:Overlap} presenta dos figuras representativas que ilustran la
 \includegraphics[width=0.65\textwidth]{Figures/Overlap_Small}\\ 
 \includegraphics[width=0.65\textwidth]{Figures/Overlap_Big} 
 %\decoRule
-\caption[El sobrelape Ruido-señal como reflejo de la incertidumbre contenida en tareas de detección]{La distancia entre las distribuciones de ruido y señal determina el sobrelape entre las mismas y por tanto, la incertidumbre contenida en la tarea de detección. En el panel a) las distribuciones aparecen muy separadas, el sobrelape es pequeño y se asume poca incertidumbre.  En el panel b) las distribuciones están más cerca, comparten más evidencia en el área de sobrelape y hay una mayor incertidumbre.}
+\caption[La detección como una tarea con incertidumbre: el sobrelape entre las distribuciones]{La distancia entre las distribuciones de ruido y señal determina el sobrelape entre las mismas y por tanto, la incertidumbre contenida en la tarea de detección. En el panel a) las distribuciones aparecen muy separadas, el sobrelape es pequeño y se asume poca incertidumbre.  En el panel b) se presenta un escenaro con mayor incertidumbre, siendo que la intersección entre las distribuciones es mayor.}
 \label{fig:Overlap}
 \end{figure}
 
@@ -105,47 +105,47 @@ La Discriminabilidad en una tarea de detección es producto de la variabilidad c
 
   \textbf{2.- El papel del Sesgo: La detección es decisión}\\
 
-La variabilidad en la presentación y percepción de los posibles estados del entorno -la presencia o ausencia de la señal- constituye el elemento base para entender la detección como una tarea cargada de incertidumbre, donde no se puede confiar completamente en la evidencia presente para emitir un juicio de detección.\\
+La variabilidad en la presentación y percepción de los eventos en el mundo constituye el elemento clave para entender la detección de señales como una problema cargado de incertidumbre, donde no se puede confiar completamente en la evidencia presente para emitir un juicio de detección.\\
 
 De acuerdo con la SDT, los organismos compensan la incertidumbre contenida en las tareas de detección con la información que poseen sobre el entorno que, en términos generales, puede ser de dos tipos: 1) información probabilística e 2) información sobre las consecuencias comprometidas (Nevin, \citeyear{Nevin1969}).\\
 
 Como ejemplo, tomemos el caso de un médico que trata de decidir si los resultados obtenidos en cierta prueba clínica son evidencia suficiente para diagnosticar una enfermedad \textit{X} a un paciente \textit{Y}. La evidencia con la que el médico cuenta es imprecisa: toda prueba clínica tiene un margen de error y su lectura debe complementarse con información extraída de la historia clínica del paciente; el médico debe juzgar la evidencia en función de toda la información de la que dispone: \textit{¿Qué tan confiable es la prueba?} o \textit{¿Cuál es su tasa de aciertos y errores?}; \textit{¿Qué tan común es la enfermedad cuya presencia se intenta determinar?} y \textit{¿Qué tan probable es que el paciente Y tenga la enfermedad X?}; de acuerdo con su historia clínica, \textit{¿Qué tanto correlacionan sus características con los factores de riesgo asociados a la enfermedad?} y \textit{¿Qué tanto afecta eso la probabilidad de que Y tenga la enfermedad X?}. Y aún ponderando toda esta información, el problema no termina aquí. La información probabilística permite hacer inferencias sobre cuál es la conclusión más \textit{probable}, pero sigue sin haber certeza sobre el diagnóstico. Para optimizar su comportamiento y tomar la mejor decisión posible, el médico también debe tomar en consideración la información que posee sobre las consecuencias asociadas a cada escenario posible: a) Si el paciente tiene la enfermedad y el médico la detecta acertadamente, podrá tratarse a tiempo; b) Si tiene la enfermedad y el médico falla en detectarla, podría poner en riesgo su vida; c) Si no tiene la enfermedad y el médico le dice que sí, se gastarán recursos innecesarios en solucionar un problema que no existe, corriendo el riesgo de que el tratamiento le haga daño y d) Si no tiene la enfermedad y el médico decide no darle el diagnóstico, todo permanecerá igual. La tarea del médico es mucho más compleja de lo que parecía en un principio, puesto que no se limita a la lectura de la prueba clínica, sino que tiene que ponderar lo que sugieren los resultados de la misma con toda la información que posee sobre la probabilidad de las interpretaciones posibles y las consecuencias comprometidas.\\
 
-De acuerdo con la correspondencia entre el \textit{estado real del mundo} -la presencia o ausencia de la señal- y el juicio emitido por el sistema detector, la SDT distingue entre dos tipos de aciertos y errores, presentados en la Figura~\ref{fig:Mat_Output} con una matriz de contingencia. Cuando la señal está presente el organismo puede detectarla adecuadamente (un \textbf{Hit}) o dejarla pasar (una \textbf{Omisión}); y si por el contrario, la señal no está presente, el organismo puede acertar al diagnosticar su ausencia (un \textbf{Rechazo correcto}) o confundir el ruido con la señal, (una \textbf{Falsa Alarma}).\\
+De acuerdo con la correspondencia entre el \textit{estado real del mundo} -la presencia o ausencia de la señal- y el juicio emitido por el sistema detector, la SDT distingue entre dos tipos de aciertos y errores, ilustrados en la Figura~\ref{fig:Mat_Output} con una Matriz de contingencia. Cuando la señal está presente el organismo puede detectarla adecuadamente (un \textbf{Hit}) o dejarla pasar (una \textbf{Omisión}); y si por el contrario, la señal no está presente, el organismo puede acertar al diagnosticar su ausencia (un \textbf{Rechazo correcto}) o confundir el ruido con la señal, (una \textbf{Falsa Alarma}).\\
 
 \begin{figure}[th]
 \centering
 \includegraphics[width=0.80\textwidth]{Figures/Matriz_Outputs} 
 %\decoRule
-\caption[Matriz de contingencia con los posibles Resultados en una Tarea de Detección]{Los cuatro posibles resultados a encontrar en una tarea de detección de señales, de acuerdo con la correspondencia entre los juicios emitidos por los organismos y el estado del mundo.}
+\caption[Matriz de contingencia: Resultados a obtener en una tarea de detección]{Los cuatro posibles resultados a obtener en una tarea de detección de señales, de acuerdo con la correspondencia entre el juicio emitido y el estado del mundo.}
 \label{fig:Mat_Output}
 \end{figure}
 
-La SDT asume que, con base en la información que posee sobre la estructura del entorno, el organismo fija un criterio de elección para determinar a partir de cuánta evidencia va a juzgar la presencia de la señal, tomando en cuenta lo que sabe sobre la probabilidad de que ésta de hecho ocurra y las consecuencias comprometidas con su detección (Tanner y Swets, \citeyear{Tanner1954}; Swets y cols., \citeyear{Swets1961}; Nevin, \citeyear{Nevin1969}). En términos de la representación gráfica del modelo, el criterio se concibe como una línea que atraviesa ambas distribuciones (como se ilustra en color rojo en la Figura~\ref{fig:Graf_Outputs}), y que va a fungir como regla de elección para definir a partir de cuánta evidencia se emitirá un juicio de detección afirmativo.\\
+La SDT asume que el organismo fija un criterio de elección para determinar a partir de cuánta evidencia va a juzgar la presencia de la señal, con base en la informació que posee sobre la probabilidad de que ésta ocurra y las consecuencias comprometidas en su detección (Tanner y Swets, \citeyear{Tanner1954}; Swets y cols., \citeyear{Swets1961}; Nevin, \citeyear{Nevin1969}). En términos de la representación gráfica del modelo, el criterio se concibe como una línea vertical que atraviesa las distribuciones de ruido y señal (como se ilustra en color rojo en la Figura~\ref{fig:Graf_Outputs}), para definir a partir de cuánta evidencia se emitirá un juicio de detección afirmativo.\\
 
 \begin{figure}[th]
 \centering
 \includegraphics[width=0.75\textwidth]{Figures/SDT_OutcomesR} 
 %\decoRule
-\caption[Representación gráfica de los posibles Resultados en una Tarea de Detección]{Representación gráfica del problema de detección de señales de acuerdo con la SDT: existen dos distribuciones de probabilidad que describen la variabilidad con que la señal y el ruido se presentan en el entorno, con un área de traslape que refleja la incertidumbre en la tarea. El organismo fija un criterio de elección (línea roja) que determina a partir de cuánta evidencia se juzgará la presencia de la señal y define la probabilidad de cometer cada acierto o error (señalados en distintos colores).}
+\caption[Representación gráfica de las tareas de detección y los posibles resultados a obtener]{Representación gráfica del problema de detección de señales de acuerdo con la SDT: existen dos distribuciones de probabilidad que describen la variabilidad con que la señal y el ruido se presentan en el entorno, con un área de traslape que refleja la incertidumbre en la tarea. El organismo fija un criterio de elección (línea roja) que determina a partir de cuánta evidencia se juzgará la presencia de la señal y define la probabilidad de cometer cada acierto o error (señalados en distintos colores).}
 \label{fig:Graf_Outputs}
 \end{figure}
 
-La Figura~\ref{fig:Graf_Outputs} presenta la forma final en que se representan los problemas de detección de señales bajo el marco de la SDT: Se tienen dos distribuciones de probabilidad que representan la variabilidad con que la señal y el ruido ocurren en el ambiente y una línea roja que señala el criterio que el agente detector va a utilizar para determinar cuándo emitir un juicio de detección. Como se ilustra con distintos colores en la figura, la localización del criterio determina la probabilidad con que, de acuerdo a la cercanía de las distribuciones, el organismo podría incurrir en cada uno de los resultados expuestos en la matriz de contingencia de la figura~\ref{fig:Mat_Output}.\\
+La Figura~\ref{fig:Graf_Outputs} presenta la representación final de los problemas de detección bajo el marco de la SDT: se tienen dos distribuciones de probabilidad que representan la variabilidad con que la señal y el ruido ocurren en el ambiente y una línea roja que señala el criterio que el sistema detector va a utilizar para emitir sus juicios de detección. Como se ilustra con distintos colores en la figura, la localización del criterio determina la probabilidad con que el organismo podría incurrir en cada uno de los resultados expuestos previamente en la figura~\ref{fig:Mat_Output}.\\
 
 De acuerdo a la estructura de la tarea y al conocimiento que los organismo tengan sobre ella, es posible que se desarrolle un \textit{sesgo} de elección que lleve a favorecer -\textit{hacer más propensa}- la emisión de un juicio de detección particular (Nevin, \citeyear{Nevin1969}). De esta forma, la localización del criterio sobre el eje de evidencia es un reflejo directo de este sesgo, que puede variar en función de dos grandes factores:\\
 
       \underline{a) Los errores cuestan y los aciertos pagan: Matrices de pago}\\
 
-La variabilidad asociada a los estímulos en el ambiente da pie a que los sistemas involucrados en tareas de detección de señales cometan errores. Tomando en cuenta que las señales son estímulos relevantes para el sistema, en tanto que permite dirigir su comportamiento en función de las relaciones de contingencia anunciadas por su detección, acertar o errar en el juicio emitido tiene consecuencias importantes. Los aciertos pagan y los errores cuestan, y más aún, cada uno lo hace con distitna magnitud.\\
+La variabilidad asociada a los estímulos en el ambiente da pie a que los sistemas involucrados en tareas de detección de señales cometan errores. Tomando en cuenta que las señales son estímulos relevantes para el sistema, en tanto que permiten dirigir su comportamiento en función de las relaciones de contingencia anunciadas con su detección, acertar o errar en el juicio emitido tiene consecuencias importantes. Los aciertos pagan y los errores cuestan, y más aún, cada uno lo hace con distinta magnitud.\\
 
-Imaginemos el caso de un conejo que tiene que decidir tan rápido como pueda si el sonido que acaba de escuchar en la maleza corresponde, o no, con el de un depredador. La penalización asociada con cometer una falsa alarma -un gasto innecesario de energía al correr por nada- es sustancialmente diferente al precio que tendría que pagar por una omisión -¡la muerte!-. Dadas las consecuencias en juego, es muy probable que el conejo emita un juicio de detección afirmativo (\textit{'¡Sí, es un depredador!'}) y corra por su vida, aún con muy poca evidencia.\\
+Imaginemos el caso de un conejo que tiene que decidir, tan rápido como pueda, si el sonido que acaba de escuchar en la maleza corresponde o no, con el de un depredador. La penalización por cometer una Falsa Alarma -un gasto innecesario de energía al correr por nada- es sustancialmente diferente al precio que tendría que pagar por una Omisión -¡la muerte!-. Dadas las consecuencias en juego, es muy probable que el conejo emita un juicio de detección afirmativo (\textit{'¡Sí, es un depredador!'}) y corra por su vida, aún con muy poca evidencia.\\
 
 \begin{figure}[th]
 \centering
 \includegraphics[width=0.80\textwidth]{Figures/Matriz_Pagos} 
 %\decoRule
-\caption[Ejemplo de Matriz de Pagos]{EJEMPLO: Matriz de pagos con los costos y ganancias comprometidos en la tarea de detectar un depredador.}
+\caption[Matriz de Pagos: Consecuencias comprometidas en una tarea de detección hipotética (ejemplo)]{EJEMPLO: Matriz de pagos con los costos y ganancias comprometidos en la tarea de detectar un depredador.}
 \label{fig:Mat_Pagos}
 \end{figure}
 
@@ -160,22 +160,22 @@ Los organismos inmersos en tareas de detección tienen expectativas sobre la pro
 
 Si los organismos se encuentran en un entorno donde saben que es prácticamente imposible encontrar la señal, es muy probable que decidan descartar la evidencia que se les presente aún cuando correlacione con lo que se esperaría de una señal. Recordemos el ejemplo planteado anteriormente sobre el querer determinar la edad de una persona con la que hablamos por teléfono: si la llamada fue hecha a un despacho de abogados -o cualquier otro escenario donde se piense que es muy poco probable encontrar a un niño-, y la persona al otro lado del teléfono tiene una voz muy aguda, es muy poco probable que se decida pensar \textit{'Oh, estoy hablando con un niño'}.\\
 
-\item \textsl{La verosimilitud.} Dado lo que se sabe sobre cómo se presentan los estímulos en el entorno, \textit{¿Qué tan verosímil es la evidencia?} o bien, \textit{¿Qué tan probable es que la señal se presente con la evidencia que se está evaluando?}\\
+\item \textsl{La verosimilitud.} Dado lo que se sabe sobre cómo se presentan los estímulos en el entorno, \textit{¿qué tan verosímil es la evidencia?} o bien, \textit{¿qué tan probable es que la señal se presente con la evidencia presente?}\\
 
-Una vez que los organismos han adquirido información suficiente sobre su entorno -o una tarea particular- y adquieren un buen conocimiento sobre la variabilidad con que el ruido y la señal son presentados, la emisión de los juicios de detección se ve determinada por el cómputo de una razón de verosimilitud que, al enfrentarse con evidencia incierta, permita al organismo estimar cuál es el estado del mundo con que se relaciona con mayor probabilidad. Es decir que, en términos de la representación gráfica del modelo, se asume que cuando los organismos se enfrentan a evidencia que cae en el área de sobrelape entre las distribuciones, optarían por elegir el juicio de detección que corresponda con la distribución que tenga una mayor densidad de probabilidad para dicha evidencia (es decir, la distribución que sea más alta en ese punto particular del eje de decisión) (Nevin, \citeyear{Nevin1969}).\\
+Una vez que los organismos han adquirido información suficiente sobre su entorno -o una tarea particular- y conocen la variabilidad con que la señal y el ruido aparecen, los juicios de detección pueden ser emitidos a partir del cómputo de una razón de verosimilitud que permita al organismo estimar cuál es el estado del mundo con que la evidencia incierta se relaciona con mayor probabilidad. Es decir que, en términos de la representación gráfica del modelo, se asume que cuando los organismos se enfrentan a evidencia que cae en el área de sobrelape entre las distribuciones, optarían por elegir el juicio de detección que corresponda con la distribución que tenga una mayor densidad de probabilidad (es decir, la distribución que sea más alta en ese punto particular del eje de decisión) (Nevin, \citeyear{Nevin1969}).\\
 \end{itemize}
 
 De contar con un estimado prior y un buen conocimiento sobre las funciones de verosimilitud, es posible suponer que los organismos opten por el juicio de detección que resulte más probable, con base en el cómputo de una inferencia bayesiana (Ma, \citeyear{WeijiMa}; Ma, Kording y Goldreich \citeyear{WeijiMa2012}; Pouget, BEck, Ma y Latham, \citeyear{Pouget2013}).\\
 
 \subsection{Parámetros del modelo}\\
 
-La SDT, además de proporcionar un modelo estadístico para comprender las implicaciones adaptativas del problema de la detección, funge como una herramienta que -dados los supuestos que hace sobre este tipo de tareas- permite hacer estimaciones sobre la discriminabilidad y el sesgo de sistemas inmersos en tareas de detección experimentales (Stainslaw y Todorov, \citeyear{Stainslaw1999}; McNicol, \citeyear{McNicol1}).\\
+La SDT, además de proporcionar un modelo estadístico para comprender las implicaciones adaptativas de los problemas de detección, funge como una herramienta que -dados los supuestos que hace sobre este tipo de tareas- permite hacer estimaciones sobre la discriminabilidad y el sesgo de sistemas inmersos en tareas de detección experimentales (Stainslaw y Todorov, \citeyear{Stainslaw1999}; McNicol, \citeyear{McNicol1}).\\
 
-Las tareas de detección diseñadas en el laboratorio para estudiar el desempeño de los participantes sometidos a ellas, suelen estar compuestas por un amplio número de ensayos, a lo largo de los cuales se presenta aleatoriamente la señal o el ruido. Dependiendo lo que se quiera evaluar con la tarea, se pueden implementar manipulaciones adicionales (Nevin, \citeyear{Nevin1969}). Los protocolos que regulan la presentación de tareas de detección se presentan con mayor detalle en la \textbf{Sección 2.1.3}.\\
+Las tareas de detección diseñadas en el laboratorio suelen estar compuestas por un amplio número de ensayos, a lo largo de los cuales se presenta aleatoriamente la señal o el ruido y se les solicita a los participantes que emitan un juicio de detección. Dependiendo el objetivo del estudio realizado, se pueden implementar manipulaciones adicionales (Nevin, \citeyear{Nevin1969}), o utilizar distintos protocolos en la presentación de la tarea de detección, (descritos en detalle en la \textbf{Sección 2.1.3}; McNicol, \citeyear{McNicol2}).\\
 
-Al someter un sistema detector a una misma tarea de detección con incertidumbre en repetidas ocasiones (como es el caso de las tareas experimentales), se espera encontrar variabilidad en los resultados obtenidos; el agente detector no acertará o errará siempre. Con base en las respuestas dadas por los participantes en cada ensayo y el resultado obtenido en función a su correspondencia con el tipo de estímulo presentado, se puede computar las tasas con que se observó cada uno de los posibles aciertos y errores, (es decir, dentro del total de veces que se presentó la señal, se identifica cuántas veces se cometió un Hit o una Omisión, y dentro del total de veces que se presetó sólo el Ruido, la proporción de ensayos en que el participante hizo un Rechazo correcto o una Falsa alarma).\\
+Al someter un sistema a una misma tarea de detección en repetidas ocasiones (como ocurre en las tareas experimentales), se espera encontrar variabilidad en los resultados obtenidos: el sistema no acertará o errará siempre, la evidencia evaluada no rebasará el criterio de elección en todos los ensayos a causa de la variabilidad en los estímulos (Wickens, \citeyear{Wickens1}. A partir del número de aciertos y errores cometidos en los ensayos con Ruido y Señal, se computan las tasas con que se obtuvieron cada uno de los resultados posibles. Dentro del total de veces que se presentó la señal, se identifica cuántas veces se cometió un Hit o una Omisión, y dentro del total de veces que se presetó sólo el Ruido, la proporción de ensayos en que el participante hizo un Rechazo correcto o una Falsa alarma.\\
 
-De acuerdo a la forma clásica de la SDT, las tasas de ejecución registradas en una tarea de detección de señales son el reflejo del área de las distribuciones de Ruido y Señal que caen a ambos lados del criterio y pueden utilizarse para hacer inferencias sobre la localización del mismo, la distancia entre las distribuciones y la preferencia que podría tener el sistema por emitir una respuesta sobre otra ( Wickens, \citeyear{Wickens1}; McNicol, \citeyear{McNicol1}; Gesheider, \citeyear{Gescheider}). A continuación, revisaremos en detalle cuáles son los parámetros incluidos en el modelo de detección de señales, cómo se calculan y qué información arrojan sobre la ejecución de los participantes.\\
+De acuerdo con la SDT clásica, las tasas de ejecución computadas en una tarea de detección son reflejo del área de las distribuciones de Ruido y Señal que caen a cada lado del criterio y pueden, por lo tanto, utilizarse para hacer inferencias sobre la localización del mismo, la distancia entre las distribuciones y la preferencia que podría tener el sistema por emitir una respuesta sobre otra (Wickens, \citeyear{Wickens1}; McNicol, \citeyear{McNicol1}; Gesheider, \citeyear{Gescheider}). A continuación, revisaremos en detalle cuáles son los parámetros incluidos en el modelo de detección de señales, cómo se calculan y qué información arrojan sobre la ejecución de los participantes.\\
 
   \textbf{Supuestos formales}\\
 
@@ -183,41 +183,41 @@ La estimación paramétrica del modelo de detección de señales se desarrolla e
 
 \begin{enumerate}
 
-\item  Dado que las cuatro tasas de ejecución se computan en función a dos conjuntos -total de estímulos con Señal y Ruido-, sólo se necesita computar un par de ellas para tener acceso a la información completa sobre el desempeño de los participantes. Por consenso general en la literatura, suelen usarse sólo las tasas de Hits y Falsas Alarmas -los aciertos y errores obtenidos cuando el participante respondió \textit{'Sí, detecto la señal'}-; las tasas de Omisiones y Rechazos correctos no añaden información nueva, en tanto que constituyen el complemento de las dos anteriores, y suelen omitirse.\\
+\item  Dado que las cuatro tasas de ejecución se computan en función a dos conjuntos -total de estímulos con Señal y Ruido-, sólo se necesita de un par de ellas para tener información completa sobre el desempeño de los participantes. Por ejemplo, por consenso general suelen reportarse sólo las tasas de Hits y Falsas Alarmas -los aciertos y errores obtenidos cuando el participante respondió \textit{'Sí, detecto la señal'}-, pues las tasas de Omisiones y Rechazos correctos no son más que su complemento (Wickens, \citeyear{Wickens1}.\\
 
 \item En su forma clásica, la SDT asume que las distribuciones de Ruido y Señal son distribuciones normales equivariantes (Stainslaw y Todorov, \citeyear{Stainslaw1999}).\\
   \begin{itemize}
-  \item Se utilizan distribuciones Gaussianas como el \textit{default} para describir la variabilidad contenida en cualquier conjunto de estímulos Señal y Ruido, a falta de información específica y detallada sobre estos, pero existe literatura que explora la conveniencia de representar la incertidumbre con otro tipo de distribuciones (Wickens, \citeyear{Wickens1}; Ma, \citeyear{WeijiMa2009}).\\
-  \item En la mayoría de sus aplicaciones, se asume que las distribuciones de ruido y señal comparten una varianza de 1 (Tanner y Swets, \citeyear{Tanner1954}). No obstante, específicamente hablando en términos de la aplicación del modelo de detección de señales al estudio de la memoria de reconocimiento, este supuesto es desechado en tanto que se ha encontrado evidencia consistente que sugiere que la distribución de señal tiene una varianza mayor que la del ruido (Wixted, \citeyear{Wixted2007}).\\
+  \item Se utilizan distribuciones normales como el \textit{default} para describir la variabilidad contenida en cualquier conjunto de estímulos Señal y Ruido, pero existe literatura que explora la conveniencia de representar la incertidumbre con otro tipo de distribuciones (Wickens, \citeyear{Wickens1}; Ma, \citeyear{WeijiMa2009}).\\
+  \item En la mayoría de sus aplicaciones, se asume que las distribuciones de ruido y señal comparten una varianza de 1 (Tanner y Swets, \citeyear{Tanner1954}). No obstante, al aplicar la SDT al estudio de la memoria de reconocimiento, se ha encontrado evidencia consistente de que la distribución de señal tiene una varianza mayor que la del ruido (Wixted, \citeyear{Wixted2007}).\\
   \end{itemize}
 
-\item Se asigna de manera arbitraria una media en 0 a la distribución de Ruido, para facilitar el cómputo del resto de los parámetros utilizando esta  como punto de referencia para la estimación paramétrica (Wickens, \citeyear{Wickens1}; \citeyear{Gescheider}).\\
+\item Se asigna de manera arbitraria una media en 0 a la distribución de Ruido para facilitar el cómputo del resto de los parámetros, utilizando ésta como punto de referencia (Wickens, \citeyear{Wickens1}; \citeyear{Gescheider}).\\
 
-\item Sin tratarse explícitamente de un supuesto hecho por la teoría, una de las implicaciones directas de la forma en que está constituida la SDT es que, sea cual sea la evidencia con base en la cual los organismos están formando sus juicios de detección -los valores en el eje $X$ sobre el que se despliegan las distribuciones-, se espera que la señal tenga \textit{más} de ello que el ruido, en tanto que este último implica su ausencia (Stainslaw y Todorov, \citeyear{Stainslaw1999}).\\
+\item Una de las implicaciones directas de la forma en que está constituida la SDT es que, sea cual sea la evidencia con base en la cual se estén formando los juicios de detección -los valores en el eje $X$ sobre el que se despliegan las distribuciones-, se espera que la señal tenga \textit{más} de ello que el ruido, en tanto que este último implica su ausencia (Stainslaw y Todorov, \citeyear{Stainslaw1999}).\\
   \begin{itemize}
 
-  \item La tasa de Falsas Alarmas no puede ser más grande que la tasa de Hits, pues esto implicaría que hay una mayor área de la distribución de ruido por encima del criterio que de la distribución de señal. Esto, a su vez, sugeriría que el ruido cae por encima de la señal en términos de la evidencia que se asocia con cada distribución y se estaría violando el supuesto fundamental de que la Señal -la presencia de lo que queremos detectar- contiene más información que el Ruido -su ausencia-.\\
+  \item La tasa de Falsas Alarmas no puede ser más grande que la tasa de Hits. Esto implicaría que hay una mayor área de la distribución de ruido por encima del criterio que de la distribución de señal. Esto, a su vez, sugeriría que el ruido cae por encima de la señal y se estaría violando el supuesto fundamental de que la Señal -la presencia de lo que queremos detectar- contiene más información que el Ruido -su ausencia-.\\
   \end{itemize}
 \end{enumerate}
 
-Los parámetros contemplados por el modelo evalúan el desempeño de los participantes en términos de los dos grandes factores que se asocian con la emisión de juicios de detección: la discriminabilidad y el sesgo. La aplicación exitosa de la SDT al estudio de una amplia gama de tareas de detección -que pueden variar desde el tipo de estímulos utilizados hasta el dominio o fenomeno a estudiar- es posible gracias a la abstracción de sus elementos. Los valores y el tipo de evidencia específicos sobre los cuales se despliegan las distribuciones de Ruido y Señal no importan tanto -de hecho, no suelen tomarse en cuenta en lo absoluto- como saber qué tanto sobrelape hay entre las distribuciones y cuál es el juicio de detección que se prefiere emitir.\\
+Los parámetros contemplados por el modelo evalúan el desempeño de los participantes en términos de los dos grandes factores que se asocian con la emisión de juicios de detección: la discriminabilidad y el sesgo. La aplicación exitosa de la SDT al estudio de una amplia gama de tareas de detección -que pueden variar desde el tipo de estímulos utilizados hasta el dominio o fenómeno a estudiar- es posible gracias a la abstracción de sus elementos. Los valores y el tipo de evidencia específicos sobre los cuales se despliegan las distribuciones de Ruido y Señal no importan tanto -de hecho, no suelen tomarse en cuenta en lo absoluto- como saber qué tanto sobrelape hay entre las distribuciones y cuál es el juicio de detección que se prefiere emitir.\\
 
 \begin{itemize}
 \item \underline{Criterio ($k$)}\\
 
-La localización del criterio sobre el eje de decisión se puede computar de manera directa a partir de la tasa de falsas alarmas registrada, tomando como referencia la media asignada a la distribución de ruido ($0$). \\
+La localización del criterio sobre el eje de decisión se puede computar de manera directa a partir de la tasa registrada de rechazos correctos, tomando como referencia la media asignada a la distribución de ruido ($0$). \\
 
 \begin{figure}[th]
 \centering
-\includegraphics[width=0.75\textwidth]{Figures/Graficador_CriterioR} 
+\includegraphics[width=0.65\textwidth]{Figures/Graficador_CriterioR} 
 %\decoRule
-\caption[Estimación del criterio con base en las Falsas Alarmas]{Estimación de la localización del criterio sobre el eje de decisión con base en las tasas de Falsas Alarmas y Rechazos Correctos.}
+\caption[Estimación paramétrica: La localización del criterio]{Estimación de la localización del criterio sobre el eje de decisión con base en las tasas de Falsas Alarmas y Rechazos Correctos.}
 \label{fig:Graf_Criterio}
 \end{figure}
 
-El parámetro $k$ representa la localización del criterio sobre el eje de evidencia en unidades de \textit{desviación estándar} (Tanner y Swets, \citeyear{Tanner1954}). Su cómputo requiere interpretar la tasa de Falsas Alarmas como reflejo de la probabilidad acumulada -el área bajo la curva- por encima del criterio en la distribución de Ruido, siendo la tasa de Rechazos Correctos su complemento. Dado que la distribucion de ruido tiene media en 0 y desviación estándar de 1, la tasa de Rechazos Correctos (ó $1 - Tasa$ $de$ $Falsas$ $Alarmas$) puede ser transformada en \textit{Puntajes Z} para conocer la localización del criterio de elección sobre la distribución de ruido (en unidades de \textit{desviación estándar}). Esto se realiza a partir del uso de la funcón matemática $\phi^{-1}$ (\textit{'phi inversa'}), que permite estimar conocer cuál es el puntaje Z que corresponde con el punto donde se ha acumulado cierta densidad de probabilidad en una distribución normal estándar, (Stainslaw y Todorov, \citeyear{Stainslaw1999}).\\
+El parámetro $k$ representa la localización del criterio sobre el eje de evidencia en unidades de \textit{desviación estándar} (Tanner y Swets, \citeyear{Tanner1954}). Su cómputo requiere interpretar la tasa de Falsas Alarmas como reflejo de la probabilidad acumulada -el área bajo la curva- por encima del criterio en la distribución de Ruido, siendo la tasa de Rechazos Correctos su complemento. Dado que la distribucion de ruido tiene media en 0 y desviación estándar de 1, la tasa de Rechazos Correctos (ó $1 - Tasa$ $de$ $Falsas$ $Alarmas$) puede ser transformada en \textit{Puntajes Z} para conocer la localización del criterio de elección sobre la distribución de ruido. Esto se realiza a partir del uso de la funcón matemática $\phi^{-1}$ (\textit{'phi inversa'}), que permite estimar conocer cuál es el puntaje Z que corresponde con el punto donde se ha acumulado cierta densidad de probabilidad en una distribución normal estándar, (Stainslaw y Todorov, \citeyear{Stainslaw1999}).\\
 
-La Figura~\ref{fig:Graf_Criterio} ilustra la estimación de $k$, presentando como ejemplo tasas arbitrarias de Falsas Alarmas y Rechazos Correctos. Al transformar esta última en Puntajes Z, se puede establecer la ubicación del criterio respecto del 0 de referencia planteado por la media de la distribución de ruido (Stainslaw y Todorov, \citeyear{Stainslaw1999}). Es decir:\\
+La Figura~\ref{fig:Graf_Criterio} ilustra la estimación de $k$ a partir de las tasas de Falsas Alarmas y Rechazos Correctos. Al transformar esta última en Puntajes Z, se puede establecer la ubicación del criterio respecto del 0 de referencia planteado por la media de la distribución de ruido (Stainslaw y Todorov, \citeyear{Stainslaw1999}). Es decir:\\
 
 \begin{center}
 $k = PuntajeZ(Tasa$ $de$ $Rechazos$ $Correctos)$\\
@@ -225,9 +225,9 @@ $k = PuntajeZ(Tasa$ $de$ $Rechazos$ $Correctos)$\\
 
 \item \underline{Discriminabilidad ($d'$)}\\
 
-La discriminabilidad se evalúa con un parámetro $d'$ que representa la distancia entre las medias de las distribuciones de ruido y señal, (Tanner y Swets, \citeyear{Tanner1954}). Dado que la distribución de ruido tiene media en 0, también podemos pensar en $d'$ como un reflejo directo de la ubicación de la media de la distribución de señal sobre el eje de evidencia.\\ 
+La discriminabilidad de los estímulos comprometidos en una tarea de detección se cuantifica con un parámetro $d'$ que representa la distancia entre las medias de las distribuciones de ruido y señal, (Tanner y Swets, \citeyear{Tanner1954}). Dado que la distribución de ruido tiene media en 0, $d'$ también suele utilizarse para referir la ubicación de la media de la distribución de señal sobre el eje de evidencia, (McNicol, \citeyear{McNicol1}).\\ 
 
-Una vez determinada la localización del criterio relativa a la media de la distribución de ruido, es sencillo concebir el cómputo de $d'$ como una extensión de dicho procedimiento, donde las tasas de Hits y Omisiones son utilizadas para establecer la localización de la distribución de Señal sobre el eje de evidencia, respecto del criterio.\\ 
+Una vez definida la localización del criterio relativa a la media de la distribución de ruido, es sencillo concebir el cómputo de $d'$ como una extensión de dicho procedimiento. Las tasas de Hits y Omisiones son utilizadas para establecer la localización de la media de la distribución de Señal sobre el eje de evidencia, a partir del criterio.\\ 
 
 \begin{figure}[th]
 \centering
@@ -236,26 +236,27 @@ Una vez determinada la localización del criterio relativa a la media de la dist
 \includegraphics[width=0.60\textwidth]{Figures/dR_2}\\
 \includegraphics[width=0.60\textwidth]{Figures/dR_3}\\ 
 %\decoRule
-\caption[Estimación de la discriminabilidad con base en las Tasas de Ejecución]{Ilustración del cómputo de $d'$. Las tasas de Falsas Alarmas y Rechazos correctos señalan la distancia entre el criterio y la media de la distribución de ruido (panel superior). Las tasas de Hits y Omisiones indican la distancia entre el criterio y la media de la distribución de Señal (panel intermedio). $d'$ se computa como la suma de las distancias entre el criterio y ambas medias.}
+\caption[Estimación paramétrica: la discriminabilidad ($d'$)]{Ilustración del cómputo de $d'$. Las tasas de Falsas Alarmas y Rechazos correctos señalan la distancia entre el criterio y la media de la distribución de ruido (panel superior). Las tasas de Hits y Omisiones indican la distancia entre el criterio y la media de la distribución de Señal (panel intermedio). $d'$ se computa como la suma de las distancias entre el criterio y ambas medias.}
 \label{fig:Graf_Discrim}
 \end{figure}
 
-La Figura~\ref{fig:Graf_Discrim} ilustra la secuencia lógica de pasos que guían el cómputo del valor de $d'$:\\
+La Figura~\ref{fig:Graf_Discrim} ilustra la secuencia lógica de pasos que guían el cómputo de $d'$:\\
 
 \begin{enumerate}
 \item En el panel superior, la tasa de Rechazos Correctos (señalada en color rojo) es convertida a Puntajes Z para conocer la distancia entre la media de la distribución de ruido y el criterio.\\
 
 \item En el panel intermedio, se computa el puntaje Z que corresponde a la tasa de Omisiones ($1- Tasa$ $de$ $Hits$; señalada en color púrpura). En este caso, como el criterio cruza la distribución de señal por debajo de su media, se obtiene un puntaje Z negativo.\\
 
-\item Finalmente, en el panel se ilustra el cómputo de $d'$: la distancia entre el criterio y cada una de las medias de las distribuciones de ruido y señal se suman. Es decir:\\
+\item Finalmente, en el panel se ilustra el cómputo de $d'$: la distancia entre el criterio y cada una de las medias de las distribuciones de ruido y señal se suma. Es decir:\\
 
 \begin{center}
 $d' = PuntajeZ(1 - Tasa$ $de$ $Falsas$ $Alarmas) - PuntajeZ(1 - Tasa$ $de$ $Hits)$\\
+donde el segundo término ($PuntajeZ(1 - Tasa$ $de$ $Hits)$), al tener un valor negativo, transforma la resta en una suma.\\
 \end{center}
 
 \end{enumerate}
 
-El parámetro $d’$ sólo puede tener valores positivos ya que la teoría asume que la distribución de señal siempre se sitúa a la derecha de la distribución de ruido, pues contiene más de la evidencia con base en la cual se hace el juicio de detección (Stainslaw y Todorov, \citeyear{Stainslaw1999}). El valor de $d'$ es un reflejo de la discriminabilidad en la tarea -la distancia entre las distribuciones-. Si $d' = 0$, querría decir que las distribuciones de Ruido y Señal están completamente sobrelapadas y es imposible distinguir entre ellas (\textit{'No hay discriminabilidad entre los estímulos'}). \\
+El parámetro $d’$ sólo puede tener valores positivos ya que la distribución de señal siempre se situará por encima de la distribución de ruido, (Stainslaw y Todorov, \citeyear{Stainslaw1999}). La magnitud de la $d'$ computada es un reflejo de la discriminabilidad entre los estímulos que componen la tarea -la distancia entre las distribuciones que describen su variabilidad-. Si $d' = 0$, querría decir que las distribuciones de Ruido y Señal están completamente sobrelapadas y es imposible distinguir entre ellas (\textit{'No son discriminables en lo absoluto'}). \\
 
 \item \underline{Sesgo ($\beta$ y $C$)}\\
 
@@ -264,7 +265,7 @@ La SDT cuenta con dos parámetros que permiten evaluar la magnitud y la direcci�
 \begin{itemize}
 \item \underline{$\beta$}\\
 
-El parámetro más comúnmente reportado en la literatura es Beta ($\beta$), que se define como la razón entre la densidad de probabilidad de la distribución de señal a la altura del criterio y la densidad de probabilidad  de la distribución del ruido: \\
+El parámetro más comúnmente reportado en la literatura es Beta ($\beta$), que se define como la razón entre la densidad de probabilidad de la distribución de señal y la densidad de probabilidad de la distribución del ruido, a la altura del criterio: \\
 
 \begin{center}
 $\beta = \frac{p(Signal)}{p(Noise)}$ \\
@@ -280,7 +281,7 @@ Un segundo parámetro para computar el sesgo es $C$, que representa la distancia
 $C =  K - \frac{d'}{2}$ \\
 \end{center}
 
-Se utiliza $\frac{d'}{2}$ como punto de referencia para evaluar el sesgo del sistema porque se asume que esta debería ser la localización del criterio a utilizar por un sistema sin sesgo, pues el área de las distribuciones que cae por encima y por debajo de este punto es la misma. En otras palabras, un criterio en $\frac{d'}{2}$ llevaría a que existiera la misma probabilidad de cometer cualquier tipo de acierto y error. El sesgo del sistema evaluado se computa a partir de su comparación con este punto neutro.\\
+Se utiliza $\frac{d'}{2}$ como punto de referencia para evaluar el sesgo del sistema porque se asume que esta debería ser la localización del criterio a utilizar por un sistema sin sesgo, pues el área de las distribuciones que cae por encima y por debajo de este punto es la misma. En otras palabras, un criterio en $\frac{d'}{2}$ llevaría a que existiera la misma probabilidad de cometer cualquier tipo de acierto y error.\\
 
 El parámetro $C$ responde a la pregunta \textit{'¿Cuánto se aleja el criterio utilizado por el sistema de lo que se esperaría de un sistema sin sesgo?'}.\\
 
@@ -288,9 +289,9 @@ El parámetro $C$ responde a la pregunta \textit{'¿Cuánto se aleja el criterio
 
 El sesgo puede ser evaluado en términos de dos factores: 1) ¿Qué tan sesgado está el sistema? y 2) ¿Cuál es el juicio de detección que se está favoreciendo?\\
 
-El parámetro $\beta$ indica cuántas veces es más probable que la evidencia observada a la altura del criterio corresponda con la señal. Valores de $\beta$ por encima de 1, sugieren que el criterio choca con la distribución de señal en un punto más alto que la distribución de ruido; es decir, el sistema detector no emite juicios afirmativos hasta que existe una probabilidad alta de que la evidencia evaluada sea parte de la variabilidad con que se presenta la señal, emitiendo con mayor probabilidad juicios negativos. Por otro lado, valores de $\beta$ entre 0 y 1 sugieren que es más probable que la evidencia encontrada a la altura del criterio provengan de la distribución de ruido, indicando que el sistema detector emite juicios afirmativos aún cuando es más probable que la evidencia observada corresponda con el ruido. Finalmente, si el criterio del sistema cae sobre el punto de sesgo neutro ya descrito ($\frac{d'}{2}$), $\beta$ tendrá un valor de 1, pues el criterio tocaría ambas distribuciones a la misma altura.\\
+El parámetro $\beta$ indica cuántas veces es más probable que la evidencia observada a la altura del criterio corresponda con la señal. Valores de $\beta$ por encima de 1, sugieren que el criterio choca con la distribución de señal en un punto más alto que la distribución de ruido; es decir, el sistema detector no emite juicios afirmativos hasta que existe una probabilidad alta de que la evidencia evaluada sea una señal, emitiendo con mayor probabilidad juicios negativos. Por otro lado, valores de $\beta$ entre 0 y 1 sugieren que es más probable que la evidencia encontrada a la altura del criterio provengan de la distribución de ruido, indicando que el sistema detector emite juicios afirmativos aún cuando es más probable que la evidencia observada no sea una señal. Finalmente, si el criterio del sistema cae sobre el punto de sesgo neutro ya descrito ($\frac{d'}{2}$), $\beta$ tendrá un valor de 1, pues el criterio tocaría ambas distribuciones a la misma altura.\\
 
-Por su parte, el valor absoluto del parámetro $C$ proporciona información sobre la magnitud del sesgo con que el agente detector está favoreciendo la emisión de cierto juicio sobre el otro. La dirección del sesgo se puede determinar, dependiendo de si $C$ tiene un valor positivo o negativo. Si $C$ es negativo, quiere decir que $k < \frac{d'}{2}$; es decir, que $k$ se sitúa a la izquierda del punto neutro y promueve por tanto una mayor cantidad de Hits y Falsas Alarmas al emitir más respuestas afirmativas. Si $C$ es positivo, quiere decir que $k > \frac{d'}{2}$ y se está promoviendo una tasa mayor de Rechazos Correctos y Omisiones.\\
+Por su parte, el valor absoluto del parámetro $C$ proporciona información sobre la magnitud del sesgo con que el agente detector está favoreciendo la emisión de un juicio sobre el otro. La dirección del sesgo se puede determinar, dependiendo de si $C$ tiene un valor positivo o negativo. Si $C$ es negativo, quiere decir que $k < \frac{d'}{2}$; es decir, que el criterio se sitúa a la izquierda del punto neutro y promueve una mayor cantidad de respuestas afirmativas. Si $C$ es positivo, quiere decir que $k > \frac{d'}{2}$ y, por el contrario, se prefiere emitir juicios negativos.\\
 
 
 En la Figura~\ref{fig:Graf_Sesgo} se ilustra cada uno de los parámetros de sesgo descritos ($\beta$ en los paneles izquierdos y $C$ en los derechos), presentando en cada caso un ejemplo con sesgo liberal (en el panel superior) y con sesgo conservador (panel inferior). La diferencia entre ambos tipos de sesgos se desarrolla a continuación:\\
@@ -300,7 +301,7 @@ En la Figura~\ref{fig:Graf_Sesgo} se ilustra cada uno de los parámetros de sesg
 \includegraphics[width=0.8\textwidth]{Figures/Graficador_Sesgo_LiberalR}\\
 \includegraphics[width=0.8\textwidth]{Figures/Graficador_Sesgo_ConservadorR}\\
 %\decoRule
-\caption[Estimación del sesgo con base en el criterio]{Se ilustra el cómputo de los parámetros de sesgo $\beta$ (figuras izquierdas) y $C$ (derechas), en casos donde el sesgo del sistema es liberal (el criterio se ubica en niveles bajos de evidencia; panel superior) o conservador (el criterio se sitúa sobre niveles altos de evidencia; panel inferior).}
+\caption[Estimación paramétrica: Sesgos $\beta$ y $c$]{Se ilustra el cómputo de los parámetros de sesgo $\beta$ (figuras izquierdas) y $C$ (derechas), en casos donde el sesgo del sistema es liberal (el criterio se ubica en niveles bajos de evidencia; en el panel superior) o conservador (el criterio se sitúa sobre niveles altos de evidencia; panel inferior).}
 \label{fig:Graf_Sesgo}
 \end{figure}
 \end{itemize}   %Terminan los parametros
@@ -328,14 +329,14 @@ $\beta = 1$\\
 \end{center}
 \end{itemize}
 
-Para una exposición más detallada e interactiva de los parámetros descritos hasta ahora, se pueden consultar los graficadores y apps en línea desarrollados por la autora de la presente tesis en Python y R-Shiny, como parte de un proyecto PAPIME en el Laboratorio 25 (\citeyear{PAPIME}). Estos materiales se encuentran disponibles en \href{http://www.bouzaslab25.com/LabVirtual25/}{bouzaslab25.com/LabVirtual25}, un sitio web también diseñado por la autora de esta tesis para los estudiantes de los cursos impartidos por el Dr. Arturo Bouzas.\\
+Para una exposición más detallada e interactiva de los parámetros descritos hasta ahora, se pueden consultar los graficadores y Apps en línea desarrollados por la autora de la presente tesis y otros colaboradores del Lab 25, como parte de un proyecto PAPIME (\citeyear{PAPIME}). Estos materiales se encuentran disponibles en \href{http://www.bouzaslab25.com/LabVirtual25/}{bouzaslab25.com/LabVirtual25}, un sitio web diseñado por la autora de esta tesis para los estudiantes de los cursos impartidos por el Dr. Arturo Bouzas.\\
 %----------------------------------------------------------------
 
 \subsection{Curvas ROC}
 
 Además de permitir la descripción e interpretación del desempeño observado en tareas de detección a partir de la estimación de los parámetros descritos, los datos obtenidos en sesiones experimentales pueden ser utilizados para una evaluación más completa de la precisión con que el sistema podría responder a la misma tarea usando distintos criterio de elección. Las curvas ROC (identificadas así por su nombre en inglés: Receiver-Operating Characteristic Curve) describen la relación entre las tasas de Hits y Falsas Alarmas a obtener en tareas de detección con un valor partiular de $d'$, por cada localización posible del criterio sobre el eje de evidencia (McNicol \citeyear{McNicol2}; Egan, Schulman y Greenberg, \citeyear{Egan1959}; Swets, \citeyear{Swets1973}).\\
 
-La Figura~\ref{fig:Graf_ROC} ilustra la construcción de una curva ROC a partir de las tasas de ejecución reportadas en una tarea de detección. En el primer panel se presenta la representación gráfica del desempeño observado en un caso hipotético. En el panel intermedio se muestra la idea escencial del trazo de las curvas ROC, ubicando el punto donde se interceptan las tasas de Falsas Alarmas (eje x) y Hits (eje y) representadas. Finalmente, para este mismo escenario (el mismo valor de $d'$), se presenta la curva ROC que muestra los posibles intercambios entre Hits y Falsas Alarmas a observar con el uso de distintos criterios (distintos valores $k$). La idea central, es que por cada $d'$ se puede trazar una curva ROC que describa los resultados esperados para todas las posibles ubicaciones del criterio (Tanner y Swets, \citeyear{Tanner1954}; Swets y cols.,  \citeyear{Swets1961}; Swets, \citeyear{Swets1973}; Stainslaw y Todorov, \citeyear{Stainslaw1999}).\\
+La Figura~\ref{fig:Graf_ROC} ilustra la construcción de curvas ROC a partir de las tasas de ejecución reportadas en tareas de detección. En las figuras izquierdas, se presenta un par de representaciones gráficas arbitrarias de tareas con distinto nivel de $d'$. Las figuras del lado derecho, señalan la intersección entre las tasas observadas de de Falsas Alarmas (eje x) y Hits (eje y) con un punto y, de acuerdo con el valor de $d'$ estimado, la curva que describe los posibles pares de Hits y Falsas Alarmas a observar con el uso de distintos criterios de elección. La idea central, es que por cada $d'$ se puede trazar una curva ROC que describa los resultados esperados para todos los valores posibles de $k$ (Tanner y Swets, \citeyear{Tanner1954}; Swets y cols.,  \citeyear{Swets1961}; Swets, \citeyear{Swets1973}; Stainslaw y Todorov, \citeyear{Stainslaw1999}).\\
 
 \begin{figure}[th]
 \centering
@@ -344,25 +345,25 @@ La Figura~\ref{fig:Graf_ROC} ilustra la construcción de una curva ROC a partir 
 \includegraphics[width=0.75\textwidth]{Figures/ROC_2} \\
 \includegraphics[width=0.75\textwidth]{Figures/ROC_3}\\
 %\decoRule
-\caption[Ejemplo de Curva ROC]{Ilustración del trazo de curvas ROC}
+\caption[Trazo de curvas ROC]{Ilustración del trazo de curvas ROC en dos escenarios con distinto nivel de $d'$. Los puntos marcados en las curvas ROC (figuras derecas) corresponden con la relación Tasa de Hits y Falsas Alarmas observadas dada la localización del criterio (figuras izquierdas). Las líneas contínuas azules en las curvas ROC representan los posibles pares a observar entre las tasas de Hits y Falsas Alarmas, dada la $d'$ computada, por cada valor que pueda ocupar el criterio.}
 \label{fig:Graf_ROC}
 \end{figure}
 
 %Bajo el supuesto de que lo único sobre lo que el sistema detector tiene injerencia es sobre el criterio de elección a usar para emitir sus juicios de detección, y que la discriminabilidad -al ser una cualidad inherente a los estímulos comprometidos en la tarea (ya sea por la variabilidad en su presentación o percepción)- es constante y ajena a este, \\
 
-El área bajo la curva ROC (AUC, por sus siglas en ingles: Area Under the Curve) representa una forma precisa y completa de evaluar la sensibilidad del sistema detector ante la tarea estudiada (Centor y Schwartz, \citeyear{Centor1985}; Stainslaw y Todorov, \citeyear{Stainslaw1999}; McNicol, \citeyear{McNicol5}). Nótese que se habla de \textit{Sensibilidad} y no de \textit{Discriminabilidad} porque, aunque ambos conceptos refieren a qué tan fácil es para el sistema distinguir entre la señal y el ruido y están directamente relacionados con la distancia que existe entre sus distribuciones, la primera apela a la precisión con que el sistema detector puede responder a la tarea -utilizando distintas estrategias o reglas de elección- y la segunda, a una cualidad inherente a los estímulos (Swets, \citeyear{Swets1973}).\\
+El área bajo la curva ROC (AUC, por sus siglas en ingles: Area Under the Curve) representa una forma precisa y completa de evaluar la sensibilidad del sistema detector ante la tarea estudiada (Centor y Schwartz, \citeyear{Centor1985}; Stainslaw y Todorov, \citeyear{Stainslaw1999}; McNicol, \citeyear{McNicol5}). Nótese que se habla de \textit{Sensibilidad} y no de \textit{Discriminabilidad} porque, aunque ambos conceptos refieren a qué tan fácil es para el sistema distinguir entre la señal y el ruido y se relacionan directamente con la distancia que existe entre sus distribuciones, la primera apela a la precisión con que el sistema detector puede responder a la tarea -utilizando distintas estrategias o reglas de elección- y la segunda, a una cualidad inherente a los estímulos (Swets, \citeyear{Swets1973}).\\
 
-El valor estimado de $d'$ representa la distancia entre las medias de las distribuciones y, como se mencionó anteriormente, en general se sabe que mientras más grande sea $d'$, más fácil es la tarea. Sin embargo, es complicado interpretar dicho valor en términos de qué tan \textit{buena} es la discriminabilidad; es decir, parece poco claro qué tanto tendría que alejarse $d'$ de $0$ para afirmar que la Señal es discriminable del Ruido. Para ello, el cálculo del AUC correspondiente proporciona información valiosa para la evaluación de la precisión con que el sistema puede responder a la tarea de detección evaluada, si se usaran diferentes criterios (Stainslaw y Todorov, \citeyear{Stainslaw1999}).\\ 
+Como se mencionó anteriormente, en general se sabe que mientras más grande sea $d'$, existe una menor incertidumbre en la tarea de detección evaluada. Sin embargo, es complicado interpretar dicho valor en términos de qué tan \textit{buena} es la discriminabilidad. Es decir, parece poco claro qué tanto tendría que alejarse $d'$ de $0$ para afirmar que la Señal es discriminable del Ruido. Para ello, el cálculo del AUC proporciona información valiosa para la evaluación de la precisión con que el sistema puede responder a la tarea evaluada (Stainslaw y Todorov, \citeyear{Stainslaw1999}).\\ 
 
-Cuando los estímulos con Señal son indistinguibles de los estímulos con Ruido ($d' = 0$), la curva ROC resultante se ve como una función de identidad. Esto implica que al emitir un juicio de detección afirmativo, existe la misma probabilidad de que este resulte en un Hit o una Falsa Alarma, con un AUC de 0.5 (la mitad del área total cae por debajo de la curva). Es decir, que mientras mayor sea el valor de $d'$, la curva ROC resultante se alejará más de la función identidad y su AUC será cada vez más cercano a 1.0. En general, el AUC puede tomar valores entre 0.5 -que correspondería a un sistema que no distingue en lo absoluto entre la Señal y el Ruido- y 1.0 -que representa una distinción perfecta entre los mismos- (Swets, \citeyear{Swets1973}; Stainslaw y Todorov, \citeyear{Stainslaw1999}; McNicol, \citeyear{McNicol5}).\\
+Cuando los estímulos con Señal son indistinguibles de los estímulos con Ruido ($d' = 0$), la curva ROC resultante se ve como una función de identidad. Esto implica que al emitir un juicio de detección afirmativo, existe la misma probabilidad de que este resulte en un Hit o una Falsa Alarma, con un AUC de 0.5 (la mitad del área total cae por debajo de la curva). Es decir, que mientras mayor sea el valor de $d'$, la curva ROC resultante se alejará más de la función identidad y su AUC será cada vez más cercano a 1.0. En general, el AUC puede tomar valores entre 0.5 -un sistema que no distingue en lo absoluto entre la Señal y el Ruido- y 1.0 -distinción perfecta entre los mismos- (Swets, \citeyear{Swets1973}; Stainslaw y Todorov, \citeyear{Stainslaw1999}; McNicol, \citeyear{McNicol5}).\\
 
-Las curvas ROC pueden ser trazadas -en teoría- a partir de un solo conjunto de tasas de ejecución (Pollsvk y Norman, \citeyear{Pollack1964a}; Pollack, Norman y Galanter, \citeyear{Pollack1964b}; McNicol, \citeyear{McNicol2}) mediante algoritmos que asumen que el desempeño observado por parte del participante no puede \textit{mejorar} o \textit{empeorar} (dado que la discriminabilidad no depende de su conducta) y que se limitan a computar las tasa de ejecución que se esperaría observar en cada ubicación posible del criterio. Sin embargo, también pueden trazarse varios puntos para guiar el trazo de la curva ROC a partir de datos obtenidos en tareas donde experimentalmente se induce el uso de distintos criterios de elección, obteniendo varios pares de tasas de Hits y Falsas Alarmas (Egan y cols., \citeyear{Egan1959}; Swets y cols., \citeyear{Swets1961}; Swets, \citeyear{Swets1986}). Los procedimientos mediante los cuales esto se lleva a cabo se discuten a continuación.\\
+Las curvas ROC pueden ser trazadas -en teoría- a partir de un solo conjunto de tasas de ejecución (Pollsvk y Norman, \citeyear{Pollack1964a}; Pollack, Norman y Galanter, \citeyear{Pollack1964b}; McNicol, \citeyear{McNicol2}) mediante algoritmos que asumen que el desempeño observado por parte del participante no puede \textit{mejorar} o \textit{empeorar} (dado que la discriminabilidad no depende de su conducta), y que se limitan a computar las tasa de ejecución que se esperaría observar en cada ubicación posible del criterio. Sin embargo, también pueden trazarse varios puntos para guiar el trazo de la curva ROC a partir de datos obtenidos en tareas donde experimentalmente se induzca el uso de distintos criterios de elección, obteniendo varios pares de tasas de Hits y Falsas Alarmas (Egan y cols., \citeyear{Egan1959}; Swets y cols., \citeyear{Swets1961}; Swets, \citeyear{Swets1986}). Los procedimientos mediante los cuales esto se lleva a cabo se discuten a continuación.\\
 
 %----------------------------------------------------------------
 
 \subsection{Tareas de detección}
 
-En cuanto a la aplicación de la SDT a la interpretación y evaluación de la ejecución de cierto tipo de participantes en cierto tipo de tareas de detección, existen tres grandes protocolos empleados para obtener datos susceptibles de ser analizados bajo el marco de la SDT (McNicol, \citeyear{McNicol2}; Stainslaw y Todorov, \citeyear{Stainslaw1999}). A continuación se exponen de manera general las propiedades -en términos de la información que se obtiene- y especificaciones procedimentales que caracterizan a cada uno de ellos.\\
+Para la interpretación y evaluación de tareas de detección, existen tres grandes protocolos empleados para obtener datos susceptibles de ser analizados bajo el marco de la SDT (McNicol, \citeyear{McNicol2}; Stainslaw y Todorov, \citeyear{Stainslaw1999}):\\
 
 \begin{itemize}
 \item \underline{Tareas de detección binaria}\\
@@ -390,7 +391,7 @@ Existen varias formas en que puede presentarse la Escala de Confianza (McNicol, 
 \includegraphics[width=0.80\textwidth]{Figures/Puntajes_Criterios}\\
 \includegraphics[width=0.70\textwidth]{Figures/ConfidenceRating}\\
 %\decoRule
-\caption[Representación gráfica de la interpretación de las tareas de detección con Escala de Confianza]{Representación gráfica de la interpretación de las tareas de detección con Escala de Confianza bajo el marco de la SDT. En la parte superior se presenta una Escala de Confianza de seis elementos con sus dos posibles direcciones: unidireccional (el puntaje refleja la confianza en una sola respuesta) o bidireccional (el puntaje distingue entre la confianza en cada respuesta). La gráfica de abajo ilustra la idea de que por cada puntaje se computa la localización de un sub-criterio sobre el eje de evidencia, a partir del número de Hits y Falsas Alarmas que se obtendrían de haber utilizado dicho puntaje como una respuesta afirmativa en una tarea binaria.}
+\caption[Tareas de detección con Escala de Confianza y su interpretación]{Representación gráfica de la interpretación de las tareas de detección con Escala de Confianza bajo el marco de la SDT. En la parte superior se presenta una Escala de Confianza de seis elementos con dos posibles sentidos: unidireccional (el puntaje refleja la confianza en una sola respuesta) o bidireccional (el puntaje distingue entre la confianza en cada respuesta). La gráfica inferior ilustra la idea de que para decidir cuándo emitir cada puntaje, el sistema fija múltiples sub-criterios sobre el eje de evidencia.}
 \label{fig:Conf_Rat}
 \end{figure}
 
@@ -465,8 +466,8 @@ Aplicar la SDT al estudio de la Memoria de Reconocimiento implica entender las t
 
 \begin{figure}[th]
 \centering
-\includegraphics[width=0.60\textwidth]{Figures/RM_SDT_1} 
-\caption[SDT en Memoria de Reconocimiento]{Modelo de Detección de Señales aplicado al estudio de Memoria de Reconocimiento}
+\includegraphics[width=0.75\textwidth]{Figures/RM_SDT_1} 
+\caption[SDT aplicada a tareas de memoria de reconocimiento]{Representación gráfica de la aplicación de la SDT al estudio de tareas de memoria de reconocimiento}
 \label{fig:RM_SDT_1}
 \end{figure}
 
@@ -479,7 +480,7 @@ De acuerdo a las características de las curvas z-ROC construidas consistentemen
 \begin{figure}[th]
 \centering
 \includegraphics[width=0.80\textwidth]{Figures/RM_SDT_2} 
-\caption[SDT en Memoria de Reconocimiento (Varianzas Desiguales)]{Modelo de Detección de Señales con varianzas desiguales aplicado al estudio de Memoria de Reconocimiento}
+\caption[SDT en memoria de reconocimiento (varianzas desiguales)]{Representación gráfica del modelo de varianzas desiguales reportado en memoria de reconocimiento, al estudiarse bajo el marco de la SDT.}
 \label{fig:RM_SDT_2}
 \end{figure}
 
@@ -506,7 +507,7 @@ Al interpretar bajo el marco de la SDT las diferencias entre la proporción de H
 \centering
 \includegraphics[width=0.7\textwidth]{Figures/EfectoEspejo}
 %\decoRule
-\caption[Representación gráfica del Efecto Espejo]{}
+\caption[Efecto Espejo: Las distribuciones de ruido y señal A y B se reflejan entre sí]{Representación gráfica de la ubicación de las distribuciones de ruido y señal (de las clases A y B) sobre el eje de evidencia, de acuerdo con los patrones de respuesta encontrados en tareas memoria de reconocimiento, identificados como Efecto Espejo.}
 \label{fig:Ejem_EfectoEspejo}
 \end{figure}
 
@@ -551,7 +552,7 @@ De acuerdo con la interpretación clásica de este tipo de tareas en el marco de
 \centering
 \includegraphics[width=0.7\textwidth]{Figures/EfectoEspejo_YesNo}
 %\decoRule
-\caption[Representación gráfica del Efecto Espejo de acuerdo a los datos obtenidos en Tareas Sí/No]{Interpretación del patrón de respuestas reportado consistentemente en tareas de reconocimiento Sí/No donde se presenta más de una clase de estímulos, con distintos niveles de $d'$. Asumiendo que el participante responde con base en un sólo criterio de elección, las tasas de Hits y Falsas Alarmas reportadas para las clases A y B sugieren que las distribuciones Señal A y B se presentan en un órden que \textit{refleja} la posición de las distribuciones de Ruido involucradas.}
+\caption[Efecto Espejo en tareas de detección binarias]{Interpretación del patrón de respuestas reportado en tareas de reconocimiento Sí/No donde se presenta más de una clase de estímulos, ($FA(A) < FA(B) < H(B) < H(A)$), asumiendo que los participantes responden con base en un sólo criterio de elección.}
 \label{fig:Ejem_Espejo_YesNo}
 \end{figure}
 
@@ -574,7 +575,7 @@ De la misma forma que en su interpretación clásica (McNicol, \citeyear{McNicol
 \centering
 \includegraphics[width=0.7\textwidth]{Figures/EfectoEspejo_Puntajes}
 %\decoRule
-\caption[Representación gráfica del Efecto Espejo, de acuerdo con el patrón de respuestas registrado en tareas con Escala de Confianza]{Interpretación del patrón de respuestas reportado en tareas con Escala de Confianza en Memoria de Reconocimiento con más de una clase de estímulos. Asumiendo que el participante responde con base en los mismos sub-criterios de elección, el promedio de los puntajes asignados a cada subconjunto de estímulos aportan evidencia sobre la consistencia del Efecto Espejo como una regularidad en este tipo de tareas.}
+\caption[Efecto Espejo en tareas de detección con Escala de Confianza]{Interpretación del patrón de respuestas reportado en tareas de reconocimiento con Escala de Confianza, con más de una clase de estímulos ($P(NuevoA) < P(NuevoB) < P(ViejoB) < P(ViejoA)$). Asumiendo que los participantes utilizan los mismos sub-criterios de elección para todos los ensayos, el promedio de los puntajes asignados a cada subconjunto de estímulos resultan consistentes con el Efecto Espejo reportado en tareas binarias.}
 \label{fig:Ejem_Efecto_Punt}
 \end{figure}
 

@@ -2005,6 +2005,29 @@ Tanner, W\BPBI P.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Team%
+}{%
+Team%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+JASP}
+\APACinsertmetastar {%
+JASP}%
+\begin{APACrefauthors}%
+Team, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+\APACrefbtitle {JASP (Version 0.8.5) [Computer Software].} {Jasp (version
+  0.8.5) [computer software].}
+\newblock
+\begin{APACrefURL} \url{https://jasp-stats.org/} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Thurstone%
 }{%
 Thurstone%
