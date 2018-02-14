@@ -3,7 +3,7 @@
 # EXPERIMENTO 2 (Dos Ebbinghaus)
 ####################################
 
-setwd("C:/Users/Alejandro/Desktop/Felisa/Tesis/CSVs/Datos_MirrExp_2Ebb")
+setwd("C:/Users/Alejandro/Desktop/Felisa/Tesis/Datos_CSVs/Datos_MirrExp_2Ebb")
 rm(list=ls())
 dir()
 
@@ -561,5 +561,90 @@ for(archive in dir()){
   text(0.7, 0.3, labels="D' en la Condición Facil (A)", offset=0, cex = 0.8, pos=4)
   text(0.7, 0.2, labels="D' en la Condición Difícil (B)", offset=0, cex = 0.8, pos=4)
   title('ROC por Condición')
+  mtext(archive,3,cex=.8)
+}
+
+
+
+
+
+#################################
+####################################
+###       Z-ROC curves     ########
+####################################
+####################################
+
+
+rm(list=ls())
+layout(matrix(1:1,ncol=1))
+for(archive in dir()){
+  jaime <- read.csv(archive)
+  fa_AN <- NULL
+  hits_AN <- NULL
+  fa_AS <- NULL
+  fa_AS <- NULL
+  hits_AN <- NULL
+  hits_AS <- NULL
+  hits_BS <- NULL
+  hits_BN <- NULL
+  fa_AN <- sum(jaime$Falsas.alarmas[jaime$Estimulo>=161&jaime$Estimulo<=320]=='True')
+    fa_AS <- sum(jaime$Falsas.alarmas[jaime$Estimulo>=1&jaime$Estimulo<=160]=='True')
+    hits_AS <- sum(jaime$Hits[jaime$Estimulo>=1&jaime$Estimulo<=160]=='True')
+    hits_AN <- sum(jaime$Hits[jaime$Estimulo>=161&jaime$Estimulo<=320]=='True')
+    fa_BN <- sum(jaime$Falsas.alarmas[jaime$Estimulo>=481&jaime$Estimulo<=640]=='True')
+    fa_BS <- sum(jaime$Falsas.alarmas[jaime$Estimulo>=321&jaime$Estimulo<=480]=='True')
+    hits_BS <- sum(jaime$Hits[jaime$Estimulo>=321&jaime$Estimulo<=480]=='True')
+    hits_BN <- sum(jaime$Hits[jaime$Estimulo>=481&jaime$Estimulo<=640]=='True')
+    FAr_an <- fa_AN/160 
+    Hr_as <- hits_AS/160
+    FAr_bn <- fa_BN/160
+    Hr_bs <- hits_BS/160
+    #print(c(fa_AN[length(fa_AN)], 
+    #        FAr_an[length(FAr_an)], 
+    #        fa_BN[length(fa_BN)], 
+    #        FAr_bn[length(FAr_bn)], 
+    #        hits_BS[length(hits_BS)], 
+    #        Hr_bs[length(Hr_bs)], 
+    #        hits_AS[length(hits_AS)], 
+    #        Hr_as[length(Hr_as)]))
+    k_A <- qnorm(1-FAr_an,0,1)
+    d_A <- qnorm(Hr_as,0,1)-qnorm(FAr_an,0,1)
+    c_A <- k_A-(d_A/2)                    
+    beta_A <- dnorm(k_A,d_A,1)/dnorm(k_A,0,1)
+    k_B <- qnorm(1-FAr_bn,0,1)
+    d_B <-qnorm(Hr_bs,0,1)-qnorm(FAr_bn,0,1)
+    c_B <-k_B-(d_B/2)                    
+    beta_B <-dnorm(k_B,d_B,1)/dnorm(k_B,0,1)
+  
+  hits_A <- c()
+  falarm_A <- c()
+  hits_B <- c()
+  falarm_B <- c()
+  hits_na <- c()
+  falarm_na <- c()
+  c <- seq(-10,10,0.1)
+  d_null <- 0
+  
+  for (i in 1:length(c)){
+    hits_A[i] <- qnorm(pnorm((-d_A/2)-c[i]))
+    falarm_A[i] <- qnorm(pnorm((d_A/2)-c[i]))
+    hits_B[i] <- qnorm(pnorm((-d_B/2)-c[i]))
+    falarm_B[i] <- qnorm(pnorm((d_B/2)-c[i]))
+    hits_na[i] <- qnorm(pnorm((d_null/2)-c[i]))
+    falarm_na[i] <- qnorm(pnorm((-d_null/2)-c[i]))
+  }
+  
+  plot(FAr_an,Hr_as, pch=16, col='firebrick2', xlim=c(0,6), ylim=c(0,6), xlab='Tasa F.A.', ylab='Tasa Hits', font.lab=2)
+  points(FAr_bn,Hr_bs, lty=3, pch=16, col='firebrick4')
+  lines(hits_A,falarm_A,lwd=2,col='firebrick2')
+  lines(hits_B,falarm_B,lwd=2,col='firebrick4')
+  lines(hits_na,falarm_na,lwd=1,col='black', lty=2)
+  lines(c(0.58, 0.68),c(0.3,0.3), lwd=2, lty=1, col="deepskyblue3")
+  lines(c(0.58, 0.68),c(0.2,0.2), lwd=2, lty=1, col="darkorchid3")
+  text(FAr_an, Hr_as+.04, paste("D'(A)=", round(d_A,2)), offset=0, cex = 0.8, pos=4, col='deepskyblue4', font=2)
+  text(FAr_bn, Hr_bs-.04, paste("D'(B)=", round(d_B,2)), offset=0, cex = 0.8, pos=4, col='darkorchid4', font=2)
+  text(0.7, 0.3, labels="D' en la Condición Facil (A)", offset=0, cex = 0.8, pos=4)
+  text(0.7, 0.2, labels="D' en la Condición Difícil (B)", offset=0, cex = 0.8, pos=4)
+  title('ZROC por Condición')
   mtext(archive,3,cex=.8)
 }

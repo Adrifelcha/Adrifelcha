@@ -1548,6 +1548,29 @@ Parks, T\BPBI E.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Peirce%
+}{%
+Peirce%
+}{%
+{\protect \APACyear {2007}}%
+}]{%
+Psychopy}
+\APACinsertmetastar {%
+Psychopy}%
+\begin{APACrefauthors}%
+Peirce, J\BPBI W.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2007}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {PsychoPy-Psychophysics software in Python}
+  {Psychopy-psychophysics software in python}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Neuroscience Methods}{162}{1-2}{8-13}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Pessoa%
 , Japee%
 \BCBL {}\ \BBA {} Ungerleider%
