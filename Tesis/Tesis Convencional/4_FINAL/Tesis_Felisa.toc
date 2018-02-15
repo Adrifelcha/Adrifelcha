@@ -13,7 +13,7 @@
 \contentsline {subsection}{\numberline {2.2.1} Memoria de Reconocimiento}{32}{subsection.40}
 \contentsline {section}{\numberline {2.3}El Efecto Espejo}{35}{section.43}
 \contentsline {subsection}{\numberline {2.3.1}Evidencia recolectada}{37}{subsection.45}
-\contentsline {subsection}{\numberline {2.3.2}Relevancia, implicaciones e interpretaciones}{41}{subsection.48}
+\contentsline {subsection}{\numberline {2.3.2}Relevancia, implicaciones e interpretaciones}{40}{subsection.48}
 \contentsline {section}{\numberline {2.4}Planteamiento del problema}{45}{section.57}
 \contentsline {chapter}{\numberline {3}M\IeC {\'e}todo}{47}{chapter.58}
 \contentsline {section}{\numberline {3.1}Planteamiento general}{47}{section.59}

@@ -382,30 +382,6 @@ Egan, J\BPBI P.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Eich%
-}{%
-Eich%
-}{%
-{\protect \APACyear {1985}}%
-}]{%
-Eich1985}
-\APACinsertmetastar {%
-Eich1985}%
-\begin{APACrefauthors}%
-Eich, J\BPBI M.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{1985}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Levels of Processing, Encoding Specifity, Elaboration
-  and CHARM} {Levels of processing, encoding specifity, elaboration and
-  charm}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Psychological Review}{92}{1}{1-38}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Fechner%
 }{%
 Fechner%
@@ -1521,30 +1497,6 @@ Nuechterlein, K\BPBI H.%
   children}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Journal of Abnormal Psychology}{92}{1}{4-28}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Parks%
-}{%
-Parks%
-}{%
-{\protect \APACyear {1966}}%
-}]{%
-Parks1966}
-\APACinsertmetastar {%
-Parks1966}%
-\begin{APACrefauthors}%
-Parks, T\BPBI E.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{1966}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Signal-detectability Theory of Recognition Memory
-  Performance} {Signal-detectability theory of recognition memory
-  performance}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Psychological Review}{73}{1}{44-58}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
