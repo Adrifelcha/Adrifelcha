@@ -35,19 +35,18 @@
 \contentsline {figure}{\numberline {4.7}{\ignorespaces Explorando datos individuales (ejemplo): Proporci\IeC {\'o}n de respuestas 'S\IeC {\'\i }' y 'No' registradas por cada color de figura}}{71}{figure.caption.86}
 \contentsline {figure}{\numberline {4.8}{\ignorespaces Resultados: Comparaci\IeC {\'o}n de las $d'$ computadas por cada clase de est\IeC {\'\i }mulos}}{75}{figure.caption.94}
 \contentsline {figure}{\numberline {4.9}{\ignorespaces Modelo Delta: Modelo jer\IeC {\'a}rquico bayesiano para evaluar las diferencias entre las medias de $d'$ de cada clase de est\IeC {\'\i }mulo}}{76}{figure.caption.96}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Modelo Delta: Distribuciones posteriores marginales y conjuntas para $\mu d'$ y $\mu c$ por cada clase de est\IeC {\'\i }mulo}}{80}{figure.caption.97}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Modelo Delta: Densidades posteriores de los valores de $d'$ estimados individualmente, y en promedio, por cada experimento}}{81}{figure.caption.98}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Modelo Delta: Densidades posteriores de los valores de $c$ estimados individualmente y en promedio, por cada experimento}}{82}{figure.caption.99}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Modelo Delta: Densidad posterior de los valores estimados para el par\IeC {\'a}metro Delta en cada Experimento}}{83}{figure.caption.100}
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Explorando datos individuales (ejemplo): Diferencias entre Hits y Falsas Alarmas registrados por clase de est\IeC {\'\i }mulo}}{84}{figure.caption.102}
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Resultados: Comparaci\IeC {\'o}n entre las tasas de Hits y las tasas de Falsas Alarmas registradas por cada clase de est\IeC {\'\i }mulo}}{85}{figure.caption.103}
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Modelo Tau: Modelo Bayesiano para evaluar las diferencias entre las $\theta $ de Hits y Falsas Alarmas de cada clase de est\IeC {\'\i }mulos}}{88}{figure.caption.105}
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Modelo Tau: Inferencias individuales para el valor de la probabilidad de cometer un Hit en cada clase de est\IeC {\'\i }mulos}}{89}{figure.caption.106}
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Modelo Tau: Inferencias individuales para el valor de la probabilidad de cometer una Falsa Alarma en cada clase de est\IeC {\'\i }mulos}}{90}{figure.caption.107}
-\contentsline {figure}{\numberline {4.19}{\ignorespaces Modelo Tau: Densidad de probabilidad posterior para los posibles valores de los par\IeC {\'a}metros Tau}}{91}{figure.caption.108}
-\contentsline {figure}{\numberline {4.20}{\ignorespaces Explorando datos individuales (ejemplo): Promedio de los puntajes de confianza registrados para cada tipo y clase de ensayo}}{92}{figure.caption.110}
-\contentsline {figure}{\numberline {4.21}{\ignorespaces Comparaci\IeC {\'o}n entre los Puntajes de Confianza asignados a los ensayos con Ruido y Se\IeC {\~n}al de cada clase}}{93}{figure.caption.111}
-\contentsline {figure}{\numberline {4.22}{\ignorespaces Gr\IeC {\'a}fico de dispersi\IeC {\'o}n para los puntajes de confianza asignados a cada clase de est\IeC {\'\i }mulo}}{95}{figure.caption.113}
-\contentsline {figure}{\numberline {4.23}{\ignorespaces Densidad posterior e interpretaci\IeC {\'o}n de la evidencia acumulada en favor de la diferencia entre los puntajes registrados por cada clase, de acuerdo con una prueba t bayesiana}}{100}{figure.caption.115}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Modelo Delta: Distribuciones posteriores marginales y conjuntas para $\mu d'$ y $\mu c$ por cada clase de est\IeC {\'\i }mulo}}{79}{figure.caption.97}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Modelo Delta: Densidades posteriores de los valores de $d'$ estimados individualmente, y en promedio, por cada experimento}}{80}{figure.caption.98}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Modelo Delta: Densidades posteriores de los valores de $c$ estimados individualmente y en promedio, por cada experimento}}{81}{figure.caption.99}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Modelo Delta: Densidad posterior de los valores estimados para el par\IeC {\'a}metro Delta en cada Experimento}}{82}{figure.caption.100}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Explorando datos individuales (ejemplo): Diferencias entre Hits y Falsas Alarmas registrados por clase de est\IeC {\'\i }mulo}}{83}{figure.caption.102}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Resultados: Comparaci\IeC {\'o}n entre las tasas de Hits y las tasas de Falsas Alarmas registradas por cada clase de est\IeC {\'\i }mulo}}{84}{figure.caption.103}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Modelo Tau: Modelo Bayesiano para evaluar las diferencias entre las $\theta $ de Hits y Falsas Alarmas de cada clase de est\IeC {\'\i }mulos}}{86}{figure.caption.105}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Modelo Tau: Inferencias individuales para el valor de la probabilidad de cometer un Hit en cada clase de est\IeC {\'\i }mulos}}{87}{figure.caption.106}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Modelo Tau: Densidad de probabilidad posterior para los posibles valores de los par\IeC {\'a}metros Tau}}{88}{figure.caption.107}
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Explorando datos individuales (ejemplo): Promedio de los puntajes de confianza registrados para cada tipo y clase de ensayo}}{90}{figure.caption.109}
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Comparaci\IeC {\'o}n entre los Puntajes de Confianza asignados a los ensayos con Ruido y Se\IeC {\~n}al de cada clase}}{91}{figure.caption.110}
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Gr\IeC {\'a}fico de dispersi\IeC {\'o}n para los puntajes de confianza asignados a cada clase de est\IeC {\'\i }mulo}}{93}{figure.caption.112}
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Densidad posterior e interpretaci\IeC {\'o}n de la evidencia acumulada en favor de la diferencia entre los puntajes registrados por cada clase, de acuerdo con una prueba t bayesiana}}{96}{figure.caption.114}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

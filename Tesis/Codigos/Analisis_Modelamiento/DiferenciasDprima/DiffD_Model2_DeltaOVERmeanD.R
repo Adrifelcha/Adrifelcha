@@ -1,4 +1,4 @@
-setwd("C:/Users/Alejandro/Desktop/Felisa/Tesis/CSVs")
+setwd("C:/Users/Alejandro/Desktop/Felisa/Tesis/Datos_CSVs")
 rm(list=ls())
 dir()
 library(R2jags)
@@ -19,7 +19,7 @@ experimento <- 2
 
 if (experimento == 1) 
 {
-  archive <-'Ex_1Ebb_TODOS-.csv'      #Especificamos el nombre del archivo que contiene los datos
+  archive <-'Ex_1Ebb_TODOS.csv'      #Especificamos el nombre del archivo que contiene los datos
   datos <- read.csv(archive)          #Jalamos los datos del archivo
   Hits_Facil <- datos$A_H             #Hits(A)
   Hits_Dificil <- datos$B_H           #Hits(B)
@@ -31,7 +31,7 @@ if (experimento == 1)
 
 if (experimento == 2)
 {
-  archive <-'Ex_2Ebb_TODOS_No1.csv'          #Especificamos el nombre del archivo que contiene los datos
+  archive <-'Ex_2Ebb_TODOS_Sin1.csv'          #Especificamos el nombre del archivo que contiene los datos
   datos <- read.csv(archive)              #Jalamos los datos
   Hits_Facil <- datos$A_H                 #H(A)
   Hits_Dificil <- datos$B_H               #H(B)
@@ -121,28 +121,28 @@ par(cex.main = 1.5, mar = c(5, 6, 4, 5) + 0.1, mgp = c(3.5, 1, 0), cex.lab = 1.5
   soporte_d <- c(0,2.8)
   plot(soporte_d, axes=F, main="Experimento 1", ylab="", xlab="", xlim=c(0,6.5), col='white')
   for(a in 1:k){
-    lines(density(d_a[,a]), lwd=1, col="dodgerblue2", ylab="", xlab="", xlim=c(-0.5,0.5), axes=F)
-    lines(density(d_b[,a]), lwd=1, col="darkorchid2", ylab="", xlab="", xlim=c(-0.5,0.5), axes=F)}  
-  lines(density(muDB), lwd=3, col="darkorchid4", lty=1)
-  lines(density(muDA), lwd=3, col="dodgerblue4", lty=1)
+    lines(density(d_a[,a]), lwd=2, col="dodgerblue2", ylab="", xlab="", xlim=c(-0.5,0.5), axes=F)
+    lines(density(d_b[,a]), lwd=2, col="darkorchid2", ylab="", xlab="", xlim=c(-0.5,0.5), axes=F)}  
+  lines(density(muDB), lwd=5, col="darkorchid4", lty=1)
+  lines(density(muDA), lwd=5, col="dodgerblue4", lty=1)
   axis(1)
   axis(2, labels=F, at=c(0,210))
   #mtext("Differences on Hit Rates", side=3, line = 0.2, cex=1.2, font=1)
-  mtext("D-Prima", side=1, line = 3, cex=1.5)
-  mtext("Densidad", side=2, line = 2, cex=1.5, las=0)
+  mtext("d'", side=1, line = 3, cex=2.5, f=2)
+  mtext("Densidad posterior", side=2, line = 2, cex=2.1, las=0, f=2)
 
 ################ C:    
   soporte_c <- c(0,5.5)
   plot(soporte_c, axes=F, main="Experimento 1", ylab="", xlab="", xlim=c(-2,2), col='white')
   for(a in 1:k){
-    lines(density(c_a[,a]), lwd=1, col="dodgerblue2", ylab="", xlab="", xlim=c(-0.5,0.5), axes=F)
-    lines(density(c_b[,a]), lwd=1, col="darkorchid2", ylab="", xlab="", xlim=c(-0.5,0.5), axes=F)}  
-  lines(density(muCB), lwd=3, col="darkorchid4", lty=1)
-  lines(density(muCA), lwd=3, col="dodgerblue4", lty=1)
+    lines(density(c_a[,a]), lwd=2, col="dodgerblue2", ylab="", xlab="", xlim=c(-0.5,0.5), axes=F)
+    lines(density(c_b[,a]), lwd=2, col="darkorchid2", ylab="", xlab="", xlim=c(-0.5,0.5), axes=F)}  
+  lines(density(muCB), lwd=5, col="darkorchid4", lty=1)
+  lines(density(muCA), lwd=5, col="dodgerblue4", lty=1)
   axis(1)
   axis(2, labels=F, at=c(0,210))
-  mtext("Sesgo - C", side=1, line = 3, cex=1.5)
-  mtext("Densidad", side=2, line = 2, cex=1.5, las=0)  
+  mtext("C", side=1, line = 3, cex=2.5, f=2)
+  mtext("Densidad posterior", side=2, line = 2, cex=2.1, las=0, f=2) 
 
 ############## Theta Hits:
 soporte_t <- c(0,90)
@@ -182,15 +182,15 @@ par(cex.main = 1.5, mar = c(5, 6, 4, 5) + 0.1, mgp = c(3.5, 1, 0), cex.lab = 1.5
   soporte_d <- c(0,2.8)
   plot(soporte_d, axes=F, main="Experimento 2", ylab="", xlab="", xlim=c(-0.5,5), col='white')
   for(a in 1:k){
-    lines(density(d_a[,a]), lwd=1, col="dodgerblue2", ylab="", xlab="", xlim=c(-0.5,0.5), axes=F)
-    lines(density(d_b[,a]), lwd=1, col="darkorchid2", ylab="", xlab="", xlim=c(-0.5,0.5), axes=F)}  
-    lines(density(muDB), lwd=3, col="darkorchid4", lty=1)
-    lines(density(muDA), lwd=3, col="dodgerblue4", lty=1)
+    lines(density(d_a[,a]), lwd=2, col="dodgerblue2", ylab="", xlab="", xlim=c(-0.5,0.5), axes=F)
+    lines(density(d_b[,a]), lwd=2, col="darkorchid2", ylab="", xlab="", xlim=c(-0.5,0.5), axes=F)}  
+    lines(density(muDB), lwd=5, col="darkorchid4", lty=1)
+    lines(density(muDA), lwd=5, col="dodgerblue4", lty=1)
   axis(1)
   axis(2, labels=F, at=c(0,210))
   #mtext("Differences on Hit Rates", side=3, line = 0.2, cex=1.2, font=1)
-  mtext("D-Prima", side=1, line = 3, cex=1.5)
-  mtext("Densidad", side=2, line = 2, cex=1.5, las=0)
+  mtext("d'", side=1, line = 3, cex=2.5, f=2)
+  mtext("Densidad posterior", side=2, line = 2, cex=2.1, las=0, f=2) 
   
 
 ################ C:
@@ -198,14 +198,14 @@ par(cex.main = 1.5, mar = c(5, 6, 4, 5) + 0.1, mgp = c(3.5, 1, 0), cex.lab = 1.5
   
   plot(soporte_c, axes=F, main="Experimento 2", ylab="", xlab="", xlim=c(-2,2), ylim = c(0,6), col='white')
   for(a in 1:k){
-    lines(density(c_a[,a]), lwd=1, col="dodgerblue2", ylab="", xlab="", xlim=c(-0.5,0.5), axes=F)
-    lines(density(c_b[,a]), lwd=1, col="darkorchid2", ylab="", xlab="", xlim=c(-0.5,0.5), axes=F)}  
-  lines(density(muCB), lwd=3, col="darkorchid4", lty=1)
-  lines(density(muCA), lwd=3, col="dodgerblue4", lty=1)
+    lines(density(c_a[,a]), lwd=2, col="dodgerblue2", ylab="", xlab="", xlim=c(-0.5,0.5), axes=F)
+    lines(density(c_b[,a]), lwd=2, col="darkorchid2", ylab="", xlab="", xlim=c(-0.5,0.5), axes=F)}  
+  lines(density(muCB), lwd=5, col="darkorchid4", lty=1)
+  lines(density(muCA), lwd=5, col="dodgerblue4", lty=1)
   axis(1)
   axis(2, labels=F, at=c(0,250))
-  mtext("Sesgo - C", side=1, line = 3, cex=1.5)
-  mtext("Densidad", side=2, line = 2, cex=1.5, las=0)  
+  mtext("C", side=1, line = 3, cex=2.5, f=2)
+  mtext("Densidad posterior", side=2, line = 2, cex=2.1, las=0, f=2) 
   
 ################ Theta Hits:
   soporte_t <- c(0,50)
