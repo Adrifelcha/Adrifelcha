@@ -27,6 +27,7 @@ La SDT constituye un modelo estadístico que describe el problema al que se enfr
 
 La generalizabilidad del modelo de la SDT al estudio de distintos fenómenos y tareas de detección es posible gracias a lo abstracto de sus elementos: la señal que interesa detectar puede ser desde un estímulo concreto -una luz o un tono- hasta la pertenencia a una categoría -una enfermedad o amenaza- y el ruido es simplemente todo elemento presente en el entorno de la tarea que no sea la señal (Stainslaw y Todorov, \citeyear{Stainslaw1999}; McNicol, \citeyear{McNicol1}).\\ 
 
+\pagebreak
 \subsection{Supuestos generales del modelo}
 
 %La TDS distingue dos grandes factores en la emisión de un juicio o respuesta: La discriminabilidad y el sesgo.
@@ -48,7 +49,7 @@ La noción de variabilidad ha sido uno de los principales motores para el desarr
 En el marco de la SDT, la variabilidad se considera una propiedad intrínseca de las señales a detectar bajo el supuesto de que ningún estímulo se percibe o se presenta de manera idéntica en cada exposición (Tanner y Swets, \citeyear{Tanner1954}). Por ejemplo, imaginemos los siguientes casos: \\
 
 \begin{itemize}
-\item Una persona es expuesta a un mismo tono con intensidad $X$ en cien ocasiones distintas y tras cada presentación, asigna un valor a la intensidad percibida. El valor reportado en cada ensayo será una mezcla entre el valor real del tono y un error aleatorio. Como se muestra en la Figura~\ref{fig:Senal_percepcion}, es muy probable que el valor percibido y reportado coincida con -o se acerque bastante a- su valor real (la media de la distribución, $\mu$, señalada con una línea vertical roja), pero también habrá ensayos en el valor percibido caiga por encima o por debajo de su valor real con cierta dispersión (las colas de la distribución). Existe variabilidad en la forma en que se perciben los estímulos.\\
+\item Una persona es expuesta a un mismo tono con intensidad $X$ en cien ocasiones distintas y tras cada presentación, asigna un valor a la intensidad percibida. El valor reportado en cada ensayo será una mezcla entre el valor real del tono y un error aleatorio. Como se muestra en la Figura~\ref{fig:Senal_percepcion}, es muy probable que el valor percibido y reportado coincida con -o se acerque bastante a- su valor real (la media de la distribución, $\mu$, señalada con una línea vertical roja), pero también habrá ensayos en el valor percibido caiga por encima o por debajo de su valor real con cierta dispersión (las colas de la distribución). Existe variabilidad en la forma en que se perciben los estímulos.
 
 \begin{figure}[h]
 \centering
@@ -58,7 +59,7 @@ En el marco de la SDT, la variabilidad se considera una propiedad intrínseca de
 \label{fig:Senal_percepcion}
 \end{figure}
 
-\item Un psicólogo aplica una prueba clínica \textit{A} para evaluar si su paciente tiene depresión. Por lo general, las pruebas clínicas arrojan un puntaje \textit{p} que, de acuerdo a su correspondencia con el rango de puntajes típicamente obtenidos por personas que tienen cierta condición, sugieren el diagnóstico a emitir. La Figura~\ref{fig:Senal_presentacion}, ~\ref{fig:Senal_presentacion2} presenta la idea central de este ejemplo: no todas las personas con depresión obtienen exactamente el mismo puntaje, sino que dentro de la serie de posibles puntajes a obtener en la prueba (todos los valores en el eje de las x), las personas con depresión suelen obtener resultados dentro de un rango específico con cierta probabilidad (la distribución azul), de tal suerte que hay puntajes que se asocian con dicha condición con mayor probabilidad (siendo la media de la distribución, $\mu$, señalada en rojo la más probable), que otros. También existe variabilidad en la presentación de ciertos estímulos en el entorno.\\
+\item Un psicólogo aplica una prueba clínica \textit{A} para evaluar si su paciente tiene depresión. Por lo general, las pruebas clínicas arrojan un puntaje \textit{p} que, de acuerdo a su correspondencia con el rango de puntajes típicamente obtenidos por personas que tienen cierta condición, sugieren el diagnóstico a emitir. La Figura~\ref{fig:Senal_presentacion}, presenta la idea central de este ejemplo: no todas las personas con depresión obtienen exactamente el mismo puntaje, sino que dentro de la serie de posibles puntajes a obtener en la prueba (todos los valores en el eje de las x), las personas con depresión suelen obtener resultados dentro de un rango específico con cierta probabilidad (la distribución azul), de tal suerte que hay puntajes que se asocian con dicha condición con mayor probabilidad (siendo la media de la distribución, $\mu$, señalada en rojo la más probable), que otros. También existe variabilidad en la presentación de ciertos estímulos en el entorno.\\
 \end{itemize}
 
 \begin{figure}[h]
@@ -70,8 +71,6 @@ En el marco de la SDT, la variabilidad se considera una propiedad intrínseca de
 \end{figure}
 
 En general, las Figuras~\ref{fig:Senal_percepcion} y \ref{fig:Senal_presentacion} ilustran un elemento fundamental en la forma en que la SDT concibe la detección de señales como un problema de adaptabilidad: la variabilidad es intrínseca a la percepción de los estímulos, ya sea porque nuestros sistemas sensoriales no los capturan igual en cada presentación, o porque los estímulos no se nos presentan exactamente de la misma forma en cada ocasión. Es otras palabras, los estímulos en cuya detección están interesados los organismos (las señales) son intrínsecamente variables (Tanner y Swets, \citeyear{Tanner1954}).\\
-
-\pagebreak
 
     \underline{b) La variabilidad en el Entorno: Ruido}\\
 
@@ -88,7 +87,7 @@ Además del hecho de que existe variabilidad implícita en las señales a detect
 
 Retomando el ejemplo ilustrado en la Figura~\ref{fig:Senal_presentacion} sobre la variabilidad en los puntajes obtenidos en una prueba clínica por personas con depresión, en la Figura~\ref{fig:Noise} se agrega un segundo punto clave en la concepción de la detección de señales como un problema de decisión: también existe variabilidad en los puntajes obtenidos por las personas que responden la prueba sin tener dicha condición, con su propia distribución de probabilidad (en color negro). Nótese que ahora existe un sub-rango de valores donde las dos distribuciones se sobrelapan y recordemos que el objetivo de aplicar estas pruebas es detectar -\textit{diagnosticar}- la depresión -la señal- con base en el resultado obtenido por el paciente evaluado, ¿Cuál sería el diagnóstico pertinente para una persona que obtuvo un puntaje dentro del área de sobrelape? De acuerdo con la SDT, la forma ideal de resolver este conflicto -asumiendo que se conocen las distribuciones que subyacen al desempeño de las personas con y sin depresión- es optar por el juicio de elección \texit{más probable} a la luz de los datos (es decir, el que tenga una mayor densidad de probabilidad a la altura del puntaje registrado). El problema es claro: en tanto que la señal y el ruido pueden llegar a producir la misma evidencia, los sistemas detectores no pueden tener certeza absoluta sobre el juicio de detección a emitir y en su lugar, deben elegir aquel que les permita optimizar su comportamiento.\\ 
 
-En el marco de la SDT, la discriminabilidad en las tareas de detección se define mediante la proporción de evidencia que comparten la señal y el ruido (es decir, \textit{'¿qué tan probable es que la señal y el ruido se confundan?'}), y en términos de la representación gráfica propuesta por la SDT, implica una evaluación de qué tan grande es el área de sobrelape entre las distribuciones, volviéndose esta el reflejo directo de la incertidumbre contenida en la tarea (\textit{'¿Qué tan discriminable -diferente- es la señal respecto del ruido?'}).\\
+En el marco de la SDT, la discriminabilidad en las tareas de detección se define mediante la proporción de evidencia que comparten la señal y el ruido (es decir, \textit{'¿qué tan probable es que la señal y el ruido se confundan?'}), y en términos de la representación gráfica propuesta por la SDT, implica una evaluación de qué tan grande es el área de sobrelape entre las distribuciones, volviéndose esta el reflejo directo de la incertidumbre contenida en la tarea (\textit{'¿Qué tan discriminable -diferente- es la señal respecto del ruido?'}).
 
 \begin{figure}[h]
 \centering
@@ -113,7 +112,7 @@ Como ejemplo, tomemos el caso de un médico que trata de decidir si los resultad
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.75\textwidth]{Figures/Matriz_Outputs} 
+\includegraphics[width=0.65\textwidth]{Figures/Matriz_Outputs} 
 %\decoRule
 \caption[Matriz de contingencia: Resultados a obtener en una tarea de detección]{Los cuatro posibles resultados a obtener en una tarea de detección de señales, de acuerdo con la correspondencia entre el juicio emitido y el estado del mundo.}
 \label{fig:Mat_Output}
@@ -121,17 +120,17 @@ Como ejemplo, tomemos el caso de un médico que trata de decidir si los resultad
 
 De acuerdo con la correspondencia entre el \textit{estado real del mundo} -la presencia o ausencia de la señal- y el juicio emitido por el sistema detector, la SDT distingue entre dos tipos de aciertos y errores, ilustrados en la Figura~\ref{fig:Mat_Output} con una Matriz de contingencia. Cuando la señal está presente el organismo puede detectarla adecuadamente (un \textbf{Hit}) o dejarla pasar (una \textbf{Omisión}); y si por el contrario, la señal no está presente, el organismo puede acertar al diagnosticar su ausencia (un \textbf{Rechazo correcto}) o confundir el ruido con la señal, (una \textbf{Falsa Alarma}).\\
 
-La SDT asume que el organismo fija un criterio de elección para determinar a partir de cuánta evidencia va a juzgar la presencia de la señal, con base en la informació que posee sobre la probabilidad de que ésta ocurra y las consecuencias comprometidas en su detección (Tanner y Swets, \citeyear{Tanner1954}; Swets y cols., \citeyear{Swets1961}; Nevin, \citeyear{Nevin1969}). En términos de la representación gráfica del modelo, el criterio se concibe como una línea vertical que atraviesa las distribuciones de ruido y señal (como se ilustra en color rojo en la Figura~\ref{fig:Graf_Outputs}), para definir a partir de cuánta evidencia se emitirá un juicio de detección afirmativo.\\
-
-La Figura~\ref{fig:Graf_Outputs} presenta la representación final de los problemas de detección bajo el marco de la SDT: se tienen dos distribuciones de probabilidad que representan la variabilidad con que la señal y el ruido ocurren en el ambiente y una línea roja que señala el criterio que el sistema detector va a utilizar para emitir sus juicios de detección. Como se ilustra con distintos colores en la figura, la localización del criterio determina la probabilidad con que el organismo podría incurrir en cada uno de los resultados expuestos previamente en la figura~\ref{fig:Mat_Output}.\\
+La SDT asume que el organismo fija un criterio de elección para determinar a partir de cuánta evidencia va a juzgar la presencia de la señal, con base en la informació que posee sobre la probabilidad de que ésta ocurra y las consecuencias comprometidas en su detección (Tanner y Swets, \citeyear{Tanner1954}; Swets y cols., \citeyear{Swets1961}; Nevin, \citeyear{Nevin1969}). En términos de la representación gráfica del modelo, el criterio se concibe como una línea vertical que atraviesa las distribuciones de ruido y señal (como se ilustra en color rojo en la Figura~\ref{fig:Graf_Outputs}), para definir a partir de cuánta evidencia se emitirá un juicio de detección afirmativo.
 
 \begin{figure}[bh]
 \centering
 \includegraphics[width=0.8\textwidth]{Figures/SDT_OutcomesR} 
 %\decoRule
-\caption[Representación gráfica de las tareas de detección y los posibles resultados a obtener]{Representación gráfica del problema de detección de señales de acuerdo con la SDT: existen dos distribuciones de probabilidad que describen la variabilidad con que la señal y el ruido se presentan en el entorno, con un área de traslape que refleja la incertidumbre en la tarea. El criterio de elección fijado por el organismo (línea roja) determina a partir de cuánta evidencia se juzgará la presencia de la señal y define la probabilidad de cometer un acierto o error (en colores).}
+\caption[Representación gráfica de las tareas de detección y los posibles resultados a obtener]{Representación gráfica de los problemas de detección de acuerdo con la SDT: existen distribuciones de probabilidad que describen la variabilidad con que las señales y el ruido se presentan, con un área de traslape que refleja la incertidumbre en la tarea. El criterio de elección fijado por el organismo (línea roja) determina a partir de cuánta evidencia se juzgará la presencia de la señal y cuál es la probabilidad de cometer un acierto o error (en colores).}
 \label{fig:Graf_Outputs}
 \end{figure}
+
+La Figura~\ref{fig:Graf_Outputs} presenta la representación final de los problemas de detección bajo el marco de la SDT: se tienen dos distribuciones de probabilidad que representan la variabilidad con que la señal y el ruido ocurren en el ambiente y una línea roja que señala el criterio que el sistema detector va a utilizar para emitir sus juicios de detección. Como se ilustra con distintos colores en la figura, la localización del criterio determina la probabilidad con que el organismo podría incurrir en cada uno de los resultados expuestos previamente en la figura~\ref{fig:Mat_Output}.\\
 
 De acuerdo a la estructura de la tarea y al conocimiento que los organismo tengan sobre ella, es posible que se desarrolle un \textit{sesgo} de elección que lleve a favorecer -\textit{hacer más propensa}- la emisión de un juicio de detección particular (Nevin, \citeyear{Nevin1969}). De esta forma, la localización del criterio sobre el eje de evidencia es un reflejo directo de este sesgo, que puede variar en función de dos grandes factores:\\
 
@@ -143,7 +142,7 @@ Imaginemos el caso de un conejo que tiene que decidir, tan rápido como pueda, s
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.80\textwidth]{Figures/Matriz_Pagos} 
+\includegraphics[width=0.7\textwidth]{Figures/Matriz_Pagos} 
 %\decoRule
 \caption[Matriz de Pagos: Consecuencias comprometidas en una tarea de detección hipotética (ejemplo)]{Matriz de pagos con los costos y ganancias comprometidos en la tarea de detectar un depredador.}
 \label{fig:Mat_Pagos}
@@ -207,7 +206,7 @@ Los parámetros contemplados por el modelo evalúan el desempeño de los partici
 
 La localización del criterio sobre el eje de decisión se puede computar de manera directa a partir de la tasa registrada de rechazos correctos, tomando como referencia la media asignada a la distribución de ruido ($0$). \\
 
-El parámetro $k$ representa la localización del criterio sobre el eje de evidencia en unidades de \textit{desviación estándar} (Tanner y Swets, \citeyear{Tanner1954}). Su cómputo requiere interpretar la tasa de Falsas Alarmas como reflejo de la probabilidad acumulada -el área bajo la curva- por encima del criterio en la distribución de Ruido, siendo la tasa de Rechazos Correctos su complemento. Dado que la distribucion de ruido tiene media en 0 y desviación estándar de 1, la tasa de Rechazos Correctos (ó $1 - Tasa$ $de$ $Falsas$ $Alarmas$) puede ser transformada en \textit{Puntajes Z} para conocer la localización del criterio de elección sobre la distribución de ruido. Esto se realiza a partir del uso de la funcón matemática $\phi^{-1}$ (\textit{'phi inversa'}), que permite estimar conocer cuál es el puntaje Z que corresponde con el punto donde se ha acumulado cierta densidad de probabilidad en una distribución normal estándar, (Stainslaw y Todorov, \citeyear{Stainslaw1999}).\\
+El parámetro $k$ representa la localización del criterio sobre el eje de evidencia en unidades de \textit{desviación estándar} (Tanner y Swets, \citeyear{Tanner1954}). Su cómputo requiere interpretar la tasa de Falsas Alarmas como reflejo de la probabilidad acumulada -el área bajo la curva- por encima del criterio en la distribución de Ruido, siendo la tasa de Rechazos Correctos su complemento. Dado que la distribucion de ruido tiene media en 0 y desviación estándar de 1, la tasa de Rechazos Correctos (ó $1 - Tasa$ $de$ $Falsas$ $Alarmas$) puede ser transformada en \textit{Puntajes Z} para conocer la localización del criterio de elección sobre la distribución de ruido. Esto se realiza a partir del uso de la funcón matemática $\phi^{-1}$ (\textit{'phi inversa'}), que permite estimar conocer cuál es el puntaje Z que corresponde con el punto donde se ha acumulado cierta densidad de probabilidad en una distribución normal estándar, (Stainslaw y Todorov, \citeyear{Stainslaw1999}).
 
 \begin{figure}[h]
 \centering
@@ -217,7 +216,7 @@ El parámetro $k$ representa la localización del criterio sobre el eje de evide
 \label{fig:Graf_Criterio}
 \end{figure}
 
-La Figura~\ref{fig:Graf_Criterio} ilustra la estimación de $k$ a partir de las tasas de Falsas Alarmas y Rechazos Correctos. Al transformar esta última en Puntajes Z, se puede establecer la ubicación del criterio respecto del 0 de referencia planteado por la media de la distribución de ruido (Stainslaw y Todorov, \citeyear{Stainslaw1999}). Es decir:\\
+La Figura~\ref{fig:Graf_Criterio} ilustra la estimación de $k$ a partir de las tasas de Falsas Alarmas y Rechazos Correctos. Al transformar esta última en Puntajes Z, se puede establecer la ubicación del criterio respecto del 0 de referencia planteado por la media de la distribución de ruido (Stainslaw y Todorov, \citeyear{Stainslaw1999}). Es decir:
 
 \begin{center}
 $k = PuntajeZ(Tasa$ $de$ $Rechazos$ $Correctos)$\\
@@ -247,7 +246,7 @@ La Figura~\ref{fig:Graf_Discrim} ilustra la secuencia lógica de pasos que guía
 
 \item En el panel intermedio, se computa el puntaje Z que corresponde a la tasa de Omisiones ($1- Tasa$ $de$ $Hits$; señalada en color púrpura). En este caso, como el criterio cruza la distribución de señal por debajo de su media, se obtiene un puntaje Z negativo.\\
 
-\item Finalmente, en el panel se ilustra el cómputo de $d'$: la distancia entre el criterio y cada una de las medias de las distribuciones de ruido y señal se suma. Es decir:\\
+\item Finalmente, en el panel se ilustra el cómputo de $d'$: la distancia entre el criterio y cada una de las medias de las distribuciones de ruido y señal se suma. Es decir:
 
 \begin{center}
 $d' = PuntajeZ(1 - Tasa$ $de$ $Falsas$ $Alarmas) - PuntajeZ(1 - Tasa$ $de$ $Hits)$\\
@@ -265,7 +264,7 @@ La SDT cuenta con dos parámetros que permiten evaluar la magnitud y la direcci�
 \begin{itemize}
 \item \underline{$\beta$}\\
 
-El parámetro más comúnmente reportado en la literatura es Beta ($\beta$), que describe la razón entre la densidad de probabilidad de las distribuciones de señal y ruido a la altura del criterio: \\
+El parámetro más comúnmente reportado en la literatura es Beta ($\beta$), que describe la razón entre la densidad de probabilidad de las distribuciones de señal y ruido a la altura del criterio: 
 
 \begin{center}
 $\beta = \frac{p(Signal)}{p(Noise)}$ \\
@@ -275,7 +274,7 @@ En otras palabras, $\beta$ responde a la pregunta \textit{'¿Cuántas veces es m
 
 \item \underline{$C$}\\
 
-Un segundo parámetro para computar el sesgo es $C$, que representa la distancia entre la localización del criterio utilizado por el sistema evaluado y el punto de intersección entre las distribuciones ($\frac{d'}{2}$):\\
+Un segundo parámetro para computar el sesgo es $C$, que representa la distancia entre la localización del criterio utilizado por el sistema evaluado y el punto de intersección entre las distribuciones ($\frac{d'}{2}$):
 
 \begin{center}
 $C =  K - \frac{d'}{2}$ \\
@@ -409,7 +408,6 @@ El protocolo de Escala de Confianza permite recabar información sobre el uso de
 
 Idealmente, se espera que el participante utilice todas las opciones de respuesta incluídas en la Escala de Confianza. Esto se puede conseguir de manera explícita o implícita, solicitando a los participantes que lo hagan así, o bien, modificando el número de puntajes incluídos en la Escala. En general, se recomienda que la Escala esté compuesta por un número par de opciones de respuestas que oscile entre 4 y 10 (McNicol, \citeyear{McNicol2, McNicol5}). Esto con el fin de evitar que los participantes elijan la opción intermedia cuando se sientan inseguros sobre su respuesta.\\
 
-\pagebreak
 \item \underline{Tarea de Elección forzada}\\
 
 Existe un tercer protocolo bajo el cual se presentan las tareas de detección, identificado como \textbf{tareas de Elección forzada entre $m$ alternativas}, donde se presentan simultáneamente $m - 1$ estímulos que contienen sólo ruido y $1$ con señal, y la tarea del participante consiste en identificar la Señal dentro del conjunto de estímulos que se le presentan (Stainslaw y Todorov, \citeyear{Stainslaw1999}). En general, se asume que cada estímulo presentado contiene cierto valor de evidencia -cierta ubicación en el eje sobre el cual se despliegan las distribuciones- que el participante compara para elegir aquel que tenga un valor mayor -de acuerdo con el supuesto que establece que, en general, los valores de la distribución Señal caen por encima del Ruido- (McNicol, \citeyear{McNicol2}).\\
