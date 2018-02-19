@@ -33,5 +33,5 @@
 \contentsline {subsection}{\numberline {4.2.2}Diferencias en las Tasas de Hits y Falsas Alarmas}{92}{subsection.101}
 \contentsline {subsection}{\numberline {4.2.3}Diferencias entre los Puntajes de Confianza asignados por clase}{100}{subsection.108}
 \contentsline {subsection}{\numberline {4.2.4}R\IeC {\'e}plica de controles reportados en la literatura}{106}{subsection.115}
-\contentsline {chapter}{\numberline {5}Discusi\IeC {\'o}n}{111}{chapter.122}
-\contentsline {chapter}{\numberline {6}Conclusi\IeC {\'o}n}{117}{chapter.126}
+\contentsline {chapter}{\numberline {5}Discusi\IeC {\'o}n}{111}{chapter.121}
+\contentsline {chapter}{\numberline {6}Conclusi\IeC {\'o}n}{117}{chapter.125}
