@@ -51,18 +51,18 @@ Los experimentos realizados estuvieron compuestos de 640 ensayos, a lo largo de 
 \begin{itemize}
 	\item Emisión de respuestas 'Sí/No' a lo largo del experimento.
 
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{Figures/Response_Exp2_P1} 
+\decoRule
+\caption[Explorando datos individuales (ejemplo): Respuesta emitida por cada ensayo a la tarea binaria]{Respuestas Sí/No emitidas en los 640 ensayos del Experimento 2 por el Participante 1. En la gráfica se aprecia un tren de respuesta, que se extiende a lo largo de los primeros 80 ensayos.}
+\label{fig:Resp_E2_P1}
+\end{figure}
+
 Primero se graficaron las respuestas emitidas durante la tarea de detección binaria ('Sí, los círculos son iguales' o 'No, los círculos son diferentes'), ensayo a ensayo. Con estos gráficos se buscó descartar la presentación de trenes de respuesta lo suficientemente largos como para sugerir, dada la aleatoriedad con que los estímulos fueron presentados por el programa, una preferencia en el participante a responder a una tecla en particular, con independencia del estímulo a evaluar en pantalla.\\
 
 %Participante representativo: Respuestas 'No' por 80 ensayos
 La Figura~\ref{fig:Resp_E2_P1} presenta un ejemplo particularmente ilustrativo de la importancia que tiene revisar los datos antes de realizar el análisis estadístico. El gráfico muestra las respuestas emitidas en la tarea de detección binaria por el Participante 1 del Experimento 2, quien pasó los primeros 80 ensayos del experimento presionando persistentemente la tecla de respuesta 'No'. Este tren de respuesta fue considerado lo suficientemente largo como para cuestionar la atención con que el Participante 1 estuvo respondiendo a la tarea.\\ 
-
-\begin{figure}[th]
-\centering
-\includegraphics[width=0.80\textwidth]{Figures/Response_Exp2_P1} 
-%\decoRule
-\caption[Explorando datos individuales (ejemplo): Respuesta emitida por cada ensayo a la tarea binaria]{Respuestas Sí/No emitidas en los 640 ensayos del Experimento 2 por el Participante 1. En la gráfica se aprecia un tren de respuesta, que se extiende a lo largo de los primeros 80 ensayos.}
-\label{fig:Resp_E2_P1}
-\end{figure}
 
 %Las gráficas correspondientes al resto de los participantes en los Experimentos 1 y 2, se muestran en las Figuras~\ref{fig:Response_P1} y \ref{fig:Response_E2}, respectivamente.\\
 
@@ -70,32 +70,34 @@ La Figura~\ref{fig:Resp_E2_P1} presenta un ejemplo particularmente ilustrativo d
 
 Como paso siguiente, se añadieron indicadores que señalaran las características de los estímulos presentados en cada ensayo -es decir, si se trataba de una Señal o Ruido, o si se trataba de un estímulo de la clase Fácil o Difícil-.\\ 
 
-Retomando el caso del Participante 1 del Experimento 2 presentado en la Figura~\ref{fig:Resp_E2_P1}, la Figura~\ref{fig:BiasResp_E1_P1} permite evaluar la posibilidad de que las respuestas registradas estuvieran relacionadas con los estímulos presentados en pantalla, (por ejemplo, en el improbable -pero posible- caso de que se le hubiera presentado una gran proporción de estímulos con Ruido durante los primeros 80 ensayos del experimento). De acuerdo con esta gráfica, parece ser que el tren de 80 respuestas 'No' consecutivas se mantuvo con independencia del tipo de estímulo presentado. Con base en ello, se decidió eliminar a dicho participante de la muestra a analizar, al encontrarse evidencia suficiente para cuestionar la atención con que respondió a la tarea.\\
-
 \begin{figure}[th]
 \centering
 \includegraphics[width=0.80\textwidth]{Figures/BiasResp_Exp2_P1} 
-%\decoRule
+\decoRule
 \caption[Explorando datos individuales (ejemplo): Relación entre la respuesta emitida y el tipo de ensayo]{Respuestas registradas por el Participante 1 en cada ensayo del Experimento 2, identificando con diferentes colores el tipo de estímulo que le fue mostrado en cada ocasión. En el panel superior se señala con colores azul y violeta si el estímulo presentado pertenecía a la clase A o B, respectivamente, y en el panel inferior, si se trataba de una Señal o Ruido con los colores verde y rojo, respectivamente.}
 \label{fig:BiasResp_E1_P1}
 \end{figure}
+
+
+Retomando el caso del Participante 1 del Experimento 2 presentado en la Figura~\ref{fig:Resp_E2_P1}, la Figura~\ref{fig:BiasResp_E1_P1} permite evaluar la posibilidad de que las respuestas registradas estuvieran relacionadas con los estímulos presentados en pantalla, (por ejemplo, en el improbable -pero posible- caso de que se le hubiera presentado una gran proporción de estímulos con Ruido durante los primeros 80 ensayos del experimento). De acuerdo con esta gráfica, parece ser que el tren de 80 respuestas 'No' consecutivas se mantuvo con independencia del tipo de estímulo presentado. Con base en ello, se decidió eliminar a dicho participante de la muestra a analizar, al encontrarse evidencia suficiente para cuestionar la atención con que respondió a la tarea.\\
 
 %Las Figuras~\ref{fig:BiasResp_E1} y () muestran las gráficas correspondientes al resto de los participantes en el Experimento 1 y 2, respectivamente.\\
 
 	\item Asignación de puntajes de confianza, (\textit{'1'},\textit{'2'} ó \textit{'3'}).
 
-En la segunda fase del problema de detección presentado en cada ensayo, los participantes tenían que elegir entre tres opciones de respuesta (teclas 1, 2 y 3) para señalar \textit{cuánta} confianza tenían sobre la respuesta recién emitida (\textit{'poco seguro'}, \textit{'más o menos seguro'} o \textit{'muy seguro'}, respectivamente). Las respuestas fueron registradas por el programa como parte de una Escala mayor (con valores del 1 al 6), que permite diferenciar entre la confianza de haber rechazado correctamente un estímulo con Ruido (e.g. \textit{'1, estoy muy seguro de que los círculos eran diferentes'}) y la confianza de haber identificado correctamente un estímulo con Señal (e.g \textit{'6, estoy muy seguro de que los círculos son iguales'}), asignando los valores intermedios (\textit{3} y \textit{4}) a los puntajes asignados para señalar una confianza baja en la respuesta emitida (e.g. \textit{'3, poco seguro de que los círculos eran diferentes'} y \textit{'4, poco seguro de que los círculos eran iguales'}).\\
-
-Tal y como se hizo con la tarea de detección binaria, se graficaron los puntajes de confianza registrados por los participantes en cada uno de los 640 ensayos que conformaron cada experimento. A manera de ejemplo, la Figura~\ref{fig:Rating_E2_P4} muestra los puntajes emitidos por el Participante 15 del Experimento 2 a lo largo de la tarea. Este participante, de acuerdo con lo que se esperaría encontrar, hizo uso de las tres teclas de respuesta, registradas de acuerdo a su correspondencia con la respuesta dada a la tarea binaria.\\ 
- 
 \begin{figure}[th]
 \centering
 \includegraphics[width=0.80\textwidth]{Figures/Rating_Exp2_P15} 
-%\decoRule
+\decoRule
 \caption[Explorando datos individuales (ejemplo): Puntaje de confianza emitido por cada ensayo]{Puntajes de confianza asignados por el Participante 15 del Experimento 2 a sus respuestas emitidas durante la tarea binaria en cada ensayo. El panel superior muestran los primeros 320 ensayos del experimento y el panel inferior, los 320 restantes.}
 \label{fig:Rating_E2_P4}
 \end{figure}
 
+
+En la segunda fase del problema de detección presentado en cada ensayo, los participantes tenían que elegir entre tres opciones de respuesta (teclas 1, 2 y 3) para señalar \textit{cuánta} confianza tenían sobre la respuesta recién emitida (\textit{'poco seguro'}, \textit{'más o menos seguro'} o \textit{'muy seguro'}, respectivamente). Las respuestas fueron registradas por el programa como parte de una Escala mayor (con valores del 1 al 6), que permite diferenciar entre la confianza de haber rechazado correctamente un estímulo con Ruido (e.g. \textit{'1, estoy muy seguro de que los círculos eran diferentes'}) y la confianza de haber identificado correctamente un estímulo con Señal (e.g \textit{'6, estoy muy seguro de que los círculos son iguales'}), asignando los valores intermedios (\textit{3} y \textit{4}) a los puntajes asignados para señalar una confianza baja en la respuesta emitida (e.g. \textit{'3, poco seguro de que los círculos eran diferentes'} y \textit{'4, poco seguro de que los círculos eran iguales'}).\\
+
+Tal y como se hizo con la tarea de detección binaria, se graficaron los puntajes de confianza registrados por los participantes en cada uno de los 640 ensayos que conformaron cada experimento. A manera de ejemplo, la Figura~\ref{fig:Rating_E2_P4} muestra los puntajes emitidos por el Participante 15 del Experimento 2 a lo largo de la tarea. Este participante, de acuerdo con lo que se esperaría encontrar, hizo uso de las tres teclas de respuesta, registradas de acuerdo a su correspondencia con la respuesta dada a la tarea binaria.\\ 
+ 
 %El registro ensayo a ensayo de los puntajes de confianza asignados por el resto de los participantes en los Experimentos 1 y 2 se muestran en las Figuras~\ref{fig:Rating_E1} y \ref{fig:Rating_E2}, respectivamente.\\
 
 \end{itemize}
@@ -124,7 +126,7 @@ La Figura~\ref{fig:Success_E2_P14} muestra como ejemplo el desempeño del Partic
 \centering
 \includegraphics[width=0.60\textwidth]{Figures/SuccessCumulative_Exp2_P14} \\
 \includegraphics[width=0.80\textwidth]{Figures/Success_Exp2_P14}
-%\decoRule
+\decoRule
 \caption[Explorando datos individuales (ejemplo): Aciertos y errores cometidos en cada ensayo]{Aciertos y errores cometidos por el Participante 14 del Experimento 2 a lo largo de la tarea. En el panel superior se muestra el registro acumulativo de éstos y en los paneles inferiores, la clasificación ensayo a ensayo de las respuestas emitidas por el participante como Acierto o Error.}
 \label{fig:Success_E2_P14}
 \end{figure}
@@ -139,7 +141,7 @@ Para tener más información sobre los aciertos y errores cometidos, se realizar
 \begin{figure}[th]
 \centering
 \includegraphics[width=0.80\textwidth]{Figures/Outcome_Exp2_P14}
-%\decoRule
+\decoRule
 \caption[Explorando datos individuales (ejemplo): Tipos de acierto y error obtenidos en cada ensayo]{Resultados obtenidos por el Participante 14 del Experimento 2 a lo largo del Experimento. En el panel superior se muestra la frecuencia acumulada de los Hits, Falsas Alarmas, Rechazos y Omisiones cometidos durante el experimento, mientras que en el panel inferior se presenta el resultado obtenido en cada ensayo.}
 \label{fig:Outcome_E2_P14}
 \end{figure}
@@ -170,7 +172,7 @@ Una primer forma en que el color de las figuras pudo haber afectado el desempeñ
 \begin{figure}[th]
 \centering
 \includegraphics[width=0.85\textwidth]{Figures/Color_Exp1_P14}
-%\decoRule
+\decoRule
 \caption[Explorando datos individuales (ejemplo): Relación entre los Hits y las Falsas Alarmas registradas y el color de las figuras]{Número de Hits (panel izquierdo) y Falsas Alarmas (panel derecho) cometidas por el Participante 14 del Experimento 1 por cada uno de los colores en que se presentaron las figuras.}
 \label{fig:Color_E1_P14}
 \end{figure}
@@ -185,7 +187,7 @@ Una segunda forma en que el color de los estímulos pudo haber alterado el desem
 \begin{figure}[th]
 \centering
 \includegraphics[width=0.80\textwidth]{Figures/BiasColor_Exp1_P13}
-%\decoRule
+\decoRule
 \caption[Explorando datos individuales (ejemplo): Proporción de respuestas 'Sí' y 'No' registradas por cada color de figura]{Se muestra la proporción de respuestas 'Sí/No' emitidas por el Participante 14 del Experimento 1 por cada uno de los colores en que se presentaron los estímulos.}
 \label{fig:BiasCol_E1_P13}
 \end{figure}
@@ -297,6 +299,7 @@ donde nuevamente $P$ refiere al promedio de los puntajes de confianza asignados 
 $P(AN) < P(BN) < P(BS) < P(AS)$\\
 \end{center}
 
+\pagebreak
 \item \textbf{Réplica de controles reportados en la literatura.}\\
 
 Además de evaluar las diferencias encontradas en la ejecución de los participantes entre las clases de estímulos construidas, en la literatura del Efecto Espejo también suelen reportarse algunos análisis estadísticos de control que respalden la solidez del efecto encontrado, (Glanzer y Adams, \citeyear{Glanzer1990}). En el presente trabajo se revisó la posible correlación entre los tiempos de respuesta invertidos por los participantes y las clases de estímulos a comparar. De acuerdo con la literatura, desechar esta correlación es importante en tanto que permite descartar que los resultados encontrados sean producto de una diferencia en el tiempo invertido por parte de los participantes al responder a cada clase.\\
@@ -338,7 +341,7 @@ Para evaluar la validez de las clases de estímulos diseñadas y comprobar que e
 \begin{figure}[th]
 \centering
 \includegraphics[width=0.90\textwidth]{Figures/Diff_D_E1yE2}
-%\decoRule
+\decoRule
 \caption[Resultados: Comparación de las $d'$ computadas por cada clase de estímulos]{Por cada experimento, se presenta la comparación entre  las $d'$ estimadas individualmente por cada clase de estímulos. En ambos casos, se observa una tendencia sistemática a obtener niveles mayores de $d'$ en la clase A (figuras de Ebbinghaus con pocos círculos externos).}
 \label{fig:Diff_D}
 \end{figure}
@@ -366,6 +369,7 @@ Experimento 2 & 1.981 & 1.038 & -3.4131 & 0.0007 \\
 \end{tabular}
 \end{table}
 
+\pagebreak
 \textbf{Análisis Bayesiano: Modelo jerárquico bayesiano para evaluar las diferencias en $d'$}\\
 
 Partiendo del modelo bayesiano estándar que describe los supuestos realizados por la SDT, (Lee y Wagenmakers, \citeyear{LeeBook}), se desarrolló un modelo jerárquico bayesiano (identificado dentro del presente trabajo como \textbf{Modelo Delta}), que asume que los valores de $d'$ y de sesgo $c$ estimados por cada participante para cada clase de estímulos, provienen de distribuciones normales que regulan el desempeño dependiente de clase. Bajo este supuesto, el modelo utiliza las inferencias realizadas sobre los valores de $d'$ y $c$ individualmente, para estimar los parámetros que definen las distribuciones normales de donde se asume que éstos son extraidos (la media ($\mu$) y la desviación estándar ($\sigma$)). Finalmente, el modelo incorpora un parámetro $\delta$ que computa la diferencias entre las medias de $d'$ estimadas por cada clase.\\
@@ -373,7 +377,7 @@ Partiendo del modelo bayesiano estándar que describe los supuestos realizados p
 \begin{figure}[h]
 \centering
 \includegraphics[width=1\textwidth]{Figures/Model_Delta_Diff_D}
-%\decoRule
+\decoRule
 \caption[Modelo Delta: Modelo jerárquico bayesiano para evaluar las diferencias entre las medias de $d'$ de cada clase de estímulo]{Modelo jerárquico bayesiano que asume que la $d'$ y la medida de sesgo $c$ computada por cada participante para cada clase de estímulos proviene de una distribución normal. El modelo incorpora un parámetro ($\delta$) que estima la diferencia entre las medias de $d'$ estimadas por cada clase. Se utilizan priors no informativas.}
 \label{fig:Mod_Delta}
 \end{figure}
@@ -389,24 +393,20 @@ En el Modelo Delta, los datos conocidos -a partir de los cuales se hacen las inf
 
 \item \underline{Las tasas de Hits y Falsas Alarmas como una probabilidad oculta.}\\ 
 
-En la literatura clásica de SDT, las tasas de Hits y Falsas Alarmas son interpretadas directamente como el área de las distribuciones de ruido y señal que caen por encima del criterio, (Wickens, \citeyear{Wickens1}; Gescheider, \citeyear{Gescheider}; Stainslaw y Todorov, \citeyear{Stainslaw1999}. Sin embargo, al modelarse bayesianamente se asume que el número de Hits y Falsas Alarmas registradas ($H_ij$ y $Fa_ij$) son sólo el conteo de casos particulares encontrados dentro de dos conjuntos de observaciones ($s$ y $n$, respectivamente) con cierta probabilidad ($\theta^H_{ij}$ y $\theta^F_{ij}$). Es decir:\\
+En la literatura clásica de SDT, las tasas de Hits y Falsas Alarmas son interpretadas directamente como el área de las distribuciones de ruido y señal que caen por encima del criterio, (Wickens, \citeyear{Wickens1}; Gescheider, \citeyear{Gescheider}; Stainslaw y Todorov, \citeyear{Stainslaw1999}. Sin embargo, al modelarse bayesianamente se asume que el número de Hits y Falsas Alarmas registradas ($H_ij$ y $Fa_ij$) son sólo el conteo de casos particulares encontrados dentro de dos conjuntos de observaciones ($s$ y $n$, respectivamente) con cierta probabilidad ($\theta^H_{ij}$ y $\theta^F_{ij}$). Es decir:
 
 %Es decir, el modelo bayesiano propuesto asume que $H_ij$ y $Fa_ij$ representan el \textit{'número de éxitos'} extraídos con una probabilidad oculta ($\theta$) de un conjunto definido de observaciones, de acuerdo a una distribución binomial con parámetros $p=$ ($\theta^H_{ij}$ o $\theta^F_{ij}$) y $n=$ ($s$ o $n$). Es decir:\\
 
 \begin{center}
-$H_{ij}\sim \mathrm{Binomial}\bigl(\theta^H_{ij}, s)$
-y
-$F_{ij}\sim \mathrm{Binomial}\bigl(\theta^F_{ij}, n)$\\
+$H_{ij}\sim \mathrm{Binomial}\bigl(\theta^H_{ij}, s)$ \qquad y \qquad $F_{ij}\sim \mathrm{Binomial}\bigl(\theta^F_{ij}, n)$\\
 \end{center}
 
 \item \underline{Sesgo y Discriminabilidad}\\
 
-De acuerdo con la SDT, la probabilidad que determina las tasas registradas de Hits y Falsas Alarmas ($\theta^H_{ij}$ y $\theta^F_{ij}$) representan el área de las distribuciones de Señal y Ruido que caen por encima del criterio utilizado por cada participante. Es decir, dicha probabilidad se define por la función de densidad acumulada (\textbf{CDF}, por sus siglas en inglés, representada con el parámetro $\phi$) en una distribución normal estándar para la ubicación de $x$ que corresponde a la diferencia entre $\frac{1}{2}D_{ij}$ (en el caso de los Hits) o $\frac{1}{2}D_{ij}$ (en el caso de las Falsas Alarmas), y la medida de sesgo $C_{ij}$. Es decir:\\
+De acuerdo con la SDT, la probabilidad que determina las tasas registradas de Hits y Falsas Alarmas ($\theta^H_{ij}$ y $\theta^F_{ij}$) representan el área de las distribuciones de Señal y Ruido que caen por encima del criterio utilizado por cada participante. Es decir, dicha probabilidad se define por la función de densidad acumulada (\textbf{CDF}, por sus siglas en inglés, representada con el parámetro $\phi$) en una distribución normal estándar para la ubicación de $x$ que corresponde a la diferencia entre $\frac{1}{2}D_{ij}$ (en el caso de los Hits) o $\frac{1}{2}D_{ij}$ (en el caso de las Falsas Alarmas), y la medida de sesgo $C_{ij}$. Es decir:
 
 \begin{center}
-$\theta^H_{ij}\gets \phi (\frac{1}{2}D_{ij}-C_{ij})$
-y
-$\theta^F_{ij}\gets \phi (-\frac{1}{2}D_{ij}-C_{ij})$\\
+$\theta^H_{ij}\gets \phi (\frac{1}{2}D_{ij}-C_{ij})$ \qquad y \qquad $\theta^F_{ij}\gets \phi (-\frac{1}{2}D_{ij}-C_{ij})$\\
 \end{center}
 
 \item \underline{Plato de participantes}\\
@@ -417,22 +417,19 @@ En el caso del modelo desarrollado, el primer plato ($i$ $participantes$) señal
 
 \item \underline{Estructura jerárquica: distribuciones que generan datos individuales}\\
 
-Como ya se mencionó, la cualidad esencial del modelo desarrollado es que asume que los parámetros $D_{j}$ y $C_{j}$ computados por cada sujeto $i$ provienen de distribuciones normales que describen la discriminabilidad ($d'$) y el sesgo en las respuestas ($c$) asociado a cada clase de estímulos $j$. Dichas distribuciones están definidas por los parámetros $\mu^D_{j}$, $\mu^C_{j}$ y $\sigma^D_{j}$, $\sigma^C_{j}$, que el modelo infiere a partir de los datos ($H_ij$ y $Fa_ij$). Es decir:\\
+Como ya se mencionó, la cualidad esencial del modelo desarrollado es que asume que los parámetros $D_{j}$ y $C_{j}$ computados por cada sujeto $i$ provienen de distribuciones normales que describen la discriminabilidad ($d'$) y el sesgo en las respuestas ($c$) asociado a cada clase de estímulos $j$. Dichas distribuciones están definidas por los parámetros $\mu^D_{j}$, $\mu^C_{j}$ y $\sigma^D_{j}$, $\sigma^C_{j}$, que el modelo infiere a partir de los datos ($H_ij$ y $Fa_ij$). Es decir:
 
 \begin{center}
-$D_{ij}\sim \mathrm{Gaussian}\bigl(\mu^D_{j},\lambda^D_{j})$\\
-y\\
-$C_{ij}\sim \mathrm{Gaussian}\bigl(\mu^C_{j},\lambda^C_{j})$\\
+$D_{ij}\sim \mathrm{Gaussian}\bigl(\mu^D_{j},\lambda^D_{j})$ \qquad y \qquad $C_{ij}\sim \mathrm{Gaussian}\bigl(\mu^C_{j},\lambda^C_{j})$\\
 \end{center}
 
 \item \underline{Plato de Condición}\\
 
 Un segundo plato ($j$ $condiciones$) señala que el cómputo de los parámetros que definen las distribuciones normales asociadas al sesgo y la discriminabilidad, se va a realizar de manera independiente para cada clase de estímulo, a partir del par de Hits y Falsas Alarmas registrado para cada uno por cada participante ($plato$ $i$ $participantes$).\\
 
-\pagebreak
 \item \underline{Parámetro Delta}\\
 
-Finalmente, se incluye un parámetro Delta ($\delta$) para computar las diferencias entre las inferencias realizadas para el valor de cada media de $d'$ por clase de estímulos, ($\mu^D_{A}$ y $\mu^D_{B}$). Es decir:\\
+Finalmente, se incluye un parámetro Delta ($\delta$) para computar las diferencias entre las inferencias realizadas para el valor de cada media de $d'$ por clase de estímulos, ($\mu^D_{A}$ y $\mu^D_{B}$). Es decir:
 
 \begin{center}
 $\delta \gets \mu^D_{A}-\mu^D_{B}$\\
@@ -445,7 +442,7 @@ El parámetro $\delta$ está representado con un doble nodo para señalar que es
 \centering
 \includegraphics[width=0.7\textwidth]{Figures/MDelta_Joint_E1}\\
 \includegraphics[width=0.7\textwidth]{Figures/MDelta_Joint_E2}\\
-%\decoRule
+\decoRule
 \caption[Modelo Delta: Distribuciones posteriores marginales y conjuntas para $\mu d'$ y $\mu c$ por cada clase de estímulo]{Se presenta las densidades posteriores, conjuntas y marginales, computadas por el Modelo Delta para las medias de $d'$ y $c$ de cada clase, en cada experimento.}
 \label{fig:Delta_Joints}
 \end{figure}
@@ -461,23 +458,24 @@ En cuanto a las estimaciones individuales de los valores de $d'$ y $c$ computada
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.49\textwidth]{Figures/MDelta_Dprima_E1} \includegraphics[width=0.49\textwidth]{Figures/MDelta_Dprima_E2}\\
-%\decoRule
+\decoRule
 \caption[Modelo Delta: Densidades posteriores de los valores de $d'$ estimados individualmente, y en promedio, por cada experimento]{Densidades posteriores de los valores de $d'$ estimados por el Modelo Delta para cada clase de estímulo (A en azul y B en púrpura), individualmente (líneas delgadas) y en promedio (líneas gruesas)}
 \label{fig:Delta_Dprima}
 \end{figure}
 
 En la Figura~\ref{fig:Delta_Dprima}, que presenta las estimaciones individuales realizadas para los valores de $d'$ por cada clase de estímulos en cada Experimento realizado, se puede observar que las inferencias realizadas para $d'(A)$ tienden a ubicarse más hacia el extremo derecho -sugiriendo valores mayores de $d'$-, en tanto que en el extremo izquierdo se concentra la mayor parte de las distribuciones posteriores computadas para la clase B. La variabilidad que se encuentra entre las $d'$ estimadas individualmente es utilizada por el Modelo Delta para la estimación de $\mu^D$ por clase (señaladas con distribuciones más gruesas).\\
 
-Por su parte, en cuanto a los valores de $c$ estimados individualmente, la Figura~\ref{fig:Delta_Cbias} permite apreciar que en el Experimento 1, pese a la gran variabilidad en las estimaciones realizadas, no parece haber ninguna relación entre la clase de estímulo y los valores de $c$ estimados, tal y como se ilustra con el sobrelape total en que se presentan las densidades de probabilidad posterior estimadas para $\mu^C$ en cada grupo. Por otro lado, en el caso del Experimento 2 sí parece haber una ligera diferencia en términos del sesgo con que los participantes respondieron a cada clase de estímulos, siendo que en general se observan valores de $c$ por debajo de 0 (sesgo liberal) en los estímulos de clase A, mientras que en la clase B se observa la misma ausencia de sesgo ($c$ cercano a $0$) que en el Experimento 1.\\
-
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.49\textwidth]{Figures/MDelta_Cbias_E1}
  \includegraphics[width=0.49\textwidth]{Figures/MDelta_Cbias_E2}\\
-%\decoRule
+\decoRule
 \caption[Modelo Delta: Densidades posteriores de los valores de $c$ estimados individualmente y en promedio, por cada experimento]{Densidades posteriores obtenidas con el modelo Delta para los valores de $c$ por cada clase de estímulo (azul A, purpura B), estimados individualmente (líneas delgadas) y en promedio (líneas gruesas)}
 \label{fig:Delta_Cbias}
 \end{figure}
+
+
+Por su parte, en cuanto a los valores de $c$ estimados individualmente, la Figura~\ref{fig:Delta_Cbias} permite apreciar que en el Experimento 1, pese a la gran variabilidad en las estimaciones realizadas, no parece haber ninguna relación entre la clase de estímulo y los valores de $c$ estimados, tal y como se ilustra con el sobrelape total en que se presentan las densidades de probabilidad posterior estimadas para $\mu^C$ en cada grupo. Por otro lado, en el caso del Experimento 2 sí parece haber una ligera diferencia en términos del sesgo con que los participantes respondieron a cada clase de estímulos, siendo que en general se observan valores de $c$ por debajo de 0 (sesgo liberal) en los estímulos de clase A, mientras que en la clase B se observa la misma ausencia de sesgo ($c$ cercano a $0$) que en el Experimento 1.\\
 
 Finalmente, la Figura~\ref{fig:Delta} presenta la densidad posterior computada para los posibles valores del parámetro $\delta$, de acuerdo con las diferencias encontradas entre los valores de $\mu^D_A$ y $\mu^D_B$ estimados. Tal como se aprecia en la figura, a la luz de los datos registrados en los Experimentos realizados, es muy poco probable que la diferencia entre las $d'$ computadas por cada clase de estímulos sea 0 (\textit{el punto que representa la hipótesis 'no hay diferencias'}). De acuerdo con las gráficas presentadas, los picos de densidad se encuentran cerca de 1, sugiriendo que las media de $d'$ asociadas a cada clase de estíimulos difieren en alrededor de una unidad de desviación estándar.\\
 
@@ -485,7 +483,7 @@ Finalmente, la Figura~\ref{fig:Delta} presenta la densidad posterior computada p
 \centering
 \includegraphics[width=0.6\textwidth]{Figures/MDelta_DensidadDelta_E1}\\
 \includegraphics[width=0.6\textwidth]{Figures/MDelta_DensidadDelta_E2}\\
-%\decoRule
+\decoRule
 \caption[Modelo Delta: Densidad posterior de los valores estimados para el parámetro Delta en cada Experimento]{Densidad posterior computada en cada experimento respecto de los posibles valores de Delta, el parámetro que evalúa la diferencia entre las medias estimadas de $d'$ por cada clase de estímulos. En ambos experimentos, se observa una densidad posterior muy baja en el punto de 'no diferencias' (cuando $Delta=0$; punto rojo).} 
 \label{fig:Delta}
 \end{figure}
@@ -511,33 +509,31 @@ Como se mencionó en el Capítulo 1, la evidencia del Efecto Espejo reportada en
  
 \begin{center}
 $FA(A) < FA(B) < H(B) < H(A)$\\
-\end{center}
-\begin{center}
 donde $FA$ y $H$ señalan las tasas de Hits y Falsas Alarmas observadas durante la tarea en cada clase, (Glanzer y cols., \citeyear{Glanzer1993}).\\
 \end{center}
 
 Para evaluar la consistencia con que dicho patrón se presentó en los datos obtenidos en el presente estudio, se compararon los Hits y Falsas Alarmas registrados en cada una de las clases de estímulos por cada participante.\\
 
-Para explorar indivualmente dicha relación, se construyó una serie de gráficas de barras que permitieron apreciar visualmente los resultados obtenidos por cada participantes en cada clase de estímulos. Como un caso ejemplar, la Figura~\ref{fig:MirrorRate_E2_P4} muestra la frecuencia absoluta de Hits y Falsas Alarmas obtenidas por el Participante 4 del Experimento 2, para cada clase de estímulos construida, señalando en color azul la clase A y en púrpura, la clase B. Este participante presenta un caso ejemplar del patrón de respuestas identificado como Efecto Espejo.\\
-
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.60\textwidth]{Figures/MirrorRate_Exp2_P4}
-%\decoRule
+\decoRule
 \caption[Explorando datos individuales (ejemplo): Diferencias entre Hits y Falsas Alarmas registrados por clase de estímulo]{Número total de Hits y Falsas Alarmas cometidos por el Participante 4 del Experimento 2 en cada clase de estímulos, (clase A en azul y clase B en púrpura). Este participante presenta un patrón ejemplar del Efecto Espejo.}
 \label{fig:MirrorRate_E2_P4}
 \end{figure}
 
-Por su parte, la Figura~\ref{fig:Diff_Rate} presenta la comparación directa, participante por participante, entre las tasas de Hits y Falsas Alarmas registradas por cada clase de estímulos. De acuerdo con el patrón de respuestas reportado como parte del Efecto Espejo, se espera observar una pendiente descendente en la comparación de las tasas de Hits obtenidas por cada condición (paneles izquierdos) y una pendiente ascendente para las tasas de Falsas Alarmas (paneles derechos). De acuerdo con la figura, parece ser que dichas tendencias sí aparecen para la mayoría de los participantes, siendo más evidente en los datos registrados en el Experimento 1. Sin embargo, resulta poco claro si las diferencias observadas son lo suficientemente grandes como para considerarse estadísticamente significativas.\\
+Para explorar indivualmente dicha relación, se construyó una serie de gráficas de barras que permitieron apreciar visualmente los resultados obtenidos por cada participantes en cada clase de estímulos. Como un caso ejemplar, la Figura~\ref{fig:MirrorRate_E2_P4} muestra la frecuencia absoluta de Hits y Falsas Alarmas obtenidas por el Participante 4 del Experimento 2, para cada clase de estímulos construida, señalando en color azul la clase A y en púrpura, la clase B. Este participante presenta un caso ejemplar del patrón de respuestas identificado como Efecto Espejo.\\
 
-\begin{figure}[th]
+\begin{figure}[h]
 \centering
 \includegraphics[width=0.7\textwidth]{Figures/Diff_Rate_E1}\\ 
 \includegraphics[width=0.7\textwidth]{Figures/Diff_Rate_E2}\\
-%\decoRule
+\decoRule
 \caption[Resultados: Comparación entre las tasas de Hits y las tasas de Falsas Alarmas registradas por cada clase de estímulo]{Comparación entre las tasas de Hits y Falsas Alarmas registradas individualmente para cada clase de estímulo, por cada experimento.}
 \label{fig:Diff_Rate}
 \end{figure}
+
+Por su parte, la Figura~\ref{fig:Diff_Rate} presenta la comparación directa, participante por participante, entre las tasas de Hits y Falsas Alarmas registradas por cada clase de estímulos. De acuerdo con el patrón de respuestas reportado como parte del Efecto Espejo, se espera observar una pendiente descendente en la comparación de las tasas de Hits obtenidas por cada condición (paneles izquierdos) y una pendiente ascendente para las tasas de Falsas Alarmas (paneles derechos). De acuerdo con la figura, parece ser que dichas tendencias sí aparecen para la mayoría de los participantes, siendo más evidente en los datos registrados en el Experimento 1. Sin embargo, resulta poco claro si las diferencias observadas son lo suficientemente grandes como para considerarse estadísticamente significativas.\\
 
 A continuación se presentan los análisis realizados para determinar si las diferencias encontradas entre los Hits y las Falsas Alarmas registrados por cada clase de estímulos son estadísticamente diferentes.\\
 
@@ -583,7 +579,7 @@ Se desarrolló un modelo bayesiano (identificado como Modelo Tau), que incorpora
 \begin{figure}[h]
 \centering
 \includegraphics[width=1.1\textwidth]{Figures/Model_Tau_Diff_Tetas}
-%\decoRule
+\decoRule
 \caption[Modelo Tau: Modelo Bayesiano para evaluar las diferencias entre las $\theta$ de Hits y Falsas Alarmas de cada clase de estímulos]{Modelo bayesiano desarrollado para evaluar las diferencias entre las probabilidades ocultas tras la emisión de Hits y Falsas Alarmas por cada clase de estímulos}
 \label{fig:Mod_Tau}
 \end{figure}
@@ -613,7 +609,7 @@ $\tau^F_{i}\gets \theta^F_{iB}-\theta^F_{iA}$\\
 \includegraphics[width=0.49\textwidth]{Figures/MTau_Hits_E2}\\
 \includegraphics[width=0.49\textwidth]{Figures/MTau_FA_E1}
 \includegraphics[width=0.49\textwidth]{Figures/MTau_FA_E2}\\
-%\decoRule
+\decoRule
 \caption[Modelo Tau: Inferencias individuales para el valor de la probabilidad de cometer un Hit en cada clase de estímulos]{Se presentan las densidades de probabilidad posterior computadas individualmente para las probabilidades ocultas tras la emisión de Hits ($\theta^H_{ij}$) y Falsas Alarmas ($\theta^H_{ij}$) en cada clase de estímulos (clase A en azul y clase B en púrpura), en los Experimentos 1 (páneles izquierdos) y 2 (páneles derechos).}
 \label{fig:Tau_Hits}
 \end{figure}
@@ -625,7 +621,7 @@ En la Figura~\ref{fig:Tau_Hits} se presentan las inferencias individuales arroja
 %\centering
 %\includegraphics[width=0.49\textwidth]{Figures/MTau_FA_E1}
 %\includegraphics[width=0.49\textwidth]{Figures/MTau_FA_E2}\\
-%\decoRule
+\decoRule
 %\caption[Modelo Tau: Inferencias individuales para el valor de la probabilidad de cometer una Falsa Alarma en cada clase de estímulos]{Se presentan las estimaciones individuales acerca del valor de las probabilidades ocultas tras la emisión de Falsas Alarmas en cada clase de estímulos (clase A en azul y clase B en púrpura).}
 %\label{fig:Tau_FA}
 %\end{figure}
@@ -636,7 +632,7 @@ Finalmente, la Figura~\ref{fig:Tau} presenta las densidades de probabilidad post
 \centering
 \includegraphics[width=0.6\textwidth]{Figures/MTau_DensidadTau_E1} \\ 
 \includegraphics[width=0.6\textwidth]{Figures/MTau_DensidadTau_E2}\\
-%\decoRule
+\decoRule
 \caption[Modelo Tau: Densidad de probabilidad posterior para los posibles valores de los parámetros Tau]{Se presentan las densidades de probabilidad posterior computadas con el Modelo Tau para los posibles valores de los parámetros Tau, que evalúan las diferencias entre las probabilidades ocultas tras la emisión de Hits (Tau-H) y Falsas Alarmas (Tau-F) por cada clase de estímulos.}
 \label{fig:Tau}
 \end{figure}
@@ -681,7 +677,7 @@ Para evaluar el Efecto Espejo en los datos obtenidos con los Experimentos realiz
 \begin{figure}[th]
 \centering
 \includegraphics[width=0.60\textwidth]{Figures/MirrorRating_Exp1_P10}
-%\decoRule
+\decoRule
 \caption[Explorando datos individuales (ejemplo): Promedio de los puntajes de confianza registrados para cada tipo y clase de ensayo]{Puntajes de Confianza asignados en promedio a los estímulos con Señal y Ruido de cada clase por el Participante 10 del Experimento 1.}
 \label{fig:MirrorRating_E1_P10}
 \end{figure}
@@ -692,7 +688,7 @@ La revisión global de los Puntajes de Confianza promedio asignados por cada par
 \centering
 \includegraphics[width=0.65\textwidth]{Figures/Diff_Rating_E1}\\ 
 \includegraphics[width=0.65\textwidth]{Figures/Diff_Rating_E2}\\
-%\decoRule
+\decoRule
 \caption[Comparación entre los Puntajes de Confianza asignados a los ensayos con Ruido y Señal de cada clase]{Se presenta la comparación entre los puntajes de confianza asignados en promedio por cada participante, a los estímulos con Ruido y Señal de cada clase de estímulos.}
 \label{fig:Diff_Ratings}
 \end{figure}
@@ -705,7 +701,7 @@ Para evaluar las diferencias encontradas entre los promedios de los Puntajes de 
 
 En la Tabla~\ref{Tabla_t-Confidence} se presentan los Puntajes de Confianza promedio asignados a cada clase de estímulos con Señal y Ruido y los resultados obtenidos en las pruebas-t de muestras independientes realizadas para su comparación. De acuerdo con este análisis, las diferencias son signifivativas ($p<0.05$) en ambos Experimentos tanto para los Puntajes emitidos  en los ensayos con Señal como en los ensayos con Ruido. Sin embargo, con excepción de las diferencias observadas en el Experimento 2 en los estímulos con Señal, las diferencias reportadas obtienen valores $p$ apenas por debajo del nivel de significancia estadística estándar ($p=0$.$05$).\\
 
-\begin{table}
+\begin{table}[h]
 \caption[Prueba t para evaluar las diferencias entre los puntajes de confianza asignados en promedio a los estímulos con señal y ruido de cada clase]{Prueba t de muestras independientes para comparar el promedio de los puntajes de confianza asignados a los estímulos con Ruido y Señal de cada clase de estímulo, en los Experimentos 1 y 2.}
 \label{Tabla_t-Confidence}
 \centering
@@ -726,21 +722,21 @@ Exp 2 & Ruido & 2.3978 & 2.7578 & -1.7451 & 0.04467 \\
 
 El complemento bayesiano de las pruebas-t frecuentistas ya presentadas se llevó a cabo mediante la realización de su homólogo bayesiano, que ofrece una alternativa a los $p-values$ como criterio estadístico para juzgar la significancia del efecto encontrado, a partir del uso del Factor de Bayes, (Lee, \citeyear{Lee2016}). En otras palabras, mientras que los análisis estadísticos frecuentistas se desarrollan en torno a la Comparación de Hipótesis, utilizando los $p-values$ como un indicador de qué tan probable sería observar los datos evaluados \textit{por puro azar}, el Factor de Bayes funciona a partir de la Comparación de Modelos y señala la razón entre la densidad de probabilidad posterior obtenida con los datos para el punto de \textit{'no diferencias'} y la densidad prior que corresponde con la hipótesis inicial (en otras palabras: \textit{'¿Cuántas veces es más probable que, a la luz de los datos, la diferencia entre las muestras evaluadas sea igual a $0$?'}).\\
 
-La versión bayesiana de las pruebas t de muestras independientes se realizó mediante el uso del Software especializado JASP (Jeffreys's Amazing Statistics Program), diseñado para facilitar la realización de análisis estadísticos frecuentistas y bayesianos a partir de la lectura de archivos CSV, proporcionando tablas y gráficos informativos de manera automatizada.\\
-
-El software JASP permite visualizar los datos ingresados para su análisis mediante la presentación de diversos gráficos descriptivos. Por ejemplo, en la Figura~\ref{fig:JASP_MeanRatings} se presentan un par de gráficos donde se señalan las medias de los Puntajes de Confianza asignados a los estímulos con Ruido y Señal de cada clase, y su dispersión. Esta figura confirma la evidencia presentada por la Figura~\ref{fig:Diff_Ratings}. Los promedios computados por cada clase de estímulos difieren en el sentido esperado de acuerdo al Efecto Espejo, pero la dispersión de los datos registrados presenta un sobrelape importante, cubriendo rangos de valores muy cercanos.\\
-
-\begin{figure}[th]
+\begin{figure}[h]
 \centering
-\includegraphics[width=0.85\textwidth]{Figures/JASP_MeanRatings}\\ 
-%\decoRule
+\includegraphics[width=0.7\textwidth]{Figures/JASP_MeanRatings}\\ 
+\decoRule
 \caption[Gráfico de dispersión para los puntajes de confianza asignados a cada clase de estímulo]{Se presentan los promedios y dispersión de los puntajes de confianza asignados a los estímulos con Señal (parte superior) y Ruido (parte inferior) de cada clase de estímulo, en los Experimentos 1 y 2 (paneles izquierdos y derechos, respectivamente). Este gráfico fue generado en JASP (\citeyear{JASP}).}
 \label{fig:JASP_MeanRatings}
 \end{figure}
 
+La versión bayesiana de las pruebas t de muestras independientes se realizó mediante el uso del Software especializado JASP (Jeffreys's Amazing Statistics Program), diseñado para facilitar la realización de análisis estadísticos frecuentistas y bayesianos a partir de la lectura de archivos CSV, proporcionando tablas y gráficos informativos de manera automatizada.\\
+
+El software JASP permite visualizar los datos ingresados para su análisis mediante la presentación de diversos gráficos descriptivos. Por ejemplo, en la Figura~\ref{fig:JASP_MeanRatings} se presentan un par de gráficos donde se señalan las medias de los Puntajes de Confianza asignados a los estímulos con Ruido y Señal de cada clase, y su dispersión. Esta figura confirma la evidencia presentada por la Figura~\ref{fig:Diff_Ratings}. Los promedios computados por cada clase de estímulos difieren en el sentido esperado de acuerdo al Efecto Espejo, pero la dispersión de los datos registrados presenta un sobrelape importante, cubriendo rangos de valores muy cercanos.\\
+
 En cuanto a los resultados obtenidos tras la realización de las pruebas-t bayesianas, en la Tabla~\ref{Tabla_t-Bayesian} se presentan nuevamente los Puntajes de Confianza promedio asignados por cada clase de estímulo en los ensayos con Señal y Ruido, y el Factor de Bayes computado para cada comparación. Como se puede observar, los Factores de Bayes computados son bastante cercanos para la mayoría de las comparaciones realizadas, con la excepción de los puntajes promedios registrados para las diversas clases de estímulos con Señal.\\
 
-\begin{table}
+\begin{table}[h]
 \caption[Prueba t bayesiana para evaluar las diferencias entre las medias de los puntajes de confianza asigandos a los estímulos con señal y ruido de cada clase]{Factor de Bayes computado por cada prueba t bayesianas de muestras independientes realizada para comparar los puntajes de confianza asignados a los estímulos con Ruido y Señal de cada clase.}
 \label{Tabla_t-Bayesian}
 \centering
@@ -762,14 +758,14 @@ Una forma más ilustrativa de presentar la información proporcionada por los Fa
 \begin{itemize}
 \item \textbf{Comparación entre las densidades Prior y Posterior}, \textit{(Paneles izquierdos).}\\
 
-Las gráficas presentadas en los paneles izquierdos presentan la comparación entre la densidad de la distribución prior (con una línea punteada) especificada con base en la hipótesis inicial (el patrón identificado como Efecto Espejo) y la densidad de probabilidad posterior (con una línea sólida) computada a partir de los datos registrados. En estos gráficos se marca la ubicación $\delta = 0$ porque señala el punto de \textit{'no diferencia'} entre las muestras comparadas; si la distribución posterior tuviera una mayor densidad que la distribución prior en este punto, querría decir que los datos analizados proporcionan más evidencia sobre la homogeneidad entre las muestras comparadas de lo que se estimaba en un inicio. En estas gráficas, $\delta$ recibe el nombre de \textit{tamaño del efecto} (\textit{\textit{Size effect}}) porque por default se asume que las diferencias entre las muestras comparadas con la prueba t son un reflejo del efecto que tuvo la manipulación experimental sobre los datos obtenidos.\\ 
+Las gráficas presentadas en los paneles izquierdos presentan la comparación entre la densidad de la distribución prior (línea punteada) que representa la hipótesis inicial (el Efecto Espejo) y la densidad de probabilidad posterior (línea sólida) computada a partir de los datos registrados. En estos gráficos se marca la ubicación $\delta = 0$ porque señala el punto de \textit{'no diferencia'} entre las muestras comparadas; si la distribución posterior tuviera una mayor densidad que la distribución prior en este punto, querría decir que los datos analizados proporcionan más evidencia sobre la no-diferencia de las muestras comparadas. En estas gráficas, $\delta$ recibe el nombre de \textit{tamaño del efecto} (\textit{\textit{Size effect}}) porque por default se asume que las diferencias evaluadas con la prueba t son un reflejo del efecto de la manipulación experimental sobre los datos obtenidos.\\ 
 
 En estas mismas gráficas se incluyen los siguientes indicadores:\\
 
 \begin{itemize}
 	\item \textit{El Intervalo de Credibilidad y la Mediana.} En el extremo superior derecho se señalan la mediana y el intervalo de credibilidad que cubre el $95\%$ de los valores estimados de $\delta$, (\textit{$95\%$ CI}).\\
 
-	\item \textit{Factor de Bayes en dos direcciones.} En el extremo superior izquierdo se presenta el Factor de Bayes computado a partir de las posibles definiciones de la razón a estimar: 1) ¿Cuántas veces es más probable la Hipótesis Nula ($H0$) que la Hipótesis Alterna? ($BF_{0+}$); y 2) ¿Qué tantas veces es más probable la Hipótesis Alterna ($H+$) que la Hipótesis Nula? ($BF_{+0}$).\\
+	\item \textit{Factor de Bayes en dos direcciones.} En el extremo superior izquierdo se presenta el Factor de Bayes computado a partir de dos razones: 1) ¿Cuántas veces es más probable la Hipótesis Nula ($H0$) que la Hipótesis Alterna? ($BF_{0+}$); y 2) ¿Qué tantas veces es más probable la Hipótesis Alterna ($H+$) que la Hipótesis Nula? ($BF_{+0}$).\\
 
 	\item \textit{Representación gráfica del Factor de Bayes} En la parte superior, junto a las estimaciones del Factor de Bayes, se presenta una representación gráfica de la proporción de evidencia acumulada en favor de una y otra hipótesis, de acuerdo con el Factor de Bayes de interés ($BF_{+0}$).\\
 \end{itemize}
@@ -784,7 +780,7 @@ Por su parte, las gráficas presentadas en los páneles derechos permiten interp
 \centering
 \includegraphics[width=0.7\textwidth]{Figures/JASP_Tbayesian_Signals}\\ 
 \includegraphics[width=0.7\textwidth]{Figures/JASP_Tbayesian_Noise}\\ 
-%\decoRule
+\decoRule
 \caption[Densidad posterior e interpretación de la evidencia acumulada en favor de la diferencia entre los puntajes registrados por cada clase, de acuerdo con una prueba t bayesiana]{Se presentan gráficamente las inferencias resultantes de las pruebas t bayesianas realizadas para comparar los puntajes de confianza asignados a los estímulos con Señal (panel superior) y Ruido (panel inferior) de cada clase. Las figuras izquierdas presentan la comparación entre las densidades de probabilidad prior y posterior en el punto de \textit{no diferencia} ($\delta = 0$). Las figuras derechas evalúan el Factor de Bayes computado en términos de su consistencia. Estos gráficos fueron elaborados con el sofware JASP (\citeyear{JASP}).}
 \label{fig:JASP_Tbayesian}
 \end{figure}
@@ -826,7 +822,7 @@ Las Tablas~\ref{Tabla_RT1_A} y ~\ref{Tabla_RT2_A} presentan las pruebas t de mue
 
 
 %RT1  A vs B
-\begin{table}
+\begin{table}[h]
 \caption[Prueba t para comparar el tiempo de respuesta invertido en la tarea binaria por cada clase de estímulo (estímulos con ruido o señal)]{Prueba t para comparar el tiempo de respuesta invertido en la tarea binaria por cada clase de estímulo (estímulos con ruido o señal).}
 \label{Tabla_RT1_AB}
 \centering
@@ -842,7 +838,7 @@ Exp 2 & 0.7262 & 0.7871 & -0.6315 & 0.5315 \\
 \end{table}
 
 %RT2  A vs B
-\begin{table}
+\begin{table}[h]
 \caption[Prueba t para comparar el tiempo de respuesta invertido en la Escala de Confianza por cada clase de estímulo (estímulos con ruido o señal)]{Prueba t para comparar el tiempo de respuesta invertido en la asignación de un puntaje de confianza por cada clase de estímulo (estímulos con ruido o señal)}
 \label{Tabla_RT2_AB}
 \centering
@@ -858,7 +854,7 @@ Exp 2 & 0.7636 & 0.7680 & -0.0532 & 0.9578 \\
 \end{table}
 
 %RT1  AS vs AN
-\begin{table}
+\begin{table}[h]
 \caption[Prueba t para comparar el tiempo de respuesta invertido en la tarea binaria, entre los estímulos con ruido y señal de la clase A]{Prueba t para comparar el tiempo de respuesta invertido en la tarea binaria, entre los estímulos con ruido y señal de la clase A}
 \label{Tabla_RT1_A}
 \centering
@@ -874,7 +870,7 @@ Exp 2 & 1.1025 & 3.7078 & 1 & 0.3299 \\
 \end{table}
 
 %RT2  AS vs AN
-\begin{table}
+\begin{table}[h]
 \caption[Prueba t para comparar el tiempo de respuesta invertido en la escala de confianza, entre los estímulos con ruido y señal de la clase A]{Prueba t para comparar el tiempo de respuesta invertido en la escala de confianza, entre los estímulos con ruido y señal de la clase A}
 \label{Tabla_RT2_A}
 \centering
@@ -891,7 +887,7 @@ Exp 2 & 0.7598 & 0.7676 & 0.0915 & 0.9275  \\
 
 
 %RT1  BS vs BN
-\begin{table}
+\begin{table}[h]
 \caption[Prueba t para comparar el tiempo de respuesta invertido en la tarea binaria, entre los estímulos con ruido y señal de la clase B]{Prueba t para comparar el tiempo de respuesta invertido en la tarea binaria, entre los estímulos con ruido y señal de la clase B}
 \label{Tabla_RT1_B}
 \centering
@@ -907,7 +903,7 @@ Exp 2 & 1.2142 & 1.0203 & -1.2342 & 0.225  \\
 \end{table}
 
 %RT2  BS vs BN
-\begin{table}
+\begin{table}[th]
 \caption[Prueba t para comparar el tiempo de respuesta invertido en la escala de confianza, entre los estímulos con ruido y señal de la clase B]{Prueba t para comparar el tiempo de respuesta invertido en la escala de confianza, entre los estímulos con ruido y señal de la clase B}
 \label{Tabla_RT2_B}
 \centering

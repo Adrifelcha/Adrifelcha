@@ -42,6 +42,28 @@
 \newbool{headsepline}
 \newbool{consistentlayout}
 
+
+%%%%%%%%%%%%%%%% UNAM
+%\RequirePackage{graphicx}
+%\RequirePackage{setspace}
+
+%\oddsidemargin 0.25in
+%\evensidemargin 0in
+
+%\topmargin 0in
+%\headheight 0in			% no header
+%\headsep \headheight
+
+%\textwidth 6.25in
+%\textheight 8.5in
+
+%\footskip .4in
+
+%\doublespacing
+%\def\baselinestretch{1.5}
+%%%%%%%%%%%%%%%%%%
+
+
 \DeclareOption{nohyperref}{\boolfalse{hyperrefsupport}}
 \DeclareOption{nolistspacing}{\booltrue{nolistspace}}
 \DeclareOption{liststotoc}{\booltrue{listtoc}}
@@ -399,7 +421,7 @@ KOMA-script documentation for details.}]{fancyhdr}
 	\begin{center}
 		{\normalsize \MakeUppercase{\univname} \par} % University name in capitals
 		\bigskip
-		{\huge\textit{\abstractname} \par}
+		{\huge\textit{Abstract} \par}
 		\bigskip
 		{\normalsize \facname \par} % Faculty name
 		{\normalsize \deptname \par} % Department name
@@ -415,6 +437,7 @@ KOMA-script documentation for details.}]{fancyhdr}
 {
 	\vfill\null
 }
+
 
 %----------------------------------------------------------------------------------------
 %	ACKNOWLEDGEMENTS PAGE DESIGN
@@ -534,10 +557,10 @@ KOMA-script documentation for details.}]{fancyhdr}
 bookmarksopen=true,
 bookmarksopenlevel=0,
 hypertexnames=false,
-colorlinks=true, % Set to false to disable coloring links
-citecolor=MidnightBlue, % The color of citations
-linkcolor=RoyalBlue, % The color of references to document elements (sections, figures, etc)
-urlcolor=Violet, % The color of hyperlinks (URLs)
+colorlinks=false, % Set to false to disable coloring links or true
+citecolor=black, % The color of citations
+linkcolor=black, % The color of references to document elements (sections, figures, etc)
+urlcolor=black, % The color of hyperlinks (URLs)
 pdfstartview={FitV},
 unicode,
 breaklinks=true,
