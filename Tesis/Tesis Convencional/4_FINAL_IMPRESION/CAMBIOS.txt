@@ -1,0 +1,21 @@
+Cambios
+
+Doc:
+
+Palafox:
+-Omitir la parte de la diferencia entre Detección y Discriminación. (Intro)
+
+Miguel Herrera:
+
+JL : ?
+
+Zamora: -
+
+
+
+
+FALTA:
+Tareas de detección (en Marco)
+Analisis estadísticos (en Resultados)
+
+Primer enunciado del apartado de Memoria de Reconocimiento. Faltan referencias
