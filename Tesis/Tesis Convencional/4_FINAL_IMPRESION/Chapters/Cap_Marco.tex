@@ -199,7 +199,6 @@ La estimación paramétrica del modelo de detección de señales se desarrolla e
 
 Los parámetros contemplados por el modelo evalúan el desempeño de los participantes en términos de los dos grandes factores que se asocian con la emisión de juicios de detección: la discriminabilidad y el sesgo. La aplicación exitosa de la SDT al estudio de una amplia gama de tareas de detección -que pueden variar desde el tipo de estímulos utilizados hasta el dominio o fenómeno a estudiar- es posible gracias a la abstracción de sus elementos. Los valores y el tipo de evidencia específicos sobre los cuales se despliegan las distribuciones de Ruido y Señal no importan tanto -de hecho, no suelen tomarse en cuenta en lo absoluto- como saber qué tanto sobrelape hay entre las distribuciones y cuál es el juicio de detección que se prefiere emitir.\\
 
-\pagebreak
 \begin{itemize}
 \item \underline{Criterio ($k$)}\\
 
@@ -303,10 +302,10 @@ Dependiendo cuál sea el juicio de detección por el que el sistema muestre tene
 
 En la Figura~\ref{fig:Graf_Sesgo} se ilustra cada uno de los parámetros de sesgo descritos ($\beta$ en los paneles izquierdos y $C$ en los derechos), presentando en cada caso un ejemplo con sesgo liberal (en el panel superior) y con sesgo conservador (panel inferior). \\
 
-\begin{figure}[h]
+\begin{figure}[p]
 \centering
-\includegraphics[width=0.75\textwidth]{Figures/Graficador_Sesgo_LiberalR}\\
-\includegraphics[width=0.75\textwidth]{Figures/Graficador_Sesgo_ConservadorR}\\
+\includegraphics[width=0.85\textwidth]{Figures/Graficador_Sesgo_LiberalR}\\
+\includegraphics[width=0.85\textwidth]{Figures/Graficador_Sesgo_ConservadorR}\\
 \decoRule
 \caption[Estimación paramétrica: Sesgos $\beta$ y $c$]{Se ilustran los parámetros de sesgo $\beta$ (izquierda) y $C$ (derecha), en casos donde el sesgo del sistema es liberal (panel superior) o conservador (panel inferior).}
 \label{fig:Graf_Sesgo}
@@ -326,9 +325,9 @@ La Figura~\ref{fig:Graf_ROC} ilustra la construcción de curvas ROC a partir de 
 \begin{figure}[p]
 \centering
 %\includegraphics[width=0.90\textwidth]{Figures/Graficador_ROC12}\\
-%\includegraphics[width=0.9\textwidth]{Figures/ROC_1}\\
-\includegraphics[width=0.8\textwidth]{Figures/ROC_2} \\
-\includegraphics[width=0.8\textwidth]{Figures/ROC_3}\\
+%\includegraphics[width=0.75\textwidth]{Figures/ROC_1}\\
+\includegraphics[width=0.85\textwidth]{Figures/ROC_2} \\
+\includegraphics[width=0.85\textwidth]{Figures/ROC_3}\\
 \decoRule
 \caption[Trazo de curvas ROC]{Ilustración del trazo de curvas ROC en dos escenarios con distinto nivel de $d'$. Los puntos marcados en las curvas ROC (figuras derechas) corresponden con la relación Tasa de Hits y Falsas Alarmas observadas dada la localización del criterio (figuras izquierdas). Las líneas contínuas azules en las curvas ROC representan los posibles pares a observar entre las tasas de Hits y Falsas Alarmas, dada la $d'$ computada, por cada valor que pueda ocupar el criterio.}
 \label{fig:Graf_ROC}
@@ -482,7 +481,7 @@ Al interpretar las tasas de Hits y Falsas Alarmas registradas por cada clase baj
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.7\textwidth]{Figures/EfectoEspejo}
+\includegraphics[width=0.6\textwidth]{Figures/EfectoEspejo}
 \decoRule
 \caption[Efecto Espejo: Las distribuciones de ruido y señal A y B se reflejan entre sí]{Representación gráfica de la ubicación de las distribuciones de ruido y señal (de las clases A y B) sobre el eje de evidencia, de acuerdo con los patrones de respuesta encontrados en tareas memoria de reconocimiento, identificados como Efecto Espejo.}
 \label{fig:Ejem_EfectoEspejo}
@@ -598,7 +597,7 @@ De acuerdo con la SDT clásica (McNicol, \citeyear{McNicol2, McNicol5}), se asum
 
 \end{itemize}
 
-En un inicio, los patrones de respuestas del ahora llamado Efecto Espejo fueron reportados en la literatura en memoria de reconocimiento como Efecto de Frecuencia de las Palabras (Schulman, \citeyear{Schulman1967}), ya que fueron encontrados por primera vez en estudios donde las clases entre las cuales se comparaba el desempeño de los participantes estaban compuestas por palabras \textit{poco comúnes} y palabras \textit{muy comunes}, de acuerdo a la frecuencia con que se usan (Kucera y Francis, \citeyear{Kucera1967}). Dichos estudios, realizados con diferentes protocolos experimentales (Glanzer y Bowles, \citeyear{Glanzer1976}; Bowles y Glanzer, \citeyear{Bowles1983}; Glanzer y Adams, \citeyear{Glanzer1990}), demostraron consistentemente que las palabras poco comúnes eran reconocidas con mayor precisión, tanto como Nuevas como Viejas (clase A), y que las palabras comúnes se confundían con mayor facilidad (clase B). No fue hasta que se demostró que los mismos patrones de respuesta aparecen a lo largo de una gran variedad de estudios donde las clases A y B son definidas en función a distintos factores -manipulando variables tales como la complejidad, la ortografía o la veracidad de los enunciados presentados, o bien, presentando estímulos cuyas características se sabe tienen una influencia en la precisión con que se les reconoce en presentaciones posteriores, como palabras con significado concreto (A) vs abstracto (B), imágenes (B) vs palabras (A), o rostros comúnes (B) vs rostros poco comúnes (A), entre otras (Glanzer y cols., \citeyear{Glanzer1993}; Greene, \citeyear{Greene1996}; Glanzer, Kim y Adams, \citeyear{Glanzer1998})-, que se comenzó a hablar del Efecto Espejo como una regularidad general, propia de la memoria de reconocimiento (Allen y Garton, \citeyear{Allen1968}; Glanzer y cols., \citeyear{Glanzer1993}).\\
+En un inicio, los patrones de respuestas del ahora llamado Efecto Espejo fueron reportados en la literatura en memoria de reconocimiento como Efecto de Frecuencia de las Palabras (Schulman, \citeyear{Schulman1967}), ya que fueron encontrados por primera vez en estudios donde las clases entre las cuales se comparaba el desempeño de los participantes estaban compuestas por palabras \textit{poco comúnes} y palabras \textit{muy comunes}, de acuerdo a la frecuencia con que se usan (Kucera y Francis, \citeyear{Kucera1967}). Dichos estudios, realizados con diferentes protocolos experimentales (Glanzer y Bowles, \citeyear{Glanzer1976}; Bowles y Glanzer, \citeyear{Bowles1983}; Glanzer y Adams, \citeyear{Glanzer1990}), demostraron consistentemente que las palabras poco comúnes eran reconocidas con mayor precisión, tanto como Nuevas como Viejas (clase A), y que las palabras comúnes se confundían con mayor facilidad (clase B). No fue hasta que se demostró que los mismos patrones de respuesta aparecen a lo largo de una gran variedad de estudios donde las clases A y B son definidas en función a distintos factores -manipulando variables tales como la complejidad, la ortografía o la veracidad de los enunciados presentados, o bien, presentando estímulos cuyas características se sabe tienen una influencia en la precisión con que se les reconoce en presentaciones posteriores, como palabras con significado concreto (A) vs abstracto (B), imágenes (B) vs palabras (A), o rostros comúnes (B) vs rostros poco comúnes (A), entre otras (Glanzer y cols., \citeyear{Glanzer1993}; Greene, \citeyear{Greene1996}; Glanzer, Kim y Adams, \citeyear{Glanzer1998})-, que se comenzó a hablar del Efecto Espejo como una regularidad general, propia de la memoria de reconocimiento (Allen y Garton, \citeyear{Allen1968}; Glanzer y cols., \citeyear{Glanzer1993}).
 
 \subsection{Relevancia, implicaciones e interpretaciones}\\
 
