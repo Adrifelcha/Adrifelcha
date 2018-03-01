@@ -55,7 +55,7 @@ En el marco de la SDT, la variabilidad se considera una propiedad intrínseca de
 \centering
 \includegraphics[width=0.75\textwidth]{Figures/Signal_Perception} 
 \decoRule
-\caption[Variabilidad en la percepción de los estímulos]{La variabilidad en la percepción de los estímulos es ilustrada con una distribución de probabilidad normal: al presentar un estímulo con intensidad $x$ en repetidas ocasiones, es muy probable que el valor percibido se acerque a su valor real (la media, $\mu$), sin embargo, también puede percibirse con mayor o menor intensidad.}
+\caption[Variabilidad en la percepción de los estímulos]{La variabilidad en la percepción de los estímulos es ilustrada con una distribución de probabilidad normal: al presentar un estímulo con intensidad $x$ en repetidas ocasiones, es muy probable que el valor percibido se acerque a su valor real (la media, $\mu$), pero también puede percibirse con mayor o menor intensidad.}
 \label{fig:Senal_percepcion}
 \end{figure}
 
@@ -66,7 +66,7 @@ En el marco de la SDT, la variabilidad se considera una propiedad intrínseca de
 \centering
 \includegraphics[width=0.75\textwidth]{Figures/Signal_Presentation} 
 \decoRule
-\caption[Variabilidad en la presentación de los estímulos]{La variabilidad en la presentación de los estímulos es representada con una distribución de probabilidad normal: En una prueba clínica de Depresión, las personas que presentan dicha condición (la Señal) pueden obtener puntajes dentro de un rango de valores con mayor o menor probabilidad al rededor de una media ($\mu$, señalada en rojo). Los valores presentados son arbitrarios.}
+\caption[Variabilidad en la presentación de los estímulos]{La variabilidad en la presentación de los estímulos es representada con una distribución de probabilidad normal: En una prueba clínica de Depresión, las personas con dicha condición (la Señal) obtienen puntajes dentro de un rango de valores, con mayor o menor probabilidad al rededor de una media ($\mu$, señalada en rojo). Los valores presentados son arbitrarios.}
 \label{fig:Senal_presentacion}
 \end{figure}
 
@@ -199,6 +199,7 @@ La estimación paramétrica del modelo de detección de señales se desarrolla e
 
 Los parámetros contemplados por el modelo evalúan el desempeño de los participantes en términos de los dos grandes factores que se asocian con la emisión de juicios de detección: la discriminabilidad y el sesgo. La aplicación exitosa de la SDT al estudio de una amplia gama de tareas de detección -que pueden variar desde el tipo de estímulos utilizados hasta el dominio o fenómeno a estudiar- es posible gracias a la abstracción de sus elementos. Los valores y el tipo de evidencia específicos sobre los cuales se despliegan las distribuciones de Ruido y Señal no importan tanto -de hecho, no suelen tomarse en cuenta en lo absoluto- como saber qué tanto sobrelape hay entre las distribuciones y cuál es el juicio de detección que se prefiere emitir.\\
 
+\pagebreak
 \begin{itemize}
 \item \underline{Criterio ($k$)}\\
 
@@ -231,9 +232,9 @@ Una vez definida la localización del criterio relativa a la media de la distrib
 \begin{figure}[p]
 \centering
 %\includegraphics[width=0.80\textwidth]{Figures/Graficador_Discriminabilidad} 
-\includegraphics[width=0.70\textwidth]{Figures/dR_1}\\ 
-\includegraphics[width=0.70\textwidth]{Figures/dR_2}\\
-\includegraphics[width=0.70\textwidth]{Figures/dR_3}\\ 
+\includegraphics[width=0.65\textwidth]{Figures/dR_1} 
+\includegraphics[width=0.65\textwidth]{Figures/dR_2}
+\includegraphics[width=0.65\textwidth]{Figures/dR_3}
 \decoRule
 \caption[Estimación paramétrica: la discriminabilidad ($d'$)]{Ilustración del cómputo de $d'$. Las tasas de Falsas Alarmas y Rechazos Correctos señalan la distancia entre el criterio y la media de la distribución de ruido (panel superior). Las tasas de Hits y Omisiones indican la distancia entre el criterio y la media de la distribución de Señal (panel intermedio). $d'$ se computa como la suma de las distancias entre el criterio y ambas medias.}
 \label{fig:Graf_Discrim}
@@ -256,7 +257,6 @@ donde el segundo término ($Z(1 - Tasa$ $Hits)$), al tener un valor negativo, tr
 
 El parámetro $d’$ sólo puede tener valores positivos ya que la distribución de señal siempre se situará por encima de la distribución de ruido, (Stainslaw y Todorov, \citeyear{Stainslaw1999}). La magnitud de la $d'$ computada es un reflejo de la discriminabilidad entre los estímulos que componen la tarea -la distancia entre las distribuciones que describen su variabilidad-. Si $d' = 0$, querría decir que las distribuciones de Ruido y Señal están completamente sobrelapadas y es imposible distinguir entre ellas (\textit{'No son discriminables en lo absoluto'}). \\
 
-\pagebreak
 \item \underline{Sesgo ($\beta$ y $C$)}\\
 
 La SDT cuenta con dos parámetros que permiten evaluar la magnitud y la dirección del sesgo con que se está respondiendo a la tarea (Stainslaw y Todorov, \citeyear{Stainslaw1999}; Macmillan y Creelman, \citeyear{Macmillan1996}).\\
@@ -294,21 +294,14 @@ Por su parte, el valor absoluto del parámetro $C$ proporciona información sobr
 Dependiendo cuál sea el juicio de detección por el que el sistema muestre tener preferencia, se distingue entre tres tipos de sesgo:\\
 
 \begin{itemize}
-\item \textsl{Sesgo liberal}. Implica una tendencia hacia la emisión de respuestas afirmativas: el criterio se encuentra a la izquierda del eje de evidencia, (ver el panel superior de la Figura~\ref{fig:Graf_Sesgo}). Es decir: \\
-\begin{center}
-$C < 0$ \qquad ó \qquad $0 < \beta < 1$\\
-\end{center}
+\item \textsl{Sesgo liberal}. Implica una tendencia hacia la emisión de respuestas afirmativas: el criterio se encuentra a la izquierda del eje de evidencia, (ver el panel superior de la Figura~\ref{fig:Graf_Sesgo}). Es decir: $C < 0$  ó  $0 < \beta < 1$.
 
-\item \textsl{Sesgo conservador}. Se presenta una tendencia hacia la emisión de respuestas negativas: el criterio se desplaza a la derecha del eje de evidencia, (ver el panel inferior de la Figura~\ref{fig:Graf_Sesgo}). Es decir: \\
-\begin{center}
-$C > 0$ \qquad ó \qquad $\beta > 1$\\
-\end{center}
+\item \textsl{Sesgo conservador}. Se presenta una tendencia hacia la emisión de respuestas negativas: el criterio se desplaza a la derecha del eje de evidencia, (ver el panel inferior de la Figura~\ref{fig:Graf_Sesgo}). Es decir: $C > 0$  ó  $\beta > 1$.
 
-\item \textsl{Sesgo neutro}. No se favorece ninguna de las dos respuestas y la probabilidad de cometer cualquier acierto o cualquier error es la misma: el criterio se encuentra en $\frac{d'}{2}$. Es decir: \\
-\begin{center}
-$C = 0$ \qquad ó \qquad $\beta = 1$\\
-\end{center}
+\item \textsl{Sesgo neutro}. No se favorece ninguna de las dos respuestas y la probabilidad de cometer cualquier acierto o cualquier error es la misma: el criterio se encuentra en $\frac{d'}{2}$. Es decir: $C = 0$  ó $\beta = 1$.
 \end{itemize}
+
+En la Figura~\ref{fig:Graf_Sesgo} se ilustra cada uno de los parámetros de sesgo descritos ($\beta$ en los paneles izquierdos y $C$ en los derechos), presentando en cada caso un ejemplo con sesgo liberal (en el panel superior) y con sesgo conservador (panel inferior). \\
 
 \begin{figure}[h]
 \centering
@@ -319,7 +312,6 @@ $C = 0$ \qquad ó \qquad $\beta = 1$\\
 \label{fig:Graf_Sesgo}
 \end{figure}
 
-En la Figura~\ref{fig:Graf_Sesgo} se ilustra cada uno de los parámetros de sesgo descritos ($\beta$ en los paneles izquierdos y $C$ en los derechos), presentando en cada caso un ejemplo con sesgo liberal (en el panel superior) y con sesgo conservador (panel inferior). \\
 \end{itemize}
 
 Para una exposición más detallada e interactiva de los parámetros descritos hasta ahora, se pueden consultar los graficadores y Apps en línea desarrollados por la autora de la presente tesis y otros colaboradores del Lab 25, como parte de un proyecto PAPIME (\citeyear{PAPIME}). Estos materiales se encuentran disponibles en \href{http://www.bouzaslab25.com/LabVirtual25/}{bouzaslab25.com/LabVirtual25}, un sitio web diseñado por la autora de esta tesis para los estudiantes de los cursos impartidos por el Dr. Arturo Bouzas.\\
@@ -331,7 +323,7 @@ Además de permitir la descripción e interpretación del desempeño observado e
 
 La Figura~\ref{fig:Graf_ROC} ilustra la construcción de curvas ROC a partir de las tasas de ejecución registradas en tareas de detección. En las figuras izquierdas se presentan un par de representaciones arbitrarias de tareas con distintos niveles de $d'$ y criterios en $k$. Las figuras del lado derecho, señalan con un punto las coordenadas que corresponden a las tasas de Falsas Alarmas (eje x) y Hits (eje y) obtenidas y, de acuerdo con el valor de $d'$ estimado, la curva ROC que describe todos los posibles pares de Hits y Falsas Alarmas a observar con el uso de distintos criterios de elección. La idea central, es que por cada $d'$ se puede trazar una curva ROC que describa los resultados esperados para todos los valores posibles de $k$ (Tanner y Swets, \citeyear{Tanner1954}; Swets y cols.,  \citeyear{Swets1961}; Swets, \citeyear{Swets1973}; Stainslaw y Todorov, \citeyear{Stainslaw1999}).\\
 
-\begin{figure}[th]
+\begin{figure}[p]
 \centering
 %\includegraphics[width=0.90\textwidth]{Figures/Graficador_ROC12}\\
 %\includegraphics[width=0.9\textwidth]{Figures/ROC_1}\\
@@ -355,9 +347,9 @@ Las curvas ROC pueden ser trazadas -en teoría- a partir de un solo conjunto de 
 Al contar con datos obtenidos experimentalmente sobre el uso de distintos criterios de elección para responder a una misma tarea de detección, se puede trazar un tipo especial de curva ROC que permite explorar las características de las distribuciones de ruido y señal subyacentes. Para ello, en vez de graficar la relación entre las tasas observadas de Falsas Alarmas y Hits, éstas se transforman en Puntajes Z para obtener lo que se conoce como una curva \textbf{z-ROC} que permite evaluar tres grandes factores (Ratcliff y cols., \citeyear{Ratcliff1992}):\\♠
 
 \begin{itemize}
-\item Si la curva z-ROC trazada es una línea recta, se acepta el supuesto de que las distribuciones de Ruido y Señal son normales.\\
-\item La pendiente de la curva z-ROC permite conocer la razón entre las desviaciones estándar de las distribuciones de Ruido y Señal, evaluando así el supuesto de las varianzas iguales.\\
-\item El intercepto de la curva z-ROC proporciona información sobre la distancia entre las distribuciones (un aproximado de $d'$).\\
+\item Si la curva z-ROC trazada es una línea recta, se acepta el supuesto de que las distribuciones de Ruido y Señal son normales.
+\item La pendiente de la curva z-ROC permite conocer la razón entre las desviaciones estándar de las distribuciones de Ruido y Señal, evaluando así el supuesto de las varianzas iguales.
+\item El intercepto de la curva z-ROC proporciona información sobre la distancia entre las distribuciones (un aproximado de $d'$).
 \end{itemize}
 
 
@@ -386,16 +378,16 @@ Una segundo protocolo para la presentación de tareas de detección -que puede e
 
 En términos del procedimiento, las tareas de detección binarias y con Escala de Confianza son idénticas: se muestra a los participantes una serie de ensayos (N) dentro de la cual se presentan de manera aleatoria ensayos con la señal (S) y ensayos con sólo Ruido (R), solicitándoles que registren una respuesta al término de cada ensayo. La diferencia entre ambos protocolos consiste en el tipo de respuesta solicitada y, en consecuencia, la cantidad de información que se obtiene sobre la sensibilidad del sistema. En las tareas Sí/No los participantes emiten una de dos posibles respuestas mutuamente excluyentes; en tareas con Escala de Confianza, se asigna un puntaje dentro de una Escala con cierta cantidad de opciones de respuesta (Stainslaw y Todorov, \citeyear{Stainslaw1999}).\\
 
-Existen varias formas en que puede presentarse la Escala de Confianza (McNicol, \citeyear{McNicol2}). Por ejemplo, una de ellas podría ser solicitando que se responda de acuerdo a la confianza que se tendría en asignar cada estímulo evaluado a la categoria Señal (donde los valores más altos se asignarían a los estímulos que se encuentren más hacia la derecha en el eje de evidencia y los valores bajos, a los estímulos con Ruido, a la izquierda). Por otro lado, una segunda forma sería distinguiendo entre la certeza que se tiene sobre la pertenencia de cada estímulo evaluado al conjunto de las señales o el ruido, (los valores más altos indicarían confianza en que se trate de una Señal y los valores más bajos, de que se trate de Ruido). Ambas formas de presentar la Escala proporcionan -en teoría- la misma información, tal y como se sugiere en el panel superior de la Figura~\ref{fig:Conf_Rat}. En general, la elección de una u otra depende del experimentador.\\
-
-\begin{figure}[h]
+\begin{figure}[p]
 \centering
 \includegraphics[width=0.9\textwidth]{Figures/Puntajes_Criterios}\\
-\includegraphics[width=0.70\textwidth]{Figures/ConfidenceRating}\\
+\includegraphics[width=0.8\textwidth]{Figures/ConfidenceRating}\\
 \decoRule
 \caption[Tareas de detección con Escala de Confianza y su interpretación]{Representación gráfica de la interpretación de las tareas de detección con Escala de Confianza bajo el marco de la SDT. En la parte superior se presenta una Escala de Confianza de seis elementos con dos posibles sentidos: unidireccional (el puntaje refleja la confianza en una sola respuesta) o bidireccional (el puntaje distingue entre la confianza en cada respuesta). La gráfica inferior ilustra la idea de que para decidir cuándo emitir cada puntaje, el sistema fija múltiples sub-criterios sobre el eje de evidencia.}
 \label{fig:Conf_Rat}
 \end{figure}
+
+Existen varias formas en que puede presentarse la Escala de Confianza (McNicol, \citeyear{McNicol2}). Por ejemplo, una de ellas podría ser solicitando que se responda de acuerdo a la confianza que se tendría en asignar cada estímulo evaluado a la categoria Señal (donde los valores más altos se asignarían a los estímulos que se encuentren más hacia la derecha en el eje de evidencia y los valores bajos, a los estímulos con Ruido, a la izquierda). Por otro lado, una segunda forma sería distinguiendo entre la certeza que se tiene sobre la pertenencia de cada estímulo evaluado al conjunto de las señales o el ruido, (los valores más altos indicarían confianza en que se trate de una Señal y los valores más bajos, de que se trate de Ruido). Ambas formas de presentar la Escala proporcionan -en teoría- la misma información, tal y como se sugiere en el panel superior de la Figura~\ref{fig:Conf_Rat}. En general, la elección de una u otra depende del experimentador.\\
 
 Los puntajes de confianza registrados son interpretados asumiendo que los participantes fijan un criterio por cada opción de respuesta incluida en la Escala de Confianza. De esta forma, el puntaje emitido en cada ensayo está determinado por el último criterio de elección rebasado por la evidencia evaluada (McNicol, \citeyear{McNicol2}). La Figura~\ref{fig:Conf_Rat} ilustra esta idea: en la parte superior se presenta una Escala de Confianza de 6 elementos (se ejemplifican las dos formas -previamente expuestas- en que puede ser presentada), y en la parte inferior, la representación gráfica de su interpretación bajo el modelo de detección de señales.\\
 
@@ -690,5 +682,4 @@ En contraste con la amplia variedad de propuestas desarrolladas para dar cuenta 
 
 Evaluar la generalizabilidad del Efecto Espejo a otras áreas de aplicación de la SDT se considera importante en tanto que 1) provería un contexto más amplio para interpretar el Efecto Espejo como una regularidad derivada de los supuestos establecidos por la SDT y no como un fenómeno particular de la memoria de reconocimiento y los procesos cognitivos involucrados, y 2) permitiría evaluar la pertinencia de la aplicación del modelo de detección de señales para interpretar los resultados obtenidos en este tipo de tareas en memoria de reconocimiento.\\
 
-El trabajo de tesis aquí presentado no se preocupa en evaluar de forma alguna las propuestas teóricas y formales desarrolladas para dar cuenta del Efecto Espejo como un fenómeno inherente a la memoria de reconocimiento. El objetivo del trabajo de investigación realizado es meramente el de explorar la existencia de los patrones de respuesta identificados como Efecto Espejo en una tarea de detección ajena al marco de la memoria de reconocimiento. Para ello, se propuso trabajar con una tarea de detección perceptual que emula las condiciones básicas de las tareas de reconocimiento donde dicho fenómeno ha sido reportado, construyéndose las clases de estímulos A y B a partir de la revisión de la literatura en ilusiones ópticas para garantizar que estas difirieran en su discriminabilidad ($d'$).\\
-
+El trabajo de tesis aquí presentado no se preocupa en evaluar de forma alguna las propuestas teóricas y formales desarrolladas para dar cuenta del Efecto Espejo como un fenómeno inherente a la memoria de reconocimiento. El objetivo del trabajo de investigación realizado es meramente el de explorar la existencia de los patrones de respuesta identificados como Efecto Espejo en una tarea de detección ajena al marco de la memoria de reconocimiento. Para ello, se propuso trabajar con una tarea de detección perceptual que emula las condiciones básicas de las tareas de reconocimiento donde dicho fenómeno ha sido reportado, construyéndose las clases de estímulos A y B a partir de la revisión de la literatura en ilusiones ópticas para garantizar que estas difirieran en su discriminabilidad ($d'$).
