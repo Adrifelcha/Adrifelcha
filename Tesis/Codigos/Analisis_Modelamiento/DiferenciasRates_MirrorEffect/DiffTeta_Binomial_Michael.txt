@@ -10,7 +10,8 @@ model{
     thetah_A[i] ~ dnorm(mu_thetah_A, lam_thetah_A)
     thetaf_A[i] ~ dnorm(mu_thetaf_A, lam_thetaf_A)
     thetah_B[i] ~ dnorm(mu_thetah_B, lam_thetah_B)
-    thetaf_B[i] ~ dnorm(mu_thetaf_B, lam_thetaf_B)}
+    thetaf_B[i] ~ dnorm(mu_thetaf_B, lam_thetaf_B)
+}
     #parameters describing the normal distributions from which
     #thetas are meant to be drawn
     mu_thetah_A <- Mu_thetah + Tau_H/2 
