@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=latex 2016.10.25)  6 MAR 2018 11:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=latex 2016.10.25)  6 MAR 2018 17:23
 entering extended mode
-**./Tau_Michael.tex
-(Tau_Michael.tex
+**./JustBinomial_Michael.tex
+(JustBinomial_Michael.tex
 LaTeX2e <2016/03/31> patch level 3
 Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
@@ -517,8 +517,9 @@ Package: amsthm 2015/03/04 v2.20.2
 \thm@postskip=\skip69
 \thm@headsep=\skip70
 \dth@everypar=\toks41
-) (Tau_Michael.aux)
-\openout1 = `Tau_Michael.aux'.
+)
+(JustBinomial_Michael.aux)
+\openout1 = `JustBinomial_Michael.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
@@ -567,11 +568,11 @@ LaTeX Font Info:    ... okay on input line 17.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 41.
+LaTeX Font Info:    Try loading font information for U+msa on input line 44.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 41.
+LaTeX Font Info:    Try loading font information for U+msb on input line 44.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -580,14 +581,14 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ]
 PSTricks: Converting TeX box to EPS.
           With dvips, use -E option.
-(Tau_Michael.aux) ) 
+(JustBinomial_Michael.aux) ) 
 Here is how much of TeX's memory you used:
  11243 strings out of 493335
- 196854 string characters out of 3139265
- 358167 words of memory out of 3000000
+ 196944 string characters out of 3139265
+ 356927 words of memory out of 3000000
  14572 multiletter control sequences out of 15000+200000
  9330 words of font info for 37 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,9n,54p,690b,444s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,9n,54p,699b,444s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Tau_Michael.dvi (1 page, 51164 bytes).
+Output written on JustBinomial_Michael.dvi (1 page, 47760 bytes).

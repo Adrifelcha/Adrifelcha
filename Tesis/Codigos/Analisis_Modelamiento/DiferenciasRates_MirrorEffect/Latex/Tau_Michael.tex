@@ -87,14 +87,14 @@
 					%observed=true,
 					observedColor=lightgray,
 					%query=true
-					]{TauH}}
-			\GM@label[offset=-4mm]{TauH}{\huge$\ro^H_{i}$}
+					]{RhoH}}
+			\GM@label[offset=-4mm]{RhoH}{\huge$\rho^H_{i}$}
 \rput(9.7,5.2){\GM@node[nodeSize=15mm,
 					%observed=true,
 					observedColor=lightgray,
 					%query=true
-					]{TauF}}
-			\GM@label[offset=-4mm]{TauF}{\huge$\ro^F_{i}$}
+					]{RhoF}}
+			\GM@label[offset=-4mm]{RhoF}{\huge$\rho^F_{i}$}
 
 
 
@@ -136,9 +136,11 @@
 % 3. Arrows
 %%%%%%%%%%%
 
-\ncline[arrows=->]{TetaFAA}{TauF}
-\ncline[arrows=->]{TetaHA}{TauH}
+\ncline[arrows=->]{TauF}{TetaFAA}
+\ncline[arrows=->]{TauH}{TetaHA}
 
+\ncline[arrows=->]{RhoF}{TetaFAA}
+\ncline[arrows=->]{RhoH}{TetaHA}
 
 
 \ncline[arrows=->]{cA}{TetaHA}

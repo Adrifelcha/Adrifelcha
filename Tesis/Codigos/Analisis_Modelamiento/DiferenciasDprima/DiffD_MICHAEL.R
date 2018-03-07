@@ -243,6 +243,7 @@ if (experimento ==1)
       font.lab = 2, cex.axis = 1.3, bty = "n", las=1)
   
   prior_delta <- dnorm(0,1)
+  SavageDickey <- dnorm(0,0,1)/dnorm(0,mean(Delta),sd(Delta))
   
   plot(density(Delta), col='blue4', main="Experimento 1", cex.main=2, lwd=3.5, ylab="", xlab="", axes=F, xlim=c(-0.5,2))
   lines(seq(-100,100,.05), dnorm(seq(-100,100,.05), 0,1), lwd=1, col="darkorchid3")
@@ -250,11 +251,13 @@ if (experimento ==1)
   axis(2, labels=F, at=c(0,24))
   mtext("Densidad de probabilidad", side=2, line=2, cex=2, las=0, font=2)
   mtext("Delta", side=1, line=2.5, cex=2, font=2)
-  points(0,0.04032, pch=16, type='p', col='red', cex=1.5)
+  points(0,0.03226, pch=16, type='p', col='red', cex=1.5)
   points(0,0.3989423, pch=16, type='p', col='red', cex=1.5)
   lines(c(0,0), c(0.0403, 0.4003), lwd=1, col="red", lty=2)
+  lines(c(0.57,0.57), c(0, 14), lwd=1, col="red", lty=2)
+  text(0,0.8,paste(round(SavageDickey,3)))  
+  text(0,0.9,paste("Bayes Factor"))  
   
-  SavageDickey <- dnorm(0,0,1)/0.04032
 }
 
 if (experimento ==2)
@@ -263,6 +266,7 @@ if (experimento ==2)
       font.lab = 2, cex.axis = 1.3, bty = "n", las=1)
   
   prior_delta <- dnorm(0,1)
+  SavageDickey <- dnorm(0,0,1)/dnorm(0,mean(Delta),sd(Delta))
   
   plot(density(Delta), col='blue4', main="Experimento 2", cex.main=2, lwd=3.5, ylab="", xlab="", axes=F, xlim=c(-0.5,2))
   lines(seq(-100,100,.05), dnorm(seq(-100,100,.05), 0,1), lwd=1, col="darkorchid3")
@@ -270,11 +274,11 @@ if (experimento ==2)
   axis(2, labels=F, at=c(0,24))
   mtext("Densidad de probabilidad", side=2, line=2, cex=2, las=0, font=2)
   mtext("Delta", side=1, line=2.5, cex=2, font=2)
-  points(0,0.027229, pch=16, type='p', col='red', cex=1.5)
+  points(0,0.01995232, pch=16, type='p', col='red', cex=1.5)
   points(0,0.3989423, pch=16, type='p', col='red', cex=1.5)
   lines(c(0,0), c(0.0403, 0.4003), lwd=1, col="red", lty=2)
-  
-  SavageDickey <- dnorm(0,0,1)/0.02722
+  text(0,0.8,paste(round(SavageDickey,3)))  
+  text(0,0.9,paste("Bayes Factor"))  
 }
 
 
