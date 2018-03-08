@@ -13,7 +13,7 @@ library(R2jags)
 
 ######################################################
 #Especificamos el Experimento y los Datos a analizar
-experimento <- 2
+experimento <- 1
 #####################################################
 
 if (experimento == 1)    #Una Figura de Ebbinghaus
@@ -169,90 +169,6 @@ if (experimento ==2)
     mtext(expression(paste(theta, "F")), side=1, line = 2.8, cex=2.5, font=2)
   }
   
-  ###################################################################################
-  # Gráficos de Dispersión
-  # Interacción entre parámetros (TauH y TauFA; D' y C)
-  ###################################################################################
-
-#Preparamos los datos
-keep_ <- (1000)   #Numero de extracciones a incluir en el Gráfico
-keep <- sample(niter, keep_)    #De las 'niter' extracciones, sacamos 'keep' muestras
-#
-d.FA_a <- density(tetaFA_a)
-d.FA_b <- density(tetaFA_b)
-d.H_a <- density(tetaH_a)
-d.H_b <- density(tetaH_b)
-d.TauH <- density(tauH)
-d.TauF <- density(tauF)
-
-
-layout(matrix(c(1,2,3,0),2,2,byrow=T), width=c(2/3, 1/3), heights=c(2/3,1/3))
-#layout.show()
-
-if (experimento ==1)
-{ soporte_d <- c(0,3)
-  soporte_c <- c(0,6)
-  soporte_h <- c(0,62)
-  soporte_f <- c(0,25)
-  par(mar=c(2,2,1,0))
-  plot(tetaFA_a[keep],tetaH_a[keep], col="deepskyblue3", xlab="", ylab="", axes=F,xlim=c(0,0.5), ylim=c(0.5,1))
-  points(tetaFA_b[keep],tetaH_b[keep], col="darkorchid3")
-  lines(c(0.36, 0.41),c(0.60,0.60), lwd=2, lty=1, col="deepskyblue3")
-  lines(c(0.36, 0.41),c(0.55,0.55), lwd=2, lty=1, col="darkorchid3")
-  text(0.42, 0.60, labels="A Condition", offset=0, cex = 0.8, pos=4)
-  text(0.42, 0.55, labels="B Condition", offset=0, cex = 0.8, pos=4)
-  box(lty=1)
-  
-  par(mar=c(2,1,1,4))
-  plot(d.H_a$y, d.H_a$x, xlim=rev(c(0,16)),type='l', col="deepskyblue3", axes=F, xlab="", ylab="",ylim=c(0.5,1))
-  lines(d.H_b$y, d.H_b$x, col="darkorchid3")
-  axis(4)
-  mtext(expression(paste("Hits")), side=4,line=2.3, cex=0.9, las=0)
-  box(lty=1)
-  
-  par(mar=c(6,2,0,0))
-  plot(density(tetaFA_a),zero.line=F ,main="", col="deepskyblue3", ylab="", xlab="", cex.lab=1.3, axes=F, xlim=c(0,0.5),ylim=c(0,26))
-  lines(density(tetaFA_b), col="darkorchid3")
-  axis(1, at=c(0, 0.1, 0.2, 0.3, 0.4, 0.5))
-  mtext(expression(paste("False Alarms")), side=1.2,line=2, cex=0.9)
-  box(lty=1)
-}
-
-
-if (experimento ==2)
-{
-  soporte_d <- c(0,3)
-  soporte_c <- c(0,6)
-  soporte_h <- c(0,62)
-  soporte_f <- c(0,25)
-
-  #Density Plot
-  par(mar=c(2,2,1,0))  
-  plot(tetaFA_a[keep],tetaH_a[keep], col="deepskyblue3", xlab="", ylab="", axes=F,xlim=c(0,0.5), ylim=c(0.45,1))
-  points(tetaFA_b[keep],tetaH_b[keep], col="darkorchid3")
-  lines(c(0.02, 0.07),c(0.90,0.90), lwd=2, lty=1, col="deepskyblue3")
-  lines(c(0.02, 0.07),c(0.85,0.85), lwd=2, lty=1, col="darkorchid3")
-  text(0.08, 0.90, labels="A Condition", offset=0, cex = 0.8, pos=4)
-  text(0.08, 0.85, labels="B Condition", offset=0, cex = 0.8, pos=4)
-  box(lty=1)
-  
-  par(mar=c(2,1,1,4))
-  plot(d.H_a$y, d.H_a$x, xlim=rev(c(0,17)),type='l', col="deepskyblue3", axes=F, xlab="", ylab="",ylim=c(0.45,1))
-  lines(d.H_b$y, d.H_b$x, col="darkorchid3")
-  axis(4)
-  mtext(expression(paste("Hits")), side=4,line=2.3, cex=0.9, las=0)
-  box(lty=1)
-  
-  par(mar=c(6,2,0,0))
-  plot(density(tetaFA_a),zero.line=F ,main="", col="deepskyblue3", ylab="", xlab="", cex.lab=1.3, axes=F, xlim=c(0,0.5),ylim=c(0,16))
-  lines(density(tetaFA_b), col="darkorchid3")
-  axis(1, at=c(0, 0.1, 0.2, 0.3, 0.4, 0.5))
-  mtext(expression(paste("False Alarms")), side=1.2,line=2, cex=0.9)
-  box(lty=1)
-  
-  }
-
-
 ###################################################################################
 # Tau
 # Posteriores individuales para Tau por sujeto
@@ -277,6 +193,8 @@ if (experimento ==1)
   #mtext("Density", side=2, line = 0, cex=1, las=0)
   mtext("Experimento 1", side=3, line = -0.3, cex=1.5, font=1)
   mtext("Tau-H", side=1, line = 3, cex=2, font=2)
+  text(-0.2,3,paste(round(SavageDickey_H,3)))  
+  text(-0.2,5,paste("Bayes Factor"))  
   title(expression(paste(theta, "H(A) - ", theta, "H(B)")), line=2.2)
   
   #ZOOM
@@ -284,6 +202,10 @@ if (experimento ==1)
   lines(soporte, dnorm(soporte,0,1), lwd=1, col="darkorchid3")
   axis(1)
   abline(v=0, col='black', lty=2, lwd=3)
+  lines(c(-1.5, -1.3),c(0.70,0.70), lwd=2, lty=1, col="darkorchid3")
+  lines(c(-1.5, -1.3),c(0.50,0.50), lwd=2, lty=1, col="forestgreen")
+  text(-1.25, 0.70, labels="Tau F - Prior", offset=0, cex = 0.8, pos=4)
+  text(-1.25, 0.50, labels="Tau F - Posterior", offset=0, cex = 0.8, pos=4)
   mtext("(zoom)", side=1, line = 3, cex=2, font=2)
   
 
@@ -291,6 +213,8 @@ if (experimento ==1)
   lines(seq(-1,1,.05), dnorm(seq(-1,1,.05), 0,1), lwd=1, col="darkorchid3")
   axis(1) 
   abline(v=0, col='black', lty=2, lwd=3)
+  text(-0.2,3,paste(round(SavageDickey_F,3)))  
+  text(-0.2,5,paste("Bayes Factor"))  
   #axis(2, labels=F, at=c(0,24))
   #mtext("Density", side=2, line = 2, cex=1, las=0)
   mtext("Tau-F", side=1, line = 3, cex=2, font=2)
@@ -302,6 +226,10 @@ if (experimento ==1)
   lines(soporte, dnorm(soporte,0,1), lwd=1, col="darkorchid3")
   axis(1)
   abline(v=0, col='black', lty=2, lwd=3)
+  lines(c(-1.5, -1.3),c(0.70,0.70), lwd=2, lty=1, col="darkorchid3")
+  lines(c(-1.5, -1.3),c(0.50,0.50), lwd=2, lty=1, col="red")
+  text(-1.25, 0.70, labels="Tau F - Prior", offset=0, cex = 0.8, pos=4)
+  text(-1.25, 0.50, labels="Tau F - Posterior", offset=0, cex = 0.8, pos=4)
   mtext("(zoom)", side=1, line = 3, cex=2, font=2)
 }
 
