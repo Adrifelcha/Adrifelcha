@@ -13,7 +13,7 @@ library(R2jags)
 
 ######################################################
 #Especificamos el Experimento y los Datos a analizar
-experimento <- 2
+experimento <- 1
 #####################################################
 
 if (experimento == 1)    #Una Figura de Ebbinghaus
@@ -56,7 +56,7 @@ n <- 160       #Ensayos con Ruido
 ######################################
 data <- list("fa_A", "fa_B", "h_B", "h_A", "s", "n", "k")                    #Los datos que vamos a utilizar para nuestro modelo
 myinits <- list(
-  list(thetah_A = rep(0.5,k), thetah_B = rep(0.5,k), thetaf_A = rep(0.5,k), thetaf_B = rep(0.5,k), lam_thetah_A = 1, lam_thetaf_A = 1, lam_thetah_B = 1, lam_thetaf_B = 1, Mu_thetah = 1, Mu_thetaf = 1, Tau_H = 0, Tau_F = 0))      #Valores iniciales para las extracciones de las cadenas de Markov
+  list(thetah_A = rep(0,k), thetah_B = rep(0,k), thetaf_A = rep(0,k), thetaf_B = rep(0,k), sigmath_A = 1, sigmath_B = 1, sigmatf_A = 1, sigmatf_B = 1, Mu_thetah = 1, Mu_thetaf = 1, Tau_H = 0, Tau_F = 0))      #Valores iniciales para las extracciones de las cadenas de Markov
 
 #Parámetros monitoreados
 parameters <- c("thetah_A", "thetaf_A", "thetah_B", "thetaf_B", "mu_thetah_A", "mu_thetaf_A", "mu_thetah_B", "mu_thetaf_B", "Mu_thetah", "Mu_thetaf", "Tau_H", "Tau_F")
@@ -66,7 +66,7 @@ burnin <- 1000     #No. de primeros sampleos en ignorarse
 
 #Corremos el modelo
 samples <- jags(data, inits=myinits, parameters,
-                model.file ="C:/Users/Alejandro/Desktop/Felisa/Tesis/Codigos/Analisis_Modelamiento/DiferenciasRates_MirrorEffect/DiffTeta_Binomial_Michael.txt",
+                model.file ="C:/Users/Alejandro/Desktop/Felisa/Tesis/Codigos/Analisis_Modelamiento/DiferenciasRates_MirrorEffect/DiffTeta_Binomial_Michael_Sigma.txt",
                 n.chains=1, n.iter=niter, n.burnin=burnin, n.thin=1)
 #La variable 'samples' contiene los parámetros monitoreados por el modelo. (Las extracciones)
 
@@ -115,23 +115,23 @@ if (experimento ==1)
   axis(1)
   axis(2, labels=F, at=c(0,94))
   lines(density(tetaH_a[,a]), lwd=2, col="deepskyblue3")
-  lines(density(tetaH_b[,a]), lwd=2, col="darkorchid3", lty=1)}
+  lines(density(tetaH_b[,a]), lwd=2, col="darkorchid3", lty=1)
   lines(c(0.35, 0.4),c(60,60), lwd=3, lty=1, col="deepskyblue3")
   lines(c(0.35, 0.4),c(50,50), lwd=3, lty=1, col="darkorchid3")
   text(0.45, 60, labels="Estímulos A", offset=0, cex = 1.8, pos=4)
   text(0.45, 50, labels="Estímulos B", offset=0, cex = 1.8, pos=4)
   mtext("Densidad Posterior", 2, line = 2, cex=2.1, las=0)
-  mtext(expression(paste(theta, "H")), side=1, line = 2.8, cex=2.5, font=2)
+  mtext(expression(paste(theta, "H")), side=1, line = 2.8, cex=2.5, font=2)}
   
   # THETA F.A:
   plot(soporte_f, col="white", main="", cex.main=3, ylab="", xlab="", xlim=c(0,0.7), axes=F)
   for(a in 1:k){
   lines(density(tetaFA_a[,a]), lwd=2, col="deepskyblue3")
-  lines(density(tetaFA_b[,a]), lwd=2, col="darkorchid3", lty=1)}
+  lines(density(tetaFA_b[,a]), lwd=2, col="darkorchid3", lty=1)
   axis(1)
   axis(2, labels=F, at=c(0,94))
   mtext("Densidad Posterior", side=2, line = 2.1, cex=2, las=0)
-  mtext(expression(paste(theta, "F")), side=1, line = 2.8, cex=2.5, font=2)
+  mtext(expression(paste(theta, "F")), side=1, line = 2.8, cex=2.5, font=2)}
   }
 
 
@@ -150,23 +150,23 @@ if (experimento ==2)
     axis(1)
     axis(2, labels=F, at=c(0,94))
     lines(density(tetaH_a[,a]), lwd=2, col="deepskyblue3")
-    lines(density(tetaH_b[,a]), lwd=2, col="darkorchid3", lty=1)}
+    lines(density(tetaH_b[,a]), lwd=2, col="darkorchid3", lty=1)
     lines(c(0.25, 0.3),c(55,55), lwd=3, lty=1, col="deepskyblue3")
     lines(c(0.25, 0.3),c(45,45), lwd=3, lty=1, col="darkorchid3")
     text(0.35, 55, labels="Estímulos A", offset=0, cex = 1.8, pos=4)
     text(0.35, 45, labels="Estímulos B", offset=0, cex = 1.8, pos=4)
     mtext("Densidad Posterior", side=2, line = 2, cex=2.1, las=0)
-    mtext(expression(paste(theta, "H")), side=1, line = 2.8, cex=2.5, font=2)
+    mtext(expression(paste(theta, "H")), side=1, line = 2.8, cex=2.5, font=2)}
   
   # Theta F.A.:    
   plot(soporte_f, col="white", main="", cex.main=3,  ylab="", xlab="", xlim=c(0,0.7), axes=F)
   for(a in 1:k){
     lines(density(tetaFA_a[,a]), lwd=2, col="deepskyblue3")
-    lines(density(tetaFA_b[,a]), lwd=2, col="darkorchid3", lty=1)}
+    lines(density(tetaFA_b[,a]), lwd=2, col="darkorchid3", lty=1)
     axis(1)
     axis(2, labels=F, at=c(0,94))
     mtext("Densidad Posterior", side=2, line = 2, cex=2.1, las=0)
-    mtext(expression(paste(theta, "F")), side=1, line = 2.8, cex=2.5, font=2)
+    mtext(expression(paste(theta, "F")), side=1, line = 2.8, cex=2.5, font=2)}
   }
   
   ###################################################################################
@@ -259,50 +259,41 @@ if (experimento ==2)
 # ###################################################################################
 layout(matrix(1:2,ncol=1))
 
-#layout(matrix(1,ncol=1))
+####Un color diferente por sujeto
+coltaufa <- c('chocolate', 'chocolate1', 'chocolate2', 'chocolate3', 'chocolate4', 'firebrick4', 'coral1', 'coral2', 'coral3', 'coral4','darkgoldenrod', 'brown', 'brown4', 'darkgoldenrod3', 'darkgoldenrod4','darkorange','coral4', 'darkorange2', 'darkorange3', 'darkorange4', 'goldenrod3')
+coltauh <- c('darkolivegreen', 'darkolivegreen1', 'darkolivegreen2', 'darkolivegreen3', 'darkolivegreen4', 'darkseagreen', 'darkseagreen1', 'darkseagreen2', 'darkseagreen3', 'darkseagreen4','chartreuse4', 'chartreuse3', 'chartreuse2', 'aquamarine4', 'aquamarine3','aquamarine2','darkgreen', 'forestgreen', 'darkcyan', 'darkgoldenrod4', 'darkkhaki')
 
-soporte <- seq(-10,10,.01)
-SavageDickey_F <- dnorm(0,mean(tauF),sd(tauF))/dnorm(0,0,1)
-SavageDickey_H <- dnorm(0,mean(tauH),sd(tauH))/dnorm(0,0,1)
+#####Tres colores diferentes por Tau: Ayuda a distinguir los colores sin cargar demasiado la gráfica
+taucolfa <- c('chocolate3','firebrick4','goldenrod2','chocolate3','firebrick4','goldenrod2','chocolate3','firebrick4','goldenrod2','chocolate3','firebrick4','goldenrod2','chocolate3','firebrick4','goldenrod2','chocolate3','firebrick4','goldenrod2','chocolate3','firebrick4','goldenrod2')
+taucolh <- c('darkgreen','forestgreen','chartreuse3', 'darkgreen','forestgreen','chartreuse3','darkgreen','forestgreen','chartreuse3','darkgreen','forestgreen','chartreuse3','darkgreen','forestgreen','chartreuse3','darkgreen','forestgreen','chartreuse3','darkgreen','forestgreen','chartreuse3')
 
 if (experimento ==1)
 { soporte_t <- c(0,35)
   par(cex.main = 1.5, mar = c(5, 6, 4, 5) + 0.1, mgp = c(3.5, 1, 0), cex.lab = 1.5,
       font.lab = 2, cex.axis = 1.3, bty = "n", las=1, cex.main=3)
   
-  plot(density(tauH), axes=F, main="", ylab="", xlab="", xlim=c(-0.5,0.5), col='forestgreen', lwd=2, ylim=c(0,14))
-  lines(soporte, dnorm(soporte,0,1), lwd=1, col="darkorchid3")
+  plot(soporte_t, axes=F, main="", ylab="", xlab="", xlim=c(-0.15,0.3), col='white')
+  for(a in 1:k){
+  title("Experimento 1", line=2.2)
+  lines(density(tauH), lwd=2.5, col=taucolh[a], ylab="", xlab="", xlim=c(-0.5,0.5), axes=F)}
   axis(1)
   abline(v=0, col='black', lty=2, lwd=3)
+  #axis(2, labels=F, at=c(0,24))
   #mtext("Density", side=2, line = 0, cex=1, las=0)
-  mtext("Experimento 1", side=3, line = -0.3, cex=1.5, font=1)
+  mtext("Diferencias en Tasas de Hits", side=3, line = 0.2, cex=1.5, font=1)
   mtext("Tau-H", side=1, line = 3, cex=2, font=2)
-  title(expression(paste(theta, "H(A) - ", theta, "H(B)")), line=2.2)
-  
-  #ZOOM
-  plot(density(tauH), axes=F, main="", ylab="", xlab="", xlim=c(-2,0.2), col='forestgreen', lwd=2, ylim=c(0,0.8))
-  lines(soporte, dnorm(soporte,0,1), lwd=1, col="darkorchid3")
-  axis(1)
-  abline(v=0, col='black', lty=2, lwd=3)
-  mtext("(zoom)", side=1, line = 3, cex=2, font=2)
-  
 
-  plot(density(tauF), axes=F, main="", ylab="", xlab="", xlim=c(-0.5,0.5), col='red', lwd=2,  ylim=c(0,10.5))
-  lines(seq(-1,1,.05), dnorm(seq(-1,1,.05), 0,1), lwd=1, col="darkorchid3")
+  
+  plot(soporte_t, axes=F, main="", ylab="", xlab="", xlim=c(-0.1,0.35), col='white')
+  for (a in 1:k){
+  lines(density(tauF), lwd=2.5, col=taucolfa[a], ylab="", main="", xlab="", xlim=c(-0.5,0.5), axes=F)
+  }
   axis(1) 
   abline(v=0, col='black', lty=2, lwd=3)
   #axis(2, labels=F, at=c(0,24))
   #mtext("Density", side=2, line = 2, cex=1, las=0)
   mtext("Tau-F", side=1, line = 3, cex=2, font=2)
-  mtext("Experimento 1", side=3, line = -0.3, cex=1.5, font=1)
-  title(expression(paste(theta, "FA(B) - ", theta, "FA(A)")), line=2.2)
-  
-  #ZOOM
-  plot(density(tauF), axes=F, main="", ylab="", xlab="", xlim=c(-2,0.2), col='red', lwd=2, ylim=c(0,0.8))
-  lines(soporte, dnorm(soporte,0,1), lwd=1, col="darkorchid3")
-  axis(1)
-  abline(v=0, col='black', lty=2, lwd=3)
-  mtext("(zoom)", side=1, line = 3, cex=2, font=2)
+  mtext("Diferencias en Tasas de F.A.", side=3, line = 0.2, cex=1.5, font=1)
 }
 
 if (experimento ==2)
@@ -311,60 +302,27 @@ if (experimento ==2)
   par(cex.main = 1.5, mar = c(5, 6, 4, 5) + 0.1, mgp = c(3.5, 1, 0), cex.lab = 1.5,
       font.lab = 2, cex.axis = 1.3, bty = "n", las=1, cex.main=3)
   
-  plot(density(tauH), axes=F, main="", ylab="", xlab="", xlim=c(-0.5,0.5), col='forestgreen', lwd=2, ylim=c(0,14))
-  lines(soporte, dnorm(soporte,0,1), lwd=1, col="darkorchid3")
+  plot(soporte_t, axes=F, main="", ylab="", xlab="", xlim=c(-0.1,0.55), col='white')
+  for(a in 1:k){
+    title("Experimento 2", line=2.2)
+    lines(density(tauH[,a]), lwd=2.5, col=taucolh[a], ylab="", xlab="", 
+          xlim=c(-0.5,0.5), axes=F)
+  }
   axis(1)
   abline(v=0, col='black', lty=2, lwd=3)
-  points(0,dnorm(0,0,1), pch=16, type='p', col='red', cex=1)
-  points(0,dnorm(0,mean(tauH), sd(tauH)), pch=16, type='p', col='red', cex=1)
-  #mtext("Density", side=2, line = 0, cex=1, las=0)
-  text(-0.2,3,paste(round(SavageDickey_H,3)))  
-  text(-0.2,5,paste("Bayes Factor"))  
-  mtext("Experimento 2", side=3, line = -0.3, cex=1.5, font=1)
-  mtext("Tau-H", side=1, line = 3, cex=2, font=2)
-  title(expression(paste(theta, "H(A) - ", theta, "H(B)")), line=2.2)
-  
-  #ZOOM
-  plot(density(tauH), axes=F, main="", ylab="", xlab="", xlim=c(-2,0.2), col='forestgreen', lwd=2, ylim=c(0,0.8))
-  lines(soporte, dnorm(soporte,0,1), lwd=1, col="darkorchid3")
-  points(0,dnorm(0,0,1), pch=16, type='p', col='red', cex=1.5)
-  points(0,dnorm(0,mean(tauH), sd(tauH)), pch=16, type='p', col='red', cex=1.5)
-  lines(c(-1.5, -1.3),c(0.70,0.70), lwd=2, lty=1, col="darkorchid3")
-  lines(c(-1.5, -1.3),c(0.50,0.50), lwd=2, lty=1, col="forestgreen")
-  text(-1.25, 0.70, labels="Tau F - Prior", offset=0, cex = 0.8, pos=4)
-  text(-1.25, 0.50, labels="Tau F - Posterior", offset=0, cex = 0.8, pos=4)
-  axis(1)
-  abline(v=0, col='black', lty=2, lwd=3)
-  mtext("(zoom)", side=1, line = 3, cex=2, font=2)
-  
-  
-  plot(density(tauF), axes=F, main="", ylab="", xlab="", xlim=c(-0.5,0.5), col='red', lwd=2,  ylim=c(0,10.5))
-  lines(seq(-1,1,.05), dnorm(seq(-1,1,.05), 0,1), lwd=1, col="darkorchid3")
-  axis(1) 
-  abline(v=0, col='black', lty=2, lwd=3)
-  points(0,dnorm(0,0,1), pch=16, type='p', col='blue', cex=1)
-  points(0,dnorm(0,mean(tauF), sd(tauF)), pch=16, type='p', col='blue', cex=1)
-  lines(c(0,0), c(dnorm(0,0,1), dnorm(0,mean(tauF), sd(tauF))), lwd=3, col="blue", lty=1)
-  text(-0.2,3,paste(round(SavageDickey_F,3)))  
-  text(-0.2,5,paste("Bayes Factor"))  
   #axis(2, labels=F, at=c(0,24))
   #mtext("Density", side=2, line = 2, cex=1, las=0)
-  mtext("Tau-F", side=1, line = 3, cex=2, font=2)
-  mtext("Experimento 2", side=3, line = -0.3, cex=1.5, font=1)
-  title(expression(paste(theta, "FA(B) - ", theta, "FA(A)")), line=2.2)
-  
-  #ZOOM
-  plot(density(tauF), axes=F, main="", ylab="", xlab="", xlim=c(-1.7,0.2), col='red', lwd=2, ylim=c(0,2.8))
-  lines(soporte, dnorm(soporte,0,1), lwd=1, col="darkorchid3")
-  points(0,dnorm(0,0,1), pch=16, type='p', col='blue', cex=1.5)
-  points(0,dnorm(0,mean(tauF), sd(tauF)), pch=16, type='p', col='blue', cex=1.5)
-  axis(1)
-  lines(c(-1.5, -1.3),c(2.60,2.60), lwd=2, lty=1, col="darkorchid3")
-  lines(c(-1.5, -1.3),c(1.60,1.60), lwd=2, lty=1, col="red")
-  text(-1.25, 2.60, labels="Tau F - Prior", offset=0, cex = 0.8, pos=4)
-  text(-1.25, 1.60, labels="Tau F - Posterior", offset=0, cex = 0.8, pos=4)
-  abline(v=0, col='black', lty=2, lwd=3)
-  mtext("(zoom)", side=1, line = 3, cex=2, font=2)
-  
-}
+  mtext("Diferencias entre Tasas de Hits", side=3, line = 0.2, cex=1.5, font=1)
+  mtext("Tau-H", side=1, line = 3, cex=2, font=2)
 
+  
+  plot(soporte_t, axes=F, main="", ylab="", xlab="", xlim=c(-0.15,0.35), col='white')
+  for (a in 1:k){
+    lines(density(tauF[,a]), lwd=2.5, col=taucolfa[a], ylab="", main="", xlab="", xlim=c(-0.5,0.5), axes=F)
+  }
+  axis(1) 
+  abline(v=0, col='black', lty=2, lwd=3)
+  #axis(2, labels=F, at=c(0,24))
+  mtext("Tau-F", side=1, line = 3, cex=2, font=2)
+  mtext("Diferencias entre Tasas de F.A.", side=3, line = 0.2, cex=1.5, font=1)
+}

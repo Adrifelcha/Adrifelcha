@@ -15,14 +15,14 @@ model{
   mu_thetaf_A <- Mu_thetaf-Tau_F/2 
   mu_thetah_B <- Mu_thetah-Tau_H/2 
   mu_thetaf_B <- Mu_thetaf+Tau_F/2
-  lam_thetah_A ~ dgamma(.001,.001)
-  lam_thetaf_A ~ dgamma(.001,.001)
-  lam_thetah_B ~ dgamma(.001,.001)
-  lam_thetaf_B ~ dgamma(.001,.001)
-  sigmath_A <- 1/sqrt(lam_thetah_A)
-  sigmatf_A <- 1/sqrt(lam_thetaf_A)
-  sigmath_B <- 1/sqrt(lam_thetah_B)
-  sigmatf_B <- 1/sqrt(lam_thetaf_B)
+  lam_thetah_A <- 1/pow(sigmath_A,2)
+  lam_thetaf_A <- 1/pow(sigmatf_A,2)
+  lam_thetah_B <- 1/pow(sigmath_B,2)
+  lam_thetaf_B <- 1/pow(sigmatf_B,2)
+  sigmath_A ~ dnorm(0,1)
+  sigmatf_A ~ dnorm(0,1)
+  sigmath_B ~ dnorm(0,1)
+  sigmatf_B ~ dnorm(0,1)
 Mu_thetah ~ dnorm(0,1)
 Mu_thetaf ~ dnorm(0,1)
 Tau_H ~ dnorm(0,1)
