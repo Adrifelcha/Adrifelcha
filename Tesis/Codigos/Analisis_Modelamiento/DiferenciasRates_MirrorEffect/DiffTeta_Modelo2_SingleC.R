@@ -56,17 +56,17 @@ n <- 160       #Ensayos con Ruido
 ######################################
 data <- list("fa_A", "fa_B", "h_B", "h_A", "s", "n", "k")                    #Los datos que vamos a utilizar para nuestro modelo
 myinits <- list(
-  list(d_A = rep(0,k), c_A = rep(0,k), d_B = rep(0,k), c_B = rep(0,k)))      #Valores iniciales para las extracciones de las cadenas de Markov
+  list(d_A = rep(0,k), c = rep(0,k), d_B = rep(0,k)))      #Valores iniciales para las extracciones de las cadenas de Markov
 
 #Parámetros monitoreados
-parameters <- c("d_A", "c_A", "thetah_A", "thetaf_A", "d_B", "c_B", "thetah_B", "thetaf_B","Tau_H", "Tau_F")
+parameters <- c("d_A", "c", "thetah_A", "thetaf_A", "d_B", "thetah_B", "thetaf_B","Tau_H", "Tau_F")
 
 niter <- 100000    #Iteraciones
 burnin <- 1000     #No. de primeros sampleos en ignorarse
 
 #Corremos el modelo
 samples <- jags(data, inits=myinits, parameters,
-                model.file ="C:/Users/Alejandro/Desktop/Felisa/Tesis/Codigos/Analisis_Modelamiento/DiferenciasRates_MirrorEffect/DiffTeta_Modelo1_TauINSIDEloop.txt",
+                model.file ="C:/Users/Alejandro/Desktop/Felisa/Tesis/Codigos/Analisis_Modelamiento/DiferenciasRates_MirrorEffect/DiffTeta_Modelo2_SingleC.txt",
                 n.chains=1, n.iter=niter, n.burnin=burnin, n.thin=1)
 #La variable 'samples' contiene los parámetros monitoreados por el modelo. (Las extracciones)
 
@@ -79,8 +79,8 @@ samples <- jags(data, inits=myinits, parameters,
   d_a <- samples$BUGSoutput$sims.list$d_A
   d_b <- samples$BUGSoutput$sims.list$d_B
 
-  c_a <- samples$BUGSoutput$sims.list$c_A
-  c_b <- samples$BUGSoutput$sims.list$c_B
+  c <- samples$BUGSoutput$sims.list$c
+  
   
   tetaH_a <- samples$BUGSoutput$sims.list$thetah_A
   tetaH_b <- samples$BUGSoutput$sims.list$thetah_B

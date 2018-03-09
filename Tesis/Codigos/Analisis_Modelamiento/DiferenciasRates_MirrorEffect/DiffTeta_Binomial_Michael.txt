@@ -27,4 +27,6 @@ Mu_thetah ~ dnorm(0,1)
 Mu_thetaf ~ dnorm(0,1)
 Tau_H ~ dnorm(0,1)
 Tau_F ~ dnorm(0,1)
+Tau_H_prior ~ dnorm(0,1)
+Tau_F_prior ~ dnorm(0,1)
 }

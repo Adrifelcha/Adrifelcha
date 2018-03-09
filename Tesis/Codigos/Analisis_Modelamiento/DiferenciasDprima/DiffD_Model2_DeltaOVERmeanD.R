@@ -338,6 +338,7 @@ if (experimento ==2)
       font.lab = 2, cex.axis = 1.3, bty = "n", las=1)
   
   plot(density(Delta), col='blue4', main="Experimento 2", cex.main=2, lwd=3.5, ylab="", xlab="", axes=F, xlim=c(-0.5,2))
+  lines(c(mean(Delta), mean(Delta)),c(0,2), col='red')
 #  text(1.5, 1.2, labels="Delta", offset=0, cex = 1, col='red', pos=4)
   axis(1)
   axis(2, labels=F, at=c(0,24))

@@ -2,6 +2,7 @@ setwd("C:/Users/Alejandro/Desktop/Felisa/Tesis/Datos_CSVs")
 rm(list=ls())
 dir()
 library(R2jags)
+library(ggplot2)
 ##############################################################
 ##############################################################
 #Diferencias en Hits y Falsas Alarmas
@@ -59,7 +60,7 @@ myinits <- list(
   list(thetah_A = rep(0.5,k), thetah_B = rep(0.5,k), thetaf_A = rep(0.5,k), thetaf_B = rep(0.5,k), lam_thetah_A = 1, lam_thetaf_A = 1, lam_thetah_B = 1, lam_thetaf_B = 1, Mu_thetah = 1, Mu_thetaf = 1, Tau_H = 0, Tau_F = 0))      #Valores iniciales para las extracciones de las cadenas de Markov
 
 #Parámetros monitoreados
-parameters <- c("thetah_A", "thetaf_A", "thetah_B", "thetaf_B", "mu_thetah_A", "mu_thetaf_A", "mu_thetah_B", "mu_thetaf_B", "Mu_thetah", "Mu_thetaf", "Tau_H", "Tau_F")
+parameters <- c("thetah_A", "thetaf_A", "thetah_B", "thetaf_B", "mu_thetah_A", "mu_thetaf_A", "mu_thetah_B", "mu_thetaf_B", "Mu_thetah", "Mu_thetaf", "Tau_H", "Tau_F",  "Tau_H_prior", "Tau_F_prior")
 
 niter <- 100000    #Iteraciones
 burnin <- 1000     #No. de primeros sampleos en ignorarse
@@ -82,6 +83,9 @@ samples <- jags(data, inits=myinits, parameters,
   
   tauH <- samples$BUGSoutput$sims.list$Tau_H
   tauF <- samples$BUGSoutput$sims.list$Tau_F
+  
+  p_tauH <- samples$BUGSoutput$sims.list$Tau_H_prior
+  p_tauF <- samples$BUGSoutput$sims.list$Tau_F_prior
   
   mu_tH <- samples$BUGSoutput$sims.list$Mu_thetah
   mu_tF <- samples$BUGSoutput$sims.list$Mu_thetaf
@@ -292,7 +296,5 @@ if (experimento ==2)
   text(-1.25, 2.60, labels="Tau F - Prior", offset=0, cex = 0.8, pos=4)
   text(-1.25, 1.60, labels="Tau F - Posterior", offset=0, cex = 0.8, pos=4)
   abline(v=0, col='black', lty=2, lwd=3)
-  mtext("(zoom)", side=1, line = 3, cex=2, font=2)
-  
-}
+  mtext("(zoom)", side=1, line = 3, cex=2, font=2)}
 

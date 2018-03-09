@@ -60,7 +60,7 @@ myinits <- list(
   list(d_A = rep(0,k), d_B = rep(0,k), c = rep(0,k), lambdad_A = 1,  lambdad_B = 1, delta = 0, MuD = 0))
 
 # Parametros monitoreados
-parameters <- c("c", "d_A", "d_B", "thetah_A", "thetah_B", "thetaf_A", "mud_A", "mud_B", "thetaf_B", "sigmad_A", "sigmad_B", "delta", "MuD")
+parameters <- c("c", "d_A", "d_B", "thetah_A", "thetah_B", "thetaf_A", "mud_A", "mud_B", "thetaf_B", "sigmad_A", "sigmad_B", "delta", "MuD", "delta_prior", "MuD_prior")
 
 niter <- 200000     #Iteraciones
 burnin <- 2000      #Numero de extracciones iniciales ignoradas
@@ -95,6 +95,8 @@ muDB <- samples$BUGSoutput$sims.list$mud_B
 Delta <- samples$BUGSoutput$sims.list$delta
 MuD <- samples$BUGSoutput$sims.list$MuD
 
+p_Delta <- samples$BUGSoutput$sims.list$delta_prior
+p_MuD <- samples$BUGSoutput$sims.list$MuD_prior
 
 
 

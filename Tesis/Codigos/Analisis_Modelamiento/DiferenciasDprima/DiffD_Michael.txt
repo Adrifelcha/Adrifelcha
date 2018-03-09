@@ -26,4 +26,6 @@ model{
   sigmad_B <- 1/sqrt(lambdad_B)
 delta ~ dnorm(0,1)
 MuD ~ dnorm(0,1)
+delta_prior ~ dnorm(0,1)
+MuD_prior ~ dnorm(0,1)
 }
