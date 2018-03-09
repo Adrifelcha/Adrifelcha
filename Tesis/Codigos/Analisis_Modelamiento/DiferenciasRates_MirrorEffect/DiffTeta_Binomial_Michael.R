@@ -62,7 +62,7 @@ myinits <- list(
 #Parámetros monitoreados
 parameters <- c("thetah_A", "thetaf_A", "thetah_B", "thetaf_B", "mu_thetah_A", "mu_thetaf_A", "mu_thetah_B", "mu_thetaf_B", "Mu_thetah", "Mu_thetaf", "Tau_H", "Tau_F",  "Tau_H_prior", "Tau_F_prior")
 
-niter <- 100000    #Iteraciones
+niter <- 1000000    #Iteraciones
 burnin <- 1000     #No. de primeros sampleos en ignorarse
 
 #Corremos el modelo
@@ -182,6 +182,7 @@ layout(matrix(1:2,ncol=1))
 #layout(matrix(1,ncol=1))
 
 soporte <- seq(-10,10,.01)
+prior <- rnorm(1000000-1000,0,1)
 SavageDickey_F <- dnorm(0,mean(tauF),sd(tauF))/dnorm(0,0,1)
 SavageDickey_H <- dnorm(0,mean(tauH),sd(tauH))/dnorm(0,0,1)
 
@@ -298,3 +299,84 @@ if (experimento ==2)
   abline(v=0, col='black', lty=2, lwd=3)
   mtext("(zoom)", side=1, line = 3, cex=2, font=2)}
 
+
+############################
+######### Normalized
+############################
+prior_ <- rnorm(1000000,0,1)
+posterior_tauH <- sample(tauH,100000)
+posterior_tauF <- sample(tauF,100000)
+dat1 = data.frame(x=tauH, group="Posterior Tau-F")
+dat2 = data.frame(x=tauF, group="Posterior Tau-H")
+datx = data.frame(x=prior_, group="Prior")
+dat_h = rbind(datx, dat2)
+dat_F = rbind(datx, dat1)
+
+if (experimento ==1)
+{
+  ggplot(dat_h, aes(x, fill=group, colour=group)) +
+    geom_histogram(breaks=seq(-1,1,0.0005), alpha=0.6, 
+                   position="identity", lwd=0.2) +
+    geom_density(col=2) + 
+    xlim(-0.5,0.5) +
+    ggtitle("Unormalized - Experiment 1 (H)")
+  
+  ggplot(dat_h, aes(x, fill=group, colour=group)) +
+    geom_density(alpha=0.4, lwd=0.8, adjust=0.5) +
+    xlim(-0.5,0.5) +
+    ggtitle("NEWISH - Experiment 1 (H)")
+  
+  
+  ggplot(dat_h, aes(x, fill=group, colour=group)) +
+    geom_histogram(aes(y=..density..), breaks=seq(0,10,.05), alpha=0.1, 
+                   position="identity", lwd=0.2) +
+    geom_density(col=2) + 
+    xlim(-0.5,0.5) +
+    ggtitle("Normalized - Experiment 1 (H)")
+  ###
+  
+  ggplot(dat_F, aes(x, fill=group, colour=group)) +
+    geom_histogram(breaks=seq(-2,2,.05), alpha=0.6, 
+                   position="identity", lwd=0.2) +
+    geom_density(col=2) + 
+    xlim(-0.5,0.5) +
+    ggtitle("Unormalized - Experiment 1 (F)")
+  
+  ggplot(dat_F, aes(x, fill=group, colour=group)) +
+    geom_histogram(aes(y=..density..), breaks=seq(-5,5,.001), alpha=0.6, 
+                   position="identity", lwd=0.2) +
+    geom_density(col=2) + 
+    xlim(-0.5,0.5) +
+    ggtitle("Normalized - Experiment 1 (F)")
+  
+  }
+
+if (experimento ==2)
+{
+  ggplot(dat_h, aes(x, fill=group, colour=group)) +
+    geom_histogram(breaks=seq(-2,2,.05), alpha=0.6, 
+                   position="identity", lwd=0.2) +
+    geom_density(col=2) + 
+    ggtitle("Unormalized - Experiment 2 (H)")
+  
+  ggplot(dat_h, aes(x, fill=group, colour=group)) +
+    geom_histogram(aes(y=..density..), breaks=seq(-2,2,.05), alpha=0.6, 
+                   position="identity", lwd=0.2) +
+    geom_density(col=2) + 
+    ggtitle("Normalized - Experiment 2 (H)")
+  ##
+  
+  ggplot(dat_F, aes(x, fill=group, colour=group)) +
+    geom_histogram(breaks=seq(-2,2,.05), alpha=0.6, 
+                   position="identity", lwd=0.2) +
+    geom_density(col=2) + 
+    ggtitle("Unormalized - Experiment 1 (F)")
+  
+  ggplot(dat_F, aes(x, fill=group, colour=group)) +
+    geom_histogram(aes(y=..density..), breaks=seq(-2,2,.05), alpha=0.6, 
+                   position="identity", lwd=0.2) +
+    geom_density(col=2) + 
+    ggtitle("Normalized - Experiment 1 (F)")
+}
+
+#qplot(c(prior,tauH), geom="histogram")

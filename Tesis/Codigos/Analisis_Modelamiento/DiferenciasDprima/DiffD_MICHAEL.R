@@ -2,6 +2,7 @@ setwd("C:/Users/Alejandro/Desktop/Felisa/Tesis/Datos_CSVs")
 rm(list=ls())
 dir()
 library(R2jags)
+library(ggplot2)
 ##############################################################
 ##############################################################
 #Diferencias en D'
@@ -14,7 +15,7 @@ library(R2jags)
 
 ######################################################
 #Especificamos el Experimento y los Datos a analizar
-experimento <- 1
+experimento <- 2
 #####################################################
 
 if (experimento == 1) 
@@ -284,3 +285,49 @@ if (experimento ==2)
 }
 
 
+
+
+############################
+######### Normalized
+############################
+prior_delta <- rnorm(100000,0,1)
+posterior_delta <- sample(Delta,100000)
+dat1 = data.frame(x=prior_delta, group="Prior")
+dat2 = data.frame(x=posterior_delta, group="Posterior")
+dat = rbind(dat1, dat2)
+
+if (experimento ==1)
+{
+ggplot(dat, aes(x, fill=group, colour=group)) +
+  geom_histogram(breaks=seq(-2,2,.05), alpha=0.6, 
+                 position="identity", lwd=0.2) +
+  geom_density(col=2) + 
+  ggtitle("Unormalized - Experiment 1")
+
+ggplot(dat, aes(x, fill=group, colour=group)) +
+  geom_histogram(aes(y=..density..), breaks=seq(-2,2,.05), alpha=0.6, 
+                 position="identity", lwd=0.2) +
+  geom_density(col=2) + 
+  ggtitle("Normalized - Experiment 1")
+}
+
+
+
+if (experimento ==2)
+{
+  ggplot(dat, aes(x, fill=group, colour=group)) +
+    geom_histogram(breaks=seq(-2,2,.05), alpha=0.6, 
+                   position="identity", lwd=0.2) +
+    geom_density(col=2) + 
+    ggtitle("Unormalized - Experiment 2")
+  
+  ggplot(dat, aes(x, fill=group, colour=group)) +
+    geom_histogram(aes(y=..density..), breaks=seq(-2,2,.05), alpha=0.6, 
+                   position="identity", lwd=0.2) +
+    geom_density(col=2) + 
+    ggtitle("Normalized - Experiment 2")
+  
+  ggplot(dat, aes(x, fill=group, colour=group)) +
+    geom_density(alpha=0.4, lwd=0.8, adjust=0.5) +
+  ggtitle("Normalized - Experiment 2")
+}
