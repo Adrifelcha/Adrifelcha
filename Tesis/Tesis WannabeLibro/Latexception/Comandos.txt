@@ -1,3 +1,0 @@
-latex yourfile.tex
-dvips yourfile.dvi
-ps2pdf yourfile.ps

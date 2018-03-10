@@ -5,8 +5,9 @@ account: adrifelcha
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 230755
-bundleId: 1061732
+bundleId: 1128937
 url: https://adrifelcha.shinyapps.io/code/
-when: 1509995811.12282
+when: 1513032268.18031
 asMultiple: FALSE
 asStatic: FALSE
+ignoredFiles: 01-template.R|02-hist-app.R|app.R

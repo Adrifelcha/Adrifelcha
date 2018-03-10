@@ -1,0 +1,222 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Template graphical model %
+% Author: Tom Lodewyckx    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% 0. Begin document
+%%%%%%%%%%%%%%%%%%%
+
+\documentclass{article}
+\usepackage[paperwidth=10.5in, paperheight=7in]{geometry}
+\usepackage{pst-all,pstricks,pst-tools}
+\usepackage{com.braju.graphicalmodels}
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\catcode`\@=11%
+\pagestyle{empty}
+\begin{document}
+\TeXtoEPS
+\psset{unit=13mm,arrowscale=1.5}
+\SpecialCoor
+
+
+% 1. Grid
+%%%%%%%%%
+
+\begin{pspicture}(2,0)(12,10)
+%\showgrid
+
+
+% 2. Nodes
+%%%%%%%%%%
+
+
+         
+           
+  
+
+
+\rput(4.5,6.2){\GM@node[nodeSize=17mm,
+					%observed=true,
+					observedColor=lightgray,
+					%query=true
+					]{TetaH}}
+           \GM@label[offset=-4.5mm]{TetaH}{\huge$\theta^H_{ij}$}
+\rput(7.5,6.2){\GM@node[nodeSize=17mm,
+					%observed=true,
+					observedColor=lightgray,
+					%query=true
+					]{TetaFA}}
+           \GM@label[offset=-4.5mm]{TetaFA}{\huge$\theta^F_{ij}$}
+
+
+\rput(4.2,10.2){\GM@node[nodeSize=17mm,
+					%observed=true,
+					observedColor=lightgray,
+					%query=true
+					]{MuTetaH}}
+					\rput(4.2,10.2){\GM@node[nodeSize=14mm]{Q_small}}					
+           \GM@label[offset=-5mm]{MuTetaH}{\huge$\mu \theta^H_{j}$}
+\rput(7.9,10.2){\GM@node[nodeSize=17mm,
+					%observed=true,
+					observedColor=lightgray,
+					%query=true
+					]{MuTetaFA}}
+					\rput(7.9,10.2){\GM@node[nodeSize=14mm]{Q_small}}
+           \GM@label[offset=-5mm]{MuTetaFA}{\huge$\mu \theta^F_{j}$}
+
+
+
+\rput(5.1,9){\GM@node[nodeSize=17mm,
+					%observed=true,
+					observedColor=lightgray,
+					%query=true
+					]{LamTetaH}}
+           \GM@label[offset=-6mm]{LamTetaH}{\huge$\lambda \theta^H_{j}$}
+\rput(6.9,9){\GM@node[nodeSize=17mm,
+					%observed=true,
+					observedColor=lightgray,
+					%query=true
+					]{LamTetaFA}}
+           \GM@label[offset=-6mm]{LamTetaFA}{\huge$\lambda \theta^F_{j}$}
+
+
+
+\rput(2.2,11.2){\GM@node[nodeSize=15mm,
+					%observed=true,
+					observedColor=lightgray,
+					%query=true
+					]{TauH}}
+			\GM@label[offset=-4mm]{TauH}{\huge$\tau^H$}
+\rput(9.7,11.2){\GM@node[nodeSize=15mm,
+					%observed=true,
+					observedColor=lightgray,
+					%query=true
+					]{TauF}}
+			\GM@label[offset=-4mm]{TauF}{\huge$\tau^F$}
+
+
+
+\rput(2.2,9.2){\GM@node[nodeSize=16mm,
+					%observed=true,
+					observedColor=lightgray,
+					%query=true
+					]{RhoH}}
+			\GM@label[offset=-4mm]{RhoH}{\huge$\mu \theta^H$}
+\rput(9.7,9.2){\GM@node[nodeSize=16mm,
+					%observed=true,
+					observedColor=lightgray,
+					%query=true
+					]{RhoF}}
+			\GM@label[offset=-4mm]{RhoF}{\huge$\mu \theta^F$}
+
+
+
+
+
+\rput(4.5,4){\GM@node[nodeSize=14mm,
+					observed=true,
+					observedColor=lightgray,
+					query=true
+					]{hits}}
+           \GM@label[offset=-4.5mm]{hits}{\huge$H_{ij}$}       
+
+\rput(7.5,4){\GM@node[nodeSize=15mm,
+					observed=true,
+					observedColor=lightgray,
+					query=true
+					]{fa}}
+           \GM@label[offset=-6mm]{fa}{\huge$Fa_{ij}$}    
+
+
+\rput(7.5,0.5){\GM@node[nodeSize=13mm,
+					observed=true,
+					observedColor=lightgray,
+					query=true
+					]{N}}
+           \GM@label[offset=-2.5mm]{N}{\huge$n$}    
+
+\rput(4.5,0.5){\GM@node[nodeSize=13mm,
+					observed=true,
+					observedColor=lightgray,
+					query=true
+					]{S}}
+           \GM@label[offset=-2mm]{S}{\huge$s$} 
+
+
+
+ 
+ 
+% 3. Arrows
+%%%%%%%%%%%
+
+\ncline[arrows=->]{TauF}{MuTetaFA}
+\ncline[arrows=->]{TauH}{MuTetaH}
+
+\ncline[arrows=->]{RhoF}{MuTetaFA}
+\ncline[arrows=->]{RhoH}{MuTetaH}
+
+
+\ncline[arrows=->]{MuTetaH}{TetaH}
+\ncline[arrows=->]{MuTetaFA}{TetaFA}
+
+\ncline[arrows=->]{LamTetaH}{TetaH}
+\ncline[arrows=->]{LamTetaFA}{TetaFA}
+
+\ncline[arrows=->]{TetaH}{hits}
+\ncline[arrows=->]{TetaFA}{fa}
+
+
+\ncline[arrows=->]{TetaH}{hits}
+\ncline[arrows=->]{TetaFA}{fa}
+
+
+
+\ncline[arrows=->]{N}{fa}
+
+
+\ncline[arrows=->]{S}{hits}
+
+% 4. Plates
+%%%%%%%%%%%
+
+\rput(2.7, 1.5){\GM@plate[plateLabelPos=br]{6.6}{6.7}{\Large$i$ Participant}}
+
+\rput(3.3, 2.3){\GM@plate[plateLabelPos=br]{5.5}{8.9}{\Large$j$ Condition}}
+
+% 5. Model specification
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\rput(11.5,11.5){\pnode{equation}}\GM@label{equation}{\huge$\tau^H_{i}\sim \mathrm{Gaussian}\bigl(0,1)$}
+\rput(11.5,10.7){\pnode{equation}}\GM@label{equation}{\huge$\tau^F_{i}\sim \mathrm{Gaussian}\bigl(0,1)$}
+
+\rput(11.5,9.9){\pnode{equation}}\GM@label{equation}{\huge$\mu \theta^H\sim \mathrm{Gaussian}\bigl(0,1)$}
+\rput(11.5,9.1){\pnode{equation}}\GM@label{equation}{\huge$\mu \theta^F\sim \mathrm{Gaussian}\bigl(0,1)$}
+
+\rput(11.5,8){\pnode{equation}}\GM@label{equation}{\huge$\mu \theta^H_{A}\gets \mu \theta^H + \frac{\tau^H}{2}$}
+\rput(11.5,7.1){\pnode{equation}}\GM@label{equation}{\huge$\mu \theta^H_{B}\gets \mu \theta^H - \frac{\tau^H}{2}$}
+\rput(11.5,6.1){\pnode{equation}}\GM@label{equation}{\huge$\mu \theta^F_{A}\gets \mu \theta^F - \frac{\tau^F}{2}$}
+\rput(11.5,5.2){\pnode{equation}}\GM@label{equation}{\huge$\mu \theta^F_{B}\gets \mu \theta^F + \frac{\tau^F}{2}$}
+
+\rput(11.5,4.1){\pnode{equation}}\GM@label{equation}{\huge$\lambda \theta^H_{j}\sim \mathrm{Gamma}\bigl(.001,.001)$}
+\rput(11.5,3.3){\pnode{equation}}\GM@label{equation}{\huge$\lambda \theta^F_{j}\sim \mathrm{Gamma}\bigl(.001,.001)$}
+
+
+\rput(11.5,1.9){\pnode{equation}}\GM@label{equation}{\huge$\theta^H_{ij}\sim \mathrm{Gaussian}(\mu \theta^H_{j}, \lambda \theta^H_{j})$}
+\rput(11.5,1.1){\pnode{equation}}\GM@label{equation}{\huge$\theta^F_{ij}\sim \mathrm{Gaussian}(\mu \theta^F_{j}, \lambda \theta^F_{j})$}
+
+
+\rput(11.5,-0.2){\pnode{equation}}\GM@label{equation}{\huge$H_{ij}\sim \mathrm{Binomial}\bigl(\theta^H_{ij}, s)$}
+\rput(11.5,-1){\pnode{equation}}\GM@label{equation}{\huge$Fa_{ij}\sim \mathrm{Binomial}\bigl(\theta^F_{ij}, s)$}
+
+
+
+
+
+
+% 6. End document
+%%%%%%%%%%%%%%%%%
+
+\end{pspicture}
+\endTeXtoEPS
+\end{document}

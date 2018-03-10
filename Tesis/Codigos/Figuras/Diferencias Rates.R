@@ -1,4 +1,4 @@
-setwd("C:/Users/Adrifelcha/Desktop/Felisa/Tesis/CSVs")
+setwd("C:/Users/Adrifelcha/Desktop/Felisa/Tesis/Datos_CSVs")
 rm(list=ls())
 #layout(matrix(1:2,ncol=1))
 dir()
@@ -12,7 +12,7 @@ dir()
 ########################################################
 #Experimento 1
 #Archivo que contiene todos los datos
-archive <-'Ex_1Ebb_TODOS-.csv'
+archive <-'Ex_1Ebb_TODOS.csv'
 datos <- read.csv(archive)
 layout(matrix(1:2,ncol=2, byrow=TRUE))
 
@@ -26,18 +26,23 @@ FA_mtx<-matrix(data=c(FA_Facil,FA_Dificil), nrow=2, ncol=20, byrow=TRUE)
 
 #Ploteamos diferencias en D'
 matplot(Hits_mtx, type="b", lty=1, lwd=3, pch=21, col=c("green3"),
-        cex=1, ylim=c(0.5,1), xlim=c(0.75,2.25), xlab='Tipo de Estímulo', ylab='Tasa de Hits',
-        xaxp=c(1,2,1), las=1, labels=F)
-title('Experimento 1', outer = TRUE, font=1, line = -1.5)
-mtext('Diferencias en Hits',3,cex=1.2, col='green4')
+        cex=1, ylim=c(0.5,1.05), xlim=c(0.75,2.25), xlab='', ylab='',
+        xaxp=c(1,2,1), las=1, labels=F, ann=F, axes=F)
+mtext("Diferencias entre tasas de Hits y F.A.",3,cex=2.5, line=-2, f=2, outer=TRUE)
+mtext("Experimento 1",3,cex=2, line=-4, f=2, outer=TRUE)
+mtext('Diferencias en Hits',3,cex=2, col='green4', line=-1.6)
+mtext("Clase de estímulo",1,cex=2, line=2.5, f=2)
+mtext("Tasa de Hits",2,cex=2, line=2.5, f=2)
 axis(2,at=c(0.5,0.6,0.7,0.8,0.9,1),labels=c("0.5","0.6","0.7","0.8","0.9","1"),las=1)
 axis(1,at=c(1,2),labels=c("A","B"),las=1)
 
 
 matplot(FA_mtx, type="b", lty=1, lwd=3, pch=21, col=c("indianred3"),
-        cex=1, ylim=c(0,0.501), xlim=c(0.75,2.25), xlab='Tipo de Estímulo', ylab='Tasa de F. Alarmas',
-        xaxp=c(1,2,1), las=1, labels=F)
-mtext('Diferencias en F. Alarmas',3,cex=1.2, col='Red')
+        cex=1, ylim=c(0,0.55), xlim=c(0.75,2.25), xlab='', ylab='',
+        xaxp=c(1,2,1), las=1, labels=F, ann=F, axes=F)
+mtext('Diferencias en F.A.',3,cex=2, col='indianred4', line=-1.6)
+mtext("Clase de estímulo",1,cex=2, line=2.5, f=2)
+mtext("Tasa de F.A.",2,cex=2, line=2.5, f=2)
 
 axis(1,at=c(1,2),labels=c("A","B"),las=1)
 axis(2,at=c(0.0,0.1,0.2,0.3,0.4,0.5),labels=c("0","0.1","0.2","0.3","0.4","0.5"),las=1)
@@ -46,7 +51,7 @@ axis(2,at=c(0.0,0.1,0.2,0.3,0.4,0.5),labels=c("0","0.1","0.2","0.3","0.4","0.5")
 ###############################################
 #Experimento2
 #Archivo que contiene los datos
-archivo <-'Ex_2Ebb_TODOS_No1.csv'
+archivo <-'Ex_2Ebb_TODOS_Sin1.csv'
 data <- read.csv(archivo)
 layout(matrix(1:2,ncol=2, byrow=TRUE))
 
@@ -60,19 +65,23 @@ Fa_mtx<-matrix(data=c(Fa_Facil,Fa_Dificil), nrow=2, ncol=20, byrow=TRUE)
 
 #Plot
 matplot(H_mtx, type="b", lty=1, lwd=3, pch=21, col=c("olivedrab3"),
-        cex=1, ylim=c(0.3,1), xlim=c(0.75,2.25), xlab='Tipo de Estímulos', ylab='Tasa de Hits',
-        xaxp=c(1,2,1), las=1, labels=F)
-mtext('Diferencias en Hits',3,cex=1, col='olivedrab4')
+        cex=1, ylim=c(0.3,1.02), xlim=c(0.75,2.25), xlab='Tipo de Estímulos', ylab='Tasa de Hits',
+        xaxp=c(1,2,1), las=1, labels=F, ann=F, axes=F)
+mtext("Experimento 2",3,cex=2, line=-2.5, f=2, outer=TRUE)
+mtext('Diferencias en Hits',3,cex=2, col='green4', line=-0.8)
+mtext("Clase de estímulo",1,cex=2, line=2.5, f=2)
+mtext("Tasa de Hits",2,cex=2, line=2.5, f=2)
 
 axis(1,at=c(1,2),labels=c("A","B"),las=1)
 axis(2,at=c(0.3,0.4,0.5,0.6,0.7,0.8,0.9,1),labels=c("0.3","0.4","0.5","0.6","0.7","0.8","0.9","1"),las=1)
 
 
 matplot(Fa_mtx, type="b", lty=1, lwd=3, pch=21, col=c("Red"),
-        cex=1, ylim=c(0,0.501), xlim=c(0.75,2.25), xlab='Tipo de Estímulos', ylab='Tasa de F. Alarmas',
-        xaxp=c(1,2,1), las=1, labels=F)
-title('Experimento 2', outer = TRUE, font=1, line = -1.5)
-mtext('Diferencias en F. Alarmas',3,cex=1, col='brown4')
+        cex=1, ylim=c(0,0.52), xlim=c(0.75,2.25), xlab='Tipo de Estímulos', ylab='Tasa de F. Alarmas',
+        xaxp=c(1,2,1), las=1, labels=F, ann=F, axes=F)
+mtext('Diferencias en Hits',3,cex=2, col='brown4', line=-0.8)
+mtext("Clase de estímulo",1,cex=2, line=2.5, f=2)
+mtext("Tasa de F.A.",2,cex=2, line=2.5, f=2)
 
 axis(1,at=c(1,2),labels=c("A","B"),las=1)
 axis(2,at=c(0.0,0.1,0.2,0.3,0.4,0.5),labels=c("0","0.1","0.2","0.3","0.4","0.5"),las=1)

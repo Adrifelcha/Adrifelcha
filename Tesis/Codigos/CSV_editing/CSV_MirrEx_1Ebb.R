@@ -1,4 +1,4 @@
-setwd("C:/Users/Adrifelcha/Dropbox/Tesis/Experimentos/Mirror Experimento 2/Data/Datos_Exp2")
+setwd("C:/Users/Adriana/Desktop/Felisa/Tesis/Datos_CSVs/Datos_MirrExp_1Ebb")
 
 rm(list=ls())
 

@@ -1,9 +1,9 @@
-setwd("C:/Users/Alejandro/Desktop/Felisa/Tesis/CSVs")
+setwd("C:/Users/Alejandro/Desktop/Felisa/Tesis/Datos_CSVs")
 rm(list=ls())
 dir()
 
 #Archivo que contiene todos los datos
-archive <-'Ex_1Ebb_TODOS-.csv'
+archive <-'Ex_1Ebb_TODOS.csv'
 datos <- read.csv(archive)
 
 

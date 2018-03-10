@@ -1,0 +1,13 @@
+name: myveryfirstapp
+title: MyVeryFirstApp
+username:
+account: adrifelcha
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 247429
+bundleId: 1129027
+url: https://adrifelcha.shinyapps.io/myveryfirstapp/
+when: 1513035954.58169
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: 01-template.R|02-hist-app.R|app.R

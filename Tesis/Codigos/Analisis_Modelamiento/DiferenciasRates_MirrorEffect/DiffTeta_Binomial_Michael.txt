@@ -1,0 +1,32 @@
+# Signal Detection Theory
+model{
+  for (i in 1:k){
+  # Observed counts
+    h_A[i] ~ dbin(thetah_A[i],s)
+    fa_A[i] ~ dbin(thetaf_A[i],n)
+    h_B[i] ~ dbin(thetah_B[i],s)
+    fa_B[i] ~ dbin(thetaf_B[i],n)
+    thetah_A[i] ~ dnorm(mu_thetah_A, lam_thetah_A)
+    thetaf_A[i] ~ dnorm(mu_thetaf_A, lam_thetaf_A)
+    thetah_B[i] ~ dnorm(mu_thetah_B, lam_thetah_B)
+    thetaf_B[i] ~ dnorm(mu_thetaf_B, lam_thetaf_B)
+}
+  mu_thetah_A <- Mu_thetah+Tau_H/2 
+  mu_thetaf_A <- Mu_thetaf-Tau_F/2 
+  mu_thetah_B <- Mu_thetah-Tau_H/2 
+  mu_thetaf_B <- Mu_thetaf+Tau_F/2
+  lam_thetah_A ~ dgamma(.001,.001)
+  lam_thetaf_A ~ dgamma(.001,.001)
+  lam_thetah_B ~ dgamma(.001,.001)
+  lam_thetaf_B ~ dgamma(.001,.001)
+  sigmath_A <- 1/sqrt(lam_thetah_A)
+  sigmatf_A <- 1/sqrt(lam_thetaf_A)
+  sigmath_B <- 1/sqrt(lam_thetah_B)
+  sigmatf_B <- 1/sqrt(lam_thetaf_B)
+Mu_thetah ~ dnorm(0,1)
+Mu_thetaf ~ dnorm(0,1)
+Tau_H ~ dnorm(0,1)
+Tau_F ~ dnorm(0,1)
+Tau_H_prior ~ dnorm(0,1)
+Tau_F_prior ~ dnorm(0,1)
+}

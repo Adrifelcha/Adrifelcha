@@ -1,9 +1,9 @@
-setwd("C:/Users/Alejandro/Desktop/Felisa/Tesis/CSVs")
+setwd("C:/Users/Adriana/Desktop/Felisa/Tesis/Datos_CSVs")
 rm(list=ls())
 dir()
 
 #Archivo que contiene todos los datos
-archive <-'Ex_1Ebb_TODOS-.csv'
+archive <-'Ex_1Ebb_TODOS.csv'
 datos <- read.csv(archive)
 
 ############## PRE PRUEBAS
@@ -21,8 +21,9 @@ d_Dificil <- datos$d_B
 #Ordenamos los datos
 d_AyB<- data.frame(cbind(d_Facil, d_Dificil))
 dprimas <- stack(d_AyB)
+Dprimas <- stack(data.frame(cbind(datos$d_A, datos$d_B)))
 #Corremos la T
-t.test(values~ind,data=dprimas,alternative = c("less"))
+t.test(values~ind,data=dprimas)
 
 
 ############## MIRROR EFFECT
@@ -40,7 +41,7 @@ Rates <-stack(Combined_Rates)
 FalsasAlarmas <- stack(FA_Rates)
 Hits <- stack(Hits_Rates)
 #Corremos las T's
-t.test(values~ind,data=FalsasAlarmas,alternative = c("greater"))
+t.test(values~ind,data=FalsasAlarmas,alternative = c("less"))
 t.test(values~ind,data=Hits,alternative = c("less"))
 
 ##### Diferencias en Confidence Rates
