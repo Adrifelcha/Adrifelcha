@@ -1,4 +1,4 @@
-setwd("C:/Users/sandra/Desktop/Adrifelcha_Lab25/Tesis/Datos_CSVs")
+setwd("C:/Users/Alejandro/Desktop/Felisa/Tesis/Datos_CSVs")
 rm(list=ls())
 dir()
 library(R2jags)
