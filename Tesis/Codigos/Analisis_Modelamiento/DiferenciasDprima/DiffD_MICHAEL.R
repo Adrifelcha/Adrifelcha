@@ -239,7 +239,6 @@ par(cex.main = 1.5, mar = c(5, 6, 4, 5) + 0.1, mgp = c(3.5, 1, 0), cex.lab = 1.5
 ############################
 ######### DIFFERENCES ON D'
 
-layout(matrix(1:1,ncol=1))
 if (experimento ==1)
 {
   par(cex.main = 1.5, mar = c(5, 6, 4, 5) + 0.1, mgp = c(3.5, 1, 0), cex.lab = 1.5,
@@ -248,6 +247,7 @@ if (experimento ==1)
   prior_delta <- dnorm(0,1)
   SavageDickey <- dnorm(0,0,1)/dnorm(0,mean(Delta),sd(Delta))
   
+  layout(matrix(1:1,ncol=1))
   plot(density(Delta), col='blue4', main="Experimento 1", cex.main=2, lwd=3.5, ylab="", xlab="", axes=F, xlim=c(-0.5,2))
   lines(seq(-100,100,.05), dnorm(seq(-100,100,.05), 0,1), lwd=1, col="darkorchid3")
   axis(1)
@@ -261,6 +261,7 @@ if (experimento ==1)
   text(0,0.8,paste(round(SavageDickey,3)))  
   text(0,0.9,paste("Bayes Factor"))  
   
+  layout(matrix(1:1,ncol=1))
 }
 
 if (experimento ==2)
@@ -268,20 +269,31 @@ if (experimento ==2)
   par(cex.main = 1.5, mar = c(5, 6, 4, 5) + 0.1, mgp = c(3.5, 1, 0), cex.lab = 1.5,
       font.lab = 2, cex.axis = 1.3, bty = "n", las=1)
   
-  prior_delta <- dnorm(0,1)
+  prior_delta <- rnorm((niter-burnin),0,1)
   SavageDickey <- dnorm(0,0,1)/dnorm(0,mean(Delta),sd(Delta))
   
+  savage <- cbind(Delta, prior_delta)
+  
+  layout(matrix(1:1,ncol=1))
   plot(density(Delta), col='blue4', main="Experimento 2", cex.main=2, lwd=3.5, ylab="", xlab="", axes=F, xlim=c(-0.5,2))
-  lines(seq(-100,100,.05), dnorm(seq(-100,100,.05), 0,1), lwd=1, col="darkorchid3")
+  #lines(seq(-100,100,.05), dnorm(seq(-100,100,.05), 0,1), lwd=1, col="darkorchid3")
+  lines(density(prior_delta), lwd=1, col="red")
   axis(1)
-  axis(2, labels=F, at=c(0,24))
-  mtext("Densidad de probabilidad", side=2, line=2, cex=2, las=0, font=2)
+  axis(2, line=.5)
+  mtext("Densidad de probabilidad", side=2, line=3.5, cex=2, las=0, font=2)
   mtext("Delta", side=1, line=2.5, cex=2, font=2)
   points(0,0.01995232, pch=16, type='p', col='red', cex=1.5)
   points(0,0.3989423, pch=16, type='p', col='red', cex=1.5)
   lines(c(0,0), c(0.0403, 0.4003), lwd=1, col="red", lty=2)
   text(0,0.8,paste(round(SavageDickey,3)))  
-  text(0,0.9,paste("Bayes Factor"))  
+  text(0,0.9,paste("Bayes Factor"))
+  
+  layout(matrix(1:2,ncol=1))
+  hist(c(Delta), freq=0, breaks=100)
+  text(-0.4, 1.2, paste("Samples =", length(Delta)), offset=0, cex = 0.8, pos=4)
+
+  hist(prior_delta, freq=FALSE, breaks=1000)
+  text(-3.9, 0.3, paste("Samples =", length(prior_delta)), offset=0, cex = 0.8, pos=4)
 }
 
 
