@@ -182,18 +182,21 @@ layout(matrix(1:2,ncol=1))
 #layout(matrix(1,ncol=1))
 
 soporte <- seq(-10,10,.01)
-prior <- rnorm(1000000-1000,0,1)
+prior <- rnorm((niter-burnin),0,1)
 SavageDickey_F <- dnorm(0,mean(tauF),sd(tauF))/dnorm(0,0,1)
 SavageDickey_H <- dnorm(0,mean(tauH),sd(tauH))/dnorm(0,0,1)
+
+
 
 if (experimento ==1)
 { soporte_t <- c(0,35)
   par(cex.main = 1.5, mar = c(5, 6, 4, 5) + 0.1, mgp = c(3.5, 1, 0), cex.lab = 1.5,
       font.lab = 2, cex.axis = 1.3, bty = "n", las=1, cex.main=3)
-  
+
   plot(density(tauH), axes=F, main="", ylab="", xlab="", xlim=c(-0.5,0.5), col='forestgreen', lwd=2, ylim=c(0,14))
   lines(soporte, dnorm(soporte,0,1), lwd=1, col="darkorchid3")
   axis(1)
+  axis(2)
   abline(v=0, col='black', lty=2, lwd=3)
   #mtext("Density", side=2, line = 0, cex=1, las=0)
   mtext("Experimento 1", side=3, line = -0.3, cex=1.5, font=1)
@@ -206,6 +209,7 @@ if (experimento ==1)
   plot(density(tauH), axes=F, main="", ylab="", xlab="", xlim=c(-2,0.2), col='forestgreen', lwd=2, ylim=c(0,0.8))
   lines(soporte, dnorm(soporte,0,1), lwd=1, col="darkorchid3")
   axis(1)
+  axis(2)
   abline(v=0, col='black', lty=2, lwd=3)
   lines(c(-1.5, -1.3),c(0.70,0.70), lwd=2, lty=1, col="darkorchid3")
   lines(c(-1.5, -1.3),c(0.50,0.50), lwd=2, lty=1, col="forestgreen")
@@ -213,10 +217,16 @@ if (experimento ==1)
   text(-1.25, 0.50, labels="Tau F - Posterior", offset=0, cex = 0.8, pos=4)
   mtext("(zoom)", side=1, line = 3, cex=2, font=2)
   
-
+  hist(c(tauH), freq=0, breaks=100)
+  text(-0.08, 7.2, paste("Samples =", length(tauH)), offset=0, cex = 0.8, pos=4)
+  
+  hist(prior, freq=FALSE, breaks=1000)
+  text(-3.9, 0.3, paste("Samples =", length(prior)), offset=0, cex = 0.8, pos=4)
+  
   plot(density(tauF), axes=F, main="", ylab="", xlab="", xlim=c(-0.5,0.5), col='red', lwd=2,  ylim=c(0,10.5))
   lines(seq(-1,1,.05), dnorm(seq(-1,1,.05), 0,1), lwd=1, col="darkorchid3")
   axis(1) 
+  axis(2)
   abline(v=0, col='black', lty=2, lwd=3)
   text(-0.2,3,paste(round(SavageDickey_F,3)))  
   text(-0.2,5,paste("Bayes Factor"))  
@@ -230,6 +240,7 @@ if (experimento ==1)
   plot(density(tauF), axes=F, main="", ylab="", xlab="", xlim=c(-2,0.2), col='red', lwd=2, ylim=c(0,0.8))
   lines(soporte, dnorm(soporte,0,1), lwd=1, col="darkorchid3")
   axis(1)
+  axis(2)
   abline(v=0, col='black', lty=2, lwd=3)
   lines(c(-1.5, -1.3),c(0.70,0.70), lwd=2, lty=1, col="darkorchid3")
   lines(c(-1.5, -1.3),c(0.50,0.50), lwd=2, lty=1, col="red")

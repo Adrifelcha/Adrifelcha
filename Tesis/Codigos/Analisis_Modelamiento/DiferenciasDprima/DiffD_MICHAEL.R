@@ -272,7 +272,7 @@ if (experimento ==2)
   prior_delta <- rnorm((niter-burnin),0,1)
   SavageDickey <- dnorm(0,0,1)/dnorm(0,mean(Delta),sd(Delta))
   
-  savage <- cbind(Delta, prior_delta)
+  #savage <- cbind(Delta, prior_delta)
   
   layout(matrix(1:1,ncol=1))
   plot(density(Delta), col='blue4', main="Experimento 2", cex.main=2, lwd=3.5, ylab="", xlab="", axes=F, xlim=c(-0.5,2))
