@@ -15,7 +15,7 @@ library(ggplot2)
 
 ######################################################
 #Especificamos el Experimento y los Datos a analizar
-experimento <- 2
+experimento <- 1
 #####################################################
 
 if (experimento == 1) 

@@ -247,6 +247,12 @@ if (experimento ==1)
   text(-1.25, 0.70, labels="Tau F - Prior", offset=0, cex = 0.8, pos=4)
   text(-1.25, 0.50, labels="Tau F - Posterior", offset=0, cex = 0.8, pos=4)
   mtext("(zoom)", side=1, line = 3, cex=2, font=2)
+  
+  hist(c(tauF), freq=0, breaks=100)
+  text(-0.08, 7.2, paste("Samples =", length(tauF)), offset=0, cex = 0.8, pos=4)
+  
+  hist(prior, freq=FALSE, breaks=1000)
+  text(-3.9, 0.3, paste("Samples =", length(prior)), offset=0, cex = 0.8, pos=4)
 }
 
 if (experimento ==2)
