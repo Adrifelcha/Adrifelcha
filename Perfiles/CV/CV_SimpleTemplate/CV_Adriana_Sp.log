@@ -1,17 +1,17 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2018.4.2)  3 APR 2018 00:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.25)  3 APR 2018 14:58
 entering extended mode
 **./CV_Adriana_Sp.tex
 (CV_Adriana_Sp.tex
 LaTeX2e <2016/03/31> patch level 3
 Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\koma-script\scrartcl.cls"
-Document Class: scrartcl 2017/09/07 v3.24 KOMA-Script document class (article)
+Document Class: scrartcl 2016/06/14 v3.21 KOMA-Script document class (article)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\koma-script\scrkbase.sty"
-Package: scrkbase 2017/09/07 v3.24 KOMA-Script package (KOMA-Script-dependent b
+Package: scrkbase 2016/06/14 v3.21 KOMA-Script package (KOMA-Script-dependent b
 asics and keyval usage)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\koma-script\scrbase.sty"
-Package: scrbase 2017/09/07 v3.24 KOMA-Script package (KOMA-Script-independent 
+Package: scrbase 2016/06/14 v3.21 KOMA-Script package (KOMA-Script-independent 
 basics and keyval usage)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
@@ -19,32 +19,40 @@ Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\koma-script\scrlfile.sty"
-Package: scrlfile 2017/09/07 v3.24 KOMA-Script package (loading files)
-)))
-("C:\Program Files\MiKTeX 2.9\tex\latex\koma-script\tocbasic.sty"
-Package: tocbasic 2017/09/07 v3.24 KOMA-Script package (handling toc-files)
+Package: scrlfile 2016/06/14 v3.21 KOMA-Script package (loading files)
+
+Package scrlfile, 2016/06/14 v3.21 KOMA-Script package (loading files)
+                  Copyright (C) Markus Kohm
+
+))) ("C:\Program Files\MiKTeX 2.9\tex\latex\koma-script\tocbasic.sty"
+Package: tocbasic 2016/06/14 v3.21 KOMA-Script package (handling toc-files)
 \scr@dte@tocline@numberwidth=\skip41
 \scr@dte@tocline@numbox=\box26
 )
 Package tocbasic Info: omitting babel extension for `toc'
 (tocbasic)             because of feature `nobabel' available
-(tocbasic)             for `toc' on input line 133.
+(tocbasic)             for `toc' on input line 130.
 Package tocbasic Info: omitting babel extension for `lof'
 (tocbasic)             because of feature `nobabel' available
-(tocbasic)             for `lof' on input line 135.
+(tocbasic)             for `lof' on input line 131.
 Package tocbasic Info: omitting babel extension for `lot'
 (tocbasic)             because of feature `nobabel' available
-(tocbasic)             for `lot' on input line 136.
+(tocbasic)             for `lot' on input line 132.
 Class scrartcl Info: File `scrsize11pt.clo' used instead of
-(scrartcl)           file `scrsize11.clo' to setup font sizes on input line 208
-0.
+(scrartcl)           file `scrsize11.clo' to setup font sizes on input line 205
+2.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\koma-script\scrsize11pt.clo"
-File: scrsize11pt.clo 2017/09/07 v3.24 KOMA-Script font size class option (11pt
+File: scrsize11pt.clo 2016/06/14 v3.21 KOMA-Script font size class option (11pt
 )
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\koma-script\typearea.sty"
-Package: typearea 2017/09/07 v3.24 KOMA-Script package (type area)
+Package: typearea 2016/06/14 v3.21 KOMA-Script package (type area)
+
+Package typearea, 2016/06/14 v3.21 KOMA-Script package (type area)
+                  Copyright (C) Frank Neukam, 1992-1994
+                  Copyright (C) Markus Kohm, 1994-
+
 \ta@bcor=\skip42
 \ta@div=\count79
 \ta@hblk=\skip43
@@ -67,7 +75,7 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 11.0pt
 (typearea)              \footskip       = 47.6pt
 (typearea)              \baselineskip   = 13.6pt
-(typearea)              on input line 1686.
+(typearea)              on input line 1529.
 )
 \c@part=\count80
 \c@section=\count81
@@ -81,63 +89,28 @@ Package typearea Info: These are the values describing the layout:
 \scr@dte@subsubsection@maxnumwidth=\skip50
 \scr@dte@paragraph@maxnumwidth=\skip51
 \scr@dte@subparagraph@maxnumwidth=\skip52
-LaTeX Info: Redefining \textsubscript on input line 4161.
+LaTeX Info: Redefining \textsubscript on input line 4036.
 \abovecaptionskip=\skip53
 \belowcaptionskip=\skip54
 \c@pti@nb@sid@b@x=\box27
 \c@figure=\count86
 \c@table=\count87
-Class scrartcl Info: Redefining `\numberline' on input line 5319.
+Class scrartcl Info: Redefining `\numberline' on input line 5049.
 \bibindent=\dimen102
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\classicthesis\classicthesis.sty"
-Package: classicthesis 2017/10/13 v4.4 Typographic style for a classic-looking 
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\classicthesis\classicthesis.sty"
+Package: classicthesis 2015/09/06 v4.2 Typographic style for a classic-looking 
 thesis
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\latexrelease.sty"
-Package: latexrelease 2016/07/04 v1.0g LaTeX release emulation and tests
-
-
-Package latexrelease Warning: Current format date selected, no patches applied.
-.
-
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-)
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
-
-Package classicthesis Warning: Chapter sectioning command not present in this d
-ocument class. Deactivating options floatperchapter, linedheaders, manychapters
-, listsseparated, eulerchapternumbers and parts.
+Package classicthesis Info: Using option "nochapters" (probably for an article)
+. This turns off the options "linedheaders", "manychapters", "floatperchapter",
+"listsseparated", "eulerchapternumbers", and "parts". Please be aware of that. 
+on input line 158.
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
 Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
-)
-("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
-Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
 Package: hyperref 2016/06/24 v6.83q Hypertext links for LaTeX
@@ -149,15 +122,20 @@ Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
-Package hobsub Info: Skipping package `infwarerr' (already loaded).
-Package hobsub Info: Skipping package `ltxcmds' (already loaded).
-Package hobsub Info: Skipping package `ifluatex' (already loaded).
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
 Package hobsub Info: Skipping package `ifpdf' (already loaded).
-Package hobsub Info: Skipping package `etexcmds' (already loaded).
-Package hobsub Info: Skipping package `kvsetkeys' (already loaded).
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -181,8 +159,14 @@ Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
+("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen103
 \Hy@linkcounter=\count88
@@ -271,34 +255,27 @@ File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 Package: mathpazo 2005/04/12 PSNFSS-v9.2a Palatino w/ Pazo Math (D.Puga, WaS) 
 \symupright=\mathgroup4
 )
-LaTeX Font Info:    Try loading font information for T1+pplj on input line 208.
-
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1pplj.fd"
-File: t1pplj.fd 2004/09/06 font definitions for T1/pplj.
-)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\microtype.sty"
-Package: microtype 2018/01/14 v2.7a Micro-typographical refinements (RS)
+Package: microtype 2017/07/07 v2.7 Micro-typographical refinements (RS)
 \MT@toks=\toks15
 \MT@count=\count99
-LaTeX Info: Redefining \textls on input line 793.
+LaTeX Info: Redefining \textls on input line 789.
 \MT@outer@kern=\dimen107
-LaTeX Info: Redefining \textmicrotypecontext on input line 1339.
+LaTeX Info: Redefining \textmicrotypecontext on input line 1334.
 \MT@listname@count=\count100
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\microtype-pdftex.def"
-File: microtype-pdftex.def 2018/01/14 v2.7a Definitions specific to pdftex (RS)
-
-LaTeX Info: Redefining \lsstyle on input line 913.
-LaTeX Info: Redefining \lslig on input line 913.
+File: microtype-pdftex.def 2017/07/07 v2.7 Definitions specific to pdftex (RS)
+LaTeX Info: Redefining \lsstyle on input line 912.
+LaTeX Info: Redefining \lslig on input line 912.
 \MT@outer@space=\skip56
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\microtype.cfg"
-File: microtype.cfg 2018/01/14 v2.7a microtype main configuration file (RS)
+File: microtype.cfg 2017/07/07 v2.7 microtype main configuration file (RS)
 ))
-Package classicthesis Info: A4 paper, Palatino or other on input line 276.
+Package classicthesis Info: A4 paper, Palatino or other on input line 272.
 Package typearea Info: These are the values describing the layout:
 (typearea)             DIV  = areaset
 (typearea)             BCOR = 0.0pt
@@ -314,7 +291,7 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 11.0pt
 (typearea)              \footskip       = 47.60002pt
 (typearea)              \baselineskip   = 13.6pt
-(typearea)              on input line 276.
+(typearea)              on input line 272.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty"
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
@@ -339,24 +316,33 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 ("C:\Program Files\MiKTeX 2.9\tex\latex\textcase\textcase.sty"
 Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
 )
-Package classicthesis Info: Using pdftex/microtype for character spacing.Make s
-ure your pdftex is version 1.40 or higher. on input line 364.
-
+("C:\Program Files\MiKTeX 2.9\tex\latex\soul\soul.sty"
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks16
+\SOUL@lasttoken=\toks17
+\SOUL@cmds=\toks18
+\SOUL@buffer=\toks19
+\SOUL@token=\toks20
+\SOUL@spaceskip=\skip57
+\SOUL@ttwidth=\dimen121
+\SOUL@uldp=\dimen122
+\SOUL@ulht=\dimen123
+)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\koma-script\scrlayer-scrpage.sty"
-Package: scrlayer-scrpage 2017/09/07 v3.24 KOMA-Script package (end user interf
+Package: scrlayer-scrpage 2016/06/14 v3.21 KOMA-Script package (end user interf
 ace for scrlayer)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\koma-script\scrlayer.sty"
-Package: scrlayer 2017/09/07 v3.24 KOMA-Script package (defining layers and pag
+Package: scrlayer 2016/06/14 v3.21 KOMA-Script package (defining layers and pag
 e styles)
 Package scrlayer Info: Using already defined \footheight
 (scrlayer)             hoping, that this is a length and
-(scrlayer)             not only a macro on input line 109.
-Package scrlayer Info: patching LaTeX kernel macro \pagestyle on input line 199
-7.
+(scrlayer)             not only a macro on input line 107.
+Package scrlayer Info: patching LaTeX kernel macro \pagestyle on input line 197
+5.
 )
 Package scrlayer-scrpage Info: deactivating warning for font element
-(scrlayer-scrpage)             `pagefoot' on input line 1247.
+(scrlayer-scrpage)             `pagefoot' on input line 1191.
 )
 Package scrlayer-scrpage Info: auto-selection of `pagestyleset=KOMA-Script'.
 
@@ -373,19 +359,19 @@ Class scrartcl Warning: Usage of package `titlesec' together
 (scrartcl)              the extended optional argument of the section
 (scrartcl)              commands.
 (scrartcl)              Nevertheless, using requested
-(scrartcl)              package `titlesec' on input line 397.
+(scrartcl)              package `titlesec' on input line 378.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\titlesec\titlesec.sty"
 Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \ttl@box=\box28
-\beforetitleunit=\skip57
-\aftertitleunit=\skip58
-\ttl@plus=\dimen121
-\ttl@minus=\dimen122
-\ttl@toksa=\toks16
-\titlewidth=\dimen123
-\titlewidthlast=\dimen124
-\titlewidthfirst=\dimen125
+\beforetitleunit=\skip58
+\aftertitleunit=\skip59
+\ttl@plus=\dimen124
+\ttl@minus=\dimen125
+\ttl@toksa=\toks21
+\titlewidth=\dimen126
+\titlewidthlast=\dimen127
+\titlewidthfirst=\dimen128
 
 
 Package titlesec Warning: Non standard sectioning command detected
@@ -409,63 +395,63 @@ Package titlesec Warning: Non standard sectioning command detected
 
 )
 
-Class scrartcl Warning: Activating an ugly workaround for a missing
-(scrartcl)              feature of package `titlesec` on input line 397.
+Package scrartcl Warning: Activating an ugly workaround for a missing
+(scrartcl)                feature of package `titlesec` on input line 378.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tocloft\tocloft.sty"
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
 Package tocloft Info: The document has section divisions on input line 51.
-\cftparskip=\skip59
-\cftbeforetoctitleskip=\skip60
-\cftaftertoctitleskip=\skip61
-\cftbeforepartskip=\skip62
-\cftpartnumwidth=\skip63
-\cftpartindent=\skip64
-\cftbeforesecskip=\skip65
-\cftsecindent=\skip66
-\cftsecnumwidth=\skip67
-\cftbeforesubsecskip=\skip68
-\cftsubsecindent=\skip69
-\cftsubsecnumwidth=\skip70
-\cftbeforesubsubsecskip=\skip71
-\cftsubsubsecindent=\skip72
-\cftsubsubsecnumwidth=\skip73
-\cftbeforeparaskip=\skip74
-\cftparaindent=\skip75
-\cftparanumwidth=\skip76
-\cftbeforesubparaskip=\skip77
-\cftsubparaindent=\skip78
-\cftsubparanumwidth=\skip79
-\cftbeforeloftitleskip=\skip80
-\cftafterloftitleskip=\skip81
-\cftbeforefigskip=\skip82
-\cftfigindent=\skip83
-\cftfignumwidth=\skip84
+\cftparskip=\skip60
+\cftbeforetoctitleskip=\skip61
+\cftaftertoctitleskip=\skip62
+\cftbeforepartskip=\skip63
+\cftpartnumwidth=\skip64
+\cftpartindent=\skip65
+\cftbeforesecskip=\skip66
+\cftsecindent=\skip67
+\cftsecnumwidth=\skip68
+\cftbeforesubsecskip=\skip69
+\cftsubsecindent=\skip70
+\cftsubsecnumwidth=\skip71
+\cftbeforesubsubsecskip=\skip72
+\cftsubsubsecindent=\skip73
+\cftsubsubsecnumwidth=\skip74
+\cftbeforeparaskip=\skip75
+\cftparaindent=\skip76
+\cftparanumwidth=\skip77
+\cftbeforesubparaskip=\skip78
+\cftsubparaindent=\skip79
+\cftsubparanumwidth=\skip80
+\cftbeforeloftitleskip=\skip81
+\cftafterloftitleskip=\skip82
+\cftbeforefigskip=\skip83
+\cftfigindent=\skip84
+\cftfignumwidth=\skip85
 \c@lofdepth=\count105
 \c@lotdepth=\count106
-\cftbeforelottitleskip=\skip85
-\cftafterlottitleskip=\skip86
-\cftbeforetabskip=\skip87
-\cfttabindent=\skip88
-\cfttabnumwidth=\skip89
+\cftbeforelottitleskip=\skip86
+\cftafterlottitleskip=\skip87
+\cftbeforetabskip=\skip88
+\cfttabindent=\skip89
+\cfttabnumwidth=\skip90
 )
-\newnumberwidth=\skip90
-\beforebibskip=\skip91
-\newchnumberwidth=\skip92
-\figurelabelwidth=\skip93
-\tablelabelwidth=\skip94
+\newnumberwidth=\skip91
+\beforebibskip=\skip92
+\newchnumberwidth=\skip93
+\figurelabelwidth=\skip94
+\tablelabelwidth=\skip95
 
 Using KOMA-command "deffootnote" for footnote setup
 ("C:\Program Files\MiKTeX 2.9\tex\latex\koma-script\scrtime.sty"
-Package: scrtime 2017/09/07 v3.24 KOMA-Script package (time of LaTeX run)
+Package: scrtime 2016/06/14 v3.21 KOMA-Script package (time of LaTeX run)
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\carlisle\remreset.sty"))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\currvita\currvita.sty"
 Package: currvita 1999/09/13 v0.9i Typesetting a Curriculum Vitae
 \@cvlistheading=\box29
-\cvlabelsep=\skip95
-\cvlabelskip=\skip96
-\cvlabelwidth=\skip97
+\cvlabelsep=\skip96
+\cvlabelskip=\skip97
+\cvlabelwidth=\skip98
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty"
 Package: babel 2016/04/23 3.9r The Babel package
@@ -483,9 +469,9 @@ Language: spanish.ldf 2016/03/03 v5.0p Spanish support from the babel system
 ("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def"
 File: babel.def 2016/04/23 3.9r Babel common definitions
 \babel@savecnt=\count107
-\U@D=\dimen126
+\U@D=\dimen129
 )
-\es@quottoks=\toks17
+\es@quottoks=\toks22
 \es@quotdepth=\count108
 Package babel Info: Making " an active character on input line 561.
 Package babel Info: Making . an active character on input line 662.
@@ -497,8 +483,8 @@ LaTeX Info: Redefining \% on input line 29.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2015/03/17 v1.2c Input encoding file
-\inpenc@prehook=\toks18
-\inpenc@posthook=\toks19
+\inpenc@prehook=\toks23
+\inpenc@posthook=\toks24
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2016/02/28 v1.1s UTF-8 support for inputenc
@@ -813,8 +799,13 @@ Now handling font encoding PD1 ...
 ))
 Package hyperref Info: Option `colorlinks' set `true' on input line 33.
 Package hyperref Info: Option `breaklinks' set `true' on input line 33.
-\datebox=\skip98
- (CV_Adriana_Sp.aux)
+\datebox=\skip99
+ (CV_Adriana_Sp.aux
+LaTeX Info: Redefining \. on input line 24.
+LaTeX Info: Redefining \% on input line 24.
+LaTeX Info: Redefining \. on input line 30.
+LaTeX Info: Redefining \% on input line 30.
+)
 \openout1 = `CV_Adriana_Sp.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
@@ -859,23 +850,25 @@ LaTeX Info: Redefining \nameref on input line 42.
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count110
-\scratchdimen=\dimen127
+\scratchdimen=\dimen130
 \scratchbox=\box31
 \nofMPsegments=\count111
 \nofMParguments=\count112
-\everyMPshowfont=\toks20
+\everyMPshowfont=\toks25
 \MPscratchCnt=\count113
-\MPscratchDim=\dimen128
+\MPscratchDim=\dimen131
 \MPnumerator=\count114
 \makeMPintoPDFobject=\count115
-\everyMPtoPDFconversion=\toks21
+\everyMPtoPDFconversion=\toks26
 )
-\big@size=\dimen129
+\big@size=\dimen132
 LaTeX Info: Redefining \microtypecontext on input line 42.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
-Package microtype Info: No font expansion.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `basictext'.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -886,43 +879,88 @@ LaTeX Info: Redefining \. on input line 42.
 LaTeX Info: Redefining \% on input line 42.
 LaTeX Font Info:    Font shape `OT1/pplj/bx/n' in size <17.28> not available
 (Font)              Font shape `OT1/pplj/b/n' tried instead on input line 51.
-LaTeX Font Info:    Try loading font information for OT1+pplx on input line 51.
 
+! Argument of \@firstofone has an extra }.
+<inserted text> 
+                \par 
+l.51 ...caps{Adriana Felisa Chávez De la Peña}}}
+                                                  \vspace{1.5em} % Your name
+? 
+Runaway argument?
+! Paragraph ended before \@firstofone was complete.
+<to be read again> 
+                   \par 
+l.51 ...caps{Adriana Felisa Chávez De la Peña}}}
+                                                  \vspace{1.5em} % Your name
+? 
+! Argument of \@firstofone has an extra }.
+<inserted text> 
+                \par 
+l.51 ...caps{Adriana Felisa Chávez De la Peña}}}
+                                                  \vspace{1.5em} % Your name
+? 
+Runaway argument?
+! Paragraph ended before \@firstofone was complete.
+<to be read again> 
+                   \par 
+l.51 ...caps{Adriana Felisa Chávez De la Peña}}}
+                                                  \vspace{1.5em} % Your name
+? 
+! Argument of \@firstofone has an extra }.
+<inserted text> 
+                \par 
+l.51 ...caps{Adriana Felisa Chávez De la Peña}}}
+                                                  \vspace{1.5em} % Your name
+? 
+Runaway argument?
+! Paragraph ended before \@firstofone was complete.
+<to be read again> 
+                   \par 
+l.51 ...caps{Adriana Felisa Chávez De la Peña}}}
+                                                  \vspace{1.5em} % Your name
+? 
+! Argument of \@firstofone has an extra }.
+<inserted text> 
+                \par 
+l.51 ...caps{Adriana Felisa Chávez De la Peña}}}
+                                                  \vspace{1.5em} % Your name
+? 
+Runaway argument?
+! Paragraph ended before \@firstofone was complete.
+<to be read again> 
+                   \par 
+l.51 ...caps{Adriana Felisa Chávez De la Peña}}}
+                                                  \vspace{1.5em} % Your name
+? 
+! Argument of \@firstofone has an extra }.
+<inserted text> 
+                \par 
+l.51 ...caps{Adriana Felisa Chávez De la Peña}}}
+                                                  \vspace{1.5em} % Your name
+? 
+Runaway argument?
+! Paragraph ended before \@firstofone was complete.
+<to be read again> 
+                   \par 
+l.51 ...caps{Adriana Felisa Chávez De la Peña}}}
+                                                  \vspace{1.5em} % Your name
+? 
+! Argument of \@firstofone has an extra }.
+<inserted text> 
+                \par 
+l.51 ...caps{Adriana Felisa Chávez De la Peña}}}
+                                                  \vspace{1.5em} % Your name
+? 
+Runaway argument?
+! Paragraph ended before \@firstofone was complete.
+<to be read again> 
+                   \par 
+l.51 ...caps{Adriana Felisa Chávez De la Peña}}}
+                                                  \vspace{1.5em} % Your name
+? 
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1pplx.fd"
-File: ot1pplx.fd 2004/09/06 font definitions for OT1/pplx.
-)
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 51.
-
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omlzplm.fd"
-File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
-)
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 51.
-
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omszplm.fd"
-File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
-)
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 51.
-
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omxzplm.fd"
-File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
-)
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 51.
-
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1zplm.fd"
-File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `zplm' (encoding: OT1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-
-Overfull \hbox (16.5285pt too wide) in paragraph at lines 51--51
-[]\OT1/pplj/bx/n/17.28/160ls ADRIANA FE-LI-SA CH[]AVEZ DE LA
+Overfull \hbox (31.38736pt too wide) in paragraph at lines 51--51
+[]\OT1/pplj/b/n/17.28 A D R I A -N A F E -L I -S A C H  []A V E Z D E L A
  []
 
 ! Undefined control sequence.
@@ -937,6 +975,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
 
+LaTeX Font Info:    Try loading font information for OT1+pplx on input line 57.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1pplx.fd"
+File: ot1pplx.fd 2004/09/06 font definitions for OT1/pplx.
+)
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 57.
+
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omlzplm.fd"
+File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
+)
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 57.
+
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omszplm.fd"
+File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
+)
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 57.
+
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omxzplm.fd"
+File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
+)
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 57.
+
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1zplm.fd"
+File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `zplm' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
 ! Undefined control sequence.
 l.65 \noindent\spacedsmallallcaps
                                  {\textbf{ACERCA}}\vspace{0.1em}\\ % Persona...
@@ -948,19 +1020,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 65--66
  []
 
 ! Undefined control sequence.
-<recently read> \spacedsmallallcaps 
-                                    
-l.76 \textbf{\spacedsmallallcaps{EDUCACIÓN}}
-                                             \vspace{1em}
+l.75 \spacedsmallallcaps
+                        {HABILIDADES DE COMPUTACIÓN}}\vspace{1em}
+? 
+! Extra }, or forgotten \endgroup.
+l.75 ...smallallcaps{HABILIDADES DE COMPUTACIÓN}}
+                                                  \vspace{1em}
 ? 
 Package microtype Info: Character `013' is missing
 (microtype)             in font `OT1/pplj/m/sc/9'.
 (microtype)             Ignoring protrusion settings for this character.
+
+LaTeX Warning: Marginpar on page 1 moved.
+
+
+LaTeX Warning: Marginpar on page 1 moved.
+
+
+LaTeX Warning: Marginpar on page 1 moved.
+
+
+LaTeX Warning: Marginpar on page 1 moved.
+
 ! Undefined control sequence.
 <recently read> \spacedsmallallcaps 
                                     
-l.93 \textbf{\spacedsmallallcaps{BECAS}}
-                                        \vspace{1em}
+l.85 \textbf{\spacedsmallallcaps{EDUCACIÓN}}
+                                             \vspace{1em}
+? 
+! Undefined control sequence.
+<recently read> \spacedsmallallcaps 
+                                    
+l.102 \textbf{\spacedsmallallcaps{BECAS}}
+                                         \vspace{1em}
 ? 
 Package microtype Info: Character `013' is missing
 (microtype)             in font `OT1/pplj/m/sc/10.95'.
@@ -968,7 +1060,7 @@ Package microtype Info: Character `013' is missing
 ! Undefined control sequence.
 <recently read> \spacedsmallallcaps 
                                     
-l.105 ...acedsmallallcaps{EXPERIENCIA ACADÉMICA}}
+l.114 ...acedsmallallcaps{EXPERIENCIA ACADÉMICA}}
                                                   \vspace{1em}
 ? 
 [1
@@ -977,61 +1069,75 @@ l.105 ...acedsmallallcaps{EXPERIENCIA ACADÉMICA}}
 ! Undefined control sequence.
 <recently read> \spacedsmallallcaps 
                                     
-l.124 ...\spacedsmallallcaps{EXPERIENCIA LABORAL}}
+l.133 ...\spacedsmallallcaps{EXPERIENCIA LABORAL}}
                                                   \vspace{1em}
 ? 
 ! Undefined control sequence.
 <recently read> \spacedsmallallcaps 
                                     
-l.140 ...allallcaps{EXPERIENCIA EN LA ENSEÑANZA}}
+l.149 ...allallcaps{EXPERIENCIA EN LA ENSEÑANZA}}
                                                   \vspace{1em}
-? 
-! Undefined control sequence.
-l.174 \spacedsmallallcaps
-                         {\textbf{PRESENTACIÓN DE POSTERS}}\vspace{1em}
 ? 
 [2]
 ! Undefined control sequence.
+l.183 \spacedsmallallcaps
+                         {\textbf{PRESENTACIÓN DE POSTERS}}\vspace{1em}
+? 
+! Undefined control sequence.
 <recently read> \spacedsmallallcaps 
                                     
-l.198 ...edsmallallcaps{CONFERENCIAS Y SIMPOSIOS}}
+l.207 ...edsmallallcaps{CONFERENCIAS Y SIMPOSIOS}}
                                                   \vspace{1em}
 ? 
 ! Undefined control sequence.
 <recently read> \spacedsmallallcaps 
                                     
-l.212 \textbf{\spacedsmallallcaps{HABILIDADES}}
+l.221 \textbf{\spacedsmallallcaps{HABILIDADES}}
                                                \vspace{1em}
 ? 
 ! Undefined control sequence.
-l.221 \spacedsmallallcaps
-                         {HABILIDADES DE COMPUTACIÓN}}\vspace{1em}
-? 
-! Extra }, or forgotten \endgroup.
-l.221 ...mallallcaps{HABILIDADES DE COMPUTACIÓN}}
+<recently read> \spacedsmallallcaps 
+                                    
+l.232 ...f{\spacedsmallallcaps{OTRA INFORMACIÓN}}
                                                   \vspace{1em}
 ? 
+\langbox=\skip100
+LaTeX Font Info:    Font shape `OT1/pplj/bx/it' in size <10> not available
+(Font)              Font shape `OT1/pplj/b/it' tried instead on input line 244.
 
-LaTeX Warning: Marginpar on page 3 moved.
-
-
-LaTeX Warning: Marginpar on page 3 moved.
-
-
-LaTeX Warning: Marginpar on page 3 moved.
-
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 264.
+[3]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 264.
+ (CV_Adriana_Sp.aux
+LaTeX Info: Redefining \. on input line 24.
+LaTeX Info: Redefining \% on input line 24.
+LaTeX Info: Redefining \. on input line 30.
+LaTeX Info: Redefining \% on input line 30.
 )
-Runaway argument?
-{\MarginText {Lenguajes de Programación}\textsc {Python}, \textsc {R\ETC.
-! File ended while scanning use of \Description.
-<inserted text> 
-                \par 
-<*> ./CV_Adriana_Sp.tex
-                       
-? 
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 264.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 264.
+Package rerunfilecheck Info: File `CV_Adriana_Sp.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 264.
+ ) 
+Here is how much of TeX's memory you used:
+ 12669 strings out of 493334
+ 226467 string characters out of 3139239
+ 455588 words of memory out of 3000000
+ 15893 multiletter control sequences out of 15000+200000
+ 50836 words of font info for 189 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 54i,22n,79p,8826b,557s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/fpl/fplrij8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino
+/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplbi8a.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on CV_Adriana_Sp.pdf (3 pages, 103305 bytes).
+PDF statistics:
+ 50 PDF objects out of 1000 (max. 8388607)
+ 4 named destinations out of 1000 (max. 500000)
+ 64001 words of extra memory for PDF output out of 74296 (max. 10000000)
 
-*
-(Please type a command or say `\end')
-*
-(Please type a command or say `\end')
-*
