@@ -92,7 +92,8 @@ print(Estimaciones)
 # Ejercicio 3, "Resuelva analíticamente y en R"
 ###############################################################################
 ########   Tome la siguiente funcion de densidad definida en el intervalo (0,1)
-marrr <- function(x) (3*x^1/2)/2
+x <- seq(0, 1, 1)
+m <- function(x) (3*x^1/2)/2
 
 #Represente gráficamente la función
 plot(m, type="l", lwd=4, col="purple", main="Función de densidad f(x)",
@@ -101,6 +102,10 @@ plot(m, type="l", lwd=4, col="purple", main="Función de densidad f(x)",
 #Obtenga el Valor Esperado
 Test_Distr <- sum((3*(x^1/2))/2)  #But is it actually a distribution?
 print(Test_Distr)
+
+Test_Distrib <- integrate(m, lower = 0, upper = 1)  #But is it actually a distribution?
+print(Test_Distrib)
+
 
 xfx <- function(x) {30*x^2*(1-x)^4}
 Ex <- integrate(xfx, lower = 0, upper = 1)
