@@ -17,7 +17,7 @@ g <- function(x) 6*x*(1-x)
 plot(g, type="l", lwd=4, col="forestgreen", main="Función de densidad g(x)",
      lty=3, ylab="Densidad", xlab="x")   #Ploteamos la relaciÃ³n x-y
 
-#Obtenga la moda de g(x)
+#Obtenga el valor máximo de g(x)
 fit <- optimize(g, c(0, 1), maximum=TRUE)
 print(fit)
 

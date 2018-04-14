@@ -34,7 +34,8 @@ plot(g, type="l", lwd=2, ylab="", col="purple")   #Ploteamos la relación x-y
 
 
 #####################
-###### Código 1
+###### Código 4
+###### Evaluar la función de densidad
 #####################
 
 f1 <- function(x) {6*x*(1-x)}
@@ -43,14 +44,12 @@ print(integral)
 
 
 #####################
-###### Código 1
+###### Código 5
+###### Valor Esperado y Varianza
 #####################
 xfx <- function(x) {6*x^2*(1-x)}
 Ex <- integrate(xfx, lower = 0, upper = 1)
 print(Ex)
-
-
-
 
 x2fx <- function(x) {6*x^3*(1-x)}
 Ex2 <- integrate(x2fx, lower = 0, upper = 1)
