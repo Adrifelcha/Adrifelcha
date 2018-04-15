@@ -1,9 +1,13 @@
-#######################################################
-#Gráficas en R
-#######################################################
+###################################################
+# Gráficas Básicas en R
+# por Adriana F. Chávez
+# adrifelcha@gmail.com
+###################################################
+
 
 
 ########################################################
+# PARTE 1:
 # Diferencias entre grupos (V. categóricas)
 ########################################################
 ########################################################
@@ -21,7 +25,7 @@ valores <- c(100, 122, 314, 216, 338) #Valores correspondientes a cada grupo  (v
 
 
 
-
+#######################################################
 #Gráficas Pastel
 ########################################################
 
@@ -29,7 +33,7 @@ valores <- c(100, 122, 314, 216, 338) #Valores correspondientes a cada grupo  (v
 porcentaje <- round(valores/sum(valores)*100) 
 #La función de arriba se lee: Por cada elemento en el arreglo 'valores', 
 #éste se va a dividir entre el 'valor total' (la suma de los otros valores)
-#Luego, multiplicamos el valor resultante por 100 para poder interpretarlo como porcentaje
+#Luego, el valor resultante se multiplica por 100 para poder interpretarlo como porcentaje
 #El 'round' es para redondear el resultado de lo contenido en el paréntesis
 
 #Reordenamos los datos
@@ -39,8 +43,8 @@ grupos_2 <- paste(grupos_1,"%",sep="") # Y sobre este nuevo arreglo, agregamos a
 #Hacemos la gráfica de pastel
 pie(valores,labels = grupos_2, col=c('red','pink', 'yellow','green','blue'), main="Gráfica de Pastel")
 #Pedimos una gráfica de pastel (pie), que muestre/represente los valores netos  (valores)
-#usando el arreglo 'grupos' construido (labels = grupos)
-#en los colores especificados (col=C(...))
+#usando el arreglo 'grupos'para señalar los valores (labels = grupos)
+#en los colores especificados en el arreglo (col=C(...))
 #con el título principal "Grafica de Pastel" (main= "blabla")
 
 #También podemos hacer una gráfica con volúmen 
@@ -50,9 +54,9 @@ pie3D(valores,labels=grupos_2,explode=0.05, main="Gráfica de Pastel 3D")
 #El argumento 'explode' indica qué tan separados están las rebanadas.
 
 
+###########33
 #Gráficas de Barras
 ####################################################
-?
 barplot(valores,main="Gráfica de barras", horiz=FALSE, axes=F,
         ylim=c(0,500), xlab="Grupos", ylab="Casos",
         col=c('red','blue','yellow','green','pink'))
@@ -100,17 +104,20 @@ mtext("Sólo lineas",3,cex=0.6, line=-0.7, f=2)
 ########################################################
 rm(list=ls())
 
-#Especificamos los datos
+##########
+#Especificamos un conjunto de datos
 
-#########################Variable independiente: El eje de las abscisas
+###
+#Variable independiente: El eje de las abscisas
+###
 absc_años<-2010:2017   #Rango de valores contenidos en X 
 #0:10 indica un rango de 0 a 10
 print(absc_años)
 
-absc_x <-seq(0,100,5)
+absc_x <-seq(0,100,5) #Una secuencia del 0 al 100 en saltos de 5
 print(absc_x)
 
-absc_y <-seq(-3,3,0.05)
+absc_y <-seq(-3,3,0.05) #Una secuencia del -3 al 3 en saltos de .05
 print(absc_y)
 
 #Variable Dependiente: Eje de las ordenadas

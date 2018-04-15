@@ -26,7 +26,6 @@ granja <- read.csv(datos)
 
 
 #############¿Qué queremos saber?
-
 #Promedios
 mean(granja$Accidentes)
 #Valor Máximo
@@ -64,12 +63,15 @@ print(promedios)
 
 ##################
 ##################
-#  Leemos CSV    #
+#  Ploteamos los CSV    #
 ##################
 ##################
 plot(Año,Visitas, main="Visitas anuales")
 
+#Podemos obtener lo mismo utilizando el arreglo por columnas
+#(Que contiene parejas (x,y) por default)
 plot(Visitas_Anuales, main="Visitas anuales")
 
+#Haemos una gráfica de barras que coloque una barra por cada valor en Visitas
 barplot(Visitas, xlab="Años", ylab="Visitas", col=rainbow(length(Año)), main="Visitas anuales")
 axis(1,at=c(0.6,1.9,3.1,4.3,5.5,6.7,7.9,9.1,10.3,11.5,12.7,13.9), labels= Año)
