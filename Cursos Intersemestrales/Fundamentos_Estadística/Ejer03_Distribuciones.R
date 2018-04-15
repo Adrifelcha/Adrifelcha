@@ -11,28 +11,26 @@
 # Ejercicio 1, a resolver analíticamente (Extra)
 ###############################################################################
 ########   Tome la siguiente funcion de densidad definida en el intervalo (0,1)
-g <- function(x) 6*x*(1-x) 
+g <- function(x) (3/8)*((4*x)-((2*(x^2)))) 
 
 #Represente gráficamente la función
 plot(g, type="l", lwd=4, col="forestgreen", main="Función de densidad g(x)",
-     lty=3, ylab="Densidad", xlab="x")   #Ploteamos la relaciÃ³n x-y
-
-#Obtenga el valor máximo de g(x)
-fit <- optimize(g, c(0, 1), maximum=TRUE)
-print(fit)
-
+     lty=3, ylab="Densidad", xlab="x", xlim=c(0,2))   #Ploteamos la relaciÃ³n x-y
 
 #Obtenga el Valor Esperado
-Test_Distr <- integrate(g, lower = 0, upper = 1)  #But is it actually a distribution?
+Test_Distr <- integrate(g, lower = 0, upper = 2)  #But is it actually a distribution?
 print(Test_Distr)
 
-xfx <- function(x) {6*x^2*(1-x)}
-Ex <- integrate(xfx, lower = 0, upper = 1)
-print(Ex)
+xfx <- function(x){3*(4*x^2 - 2*x^3)/8}
+Ex_1 <- integrate(xfx, lower = 0, upper = 2)
+print(Ex_1)
+
+Pr <- integrate(g, lower = 1, upper = 2)
+print(Pr)
 
 ##### IMPRIMIMOS LOS RESULTADOS 
-Estimaciones <- data.frame(round(cbind(Ex$value, fit$maximum),3))
-colnames(Estimaciones) <- c("V. Esperado","Moda")
+Estimaciones <- data.frame(round(cbind(Ex_1$value, Pr$value),3))
+colnames(Estimaciones) <- c("V. Esperado","P(X > 1)")
 print(Estimaciones)
 
 
@@ -45,37 +43,27 @@ print(Estimaciones)
 # Ejercicio 2, "Resuelva en R"
 ###############################################################################
 ########   Tome la siguiente funcion de densidad definida en el intervalo (0,1)
-f <- function(x) 30*x*(1-x)^4 
+x <- 0:12
+f <- dpois(x, 12)
 
 #Represente gráficamente la función
-plot(f, type="l", lwd=4, col="turquoise", main="Función de densidad f(x)",
+plot(f, type="l", lwd=4, col="turquoise", main="Función de densidad f(x) Poisson",
      lty=3, ylab="Densidad", xlab="x")   #Ploteamos la relaciÃ³n x-y
 
-#Obtenga el Valor Esperado
-Test_Distr <- integrate(f, lower = 0, upper = 1)  #But is it actually a distribution?
-print(Test_Distr)
+#Obtenga los centiles 5 y 95
+val_1 <- qpois(0.05, 12)
+val_2 <- qpois(0.95, 12)
+print(c(val_1,val_2))
 
-xfx <- function(x) {30*x^2*(1-x)^4}
-Ex <- integrate(xfx, lower = 0, upper = 1)
-print(Ex)
 
-#Obtenga la Varianza
-x2fx <- function(x) {30*x^3*(1-x)^4}
-Ex2 <- integrate(x2fx, lower = 0, upper = 1)
-VarX <- Ex2$value - Ex$value^2
-print(VarX)
+#La probabilidad de que x>15
+Pr15 <- ppois(15,12,lower.tail=F)
 
-#Obtenga la moda de X
-fit <- optimize(f, c(0, 1), maximum=TRUE)
-print(fit)
-
-#Proabilidad acumulada entre .25 y .75
-integral <- integrate(f, lower = 0.25, upper = 0.75)
-print(integral)
+Pr15_2 <- ppois(15,10,lower.tail=F)
 
 ##### IMPRIMIMOS LOS RESULTADOS 
-Estimaciones <- data.frame(round(cbind(Ex$value, VarX, fit$maximum, integral$value),3))
-colnames(Estimaciones) <- c("V. Esperado","Varianza","Moda", "P. Acumulada")
+Estimaciones <- data.frame(cbind(val_1, val_2, Pr15, Pr15_2))
+colnames(Estimaciones) <- c("5%", "95%", "P(15)", "P(15,lambda)")
 print(Estimaciones)
 
 
@@ -89,11 +77,20 @@ print(Estimaciones)
 
 
 ###############################################################################
-# Ejercicio 3, "Resuelva analíticamente y en R"
+# Ejercicio 3, "Ejercicio de simulaciòn"
 ###############################################################################
 ########   Tome la siguiente funcion de densidad definida en el intervalo (0,1)
-x <- seq(0, 1, 1)
-m <- function(x) (3*x^(1/2))/2
+m <- function(x) dbeta(x, 5, 2)
+
+muestras <- 200
+tamano_m <-  100
+
+dat <- rbeta(muestras*tamano_m, 5, 2)
+muestra <- matrix(dat, ncol=n)
+medias <- colMeans(muestra)
+hist(medias, ylab="Frecuencia", main=
+       sprintf("Media = %10.2f, Sd = %4.2f", mean(medias), sd(medias)))
+
 
 #Represente gráficamente la función
 plot(m, type="l", lwd=4, col="purple", main="Función de densidad f(x)",
@@ -103,19 +100,4 @@ plot(m, type="l", lwd=4, col="purple", main="Función de densidad f(x)",
 Test_Distrib <- integrate(m, lower = 0, upper = 1)  #But is it actually a distribution?
 print(Test_Distrib)
 
-
-xfx <- function(x) {(3*x^(3/2))/2}
-Ex <- integrate(xfx, lower = 0, upper = 1)
-print(Ex)
-Ex_mins <- Ex$value*60
-print(Ex_mins)
-
-#Proabilidad acumulada para x>.5
-integral <- integrate(m, lower = 0.5, upper = 1)
-print(integral)
-
-##### IMPRIMIMOS LOS RESULTADOS 
-Estimaciones <- data.frame(round(cbind(Ex$value, integral$value),3))
-colnames(Estimaciones) <- c("V. Esperado","P. Acumulada")
-print(Estimaciones)
 
