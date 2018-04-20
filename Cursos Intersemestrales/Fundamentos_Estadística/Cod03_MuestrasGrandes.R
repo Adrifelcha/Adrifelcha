@@ -65,7 +65,7 @@ cbind(mean(peques),mean(medias),mean(grandes))
 
 
 
-# Distribución  P O I S S O N
+# Distribución  Exponencial
 ####################################
 ####################################
 n_peque <- rexp(5,10)
@@ -88,9 +88,8 @@ for(i in 1:10){
 
 cbind(peques,medias,grandes)
 
-cbind(mean(peques),mean(medias),mean(grandes))
-
 1/10
+cbind(mean(peques),mean(medias),mean(grandes))
 
 
 
@@ -101,13 +100,32 @@ cbind(mean(peques),mean(medias),mean(grandes))
 #############################################################################
 # Teorema del Lìmite central
 
-v_normal <- rnorm(5000,0,1)
-hist(v_normal,breaks=50, main="Variable Normal")
 
-v_binom <- rbinom(5000,500,0.5)
-hist(v_binom, main="Variable Binomial", breaks=50)
+####### Variable aleatoria (~Normal)
+v_normal <- c(NA)
+for(i in 1:5000){
+v_normal[i] <- mean(rnorm(500,0,1))  
+}
+hist(v_normal,breaks=20, xlim=c(-0.2,0.2), main="Variable Normal", col="turquoise")
 
-v_pois <- rpois(5000,10)
-hist(v_pois, main="Variable Poisson", breaks=50)
 
+####### Variable aleatoria (~Binom)
+v_binom <- c(NA)
+for(i in 1:5000){
+v_binom[i] <- mean(rbinom(500,500,0.5))  
+}
+hist(v_binom, main="Variable Binomial", breaks=20, col="pink")
 
+###### Variable aleatoria (~Poisson)
+v_pois <- c(NA)
+for(i in 1:5000){
+v_pois[i] <- mean(rpois(500,10))
+}
+hist(v_pois, main="Variable Poisson", breaks=50, col="lightgreen")
+
+###### Variable aleatoria (~Exponencial)
+v_exp <- c(NA)
+for(i in 1:50000){
+v_exp[i] <- mean(rexp(500,10))
+}
+hist(v_exp, main="Variable Exponencial", breaks=50, col="indianred3")
