@@ -9,26 +9,30 @@
 # Distribución  N O R M A L
 ####################################
 ####################################
-n_peque <- rnorm(5,0,1)
+
+n_peque <- rnorm(5,0,1)      #Muestras pequeña, mediana y larga
 n_media <- rnorm(20,0,1)
 n_grande <- rnorm(300,0,1)
 
+#Agrupamos las medias de cada muestra y las presentamos
 ns <- data.frame(round(cbind(mean(n_peque),mean(n_media), mean(n_grande)),3))
 colnames(ns) <- c("Pequeña","Media","Grande")
 print(ns)
 
+#Creamos tres arreglos vacíos
 peques<- c(NULL)
 medias<- c(NULL)
 grandes<- c(NULL)
-
+#que llenaremos con diez medias de diez muestras pequeñas, medias y grandes distintas
 for(i in 1:10){
 peques[i]<- mean(rnorm(5,0,1))
 medias[i]<- mean(rnorm(20,0,1))
 grandes[i]<- mean(rnorm(300,0,1))
 }
 
+#Imprimimos todas las medias computadas (10 x 3)
 cbind(peques,medias,grandes)
-
+#Imprimimos la media de las muestras
 cbind(mean(peques),mean(medias),mean(grandes))
 
 
