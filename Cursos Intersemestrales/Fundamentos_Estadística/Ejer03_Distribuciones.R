@@ -101,3 +101,40 @@ Test_Distrib <- integrate(m, lower = 0, upper = 1)  #But is it actually a distri
 print(Test_Distrib)
 
 
+
+
+
+
+
+#########################################
+# Ejercicio 3 -
+
+a_True <- 5
+b_True <- 2
+alpha <- function(m,v) m *(m*(1-m)/v - 1)
+beta <- function(m,v) (1-m)*(m*(1-m)/v - 1)
+n <- 100
+muestras <- 200
+a_Estimada <- rep(0, muestras)
+b_Estimada <- rep(0, muestras)
+
+for(muestra in 1:muestras){
+  x <- rbeta(n, a_True, b_True)
+  media <- mean(x)
+  varianza <- var(x)
+  a_Estimada[muestra] <- alpha(media, varianza)
+  b_Estimada[muestra] <- beta(media, varianza)
+}
+media_a <- mean(a_Estimada)
+media_b <- mean(b_Estimada)
+se_a <- sd(a_Estimada)
+se_b <- sd(b_Estimada)
+correlacion <- cor(a_Estimada,b_Estimada)
+cat(sprintf(
+  "N = %1.0f, media alpha = %6.4f, Se alpha = %6.4f, media beta = %6.4f, Se beta = %6.4f, r = %5.3f",
+  n, media_a, se_a, media_b, se_b, correlacion))
+## N = 100, media alpha = 5.2041, Se alpha = 0.8397, media beta = 2.0669, Se beta = 0.3120, r = 0.863
+par(mfrow=c(1,2))
+hist(a_Estimada, main="alpha")
+hist(b_Estimada, main="beta")
+
