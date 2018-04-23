@@ -70,71 +70,53 @@ print(Estimaciones)
 
 
 
-
-
-
-
-
-
 ###############################################################################
-# Ejercicio 3, "Ejercicio de simulaciòn"
+# Ejercicio 3, "Recuperación de parámetros
 ###############################################################################
-########   Tome la siguiente funcion de densidad definida en el intervalo (0,1)
-m <- function(x) dbeta(x, 5, 2)
 
-muestras <- 200
-tamano_m <-  100
-
-dat <- rbeta(muestras*tamano_m, 5, 2)
-muestra <- matrix(dat, ncol=n)
-medias <- colMeans(muestra)
-hist(medias, ylab="Frecuencia", main=
-       sprintf("Media = %10.2f, Sd = %4.2f", mean(medias), sd(medias)))
+#Genere 200 muestras de tamaño 100 a partir de una Beta (5,2) y recupere el valor de 
+#los paràmetros que mejor describan las muestras extraidas
 
 
-#Represente gráficamente la función
-plot(m, type="l", lwd=4, col="purple", main="Función de densidad f(x)",
-     lty=3, ylab="Densidad", xlab="x")   #Ploteamos la relaciÃ³n x-y
-
-#Obtenga el Valor Esperado
-Test_Distrib <- integrate(m, lower = 0, upper = 1)  #But is it actually a distribution?
-print(Test_Distrib)
-
-
-
-
-
-
-
-#########################################
-# Ejercicio 3 -
-
-a_True <- 5
+#Empezamos definiendo el àrea de trabajo 
+a_True <- 5     #Defino los valores conocidos para alpha y beta poblacional
 b_True <- 2
-alpha <- function(m,v) m *(m*(1-m)/v - 1)
-beta <- function(m,v) (1-m)*(m*(1-m)/v - 1)
-n <- 100
-muestras <- 200
-a_Estimada <- rep(0, muestras)
-b_Estimada <- rep(0, muestras)
+alpha <- function(m,v) m *(m*(1-m)/v - 1)    #Defino las funciones que permiten estimar a y b
+beta <- function(m,v) (1-m)*(m*(1-m)/v - 1)  #a partir de la media y la varianza de la muestra
 
-for(muestra in 1:muestras){
-  x <- rbeta(n, a_True, b_True)
-  media <- mean(x)
-  varianza <- var(x)
-  a_Estimada[muestra] <- alpha(media, varianza)
-  b_Estimada[muestra] <- beta(media, varianza)
+
+muestras <- 200    #Fijo el nùmero de muestras a realizar m
+n <- 100           #cada una con un tamaño n
+
+a_Estimada <- rep(0, muestras)  #Creamos dos arreglos vacíos a rellenar con un ciclo for
+b_Estimada <- c(NA)
+
+
+for(muestra in 1:muestras){          #Por cada muestra en el intervalo 1:muestras
+  x <- rbeta(n, a_True, b_True)      #obtendré un conjunto de datos extraidos de una distribucion beta con los parametros definidos para mi poblacion
+  media <- mean(x)        #Y de cada una de estas 200 muestras, obtendré una media
+  varianza <- var(x)      # y una desviación estándar
+  
+  a_Estimada[muestra] <- alpha(media, varianza) #La media y la varianza de cada muestra me ayudará a generar un estimado
+  b_Estimada[muestra] <- beta(media, varianza)  #sobre los valores de alfa y beta, según las funciones previamente especificadas
 }
-media_a <- mean(a_Estimada)
+
+media_a <- mean(a_Estimada)   #Computamos la media de todas las estimaciones hechas para alfa y beta
 media_b <- mean(b_Estimada)
-se_a <- sd(a_Estimada)
+se_a <- sd(a_Estimada)        #Y tambiñen computamos la desviación estándar de estos estimados (qué tano varían)
 se_b <- sd(b_Estimada)
-correlacion <- cor(a_Estimada,b_Estimada)
+correlacion <- cor(a_Estimada,b_Estimada)    #Computamos la correlación entre los estimados realizados para a y b
+
+
+#Enunciamos nuestros cómputos
 cat(sprintf(
   "N = %1.0f, media alpha = %6.4f, Se alpha = %6.4f, media beta = %6.4f, Se beta = %6.4f, r = %5.3f",
   n, media_a, se_a, media_b, se_b, correlacion))
-## N = 100, media alpha = 5.2041, Se alpha = 0.8397, media beta = 2.0669, Se beta = 0.3120, r = 0.863
-par(mfrow=c(1,2))
-hist(a_Estimada, main="alpha")
-hist(b_Estimada, main="beta")
 
+
+#Graficamos la Recuperación Paramétrica
+par(mfrow=c(1,3)) #Pedimos dibujar hasta tres gráficas por pantalla
+hist(a_Estimada, main="alpha")     #Empezamos mostrando un histograma con las estimaciones hechas para a por cada muestra
+hist(b_Estimada, main="beta")      #...y lo mismo para las estimaciones de b
+#(Nota que tienen su pico más alto en los valores reales (poblacionales) de a y b)
+plot(a_Estimada, b_Estimada) #Ploteamos la correlacion entre 
