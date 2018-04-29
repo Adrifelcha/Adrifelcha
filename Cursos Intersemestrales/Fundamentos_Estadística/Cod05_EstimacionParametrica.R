@@ -151,12 +151,13 @@ y <- c(72, 196, 22, 50)
 plot(x,y, pch=16, cex=1.2, col="black", main="Datos", cex.main=2)
 
 
+base <- seq(1,8,0.01)
 
 d <- function(v) sum(y - v[1]*x^v[2])^2
 dMin <- optim(c(0,0), d)
 print(dMin)
 plot(x,y, pch=16, cex=1.2, col="black", main="Minimo Cuadrado", cex.main=2)
-lines(x, (7.747749*x)^1.460461)
+lines(base, (7.747749)*(base^1.460461), lwd=3)
 
 
 
