@@ -6,6 +6,7 @@
 
 
 
+
 #  EJERCICIO 1:
 #  Medidas de Tiempo : Gamma(1600,5)
 ###################################################
@@ -24,7 +25,7 @@ Var <- alpha/(beta^2)
 Var
 
 #P(x>320s)
-P_320 <- pgamma(320, 1600, 5, lower.tail=F)
+P_320 <- pgamma(320, alpha, beta, lower.tail=F)
 P_320
 
 #¿Entre qué límites se encuentra la media muestral con una probabilidad de 0,95% si n = 25?
@@ -36,6 +37,9 @@ qnorm(.95, ExpVal, sqrt(Var), lower.tail = FALSE)
 #esadísticamente independientes.
 CincoPersonas <-  dbinom(x=5, size=10, prob=P_320)
 round(CincoPersonas,4)
+
+
+plot(seq(-3,3,.01), dnorm(seq(-3,3,.01), 0,1))
 
 
 
