@@ -13,7 +13,7 @@
 x = c(5, 3, 7, 9, 1)
 media <- mean(x)
 varianza <- var(x)
-alpha_Momentos <- media^2 / varianza
+alpha_Momentos <- mean(x)^2 / varianza
 beta_Momentos <- media / varianza
 
 gamma <- data.frame(cbind(alpha_Momentos,beta_Momentos))
@@ -73,7 +73,7 @@ legend(1,8, sprintf("y' = %3.1fx", Beta), lty=1, col="firebrick", lwd=1.5)
 
 ######## Ejemplo paso a paso
 #Empezamos nuestro código especificando el escritorio de trabajo (Working directory: wd)
-setwd("C:/Users/sandra/Desktop/Felisa/Cursos Intersemestrales/Fundamentos_Estadística")
+setwd("C:/Users/Adriana/Desktop/Felisa/Cursos Intersemestrales/Fundamentos_Estadística")
 #Borramos todas las variables y valores almacenados en consola
 rm(list=ls())
 #Comprobamos los archivos contenidos en nuestro wd
@@ -111,9 +111,10 @@ a <- mean(y)-(b*mean(x))
 
 plot(x,y, pch=16, main="Minimos Cuadrados", xlab="Años de experiencia",
      ylab="Salario", col=rainbow(length(y)))
-lines(c(0:20), a+(b*c(0:20)), lwd=2, lty=2)
+lines(c(0:20), a+(b*c(0:20)), lwd=2, lty=1)
 text(4,18, paste("a=", round(a,3)))
 text(4,16, paste("b=", round(b,3)))
+text(4,12, "Hola")
 
 
 
