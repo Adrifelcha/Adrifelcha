@@ -1,8 +1,8 @@
 ####### Ejercicios 
 
 x <- c(.48,.38,.83,.51,.35,.80,.86,.35,.73,.95)
-
-
+MediaX <- mean(x)
+MediaX
 
 
 #MLE 
