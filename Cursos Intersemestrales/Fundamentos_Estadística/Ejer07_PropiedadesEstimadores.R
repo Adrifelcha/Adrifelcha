@@ -135,18 +135,3 @@ print(Se)
 R <- cov2cor(VarCovar)
 print(R)
 
-
-
-##### EXTRA: Ejemplo de la función Return
-check <- function(x) {
-  if (x > 0) {
-    result <- "Positive"
-  }
-  else if (x < 0) {
-    result <- "Negative"
-  }
-  else {
-    result <- "Zero"
-  }
-  return(result)
-}
