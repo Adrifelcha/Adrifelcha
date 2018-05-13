@@ -80,7 +80,7 @@ lines(c(100,100),c(-100,0), lwd=2, lty=3)
 ##### Varianza del Estimador en Lenguaje R
 
 #Donde Var(x) = Recíproco de la Información Observada
-#Información Observada = Segunda derivada del Log-likelihood 
+#Información Observada = -Segunda derivada del Log-likelihood 
 
 x <- c(2, 7, 3)  #Datos
 
