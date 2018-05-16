@@ -63,6 +63,10 @@ cat(sprintf('G2 = %5.2f, gl = %1.0f p = %5.3f. Decision: %s', G2, gl, p_valor, d
 
 
 
+
+
+
+
 ###### Pesentando la Chi Cuadrada
 ######
 Gl <- 1 #El valor del parámetro lambda
@@ -79,3 +83,179 @@ plot(Ex_Chi, type='l',xlim=c(0,8), main="Distribución Chi-cuadrada", xlab="Conte
 
 
 
+
+
+
+##### Ejemplo 2  : Comparando el Valor P de dos muestras binomiales
+##### Ho:  p1 y p2 son iguales
+##### Ha:  p1 y p2 son distintas
+
+x1 = c(1, 1, 1, 0, 0, 1, 1, 1, 0, 0)  #Muestra 1
+x2 = c(0, 0, 0, 1, 1, 1, 0, 0)        #Muestra 2 
+
+s1 = sum(x1)      #La suma de cada muestra (A utilizar en la funcion de log-verosimilitud)
+s2 = sum(x2)        
+
+n1 = length(x1)   #Tamaño de cada muestra
+n2 = length(x2)
+
+M1 <- function(p) { log(dbinom(s1, n1, p)) + log(dbinom(s2, n2, p)) }
+M2 <- function(q) { log(dbinom(s1, n1, q[1])) + log(dbinom(s2, n2, q[2])) }
+
+fit1 <- optim(c(0.5), f=M1, method="Brent", lower=0, upper=1, control=list(fnscale=-1))
+fit2 <- optim(c(0.5, 0.5), f=M2, control=list(fnscale=-1))
+
+G2 = -2*fit1$value + 2*fit2$value 
+gl <- 1    #Diferencias en parámetros libres
+
+p_valor <- pchisq(G2, gl, lower.tail=F) #Calculamos el área a la derecha de la G cuadrada
+
+cat(sprintf('pi = %5.3f, pi2(1) = %5.3f, pi2(2) = %5.3f, G2 = %6.3f'))
+
+
+
+##### Ejemplo 3  : Contraste de Hipótesis por Razón de Verosimilitud
+##### Una muestra con datos que se distribuyen segun una Gamma
+##### Ho: La Media vale 4  <- Parámetro fijo
+##### Ha: La Media es distinta de 4   <- Parámetro libre
+
+x = c(5, 3, 7, 9, 1)
+logLikelihood <- function(p){
+  lk <- 0
+  for(i in 1:length(x)){
+    lk <- lk + log(dgamma(x[i], p[1], p[2]))
+  }
+  return(lk)
+}
+fit_M2 <- optim(c(1,1), f=logLikelihood, method="L-BFGS-B", control=list(fnscale=-1),
+                lower=0, hessian=TRUE)
+H <- fit_M2$hessian
+Informacion <- - H
+VarCovar <- solve(Informacion)
+cat(sprintf("Metodo de maxima-verosimilitud, a = %5.2f(%4.2f), b = %5.2f(%4.2f)",
+            fit_M2$par[1], sqrt(VarCovar[1,1]), fit_M2$par[2], sqrt(VarCovar[2,2])))
+
+logLikelihood_R <- function(beta){
+  alpha <- 4*beta
+  lk <- 0
+  for(i in 1:length(x)){
+    lk <- lk + log(dgamma(x[i], alpha, beta))
+  }
+  return(lk)
+}
+
+fit_M1 <- optim(c(1), f=logLikelihood_R, method="Brent", lower=0, upper=1,
+                control=list(fnscale=-1), hessian=TRUE)
+Informacion <- - fit_M1$hessian
+Se <- sqrt(1/Informacion)
+cat(sprintf("Metodo de maxima-verosimilitud, modelo restringido, a = %5.2f(%4.2f), b = %5.2f(%4.2f)",
+            4*fit_M1$par, 4*Se, fit_M1$par, Se))
+
+G2 = -2*fit_M1$value + 2*fit_M2$value
+gl <- 1
+p_valor <- pchisq(G2, gl, lower.tail=F)
+decision <- ifelse(p_valor <= 0.05, "Rechazar H0", "Mantener H0")
+cat(sprintf('G2 = %5.2f, gl = %1.0f p = %5.3f. Decision: %s', G2, gl, p_valor, decision))
+
+
+
+
+
+
+##### Ejemplo 4  : Contraste de Hipótesis por Razón de Verosimilitud
+##### La distribuciòn que se asume no es una Distribución Predefinida
+##### Ho: El parámetro Beta = 1
+##### Ha: El paràmetro Beta es distinto de 1
+
+x <- c(5, 2, 4, 3, 1)
+n <- length(x)
+media <- mean(x)
+l <- function(beta) -5*n*log(beta) - n*media/beta
+fit_M2 <- optim(c(1), f=l, method="Brent", lower=0, upper=20,
+                control=list(fnscale=-1), hessian=TRUE)
+fit_M1 <- l(1)
+G2 = -2*fit_M1 + 2*fit_M2$value
+gl <- 1
+p_valor <- pchisq(G2, gl, lower.tail=F)
+decision <- ifelse(p_valor <= 0.05, "Rechazar H0", "Mantener H0")
+cat(sprintf(
+  'beta estimada = %5.2f, Se = %5.3f\nG2 = %5.2f, gl = %1.0f p = %5.3f, Decision: %s',
+  fit_M2$par, sqrt(-1/fit_M2$hessian), G2, gl, p_valor, decision))
+
+
+
+
+
+
+
+
+##### Ejemplo 5  : Contraste de Hipótesis por Razón de Verosimilitud
+##### Regresión Beta
+##### Ho: El parámetro Beta = 1
+##### Ha: El paràmetro Beta es distinto de 1
+
+p <- c(0.5, 0.2, 0.1, 0.6, 0.3, 0.7, 0.6, 0.6, 0.9, 0.4)    #Proporciones
+x <- c(10, 4, 2, 15, 8, 20, 16, 18, 19, 12)   #Numero de casos
+logLikelihood_1 <- function(parametros){
+  lk <- 0
+  for(i in 1:length(x)){
+    phi <- exp(-parametros[1])
+    mu <- exp(parametros[2]) / (1+exp(parametros[2]))
+    alpha <- mu * phi
+    beta <- (1-mu) * phi
+    lk <- lk + log(dbeta(p[i], alpha, beta))
+  }
+  return(lk)
+}
+logLikelihood_2 <- function(parametros){
+  lk <- 0
+  for(i in 1:length(x)){
+    phi <- exp(-parametros[1])
+    mu <- exp(parametros[2] + parametros[3]*x[i]) / (1+exp(parametros[2] + parametros[3]*x[i]))
+    alpha <- mu * phi
+    beta <- (1-mu) * phi
+    lk <- lk + log(dbeta(p[i], alpha, beta))
+  }
+  return(lk)
+}
+
+fit_M1 <- optim(c(0,0), f=logLikelihood_1, control=list(fnscale=-1), hessian=TRUE)
+fit_M2 <- optim(c(0,0,0), f=logLikelihood_2, control=list(fnscale=-1), hessian=TRUE)
+G2 = -2*fit_M1$value + 2*fit_M2$value
+gl <- 1
+p_valor <- pchisq(G2, gl, lower.tail=F)
+decision <- ifelse(p_valor <= 0.05, "Rechazar H0", "Mantener H0")
+Se <- sqrt(diag(solve(-fit_M2$hessian)))
+cat(sprintf("G2 = %5.2f, gl = %1.0f p = %5.3f, Decision: %s
+            Parametros estimados. v = %5.2f(%4.2f), a = %5.2f(%4.2f) b = %5.2f(%4.2f)",
+            G2, gl, p_valor, decision, fit_M2$par[1], Se[1], fit_M2$par[2], Se[2], fit_M2$par[3], Se[3]))
+## G2 = 19.56, gl = 1 p = 0.000, Decision: Rechazar H0
+## Parametros estimados. v = -3.31(0.44), a = -2.13(0.33) b = 0.17(0.02)
+xaxis <- seq(2, 20, by=0.01)
+mu <- exp(fit_M2$par[2] + fit_M2$par[3]*xaxis) / (1+exp(fit_M2$par[2] + fit_M2$par[3]*xaxis))
+plot(x,p)
+lines(xaxis,mu, lwd=2, col="navyblue")
+
+
+
+
+
+
+##### Ejemplo 6  : Comparaciòn de Modelos (AIC)
+##### Queremos saber si los datos observados provienen de una Normal o Exponencial
+
+x = c(7, 3, 3, 1, 20, 4, 12, 2, 0, 2)   #Datos
+n <- length(x)     #Tamaño de la Muestra
+media <- mean(x)   #Media
+desviacion <- sqrt((n-1)*var(x)/n)     # Desviación Estándar
+
+omega <- 1/media      #Valor Omega por el Metodo de los Momentos
+
+l_normal <- sum(log(dnorm(x, media, desviacion)))
+l_exponencial <- sum(log(dexp(x, omega)))
+
+AIC_normal <- -2*l_normal + 4
+AIC_exponencial <- -2*l_exponencial + 2
+
+cat(sprintf("AIC normal = %6.2f. AIC exponencial = %6.2f\nmedia %5.2f Sd = %5.2f omega = %5.2f",
+            AIC_normal, AIC_exponencial, media, desviacion, omega))
