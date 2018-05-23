@@ -1,20 +1,31 @@
 ###################################################
-# Teor�a de las muestras grandes
-# por Adriana F. Ch�vez
+# Teoría de las muestras grandes
+# por Adriana F. Chávez
 # adrifelcha@gmail.com
 ###################################################
 
+#La teoría de las muestras grandes está compuesta por la Ley de los Grandes Números y el Teorema del Límite Central
+#Segun los cuales: 
+#a) El valor de la media muestral se aproxima cada vez más al valor de la media poblacional conforme la muestra se acerca al infinito
+#b) Los estimadores obtenidos en un número X de muestras, presentan valores que se distribuyen de manera normal cuando X tiende a infinito.
 
 
-# Distribuci�n  N O R M A L
+
+##################################
+
+
+
+# Distribución  N O R M A L
 ####################################
 ####################################
-n_peque <- rnorm(5,0,1)
+
+#Generamos tres muestras con distinto tamaño
+n_peque <- rnorm(5,0,1)  
 n_media <- rnorm(20,0,1)
 n_grande <- rnorm(300,0,1)
 
 ns <- data.frame(round(cbind(mean(n_peque),mean(n_media), mean(n_grande)),3))
-colnames(ns) <- c("Peque�a","Media","Grande")
+colnames(ns) <- c("Pequeña","Media","Grande")
 print(ns)
 
 peques<- c(NULL)
@@ -37,7 +48,7 @@ cbind(mean(peques),mean(medias),mean(grandes))
 
 
 
-# Distribuci�n  P O I S S O N
+# Distribución  P O I S S O N
 ####################################
 ####################################
 n_peque <- rpois(5,10)
@@ -45,7 +56,7 @@ n_media <- rpois(20,10)
 n_grande <- rpois(300,10)
 
 ns <- data.frame(round(cbind(mean(n_peque),mean(n_media), mean(n_grande)),3))
-colnames(ns) <- c("Peque�a","Media","Grande")
+colnames(ns) <- c("Pequeña","Media","Grande")
 print(ns)
 
 peques<- c(NULL)
@@ -65,7 +76,7 @@ cbind(mean(peques),mean(medias),mean(grandes))
 
 
 
-# Distribuci�n  Exponencial
+# Distribución  Exponencial
 ####################################
 ####################################
 n_peque <- rexp(5,10)
@@ -73,7 +84,7 @@ n_media <- rexp(20,10)
 n_grande <- rexp(300,10)
 
 ns <- data.frame(round(cbind(mean(n_peque),mean(n_media), mean(n_grande)),3))
-colnames(ns) <- c("Peque�a","Media","Grande")
+colnames(ns) <- c("Pequeña","Media","Grande")
 print(ns)
 
 peques<- c(NULL)
@@ -98,7 +109,7 @@ cbind(mean(peques),mean(medias),mean(grandes))
 #############################################################################
 #############################################################################
 #############################################################################
-# Teorema del L�mite central
+# Teorema del Lìmite central
 
 
 ####### Variable aleatoria (~Normal)
