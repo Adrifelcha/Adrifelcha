@@ -11,7 +11,12 @@
 
 
 
-##################################
+#############################################################################
+#############################################################################
+#############################################################################
+#############################################################################
+#############################################################################
+# PARTE UNO: Ley de los grandes Números
 
 
 
@@ -19,19 +24,24 @@
 ####################################
 ####################################
 
-#Generamos tres muestras con distinto tamaño
+#Generamos tres muestras aleatorias [ rnorm() ] con distinto tamaño de muestra (primer argumento), pero con la misma media (0) y desviación (1)
 n_peque <- rnorm(5,0,1)  
 n_media <- rnorm(20,0,1)
 n_grande <- rnorm(300,0,1)
 
+#Revisemos cuál es la media computada para cada una de estas muestras y prestemos atención en cuál se acerca más al valor real de la población de donde se extrajeron (0)
 ns <- data.frame(round(cbind(mean(n_peque),mean(n_media), mean(n_grande)),3))
 colnames(ns) <- c("Pequeña","Media","Grande")
 print(ns)
 
+#Repitamos el mismo ejercicio con al menos 10 muestras diferentes por cada tamaño probado
+
+#Para ello empezamos por crear tres objetos vacíos que después llenaremos con un ciclo for
 peques<- c(NULL)
 medias<- c(NULL)
 grandes<- c(NULL)
 
+#
 for(i in 1:10){
 peques[i]<- mean(rnorm(5,0,1))
 medias[i]<- mean(rnorm(20,0,1))
