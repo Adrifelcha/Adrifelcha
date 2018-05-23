@@ -1,15 +1,15 @@
 ###################################################
-# Estimaciòn paramètrica
-# Mètodo de los momentos y Mìnimos Cuadrados
+# EstimaciÃ²n paramÃ¨trica
+# MÃ¨todo de los momentos y MÃ¬nimos Cuadrados
 ###################################################
 
 
 ###################################################
-# Parte 1:    Método de los momentos
+# Parte 1:    MÃ©todo de los momentos
 ###################################################
+# Basado en la Ley de los Grandes NÃºmeros
 
-
-########  Estimaciòn de una distribucón Gamma
+########  EstimaciÃ²n de una distribucÃ³n Gamma
 x = c(5, 3, 7, 9, 1)
 media <- mean(x)
 varianza <- var(x)
@@ -21,7 +21,7 @@ colnames(gamma) <- c("Alpha", "Beta")
 gamma
 
 
-# Estimaciòn Gamma restringida
+# EstimaciÃ²n Gamma restringida
 alpha_Momentos_R <- 16 / varianza
 beta_Momentos_R <- 4 / varianza
 cat(sprintf("Metodo de los momentos, modelo restringido, a = %5.2f, b = %5.2f",
@@ -38,7 +38,7 @@ gamma
 
 
 ###################################################
-# Parte 2: Método de los mínimos cuadrados
+# Parte 2: MÃ©todo de los mÃ­nimos cuadrados
 ###################################################
 layout(matrix(1:3,ncol=3))
 x <- c(3, 1, 5, 4)
@@ -72,8 +72,8 @@ legend(1,8, sprintf("y' = %3.1fx", Beta), lty=1, col="firebrick", lwd=1.5)
 
 
 ######## Ejemplo paso a paso
-#Empezamos nuestro código especificando el escritorio de trabajo (Working directory: wd)
-setwd("C:/Users/Adriana/Desktop/Felisa/Cursos Intersemestrales/Fundamentos_Estadística")
+#Empezamos nuestro cÃ³digo especificando el escritorio de trabajo (Working directory: wd)
+setwd("C:/Users/Adriana/Desktop/Felisa/Cursos Intersemestrales/Fundamentos_EstadÃ­stica")
 #Borramos todas las variables y valores almacenados en consola
 rm(list=ls())
 #Comprobamos los archivos contenidos en nuestro wd
@@ -86,7 +86,7 @@ datos <- read.csv(datos)
 x <- datos$Experiencia
 y <- datos$Salario
 
-plot(x,y, pch=16, main="Relaciòn Salario x Años de Experiencia", xlab="Años de experiencia",
+plot(x,y, pch=16, main="RelaciÃ²n Salario x AÃ±os de Experiencia", xlab="AÃ±os de experiencia",
      ylab="Salario", col=rainbow(length(y)))
 
 
@@ -109,7 +109,7 @@ computo
 b <- (sum(XMeanx_YMeany))/(sum(Sq_x_Meanx))
 a <- mean(y)-(b*mean(x))
 
-plot(x,y, pch=16, main="Minimos Cuadrados", xlab="Años de experiencia",
+plot(x,y, pch=16, main="Minimos Cuadrados", xlab="AÃ±os de experiencia",
      ylab="Salario", col=rainbow(length(y)))
 lines(c(0:20), a+(b*c(0:20)), lwd=2, lty=1)
 text(4,18, paste("a=", round(a,3)))
@@ -124,7 +124,7 @@ text(4,12, "Hola")
 
 
 ###################
-# Ejemplo 2 : Presentando la función Optim
+# Ejemplo 2 : Presentando la funciÃ³n Optim
 layout(matrix(1:2,ncol=2))
 x <- c(2, 4, 3, 5)
 y <- c(5, 8, 7, 10)
