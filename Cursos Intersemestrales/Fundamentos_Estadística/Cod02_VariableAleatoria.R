@@ -48,11 +48,15 @@ print(integral)   #Imprimimos el resultado de la integral
 ###### Código 5
 ###### Valor Esperado y Varianza
 #####################
-xfx <- function(x) {6*x^2*(1-x)}
-Ex <- integrate(xfx, lower = 0, upper = 1)
-print(Ex)
 
-x2fx <- function(x) {6*x^3*(1-x)}
-Ex2 <- integrate(x2fx, lower = 0, upper = 1)
-VarX <- Ex2$value - Ex$value^2
-print(VarX)
+#El valor esperado de una distribución continua se computa como la integral definida en el intervalo abarca X de la función x * f(x)
+xfx <- function(x) {6*x^2*(1-x)}    #Escribimos x * f(x)
+Ex <- integrate(xfx, lower = 0, upper = 1)     #Integramos la función previamente descrita en el intervalo 0 y 1
+print(Ex)   #Imprimimos el resultado de la integral
+
+#La varianza de una distribución contínua se computa como la diferencia entre el valor esperado de x^2 (el momento de segundo orden centrado en el origen)
+# y el valor esperado (la media poblacional; el momento de primer orden centrado en el origen)
+x2fx <- function(x) {6*x^3*(1-x)}   #Función que nos ayudará a computar el momento de segundo orden centrado en el origen (x^2 * f(x))
+Ex2 <- integrate(x2fx, lower = 0, upper = 1)   #Computamos la esperanza de la función previamente descrita, a partir de una integral definida en el intervlo 0-1
+VarX <- Ex2$value - Ex$value^2   #Estimamos la varianza a partir de la diferencia
+print(VarX) #Imprimimos el valor de la varianza.
