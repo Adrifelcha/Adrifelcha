@@ -41,17 +41,18 @@ peques<- c(NULL)
 medias<- c(NULL)
 grandes<- c(NULL)
 
-#
+#Por cada elemento (arbitrariamente identificado como 'i') contenido en el intervalo 1-10
 for(i in 1:10){
-peques[i]<- mean(rnorm(5,0,1))
-medias[i]<- mean(rnorm(20,0,1))
+peques[i]<- mean(rnorm(5,0,1))     #Voy a escribir en el espacio i del objeto "peques" la media de una muestra aleatoria de 5 elementos extraidos de una normal con media 0 y desviacion 1
+medias[i]<- mean(rnorm(20,0,1))    #de igual forma, lleno los objetos "medias" y "grandes" con las medias de muestras generadas en cada una de las 10 repeticiones del ciclo, con distintos tamaños de muestra
 grandes[i]<- mean(rnorm(300,0,1))
 }
 
-cbind(peques,medias,grandes)
+cbind(peques,medias,grandes)    #Agrupo los arreglos de medias generados en una tabla, y los imprimo. 
+#Podemos apreciar que, en general, las medias computadas en el grupo Grandes tienden a acercarse más a 0
 
 cbind(mean(peques),mean(medias),mean(grandes))
-
+#Computamos la media de las medias estimadas para verificar que, en promedio, los grupos más grandes tuvieron valores promedios más cercanos a 0.
 
 
 
@@ -61,20 +62,28 @@ cbind(mean(peques),mean(medias),mean(grandes))
 # Distribución  P O I S S O N
 ####################################
 ####################################
+#En una distribución poisson, la media poblacional se captura por el parámetro Lambda
+
+#Generamos tres muestras de distinto tamaño y misma parametrización.
 n_peque <- rpois(5,10)
 n_media <- rpois(20,10)
 n_grande <- rpois(300,10)
 
+#Agrupamos los promedios de las tres muestras generadas en una sola tabla, para comprobar que es la muestra de mayor tamaño quien presenta el valor promedio más cercano a la media poblacional (el parámetro lambda previamente definido para la población)
 ns <- data.frame(round(cbind(mean(n_peque),mean(n_media), mean(n_grande)),3))
 colnames(ns) <- c("Pequeña","Media","Grande")
 print(ns)
 
+#Una vez más, repetimos este ejercicio generando 10 muestras por cada tamaño muestral propuesto
+
+#generamos tres objetos vacíos
 peques<- c(NULL)
 medias<- c(NULL)
 grandes<- c(NULL)
 
+#Llenamos cada objeto con 10 valores computados en cada repetición del siguiente ciclo for:
 for(i in 1:10){
-  peques[i]<- mean(rpois(5,10))
+  peques[i]<- mean(rpois(5,10)) 
   medias[i]<- mean(rpois(20,10))
   grandes[i]<- mean(rpois(300,10))
 }
