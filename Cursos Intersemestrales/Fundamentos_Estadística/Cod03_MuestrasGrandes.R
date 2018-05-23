@@ -74,22 +74,23 @@ ns <- data.frame(round(cbind(mean(n_peque),mean(n_media), mean(n_grande)),3))
 colnames(ns) <- c("Pequeña","Media","Grande")
 print(ns)
 
-#Una vez más, repetimos este ejercicio generando 10 muestras por cada tamaño muestral propuesto
+#Una vez más, repetimos este ejercicio generando 10 muestras -computando su respectiva media- por cada tamaño muestral propuesto
 
 #generamos tres objetos vacíos
 peques<- c(NULL)
 medias<- c(NULL)
 grandes<- c(NULL)
 
-#Llenamos cada objeto con 10 valores computados en cada repetición del siguiente ciclo for:
+#Llenamos cada objeto con 10 medias muestrales generadas a partir de cada una de las repeticiones del siguiente ciclo for:
 for(i in 1:10){
   peques[i]<- mean(rpois(5,10)) 
   medias[i]<- mean(rpois(20,10))
   grandes[i]<- mean(rpois(300,10))
 }
 
+#Imprimimos las diez medias muestrales computadas por grupo
 cbind(peques,medias,grandes)
-
+#Imprimimos la media de las medias muestrales computadas
 cbind(mean(peques),mean(medias),mean(grandes))
 
 
@@ -98,6 +99,8 @@ cbind(mean(peques),mean(medias),mean(grandes))
 # Distribución  Exponencial
 ####################################
 ####################################
+
+
 n_peque <- rexp(5,10)
 n_media <- rexp(20,10)
 n_grande <- rexp(300,10)
