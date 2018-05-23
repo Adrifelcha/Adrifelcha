@@ -133,14 +133,17 @@ cbind(mean(peques),mean(medias),mean(grandes))
 #############################################################################
 # Teorema del Lìmite central
 
+#Segun el teorema del Límite Central, si yo observo las estimaciones que podría hacer sobre el valor de mi parámetro poblacional (a.k.a. estimadores) a partir de un número infinito de muestras extraídas de cierta población, encontraría que
+# dichos valores estimados se distribuirían de acuerdo a una Distribución Normal con una varianza cada vez más pequeña.
 
 ####### Variable aleatoria (~Normal)
-v_normal <- c(NA)
-for(i in 1:5000){
-v_normal[i] <- mean(rnorm(500,0,1))  
+v_normal <- c(NA)   #Creamos un arreglo vacío
+for(i in 1:5000){   #Que vamos a llenar con 5000 valores (que representan el número de muestras extraídas) 
+v_normal[i] <- mean(rnorm(500,0,1))      #Por cada una de esas 5000 muestras, voy a computar la media de 500 valores extraídos aleatoriamente de una distribución normal con media en 0 y desviación 1
 }
-hist(v_normal,breaks=20, xlim=c(-0.2,0.2), main="Variable Normal", col="turquoise")
+hist(v_normal,breaks=20, xlim=c(-0.2,0.2), main="Variable Normal", col="turquoise") 
 
+#La misma lógica aplica para cualquier otro tipo de distribución:
 
 ####### Variable aleatoria (~Binom)
 v_binom <- c(NA)
