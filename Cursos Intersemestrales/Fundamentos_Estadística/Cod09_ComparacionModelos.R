@@ -204,17 +204,32 @@ cat(sprintf('G2 = %5.2f, gl = %1.0f p = %5.3f. Decision: %s', G2, gl, p_valor, d
 ##### Ho: El parámetro Beta = 1
 ##### Ha: El paràmetro Beta es distinto de 1
 
-x <- c(5, 2, 4, 3, 1)
-n <- length(x)
-media <- mean(x)
+x <- c(5, 2, 4, 3, 1)   #Arreglo de datos
+
+n <- length(x)       #Tamaño de la muestra
+media <- mean(x)     #Media de la muestra
+
+#En este caso asumimos una distribución de probabilidad que NO se encuentra especificada previamente en R.
+#La función de verosimilitud y/o la LOG verosimilitud deben construirse por desarrollo matemático
+
+#Una vez hecho el despeje, especificamos en R la función verosimilitud como una función que depende de beta (el parámetro a estimar)
 l <- function(beta) -5*n*log(beta) - n*media/beta
+
+#Estimamos el Máximo Verosímil de la función de verosimilitud, con un valor inicial de 1.
 fit_M2 <- optim(c(1), f=l, method="Brent", lower=0, upper=20,
                 control=list(fnscale=-1), hessian=TRUE)
-fit_M1 <- l(1)
-G2 = -2*fit_M1 + 2*fit_M2$value
-gl <- 1
-p_valor <- pchisq(G2, gl, lower.tail=F)
-decision <- ifelse(p_valor <= 0.05, "Rechazar H0", "Mantener H0")
+
+#Estimamos el número asignado (la densidad) por nuestra función LOGverosimilitud a un valor de Beta 1
+fit_M1 <- l(1)    #Llamamos la función previamente definida con un valor específico
+
+G2 = -2*fit_M1 + 2*fit_M2$value  #Computamos el estadístico G cuadrada
+gl <- 1    #Definimos los grados de libertad a partir de la diferencia entre los parámetros libres en el Modelo General y el Restringido
+
+p_valor <- pchisq(G2, gl, lower.tail=F)   #Computamos el área de una distribución chi cuadrada con 1 grado de libertad que cae por encima del valor G2
+
+decision <- ifelse(p_valor <= 0.05, "Rechazar H0", "Mantener H0")   #Tomamos una decisión respecto del posible rechazo de la Hipótesis Nula a partir de una función if-else
+
+#Imprimimos los resultados
 cat(sprintf(
   'beta estimada = %5.2f, Se = %5.3f\nG2 = %5.2f, gl = %1.0f p = %5.3f, Decision: %s',
   fit_M2$par, sqrt(-1/fit_M2$hessian), G2, gl, p_valor, decision))
@@ -281,18 +296,31 @@ lines(xaxis,mu, lwd=2, col="navyblue")
 ##### Ejemplo 6  : Comparaciòn de Modelos (AIC)
 ##### Queremos saber si los datos observados provienen de una Normal o Exponencial
 
+#AIC como una medida de la distancia entre los datos observados y las predicciones de cierto modelo que computa dicha dispersión ponderando la complejidad del modelo (Castiga el Sobreajuste y beneficia la Parsimonia)
+#Al comparar modelos con el AIC como indicador, se elegirá aquel modelo cuyo AIC sea menor
+#NOTA: Esto no garantiza que el modelo sea correcto, simplemente dice que es el mejor de los que se están comparando.
+
 x = c(7, 3, 3, 1, 20, 4, 12, 2, 0, 2)   #Datos
 n <- length(x)     #Tamaño de la Muestra
-media <- mean(x)   #Media
-desviacion <- sqrt((n-1)*var(x)/n)     # Desviación Estándar
 
-omega <- 1/media      #Valor Omega por el Metodo de los Momentos
+#De acuerdo con la Ley de los grandes Números, el método de los momentos y la estimación por máxima verosimilitud....
 
+#...para la distribución normal
+media <- mean(x)   #La media muestral es una forma de aproximarnos a la Media poblacional
+desviacion <- sqrt((n-1)*var(x)/n)     # Desviación Estándar corresponde a la raíz cuadrada de la Varianza 
+
+#...para la distribución exponencial
+omega <- 1/media      #Omega siendo el único parámetro de las distribuciones exponenciales
+
+#Estimamos las funciones LOGverosimilitud para cada tipo de distribución como una sumatoria
 l_normal <- sum(log(dnorm(x, media, desviacion)))
 l_exponencial <- sum(log(dexp(x, omega)))
+#Al usar la función sum, realizamos una sumatoria de los valores logaritmicos de las funciones de densidad correspondientes estimados para cada dato ontenido en el arreglo de datos x
 
-AIC_normal <- -2*l_normal + 4
+AIC_normal <- -2*l_normal + 4      #Computamos el AIC de la distribución normal
+#El 4 viene de 2*número_de_parámetros_contenidos_en_el_modelo. La normal tiene 2 parámetros (media y desviación), entonces tenemos 4
+
 AIC_exponencial <- -2*l_exponencial + 2
-
+#EL AIC de la función exponencial reconoce/beneficia a la misma porque sólo tiene un parámetro libre
 cat(sprintf("AIC normal = %6.2f. AIC exponencial = %6.2f\nmedia %5.2f Sd = %5.2f omega = %5.2f",
             AIC_normal, AIC_exponencial, media, desviacion, omega))
