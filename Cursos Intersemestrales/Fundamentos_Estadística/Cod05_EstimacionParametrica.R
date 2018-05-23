@@ -9,23 +9,40 @@
 ###################################################
 # Basado en la Ley de los Grandes Números
 
+
+################ CODIGO 1
 ########  Estimaciòn de una distribucón Gamma
-x = c(5, 3, 7, 9, 1)
-media <- mean(x)
-varianza <- var(x)
-alpha_Momentos <- mean(x)^2 / varianza
+x = c(5, 3, 7, 9, 1) #Conjunto de datos
+
+media <- mean(x)   #Media muestral
+varianza <- var(x)   #Varianza muestral
+
+#Según la Ley de los Grandes Números, la media de cualquier muestra se aproxima a la media poblacional conforme se incrementa la n
+#Sabiendo esto, podemos utilizar la expresión matemática que nos permite computar el valor esperado de una distribución cualquiera (x * f(x)) para, a partir de dicho despeje, 
+#obtener una forma de estimar cualquier parámetro (usando la media de nuestra muestra como estimador de la media poblacional)
+
+#Si la Media Poblacional de una distribución Gamma es igual a alpha/beta y la Varianza es alpha/beta^2, entonces podemos despejar que:
+alpha_Momentos <- mean(x)^2 / varianza   
 beta_Momentos <- media / varianza
 
-gamma <- data.frame(cbind(alpha_Momentos,beta_Momentos))
-colnames(gamma) <- c("Alpha", "Beta")
-gamma
+#Con base en nuestros datos, podemos estimar los siguientes resultados
+gamma <- data.frame(cbind(alpha_Momentos,beta_Momentos))   #Los valores computados se ordenan en una tabla/matriz
+colnames(gamma) <- c("Alpha", "Beta")  #Asignamos un nombre a los elementos contenidos en la matri z
+gamma   #E imprimimos 
 
 
-# Estimaciòn Gamma restringida
-alpha_Momentos_R <- 16 / varianza
+############## CODIGO 1, segunda parte
+# Estimación Gamma restringida
+# Imaginemos que tenemos razones para creer que la Media Poblacional vale 4
+
+#Estimamos alfa y beta según las expresiones que resultan del método de los momentos, restringiendo el valor de la media a 4
+alpha_Momentos_R <- 16 / varianza  
 beta_Momentos_R <- 4 / varianza
+
+#Imprimimos los resultados estimados cuando se asume que la Media vale 4
 cat(sprintf("Metodo de los momentos, modelo restringido, a = %5.2f, b = %5.2f",
             alpha_Momentos_R, beta_Momentos_R))
+#Comparamos el valor computado para la Media a partir de la muestra y el valor que resulta del modelo restringido
 cat(sprintf("Media observada = %5.2f, reproducida = %5.2f",
             mean(x), alpha_Momentos_R/beta_Momentos_R))
 
@@ -36,15 +53,21 @@ gamma
 
 
 
-
 ###################################################
 # Parte 2: Método de los mínimos cuadrados
 ###################################################
+# Para el caso en que tenemos una función matemática que describe la asignación de valores en Y a distintos valores X (una función lineal),
+# buscamos estimar con los valores paramétricos de dicha función que reduzcan lo más posible la distancia cuadrada entre cada dato observado 
+# y las predicciones del modelo.
+
+#Nos preparamos para imprimir 3 figuras, en 3 columnas diferentes, en una sola pantalla.
 layout(matrix(1:3,ncol=3))
-x <- c(3, 1, 5, 4)
-y <- c(5, 1, 7, 9)
-plot(x,y, pch=13, cex=1.5, main="Data", cex.main=2)
-lines(c(1,10), c(1,19), lty=3, lwd=2)
+
+#Empezamos con un conjunto de datos/observaciones
+x <- c(3, 1, 5, 4)   #Valores en X
+y <- c(5, 1, 7, 9)   #Valores registrados de Y
+plot(x,y, pch=13, cex=1.5, main="Data", cex.main=2) #Ploteamos la relación observada (segun los datos) entre X y Y
+lines(c(1,10), c(1,19), lty=3, lwd=2) #Trazamos una línea
 text(2,7, expression(paste(beta, "x")), cex=2)
 
 d <- function(b) sum(y - x*b)^2
