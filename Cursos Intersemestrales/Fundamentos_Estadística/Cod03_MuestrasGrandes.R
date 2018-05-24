@@ -99,16 +99,19 @@ cbind(mean(peques),mean(medias),mean(grandes))
 # Distribución  Exponencial
 ####################################
 ####################################
+#En una distribución exponencial, el Valor esperado se computa como 1/omega
 
-
+#Generamos tres muestras de distinto tamaño, pero mismo valor de Omega
 n_peque <- rexp(5,10)
 n_media <- rexp(20,10)
 n_grande <- rexp(300,10)
 
+#Organizamos las medias de las muestras generadas en un arreglo de datos
 ns <- data.frame(round(cbind(mean(n_peque),mean(n_media), mean(n_grande)),3))
 colnames(ns) <- c("Pequeña","Media","Grande")
 print(ns)
 
+#Repetimos el proceso, computando las medias de 10 muestras distintas por cada tamaño de la muestra propuesto
 peques<- c(NULL)
 medias<- c(NULL)
 grandes<- c(NULL)
@@ -119,11 +122,14 @@ for(i in 1:10){
   grandes[i]<- mean(rexp(300,10))
 }
 
+#Presentamos las 10 medias generadas con el ciclo for por cada Tamaño propuesto
 cbind(peques,medias,grandes)
 
-1/10
+#Computamos el promedio de las medias muestrales generadas
 cbind(mean(peques),mean(medias),mean(grandes))
 
+#Establecemos la media poblacional, según la Omega definida :
+1/10
 
 
 #############################################################################
