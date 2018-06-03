@@ -1,31 +1,48 @@
 ###################################################
-# Estimaci�n param�trica
-# M�todo de los momentos y M�nimos Cuadrados
+# Estimaciòn paramètrica
+# Mètodo de los momentos y Mìnimos Cuadrados
 ###################################################
 
 
 ###################################################
-# Parte 1:    M�todo de los momentos
+# Parte 1:    Método de los momentos
 ###################################################
+# Basado en la Ley de los Grandes Números
 
 
-########  Estimaci�n de una distribuc�n Gamma
-x = c(5, 3, 7, 9, 1)
-media <- mean(x)
-varianza <- var(x)
-alpha_Momentos <- mean(x)^2 / varianza
+################ CODIGO 1
+########  Estimaciòn de una distribucón Gamma
+x = c(5, 3, 7, 9, 1) #Conjunto de datos
+
+media <- mean(x)   #Media muestral
+varianza <- var(x)   #Varianza muestral
+
+#Según la Ley de los Grandes Números, la media de cualquier muestra se aproxima a la media poblacional conforme se incrementa la n
+#Sabiendo esto, podemos utilizar la expresión matemática que nos permite computar el valor esperado de una distribución cualquiera (x * f(x)) para, a partir de dicho despeje, 
+#obtener una forma de estimar cualquier parámetro (usando la media de nuestra muestra como estimador de la media poblacional)
+
+#Si la Media Poblacional de una distribución Gamma es igual a alpha/beta y la Varianza es alpha/beta^2, entonces podemos despejar que:
+alpha_Momentos <- mean(x)^2 / varianza   
 beta_Momentos <- media / varianza
 
-gamma <- data.frame(cbind(alpha_Momentos,beta_Momentos))
-colnames(gamma) <- c("Alpha", "Beta")
-gamma
+#Con base en nuestros datos, podemos estimar los siguientes resultados
+gamma <- data.frame(cbind(alpha_Momentos,beta_Momentos))   #Los valores computados se ordenan en una tabla/matriz
+colnames(gamma) <- c("Alpha", "Beta")  #Asignamos un nombre a los elementos contenidos en la matri z
+gamma   #E imprimimos 
 
 
-# Estimaci�n Gamma restringida
-alpha_Momentos_R <- 16 / varianza
+############## CODIGO 1, segunda parte
+# Estimación Gamma restringida
+# Imaginemos que tenemos razones para creer que la Media Poblacional vale 4
+
+#Estimamos alfa y beta según las expresiones que resultan del método de los momentos, restringiendo el valor de la media a 4
+alpha_Momentos_R <- 16 / varianza  
 beta_Momentos_R <- 4 / varianza
+
+#Imprimimos los resultados estimados cuando se asume que la Media vale 4
 cat(sprintf("Metodo de los momentos, modelo restringido, a = %5.2f, b = %5.2f",
             alpha_Momentos_R, beta_Momentos_R))
+#Comparamos el valor computado para la Media a partir de la muestra y el valor que resulta del modelo restringido
 cat(sprintf("Media observada = %5.2f, reproducida = %5.2f",
             mean(x), alpha_Momentos_R/beta_Momentos_R))
 
@@ -36,15 +53,21 @@ gamma
 
 
 
+###################################################
+# Parte 2: Método de los mínimos cuadrados
+###################################################
+# Para el caso en que tenemos una función matemática que describe la asignación de valores en Y a distintos valores X (una función lineal),
+# buscamos estimar con los valores paramétricos de dicha función que reduzcan lo más posible la distancia cuadrada entre cada dato observado 
+# y las predicciones del modelo.
 
-###################################################
-# Parte 2: M�todo de los m�nimos cuadrados
-###################################################
+#Nos preparamos para imprimir 3 figuras, en 3 columnas diferentes, en una sola pantalla.
 layout(matrix(1:3,ncol=3))
-x <- c(3, 1, 5, 4)
-y <- c(5, 1, 7, 9)
-plot(x,y, pch=13, cex=1.5, main="Data", cex.main=2)
-lines(c(1,10), c(1,19), lty=3, lwd=2)
+
+#Empezamos con un conjunto de datos/observaciones
+x <- c(3, 1, 5, 4)   #Valores en X
+y <- c(5, 1, 7, 9)   #Valores registrados de Y
+plot(x,y, pch=13, cex=1.5, main="Data", cex.main=2) #Ploteamos la relación observada (segun los datos) entre X y Y
+lines(c(1,10), c(1,19), lty=3, lwd=2) #Trazamos una línea
 text(2,7, expression(paste(beta, "x")), cex=2)
 
 d <- function(b) sum(y - x*b)^2
@@ -72,8 +95,8 @@ legend(1,8, sprintf("y' = %3.1fx", Beta), lty=1, col="firebrick", lwd=1.5)
 
 
 ######## Ejemplo paso a paso
-#Empezamos nuestro c�digo especificando el escritorio de trabajo (Working directory: wd)
-setwd("C:/Users/Adriana/Desktop/Felisa/Cursos Intersemestrales/Fundamentos_Estad�stica")
+#Empezamos nuestro código especificando el escritorio de trabajo (Working directory: wd)
+setwd("C:/Users/Adriana/Desktop/Felisa/Cursos Intersemestrales/Fundamentos_Estadística")
 #Borramos todas las variables y valores almacenados en consola
 rm(list=ls())
 #Comprobamos los archivos contenidos en nuestro wd
@@ -86,7 +109,7 @@ datos <- read.csv(datos)
 x <- datos$Experiencia
 y <- datos$Salario
 
-plot(x,y, pch=16, main="Relaci�n Salario x A�os de Experiencia", xlab="A�os de experiencia",
+plot(x,y, pch=16, main="Relaciòn Salario x Años de Experiencia", xlab="Años de experiencia",
      ylab="Salario", col=rainbow(length(y)))
 
 
@@ -109,7 +132,7 @@ computo
 b <- (sum(XMeanx_YMeany))/(sum(Sq_x_Meanx))
 a <- mean(y)-(b*mean(x))
 
-plot(x,y, pch=16, main="Minimos Cuadrados", xlab="A�os de experiencia",
+plot(x,y, pch=16, main="Minimos Cuadrados", xlab="Años de experiencia",
      ylab="Salario", col=rainbow(length(y)))
 lines(c(0:20), a+(b*c(0:20)), lwd=2, lty=1)
 text(4,18, paste("a=", round(a,3)))
@@ -124,7 +147,7 @@ text(4,12, "Hola")
 
 
 ###################
-# Ejemplo 2 : Presentando la funci�n Optim
+# Ejemplo 2 : Presentando la función Optim
 layout(matrix(1:2,ncol=2))
 x <- c(2, 4, 3, 5)
 y <- c(5, 8, 7, 10)

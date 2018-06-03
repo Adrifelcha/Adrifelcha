@@ -1,57 +1,62 @@
 #####################
-###### C骴igo 1
-###### Representaci髇 gr醘ica de una funci髇
+###### C贸digo 1
+###### Representaci贸n gr谩fica de una funci贸n
 #####################
 
 x <- seq(0, 1, by=0.01)   #Definimos la recta real
 f <- 6*x*(1-x)            #Especificamos la funcion y=f(x)
-plot(x, f, type="l", lwd=2, ylab="", col="red")   #Ploteamos la relaci髇 x-y
+plot(x, f, type="l", lwd=2, ylab="", col="red")   #Ploteamos la relaci贸n x-y
 
 
 #####################
-###### C骴igo 2
-###### Representaci髇 de dos funciones (simult醤eamente)
+###### C贸digo 2
+###### Representaci贸n de dos funciones (simult谩neamente)
 #####################
 
 x <- seq(0, 1, by=0.01)     #Recta real
-f <- 6*x*(1-x)              #Funci髇 1
-g <- 18*x*(1-x)^4           #Funci髇 2
-plot(x, f, type="l", lwd=2, ylab="", ylim=c(0,1.6), col="red")
-lines(x, g, lwd=2, col="blue")   #Sobreponemos una l韓ea que represente Funci髇 2
-legend(0.75, 1.6, c("f(x)", "g(x)"), lty=c(1,1), lwd=2, col=c("red", "blue"))
+f <- 6*x*(1-x)              #Funci贸n 1
+g <- 18*x*(1-x)^4           #Funci贸n 2
+plot(x, f, type="l", lwd=2, ylab="", ylim=c(0,1.6), col="red")      #Ploteamos el valor asignado por la funci贸n f a cada valor de la secuencia x
+lines(x, g, lwd=2, col="blue")   #Sobreponemos una l铆nea que represente Funci贸n 2    (el valor asignado por la funci贸n g a cada valor contenido en x)
+legend(0.75, 1.6, c("f(x)", "g(x)"), lty=c(1,1), lwd=2, col=c("red", "blue"))     #A帽adimos un recuadro/leyenda que se帽ale a qu茅 corresponde cada l铆nea. Separamos los elementos en un arreglo.
 
 
 #####################
-###### C骴igo 3
-###### Encontrar el punto m醲imo de una funci髇 (Moda)
+###### C贸digo 3
+###### Encontrar el punto m谩ximo de una funci贸n (Moda)
 #####################
-g <- function(x) 18 * x * (1-x)^4
-fit <- optimize(g, c(0, 1), maximum=TRUE)
-print(fit)
+g <- function(x) 18 * x * (1-x)^4  #Especificamos la funci贸n
+fit <- optimize(g, c(0, 1), maximum=TRUE)   #Usamos la funci贸n optimize para obtener el punto m谩ximo (maximum=TRUE) la funci贸n g, en el intervalo 0 y 1
+print(fit)  #Imprimimos el elemento fit 
 
-plot(g, type="l", lwd=2, ylab="", col="purple")   #Ploteamos la relaci髇 x-y
+plot(g, type="l", lwd=2, ylab="", col="purple")   #Ploteamos la relaci贸n x-y definida por g
+#En este caso, no hizo falta crear una base para la gr谩fica (un elemento x definido como una secuencia de valores) porque g ya estaba definido como una funci贸n de x
 
-
-
-#####################
-###### C骴igo 4
-###### Evaluar la funci髇 de densidad
-#####################
-
-f1 <- function(x) {6*x*(1-x)}
-integral <- integrate(f1, lower = 0, upper = 1)
-print(integral)
 
 
 #####################
-###### C骴igo 5
+###### C贸digo 4
+###### Evaluar la funci贸n de densidad
+#####################
+
+f1 <- function(x) {6*x*(1-x)}       #Especificamos la funci贸n 
+integral <- integrate(f1, lower = 0, upper = 1)      #Integramos la funci贸n anteriormente definida en el intervalo 0  a 1
+print(integral)   #Imprimimos el resultado de la integral
+
+
+#####################
+###### C贸digo 5
 ###### Valor Esperado y Varianza
 #####################
-xfx <- function(x) {6*x^2*(1-x)}
-Ex <- integrate(xfx, lower = 0, upper = 1)
-print(Ex)
 
-x2fx <- function(x) {6*x^3*(1-x)}
-Ex2 <- integrate(x2fx, lower = 0, upper = 1)
-VarX <- Ex2$value - Ex$value^2
-print(VarX)
+#El valor esperado de una distribuci贸n continua se computa como la integral definida en el intervalo abarca X de la funci贸n x * f(x)
+xfx <- function(x) {6*x^2*(1-x)}    #Escribimos x * f(x)
+Ex <- integrate(xfx, lower = 0, upper = 1)     #Integramos la funci贸n previamente descrita en el intervalo 0 y 1
+print(Ex)   #Imprimimos el resultado de la integral
+
+#La varianza de una distribuci贸n cont铆nua se computa como la diferencia entre el valor esperado de x^2 (el momento de segundo orden centrado en el origen)
+# y el valor esperado (la media poblacional; el momento de primer orden centrado en el origen)
+x2fx <- function(x) {6*x^3*(1-x)}   #Funci贸n que nos ayudar谩 a computar el momento de segundo orden centrado en el origen (x^2 * f(x))
+Ex2 <- integrate(x2fx, lower = 0, upper = 1)   #Computamos la esperanza de la funci贸n previamente descrita, a partir de una integral definida en el intervlo 0-1
+VarX <- Ex2$value - Ex$value^2   #Estimamos la varianza a partir de la diferencia
+print(VarX) #Imprimimos el valor de la varianza.
