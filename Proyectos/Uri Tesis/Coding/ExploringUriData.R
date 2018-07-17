@@ -45,8 +45,6 @@ for(a in 1:length(unique(Participante))){
       for(d in 1:length(unique(Estimulo))){
         for(e in 1:3){
           Pap[d,e] <- p_largo[Secuencia==Secuencias[e] & Estimulo==Estimulos[d] & Escala==Escalas[c] & Condicion==Condiciones[b] & Participante==Sujetos[a]]
-       
-     
         } } } } }
 
 print(Pap)
