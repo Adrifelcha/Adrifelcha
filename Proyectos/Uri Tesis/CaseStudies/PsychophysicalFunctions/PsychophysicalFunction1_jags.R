@@ -2,7 +2,7 @@
 rm(list=ls()) 
 
 # sets working directories:
-setwd("C:/Users/Alejandro/Desktop/Felisa/Proyectos/Uri Tesis/CaseStudies/PsychophysicalFunctions")
+setwd("D:/afchavez/Desktop/Adrifelcha_Lab25/Proyectos/Uri Tesis/CaseStudies/PsychophysicalFunctions")
 library(R2jags)
 
 x       <- matrix(NA,8,28)
