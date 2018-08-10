@@ -1,22 +1,18 @@
 #######################################################
 #Gráficas en R
+#por Adriana F. Chávez
 #######################################################
 
 
-
-
-
-# GRAFICAS LINEALES
-#######################################################
+# GRAFICAS LINEALES 
+######################################################
 
 #Especificamos los datos
-
 rango_x<-0:20   #Rango de valores contenidos en X 
-#0:20 indica un rango de 0 a 20
 
-#Valores en Y aleatorios
-variable_aleatoria<-rnorm(20,5,1)   #Pedimos que se extraigan aleatoriamente (r), 20 valores de una distribución normal (norm), con media en 5 y desviacion estandar de 1
-y<-rango_x+a  #Asumamos que Y incrementa proporcionalmente a X, más un 
+#Valores Y serán aleatorios
+variable_aleatoria<-rnorm(21,5,1)   #Pedimos que se extraigan aleatoriamente (r), 20 valores de una distribución normal (norm), con media en 5 y desviacion estandar de 1
+y<-rango_x+variable_aleatoria  #Asumamos que Y incrementa proporcionalmente a X, más un 
 
 #Función describiendo los valores
 z<-rango_x+5
@@ -24,14 +20,29 @@ z<-rango_x+5
 plot(rango_x,y)
 lines(rango_x,z, type="l", lty=4, lwd=2, col='blue')
 
+
+
 #Scatter plot
 #######################################################
+a <- rnorm(100,5,1)
+b <- rnorm(100,2,1)
+
+a
+b
+
+plot(a,b)
+
+
 
 #Gráficas de Barras
 #######################################################
 
+calificaciones <- c(5,7,9,6,8,1,2,7,6,8,10,3,9,5,10,7,4,6,9,10,1,4,6,7,1,10,6,8,3,6,4,10)
 
+tabla <- table(calificaciones)
+Tabla <- as.data.frame(tabla)
 
+barplot(Tabla[,2], labels = Tabla[,1])
 
 
 
@@ -40,8 +51,6 @@ lines(rango_x,z, type="l", lty=4, lwd=2, col='blue')
 ########################################################
 #Gráficas Pastel
 ########################################################
-
-
 #Especificamos los datos
 grupos <-c('A','B','C','D','E') #Etiqueta de los grupos a comparar (el nombre de las rebanadas)
 valores <- c(100, 122, 314, 216, 338) #Valores correspondientes a cada grupo (el valor representado por cada rebanada)
