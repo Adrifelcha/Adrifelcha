@@ -1,42 +1,50 @@
-#####################
-###### C√≥digo 1
-###### Representaci√≥n gr√°fica de una funci√≥n
-#####################
-
-x <- seq(0, 1, by=0.01)   #Definimos la recta real
-f <- 6*x*(1-x)            #Especificamos la funcion y=f(x)
-plot(x, f, type="l", lwd=2, ylab="", col="red")   #Ploteamos la relaci√≥n x-y
-
+#Material de apoyo para IntroducciÛn a Variables Aleatorias
+#Autor: Adriana F. Ch·vez De la PeÒa
+#adrifelcha@gmail.com
+##########################################################
 
 #####################
-###### C√≥digo 2
-###### Representaci√≥n de dos funciones (simult√°neamente)
+###### CÛdigo 1
+###### RepresentaciÛn gr·fica de una funciÛn
+#####################
+
+x <- seq(0, 1, by=0.01)   #Definimos la recta real  
+f <- 6*x*(1-x)            #Especificamos la funciÛn y=f(x)
+plot(x, f, type="l", lwd=2, ylab="", col="red", main="FunciÛn cuadratica")   #Ploteamos la relaciÛn x-y
+
+
+#####################
+###### CÛdigo 2
+###### RepresentaciÛn de dos funciones (simult·neamente)
 #####################
 
 x <- seq(0, 1, by=0.01)     #Recta real
-f <- 6*x*(1-x)              #Funci√≥n 1
-g <- 18*x*(1-x)^4           #Funci√≥n 2
-plot(x, f, type="l", lwd=2, ylab="", ylim=c(0,1.6), col="red")      #Ploteamos el valor asignado por la funci√≥n f a cada valor de la secuencia x
-lines(x, g, lwd=2, col="blue")   #Sobreponemos una l√≠nea que represente Funci√≥n 2    (el valor asignado por la funci√≥n g a cada valor contenido en x)
-legend(0.75, 1.6, c("f(x)", "g(x)"), lty=c(1,1), lwd=2, col=c("red", "blue"))     #A√±adimos un recuadro/leyenda que se√±ale a qu√© corresponde cada l√≠nea. Separamos los elementos en un arreglo.
+f <- 6*x*(1-x)              #FunciÛn 1
+g <- 18*x*(1-x)^4           #FunciiÛn 2
+plot(x, f, type="l", lwd=2, ylab="", ylim=c(0,1.6), col="red")      #Ploteamos el valor asignado por la funciÛn f a cada valor de la secuencia x
+lines(x, g, lwd=2, col="blue")   #Sobreponemos una lÌea que represente FunciÛn 2    (el valor asignado por la funciÛn g a cada valor contenido en x)
+legend(0.75, 1.6, c("f(x)", "g(x)"), lty=c(1,1), lwd=2, col=c("red", "blue"))     #AÒadimos un recuadro/leyenda que seÒale a quÈ corresponde cada lÌea. Separamos los elementos en un arreglo.
 
 
 #####################
-###### C√≥digo 3
-###### Encontrar el punto m√°ximo de una funci√≥n (Moda)
+###### CÛdigo 3
+###### Encontrar el punto m·ximo de una funciÛn (Moda)
 #####################
-g <- function(x) 18 * x * (1-x)^4  #Especificamos la funci√≥n
-fit <- optimize(g, c(0, 1), maximum=TRUE)   #Usamos la funci√≥n optimize para obtener el punto m√°ximo (maximum=TRUE) la funci√≥n g, en el intervalo 0 y 1
+g <- function(x) 18 * x * (1-x)^4  #Especificamos la funciÛn
+fit <- optimize(g, c(0, 1), maximum=TRUE)   #Usamos la funciÛn optimize para obtener el punto m·ximo (maximum=TRUE) de la funciÛn g, en el intervalo 0 y 1
 print(fit)  #Imprimimos el elemento fit 
 
-plot(g, type="l", lwd=2, ylab="", col="purple")   #Ploteamos la relaci√≥n x-y definida por g
-#En este caso, no hizo falta crear una base para la gr√°fica (un elemento x definido como una secuencia de valores) porque g ya estaba definido como una funci√≥n de x
+plot(g, type="l", lwd=2, ylab="", col="purple")   #Ploteamos la relaciÛn x-y definida por g
+points(fit$maximum,fit$objective, col="red", pch=16, cex=2)
+points(fit$maximum,0, col="red", pch=16, cex=2)
+lines(c(fit$maximum,fit$maximum), c(0,fit$objective), lwd=2, lty=2, col="black")
+#En este caso, no hizo falta crear una base para ,la gr·fica (un elemento x definido como una secuencia de valores) porque g ya estaba definido como una funciÛn de x
 
 
 
 #####################
-###### C√≥digo 4
-###### Evaluar la funci√≥n de densidad
+###### CÛdigo 4
+###### Evaluar una funciÛn de densidad
 #####################
 
 f1 <- function(x) {6*x*(1-x)}       #Especificamos la funci√≥n 
@@ -45,18 +53,42 @@ print(integral)   #Imprimimos el resultado de la integral
 
 
 #####################
-###### C√≥digo 5
+###### CÛdigo 5
 ###### Valor Esperado y Varianza
 #####################
 
-#El valor esperado de una distribuci√≥n continua se computa como la integral definida en el intervalo abarca X de la funci√≥n x * f(x)
-xfx <- function(x) {6*x^2*(1-x)}    #Escribimos x * f(x)
-Ex <- integrate(xfx, lower = 0, upper = 1)     #Integramos la funci√≥n previamente descrita en el intervalo 0 y 1
+#El valor esperado de una distribuciÛn contÌnua se computa como la integral de la funciÛn x * f(x) definida en el intervalo X
+
+xfx <- function(x) {6*x^2*(1-x)}               #Escribimos x * f(x)
+Ex <- integrate(xfx, lower = 0, upper = 1)     #Integramos la funciÛn previamente descrita en el intervalo 0 y 1
 print(Ex)   #Imprimimos el resultado de la integral
 
-#La varianza de una distribuci√≥n cont√≠nua se computa como la diferencia entre el valor esperado de x^2 (el momento de segundo orden centrado en el origen)
+#La varianza de una distribuciÛn contÌnua se computa como la diferencia entre el valor esperado de x^2 (el momento de segundo orden centrado en el origen)
 # y el valor esperado (la media poblacional; el momento de primer orden centrado en el origen)
-x2fx <- function(x) {6*x^3*(1-x)}   #Funci√≥n que nos ayudar√° a computar el momento de segundo orden centrado en el origen (x^2 * f(x))
-Ex2 <- integrate(x2fx, lower = 0, upper = 1)   #Computamos la esperanza de la funci√≥n previamente descrita, a partir de una integral definida en el intervlo 0-1
+x2fx <- function(x) {6*x^3*(1-x)}   #FunciÛn que nos ayudar· a computar el momento de segundo orden centrado en el origen (x^2 * f(x))
+Ex2 <- integrate(x2fx, lower = 0, upper = 1)   #Computamos la esperanza de la funciÛn previamente descrita, a partir de una integral definida en el intervlo 0-1
 VarX <- Ex2$value - Ex$value^2   #Estimamos la varianza a partir de la diferencia
 print(VarX) #Imprimimos el valor de la varianza.
+
+
+#Con la funciÛn integrate podemos conocer la densidad de probabilidad acumulada en un intervalo particular
+#a partir de una integral definida entre los dos extremos del intervalo a evaluar.
+
+Pr <- integrate(f1, lower = 0.75, upper=1)
+print(Pr)
+
+
+plot(f1, type="l", lwd=2, ylab="", col="black", xlim=c(0,1), ylim=c(0,1.5))   #Ploteamos la funciÛn original
+text(0.15,1, "FunciÛn")
+points(Ex$value,0, pch=17)    # SeÒalamos el Valor Esperado (Media poblacional)
+lines(c(Ex$value, Ex$value), c(0,1.5), lwd=2, lty=3, col="red")    # Ubicamos la densidad de probabilidad asignada al valor esperado
+intervalo <- seq(0.75,1,by=0.005)
+a <- 0
+for(i in 1:length(intervalo)){
+  polygon(c(intervalo[i],intervalo[i]),c(0,
+  6*intervalo[i]*(1-intervalo[i])),border="forestgreen")
+}
+lines(c(0.75,1), c(0.01,0.01), lwd=3, lty=2, col="forestgreen") 
+lines(c(0.75,0.75), c(0,f1(0.75)), lwd=3, lty=2, col="forestgreen")
+text(Ex$value + 0.09, 1, "E(x) Û Valor Esperado", col="red")   #Imprimimos una etiqueta sobre la gr·fica
+text(0.85, 1.2, paste("F(1) - F(0.75) =",round(Pr$value,3)), col="darkgreen", f=2)   #Imprimimos una etiqueta sobre la gr·fica
