@@ -89,6 +89,6 @@ for(i in 1:length(intervalo)){
   6*intervalo[i]*(1-intervalo[i])),border="forestgreen")
 }
 lines(c(0.75,1), c(0.01,0.01), lwd=3, lty=2, col="forestgreen") 
-lines(c(0.75,0.75), c(0,f1(0.75)), lwd=3, lty=2, col="forestgreen")
+lines(c(0.75,0.75), c(0,f1(0.75)), lwd=3, lty=6, col="forestgreen")
 text(Ex$value + 0.09, 1, "E(x) ó Valor Esperado", col="red")   #Imprimimos una etiqueta sobre la gráfica
 text(0.85, 1.2, paste("F(1) - F(0.75) =",round(Pr$value,3)), col="darkgreen", f=2)   #Imprimimos una etiqueta sobre la gráfica
