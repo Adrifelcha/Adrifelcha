@@ -4,27 +4,19 @@
 ##########################################################
 
 
-
-
-
-
-
-
 ################################
 ###### Distribución Binomial
 ################################
+
+####### PARAMETROS
 n <- 100      #Observaciones
 p <- 0.2      #Probabilidad de observar un exito
-
-ExV <- n*p    #Calculamos el Valor Esperado
-print(ExV)
 
 #Creamos una binomial con los parámetros especificados
 Ex_Binom <- dbinom(x, size=n, prob=p)
 
 #### Graficamos
 layout(matrix(1:2,ncol=2)) #Vamos a acomodar 2 gráficas en 2 columnas por pantalla
-
 x <- c(0:n)   #Definimos el soporte de la gráfica entre 0 y n
 
 #Ploteamos con la función plot() la relación entre cada punto contenido en x y la binomial especificada
@@ -49,6 +41,8 @@ barplot(Ex_Binom, main= "Distribución Binomial", xlab="Numero de éxitos", cex.la
 #####################
 ###### Distribución  Poisson
 #####################
+
+####### PARAMETROS
 lam <- 4 #El valor del parámetro lambda
 x <- c(0:30)  #Definimos una base arbitraria
 Ex_Pois <- dpois(x,lambda=lam)   #Creamos una Poisson con la lambda definida
@@ -69,6 +63,8 @@ barplot(Ex_Pois, main="Distribución Poisson", xlab="Conteo de casos",
 #####################
 ###### Distribución Normal
 #####################
+
+####### PARAMETROS
 mean <- 0     #Media
 sDev <- 1     #Desviación Estándar
 
@@ -97,6 +93,8 @@ lines(c(mean, mean),c(0,0.6), lwd=2, lty=1, col="deepskyblue3")
 #####################
 ###### Distribución Exponencial
 #####################
+
+####### PARAMETROS
 w <- 10  #Velocidad de cambio
 
 #Otra vez definimos nuestra Exponencial como una función para cada valor posible de x
