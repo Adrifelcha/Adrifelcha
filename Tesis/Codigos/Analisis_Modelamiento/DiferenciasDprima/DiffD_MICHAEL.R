@@ -1,4 +1,4 @@
-setwd("C:/Users/Alejandro/Desktop/Felisa/Tesis/Datos_CSVs")
+setwd("D:/afchavez/Desktop/Adrifelcha_Lab25/Tesis/Datos_CSVs")
 rm(list=ls())
 dir()
 library(R2jags)
@@ -68,7 +68,7 @@ burnin <- 2000      #Numero de extracciones iniciales ignoradas
 
 # Corremos el modelo
 samples <- jags(data, inits=myinits, parameters,
-                model.file ="C:/Users/Alejandro/Desktop/Felisa/Tesis/Codigos/Analisis_Modelamiento/DiferenciasDprima/DiffD_Michael.txt",
+                model.file ="D:/afchavez/Desktop/Adrifelcha_Lab25/Tesis/Codigos/Analisis_Modelamiento/DiferenciasDprima/DiffD_Michael.txt",
                 n.chains=1, n.iter=niter, n.burnin=burnin, n.thin=1)
 
 #La variable 'samples' contiene los parámetros monitoreados por el modelo. (Las extracciones)
