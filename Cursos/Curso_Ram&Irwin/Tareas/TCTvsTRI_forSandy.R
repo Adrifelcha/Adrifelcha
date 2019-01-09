@@ -15,10 +15,11 @@ View(Datos)           #Echamos un vistazo a la base final
 ############## Beta (IRT) vs Dificultad p (TTC)
 ###################################################
 ##############  Calcula para cada ítem el índice de dificultad (p) en el marco de la Teoría Clásica de los Tests (TCT).
-P <- NULL
-Items <- c(1:12)
 
-for(a in 1:length(Items)){
+P <- NULL   
+Items <- c(1:12)   
+
+for(a in 1:length(Items)){      
 P[a] <- mean(Datos[,a])  
 }
 P
