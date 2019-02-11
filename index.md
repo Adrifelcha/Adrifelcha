@@ -5,15 +5,12 @@ En este sitio web tendrán acceso (para su consulta en línea y/o descarga) al m
 Esta página es una extensión de la [Página oficial del Lab 25](https://bouzaslab25.github.io), que pueden checar en cualquier momento si quieren saber más sobre el tipo de investigación y actividades que llevamos a cabo.
 
 ## Colaboradores del proyecto
-**Director:** Arturo Bouzas Riaño
+**Coordinadores:** 
+Dr. Ramsés Vázquez Lira
+Dr. Juan Carlos Pérez Morán
+Dr. Guaner David 
+Mtra. Daniela Arenas
+Lic. Adriana Felisa Chávez De la Peña
 
-**Estudiantes:**
+**Administradora del Sitio Web:**
 - Adriana Felisa Chávez De la Peña
-- Edgar De Jesús Vázquez Silva
-- Uriel Omar González Bravo
-- José Manuel Niño García
-- Elena Villalobos Nolasco
-- Marco Antonio Negrete Villanueva
-- Alfonso Medina Velázquez
-- Yuznhio Sierra Casiano
-- Stéphane Lejars Clorio
