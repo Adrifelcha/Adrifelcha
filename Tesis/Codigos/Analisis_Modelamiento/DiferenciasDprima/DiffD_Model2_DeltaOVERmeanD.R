@@ -1,4 +1,4 @@
-setwd("C:/Users/Alejandro/Desktop/Adrifelcha/Tesis/Datos_CSVs")
+setwd("C:/Users/sandra/Desktop/afchavez-019/MichaelLee/SDT Mirror Effect/Data")
 rm(list=ls())
 dir()
 library(R2jags)
@@ -55,7 +55,7 @@ n <- 160    # Número Total de ensayos con Ruido
 ######################################
 #Preparamos y Corremos el modelo
 ######################################
-data <- list("fa_A", "fa_B", "h_B", "h_A", "s", "n", "k") # Datos a analizar con JAGS
+data <- list("fa_A", "fa_B", "h_B", "h_A", "s", "n", "k") # Datos en el modelo (NODOS SOMBREADOS)
 myinits <- list(
   list(d_A = rep(0,k), d_B = rep(0,k), c_A = rep(0,k), c_B = rep(0,k),  muc_A = 0, lambdac_A = 1, muc_B = 0, lambdac_B = 1, mud_A = 0, lambdad_A = 1, mud_B = 0, lambdad_B = 1))
 
