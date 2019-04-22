@@ -1,4 +1,4 @@
-setwd("C:/Users/Alejandro/Desktop/Felisa/Tesis/Datos_CSVs")
+setwd("C:/Users/Alejandro/Desktop/Adrifelcha/Tesis/Datos_CSVs")
 rm(list=ls())
 dir()
 library(R2jags)
@@ -66,7 +66,7 @@ burnin <- 1000     #No. de primeros sampleos en ignorarse
 
 #Corremos el modelo
 samples <- jags(data, inits=myinits, parameters,
-                model.file ="C:/Users/Alejandro/Desktop/Felisa/Tesis/Codigos/Analisis_Modelamiento/DiferenciasRates_MirrorEffect/DiffTeta_Modelo2_SingleC.txt",
+                model.file ="C:/Users/Alejandro/Desktop/Adrifelcha/Tesis/Codigos/Analisis_Modelamiento/DiferenciasRates_MirrorEffect/DiffTeta_Modelo2_SingleC.txt",
                 n.chains=1, n.iter=niter, n.burnin=burnin, n.thin=1)
 #La variable 'samples' contiene los parámetros monitoreados por el modelo. (Las extracciones)
 

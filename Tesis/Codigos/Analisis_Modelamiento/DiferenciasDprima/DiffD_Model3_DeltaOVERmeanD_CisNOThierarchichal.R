@@ -20,7 +20,7 @@ experimento <- 1
 
 if (experimento == 1) 
 {
-  archive <-'Ex_1Ebb_TODOS-.csv'      #Especificamos el nombre del archivo que contiene los datos
+  archive <-'Ex_1Ebb_TODOS.csv'      #Especificamos el nombre del archivo que contiene los datos
   datos <- read.csv(archive)          #Jalamos los datos del archivo
   Hits_Facil <- datos$A_H             #Hits(A)
   Hits_Dificil <- datos$B_H           #Hits(B)

@@ -1,4 +1,4 @@
-setwd("C:/Users/Alejandro/Desktop/Felisa/Tesis/Datos_CSVs")
+setwd("C:/Users/Alejandro/Desktop/Adrifelcha/Tesis/Datos_CSVs")
 rm(list=ls())
 dir()
 library(R2jags)
@@ -14,7 +14,7 @@ library(R2jags)
 
 ######################################################
 #Especificamos el Experimento y los Datos a analizar
-experimento <- 2
+experimento <- 1
 #####################################################
 
 if (experimento == 1) 
@@ -67,7 +67,7 @@ burnin <- 2000      #Numero de extracciones iniciales ignoradas
 
 # Corremos el modelo
 samples <- jags(data, inits=myinits, parameters,
-                model.file ="C:/Users/Alejandro/Desktop/Felisa/Tesis/Codigos/Analisis_Modelamiento/DiferenciasDprima/DiffD_Modelo2_DeltaOVERmeanD.txt",
+                model.file ="C:/Users/Alejandro/Desktop/Adrifelcha/Tesis/Codigos/Analisis_Modelamiento/DiferenciasDprima/DiffD_Modelo2_DeltaOVERmeanD.txt",
                 n.chains=1, n.iter=niter, n.burnin=burnin, n.thin=1)
 
 #La variable 'samples' contiene los parámetros monitoreados por el modelo. (Las extracciones)

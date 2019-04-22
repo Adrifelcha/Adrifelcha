@@ -1,4 +1,4 @@
-setwd("C:/Users/Alejandro/Desktop/Felisa/Tesis/Datos_CSVs")
+setwd("C:/Users/Alejandro/Desktop/Adrifelcha/Tesis/Datos_CSVs")
 rm(list=ls())
 dir()
 library(R2jags)
@@ -58,6 +58,39 @@ data <- list("fa_A", "fa_B", "h_B", "h_A", "s", "n", "k")                    #Lo
 myinits <- list(
   list(thetah_A = rep(0,k), thetah_B = rep(0,k), thetaf_A = rep(0,k), thetaf_B = rep(0,k), sigmath_A = 1, sigmath_B = 1, sigmatf_A = 1, sigmatf_B = 1, Mu_thetah = 1, Mu_thetaf = 1, Tau_H = 0, Tau_F = 0))      #Valores iniciales para las extracciones de las cadenas de Markov
 
+write('
+      # Signal Detection Theory
+model{
+  for (i in 1:k){
+  # Observed counts
+    h_A[i] ~ dbin(thetah_A[i],s)
+    fa_A[i] ~ dbin(thetaf_A[i],n)
+    h_B[i] ~ dbin(thetah_B[i],s)
+    fa_B[i] ~ dbin(thetaf_B[i],n)
+    thetah_A[i] ~ dnorm(mu_thetah_A, lam_thetah_A)
+    thetaf_A[i] ~ dnorm(mu_thetaf_A, lam_thetaf_A)
+    thetah_B[i] ~ dnorm(mu_thetah_B, lam_thetah_B)
+    thetaf_B[i] ~ dnorm(mu_thetaf_B, lam_thetaf_B)
+}
+  mu_thetah_A <- Mu_thetah+Tau_H/2 
+  mu_thetaf_A <- Mu_thetaf-Tau_F/2 
+  mu_thetah_B <- Mu_thetah-Tau_H/2 
+  mu_thetaf_B <- Mu_thetaf+Tau_F/2
+  lam_thetah_A <- 1/pow(sigmath_A,2)
+  lam_thetaf_A <- 1/pow(sigmatf_A,2)
+  lam_thetah_B <- 1/pow(sigmath_B,2)
+  lam_thetaf_B <- 1/pow(sigmatf_B,2)
+  sigmath_A ~ dnorm(0,1)
+  sigmatf_A ~ dnorm(0,1)
+  sigmath_B ~ dnorm(0,1)
+  sigmatf_B ~ dnorm(0,1)
+Mu_thetah ~ dnorm(0,1)
+Mu_thetaf ~ dnorm(0,1)
+Tau_H ~ dnorm(0,1)
+Tau_F ~ dnorm(0,1)
+}', 'MichaelSigma.bug')
+
+
 #Parámetros monitoreados
 parameters <- c("thetah_A", "thetaf_A", "thetah_B", "thetaf_B", "mu_thetah_A", "mu_thetaf_A", "mu_thetah_B", "mu_thetaf_B", "Mu_thetah", "Mu_thetaf", "Tau_H", "Tau_F")
 
@@ -66,7 +99,7 @@ burnin <- 1000     #No. de primeros sampleos en ignorarse
 
 #Corremos el modelo
 samples <- jags(data, inits=myinits, parameters,
-                model.file ="C:/Users/Alejandro/Desktop/Felisa/Tesis/Codigos/Analisis_Modelamiento/DiferenciasRates_MirrorEffect/DiffTeta_Binomial_Michael_Sigma.txt",
+                model.file ="MichaelSigma.bug",
                 n.chains=1, n.iter=niter, n.burnin=burnin, n.thin=1)
 #La variable 'samples' contiene los parámetros monitoreados por el modelo. (Las extracciones)
 

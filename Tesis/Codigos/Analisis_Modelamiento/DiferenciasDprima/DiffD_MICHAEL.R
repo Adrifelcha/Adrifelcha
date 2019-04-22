@@ -1,4 +1,4 @@
-setwd("D:/afchavez/Desktop/Adrifelcha_Lab25/Tesis/Datos_CSVs")
+setwd("C:/Users/Alejandro/Desktop/Adrifelcha/Tesis/Datos_CSVs")
 rm(list=ls())
 dir()
 library(R2jags)
@@ -15,7 +15,7 @@ library(ggplot2)
 
 ######################################################
 #Especificamos el Experimento y los Datos a analizar
-experimento <- 1
+experimento <- 2
 #####################################################
 
 if (experimento == 1) 
@@ -60,6 +60,39 @@ data <- list("fa_A", "fa_B", "h_B", "h_A", "s", "n", "k") # Datos a analizar con
 myinits <- list(
   list(d_A = rep(0,k), d_B = rep(0,k), c = rep(0,k), lambdad_A = 1,  lambdad_B = 1, delta = 0, MuD = 0))
 
+write('
+model{
+for (i in 1:k){
+  # Observed counts
+      h_A[i] ~ dbin(thetah_A[i],s)
+      fa_A[i] ~ dbin(thetaf_A[i],n)
+      h_B[i] ~ dbin(thetah_B[i],s)
+      fa_B[i] ~ dbin(thetaf_B[i],n)
+  # Reparameterization Using Equal-Variance Gaussian SDT
+      thetah_A[i] <- phi((d_A[i]/2)-c[i])
+      thetaf_A[i] <- phi((-d_A[i]/2)-c[i])
+      thetah_B[i] <- phi((d_B[i]/2)-c[i])
+      thetaf_B[i] <- phi((-d_B[i]/2)-c[i])
+  # These Priors over Discriminability and Bias Correspond 
+  # to Uniform Priors over the Hit and False Alarm Rates
+      d_A[i] ~ dnorm(mud_A,lambdad_A)
+      c[i] ~ dnorm(0,1)
+      d_B[i] ~ dnorm(mud_B,lambdad_B)
+      } 
+  #Priors
+      mud_A <- MuD + delta/2
+      mud_B <- MuD - delta/2
+      lambdad_A ~ dgamma(.001,.001)
+      lambdad_B ~ dgamma(.001,.001)
+      sigmad_A <- 1/sqrt(lambdad_A)
+      sigmad_B <- 1/sqrt(lambdad_B)
+      delta ~ dnorm(0,1)
+      MuD ~ dnorm(0,1)
+      delta_prior ~ dnorm(0,1)
+      MuD_prior ~ dnorm(0,1)}
+      ','MichaelMu.bug')
+
+
 # Parametros monitoreados
 parameters <- c("c", "d_A", "d_B", "thetah_A", "thetah_B", "thetaf_A", "mud_A", "mud_B", "thetaf_B", "sigmad_A", "sigmad_B", "delta", "MuD", "delta_prior", "MuD_prior")
 
@@ -68,7 +101,7 @@ burnin <- 2000      #Numero de extracciones iniciales ignoradas
 
 # Corremos el modelo
 samples <- jags(data, inits=myinits, parameters,
-                model.file ="D:/afchavez/Desktop/Adrifelcha_Lab25/Tesis/Codigos/Analisis_Modelamiento/DiferenciasDprima/DiffD_Michael.txt",
+                model.file ="MichaelMu.bug",
                 n.chains=1, n.iter=niter, n.burnin=burnin, n.thin=1)
 
 #La variable 'samples' contiene los parámetros monitoreados por el modelo. (Las extracciones)
