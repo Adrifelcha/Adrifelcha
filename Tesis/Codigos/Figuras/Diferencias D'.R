@@ -1,4 +1,4 @@
-setwd("C:/Users/Alejandro/Desktop/Felisa/Tesis/Datos_CSVs")
+setwd("C:/Users/Alejandro/Desktop/Adrifelcha/Tesis/Datos_CSVs")
 rm(list=ls())
 dir()
 ######################################################
@@ -23,8 +23,8 @@ d_mtx<-matrix(data=c(d_Facil,d_Dificil), nrow=2, ncol=20, byrow=TRUE)
 matplot(d_mtx, type="b", lty=1, lwd=3, pch=21, col=c("orange3"),
         cex=1, ylim=c(0,5), xlim=c(0.75,2.25), xlab='', ylab='', font.lab=2, cex.lab=1,
         las=1, labels=F, ann=F)
-mtext('Experimento 1',3,cex=2, col='orange4')
-mtext("Clase de estímulo",1,cex=2, line=2.5, f=2)
+mtext('Experiment 1',3,cex=2, col='orange4')
+mtext("Class of stimuli",1,cex=2, line=3, f=2)
 mtext("d'",2,cex=2, line=2.5, f=2)
 
 axis(1,at=c(1,2),labels=c("A","B"),las=1)
@@ -47,9 +47,9 @@ D_mtx<-matrix(data=c(D_Facil,D_Dificil), nrow=2, ncol=20, byrow=TRUE)
 matplot(D_mtx, type="b", lty=1, lwd=3, pch=21, col=c("lightsalmon3"),
         cex=1, ylim=c(0,5), xlim=c(0.75,2.25), xlab='', ylab='', font.lab=2, cex.lab=1,
         las=1, labels=F, ann=F)
-mtext('Experimento 2',3,cex=2, col='lightsalmon4')
-mtext("Diferencias en d'",3,cex=2.5, line=-2, f=2, outer=TRUE)
-mtext("Clase de estímulo",1,cex=2, line=2.5, f=2)
+mtext('Experiment 2',3,cex=2, col='lightsalmon4')
+mtext("Differences on d'",3,cex=2.5, line=-2, f=2, outer=TRUE)
+mtext("Class of stimuli",1,cex=2, line=3, f=2)
 mtext("d'",2,cex=2, line=2.5, f=2)
 
 axis(1,at=c(1,2),labels=c("A","B"),las=1)
