@@ -1,0 +1,5 @@
+Ensayo, Estimulo, Respuesta, Correcto, Aciertos, Errores, Hits, ContadorH, Rechazos, ContadorR, Falsas alarmas, ContadorF, Omisiones, ContadorM, 
+0,32,s,True,1,0,True,1,False,0,False,0,False,0,
+1,37,n,True,2,0,False,1,True,0,False,0,False,0,
+2,47,n,True,3,0,False,1,True,0,False,0,False,0,
+3,35,s,True,4,0,True,2,False,0,False,0,False,0,
