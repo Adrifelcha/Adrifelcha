@@ -1,0 +1,43 @@
+\documentclass[letterpaper]{article}
+\usepackage{graphicx}
+\usepackage[letterpaper, landscape, margin=2in]{geometry}
+\usepackage{listings}             % Include the listings-package
+\begin{document}
+\lstset{language=Pascal}          % Set your language (you can change the language for each code-block optionally)
+\title{Leyendo bases de datos (CSV) en R}
+\author{por Adriana F Ch\'avez De la Pe\~na}
+\maketitle
+
+\begin{lstlisting}[frame=single]  % Start your code-block
+setwd("C:/Users/Alejandro/Desktop/Felisa/Learning R/R - Basics")
+rm(list=ls())
+dir()
+
+datos <-'Datos_Example2.csv'
+granja <- read.csv(datos)
+
+
+promedio_accidentes <- mean(granja$Accidentes)
+print(promedio_accidentes)
+
+promedio_calificacion <- mean(granja$Calificación)
+print(promedio_calificacion)
+
+promedio_calificacion <- round(promedio_calificacion,3)
+print(promedio_calificacion)
+
+Año <- granja$Tiempo..Año.
+Visitas <- granja$Visitas
+Conejos <- granja$Conejos
+
+plot(Año,Visitas)
+
+plot(Año[1:9],Conejos[1:9], ylim=c(0,5000))
+
+visitasperaño <- c(Año,Visitas)
+
+barplot(Visitas, xlab="Años", ylab="Visitas", col=rainbow(length(Año)))
+axis(1,at=c(0.5,1.7,2.9,4,5,6,7,8,9,10,11,12), labels= Año)
+\end{lstlisting}
+
+\end{document}

@@ -1,0 +1,65 @@
+f=open[Archivo.csv,w]
+
+Funciones: 
+Archivo como flujo de datos. 
+Abrir archvo->
+
+Función Open.
+
+image (instance) = Test stim (Clase)
+	El que se repite es la Clase
+	La instancia es una copia particular de la clase
+
+Variable de la clase activo
+
+myfile=open()
+
+En cada 'ciclo for' una línea de datos. (a,b,\n,1, 2, 3) [\n = Cambio de linea] Se vería
+
+	a	b	c
+	1	2	3
+
+
+[Entre el 1er mywin]
+
+myfile=open("RegistroPrueba.csv", 'w')
+
+Guardar una línea por ciclo For. 
+i = # Ensayo (1° columna)
+a = m/w (2°")
+b m/w (3°")
+
+Pago de lo que eligieron
+Total
+
+[Hasta el final myfile.Close()
+
+
+myfile.write(str(i)+","str(iserseñ)+","+ str(matrice[matrizSel]ÑuserCel])+","+str(Counter"+"\n")
+
+Las comillas se usan para los literales [Valores fijos dados por el programador]
+
+myfile=write(str(i)´","+"\n")
+
+
+central=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]
+central=list()
+for i in range (30)
+	for "j" in range (12)
+		options.append
+
+Dialogos (agregar "gui" en el primer renglon"
+
+options= ("Opcion":"1","Nombre":"usuario1")
+
+myDlg=gui.DlgFromDict(dictionary=options, Title= "Gano"
+
+
+myfile=open(options["Nombre"]+ time.strftime("%Y-%m-%d")+ time.strftime("%h.%m.%s")+ "ClasesPython.csv", 'w')
+
+
+
+
+
+
+
